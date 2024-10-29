@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محول التواريخ - ميلادي، هجري، وإسكندري</title>
+
+    <style>
+        body {
+            background: linear-gradient(to right, #4e54c8, #8f94fb);
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            max-width: 600px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+
+        input, button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+
+        button {
+            background-color: #ff6b6b;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4757;
+        }
+
+        h1, h3 {
+            margin-bottom: 20px;
+        }
+
+        .result p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        footer {
+            margin-top: 20px;
+            padding: 10px 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>محول التواريخ - ميلادي، هجري، وإسكندري</h1>
+
+        <label for="inputDate">:أدخل التاريخ (ميلادي)</label>
+        <input type="date" id="inputDate" />
+
+        <label for="hijriDate">أدخل التاريخ (هجري - سنة - شهر- يوم):</label>
+        <input type="text" id="hijriDate" placeholder="مثال: 1445-10-01" />
+
+        <label for="alexanderYear">:أدخل السنة في تقويم الإسكندر</label>
+        <input type="number" id="alexanderYear" placeholder="سنة إسكندر" />
+
+        <button id="convertButton">حول التواريخ</button>
+
+        <div class="result">
+            <h3>:النتائج</h3>
+            <p id="gregorianResult"></p>
+            <p id="hijriResult"></p>
+            <p id="alexanderResult"></p>
+            <p id="yearOfElephantResult"></p>
+        </div>
+    </div>
+
+    <footer>
+        copyright © Jamal-Alshami
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <!-- Moment-Hijri -->
+    <script src="https://cdn.jsdelivr.net/npm/moment-hijri@2.1.2/moment-hijri.min.js"></script>
+
+    <!-- Inputmask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#hijriDate").inputmask("9999-99-99", { 
+                placeholder: "YYYY-MM-DD", 
+                clearIncomplete: true 
+            });
+
+            $("#convertButton").on("click", function () {
+                try {
+                    const inputDate = $("#inputDate").val();
+                    const hijriDate = $("#hijriDate").val();
+                    const alexanderYear = $("#alexanderYear").val();
+
+                    if (inputDate) {
+                        const hijri = moment(inputDate, 'YYYY-MM-DD').format('iYYYY-iMM-iDD');
+                        const alexander = parseInt(inputDate.split('-')[0]) + 356;
+                        const yearsSinceElephant = calculateYearsSinceElephant(inputDate);
+                        displayResults(inputDate, hijri, alexander, yearsSinceElephant);
+                    } else if (hijriDate) {
+                        const gregorian = moment(hijriDate, 'iYYYY-iMM-iDD').format('YYYY-MM-DD');
+                        const alexander = parseInt(gregorian.split('-')[0]) + 356;
+                        const yearsSinceElephant = calculateYearsSinceElephant(gregorian);
+                        displayResults(gregorian, hijriDate, alexander, yearsSinceElephant);
+                    } else if (alexanderYear) {
+                        const gregorianYear = alexanderYear - 356;
+                        const gregorianDate = `${gregorianYear}-01-01`;
+                        const hijri = moment(gregorianDate, 'YYYY-MM-DD').format('iYYYY-iMM-iDD');
+                        const yearsSinceElephant = calculateYearsSinceElephant(gregorianDate);
+                        displayResults(gregorianDate, hijri, alexanderYear, yearsSinceElephant);
+                    } else {
+                        alert("الرجاء إدخال تاريخ صالح.");
+                    }
+                } catch (error) {
+                    alert("حدث خطأ أثناء التحويل. تحقق من البيانات المدخلة.");
+                    console.error(error);
+                }
+            });
+
+            function calculateYearsSinceElephant(gregorianDate) {
+                const yearOfElephant = 570; // عام الفيل
+                const inputYear = parseInt(gregorianDate.split('-')[0]);
+                return inputYear - yearOfElephant;
+            }
+
+            function displayResults(gregorian, hijri, alexander, yearsSinceElephant) {
+                $("#gregorianResult").text(`التاريخ الميلادي: ${gregorian}`);
+                $("#hijriResult").text(`التاريخ الهجري: ${hijri}`);
+                $("#alexanderResult").text(`سنة الإسكندر المقدوني: ${alexander}`);
+                $("#yearOfElephantResult").text(`عدد السنوات منذ عام الفيل: ${yearsSinceElephant} سنة`);
+            }
+        });
+    </script>
+</body>
+</html>
