@@ -1,0 +1,257 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تقييم مستقبل العلاقة الزوجية</title>
+  <style>
+    body {
+      font-family: "Traditional Arabic", serif;
+      background: linear-gradient(to bottom, #3a6073, #16222a);
+      color: #333;
+      direction: rtl;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0 10px;
+      position: relative;
+    }
+
+    .header {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-weight: bold;
+      font-size: 22px;
+      color: #ffffff;
+    }
+
+    .container {
+      max-width: 700px;
+      padding: 25px;
+      background-color: rgba(255, 255, 255, 0.9);
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #002d5b;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 16px;
+      color: #333;
+      text-align: right;
+      margin-bottom: 10px;
+      display: block;
+    }
+
+    .question {
+      margin-bottom: 25px;
+      padding: 15px;
+      background-color: #f7f7f9;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      text-align: right;
+    }
+
+    .question input[type="radio"] {
+      margin-right: 10px;
+      margin-top: 5px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #002d5b;
+      color: #ffffff;
+      font-size: 18px;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-align: center;
+    }
+
+    .submit-btn:hover {
+      background-color: #004080;
+    }
+
+    .result {
+      margin-top: 25px;
+      padding: 15px;
+      background-color: #e3f2fd;
+      color: #002d5b;
+      border-radius: 8px;
+      font-size: 20px;
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      display: none;
+    }
+
+    .result.fade-in {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">جمال الشامي</div>
+  
+  <div class="container">
+    <h1>تقييم مستقبل العلاقة الزوجية</h1>
+
+    <form id="quizForm">
+      <div class="question">
+        <label>1- كيف يتفاعل (خطيبك أو خطيبتك) مع الانتقادات أو الآراء التي تختلف عن رأيه؟</label>
+        <input type="radio" name="q1" value="a"> يتقبل الآراء المختلفة<br>
+        <input type="radio" name="q1" value="b"> ينزعج قليلاً<br>
+        <input type="radio" name="q1" value="c"> يظهر استياءً شديدًا
+      </div>
+
+      <div class="question">
+        <label>2- كيف يعبر (خطيبك أو خطيبتك) عن مشاعره عندما يواجه إحباطًا في العمل أو مع الأصدقاء؟</label>
+        <input type="radio" name="q2" value="a"> يتحدث بصراحة<br>
+        <input type="radio" name="q2" value="b"> يظهر انزعاجًا<br>
+        <input type="radio" name="q2" value="c"> يظهر غضبًا ويبدأ في لوم الآخرين
+      </div>
+
+      <div class="question">
+        <label>3- عندما تقوم بشيء لا يتفق معه، كيف يتصرف (خطيبك أو خطيبتك)؟</label>
+        <input type="radio" name="q3" value="a"> يتفهم ويحترم قرارك<br>
+        <input type="radio" name="q3" value="b"> يناقشك<br>
+        <input type="radio" name="q3" value="c"> ينتقدك بشدة
+      </div>
+
+      <div class="question">
+        <label>4- هل يبدو أن (خطيبك أو خطيبتك) يطلب إعجاب الآخرين بشكل مبالغ فيه؟</label>
+        <input type="radio" name="q4" value="a"> لا يهتم<br>
+        <input type="radio" name="q4" value="b"> يحب التقدير<br>
+        <input type="radio" name="q4" value="c"> يحتاج دائمًا للثناء
+      </div>
+
+      <div class="question">
+        <label>5- كيف يتفاعل (خطيبك أو خطيبتك) مع ارتباطاتك الاجتماعية وعلاقاتك الأسرية؟</label>
+        <input type="radio" name="q5" value="a"> يشجعك<br>
+        <input type="radio" name="q5" value="b"> يظهر بعض التوتر<br>
+        <input type="radio" name="q5" value="c"> ينتقد ارتباطك بالآخرين
+      </div>
+
+      <div class="question">
+        <label>6- هل يظهر (خطيبك أو خطيبتك) علامات من التردد أو الاعتماد عليك لاتخاذ قراراته الشخصية؟</label>
+        <input type="radio" name="q6" value="a"> يتخذ قراراته بشكل مستقل<br>
+        <input type="radio" name="q6" value="b"> يطلب رأيك أحيانًا<br>
+        <input type="radio" name="q6" value="c"> يعتمد عليك تمامًا
+      </div>
+
+      <div class="question">
+        <label>7- عندما يكون (خطيبك أو خطيبتك) تحت ضغط، كيف يتصرف؟</label>
+        <input type="radio" name="q7" value="a"> يحاول معالجة الضغط بهدوء<br>
+        <input type="radio" name="q7" value="b"> يتوتر قليلاً<br>
+        <input type="radio" name="q7" value="c"> يغضب أو يصبح عدائيًا
+      </div>
+
+      <div class="question">
+        <label>8- هل يبدي (خطيبك أو خطيبتك) شكوكًا غير مبررة تجاه الآخرين أو يميل للريبة؟</label>
+        <input type="radio" name="q8" value="a"> لا يظهر شكوكًا<br>
+        <input type="radio" name="q8" value="b"> قد يشك أحيانًا<br>
+        <input type="radio" name="q8" value="c"> يظهر شكوكًا دائمة
+      </div>
+
+      <div class="question">
+        <label>9- هل يتوقع (خطيبك أو خطيبتك) أن تكون دائمًا متاحًا له ويتضايق إذا لم تخصص له وقتك؟</label>
+        <input type="radio" name="q9" value="a"> يتفهم انشغالاتك<br>
+        <input type="radio" name="q9" value="b"> يشعر بالإحباط أحيانًا<br>
+        <input type="radio" name="q9" value="c"> يتضايق ويشعر بالإهمال
+      </div>
+
+      <div class="question">
+        <label>10- هل يظهر (خطيبك أو خطيبتك) رغبة كبيرة في السيطرة على التفاصيل الصغيرة أو التحقق من كل شيء بنفسه؟</label>
+        <input type="radio" name="q10" value="a"> لا يهتم بالتفاصيل<br>
+        <input type="radio" name="q10" value="b"> يظهر اهتمامًا بالتفاصيل<br>
+        <input type="radio" name="q10" value="c"> يرغب في التحكم بكل التفاصيل
+      </div>
+
+      <button type="button" class="submit-btn" onclick="calculateResult()">احصل على النتيجة</button>
+    </form>
+
+    <div id="result" class="result"></div>
+  </div>
+
+  <script>
+    // تأكد من وضع رمز البوت ومعرف الدردشة الصحيحين هنا
+    const botToken = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
+        const chatId = '152435304';
+
+    function calculateResult() {
+      const form = document.getElementById('quizForm');
+      const resultDiv = document.getElementById('result');
+      let score = 0;
+
+      // التحقق من تعبئة جميع الأسئلة
+      for (let i = 1; i <= 10; i++) {
+        const answer = form[`q${i}`].value;
+        if (!answer) {
+          resultDiv.style.display = 'block';
+          resultDiv.innerHTML = "يرجى الإجابة على جميع الأسئلة قبل الحصول على النتيجة.";
+          return;
+        }
+      }
+
+      // حساب النقاط بناءً على الإجابات
+      for (let i = 1; i <= 10; i++) {
+        const answer = form[`q${i}`].value;
+        if (answer === 'c') {
+          score += 2;
+        } else if (answer === 'b') {
+          score += 1;
+        }
+      }
+
+      resultDiv.style.display = 'block';
+      resultDiv.classList.add('fade-in');
+
+      let resultText;
+      if (score >= 15) {
+        resultText = "قد يكون هناك علامات على اضطرابات تحتاج إلى استشارة قبل الارتباط.";
+      } else if (score >= 8) {
+        resultText = "توجد بعض السلوكيات التي قد تكون مؤشرًا على تحديات مستقبلية.";
+      } else {
+        resultText = "لا توجد إشارات مقلقة. يبدو أن (الخطيب أو الخطيبة) متوازن في سلوكه.";
+      }
+
+      resultDiv.innerHTML = resultText;
+
+    // إرسال النتيجة إلى تليجرام
+            sendToTelegram(resultText);
+        }
+function sendToTelegram(result) {
+            const message = `نتيجة الاختبار: ${result}`;
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    if (data.ok) {
+                        console.log('تم إرسال النتيجة إلى تليجرام بنجاح');
+                    } else {
+                        console.error('حدث خطأ في إرسال النتيجة:', data);
+                    }
+                })
+                .catch(error => console.error('خطأ في الاتصال بتليجرام:', error));
+    }
+  </script>
+</body>
+</html>
