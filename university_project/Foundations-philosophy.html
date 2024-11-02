@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتائج مادة أسس الفلسفة</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js"></script> <!-- تحميل ملف البيانات ودالة البحث -->
+</head>
+<body>
+    <!-- الشريط العلوي -->
+    <header class="header">
+        <div class="header-item">جامعة الضالع</div>
+        <h1>نتائج مادة أسس الفلسفة 2024م</h1>
+        <div class="header-item">جمال الشامي</div>
+    </header>
+
+    <!-- حقل البحث والجدول -->
+    <main class="content">
+        <div class="search-container">
+            <input type="text" id="searchName" placeholder="أدخل الاسم أو الرقم الجامعي">
+            <button onclick="searchTable()">بحث</button>
+        </div>
+        <table id="resultsTable" border="1">
+            <thead>
+                <tr>
+                    <th>الرقم الجامعي</th>
+                    <th>الاسم</th>
+                    <th>نصفي</th>
+                    <th>تكاليف</th>
+                    <th>حضور</th>
+                    <th>المجموع</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+
+    <script>
+        // دالة البحث داخل البيانات وعرض النتائج في الجدول
+        function searchTable() {
+            // الحصول على قيمة البحث من الحقل
+            const keyword = document.getElementById("searchName").value;
+
+            // البحث في البيانات باستخدام دالة search من script1.js
+            const results = search(keyword);
+
+            // تحديد موقع tbody وتفريغ المحتوى السابق
+            const tableBody = document.querySelector("#resultsTable tbody");
+            tableBody.innerHTML = ""; // مسح النتائج القديمة من tbody
+
+            // عرض النتائج في الجدول داخل tbody، مع استبعاد "رقم الطالب"
+            results.forEach(item => {
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td>${item[1] || '-'}</td> <!-- الرقم الجامعي -->
+                    <td>${item[2] || '-'}</td> <!-- الاسم -->
+                    <td>${item[3] || '-'}</td> <!-- نصفي -->
+                    <td>${item[4] || '-'}</td> <!-- تكاليف -->
+                    <td>${item[5] || '-'}</td> <!-- حضور -->
+                    <td>${item[6] || '-'}</td> <!-- المجموع -->
+                `;
+                tableBody.appendChild(row);
+            });
+        }
+    </script>
+</body>
+</html>

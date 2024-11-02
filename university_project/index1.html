@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جامعة الضالع - صفحة الدخول للنتائج</title>
+    <style>
+        /* تنسيقات عامة */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            direction: rtl; /* جعل المحتوى من اليمين إلى اليسار */
+        }
+
+        /* تنسيق رأس الصفحة */
+        header {
+            background-color: #4A90E2;
+            color: #fff;
+            padding: 1em 1.5em;
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* جعل العناصر في أقصى اليمين والشمال */
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        /* تنسيق الشعار */
+        .logo {
+            width: 60px; /* عرض الشعار */
+            height: auto;
+        }
+
+        /* تنسيق القائمة الرئيسية */
+        .container {
+            max-width: 600px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #4A90E2;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+
+        /* تنسيق الأزرار */
+        .subject-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            align-items: center;
+        }
+
+        .subject-list a {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 0.75em;
+            background-color: #4A90E2;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .subject-list a:hover {
+            background-color: #357ABD;
+        }
+
+        /* تنسيق الحقوق */
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #4A90E2;
+            color: white;
+            margin-top: 2em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- رأس الصفحة -->
+    <header>
+        <h1>جامعة الضالع</h1> <!-- العنوان في أقصى اليمين -->
+        <img src="logo.png" alt="شعار جامعة الضالع" class="logo"> <!-- الشعار في أقصى الشمال -->
+    </header>
+
+    <!-- المحتوى الرئيسي -->
+    <div class="container">
+        <h2>نتائج المواد الدراسية</h2>
+
+        <!-- قائمة المواد -->
+        <div class="subject-list">
+            <a href="Islamic-culture.html">الثقافة الإسلامية</a>
+            <a href="Foundations-philosophy.html">أسس الفلسفة</a>
+            <a href="Anthropology.html">الأنثروبولوجيا</a>
+            <a href="Historyphilosophy-law.html">تاريخ وفلسفة القانون</a>
+            <a href="Constitutional-law.html">القانون الدستوري</a>
+            <!-- يمكنك إضافة روابط لمزيد من المواد حسب الحاجة -->
+        </div>
+    </div>
+
+    <!-- تذييل الصفحة -->
+    <footer>
+        <p>&copy; 2024 جمال الشامي - جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+</html>
