@@ -1,0 +1,125 @@
+﻿
+            <!DOCTYPE html>
+            <html lang="ar">
+            <head>
+                <meta charset="UTF-8">
+                <title>الثقافة الإسلامية</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        direction: rtl;
+                        text-align: right;
+                        padding: 20px;
+                        background-color: #f9f9f9;
+                    }
+                    h1, h2 {
+                        color: #2c3e50;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    ul {
+                        list-style: none;
+                        padding: 0;
+                    }
+                    li {
+                        background: #fff;
+                        margin: 10px 0;
+                        padding: 15px;
+                        border-radius: 8px;
+                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
+                    strong {
+                        color: #333;
+                        font-size: 1.2em;
+                    }
+                    label {
+                        display: block;
+                        padding: 5px 0;
+                        font-size: 1em;
+                        color: #555;
+                    }
+                    input[type="radio"] {
+                        margin-left: 5px;
+                    }
+                    #result {
+                        text-align: center;
+                        font-size: 1.2em;
+                        margin-top: 20px;
+                        color: #4CAF50;
+                    }
+                    button {
+                        display: block;
+                        margin: 20px auto;
+                        padding: 10px 20px;
+                        font-size: 1em;
+                        background-color: #2980b9;
+                        color: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                    button:hover {
+                        background-color: #3498db;
+                    }
+                    .footer {
+                        text-align: center;
+                        color: #aaa;
+                        font-size: 0.9em;
+                        margin-top: 20px;
+                    }
+                </style>
+            </head>
+            <body>
+                <h1>الثقافة الإسلامية</h1>
+                <h2>اسم الطالب: <input type="text" id="studentNameInput" placeholder="أدخل اسم الطالب" style="font-size: 1em; padding: 5px; width: 50%; text-align: center; border: 1px solid #ccc; border-radius: 5px;"></h2>
+                <ul><li><strong>1. التِّيه في اللغة:</strong><ul><li><label><input type="radio" name="question0" value="0"> أ. التحيّر عن القصد.</label></li><li><label><input type="radio" name="question0" value="1"> ب. القصد.</label></li><li><label><input type="radio" name="question0" value="2"> جـ. الطلب.</label></li><li><label><input type="radio" name="question0" value="3"> د. البحث.</label></li></ul></li><li><strong>2. الكفر ببعض يعني:</strong><ul><li><label><input type="radio" name="question1" value="0"> أ. إنكار صحة البعض.</label></li><li><label><input type="radio" name="question1" value="1"> ب. عدم العمل ببعض.</label></li><li><label><input type="radio" name="question1" value="2"> جـ. الإيمان بصحة البعض.</label></li><li><label><input type="radio" name="question1" value="3"> د. كل ما سبق.</label></li></ul></li><li><strong>3. قال تعالى: {فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْراً يَرَهُ (7) وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرّاً يَرَهُ}[الزلزلة:8]، يفيد:</strong><ul><li><label><input type="radio" name="question2" value="0"> أ. الوعد.</label></li><li><label><input type="radio" name="question2" value="1"> ب. الوعيد.</label></li><li><label><input type="radio" name="question2" value="2"> جـ. الوعد والوعيد.</label></li><li><label><input type="radio" name="question2" value="3"> د. ليس شيئاً مما سبق.</label></li></ul></li><li><strong>4. من معالم الدين الإسلامي عدا:</strong><ul><li><label><input type="radio" name="question3" value="0"> أ. التحرر من الطاغوت.</label></li><li><label><input type="radio" name="question3" value="1"> ب. التحرر من الاستكبار.</label></li><li><label><input type="radio" name="question3" value="2"> جـ. الصبر على الظلم.</label></li><li><label><input type="radio" name="question3" value="3"> د. الزكاء والطهارة.</label></li></ul></li><li><strong>5. التشريع هو من اختصاص:</strong><ul><li><label><input type="radio" name="question4" value="0"> أ. الله والملائكة.</label></li><li><label><input type="radio" name="question4" value="1"> ب. الله والأنبياء.</label></li><li><label><input type="radio" name="question4" value="2"> جـ. الملائكة والأنبياء.</label></li><li><label><input type="radio" name="question4" value="3"> د. ليس شيئاً مما سبق.</label></li></ul></li><li><strong>6. لماذا التأكيد على معرفة الرسول صلى الله عليه وآله وسلم من خلال القرآن الكريم:</strong><ul><li><label><input type="radio" name="question5" value="0"> أ. لمعرفتنا باللغة العربية.</label></li><li><label><input type="radio" name="question5" value="1"> ب. لأنه كتاب الله.</label></li><li><label><input type="radio" name="question5" value="2"> جـ. لأنه جاء به.</label></li><li><label><input type="radio" name="question5" value="3"> د. لأن ما دونه يحتوي على الكذب.</label></li></ul></li><li><strong>7. الفرق بين النظام الاقتصادي الإسلامي والنظام الاقتصادي الغربي هو:</strong><ul><li><label><input type="radio" name="question6" value="0"> أ. الربا.</label></li><li><label><input type="radio" name="question6" value="1"> ب. التكنولوجيا.</label></li><li><label><input type="radio" name="question6" value="2"> جـ. البورصة.</label></li><li><label><input type="radio" name="question6" value="3"> د. الأسهم.</label></li></ul></li><li><strong>8. {الْأَوَّلُ}[الحديد:3]، من أسماء الله تعالى ويفيد:</strong><ul><li><label><input type="radio" name="question7" value="0"> أ.  نفي الزمان عن الله.</label></li><li><label><input type="radio" name="question7" value="1"> ب. إثبات الزمان.</label></li><li><label><input type="radio" name="question7" value="2"> جـ. إثبات البداية.</label></li><li><label><input type="radio" name="question7" value="3"> د. إثبات النهاية.</label></li></ul></li><li><strong>9. قال تعالى عن بني إسرائيل: {َاذْهَبْ أَنتَ وَرَبُّكَ فَقَاتِلا إِنَّا هَاهُنَا قَاعِدُونَ}[المائدة:24]، تفيد:</strong><ul><li><label><input type="radio" name="question8" value="0"> أ.  جهلهم بالله.</label></li><li><label><input type="radio" name="question8" value="1"> ب.  تشبيههم لله.</label></li><li><label><input type="radio" name="question8" value="2"> جـ.  تجسيمهم لله.</label></li><li><label><input type="radio" name="question8" value="3"> د. كل ما سبق.</label></li></ul></li><li><strong>10. من العقوبات الإلهية على المتخاذلين عدا:</strong><ul><li><label><input type="radio" name="question9" value="0"> أ.  انعدام المشاعر الإنسانية.</label></li><li><label><input type="radio" name="question9" value="1"> ب. انغلاق الفهم.</label></li><li><label><input type="radio" name="question9" value="2"> جـ. السلامة.</label></li><li><label><input type="radio" name="question9" value="3"> د. الغباء.</label></li></ul></li><li><strong>11. من المحاور الرئيسية في الإسلام العمل على:</strong><ul><li><label><input type="radio" name="question10" value="0"> أ.  إقامة العدل.</label></li><li><label><input type="radio" name="question10" value="1"> ب.  محاربة الظلم.</label></li><li><label><input type="radio" name="question10" value="2"> جـ.  محاربة الطغيان.</label></li><li><label><input type="radio" name="question10" value="3"> د. كل ما سبق.</label></li></ul></li><li><strong>12. لا يعتبر الإنسان إنساناً إلا:</strong><ul><li><label><input type="radio" name="question11" value="0"> أ.  بماله.</label></li><li><label><input type="radio" name="question11" value="1"> ب.  بجاهه.</label></li><li><label><input type="radio" name="question11" value="2"> جـ.  بأخلاقه.</label></li><li><label><input type="radio" name="question11" value="3"> د.  بصورته.</label></li></ul></li><li><strong>13. قال تعالى: {وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ}[الحديد:4]، يعني:</strong><ul><li><label><input type="radio" name="question12" value="0"> أ.  لا يغيب عنكم.</label></li><li><label><input type="radio" name="question12" value="1"> ب.  رقيب عليكم.</label></li><li><label><input type="radio" name="question12" value="2"> جـ.  عليم بكم.</label></li><li><label><input type="radio" name="question12" value="3"> د.  كل ما سبق.</label></li></ul></li><li><strong>14. قال تعالى عن اليهود: {ذَلِكَ بِأَنَّهُمْ قَالُواْ لَن تَمَسَّنَا النَّارُ إِلاَّ أَيَّاماً مَّعْدُودَاتٍ وَغَرَّهُمْ فِي دِينِهِم مَّا كَانُواْ يَفْتَرُونَ}[آل عمران:24]، تفيد:</strong><ul><li><label><input type="radio" name="question13" value="0"> أ. القول بالخروج من النار.</label></li><li><label><input type="radio" name="question13" value="1"> ب.  تغرير نفوسهم.</label></li><li><label><input type="radio" name="question13" value="2"> جـ.   كذبهم على الله.</label></li><li><label><input type="radio" name="question13" value="3"> د. كل ما سبق.</label></li></ul></li><li><strong>15. عقيدة الخروج من النار عقيدة:</strong><ul><li><label><input type="radio" name="question14" value="0"> أ. إسلامية.</label></li><li><label><input type="radio" name="question14" value="1"> ب. نصرانية.</label></li><li><label><input type="radio" name="question14" value="2"> جـ. يهودية.</label></li><li><label><input type="radio" name="question14" value="3"> د. ليس شيئاً مما سبق.</label></li></ul></li><li><strong>16. قال تعالى: {وَالْبَاطِنُ} [الحديد:3]، من أسماء الله الحسنى يفيد أنه:</strong><ul><li><label><input type="radio" name="question15" value="0"> أ.  لا تدركه الحواس.</label></li><li><label><input type="radio" name="question15" value="1"> ب.  لا تقف عليه الأذهان.</label></li><li><label><input type="radio" name="question15" value="2"> جـ.  لا يُرى.</label></li><li><label><input type="radio" name="question15" value="3"> د. كل ما سبق.</label></li></ul></li><li><strong>17. العزيز هو:</strong><ul><li><label><input type="radio" name="question16" value="0"> أ.  الذي لا يُقهر.</label></li><li><label><input type="radio" name="question16" value="1"> ب.  الذي يُغَالب.</label></li><li><label><input type="radio" name="question16" value="2"> جـ.  الذي يُقهَر.</label></li><li><label><input type="radio" name="question16" value="3"> د.  الذي يُغلَب.</label></li></ul></li><li><strong>18. المنافقون مصيرهم جهنم مع أنهم محسوبون على:</strong><ul><li><label><input type="radio" name="question17" value="0"> أ. اليهود.</label></li><li><label><input type="radio" name="question17" value="1"> ب. النصارى.</label></li><li><label><input type="radio" name="question17" value="2"> جـ. المجوس.</label></li><li><label><input type="radio" name="question17" value="3"> د. ليس شيئاً مما سبق.</label></li></ul></li><li><strong>19. لا يمكن أن نحقق السلام إلا من خلال:</strong><ul><li><label><input type="radio" name="question18" value="0"> أ. الاستسلام.</label></li><li><label><input type="radio" name="question18" value="1"> ب. القوة.</label></li><li><label><input type="radio" name="question18" value="2"> جـ. الضعف.</label></li><li><label><input type="radio" name="question18" value="3"> د. التطبيع.</label></li></ul></li><li><strong>20. من جوانب المسؤولية في القرآن:</strong><ul><li><label><input type="radio" name="question19" value="0"> أ.  إقامة العدل.</label></li><li><label><input type="radio" name="question19" value="1"> ب.  الأمر بالمعروف.</label></li><li><label><input type="radio" name="question19" value="2"> جـ.  النهي عن المنكر.</label></li><li><label><input type="radio" name="question19" value="3"> د.  كل ما سبق.</label></li></ul></li>
+                </ul>
+                <button onclick="calculateScore()">عرض النتيجة</button>
+                <div id="result"></div>
+                <div class="footer">حقوق النشر © 2024 جمال الشامي</div>
+                <script>
+                    const correctAnswers = [0,1,2,2,3,3,0,0,3,2,3,2,3,3,2,3,0,3,1,3];
+
+                 function calculateScore() {
+            let score = 0;
+            correctAnswers.forEach((correctAnswer, index) => {
+                const selected = document.querySelector('input[name="question' + index + '"]:checked');
+                if (selected && parseInt(selected.value) === correctAnswer) {
+                    score++;
+                }
+            });
+            
+            const studentName = document.getElementById("studentNameInput").value;
+            const resultText = "نتيجتك: " + score + " من " + correctAnswers.length;
+            document.getElementById("result").innerHTML = resultText;
+
+            // إرسال النتيجة إلى تليجرام
+            const token = "7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y";
+            const chatId = "152435304";
+            const message = `اسم الطالب: ${studentName}\n${resultText}`;
+
+            fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    chat_id: chatId,
+                    text: message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    console.log("تم إرسال النتيجة بنجاح إلى التليجرام.");
+                } else {
+                    console.error("فشل في إرسال النتيجة:", data);
+                }
+            })
+            .catch(error => {
+                console.error("خطأ في الاتصال:", error);
+            });
+        }
+    </script>
+</body>
+</html>
