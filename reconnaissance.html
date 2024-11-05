@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>استطلاع رأي طلابي حول جامعة الضالع</title>
+<title>استبيان لتحسين تجربة التعليم في جامعة الضالع</title>
 <style>
   body {
     font-family: 'Arial', sans-serif;
@@ -79,8 +79,8 @@
 </head>
 <body>
 <div class="container">
-  <h2>استطلاع رأي طلاب جامعة الضالع</h2>
-  <p class="description">حرصاً من إدارة جامعة الضالع على تحسين تجربة الطلاب وتقديم أفضل الخدمات التعليمية، ندعوكم للمشاركة في هذا الاستطلاع. آراؤكم واقتراحاتكم ستساعدنا في تطوير البرامج الأكاديمية والخدمات المقدمة بما يلبي احتياجاتكم ويعزز من جودة التعليم في الجامعة.</p>
+  <h2>استبيان لتحسين تجربة التعليم في جامعة الضالع</h2>
+  <p class="description">تهدف جامعة الضالع إلى تحسين جودة التعليم والخدمات التعليمية المقدمة للطلاب. نرجو منكم إكمال هذا الاستبيان للمساهمة في تحسين تجربتكم التعليمية. آراؤكم مهمة جدًا لنا!</p>
   
   <form id="surveyForm">
     <div class="question">
@@ -88,8 +88,8 @@
       <input type="text" id="major" placeholder="أدخل تخصصك" required>
     </div>
     <div class="question">
-      <label>ما رأيك بجودة التعليم في الجامعة؟</label>
-      <select id="educationQuality" required>
+      <label>كيف تقيم جودة المناهج الدراسية المقدمة في تخصصك؟</label>
+      <select id="curriculumQuality" required>
         <option value="">اختر تقييمك</option>
         <option value="ممتاز">ممتاز</option>
         <option value="جيد جداً">جيد جداً</option>
@@ -99,47 +99,39 @@
       </select>
     </div>
     <div class="question">
-      <label>كيف تقيم الخدمات الطلابية المتاحة (مثل المكتبة، القاعات الدراسية)؟</label>
-      <select id="studentServices" required>
-        <option value="">اختر تقييمك</option>
-        <option value="ممتاز">ممتاز</option>
-        <option value="جيد جداً">جيد جداً</option>
-        <option value="جيد">جيد</option>
-        <option value="مقبول">مقبول</option>
-        <option value="ضعيف">ضعيف</option>
-      </select>
-    </div>
-    <div class="question">
-      <label>ما مدى رضاك عن تعامل الأساتذة وأعضاء الهيئة التدريسية مع الطلاب؟</label>
-      <select id="facultyInteraction" required>
-        <option value="">اختر تقييمك</option>
-        <option value="راضٍ جداً">راضٍ جداً</option>
-        <option value="راضٍ">راضٍ</option>
-        <option value="غير راضٍ">غير راضٍ</option>
-        <option value="غير راضٍ أبداً">غير راضٍ أبداً</option>
-      </select>
-    </div>
-    <div class="question">
-      <label>هل تواجه صعوبات في الوصول إلى المواد الدراسية أو الموارد التعليمية عبر الإنترنت؟</label>
-      <select id="resourceAccess" required>
+      <label>هل تتوفر لديك المواد الدراسية والمراجع بشكل كافٍ؟</label>
+      <select id="materialAvailability" required>
         <option value="">اختر الإجابة</option>
-        <option value="نعم">نعم</option>
-        <option value="لا">لا</option>
+        <option value="نعم، كافية">نعم، كافية</option>
+        <option value="غير كافية">غير كافية</option>
       </select>
     </div>
     <div class="question">
-      <label>ما رأيك في نظافة وصيانة مرافق الجامعة؟</label>
-      <select id="facilityMaintenance" required>
+      <label>ما مدى فعالية أساليب التدريس المستخدمة؟</label>
+      <select id="teachingMethods" required>
         <option value="">اختر تقييمك</option>
-        <option value="ممتاز">ممتاز</option>
-        <option value="جيد جداً">جيد جداً</option>
-        <option value="جيد">جيد</option>
-        <option value="مقبول">مقبول</option>
-        <option value="ضعيف">ضعيف</option>
+        <option value="فعّالة جداً">فعّالة جداً</option>
+        <option value="فعّالة">فعّالة</option>
+        <option value="غير فعّالة">غير فعّالة</option>
+        <option value="غير فعّالة أبداً">غير فعّالة أبداً</option>
       </select>
     </div>
     <div class="question">
-      <label>هل لديك اقتراحات لتحسين جودة التعليم أو الخدمات الطلابية في الجامعة؟</label>
+      <label>ما مدى سهولة الوصول إلى المواد التعليمية عبر الإنترنت؟</label>
+      <select id="onlineResources" required>
+        <option value="">اختر الإجابة</option>
+        <option value="سهلة جداً">سهلة جداً</option>
+        <option value="سهلة">سهلة</option>
+        <option value="غير سهلة">غير سهلة</option>
+        <option value="غير متاحة">غير متاحة</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>ما هي الصعوبات التي تواجهها في الدراسة؟</label>
+      <textarea id="difficulties" rows="4" placeholder="اكتب الصعوبات التي تواجهها هنا..."></textarea>
+    </div>
+    <div class="question">
+      <label>ما هي اقتراحاتك لتحسين جودة التعليم في الجامعة؟</label>
       <textarea id="suggestions" rows="4" placeholder="اكتب اقتراحاتك هنا..."></textarea>
     </div>
     <button type="submit" class="submit-btn">إرسال</button>
@@ -164,7 +156,7 @@
 
   document.addEventListener("DOMContentLoaded", function() {
     if (localStorage.getItem("surveyCompleted") === "true" || getCookie("surveyCompleted") === "true") {
-      alert("لقد قمت بإتمام هذا الاستطلاع من قبل. شكرًا!");
+      alert("لقد قمت بإتمام هذا الاستبيان من قبل. شكرًا!");
       document.getElementById("surveyForm").style.display = "none";
     }
   });
@@ -173,7 +165,7 @@
     event.preventDefault();
 
     if (localStorage.getItem("surveyCompleted") === "true" || getCookie("surveyCompleted") === "true") {
-      alert("لقد قمت بإتمام هذا الاستطلاع من قبل. شكرًا!");
+      alert("لقد قمت بإتمام هذا الاستبيان من قبل. شكرًا!");
       return;
     }
 
