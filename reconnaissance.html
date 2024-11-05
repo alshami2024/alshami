@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
@@ -160,7 +160,6 @@
 </div>
 
 <script>
-  // التحقق من اكتمال الاستطلاع باستخدام ملفات تعريف الارتباط
   function setCookie(name, value, days) {
     let date = new Date();
     date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
@@ -176,19 +175,23 @@
     return "";
   }
 
-  // تحقق ما إذا كان المستخدم قد أكمل الاستطلاع
   document.addEventListener("DOMContentLoaded", function() {
-    if (localStorage.getItem("surveyCompleted") || getCookie("surveyCompleted") === "true") {
+    const surveyCompletedLocal = localStorage.getItem("surveyCompleted");
+    const surveyCompletedCookie = getCookie("surveyCompleted");
+
+    if (surveyCompletedLocal === "true" || surveyCompletedCookie === "true") {
       alert("لقد قمت بإتمام هذا الاستطلاع من قبل. شكرًا!");
       document.getElementById("surveyForm").style.display = "none";
     }
   });
 
-  // إرسال الاستطلاع
   document.getElementById("surveyForm").addEventListener("submit", function(event) {
     event.preventDefault();
 
-    if (localStorage.getItem("surveyCompleted") || getCookie("surveyCompleted") === "true") {
+    const surveyCompletedLocal = localStorage.getItem("surveyCompleted");
+    const surveyCompletedCookie = getCookie("surveyCompleted");
+
+    if (surveyCompletedLocal === "true" || surveyCompletedCookie === "true") {
       alert("لقد قمت بإتمام هذا الاستطلاع من قبل. شكرًا!");
       return;
     }
@@ -203,8 +206,8 @@
     const challenges = document.getElementById("challenges").value;
     const suggestions = document.getElementById("suggestions").value;
 
-    const telegramBotToken = "YOUR_TELEGRAM_BOT_TOKEN";
-    const chatId = "YOUR_CHAT_ID";
+    const telegramBotToken = "7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y";
+    const chatId = "152435304";
     const message = `
       استطلاع جامعة الضالع:
       تخصص: ${major}
