@@ -87,7 +87,61 @@
       <label>ما هو تخصصك الدراسي؟</label>
       <input type="text" id="major" placeholder="أدخل تخصصك" required>
     </div>
-    <!-- أسئلة إضافية -->
+    <div class="question">
+      <label>ما رأيك بجودة التعليم في الجامعة؟</label>
+      <select id="educationQuality" required>
+        <option value="">اختر تقييمك</option>
+        <option value="ممتاز">ممتاز</option>
+        <option value="جيد جداً">جيد جداً</option>
+        <option value="جيد">جيد</option>
+        <option value="مقبول">مقبول</option>
+        <option value="ضعيف">ضعيف</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>كيف تقيم الخدمات الطلابية المتاحة (مثل المكتبة، القاعات الدراسية)؟</label>
+      <select id="studentServices" required>
+        <option value="">اختر تقييمك</option>
+        <option value="ممتاز">ممتاز</option>
+        <option value="جيد جداً">جيد جداً</option>
+        <option value="جيد">جيد</option>
+        <option value="مقبول">مقبول</option>
+        <option value="ضعيف">ضعيف</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>ما مدى رضاك عن تعامل الأساتذة وأعضاء الهيئة التدريسية مع الطلاب؟</label>
+      <select id="facultyInteraction" required>
+        <option value="">اختر تقييمك</option>
+        <option value="راضٍ جداً">راضٍ جداً</option>
+        <option value="راضٍ">راضٍ</option>
+        <option value="غير راضٍ">غير راضٍ</option>
+        <option value="غير راضٍ أبداً">غير راضٍ أبداً</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>هل تواجه صعوبات في الوصول إلى المواد الدراسية أو الموارد التعليمية عبر الإنترنت؟</label>
+      <select id="resourceAccess" required>
+        <option value="">اختر الإجابة</option>
+        <option value="نعم">نعم</option>
+        <option value="لا">لا</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>ما رأيك في نظافة وصيانة مرافق الجامعة؟</label>
+      <select id="facilityMaintenance" required>
+        <option value="">اختر تقييمك</option>
+        <option value="ممتاز">ممتاز</option>
+        <option value="جيد جداً">جيد جداً</option>
+        <option value="جيد">جيد</option>
+        <option value="مقبول">مقبول</option>
+        <option value="ضعيف">ضعيف</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>هل لديك اقتراحات لتحسين جودة التعليم أو الخدمات الطلابية في الجامعة؟</label>
+      <textarea id="suggestions" rows="4" placeholder="اكتب اقتراحاتك هنا..."></textarea>
+    </div>
     <button type="submit" class="submit-btn">إرسال</button>
   </form>
 </div>
