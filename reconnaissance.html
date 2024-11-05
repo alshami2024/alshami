@@ -1,0 +1,246 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>استطلاع رأي طلابي حول جامعة الضالع</title>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://www.transparenttextures.com/patterns/purty-wood.png');
+    background-color: #f0f4f8;
+    color: #333;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+  }
+  .container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  h2 {
+    color: #0056b3;
+    text-align: center;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+  }
+  .description {
+    text-align: center;
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;
+  }
+  .question {
+    margin-bottom: 25px;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  select, input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    text-align: right;
+  }
+  .submit-btn {
+    background-color: #0056b3;
+    color: #ffffff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+  }
+  .submit-btn:hover {
+    background-color: #004494;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h2>استطلاع رأي طلاب جامعة الضالع</h2>
+  <p class="description">حرصاً من إدارة جامعة الضالع على تحسين تجربة الطلاب وتقديم أفضل الخدمات التعليمية، ندعوكم للمشاركة في هذا الاستطلاع. آراؤكم واقتراحاتكم ستساعدنا في تطوير البرامج الأكاديمية والخدمات المقدمة بما يلبي احتياجاتكم ويعزز من جودة التعليم في الجامعة.</p>
+  
+  <form id="surveyForm">
+    <div class="question">
+      <label>ما هو تخصصك الدراسي؟</label>
+      <input type="text" id="major" placeholder="أدخل تخصصك" required>
+    </div>
+    <div class="question">
+      <label>في أي سنة دراسية أنت الآن؟</label>
+      <select id="year" required>
+        <option value="">اختر السنة</option>
+        <option value="السنة الأولى">السنة الأولى</option>
+        <option value="السنة الثانية">السنة الثانية</option>
+        <option value="السنة الثالثة">السنة الثالثة</option>
+        <option value="السنة الرابعة">السنة الرابعة</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>كيف تقيم جودة التعليم في الجامعة بشكل عام؟</label>
+      <select id="educationQuality" required>
+        <option value="">اختر تقييمك</option>
+        <option value="ممتاز">ممتاز</option>
+        <option value="جيد جدًا">جيد جدًا</option>
+        <option value="جيد">جيد</option>
+        <option value="مقبول">مقبول</option>
+        <option value="ضعيف">ضعيف</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>هل تجد أن المناهج الدراسية تلبي احتياجات سوق العمل؟</label>
+      <select id="curriculum" required>
+        <option value="">اختر إجابتك</option>
+        <option value="نعم، إلى حد كبير">نعم، إلى حد كبير</option>
+        <option value="إلى حد ما">إلى حد ما</option>
+        <option value="لا، ليست كافية">لا، ليست كافية</option>
+        <option value="لا أعلم">لا أعلم</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>ما مدى رضاك عن الخدمات التي تقدمها الجامعة (مثل المكتبة، المختبرات، القاعات الدراسية)؟</label>
+      <select id="servicesSatisfaction" required>
+        <option value="">اختر تقييمك</option>
+        <option value="راضٍ جدًا">راضٍ جدًا</option>
+        <option value="راضٍ">راضٍ</option>
+        <option value="غير راضٍ">غير راضٍ</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>هل تشعر أن الجامعة تهتم بتطوير مهاراتك الشخصية والعملية؟</label>
+      <select id="skillDevelopment" required>
+        <option value="">اختر إجابتك</option>
+        <option value="نعم، تهتم جدًا">نعم، تهتم جدًا</option>
+        <option value="تهتم بشكل متوسط">تهتم بشكل متوسط</option>
+        <option value="تهتم بشكل ضعيف">تهتم بشكل ضعيف</option>
+        <option value="لا تهتم">لا تهتم</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>ما هو تقييمك لدور الأنشطة الطلابية في إثراء تجربتك الجامعية؟</label>
+      <select id="activitiesRole" required>
+        <option value="">اختر تقييمك</option>
+        <option value="فعال جدًا">فعال جدًا</option>
+        <option value="فعال">فعال</option>
+        <option value="غير فعال">غير فعال</option>
+        <option value="لا توجد أنشطة كافية">لا توجد أنشطة كافية</option>
+      </select>
+    </div>
+    <div class="question">
+      <label>ما هي أبرز التحديات التي تواجهك كطالب في الجامعة؟</label>
+      <textarea id="challenges" rows="3" placeholder="اذكر التحديات هنا" required></textarea>
+    </div>
+    <div class="question">
+      <label>هل لديك اقتراحات لتحسين البيئة الجامعية؟</label>
+      <textarea id="suggestions" rows="3" placeholder="اكتب اقتراحاتك هنا" required></textarea>
+    </div>
+    <button type="submit" class="submit-btn">إرسال</button>
+  </form>
+</div>
+
+<script>
+  // التحقق من اكتمال الاستطلاع باستخدام ملفات تعريف الارتباط
+  function setCookie(name, value, days) {
+    let date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    document.cookie = name + "=" + value + ";expires=" + date.toUTCString() + ";path=/";
+  }
+
+  function getCookie(name) {
+    let cookies = document.cookie.split(';');
+    for (let i = 0; i < cookies.length; i++) {
+      let c = cookies[i].trim();
+      if (c.indexOf(name + "=") === 0) return c.substring(name.length + 1, c.length);
+    }
+    return "";
+  }
+
+  // تحقق ما إذا كان المستخدم قد أكمل الاستطلاع
+  document.addEventListener("DOMContentLoaded", function() {
+    if (localStorage.getItem("surveyCompleted") || getCookie("surveyCompleted") === "true") {
+      alert("لقد قمت بإتمام هذا الاستطلاع من قبل. شكرًا!");
+      document.getElementById("surveyForm").style.display = "none";
+    }
+  });
+
+  // إرسال الاستطلاع
+  document.getElementById("surveyForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    if (localStorage.getItem("surveyCompleted") || getCookie("surveyCompleted") === "true") {
+      alert("لقد قمت بإتمام هذا الاستطلاع من قبل. شكرًا!");
+      return;
+    }
+
+    const major = document.getElementById("major").value;
+    const year = document.getElementById("year").value;
+    const educationQuality = document.getElementById("educationQuality").value;
+    const curriculum = document.getElementById("curriculum").value;
+    const servicesSatisfaction = document.getElementById("servicesSatisfaction").value;
+    const skillDevelopment = document.getElementById("skillDevelopment").value;
+    const activitiesRole = document.getElementById("activitiesRole").value;
+    const challenges = document.getElementById("challenges").value;
+    const suggestions = document.getElementById("suggestions").value;
+
+    const telegramBotToken = "YOUR_TELEGRAM_BOT_TOKEN";
+    const chatId = "YOUR_CHAT_ID";
+    const message = `
+      استطلاع جامعة الضالع:
+      تخصص: ${major}
+      السنة: ${year}
+      جودة التعليم: ${educationQuality}
+      توافق المناهج مع سوق العمل: ${curriculum}
+      رضاك عن الخدمات: ${servicesSatisfaction}
+      اهتمام الجامعة بتطوير المهارات: ${skillDevelopment}
+      دور الأنشطة الطلابية: ${activitiesRole}
+      التحديات: ${challenges}
+      الاقتراحات: ${suggestions}
+    `;
+
+    fetch(`https://api.telegram.org/bot${telegramBotToken}/sendMessage`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        chat_id: chatId,
+        text: message
+      })
+    })
+    .then(response => {
+      if (response.ok) {
+        alert("تم إرسال الاستطلاع بنجاح. شكرًا لمشاركتك!");
+        localStorage.setItem("surveyCompleted", "true");
+        setCookie("surveyCompleted", "true", 365);
+        document.getElementById("surveyForm").reset();
+      } else {
+        alert("حدث خطأ أثناء الإرسال. يرجى المحاولة لاحقًا.");
+      }
+    })
+    .catch(error => {
+      alert("حدث خطأ أثناء الإرسال. يرجى المحاولة لاحقًا.");
+      console.error("Error:", error);
+    });
+  });
+</script>
+</body>
+</html>
