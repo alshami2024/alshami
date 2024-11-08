@@ -4,73 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>محول التواريخ - ميلادي، هجري، وإسكندري</title>
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap">
     <style>
-        body {
-            background: linear-gradient(to right, #4e54c8, #8f94fb);
-            font-family: 'Arial', sans-serif;
-            color: #fff;
-            text-align: center;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
-        .container {
-            margin: 50px auto;
+        body {
+            background: linear-gradient(to bottom right, #3a6073, #16222A);
+            font-family: 'Cairo', sans-serif;
+            color: #f3f3f3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             padding: 20px;
+        }
+        .container {
             max-width: 600px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-        }
-
-        input, button {
             width: 100%;
-            margin: 10px 0;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            font-size: 18px;
+            padding: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+            text-align: center;
+            backdrop-filter: blur(10px);
+            animation: fadeIn 1.5s ease-in-out;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            overflow: hidden;
         }
-
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffdf5d;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        label {
+            font-size: 1.1em;
+            display: block;
+            margin-top: 20px;
+            color: #ffdf5d;
+            text-align: right;
+        }
+        input[type="date"],
+        input[type="number"],
+        select, 
+        button {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 8px;
+            font-size: 1em;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+        input, select {
+            background-color: #ffffff;
+            color: #333;
+        }
         button {
             background-color: #ff6b6b;
             color: #fff;
             cursor: pointer;
-            transition: background 0.3s;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-
         button:hover {
             background-color: #ff4757;
+            transform: translateY(-3px);
         }
-
-        h1, h3 {
-            margin-bottom: 20px;
+        button:active {
+            transform: scale(0.98);
         }
-
-        .result p {
-            font-size: 20px;
-            margin: 10px 0;
+        .result {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #ffffff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            padding-top: 20px;
         }
-
+        .result h3 {
+            font-size: 1.4em;
+            margin-bottom: 15px;
+            color: #ffdf5d;
+        }
         footer {
             margin-top: 20px;
             padding: 10px 0;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: #fff;
-            font-size: 14px;
+            font-size: 0.9em;
+            color: #ffdf5d;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .icon {
+            width: 20px;
+            height: 20px;
+            vertical-align: middle;
+            margin-left: 5px;
         }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/moment-hijri@2.1.0/moment-hijri.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/ar.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <h1>محول التواريخ - ميلادي، هجري، وإسكندري</h1>
+        <h1>محول التواريخ</h1>
 
-        <label for="inputDate">:أدخل التاريخ (ميلادي)</label>
+        <label for="inputDate">:أدخل التاريخ الميلادي</label>
         <input type="date" id="inputDate" />
 
-        <label for="hijriDate">أدخل التاريخ (هجري - سنة - شهر- يوم):</label>
-        <input type="text" id="hijriDate" placeholder="مثال: 1445-10-01" />
+        <label>:أدخل التاريخ الهجري</label>
+        <div style="display: flex; gap: 5px;">
+            <select id="hijriYear"><option value="">اختر السنة</option></select>
+            <select id="hijriMonth"><option value="">اختر الشهر</option></select>
+            <select id="hijriDay"><option value="">اختر اليوم</option></select>
+        </div>
 
         <label for="alexanderYear">:أدخل السنة في تقويم الإسكندر</label>
         <input type="number" id="alexanderYear" placeholder="سنة إسكندر" />
@@ -90,73 +146,94 @@
         copyright © Jamal-Alshami
     </footer>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Moment.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-
-    <!-- Moment-Hijri -->
-    <script src="https://cdn.jsdelivr.net/npm/moment-hijri@2.1.2/moment-hijri.min.js"></script>
-
-    <!-- Inputmask -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
-
     <script>
-        $(document).ready(function () {
-            const hijriMonths = ["محرم", "صفر", "ربيع الأول", "ربيع الثاني", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"];
+        document.addEventListener("DOMContentLoaded", function() {
+            moment.locale('ar'); 
+            const hijriMonths = ["محرم", "صفر", "ربيع الأول", "ربيع الآخر", "جمادى الأولى", "جمادى الآخرة", "رجب", "شعبان", "رمضان", "شوال", "ذو القعدة", "ذو الحجة"];
+            
+            const hijriYearSelect = document.getElementById("hijriYear");
+            const hijriMonthSelect = document.getElementById("hijriMonth");
+            const hijriDaySelect = document.getElementById("hijriDay");
 
-            $("#hijriDate").inputmask("9999-99-99", { 
-                placeholder: "YYYY-MM-DD", 
-                clearIncomplete: true 
-            });
-
-            $("#convertButton").on("click", function () {
-                try {
-                    const inputDate = $("#inputDate").val();
-                    const hijriDate = $("#hijriDate").val();
-                    const alexanderYear = $("#alexanderYear").val();
-
-                    if (inputDate) {
-                        const hijri = moment(inputDate, 'YYYY-MM-DD').format('iYYYY-iMM-iDD');
-                        const alexander = parseInt(inputDate.split('-')[0]) + 356;
-                        const yearsSinceElephant = calculateYearsSinceElephant(inputDate);
-                        displayResults(inputDate, hijri, alexander, yearsSinceElephant);
-                    } else if (hijriDate) {
-                        const gregorian = moment(hijriDate, 'iYYYY-iMM-iDD').format('YYYY-MM-DD');
-                        const alexander = parseInt(gregorian.split('-')[0]) + 356;
-                        const yearsSinceElephant = calculateYearsSinceElephant(gregorian);
-                        displayResults(gregorian, hijriDate, alexander, yearsSinceElephant);
-                    } else if (alexanderYear) {
-                        const gregorianYear = alexanderYear - 356;
-                        const gregorianDate = `${gregorianYear}-01-01`;
-                        const hijri = moment(gregorianDate, 'YYYY-MM-DD').format('iYYYY-iMM-iDD');
-                        const yearsSinceElephant = calculateYearsSinceElephant(gregorianDate);
-                        displayResults(gregorianDate, hijri, alexanderYear, yearsSinceElephant);
-                    } else {
-                        alert("الرجاء إدخال تاريخ صالح.");
-                    }
-                } catch (error) {
-                    alert("حدث خطأ أثناء التحويل. تحقق من البيانات المدخلة.");
-                    console.error(error);
-                }
-            });
-
-            function calculateYearsSinceElephant(gregorianDate) {
-                const yearOfElephant = 570; // عام الفيل
-                const inputYear = parseInt(gregorianDate.split('-')[0]);
-                return inputYear - yearOfElephant;
+            for (let year = 1446; year >= 1; year--) {
+                let option = document.createElement("option");
+                option.value = year;
+                option.textContent = year;
+                hijriYearSelect.appendChild(option);
             }
 
-            function displayResults(gregorian, hijri, alexander, yearsSinceElephant) {
-                const hijriParts = hijri.split('-');
-                const hijriMonthName = hijriMonths[parseInt(hijriParts[1]) - 1];
-                const hijriDateWithMonthName = `${hijriParts[0]}-${hijriMonthName}-${hijriParts[2]}`;
+            hijriMonths.forEach((month, index) => {
+                let option = document.createElement("option");
+                option.value = index + 1;
+                option.textContent = month;
+                hijriMonthSelect.appendChild(option);
+            });
 
-                $("#gregorianResult").text(`التاريخ الميلادي: ${gregorian}`);
-                $("#hijriResult").text(`التاريخ الهجري: ${hijriDateWithMonthName}`);
-                $("#alexanderResult").text(`سنة الإسكندر المقدوني: ${alexander}`);
-                $("#yearOfElephantResult").text(`عدد السنوات منذ عام الفيل: ${yearsSinceElephant} سنة`);
+            function updateHijriDays() {
+                hijriDaySelect.innerHTML = "<option value=''>اختر اليوم</option>";
+                const selectedMonth = parseInt(hijriMonthSelect.value);
+                let daysInMonth;
+                if ([1, 3, 5, 7, 9, 11].includes(selectedMonth)) {
+                    daysInMonth = 30;
+                } else {
+                    daysInMonth = 29;
+                }
+
+                for (let day = 1; day <= daysInMonth; day++) {
+                    const option = document.createElement("option");
+                    option.value = day;
+                    option.textContent = day;
+                    hijriDaySelect.appendChild(option);
+                }
+            }
+
+            hijriYearSelect.addEventListener("change", updateHijriDays);
+            hijriMonthSelect.addEventListener("change", updateHijriDays);
+            updateHijriDays();
+
+            document.getElementById("convertButton").onclick = function() {
+                const inputDate = document.getElementById("inputDate").value;
+                const hijriYear = hijriYearSelect.value;
+                const hijriMonth = hijriMonthSelect.value;
+                const hijriDay = hijriDaySelect.value;
+                const alexanderYear = document.getElementById("alexanderYear").value;
+
+                if (inputDate) {
+                    const gregorianDate = moment(inputDate);
+                    const hijriYearConverted = gregorianDate.iYear();
+                    const hijriMonthConverted = hijriMonths[gregorianDate.iMonth()];
+                    const hijriDayConverted = gregorianDate.iDate();
+                    const hijriDate = `${hijriDayConverted} ${hijriMonthConverted} ${hijriYearConverted}`;
+                    const alexander = gregorianDate.year() + 356;
+                    const yearsSinceElephant = gregorianDate.year() - 570;
+                    displayResults(inputDate, hijriDate, alexander, yearsSinceElephant);
+                } else if (hijriYear && hijriMonth && hijriDay) {
+                    const hijriDateStr = `${hijriYear}-${hijriMonth}-${hijriDay}`;
+                    const gregorianDate = moment(hijriDateStr, 'iYYYY-iM-iD').format('YYYY-MM-DD');
+                    const alexander = moment(gregorianDate).year() + 356;
+                    const yearsSinceElephant = moment(gregorianDate).year() - 570;
+                    displayResults(gregorianDate, hijriDateStr, alexander, yearsSinceElephant);
+                } else if (alexanderYear) {
+                    const gregorianYear = alexanderYear - 356;
+                    const gregorianDate = `${gregorianYear}-01-01`;
+                    const hijriYearConverted = moment(gregorianDate).iYear();
+                    const hijriMonthConverted = hijriMonths[moment(gregorianDate).iMonth()];
+                    const hijriDayConverted = moment(gregorianDate).iDate();
+                    const hijriDate = `${hijriDayConverted} ${hijriMonthConverted} ${hijriYearConverted}`;
+                    const yearsSinceElephant = gregorianYear - 570;
+                    displayResults(gregorianDate, hijriDate, alexanderYear, yearsSinceElephant);
+                } else {
+                    alert("الرجاء إدخال تاريخ صالح.");
+                }
+            };
+
+            function displayResults(gregorian, hijri, alexander, yearsSinceElephant) {
+                const gregorianDate = moment(gregorian).format('dddd, D MMMM YYYY'); 
+
+                document.getElementById("gregorianResult").innerText = `التاريخ الميلادي: ${gregorianDate}`;
+                document.getElementById("hijriResult").innerText = `التاريخ الهجري: ${hijri}`;
+                document.getElementById("alexanderResult").innerText = `سنة الإسكندر المقدوني: ${alexander}`;
+                document.getElementById("yearOfElephantResult").innerText = `عدد السنوات منذ عام الفيل: ${yearsSinceElephant} سنة`;
             }
         });
     </script>
