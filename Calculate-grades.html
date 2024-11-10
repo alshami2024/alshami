@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> حساب نتائج الطلاب</title>
+  <style>
+    /* إعدادات الجسم الأساسية */
+    body {
+      direction: rtl;
+      font-family: 'Arial', sans-serif;
+      background-color: #e8f0fe; /* لون هادئ للخلفية */
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      color: #3b5998; /* لون هادئ للعنوان */
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* تنسيق الجدول */
+    table {
+      width: 100%;
+      max-width: 100%;
+      border-collapse: collapse;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+      font-size: 12px;
+    }
+
+    /* ضبط عرض عمود اسم الطالب */
+    th:first-child, td:first-child {
+      width: 120px;
+      white-space: nowrap;
+      text-align: right;
+    }
+
+    th {
+      background-color: #87ceeb; /* لون أزرق فاتح للأعمدة */
+      color: #333;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f5faff; /* لون خفيف لصفوف الجدول */
+    }
+
+    tr:hover {
+      background-color: #d3eafc; /* لون تظليل خفيف عند التمرير */
+    }
+
+    button, input[type="text"] {
+      padding: 10px;
+      margin: 5px;
+      font-size: 14px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      max-width: 200px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #3b5998; /* لون هادئ للأزرار */
+      color: #fff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #2a4373; /* لون تظليل للأزرار عند التمرير */
+    }
+
+    input[type="text"] {
+      border: 1px solid #ddd;
+      transition: box-shadow 0.3s ease;
+    }
+
+    input[type="text"]:focus {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+      outline: none;
+    }
+
+    /* إعدادات الطباعة */
+    @media print {
+      body * {
+        visibility: hidden; /* إخفاء كل العناصر */
+      }
+      table, table * {
+        visibility: visible; /* إظهار الجدول فقط */
+      }
+      table {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 6px;
+        font-size: 10px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      button, input[type="text"] {
+        font-size: 12px;
+        max-width: 100%;
+        padding: 8px;
+      }
+    }
+
+    /* حقوق الطبع والنشر */
+    .footer {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h2> حساب نتائج الطلاب</h2>
+
+  <input type="text" id="studentNameInput" placeholder="أدخل اسم الطالب">
+  <button onclick="addStudent()">إضافة طالب جديد</button>
+
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>اسم الطالب</th>
+        <th>المادة 1</th>
+        <th>المادة 2</th>
+        <th>المادة 3</th>
+        <th>المادة 4</th>
+        <th>المادة 5</th>
+        <th>المادة 6</th>
+        <th>المادة 7</th>
+        <th>المادة 8</th>
+        <th>المجموع</th>
+        <th>النسبة المئوية</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td contenteditable="true">الطالب 1</td>
+        <td contenteditable="true">0</td>
+        <td contenteditable="true">0</td>
+        <td contenteditable="true">0</td>
+        <td contenteditable="true">0</td>
+        <td contenteditable="true">0</td>
+        <td contenteditable="true">0</td>
+        <td contenteditable="true">0</td>
+        <td contenteditable="true">0</td>
+        <td>0</td>
+        <td>0%</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <button onclick="calculateTotals()">احسب النتائج</button>
+  <button onclick="sortResults()">ترتيب النتائج</button>
+  <button onclick="printTable()">طباعة النتائج</button>
+
+  <script>
+    function calculateTotals() {
+      const table = document.getElementById("resultsTable");
+
+      for (let i = 1; i < table.rows.length; i++) {
+        let total = 0;
+        let subjectCount = 0;
+
+        // حساب مجموع الدرجات وعدد المواد التي تحتوي على درجة فعلية لكل طالب
+        for (let j = 1; j <= 8; j++) {
+          const score = parseFloat(table.rows[i].cells[j].innerText) || 0;
+          if (score > 0) {
+            subjectCount++;
+          }
+          total += score;
+        }
+        table.rows[i].cells[9].innerText = total;
+
+        // حساب النسبة المئوية بناءً على عدد المواد التي تحتوي على درجات
+        if (subjectCount > 0) {
+          const percentage = (total / (subjectCount * 100)) * 100;
+          table.rows[i].cells[10].innerText = percentage.toFixed(2) + "%";
+        } else {
+          table.rows[i].cells[10].innerText = "0%";
+        }
+      }
+    }
+
+    function sortResults() {
+      const table = document.getElementById("resultsTable");
+      const rows = Array.from(table.rows).slice(1);
+
+      rows.sort((a, b) => {
+        const totalA = parseFloat(a.cells[9].innerText) || 0;
+        const totalB = parseFloat(b.cells[9].innerText) || 0;
+        return totalB - totalA;
+      });
+
+      rows.forEach(row => table.appendChild(row));
+    }
+
+    function addStudent() {
+      const table = document.getElementById("resultsTable").getElementsByTagName('tbody')[0];
+      const studentName = document.getElementById("studentNameInput").value.trim();
+
+      if (studentName === "") {
+        alert("يرجى إدخال اسم الطالب");
+        return;
+      }
+
+      const newRow = table.insertRow();
+      
+      // إنشاء خلية لاسم الطالب وجعلها قابلة للتعديل
+      const nameCell = newRow.insertCell(0);
+      nameCell.contentEditable = "true";
+      nameCell.innerText = studentName;
+
+      // إنشاء خلايا درجات المواد وجعلها قابلة للتعديل
+      for (let i = 1; i <= 8; i++) {
+        const cell = newRow.insertCell(i);
+        cell.contentEditable = "true";
+        cell.innerText = "0";
+      }
+
+      // إنشاء خلية المجموع
+      const totalCell = newRow.insertCell(9);
+      totalCell.innerText = "0";
+
+      // إنشاء خلية النسبة المئوية
+      const percentageCell = newRow.insertCell(10);
+      percentageCell.innerText = "0%";
+
+      // تفريغ حقل الإدخال بعد إضافة الطالب
+      document.getElementById("studentNameInput").value = "";
+    }
+
+    function printTable() {
+      window.print();
+    }
+  </script>
+
+  <div class="footer">
+    &copy; Jamal-Alshami
+  </div>
+
+</body>
+</html>
