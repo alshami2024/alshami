@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>حساب نتائج الطلاب</title>
+  <title> حساب نتائج الطلاب</title>
   <style>
+    /* إعدادات الجسم الأساسية */
     body {
       direction: rtl;
       font-family: 'Arial', sans-serif;
-      background-color: #e8f0fe;
+      background-color: #e8f0fe; /* لون هادئ للخلفية */
       color: #333;
       display: flex;
       justify-content: center;
@@ -21,11 +22,12 @@
     }
 
     h2 {
-      color: #3b5998;
+      color: #3b5998; /* لون هادئ للعنوان */
       margin-bottom: 20px;
       text-align: center;
     }
 
+    /* تنسيق الجدول */
     table {
       width: 100%;
       max-width: 100%;
@@ -44,18 +46,25 @@
       font-size: 12px;
     }
 
+    /* ضبط عرض عمود اسم الطالب */
+    th:first-child, td:first-child {
+      width: 120px;
+      white-space: nowrap;
+      text-align: right;
+    }
+
     th {
-      background-color: #87ceeb;
+      background-color: #87ceeb; /* لون أزرق فاتح للأعمدة */
       color: #333;
       font-weight: bold;
     }
 
     tr:nth-child(even) {
-      background-color: #f5faff;
+      background-color: #f5faff; /* لون خفيف لصفوف الجدول */
     }
 
     tr:hover {
-      background-color: #d3eafc;
+      background-color: #d3eafc; /* لون تظليل خفيف عند التمرير */
     }
 
     button, input[type="text"] {
@@ -70,14 +79,14 @@
     }
 
     button {
-      background-color: #3b5998;
+      background-color: #3b5998; /* لون هادئ للأزرار */
       color: #fff;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #2a4373;
+      background-color: #2a4373; /* لون تظليل للأزرار عند التمرير */
     }
 
     input[type="text"] {
@@ -90,17 +99,50 @@
       outline: none;
     }
 
+    /* إعدادات الطباعة */
+    @media print {
+      body * {
+        visibility: hidden; /* إخفاء كل العناصر */
+      }
+      table, table * {
+        visibility: visible; /* إظهار الجدول فقط */
+      }
+      table {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      th, td {
+        padding: 6px;
+        font-size: 10px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      button, input[type="text"] {
+        font-size: 12px;
+        max-width: 100%;
+        padding: 8px;
+      }
+    }
+
+    /* حقوق الطبع والنشر */
     .footer {
       margin-top: 20px;
       font-size: 12px;
       color: #888;
-      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <h2>حساب نتائج الطلاب</h2>
+  <h2> حساب نتائج الطلاب</h2>
 
   <input type="text" id="studentNameInput" placeholder="أدخل اسم الطالب">
   <button onclick="addStudent()">إضافة طالب جديد</button>
@@ -150,6 +192,7 @@
         let total = 0;
         let subjectCount = 0;
 
+        // حساب مجموع الدرجات وعدد المواد التي تحتوي على درجة فعلية لكل طالب
         for (let j = 1; j <= 8; j++) {
           const score = parseFloat(table.rows[i].cells[j].innerText) || 0;
           if (score > 0) {
@@ -159,6 +202,7 @@
         }
         table.rows[i].cells[9].innerText = total;
 
+        // حساب النسبة المئوية بناءً على عدد المواد التي تحتوي على درجات
         if (subjectCount > 0) {
           const percentage = (total / (subjectCount * 100)) * 100;
           table.rows[i].cells[10].innerText = percentage.toFixed(2) + "%";
@@ -191,42 +235,34 @@
       }
 
       const newRow = table.insertRow();
-
+      
+      // إنشاء خلية لاسم الطالب وجعلها قابلة للتعديل
       const nameCell = newRow.insertCell(0);
       nameCell.contentEditable = "true";
       nameCell.innerText = studentName;
 
+      // إنشاء خلايا درجات المواد وجعلها قابلة للتعديل
       for (let i = 1; i <= 8; i++) {
         const cell = newRow.insertCell(i);
         cell.contentEditable = "true";
         cell.innerText = "0";
       }
 
+      // إنشاء خلية المجموع
       const totalCell = newRow.insertCell(9);
       totalCell.innerText = "0";
 
+      // إنشاء خلية النسبة المئوية
       const percentageCell = newRow.insertCell(10);
       percentageCell.innerText = "0%";
 
+      // تفريغ حقل الإدخال بعد إضافة الطالب
       document.getElementById("studentNameInput").value = "";
     }
 
     function printTable() {
       window.print();
     }
-
-    // عداد مرات فتح الصفحة باستخدام localStorage
-    let pageVisitCount = localStorage.getItem('pageVisitCount') || 0;
-    pageVisitCount++;
-    localStorage.setItem('pageVisitCount', pageVisitCount);
-
-    // عرض العداد أسفل الصفحة
-    document.addEventListener("DOMContentLoaded", () => {
-      const footer = document.querySelector('.footer');
-      const visitCounter = document.createElement('div');
-      visitCounter.innerText = `عدد مرات فتح الصفحة: ${pageVisitCount}`;
-      footer.appendChild(visitCounter);
-    });
   </script>
 
   <div class="footer">
