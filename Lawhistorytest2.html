@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امتحان مادة تاريخ وفلسفة القانون</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            direction: rtl;
+        }
+        .container {
+            width: 80%;
+            margin: 30px auto;
+            background-color: #ffffff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+            position: relative;
+        }
+        header h1 {
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            color: #777;
+        }
+        .header-info {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: space-between;
+            font-size: 18px;
+            color: #444;
+            padding: 10px 20px;
+        }
+        .questions {
+            list-style-type: none;
+            padding: 0;
+        }
+        .questions li {
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .question-box {
+            margin: 15px 0;
+        }
+        textarea {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            resize: vertical;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+        .countdown {
+            text-align: center;
+            font-size: 24px;
+            color: #d9534f;
+            margin: 20px 0;
+        }
+        .footer a {
+            text-decoration: none;
+            color: #3498db;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .start-screen {
+            text-align: center;
+            display: block;
+        }
+        .start-screen input {
+            padding: 10px;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 80%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .start-screen button {
+            padding: 15px;
+            background-color: #3498db;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .start-screen button:hover {
+            background-color: #2980b9;
+        }
+        .questions-section {
+            display: none;
+        }
+        .completed-screen {
+            display: none;
+            text-align: center;
+        }
+        .completed-screen p {
+            font-size: 24px;
+            color: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <div class="header-info">
+                <span>جامعة الضالع</span>
+                <span>كلية الحقوق</span>
+            </div>
+            <h1>امتحان مادة تاريخ وفلسفة القانون</h1>
+            <p>زمن الإجابة: ساعة واحدة</p>
+        </header>
+
+        <div class="countdown" id="countdown"></div>
+
+        <!-- Start Screen -->
+        <div class="start-screen">
+            <h2>الرجاء إدخال اسمك للبدء</h2>
+            <input type="text" id="studentName" placeholder="أدخل اسمك هنا..." />
+            <button id="startBtn">ابدأ الامتحان</button>
+        </div>
+
+        <!-- Exam Questions Section -->
+        <form action="" method="post" class="questions-section" id="examForm">
+            <input type="hidden" name="studentName" id="studentNameInput">
+            <ol class="questions">
+                <li>
+                    1. كيف يمكن تفسير العلاقة بين تطور النظم القانونية عبر العصور وعوامل النجاح والإخفاق التي رافقتها في ضوء تاريخ وفلسفة القانون؟
+                    <div class="question-box">
+                        <textarea name="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
+                    </div>
+                </li>
+                <li>
+                    2. ناقش تطور فكرة المسؤولية القانونية في مراحل نشوء القانون، وكيف انعكست المراحل المختلفة (الانتقام الفردي، التقاليد الدينية، التقاليد العرفية) على فهمنا لمسؤولية الأفراد في المجتمع؟
+                    <div class="question-box">
+                        <textarea name="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
+                    </div>
+                </li>
+                <li>
+                    3. كيف يساهم فهم العلاقة بين القانون والأخلاق في تفسير تباين المواقف القانونية تجاه الممارسات الاجتماعية المتغيرة في مختلف الحضارات، مثل الممارسات الاجتماعية في اليمن القديمة؟
+                    <div class="question-box">
+                        <textarea name="answer3" placeholder="أدخل إجابتك هنا..."></textarea>
+                    </div>
+                </li>
+                <li>
+                    4. في ضوء المدارس القانونية المختلفة مثل المدرسة التاريخية في ألمانيا، كيف يمكن تطبيق المنهج المقارن لدراسة تاريخ القانون على الحضارات القديمة مثل حضارة ما بين النهرين أو مصر الفرعونية؟
+                    <div class="question-box">
+                        <textarea name="answer4" placeholder="أدخل إجابتك هنا..."></textarea>
+                    </div>
+                </li>
+                <li>
+                    5. ناقش الفرق بين الرؤية الدينية (القرآنية) والرؤية الوضعية في تفسير نشوء القانون، مع التركيز على التطور في مراحل الفطرة، التشريع، والإمامة، وكيف ساهمت هذه المراحل في بناء الدولة القانونية في الإسلام؟
+                    <div class="question-box">
+                        <textarea name="answer5" placeholder="أدخل إجابتك هنا..."></textarea>
+                    </div>
+                </li>
+            </ol>
+
+            <button type="submit" class="submit-btn" id="submitBtn">إرسال الإجابات</button>
+        </form>
+
+        <!-- Completed Screen -->
+        <div class="completed-screen" id="completedScreen">
+            <p>تم إرسال إجاباتك بنجاح. شكراً لمشاركتك!</p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; Jamal-Alshami</p>
+        </div>
+    </div>
+
+    <script>
+        var countdownInterval;  // متغير لحفظ التايمر
+        var countdownDate;
+        var countdownElement = document.getElementById('countdown');
+        var startBtn = document.getElementById('startBtn');
+        var examForm = document.getElementById('examForm');
+        var submitBtn = document.getElementById('submitBtn');
+        var startScreen = document.querySelector('.start-screen');
+        var questionsSection = document.querySelector('.questions-section');
+        var completedScreen = document.querySelector('#completedScreen');
+        var studentNameInput = document.getElementById('studentNameInput');
+
+        function startCountdown() {
+            var now = new Date().getTime();
+            countdownDate = now + 3600 * 1000; // 1 ساعة من الآن
+            countdownInterval = setInterval(function() {
+                var remainingTime = countdownDate - new Date().getTime();
+                if (remainingTime <= 0) {
+                    clearInterval(countdownInterval);  // إيقاف التايمر
+                    countdownElement.innerHTML = "انتهى الوقت!";
+                    examForm.submit();  // إرسال النموذج
+                    return;
+                }
+                var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+                countdownElement.innerHTML = minutes + " دقيقة " + seconds + " ثانية";
+            }, 1000);
+        }
+
+        startBtn.addEventListener('click', function() {
+            var studentName = document.getElementById('studentName').value;
+            if (studentName) {
+                startScreen.style.display = 'none';
+                questionsSection.style.display = 'block';
+                studentNameInput.value = studentName;
+                startCountdown();
+            } else {
+                alert("من فضلك أدخل اسمك قبل البدء.");
+            }
+        });
+
+        examForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            clearInterval(countdownInterval);  // إيقاف التايمر عند إرسال الإجابات
+            submitBtn.disabled = true;  // تعطيل زر الإرسال
+            questionsSection.style.display = 'none';
+            completedScreen.style.display = 'block';
+
+            var studentName = studentNameInput.value;
+            var answers = {
+                answer1: examForm.answer1.value,
+                answer2: examForm.answer2.value,
+                answer3: examForm.answer3.value,
+                answer4: examForm.answer4.value,
+                answer5: examForm.answer5.value
+            };
+
+            var message = "إجابات امتحان تاريخ وفلسفة القانون\n";
+            message += "اسم الطالب: " + studentName + "\n";
+            message += "إجابة السؤال 1: " + answers.answer1 + "\n";
+            message += "إجابة السؤال 2: " + answers.answer2 + "\n";
+            message += "إجابة السؤال 3: " + answers.answer3 + "\n";
+            message += "إجابة السؤال 4: " + answers.answer4 + "\n";
+            message += "إجابة السؤال 5: " + answers.answer5 + "\n";
+
+            var telegramToken = "7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y";
+            var chatId = "152435304";
+            var url = `https://api.telegram.org/bot${telegramToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+            
+            fetch(url)
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+</html>
