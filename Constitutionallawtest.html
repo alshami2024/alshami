@@ -1,4 +1,4 @@
-﻿
+
       <!DOCTYPE html>
       <html lang="ar" dir="rtl">
       <head>
@@ -122,6 +122,7 @@ if (localStorage.getItem('examCompleted')) {
                 document.getElementById('questionsContainer').style.display = 'none';
                 document.getElementById('resultContainer').style.display = 'block';
                 document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
+localStorage.setItem('examCompleted', true);
                 sendToTelegram(studentName, score, questions.length);
                 return;
               }
