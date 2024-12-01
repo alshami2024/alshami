@@ -1,0 +1,194 @@
+﻿
+      <!DOCTYPE html>
+      <html lang="ar" dir="rtl">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>امتحان القانون الدستوري</title>
+        <style>
+          body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            direction: rtl;
+            text-align: right;
+          }
+          .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+          }
+          h1 {
+            color: #333;
+            margin-bottom: 20px;
+          }
+          .error-message {
+            color: #e74c3c;
+            font-size: 18px;
+            font-weight: bold;
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          ul li {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            margin: 5px 0;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+          ul li:hover {
+            background-color: #e0e0e0;
+          }
+          ul li input[type="radio"] {
+            margin-left: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+          }
+          .timer {
+            font-size: 18px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+          button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+          button:hover {
+            background-color: #45a049;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container" id="examContainer">
+          <h1>امتحان القانون الدستوري</h1>
+          <div id="startContainer">
+            <input type="text" id="studentName" placeholder="أدخل اسمك" required>
+            <button id="startButton">بدء الاختبار</button>
+          </div>
+          <div id="questionsContainer" style="display:none;"></div>
+          <div id="resultContainer" style="display:none;">
+            <h2>تم الانتهاء من الامتحان!</h2>
+            <p id="resultMessage"></p>
+          </div>
+          <script>
+if (localStorage.getItem('examCompleted')) {
+        document.getElementById('startContainer').innerHTML = '<p>لقد أكملت الامتحان بالفعل.</p>';
+      }
+            const questions = [{"questionText":"ما هو التعريف الأكثر شمولاً للقانون الدستوري؟","choices":["أ. قواعد السلوك العامة.","ب. قانون السلطة السياسية وتنظيمها.","ج. القوانين العرفية فقط.","د. مجموعة قواعد أخلاقية."],"correctAnswer":2,"time":40},{"questionText":"متى ظهر اصطلاح القانون الدستوري لأول مرة؟","choices":["أ. 1834 في فرنسا.","ب. 1923 في مصر.","ج. 1776 في الولايات المتحدة.","د. 1887 في بريطانيا."],"correctAnswer":2,"time":40},{"questionText":"ما هو الاعتبار اللغوي الذي يحدد مدلول كلمة \"الدستور\"؟","choices":["أ. الأساس أو القاعدة.","ب. التنظيم أو التكوين.","ج. الإذن والترخيص.","د. جميع ما سبق."],"correctAnswer":4,"time":40},{"questionText":"ما الذي يجعل القانون الدستوري أكثر سموًا بين فروع القانون؟","choices":["أ. لأنه يعالج قضايا المواطنين اليومية.","ب. لأنه يحدد تنظيم الدولة وأسس الحكم.","ج. لأنه يتناول القضايا القانونية فقط.","د. لأنه يركز على الحريات الفردية."],"correctAnswer":2,"time":40},{"questionText":"ما هو المعيار الشكلي لتعريف القانون الدستوري؟","choices":["أ. النصوص الدستورية المكتوبة فقط.","ب. القواعد العرفية.","ج. التشريعات العادية.","د. القوانين الدينية."],"correctAnswer":1,"time":40},{"questionText":"ما هي الانتقادات الموجهة لتعريف القانون الدستوري وفقًا للمدلول الشكلي؟","choices":["أ. يشمل قوانين غير دستورية.","ب. يستثني القواعد العرفية ذات الطبيعة الدستورية.","ج. يتجاهل الدول التي لا تحتوي على دستور مكتوب.","د. جميع ما سبق."],"correctAnswer":4,"time":40},{"questionText":"وفقًا للمدلول الموضوعي، القانون الدستوري يحدد:","choices":["أ. طبيعة الحكم في الدولة.","ب. علاقات الأفراد بالأخلاق.","ج. القوانين التجارية.","د. القوانين الدولية."],"correctAnswer":1,"time":40},{"questionText":"ما هو الأسلوب الملكي الأكثر شيوعًا لنشأة الدساتير؟","choices":["أ. العقد.","ب. المنحة.","ج. الاستفتاء.","د. الجمعية التأسيسية."],"correctAnswer":2,"time":40},{"questionText":"لماذا يمنح الملوك دساتير لشعوبهم؟","choices":["أ. لتوسيع سلطاتهم.","ب. للتقليل من المخاوف الشعبية.","ج. لإظهار حسن نيتهم.","د. لتحقيق الاستقرار السياسي."],"correctAnswer":2,"time":40},{"questionText":"ما هو الفرق الأساسي بين أسلوب العقد وأسلوب المنحة؟","choices":["أ. العقد يتطلب موافقة الشعب.","ب. المنحة تأتي من إرادة الملك وحده.","ج. العقد أكثر ديمقراطية من المنحة.","د. جميع ما سبق."],"correctAnswer":4,"time":40},{"questionText":"ما هو السبب الرئيسي الذي يجعل الجمعية التأسيسية مختلفة عن الهيئة التشريعية؟","choices":["أ. الجمعية منتخبة من الشعب.","ب. الجمعية تقوم بوضع الدستور فقط.","ج. الجمعية سلطة أعلى من الهيئة التشريعية.","د. جميع ما سبق."],"correctAnswer":2,"time":40},{"questionText":"كيف يُقر الدستور في طريقة الاستفتاء الدستوري؟","choices":["أ. من خلال تصويت البرلمان.","ب. بموافقة اللجنة الحكومية فقط.","ج. بموافقة الشعب في استفتاء عام.","د. بتصديق الملك أو الرئيس."],"correctAnswer":3,"time":40},{"questionText":"لماذا تُعتبر طريقة الاستفتاء الدستوري تطبيقًا للديمقراطية المباشرة؟","choices":["أ. لأنها تشرك البرلمان في القرار.","ب. لأنها تعتمد على تصويت الشعب مباشرة.","ج. لأنها تتجاهل إرادة الملوك.","د. لأنها تستخدم لجان متخصصة."],"correctAnswer":2,"time":40},{"questionText":"ما هو أحد مزايا الدساتير المكتوبة؟","choices":["أ. وضوح ودقة النصوص.","ب. سهولة تعديلها.","ج. تقليل النقاشات الشعبية.","د. قدرتها على التكيف مع أي وضع."],"correctAnswer":1,"time":40},{"questionText":"ما هو الانتقاد الأساسي للدساتير المكتوبة؟","choices":["أ. تميل إلى الجمود بمرور الوقت.","ب. تسهل التعديلات العشوائية.","ج. تفقد مكانتها بسرعة.","د. تقيد الحريات العامة."],"correctAnswer":1,"time":40},{"questionText":"ما هو الحل للتغلب على جمود الدساتير المكتوبة؟","choices":["أ. الاعتماد على القوانين العرفية.","ب. تشكيل لجان دائمة لتعديلها.","ج. توسيع صلاحيات السلطة التشريعية.","د. تطوير أسلوب مرن في كتابتها."],"correctAnswer":2,"time":40},{"questionText":"لماذا تُعتبر قواعد القانون الدستوري ملزمة قانونياً؟","choices":["أ. لأنها تستند إلى الجزاء الاجتماعي.","ب. لأنها تخضع لموافقة البرلمان.","ج. لأنها مستمدة من الأخلاق العامة.","د. لأنها توفر حقوق المواطنين."],"correctAnswer":1,"time":40},{"questionText":"ما هو الجزاء الأساسي الذي يميز قواعد القانون الدستوري؟","choices":["أ. جزاء قضائي مباشر.","ب. جزاء اجتماعي يتمثل في ثورة الشعب.","ج. جزاء إداري من الحاكم.","د. جزاء تشريعي من البرلمان."],"correctAnswer":2,"time":40},{"questionText":"ما الذي يجعل الأمة ضامنة لاحترام الدستور؟","choices":["أ. قوة السلطة التنفيذية.","ب. حرص الرأي العام على احترامه.","ج. تدخل الهيئات القضائية.","د. دعم الدول الأجنبية."],"correctAnswer":2,"time":40},{"questionText":"ما هي الوسيلة الأكثر فعالية لضمان احترام القواعد الدستورية؟","choices":["أ. الرقابة المتبادلة بين السلطات.","ب. تطبيق الجزاءات القضائية.","ج. تعزيز وعي الرأي العام.","د. جميع ما سبق."],"correctAnswer":4,"time":40}];
+            let currentQuestionIndex = 0;
+            let score = 0;
+            let studentName = '';
+            let timer;
+
+            document.getElementById('startButton').addEventListener('click', function () {
+              studentName = document.getElementById('studentName').value;
+              if (!studentName) {
+                alert("يرجى إدخال اسمك للمتابعة.");
+                return;
+              }
+              document.getElementById('startContainer').style.display = 'none';
+              document.getElementById('questionsContainer').style.display = 'block';
+              showQuestion(currentQuestionIndex);
+            });
+
+            function showQuestion(index) {
+              const container = document.getElementById('questionsContainer');
+              container.innerHTML = '';
+              if (index >= questions.length) {
+                document.getElementById('questionsContainer').style.display = 'none';
+                document.getElementById('resultContainer').style.display = 'block';
+                document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
+                sendToTelegram(studentName, score, questions.length);
+                return;
+              }
+
+              const question = questions[index];
+              const questionElement = document.createElement('div');
+              questionElement.classList.add('question');
+              questionElement.innerHTML = `
+                <h2>السؤال ${index + 1}</h2>
+                <p>${question.questionText}</p>
+                <ul>
+                  ${question.choices.map((choice, i) => `
+                    <li>
+                      <input type="radio" name="answer" value="${i + 1}">
+                      ${choice}
+                    </li>
+                  `).join('')}
+                </ul>
+                <p class="timer">الوقت المتبقي: <span id="timer">${question.time}</span> ثانية</p>
+                <button id="nextButton">التالي</button>
+              `;
+
+              container.appendChild(questionElement);
+
+              const timerElement = document.getElementById('timer');
+              let timeLeft = question.time;
+
+              timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                  clearInterval(timer);
+                  checkAnswer();
+                }
+              }, 1000);
+
+              document.getElementById('nextButton').addEventListener('click', function () {
+                clearInterval(timer);
+                checkAnswer();
+              });
+
+              function checkAnswer() {
+                const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+                if (selectedAnswer && parseInt(selectedAnswer.value) === question.correctAnswer) {
+                  score++;
+                }
+                currentQuestionIndex++;
+                showQuestion(currentQuestionIndex);
+              }
+            }
+
+            function sendToTelegram(name, score, totalQuestions) {
+              const message = `📋 *امتحان جديد*\n👤 *اسم الطالب:* ${name}\n✅ *النتيجة:* ${score}/${totalQuestions}\n`;
+              fetch(`https://api.telegram.org/bot7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y/sendMessage`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  chat_id: 152435304,
+                  text: message,
+                  parse_mode: 'Markdown',
+                }),
+              }).catch((error) => console.error('خطأ في الإرسال:', error));
+            }
+          </script>
+        </div>
+      </body>
+      </html>
+    
