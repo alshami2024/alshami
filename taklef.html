@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -74,7 +74,6 @@
             text-align: center;
         }
 
-        /* إشعار النجاح */
         .success-message {
             background-color: #4CAF50;
             color: white;
@@ -82,7 +81,17 @@
             margin-top: 20px;
             border-radius: 5px;
             text-align: center;
-            display: none;  /* إخفاء الرسالة بداية */
+            display: none;
+        }
+
+        .error-message {
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
         }
 
         @media (max-width: 768px) {
@@ -98,7 +107,9 @@
 <body>
 
 <div class="container">
-    <h1>تكاليف الطالب:</h1>
+    <h1>تكاليف الطلاب:</h1>
+
+    <p>يرجى ملء البيانات المطلوبة وإرفاق الصور الخاصة بالتكاليف.</p>
 
     <form id="assignmentForm">
         <div class="form-group">
@@ -108,14 +119,14 @@
 
         <div class="form-group">
             <h3>التكليف الأول:</h3>
-            <p>لماذا يُعتبر دور المرأة في هذا العصر (أي عصر التدوين) مميزاً مقارنة ببعض العصور الأخرى؟</p>
+            <p>ما السبب في عدم وجود نصوص قانونية مكتوبة لدى الحضارة الفرعونية على غرار حضارة العراق القديم؟</p>
             <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file1">
         </div>
 
         <div class="form-group">
             <h3>التكليف الثاني:</h3>
-            <p>لا شيء؟</p>
+            <p>ما العلاقة بين القانون اليمني القديم والتشريعات الإسلامية فيما بعد؟</p>
             <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file2">
         </div>
@@ -123,9 +134,12 @@
         <button type="button" onclick="sendToTelegram()">إرسال التكاليف</button>
     </form>
 
-    <!-- إشعار النجاح -->
     <div id="successMessage" class="success-message">
-        تم إرسال التكليفات بنجاح!
+        تم إرسال التكاليف بنجاح!
+    </div>
+
+    <div id="errorMessage" class="error-message">
+        يجب عليك إدخال اسم الطالب وإرفاق صورة لكل تكليف!
     </div>
 </div>
 
@@ -141,20 +155,27 @@
         const file1 = document.getElementById('file1').files[0];
         const file2 = document.getElementById('file2').files[0];
 
-        // إعداد الرسالة النصية التي سيتم إرسالها
+        
+        if (!studentName || (!file1 && !file2)) {
+            
+            document.getElementById('errorMessage').style.display = 'block';
+            return;  
+        }
+
+        
         const message = `
-            التكليفات للطالب: ${studentName}\n
+            تكاليف الطالب: ${studentName}\n
             التكليف الأول: ${answer1}\n
             التكليف الثاني: ${answer2}\n
         `;
 
-        // إرسال النص أولاً عبر تليجرام
-        const token = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';  // التوكن الخاص بك
-        const chatId = '152435304';  // معرف الدردشة الخاص بك
+        
+        const token = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
+        const chatId = '152435304';
 
         await sendMessageToTelegram(token, chatId, message);
 
-        // إرسال الصور عبر تليجرام
+       
         if (file1) {
             await sendPhotoToTelegram(token, chatId, file1);
         }
@@ -162,11 +183,10 @@
             await sendPhotoToTelegram(token, chatId, file2);
         }
 
-        // إظهار إشعار النجاح
+        
         showSuccessMessage();
     }
 
-    // دالة لإرسال النص عبر تليجرام
     async function sendMessageToTelegram(token, chatId, message) {
         const url = `https://api.telegram.org/bot${token}/sendMessage`;
         const params = {
@@ -189,7 +209,6 @@
         }
     }
 
-    // دالة لإرسال الصور عبر تليجرام
     async function sendPhotoToTelegram(token, chatId, file) {
         const formData = new FormData();
         formData.append('chat_id', chatId);
@@ -209,12 +228,11 @@
         }
     }
 
-    // دالة لإظهار إشعار النجاح
     function showSuccessMessage() {
         const successMessage = document.getElementById('successMessage');
-        successMessage.style.display = 'block';  // إظهار الرسالة بعد الإرسال
+        successMessage.style.display = 'block';
         setTimeout(() => {
-            successMessage.style.display = 'none';  // إخفاء الرسالة بعد 3 ثواني
+            successMessage.style.display = 'none';
         }, 3000);
     }
 </script>
