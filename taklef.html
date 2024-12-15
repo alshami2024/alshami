@@ -149,42 +149,49 @@
 
 <script>
     async function sendToTelegram() {
+        const button = document.querySelector('button[type="button"]');
+        button.disabled = true; // تعطيل الزر
+        button.textContent = "جاري الإرسال..."; // تحديث النص على الزر
+
         const studentName = document.getElementById('studentName').value;
         const answer1 = document.getElementById('answer1').value;
         const answer2 = document.getElementById('answer2').value;
         const file1 = document.getElementById('file1').files[0];
         const file2 = document.getElementById('file2').files[0];
 
-        
         if (!studentName || (!file1 && !file2)) {
-            
             document.getElementById('errorMessage').style.display = 'block';
-            return;  
+            button.disabled = false; // إعادة تفعيل الزر
+            button.textContent = "إرسال التكاليف"; // إعادة النص الأصلي
+            return;
         }
 
-        
         const message = `
             تكاليف الطالب: ${studentName}\n
             التكليف الأول: ${answer1}\n
             التكليف الثاني: ${answer2}\n
         `;
 
-        
         const token = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
         const chatId = '152435304';
 
-        await sendMessageToTelegram(token, chatId, message);
+        try {
+            await sendMessageToTelegram(token, chatId, message);
 
-       
-        if (file1) {
-            await sendPhotoToTelegram(token, chatId, file1);
-        }
-        if (file2) {
-            await sendPhotoToTelegram(token, chatId, file2);
-        }
+            if (file1) {
+                await sendPhotoToTelegram(token, chatId, file1);
+            }
+            if (file2) {
+                await sendPhotoToTelegram(token, chatId, file2);
+            }
 
-        
-        showSuccessMessage();
+            showSuccessMessage();
+        } catch (error) {
+            console.error('حدث خطأ أثناء الإرسال:', error);
+        } finally {
+            button.disabled = false; // إعادة تفعيل الزر
+            button.textContent = "إرسال التكاليف"; // إعادة النص الأصلي
+        }
     }
 
     async function sendMessageToTelegram(token, chatId, message) {
