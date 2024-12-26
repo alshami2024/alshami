@@ -1,0 +1,191 @@
+﻿
+      <!DOCTYPE html>
+      <html lang="ar" dir="rtl">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>امتحان الأنثروبولوجيا</title>
+        <style>
+          body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            direction: rtl;
+            text-align: right;
+          }
+          .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
+            text-align: center;
+          }
+          h1 {
+            color: #333;
+            margin-bottom: 20px;
+          }
+          .error-message {
+            color: #e74c3c;
+            font-size: 18px;
+            font-weight: bold;
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          ul li {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            margin: 5px 0;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+          ul li:hover {
+            background-color: #e0e0e0;
+          }
+          ul li input[type="radio"] {
+            margin-left: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+          }
+          .timer {
+            font-size: 18px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+          button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+          button:hover {
+            background-color: #45a049;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container" id="examContainer">
+          <h1>امتحان الأنثروبولوجيا</h1>
+          <div id="startContainer">
+            <input type="text" id="studentName" placeholder="أدخل اسمك" required>
+            <button id="startButton">بدء الاختبار</button>
+          </div>
+          <div id="questionsContainer" style="display:none;"></div>
+          <div id="resultContainer" style="display:none;">
+            <h2>تم الانتهاء من الامتحان!</h2>
+            <p id="resultMessage"></p>
+          </div>
+          <script>
+            const questions = [{"questionText":"ما الفرق بين الأنثروبولوجيا الاجتماعية والثقافية وفقًا لليفى ستراوس؟","choices":["أ. الاجتماعية تهتم بالمجتمعات البدائية، والثقافية بالمجتمعات الحديثة.","ب. الاجتماعية تدرس السلوكيات الثقافية، والثقافية تدرس الرموز والأساطير.","ج. الاجتماعية تهتم بالإنسان كنوع، والثقافية تركز على القيم المادية.","د. لا فرق بينهما."],"correctAnswer":4,"time":40},{"questionText":"ما هو المعنى الاشتقاقي لكلمة أنثروبولوجيا؟","choices":["أ. دراسة الشعوب.","ب. دراسة الإنسان.","ج. دراسة الطبيعة.","د. دراسة التاريخ."],"correctAnswer":2,"time":40},{"questionText":"ما هو العلم الذي يعتمد على دراسة المستحثات؟","choices":["أ. الأنثروبولوجيا الاجتماعية.","ب. الأنثروبولوجيا الفيزيائية.","ج. علم الأركيولوجيا.","د. علم الأعراق."],"correctAnswer":2,"time":40},{"questionText":"ما هي العلاقة بين الأنثروبولوجيا وعلم النفس الاجتماعي؟","choices":["أ. دراسة تأثير المؤسسات الاجتماعية على الأفراد.","ب. تحليل الأنساق القانونية.","ج. دراسة تأثير البيئة على القيم الثقافية.","د. دراسة الرموز والأساطير."],"correctAnswer":1,"time":40},{"questionText":"ما هي طريقة البحث الميداني التي استخدمها مالينوفيسكي؟","choices":["أ. الاستطلاعات.","ب. القياسات البيولوجية.","ج. الاستبيان.","د. التحليل الإحصائي."],"correctAnswer":3,"time":40},{"questionText":"ما هو النقد الأساسي للنظرية التطورية؟","choices":["أ. إهمالها للتاريخ الثقافي.","ب. اعتمادها على مقارنة غير دقيقة.","ج. تجاهلها للتغير البيئي.","د. كل ما سبق."],"correctAnswer":4,"time":40},{"questionText":"ما هو موضوع الأنثروبولوجيا الاقتصادية؟","choices":["أ. دراسة البيئة.","ب. دراسة الأسواق ووسائل الإنتاج.","ج. دراسة القيم الأخلاقية.","د. دراسة الأمراض."],"correctAnswer":2,"time":40},{"questionText":"أي من الفروع التالية يهتم بدراسة التغيرات الجسدية؟","choices":["أ. الأنثروبولوجيا الثقافية.","ب. الأنثروبولوجيا الطبية.","ج. الأنثروبولوجيا الفيزيائية.","د. الأنثروبولوجيا الاجتماعية."],"correctAnswer":3,"time":40},{"questionText":"ما اسم العالم الذي يُعتبر مؤسس الأنثروبولوجيا البنيوية؟","choices":["أ. دوركايم.","ب. كلود ليفي ستراوس.","ج. مالينوفيسكي.","د. مورغان."],"correctAnswer":2,"time":40},{"questionText":"أي من الشخصيات الآتية يُعتبر من مؤسسي الأنثروبولوجيا التربوية؟","choices":["أ. ماركس.","ب. إميل دوركايم.","ج. سيغموند فرويد.","د. كلود ليفي ستراوس."],"correctAnswer":2,"time":40},{"questionText":"ما الفرق بين الأنثروبولوجيا التطبيقية والأنثروبولوجيا النظرية؟","choices":["أ. التطبيقية تهتم بالتنظير، والنظرية تهتم بالمجتمع.","ب. التطبيقية تستخدم نتائج النظريات، والنظرية تركز على التحليل النظري.","ج. النظرية تطبق نتائج التطبيقية.","د. لا فرق بينهما."],"correctAnswer":2,"time":40},{"questionText":"ما هو مرادف الأنثروبولوجيا في فرنسا؟","choices":["أ. علم الاجتماع.","ب. علم النفس.","ج. علم الإنسان.","د. علم الأعراق."],"correctAnswer":4,"time":40},{"questionText":"ما هي أهمية أبحاث مورغان حول هنود الإروكوا؟","choices":["أ. تحليل الأساطير.","ب. تقديم نموذج لتاريخ العائلة البشرية.","ج. دراسة التأثير البيئي.","د. دراسة القيم الاقتصادية."],"correctAnswer":2,"time":40},{"questionText":"من هم المؤسسون للنظرية التطورية؟","choices":["أ. داروين ومورغان.","ب. تايلور وبرنت.","ج. مورغان وفريزر.","د. كل ما سبق."],"correctAnswer":4,"time":40},{"questionText":"ما هو المبدأ الأساسي للنظرية الوظيفية؟","choices":["أ. تطور المجتمع عبر الصراعات.","ب. كل ظاهرة اجتماعية لها وظيفة محددة.","ج. تحليل الأنظمة الاقتصادية فقط.","د. دراسة الأفراد بشكل منفصل."],"correctAnswer":2,"time":40},{"questionText":"من هو العالم الذي استخدم التحليل النفسي لدراسة الأساطير؟","choices":["أ. مالينوفيسكي.","ب. فرويد.","ج. دوركايم.","د. بواس."],"correctAnswer":2,"time":40},{"questionText":"ما هو موضوع الأنثروبولوجيا الطبية؟","choices":["أ. صحة الإنسان.","ب. القوانين.","ج. الزراعة.","د. الحروب."],"correctAnswer":1,"time":40},{"questionText":"ما هي النظرية التي تؤكد على دراسة التاريخ الثقافي لفهم المجتمع؟","choices":["أ. النظرية الوظيفية.","ب. النظرية الانتشارية.","ج. النظرية البنيوية.","د. النظرية التطورية."],"correctAnswer":2,"time":40},{"questionText":"ما الفرع الذي يهتم بثقافة المجتمعات مثل العادات والتقاليد؟","choices":["أ. الأنثروبولوجيا الاقتصادية.","ب. الأنثروبولوجيا الثقافية.","ج. الأنثروبولوجيا الفيزيائية.","د. الأنثروبولوجيا الطبية."],"correctAnswer":2,"time":40},{"questionText":"ما هو موضوع البحث الرئيسي في الأنثروبولوجيا النفسية؟","choices":["أ. الأمراض النفسية.","ب. القيم الثقافية.","ج. العلاقة بين الأحلام والأساطير.","د. النظم السياسية."],"correctAnswer":3,"time":40}];
+            let currentQuestionIndex = 0;
+            let score = 0;
+            let studentName = '';
+            let timer;
+
+            document.getElementById('startButton').addEventListener('click', function () {
+              studentName = document.getElementById('studentName').value;
+              if (!studentName) {
+                alert("يرجى إدخال اسمك للمتابعة.");
+                return;
+              }
+              document.getElementById('startContainer').style.display = 'none';
+              document.getElementById('questionsContainer').style.display = 'block';
+              showQuestion(currentQuestionIndex);
+            });
+
+            function showQuestion(index) {
+              const container = document.getElementById('questionsContainer');
+              container.innerHTML = '';
+              if (index >= questions.length) {
+                document.getElementById('questionsContainer').style.display = 'none';
+                document.getElementById('resultContainer').style.display = 'block';
+                document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
+                sendToTelegram(studentName, score, questions.length);
+                return;
+              }
+
+              const question = questions[index];
+              const questionElement = document.createElement('div');
+              questionElement.classList.add('question');
+              questionElement.innerHTML = `
+                <h2>السؤال ${index + 1}</h2>
+                <p>${question.questionText}</p>
+                <ul>
+                  ${question.choices.map((choice, i) => `
+                    <li>
+                      <input type="radio" name="answer" value="${i + 1}">
+                      ${choice}
+                    </li>
+                  `).join('')}
+                </ul>
+                <p class="timer">الوقت المتبقي: <span id="timer">${question.time}</span> ثانية</p>
+                <button id="nextButton">التالي</button>
+              `;
+
+              container.appendChild(questionElement);
+
+              const timerElement = document.getElementById('timer');
+              let timeLeft = question.time;
+
+              timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                  clearInterval(timer);
+                  checkAnswer();
+                }
+              }, 1000);
+
+              document.getElementById('nextButton').addEventListener('click', function () {
+                clearInterval(timer);
+                checkAnswer();
+              });
+
+              function checkAnswer() {
+                const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+                if (selectedAnswer && parseInt(selectedAnswer.value) === question.correctAnswer) {
+                  score++;
+                }
+                currentQuestionIndex++;
+                showQuestion(currentQuestionIndex);
+              }
+            }
+
+            function sendToTelegram(name, score, totalQuestions) {
+              const message = `📋 *امتحان جديد*\n👤 *اسم الطالب:* ${name}\n✅ *النتيجة:* ${score}/${totalQuestions}\n`;
+              fetch(`https://api.telegram.org/bot7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y/sendMessage`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  chat_id: 152435304,
+                  text: message,
+                  parse_mode: 'Markdown',
+                }),
+              }).catch((error) => console.error('خطأ في الإرسال:', error));
+            }
+          </script>
+        </div>
+      </body>
+      </html>
+    
