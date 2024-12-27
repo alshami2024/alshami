@@ -124,7 +124,7 @@ if (localStorage.getItem('examCompleted')) {
         alert("يرجى إدخال اسمك للمتابعة.");
         return;
       }
-
+localStorage.setItem('examCompleted', 'true');
       // احفظ الاسم في `localStorage` إذا لم يكن موجودًا
       if (!savedName) {
         localStorage.setItem('studentName', studentName);
