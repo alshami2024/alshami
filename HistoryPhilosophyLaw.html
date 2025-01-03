@@ -1,46 +1,226 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>انتهى الامتحان</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
+      <!DOCTYPE html>
+      <html lang="ar" dir="rtl">
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>امتحان تاريخ وفلسفة القانون</title>
+        <style>
+          body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f7f9fc;
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             height: 100vh;
-            background: linear-gradient(to bottom, #6ab04c, #2d3436);
-            color: #ffffff;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin: 0;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        }
-
-        footer {
-            margin-top: auto;
-            padding: 10px;
-            font-size: 1rem;
-            background-color: rgba(0, 0, 0, 0.6);
-            width: 100%;
+            direction: rtl;
+            text-align: right;
+          }
+          .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 20px;
             text-align: center;
+          }
+          h1 {
+            color: #333;
+            margin-bottom: 20px;
+          }
+          .error-message {
+            color: #e74c3c;
+            font-size: 18px;
+            font-weight: bold;
+          }
+          ul {
+            list-style-type: none;
+            padding: 0;
+          }
+          ul li {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            margin: 5px 0;
+            background: #f2f2f2;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+          }
+          ul li:hover {
+            background-color: #e0e0e0;
+          }
+          ul li input[type="radio"] {
+            margin-left: 10px;
+            margin-right: 5px;
+            cursor: pointer;
+            width: 16px;
+            height: 16px;
+          }
+          .timer {
+            font-size: 18px;
+            color: #e74c3c;
+            font-weight: bold;
+            margin: 10px 0;
+          }
+          button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+          }
+          button:hover {
+            background-color: #45a049;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="container" id="examContainer">
+          <h1>امتحان تاريخ وفلسفة القانون</h1>
+          <div id="startContainer">
+            <input type="text" id="studentName" placeholder="أدخل اسمك" required>
+            <button id="startButton">بدء الاختبار</button>
+          </div>
+          <div id="questionsContainer" style="display:none;"></div>
+          <div id="resultContainer" style="display:none;">
+            <h2>تم الانتهاء من الامتحان!</h2>
+            <p id="resultMessage"></p>
+          </div>
+          <script>
+if (localStorage.getItem('examCompleted1')) {
+        document.getElementById('startContainer').innerHTML = '<p>لقد أكملت الامتحان بالفعل.</p>';
+      }
+            const questions = [{"questionText":"ما هي العلاقة الأكثر واقعية بين القانون والأخلاق وفقًا للنقاشات المطروحة في الكتاب؟","choices":["أ. القانون يجب أن يكون مستقلًا تمامًا عن الأخلاق لتحقيق الفاعلية.","ب. الأخلاق تشكل دائمًا القاعدة الأساسية التي تُبنى عليها القوانين.","ج. القانون يمكن أن يكون قائمًا على أسس أخلاقية ولكن قد يتأثر أيضًا بالرغبات المجتمعية أو رغبة المشرع.","د. القوانين تُبنى فقط لتلبية احتياجات الأفراد بغض النظر عن الأخلاق."],"correctAnswer":3,"time":40},{"questionText":"ما الفرق الجوهري بين القانون الوضعي والقانون الأخلاقي؟","choices":["أ. القانون الوضعي يعترف فقط بالشرعية الشكلية، بينما القانون الأخلاقي يعتمد على القيم المجتمعية.","ب. القانون الأخلاقي مرتبط بالقيم الدينية، بينما القانون الوضعي يستند إلى المنطق البشري.","ج. القانون الوضعي يتجاهل التأثير الاجتماعي، بينما القانون الأخلاقي يركز على هذا التأثير.","د. القانون الوضعي يركز على الشرعية والتأثير الاجتماعي، بينما القانون الأخلاقي يشمل أيضًا عناصر أخلاقية."],"correctAnswer":4,"time":40},{"questionText":"ما هو السبب الأساسي لعدم وجود \"الدولة\" ككيان سياسي في المجتمعات البدائية؟","choices":["أ. اعتماد المجتمعات على النظم الدينية فقط.","ب. عدم الحاجة إلى تنظيم مركزي في ظل الأعراف والتقاليد.","ج. غياب الموارد الاقتصادية التي تدعم إنشاء الدولة.","د. وجود القوانين العرفية التي كانت كافية لتنظيم العلاقات."],"correctAnswer":2,"time":40},{"questionText":"كيف يمكن تفسير نشوء فكرة \"الحيلة النفعية\" في التشريع القانوني؟","choices":["أ. بوصفها وسيلة لتحقيق العدالة من خلال تسهيل تطبيق القانون.","ب. كنتيجة لتاريخ القوانين القديمة التي كانت ترتكز على الممارسات العرفية.","ج. كوسيلة لإبطال الغايات الظاهرة للقانون لتحقيق مصالح شخصية خفية.","د. كجزء من تطور القوانين الديمقراطية في المجتمعات الحديثة."],"correctAnswer":3,"time":40},{"questionText":"ما هو الفرق الجوهري بين القوانين في المجتمعات التي تعتمد على الزراعة وتلك التي تعتمد على الصيد؟","choices":["أ. المجتمعات الزراعية تطورت فيها قوانين مكتوبة، بينما مجتمعات الصيد اعتمدت على الأعراف.","ب. المجتمعات الزراعية ركزت على تقسيم الموارد، بينما مجتمعات الصيد ركزت على تقسيم السلطة.","ج. المجتمعات الزراعية كانت أقل تنظيمًا من الناحية القانونية.","د. المجتمعات الزراعية لم تعتمد على النظم العرفية مقارنة بمجمعات الصيد."],"correctAnswer":1,"time":40}];
+            let currentQuestionIndex = 0;
+            let score = 0;
+            let studentName = '';
+            let timer;
+
+
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const savedName = localStorage.getItem('studentName');
+    const nameInput = document.getElementById('studentName');
+
+    if (savedName) {
+      nameInput.value = savedName;
+      nameInput.disabled = true;
+    }
+
+    document.getElementById('startButton').addEventListener('click', function () {
+      
+      studentName = savedName || nameInput.value;
+
+      if (!studentName) {
+        alert("يرجى إدخال اسمك للمتابعة.");
+        return;
+      }
+localStorage.setItem('examCompleted1', 'true');
+      
+      if (!savedName) {
+        localStorage.setItem('studentName', studentName);
+      }
+
+      
+      document.getElementById('startContainer').style.display = 'none';
+      document.getElementById('questionsContainer').style.display = 'block';
+
+     
+      startExam(studentName);
+    });
+  });
+
+  function startExam(studentName) {
+    let currentQuestionIndex = 0;
+    let score = 0;
+    let timer;
+
+    function showQuestion(index) {
+      const container = document.getElementById('questionsContainer');
+      container.innerHTML = '';
+
+     
+      if (index >= questions.length) {
+        document.getElementById('questionsContainer').style.display = 'none';
+        document.getElementById('resultContainer').style.display = 'block';
+        document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
+        sendToTelegram(studentName, score, questions.length);
+        return;
+      }
+
+      const question = questions[index];
+      const questionElement = document.createElement('div');
+      questionElement.classList.add('question');
+      questionElement.innerHTML = `
+        <h2>السؤال ${index + 1}</h2>
+        <p>${question.questionText}</p>
+        <ul>
+          ${question.choices.map((choice, i) => `
+            <li>
+              <input type="radio" name="answer" value="${i + 1}">
+              ${choice}
+            </li>
+          `).join('')}
+        </ul>
+        <p class="timer">الوقت المتبقي: <span id="timer">${question.time}</span> ثانية</p>
+        <button id="nextButton">التالي</button>
+      `;
+
+      container.appendChild(questionElement);
+
+      const timerElement = document.getElementById('timer');
+      let timeLeft = question.time;
+
+      timer = setInterval(() => {
+        timeLeft--;
+        timerElement.textContent = timeLeft;
+        if (timeLeft <= 0) {
+          clearInterval(timer);
+          checkAnswer();
         }
-    </style>
-</head>
+      }, 1000);
 
-<body>
-    <h1>انتهى الامتحان</h1>
-    <footer>
-        &copy; Jamal-Alshami 2024
-    </footer>
+      document.getElementById('nextButton').addEventListener('click', function () {
+        clearInterval(timer);
+        checkAnswer();
+      });
+
+      function checkAnswer() {
+        const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+        if (selectedAnswer && parseInt(selectedAnswer.value) === question.correctAnswer) {
+          score++;
+        }
+        currentQuestionIndex++;
+        showQuestion(currentQuestionIndex);
+      }
+    }
+
+    showQuestion(currentQuestionIndex);
+  }
+
+  function sendToTelegram(name, score, totalQuestions) {
+    const message = `📋 *امتحان جديد*\n👤 *اسم الطالب:* ${name}\n✅ *النتيجة:* ${score}/${totalQuestions}\n`;
+    fetch(`https://api.telegram.org/bot7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y/sendMessage`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        chat_id: 152435304,
+        text: message,
+        parse_mode: 'Markdown',
+      }),
+    }).catch((error) => console.error('خطأ في الإرسال:', error));
+  }
+</script>
+  </script>
 </body>
-
 </html>
