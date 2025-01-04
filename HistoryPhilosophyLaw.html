@@ -95,7 +95,7 @@
             <p id="resultMessage"></p>
           </div>
           <script>
-if (localStorage.getItem('examCompleted1')) {
+if (localStorage.getItem('examCompleted2')) {
         document.getElementById('startContainer').innerHTML = '<p>لقد أكملت الامتحان بالفعل.</p>';
       }
             const questions = [{"questionText":"ما هي العلاقة الأكثر واقعية بين القانون والأخلاق وفقًا للنقاشات المطروحة في الكتاب؟","choices":["أ. القانون يجب أن يكون مستقلًا تمامًا عن الأخلاق لتحقيق الفاعلية.","ب. الأخلاق تشكل دائمًا القاعدة الأساسية التي تُبنى عليها القوانين.","ج. القانون يمكن أن يكون قائمًا على أسس أخلاقية ولكن قد يتأثر أيضًا بالرغبات المجتمعية أو رغبة المشرع.","د. القوانين تُبنى فقط لتلبية احتياجات الأفراد بغض النظر عن الأخلاق."],"correctAnswer":3,"time":40},{"questionText":"ما الفرق الجوهري بين القانون الوضعي والقانون الأخلاقي؟","choices":["أ. القانون الوضعي يعترف فقط بالشرعية الشكلية، بينما القانون الأخلاقي يعتمد على القيم المجتمعية.","ب. القانون الأخلاقي مرتبط بالقيم الدينية، بينما القانون الوضعي يستند إلى المنطق البشري.","ج. القانون الوضعي يتجاهل التأثير الاجتماعي، بينما القانون الأخلاقي يركز على هذا التأثير.","د. القانون الوضعي يركز على الشرعية والتأثير الاجتماعي، بينما القانون الأخلاقي يشمل أيضًا عناصر أخلاقية."],"correctAnswer":4,"time":40},{"questionText":"ما هو السبب الأساسي لعدم وجود \"الدولة\" ككيان سياسي في المجتمعات البدائية؟","choices":["أ. اعتماد المجتمعات على النظم الدينية فقط.","ب. عدم الحاجة إلى تنظيم مركزي في ظل الأعراف والتقاليد.","ج. غياب الموارد الاقتصادية التي تدعم إنشاء الدولة.","د. وجود القوانين العرفية التي كانت كافية لتنظيم العلاقات."],"correctAnswer":2,"time":40},{"questionText":"كيف يمكن تفسير نشوء فكرة \"الحيلة النفعية\" في التشريع القانوني؟","choices":["أ. بوصفها وسيلة لتحقيق العدالة من خلال تسهيل تطبيق القانون.","ب. كنتيجة لتاريخ القوانين القديمة التي كانت ترتكز على الممارسات العرفية.","ج. كوسيلة لإبطال الغايات الظاهرة للقانون لتحقيق مصالح شخصية خفية.","د. كجزء من تطور القوانين الديمقراطية في المجتمعات الحديثة."],"correctAnswer":3,"time":40},{"questionText":"ما هو الفرق الجوهري بين القوانين في المجتمعات التي تعتمد على الزراعة وتلك التي تعتمد على الصيد؟","choices":["أ. المجتمعات الزراعية تطورت فيها قوانين مكتوبة، بينما مجتمعات الصيد اعتمدت على الأعراف.","ب. المجتمعات الزراعية ركزت على تقسيم الموارد، بينما مجتمعات الصيد ركزت على تقسيم السلطة.","ج. المجتمعات الزراعية كانت أقل تنظيمًا من الناحية القانونية.","د. المجتمعات الزراعية لم تعتمد على النظم العرفية مقارنة بمجمعات الصيد."],"correctAnswer":1,"time":40}];
@@ -110,30 +110,31 @@ if (localStorage.getItem('examCompleted1')) {
     const savedName = localStorage.getItem('studentName');
     const nameInput = document.getElementById('studentName');
 
+    // إذا كان الاسم محفوظًا في `localStorage`، قم بعرضه وتعطيل حقل الإدخال
     if (savedName) {
       nameInput.value = savedName;
       nameInput.disabled = true;
     }
 
     document.getElementById('startButton').addEventListener('click', function () {
-      
+      // احصل على الاسم من الحقل أو `localStorage`
       studentName = savedName || nameInput.value;
 
       if (!studentName) {
         alert("يرجى إدخال اسمك للمتابعة.");
         return;
       }
-localStorage.setItem('examCompleted1', 'true');
-      
+localStorage.setItem('examCompleted2', 'true');
+      // احفظ الاسم في `localStorage` إذا لم يكن موجودًا
       if (!savedName) {
         localStorage.setItem('studentName', studentName);
       }
 
-      
+      // أخفِ شاشة البداية وأظهر الأسئلة
       document.getElementById('startContainer').style.display = 'none';
       document.getElementById('questionsContainer').style.display = 'block';
 
-     
+      // ابدأ الامتحان باستخدام اسم الطالب
       startExam(studentName);
     });
   });
@@ -147,7 +148,7 @@ localStorage.setItem('examCompleted1', 'true');
       const container = document.getElementById('questionsContainer');
       container.innerHTML = '';
 
-     
+      // إذا انتهت الأسئلة، عرِض النتائج
       if (index >= questions.length) {
         document.getElementById('questionsContainer').style.display = 'none';
         document.getElementById('resultContainer').style.display = 'block';
@@ -224,3 +225,5 @@ localStorage.setItem('examCompleted1', 'true');
   </script>
 </body>
 </html>
+
+    
