@@ -1,229 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
 
-      <!DOCTYPE html>
-      <html lang="ar" dir="rtl">
-      <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>امتحان تاريخ وفلسفة القانون</title>
-        <style>
-          body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #f7f9fc;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>انتهى الامتحان</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             display: flex;
-            align-items: center;
+            flex-direction: column;
             justify-content: center;
-            height: 100vh;
-            direction: rtl;
-            text-align: right;
-          }
-          .container {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            width: 90%;
-            max-width: 600px;
-            padding: 20px;
-            text-align: center;
-          }
-          h1 {
-            color: #333;
-            margin-bottom: 20px;
-          }
-          .error-message {
-            color: #e74c3c;
-            font-size: 18px;
-            font-weight: bold;
-          }
-          ul {
-            list-style-type: none;
-            padding: 0;
-          }
-          ul li {
-            display: flex;
             align-items: center;
-            padding: 8px;
-            margin: 5px 0;
-            background: #f2f2f2;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-          }
-          ul li:hover {
-            background-color: #e0e0e0;
-          }
-          ul li input[type="radio"] {
-            margin-left: 10px;
-            margin-right: 5px;
-            cursor: pointer;
-            width: 16px;
-            height: 16px;
-          }
-          .timer {
-            font-size: 18px;
-            color: #e74c3c;
-            font-weight: bold;
-            margin: 10px 0;
-          }
-          button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-top: 10px;
-          }
-          button:hover {
-            background-color: #45a049;
-          }
-        </style>
-      </head>
-      <body>
-        <div class="container" id="examContainer">
-          <h1>امتحان تاريخ وفلسفة القانون</h1>
-          <div id="startContainer">
-            <input type="text" id="studentName" placeholder="أدخل اسمك" required>
-            <button id="startButton">بدء الاختبار</button>
-          </div>
-          <div id="questionsContainer" style="display:none;"></div>
-          <div id="resultContainer" style="display:none;">
-            <h2>تم الانتهاء من الامتحان!</h2>
-            <p id="resultMessage"></p>
-          </div>
-          <script>
-if (localStorage.getItem('examCompleted3')) {
-        document.getElementById('startContainer').innerHTML = '<p>لقد أكملت الامتحان بالفعل.</p>';
-      }
-            const questions = [{"questionText":"ما هو العلم الذي يُعنى بدراسة القانون من حيث النشأة والتطور والتعديل والزوال؟","choices":["أ فلسفة القانون.","ب. تاريخ القانون.","ج. القانون المقارن.","د. علم الاجتماع القانوني."],"correctAnswer":2,"time":40},{"questionText":"ما هي المرحلة التي شهدت ظهور الطبقية داخل المجتمعات، وكانت تلك الطبقية تقوم على أساس الثروة أو النسب؟","choices":["أ. مرحلة القوة أو الانتقام الفردي.","ب. مرحلة التقاليد الدينية.","ج. مرحلة التقاليد العرفية.","د. مرحلة التدوين."],"correctAnswer":3,"time":40},{"questionText":"ما هو التحدي الأساسي الذي واجه تطبيق القوانين العرفية في المجتمعات البدائية؟","choices":["أ. صعوبة تعديلها لتتماشى مع التطورات الاجتماعية.","ب. اعتمادها بشكل مفرط على الأعراف والتقاليد القبلية.","ج. غياب دور رجال الدين في صياغتها وتطبيقها.","د. افتقارها إلى الإلزام القانوني مقارنة بالقوانين المكتوبة."],"correctAnswer":4,"time":40},{"questionText":"ما هو النقد الأساسي لنظرية \"الحيلة النفعية\" في التشريع القانوني من وجهة نظر العقلاء؟","choices":["أ. أنها تُركز على الجانب الاقتصادي دون مراعاة الأخلاق.","ب. أنها تُعطل العدالة من خلال سن قوانين معقدة لتحقيق مصالح شخصية.","ج. أنها تُستخدم فقط في النظم القانونية الدينية.","د. أنها تُعزز النظام القضائي من خلال تقليل النزاعات."],"correctAnswer":2,"time":40},{"questionText":"كيف ساهم ظهور \"نظام الدية\" في الحد من النزاعات بين الأفراد في المجتمعات البدائية؟","choices":["أ. من خلال تقليل الاعتماد على القوة كوسيلة لحل النزاعات.","ب. بتقديم حلول تعتمد على التقاليد القبلية بدلًا من القوانين المكتوبة.","ج. من خلال تقوية السلطة المركزية للدولة.","د. باستخدامها كوسيلة للتمييز بين الطبقات الاجتماعية."],"correctAnswer":1,"time":40}];
-            let currentQuestionIndex = 0;
-            let score = 0;
-            let studentName = '';
-            let timer;
-
-
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedName = localStorage.getItem('studentName');
-    const nameInput = document.getElementById('studentName');
-
-    // إذا كان الاسم محفوظًا في `localStorage`، قم بعرضه وتعطيل حقل الإدخال
-    if (savedName) {
-      nameInput.value = savedName;
-      nameInput.disabled = true;
-    }
-
-    document.getElementById('startButton').addEventListener('click', function () {
-      // احصل على الاسم من الحقل أو `localStorage`
-      studentName = savedName || nameInput.value;
-
-      if (!studentName) {
-        alert("يرجى إدخال اسمك للمتابعة.");
-        return;
-      }
-localStorage.setItem('examCompleted3', 'true');
-      // احفظ الاسم في `localStorage` إذا لم يكن موجودًا
-      if (!savedName) {
-        localStorage.setItem('studentName', studentName);
-      }
-
-      // أخفِ شاشة البداية وأظهر الأسئلة
-      document.getElementById('startContainer').style.display = 'none';
-      document.getElementById('questionsContainer').style.display = 'block';
-
-      // ابدأ الامتحان باستخدام اسم الطالب
-      startExam(studentName);
-    });
-  });
-
-  function startExam(studentName) {
-    let currentQuestionIndex = 0;
-    let score = 0;
-    let timer;
-
-    function showQuestion(index) {
-      const container = document.getElementById('questionsContainer');
-      container.innerHTML = '';
-
-      // إذا انتهت الأسئلة، عرِض النتائج
-      if (index >= questions.length) {
-        document.getElementById('questionsContainer').style.display = 'none';
-        document.getElementById('resultContainer').style.display = 'block';
-        document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
-        sendToTelegram(studentName, score, questions.length);
-        return;
-      }
-
-      const question = questions[index];
-      const questionElement = document.createElement('div');
-      questionElement.classList.add('question');
-      questionElement.innerHTML = `
-        <h2>السؤال ${index + 1}</h2>
-        <p>${question.questionText}</p>
-        <ul>
-          ${question.choices.map((choice, i) => `
-            <li>
-              <input type="radio" name="answer" value="${i + 1}">
-              ${choice}
-            </li>
-          `).join('')}
-        </ul>
-        <p class="timer">الوقت المتبقي: <span id="timer">${question.time}</span> ثانية</p>
-        <button id="nextButton">التالي</button>
-      `;
-
-      container.appendChild(questionElement);
-
-      const timerElement = document.getElementById('timer');
-      let timeLeft = question.time;
-
-      timer = setInterval(() => {
-        timeLeft--;
-        timerElement.textContent = timeLeft;
-        if (timeLeft <= 0) {
-          clearInterval(timer);
-          checkAnswer();
+            height: 100vh;
+            background: linear-gradient(to bottom, #6ab04c, #2d3436);
+            color: #ffffff;
         }
-      }, 1000);
 
-      document.getElementById('nextButton').addEventListener('click', function () {
-        clearInterval(timer);
-        checkAnswer();
-      });
-
-      function checkAnswer() {
-        const selectedAnswer = document.querySelector('input[name="answer"]:checked');
-        if (selectedAnswer && parseInt(selectedAnswer.value) === question.correctAnswer) {
-          score++;
+        h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
         }
-        currentQuestionIndex++;
-        showQuestion(currentQuestionIndex);
-      }
-    }
 
-    showQuestion(currentQuestionIndex);
-  }
+        footer {
+            margin-top: auto;
+            padding: 10px;
+            font-size: 1rem;
+            background-color: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
 
-  function sendToTelegram(name, score, totalQuestions) {
-    const message = `📋 *امتحان جديد*\n👤 *اسم الطالب:* ${name}\n✅ *النتيجة:* ${score}/${totalQuestions}\n`;
-    fetch(`https://api.telegram.org/bot7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y/sendMessage`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        chat_id: 152435304,
-        text: message,
-        parse_mode: 'Markdown',
-      }),
-    }).catch((error) => console.error('خطأ في الإرسال:', error));
-  }
-</script>
-  </script>
+<body>
+    <h1>انتهى الامتحان</h1>
+    <footer>
+        &copy; Jamal-Alshami 2024
+    </footer>
 </body>
-</html>
 
-    
+</html>
