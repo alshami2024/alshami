@@ -1,248 +1,59 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة التكاليف</title>
+    <title>تهانينا</title>
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f7fc;
             margin: 0;
             padding: 0;
+            background: linear-gradient(to right, #4caf50, #81c784);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-
-        .container {
-            width: 80%;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
         h1 {
-            color: #4CAF50;
-            text-align: center;
-        }
-
-        .form-group {
+            font-size: 3rem;
             margin-bottom: 20px;
-            text-align: right;
         }
-
-        label {
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
+        p {
+            font-size: 1.5rem;
         }
-
-        textarea, input[type="text"], input[type="file"] {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            margin-top: 10px;
-            font-size: 16px;
-            background-color: #f9f9f9;
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 2s ease-in-out;
         }
-
-        textarea {
-            height: 120px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            margin: 20px auto;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #777;
-            text-align: center;
-        }
-
-        .success-message {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
+        footer {
             margin-top: 20px;
-            border-radius: 5px;
-            text-align: center;
-            display: none;
+            color: #fff;
+            font-size: 0.9rem;
         }
-
-        .error-message {
-            background-color: #f44336;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            border-radius: 5px;
-            text-align: center;
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
             }
-            button {
-                width: 100%;
+            to {
+                opacity: 1;
+                transform: scale(1);
             }
         }
     </style>
 </head>
 <body>
-
-<div class="container">
-    <h1>تكاليف الطلاب:</h1>
-
-    <p>يرجى ملء البيانات المطلوبة وإرفاق الصور الخاصة بالتكاليف.</p>
-
-    <form id="assignmentForm">
-        <div class="form-group">
-            <label for="studentName">اسم الطالب:</label>
-            <input type="text" id="studentName" placeholder="أدخل اسم الطالب هنا">
-        </div>
-
-        <div class="form-group">
-            <h3>التكليف الأول:</h3>
-            <p>كيف يحقق مبدأ التوحيد في الإسلام تحرير الإنسان داخليًا وخارجيًا؟</p>
-            <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
-            <input type="file" accept="image/*" id="file1">
-        </div>
-
-        <div class="form-group">
-            <h3>التكليف الثاني:</h3>
-            <p>كيف تميز الإسلام في تنظيم الملكية، وما القيود التي وضعها على الملكية الفردية؟</p>
-            <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
-            <input type="file" accept="image/*" id="file2">
-        </div>
-
-        <button type="button" onclick="sendToTelegram()">إرسال التكاليف</button>
-    </form>
-
-    <div id="successMessage" class="success-message">
-        تم إرسال التكاليف بنجاح!
+    <div class="container">
+        <h1>اكتملت رحلة التكاليف الجامعية</h1>
+        <p>مع خالص الأمنيات بالتوفيق للطلاب والطالبات</p>
     </div>
-
-    <div id="errorMessage" class="error-message">
-        يجب عليك إدخال اسم الطالب وإرفاق صورة لكل تكليف!
-    </div>
-</div>
-
-<div class="footer">
-    <p>&copy; 2024 جميع الحقوق محفوظة جمال الشامي.</p>
-</div>
-
-<script>
-    async function sendToTelegram() {
-        const button = document.querySelector('button[type="button"]');
-        button.disabled = true; // تعطيل الزر
-        button.textContent = "جاري الإرسال..."; // تحديث النص على الزر
-
-        const studentName = document.getElementById('studentName').value;
-        const answer1 = document.getElementById('answer1').value;
-        const answer2 = document.getElementById('answer2').value;
-        const file1 = document.getElementById('file1').files[0];
-        const file2 = document.getElementById('file2').files[0];
-
-        if (!studentName || (!file1 && !file2)) {
-            document.getElementById('errorMessage').style.display = 'block';
-            button.disabled = false; // إعادة تفعيل الزر
-            button.textContent = "إرسال التكاليف"; // إعادة النص الأصلي
-            return;
-        }
-
-        const message = `
-            تكاليف الطالب: ${studentName}\n
-            التكليف الأول: ${answer1}\n
-            التكليف الثاني: ${answer2}\n
-        `;
-
-        const token = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
-        const chatId = '152435304';
-
-        try {
-            await sendMessageToTelegram(token, chatId, message);
-
-            if (file1) {
-                await sendPhotoToTelegram(token, chatId, file1);
-            }
-            if (file2) {
-                await sendPhotoToTelegram(token, chatId, file2);
-            }
-
-            showSuccessMessage();
-        } catch (error) {
-            console.error('حدث خطأ أثناء الإرسال:', error);
-        } finally {
-            button.disabled = false; // إعادة تفعيل الزر
-            button.textContent = "إرسال التكاليف"; // إعادة النص الأصلي
-        }
-    }
-
-    async function sendMessageToTelegram(token, chatId, message) {
-        const url = `https://api.telegram.org/bot${token}/sendMessage`;
-        const params = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: message,
-            }),
-        };
-
-        try {
-            const response = await fetch(url, params);
-            const data = await response.json();
-            console.log('تم إرسال النص بنجاح:', data);
-        } catch (error) {
-            console.error('حدث خطأ أثناء إرسال النص:', error);
-        }
-    }
-
-    async function sendPhotoToTelegram(token, chatId, file) {
-        const formData = new FormData();
-        formData.append('chat_id', chatId);
-        formData.append('photo', file);
-
-        const url = `https://api.telegram.org/bot${token}/sendPhoto`;
-
-        try {
-            const response = await fetch(url, {
-                method: 'POST',
-                body: formData,
-            });
-            const data = await response.json();
-            console.log('تم إرسال الصورة بنجاح:', data);
-        } catch (error) {
-            console.error('حدث خطأ أثناء إرسال الصورة:', error);
-        }
-    }
-
-    function showSuccessMessage() {
-        const successMessage = document.getElementById('successMessage');
-        successMessage.style.display = 'block';
-        setTimeout(() => {
-            successMessage.style.display = 'none';
-        }, 3000);
-    }
-</script>
-
+    <footer>© 2025 Jamal-Alshami</footer>
 </body>
 </html>
