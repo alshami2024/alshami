@@ -4,7 +4,7 @@
       <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>امتحان الأنثروبولوجيا</title>
+        <title>امتحان تاريخ وفلسفة القانون</title>
         <style>
           body {
             font-family: 'Cairo', sans-serif;
@@ -84,7 +84,7 @@
       </head>
       <body>
         <div class="container" id="examContainer">
-          <h1>امتحان الأنثروبولوجيا</h1>
+          <h1>امتحان تاريخ وفلسفة القانون</h1>
           <div id="startContainer">
             <input type="text" id="studentName" placeholder="أدخل اسمك" required>
             <button id="startButton">بدء الاختبار</button>
@@ -95,134 +95,97 @@
             <p id="resultMessage"></p>
           </div>
           <script>
-if (localStorage.getItem('examCompleted1')) {
-        document.getElementById('startContainer').innerHTML = '<p>لقد أكملت الامتحان بالفعل.</p>';
-      }
-            const questions = [{"questionText":"أي من النظريات التالية تُفسر التطور في الأدوات على أنه أدى إلى تطور القيم، وذلك من خلال دراسة \"فنون البقاء\" في مراحل التوحش، البربرية والحضارة؟","choices":["أ. النظرية البنيوية.","ب. النظرية التطورية.","ج. النظرية الانتشارية.","د. النظرية الوظيفية."],"correctAnswer":2,"time":40},{"questionText":"أي من علماء الأنثروبولوجيا التالية أسماؤهم يُعد من رواد استخدام التحليل النفسي لفهم الظواهر الثقافية، وربط بين الأساطير، مثل أسطورة أوديب، وبين أصول الثقافات وتطورها؟","choices":["أ. كلود ليفي ستراوس.","ب. برونيسلاف مالينوفسكي.","ج. سيغموند فرويد.","د. رادكليف براون."],"correctAnswer":3,"time":40},{"questionText":"ما هي الفكرة الأساسية التي انطلقت منها \"النظرية الوظيفية\" عند \"مالينوفسكي\"؟","choices":["أ. المجتمع يُشبه العضوية الحية، والظواهر الاجتماعية تُشكل نسقاً وظيفياً.","ب. المجتمع يتطور عبر مراحل محددة: التوحش، البربرية، والحضارة.","ج. يجب دراسة التاريخ الثقافي لفهم خصائص المجتمع الحالية.","د. البنية الاجتماعية مجردة ولا علاقة لها بالواقع."],"correctAnswer":1,"time":40}];
+            const questions = [{"questionText":"ما الفرق الأساسي بين التلمود البابلي والتلمود اليروشلمي؟","choices":["أ. التلمود البابلي أكثر تفصيلاً ويُعتمد عليه أكثر.","ب. التلمود اليروشلمي هو النسخة الأصلية والتلمود البابلي مجرد تعديل له.","ج. التلمود البابلي كتب قبل اليروشلمي.","د. لا يوجد فرق بينهما سوى في اللغة."],"correctAnswer":1,"time":40},{"questionText":"من الذي قاد بني إسرائيل إلى الأرض المقدسة بعد موسى عليه السلام؟","choices":["أ. داوود عليه السلام.","ب. سليمان عليه السلام.","ج. يوشع بن نون.","د. عزرا الكاتب."],"correctAnswer":3,"time":40},{"questionText":"ما العلاقة بين قانون حمورابي والشريعة اليهودية؟","choices":["أ. قانون حمورابي مستوحى بالكامل من التوراة.","ب. الشريعة اليهودية مقتبسة جزئياً من قانون حمورابي.","ج. لا يوجد أي علاقة بينهما.","د. الشريعة اليهودية أكثر قدماً وتأثيراً على القوانين الأخرى."],"correctAnswer":2,"time":40},{"questionText":"ما الموقف القرآني من التوراة الحالية وفقاً للنصوص الإسلامية؟","choices":["أ. التوراة لم تتغير أبداً وهي كلام الله بالكامل.","ب. التوراة تعرضت للتحريف من قبل اليهود.","ج. التوراة صحيحة ولكنها ناقصة.","د. التوراة مجرد كتاب تاريخي ولا علاقة له بالدين."],"correctAnswer":2,"time":40},{"questionText":"ما السبب الرئيسي في وجود أكثر من نسخة للتلمود في اليهودية؟","choices":["أ. تعدد المدارس الفقهية اليهودية.","ب. عدم وجود كتاب مقدس أصلي.","ج. اختلاف النصوص بين الطوائف اليهودية.","د. تأثير الفلسفة اليونانية."],"correctAnswer":1,"time":40},{"questionText":"ما الذي يميز \"نظرية الحيازة\" في القانون الروماني؟","choices":["أ. لا تُعطي الحيازة أي حقوق قانونية.","ب. تمنح الحيازة حقوقاً مطلقة لصاحبها.","ج. تعتبر الحيازة مؤشراً على الملكية ولكنها ليست دليلاً قاطعاً عليها.","د. لا علاقة للحيازة بالقانون الروماني."],"correctAnswer":3,"time":40},{"questionText":"أي من المفاهيم القانونية التالية نشأ وتطور بشكل ملحوظ في القانون الروماني؟","choices":["أ. مبدأ العقوبات التعزيرية.","ب. مبدأ الحريات الدستورية.","ج. مبدأ الفصل بين السلطات.","د. مبدأ العقد شريعة المتعاقدين."],"correctAnswer":4,"time":40},{"questionText":"ما الوظيفة الأساسية التي كان يؤديها \"البريتور\" في النظام القانوني الروماني؟","choices":["أ. وضع التشريعات وإصدار القوانين.","ب. تنفيذ الأحكام القضائية.","ج. الفصل في النزاعات وفقاً لقوانين مرنة ومحدثة.","د. تمثيل الشعب أمام مجلس الشيوخ."],"correctAnswer":3,"time":40},{"questionText":"أي من المراحل التالية كان القانون الروماني فيها أكثر تطوراً من الناحية الفقهية والتشريعية؟","choices":["أ. العصر الملكي.","ب. عصر الإمبراطورية العليا.","ج. عصر الإمبراطورية السفلى.","د. العصر الجمهوري."],"correctAnswer":2,"time":40},{"questionText":"ما المقصود بـ \"نظام الالتزام\" في القانون الروماني؟","choices":["أ. القواعد التي تنظم الملكية وحقوق الأفراد.","ب. مجموعة القواعد التي تنظم الحقوق العائلية.","ج. القوانين المتعلقة بالمسؤولية الجنائية","د. مجموعة القواعد التي تحدد كيفية نشوء الالتزامات وأسبابها."],"correctAnswer":4,"time":40},{"questionText":"ما الفرق الأساسي بين الشريعة الإسلامية والتشريعات الوضعية؟","choices":["أ. الشريعة الإسلامية تعتمد على النصوص الدينية فقط، بينما التشريعات الوضعية تعتمد على الأعراف.","ب. الشريعة الإسلامية تستند إلى وحي إلهي، بينما التشريعات الوضعية من صنع البشر.","ج. التشريعات الوضعية أكثر مرونة في القضايا الجنائية من الشريعة الإسلامية.","د. لا يوجد فرق جوهري بينهما."],"correctAnswer":2,"time":40},{"questionText":"ما هو المبدأ الأساسي في العقوبات الإسلامية؟","choices":["أ. التدرج في تطبيق العقوبة.","ب. التشدد في إنزال العقوبات.","ج. درء الحدود بالشبهات.","د. عدم النظر إلى الظروف المحيطة بالجريمة."],"correctAnswer":3,"time":40},{"questionText":"ما هو المبدأ الأساسي الذي يقوم عليه الحكم في الإسلام؟","choices":["أ. الشورى المطلقة.","ب. سيادة الشريعة الإسلامية.","ج. السلطة المطلقة للخليفة.","د. تطبيق الحدود فقط."],"correctAnswer":2,"time":40},{"questionText":"ما الفرق بين الحدود والتعزير في الشريعة الإسلامية؟","choices":["أ. الحدود عقوبات مقدرة شرعاً، بينما التعزير عقوبات اجتهادية.","ب. التعزير أقسى من الحدود.","ج. الحدود يمكن تعديلها حسب المصلحة، بينما التعزير ثابت.","د. لا فرق بينهما."],"correctAnswer":1,"time":40},{"questionText":"ما العلاقة بين الأمر بالمعروف والنهي عن المنكر والحكم في الإسلام؟","choices":["أ. هو مبدأ أخلاقي فقط وليس له علاقة بالحكم.","ب. هو جزء من مسؤوليات الحاكم في إقامة العدل.","ج. تطبقه فقط الجهات الدينية وليس الدولة.","د. هو مبدأ نظري ولا يتم العمل به عملياً."],"correctAnswer":2,"time":40}];
             let currentQuestionIndex = 0;
             let score = 0;
             let studentName = '';
             let timer;
 
+            document.getElementById('startButton').addEventListener('click', function () {
+              studentName = document.getElementById('studentName').value;
+              if (!studentName) {
+                alert("يرجى إدخال اسمك للمتابعة.");
+                return;
+              }
+              document.getElementById('startContainer').style.display = 'none';
+              document.getElementById('questionsContainer').style.display = 'block';
+              showQuestion(currentQuestionIndex);
+            });
 
+            function showQuestion(index) {
+              const container = document.getElementById('questionsContainer');
+              container.innerHTML = '';
+              if (index >= questions.length) {
+                document.getElementById('questionsContainer').style.display = 'none';
+                document.getElementById('resultContainer').style.display = 'block';
+                document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
+                sendToTelegram(studentName, score, questions.length);
+                return;
+              }
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const savedName = localStorage.getItem('studentName');
-    const nameInput = document.getElementById('studentName');
+              const question = questions[index];
+              const questionElement = document.createElement('div');
+              questionElement.classList.add('question');
+              questionElement.innerHTML = `
+                <h2>السؤال ${index + 1}</h2>
+                <p>${question.questionText}</p>
+                <ul>
+                  ${question.choices.map((choice, i) => `
+                    <li>
+                      <input type="radio" name="answer" value="${i + 1}">
+                      ${choice}
+                    </li>
+                  `).join('')}
+                </ul>
+                <p class="timer">الوقت المتبقي: <span id="timer">${question.time}</span> ثانية</p>
+                <button id="nextButton">التالي</button>
+              `;
 
-    if (savedName) {
-      nameInput.value = savedName;
-      nameInput.disabled = true;
-    }
+              container.appendChild(questionElement);
 
-    document.getElementById('startButton').addEventListener('click', function () {
-      
-      studentName = savedName || nameInput.value;
+              const timerElement = document.getElementById('timer');
+              let timeLeft = question.time;
 
-      if (!studentName) {
-        alert("يرجى إدخال اسمك للمتابعة.");
-        return;
-      }
-localStorage.setItem('examCompleted1', 'true');
-      
-      if (!savedName) {
-        localStorage.setItem('studentName', studentName);
-      }
+              timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                  clearInterval(timer);
+                  checkAnswer();
+                }
+              }, 1000);
 
-      
-      document.getElementById('startContainer').style.display = 'none';
-      document.getElementById('questionsContainer').style.display = 'block';
+              document.getElementById('nextButton').addEventListener('click', function () {
+                clearInterval(timer);
+                checkAnswer();
+              });
 
-     
-      startExam(studentName);
-    });
-  });
+              function checkAnswer() {
+                const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+                if (selectedAnswer && parseInt(selectedAnswer.value) === question.correctAnswer) {
+                  score++;
+                }
+                currentQuestionIndex++;
+                showQuestion(currentQuestionIndex);
+              }
+            }
 
-  function startExam(studentName) {
-    let currentQuestionIndex = 0;
-    let score = 0;
-    let timer;
-
-    function showQuestion(index) {
-      const container = document.getElementById('questionsContainer');
-      container.innerHTML = '';
-
-     
-      if (index >= questions.length) {
-        document.getElementById('questionsContainer').style.display = 'none';
-        document.getElementById('resultContainer').style.display = 'block';
-        document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
-        sendToTelegram(studentName, score, questions.length);
-        return;
-      }
-
-      const question = questions[index];
-      const questionElement = document.createElement('div');
-      questionElement.classList.add('question');
-      questionElement.innerHTML = `
-        <h2>السؤال ${index + 1}</h2>
-        <p>${question.questionText}</p>
-        <ul>
-          ${question.choices.map((choice, i) => `
-            <li>
-              <input type="radio" name="answer" value="${i + 1}">
-              ${choice}
-            </li>
-          `).join('')}
-        </ul>
-        <p class="timer">الوقت المتبقي: <span id="timer">${question.time}</span> ثانية</p>
-        <button id="nextButton">التالي</button>
-      `;
-
-      container.appendChild(questionElement);
-
-      const timerElement = document.getElementById('timer');
-      let timeLeft = question.time;
-
-      timer = setInterval(() => {
-        timeLeft--;
-        timerElement.textContent = timeLeft;
-        if (timeLeft <= 0) {
-          clearInterval(timer);
-          checkAnswer();
-        }
-      }, 1000);
-
-      document.getElementById('nextButton').addEventListener('click', function () {
-        clearInterval(timer);
-        checkAnswer();
-      });
-
-      function checkAnswer() {
-        const selectedAnswer = document.querySelector('input[name="answer"]:checked');
-        if (selectedAnswer && parseInt(selectedAnswer.value) === question.correctAnswer) {
-          score++;
-        }
-        currentQuestionIndex++;
-        showQuestion(currentQuestionIndex);
-      }
-    }
-
-    showQuestion(currentQuestionIndex);
-  }
-
-  function sendToTelegram(name, score, totalQuestions) {
-    const message = `📋 *امتحان جديد*\n👤 *اسم الطالب:* ${name}\n✅ *النتيجة:* ${score}/${totalQuestions}\n`;
-    fetch(`https://api.telegram.org/bot7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y/sendMessage`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        chat_id: 152435304,
-        text: message,
-        parse_mode: 'Markdown',
-      }),
-    }).catch((error) => console.error('خطأ في الإرسال:', error));
-  }
-</script>
-  </script>
-</body>
-</html>
-
+            function sendToTelegram(name, score, totalQuestions) {
+              const message = `📋 *امتحان جديد*\n👤 *اسم الطالب:* ${name}\n✅ *النتيجة:* ${score}/${totalQuestions}\n`;
+              fetch(`https://api.telegram.org/bot7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y/sendMessage`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  chat_id: 152435304,
+                  text: message,
+                  parse_mode: 'Markdown',
+                }),
+              }).catch((error) => console.error('خطأ في الإرسال:', error));
+            }
+          </script>
+        </div>
+      </body>
+      </html>
     
