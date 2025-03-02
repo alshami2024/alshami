@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>اختبار القدرات الذهنية </title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: url('https://i.imgur.com/PYF7jOC.jpg') no-repeat center center fixed;
+      background-size: cover;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      direction: rtl;
+      text-align: right;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      color: #8e44ad;
+      font-family: 'Amiri', serif;
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    input[type="text"] {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      margin: 8px 0;
+      background: #f8f9fa;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out;
+    }
+
+    ul li:hover {
+      background-color: #d6a2e8;
+    }
+
+    ul li input[type="radio"] {
+      margin-left: 10px;
+      margin-right: 5px;
+      cursor: pointer;
+      width: 18px;
+      height: 18px;
+    }
+
+    .timer {
+      font-size: 18px;
+      color: #e74c3c;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+
+    button {
+      background-color: #8e44ad;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease-in-out, transform 0.2s;
+    }
+
+    button:hover {
+      background-color: #732d91;
+      transform: scale(1.05);
+    }
+
+    .lantern {
+      position: absolute;
+      top: -50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      animation: swing 3s infinite alternate ease-in-out;
+    }
+
+    @keyframes swing {
+      0% { transform: translateX(-50%) rotate(0deg); }
+      100% { transform: translateX(-50%) rotate(10deg); }
+    }
+
+    .question {
+      opacity: 0;
+      animation: fadeIn 0.8s forwards;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(-10px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+      </head>
+      <body>
+        <div class="container" id="examContainer">
+          <h1>اختبار القدرات الذهنية</h1>
+          <div id="startContainer">
+            <input type="text" id="studentName" placeholder="أدخل اسمك" required>
+            <button id="startButton">بدء الاختبار</button>
+          </div>
+          <div id="questionsContainer" style="display:none;"></div>
+          <div id="resultContainer" style="display:none;">
+            <h2>تم الانتهاء من الاختبار!</h2>
+            <p id="resultMessage"></p>
+          </div>
+          <script>
+            const questions = [{"questionText":"إذا كان أحمد أطول من خالد، وخالد أطول من سعيد، فمن هو الأطول؟","choices":["أ. أحمد.","ب. خالد.","ج. سعيد.","د. غير معروف."],"correctAnswer":1,"time":60},{"questionText":"إذا كانت الساعة الآن 3:15، فما هو الزاوية بين عقرب الساعات وعقرب الدقائق؟","choices":["أ. 0°.","ب. 7.5°.","ج. 30°.","د. 37.5°."],"correctAnswer":4,"time":60},{"questionText":"إذا كان الرقم التالي في التسلسل هو 21، فما هو الرقم الذي يسبقه؟ (1, 3, 6, 10, 15, __, 28.","choices":["أ. 18.","ب. 19.","ج. 20.","د. 21."],"correctAnswer":3,"time":60},{"questionText":"لدى سارة ضعف ما لدى علي من أقلام، ولدى علي 6 أقلام، فكم عدد الأقلام التي لدى سارة؟","choices":["أ. 6.","ب. 12.","ج. 18.","د. 24."],"correctAnswer":2,"time":60},{"questionText":"إذا كان سعر منتج بعد الخصم 80 ريالًا، وكان الخصم 20٪، فما كان سعره الأصلي؟","choices":["أ. 90 ريالًا.","ب. 100 ريال.","ج. 110 ريال.","د. 120 ريالًا."],"correctAnswer":2,"time":60},{"questionText":"ما الكلمة المختلفة عن البقية؟","choices":["أ. تفاحة.","ب. موزة.","ج. طماطم.","د. عنب."],"correctAnswer":3,"time":60},{"questionText":"أي من الكلمات التالية ليست مرادفًا لكلمة \"سعيد\"؟","choices":["أ. فرح.","ب. مسرور.","ج. مكتئب.","د. مبتهج."],"correctAnswer":3,"time":60},{"questionText":"ما هو الشكل الذي يأتي بعد التسلسل التالي؟ (⚫🔵⚫🔵⚫....)؟","choices":["أ. ⚫.","ب. 🔵.","ج. ⚫⚫.","د. 🔵🔵."],"correctAnswer":2,"time":60},{"questionText":"إذا كان لديك كوب ماء فارغ، وأضفت إليه ماء، ثم سكبت نصفه، ماذا تبقى؟","choices":["أ. ماء.","ب. نصف كوب ماء.","ج. كوب فارغ.","د. لا شيء."],"correctAnswer":2,"time":60},{"questionText":"إذا قرأت قائمة من 5 أشياء: تفاح، سيارة، شمس، قلم، بيت. ما هو العنصر الرابع؟","choices":["أ. شمس.","ب. قلم.","ج. سيارة.","د. بيت."],"correctAnswer":2,"time":60}];
+            let currentQuestionIndex = 0;
+            let score = 0;
+            let studentName = '';
+            let timer;
+
+            document.getElementById('startButton').addEventListener('click', function () {
+              studentName = document.getElementById('studentName').value;
+              if (!studentName) {
+                alert("يرجى إدخال اسمك للمتابعة.");
+                return;
+              }
+              document.getElementById('startContainer').style.display = 'none';
+              document.getElementById('questionsContainer').style.display = 'block';
+              showQuestion(currentQuestionIndex);
+            });
+
+            function showQuestion(index) {
+              const container = document.getElementById('questionsContainer');
+              container.innerHTML = '';
+              if (index >= questions.length) {
+                document.getElementById('questionsContainer').style.display = 'none';
+                document.getElementById('resultContainer').style.display = 'block';
+                document.getElementById('resultMessage').textContent = `شكراً ${studentName}! لقد أجبت بشكل صحيح على ${score} من أصل ${questions.length} أسئلة.`;
+                sendToTelegram(studentName, score, questions.length);
+                return;
+              }
+
+              const question = questions[index];
+              const questionElement = document.createElement('div');
+              questionElement.classList.add('question');
+              questionElement.innerHTML = `
+                <h2>السؤال ${index + 1}</h2>
+                <p>${question.questionText}</p>
+                <ul>
+                  ${question.choices.map((choice, i) => `
+                    <li>
+                      <input type="radio" name="answer" value="${i + 1}">
+                      ${choice}
+                    </li>
+                  `).join('')}
+                </ul>
+                <p class="timer">الوقت المتبقي: <span id="timer">${question.time}</span> ثانية</p>
+                <button id="nextButton">التالي</button>
+              `;
+
+              container.appendChild(questionElement);
+
+              const timerElement = document.getElementById('timer');
+              let timeLeft = question.time;
+
+              timer = setInterval(() => {
+                timeLeft--;
+                timerElement.textContent = timeLeft;
+                if (timeLeft <= 0) {
+                  clearInterval(timer);
+                  checkAnswer();
+                }
+              }, 1000);
+
+              document.getElementById('nextButton').addEventListener('click', function () {
+                clearInterval(timer);
+                checkAnswer();
+              });
+
+              function checkAnswer() {
+                const selectedAnswer = document.querySelector('input[name="answer"]:checked');
+                if (selectedAnswer && parseInt(selectedAnswer.value) === question.correctAnswer) {
+                  score++;
+                }
+                currentQuestionIndex++;
+                showQuestion(currentQuestionIndex);
+              }
+            }
+
+            function sendToTelegram(name, score, totalQuestions) {
+              const message = `📋 *امتحان جديد*\n👤 *اسم الطالب:* ${name}\n✅ *النتيجة:* ${score}/${totalQuestions}\n`;
+              fetch(`https://api.telegram.org/bot7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y/sendMessage`, {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                  chat_id: 152435304,
+                  text: message,
+                  parse_mode: 'Markdown',
+                }),
+              }).catch((error) => console.error('خطأ في الإرسال:', error));
+            }
+          </script>
+        </div>
+<footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f1f1f1; position: fixed; bottom: 0; width: 100%;">
+        © Copyright 2025 Jamal-Alshami
+    </footer>
+      </body>
+      </html>
+    
