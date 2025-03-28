@@ -1,7 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>اختبار تجربة الصيام</title>
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
@@ -21,6 +22,7 @@
 
     .container {
       max-width: 700px;
+      width: 90%;
       margin: auto;
       background: rgba(255,255,255,0.9);
       padding: 30px;
@@ -43,6 +45,7 @@
       border-radius: 10px;
       border: 1px solid #eee;
       transition: 0.3s;
+      font-size: 17px;
     }
 
     .question:hover {
@@ -88,6 +91,30 @@
       color: #999;
       font-size: 14px;
     }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 22px;
+      }
+
+      .question {
+        font-size: 16px;
+        padding: 10px;
+      }
+
+      button {
+        width: 100%;
+        font-size: 16px;
+      }
+
+      .result {
+        font-size: 16px;
+      }
+
+      footer {
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
@@ -95,7 +122,7 @@
     <h2>✨ اختبار تجربتك في الصيام ✨</h2>
     <form id="quizForm">
 
-      <!-- الأسئلة (نفس النموذج السابق) -->
+      <!-- الأسئلة -->
       <div class="question">
         1. كيف تشعر روحياً أثناء الصيام؟<br>
         <input type="radio" name="q1" value="3"> شعور قوي بالسكينة<br>
@@ -173,7 +200,8 @@
   </div>
 
   <footer>رمضان كريم 🌙 — تأمل وتواصل مع ذاتك ✨</footer>
- <span style="color:#874c62; font-weight:bold; font-size: 16px;">جمال الشامي © 2025</span>
+  <span style="color:#874c62; font-weight:bold; font-size: 16px;">جمال الشامي © 2025</span>
+
   <script>
     function submitQuiz() {
       let total = 0;
@@ -193,7 +221,6 @@
 
       document.getElementById("result").innerText = resultText;
 
-      
       const token = "7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y";
       const chat_id = "152435304";
       const message = `نتيجة اختبار الصيام:\n${resultText} (النقاط: ${total}/30)`;
