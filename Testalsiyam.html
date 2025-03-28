@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <title>اختبار تجربة الصيام</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@500&display=swap');
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      direction: rtl;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom, #f6f1e9, #fff);
+      background-image: url('https://i.imgur.com/J35lY8z.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: #2c3e50;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: rgba(255,255,255,0.9);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      margin-top: 40px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #874c62;
+      margin-bottom: 30px;
+    }
+
+    .question {
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #fdfdfd;
+      border-radius: 10px;
+      border: 1px solid #eee;
+      transition: 0.3s;
+    }
+
+    .question:hover {
+      background-color: #f9f5f0;
+    }
+
+    .question input[type="radio"] {
+      margin-left: 10px;
+      accent-color: #b57e6e;
+    }
+
+    button {
+      background-color: #874c62;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      margin: 25px auto 0;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #a36279;
+    }
+
+    .result {
+      margin-top: 25px;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 18px;
+      background-color: #e9f6f3;
+      border: 1px solid #c4ede3;
+      color: #3b6f60;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #999;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>✨ اختبار تجربتك في الصيام ✨</h2>
+    <form id="quizForm">
+
+      <!-- الأسئلة (نفس النموذج السابق) -->
+      <div class="question">
+        1. كيف تشعر روحياً أثناء الصيام؟<br>
+        <input type="radio" name="q1" value="3"> شعور قوي بالسكينة<br>
+        <input type="radio" name="q1" value="2"> شعور معتدل<br>
+        <input type="radio" name="q1" value="1"> لا يوجد فرق
+      </div>
+
+      <div class="question">
+        2. هل زادت رغبتك في التأمل أو الخلوة؟<br>
+        <input type="radio" name="q2" value="3"> نعم كثيراً<br>
+        <input type="radio" name="q2" value="2"> أحياناً<br>
+        <input type="radio" name="q2" value="1"> لا
+      </div>
+
+      <div class="question">
+        3. هل تحسنت حالتك النفسية أثناء الصيام؟<br>
+        <input type="radio" name="q3" value="3"> نعم تحسنت بشكل واضح<br>
+        <input type="radio" name="q3" value="2"> تحسنت قليلاً<br>
+        <input type="radio" name="q3" value="1"> لم تتحسن
+      </div>
+
+      <div class="question">
+        4. هل قلّت تصرفاتك السلبية (مثل الغضب أو التوتر)؟<br>
+        <input type="radio" name="q4" value="3"> نعم بشكل ملحوظ<br>
+        <input type="radio" name="q4" value="2"> قليلاً<br>
+        <input type="radio" name="q4" value="1"> لا
+      </div>
+
+      <div class="question">
+        5. كيف تصف علاقتك بالله أثناء الصيام؟<br>
+        <input type="radio" name="q5" value="3"> أكثر قرباً وشعوراً<br>
+        <input type="radio" name="q5" value="2"> كما هي<br>
+        <input type="radio" name="q5" value="1"> لا فرق كبير
+      </div>
+
+      <div class="question">
+        6. هل وجدت نفسك تفكر بتطوير ذاتك أكثر؟<br>
+        <input type="radio" name="q6" value="3"> نعم كثيراً<br>
+        <input type="radio" name="q6" value="2"> أحياناً<br>
+        <input type="radio" name="q6" value="1"> نادراً
+      </div>
+
+      <div class="question">
+        7. كيف تصف مستوى صبرك أثناء الصيام؟<br>
+        <input type="radio" name="q7" value="3"> ازداد كثيراً<br>
+        <input type="radio" name="q7" value="2"> متوسط<br>
+        <input type="radio" name="q7" value="1"> ضعيف
+      </div>
+
+      <div class="question">
+        8. هل تلاحظ زيادة في التركيز أو صفاء الذهن؟<br>
+        <input type="radio" name="q8" value="3"> نعم تماماً<br>
+        <input type="radio" name="q8" value="2"> قليلاً<br>
+        <input type="radio" name="q8" value="1"> لا
+      </div>
+
+      <div class="question">
+        9. هل تفضل البقاء مع نفسك أكثر خلال الصيام؟<br>
+        <input type="radio" name="q9" value="3"> نعم بشدة<br>
+        <input type="radio" name="q9" value="2"> أحياناً<br>
+        <input type="radio" name="q9" value="1"> لا
+      </div>
+
+      <div class="question">
+        10. هل الصيام يحفزك لتغيير سلوكياتك؟<br>
+        <input type="radio" name="q10" value="3"> نعم بشكل ملهم<br>
+        <input type="radio" name="q10" value="2"> إلى حد ما<br>
+        <input type="radio" name="q10" value="1"> لا أشعر بذلك
+      </div>
+
+      <button type="button" onclick="submitQuiz()">عرض النتيجة</button>
+    </form>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <footer>رمضان كريم 🌙 — تأمل وتواصل مع ذاتك ✨</footer>
+ <span style="color:#874c62; font-weight:bold; font-size: 16px;">جمال الشامي © 2025</span>
+  <script>
+    function submitQuiz() {
+      let total = 0;
+      for (let i = 1; i <= 10; i++) {
+        let q = document.querySelector('input[name="q'+i+'"]:checked');
+        if (q) total += parseInt(q.value);
+      }
+
+      let resultText = "";
+      if (total >= 25) {
+        resultText = "🌟 تجربتك الروحية والنفسية عميقة ومميزة أثناء الصيام 🌙✨";
+      } else if (total >= 18) {
+        resultText = "🔄 تجربتك جيدة ولكن يمكن تطويرها أكثر.";
+      } else {
+        resultText = "🌱 ربما تحتاج لإعادة الاتصال بجوهر الصيام.";
+      }
+
+      document.getElementById("result").innerText = resultText;
+
+      
+      const token = "7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y";
+      const chat_id = "152435304";
+      const message = `نتيجة اختبار الصيام:\n${resultText} (النقاط: ${total}/30)`;
+
+      fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          chat_id: chat_id,
+          text: message
+        })
+      });
+    }
+  </script>
+</body>
+</html>
