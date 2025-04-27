@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>عرض جدول المحاضرات - الطالب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; padding: 20px; }
+    .header { background-color: #0d6efd; color: white; padding: 20px; text-align: center; margin-bottom: 20px; }
+    .table thead { background-color: #dee2e6; }
+  </style>
+</head>
+<body>
+
+<div class="header">
+  <h3>📘 جدول المحاضرات - الطلاب</h3>
+</div>
+
+<div class="container">
+  <div class="mb-3 row">
+    <div class="col-md-6">
+      <label class="form-label">القسم:</label>
+      <select id="studentDept" class="form-select">
+        <option value="">-- الكل --</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <label class="form-label">المستوى:</label>
+      <select id="studentLevel" class="form-select">
+        <option value="">-- الكل --</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>اليوم</th>
+          <th>القسم</th>
+          <th>المستوى</th>
+          <th>المدرس</th>
+          <th>المادة</th>
+          <th>القاعة</th>
+          <th>الوقت</th>
+        </tr>
+      </thead>
+      <tbody id="studentScheduleBody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+  function loadStudentSchedule() {
+    // 📥 رابط GitHub الذي يحتوي على ملف JSON
+    fetch("https://raw.githubusercontent.com/alshami2024/alshami/main/schedule.json")
+      .then(res => res.json())
+      .then(data => {
+        const deptSelect = document.getElementById("studentDept");
+        const levelSelect = document.getElementById("studentLevel");
+        const tbody = document.getElementById("studentScheduleBody");
+
+        const depts = new Set();
+        const levels = new Set();
+
+        data.forEach(row => {
+          depts.add(row.department);
+          levels.add(row.level);
+        });
+
+        depts.forEach(dep => {
+          const opt = document.createElement("option");
+          opt.value = dep;
+          opt.textContent = dep;
+          deptSelect.appendChild(opt);
+        });
+
+        levels.forEach(lvl => {
+          const opt = document.createElement("option");
+          opt.value = lvl;
+          opt.textContent = lvl;
+          levelSelect.appendChild(opt);
+        });
+
+        function renderTable() {
+          const dept = deptSelect.value;
+          const level = levelSelect.value;
+
+          tbody.innerHTML = "";
+          data.forEach(row => {
+            if ((dept && row.department !== dept) || (level && row.level !== level)) return;
+
+            tbody.innerHTML += `
+              <tr>
+                <td>${row.day}</td>
+                <td>${row.department}</td>
+                <td>${row.level}</td>
+                <td>${row.teacher}</td>
+                <td>${row.subject}</td>
+                <td>${row.room}</td>
+                <td>${row.time}</td>
+              </tr>
+            `;
+          });
+        }
+
+        deptSelect.addEventListener("change", renderTable);
+        levelSelect.addEventListener("change", renderTable);
+
+        renderTable(); // أول تحميل
+      })
+      .catch(err => {
+        alert("❌ حدث خطأ في تحميل الجدول من GitHub");
+        console.error(err);
+      });
+  }
+
+  window.addEventListener("load", loadStudentSchedule);
+</script>
+
+</body>
+</html>
