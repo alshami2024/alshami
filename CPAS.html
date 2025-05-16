@@ -1,0 +1,302 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نظام التقييم النفسي الشامل</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+
+  <!-- jsPDF for PDF export -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <style>
+    body {
+      background-color: #f0f4f8;
+      font-family: 'Arial', sans-serif;
+    }
+    .indicator {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin: 20px auto;
+    }
+    .indicator.green { background-color: #4caf50; }
+    .indicator.orange { background-color: #ff9800; }
+    .indicator.red { background-color: #f44336; }
+    .recommend-box {
+      background: #e3f2fd;
+      padding: 20px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <h2 class="text-center mb-4">نظام التقييم النفسي الشامل</h2>
+
+  <div class="card p-4 shadow-sm">
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label class="form-label">الاسم</label>
+        <input type="text" id="name" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">العمر</label>
+        <input type="number" id="age" class="form-control">
+      </div>
+      <div class="col-md-4">
+        <label class="form-label">الجنس</label>
+        <select id="gender" class="form-select">
+          <option>ذكر</option>
+          <option>أنثى</option>
+        </select>
+      </div>
+    </div>
+
+<label class="form-label">نوع الاختبار</label>
+<select id="testType" class="form-select mb-3" onchange="loadTest()">
+  <option value="">اختر اختبارًا</option>
+  <option value="phq9">PHQ-9 (الاكتئاب)</option>
+  <option value="gad7">GAD-7 (القلق)</option>
+  <option value="pcl5">PCL-5 (اضطراب ما بعد الصدمة)</option>
+  <option value="ybocs">Y-BOCS (الوسواس القهري)</option>
+  <option value="asrs">ASRS (فرط الحركة)</option>
+  <!-- الخيارات الجديدة -->
+  <option value="who5">WHO-5 (مؤشر الرفاهية العام)</option>
+  <option value="psqi">PSQI (مؤشر جودة النوم)</option>
+</select>
+
+    <div id="questionsArea" class="mb-4"></div>
+    <button class="btn btn-primary" onclick="calculate()">تحليل النتيجة</button>
+  </div>
+
+  <div class="card mt-4 p-4 shadow-sm d-none" id="resultsCard">
+    <h4>النتائج</h4>
+    <p><strong>الاسم:</strong> <span id="r_name"></span></p>
+    <p><strong>العمر:</strong> <span id="r_age"></span></p>
+    <p><strong>الجنس:</strong> <span id="r_gender"></span></p>
+    <p><strong>نوع الاختبار:</strong> <span id="r_test"></span></p>
+    <p><strong>الدرجة:</strong> <span id="r_score"></span></p>
+    <p><strong>التشخيص:</strong> <span id="r_diag"></span></p>
+
+    <div class="indicator my-3" id="indicator"></div>
+
+    <div class="recommend-box">
+      <p><strong>التوصيات:</strong> <span id="r_reco"></span></p>
+      <p><strong>موعد إعادة التقييم:</strong> <span id="r_review"></span></p>
+    </div>
+  </div>
+</div>
+ <footer class="text-center text-muted py-3">
+    جميع الحقوق محفوظة – جمال الشامي © 2025
+  </footer>
+<script>
+  const tests = {
+    phq9: {
+      title: "PHQ-9 (الاكتئاب)",
+      questions: [
+        "قلة الاهتمام أو المتعة في القيام بالأشياء",
+        "الشعور بالاكتئاب أو اليأس",
+        "صعوبة النوم أو النوم الزائد",
+        "الإرهاق أو قلة الطاقة",
+        "قلة الشهية أو الأكل الزائد",
+        "الشعور بأنك فاشل أو خذلت الآخرين",
+        "صعوبة في التركيز",
+        "البطء أو النشاط الزائد",
+        "أفكار الموت أو إيذاء النفس"
+      ],
+      scale: ["0 - لا على الإطلاق", "1 - لأيام قليلة", "2 - أكثر من نصف الأيام", "3 - دائمًا تقريبًا"],
+      interpret: score => {
+        if (score <= 4) return ["طبيعي", "green", "لا حاجة لتدخل، راقب الحالة.", "بعد شهر"];
+        if (score <= 9) return ["اكتئاب خفيف", "orange", "جلسات دعم نفسي أسبوعية.", "بعد أسبوعين"];
+        if (score <= 14) return ["اكتئاب متوسط", "orange", "جلسات CBT وتقييم سريري.", "بعد أسبوع"];
+        return ["اكتئاب شديد", "red", "إحالة لطبيب نفسي عاجلة.", "فوري"];
+      }
+    },
+    gad7: {
+      title: "GAD-7 (القلق)",
+      questions: [
+        "الشعور بالتوتر أو العصبية",
+        "عدم القدرة على التوقف عن القلق",
+        "القلق المفرط بشأن الأمور اليومية",
+        "صعوبة الاسترخاء",
+        "سهولة الانزعاج أو التهيج",
+        "الشعور بالخوف من وقوع مصيبة",
+        "صعوبة التركيز بسبب القلق"
+      ],
+      scale: ["0 - لا على الإطلاق", "1 - لأيام قليلة", "2 - أكثر من نصف الأيام", "3 - دائمًا تقريبًا"],
+      interpret: score => {
+        if (score <= 4) return ["قلق طبيعي", "green", "لا حاجة لتدخل.", "بعد شهر"];
+        if (score <= 9) return ["قلق خفيف", "orange", "تقنيات استرخاء + استشارة خفيفة.", "بعد أسبوعين"];
+        if (score <= 14) return ["قلق متوسط", "orange", "CBT + متابعة طبية.", "بعد أسبوع"];
+        return ["قلق شديد", "red", "علاج سلوكي ودوائي محتمل.", "فوري"];
+      }
+    },
+    pcl5: {
+      title: "PCL-5 (اضطراب ما بعد الصدمة)",
+      questions: [
+        "ذكريات مزعجة متكررة عن الحدث",
+        "أحلام مزعجة متكررة عن الحدث",
+        "تجنب الحديث أو التفكير في الحدث",
+        "الشعور بالانفصال عن الآخرين",
+        "صعوبة النوم أو اليقظة المفرطة"
+      ],
+      scale: ["0 - أبدًا", "1 - نادرًا", "2 - أحيانًا", "3 - غالبًا", "4 - دائمًا"],
+      interpret: score => {
+        if (score <= 9) return ["مؤشر منخفض", "green", "لا حاجة لتدخل حالي.", "بعد شهر"];
+        if (score <= 14) return ["مؤشر متوسط", "orange", "جلسات دعم ومراقبة الأعراض.", "بعد أسبوعين"];
+        return ["مؤشر مرتفع", "red", "تشخيص سريري وعلاج سلوكي متخصص.", "فوري"];
+      }
+    },
+    ybocs: {
+      title: "Y-BOCS (الوسواس القهري)",
+      questions: [
+        "وجود أفكار وسواسية متكررة",
+        "محاولة مقاومة هذه الأفكار",
+        "تنفيذ طقوس متكررة",
+        "الانزعاج عند منع هذه الطقوس",
+        "تأثير الوسواس على حياتك اليومية"
+      ],
+      scale: ["0 - لا يوجد", "1 - خفيف", "2 - متوسط", "3 - شديد", "4 - شديد جدًا"],
+      interpret: score => {
+        if (score <= 7) return ["وسواس طفيف", "green", "مراقبة مستمرة فقط.", "بعد شهر"];
+        if (score <= 15) return ["وسواس متوسط", "orange", "جلسات CBT مخصصة.", "بعد أسبوعين"];
+        return ["وسواس شديد", "red", "علاج مكثف وربما دوائي.", "فوري"];
+      }
+    },
+    asrs: {
+      title: "ASRS (فرط الحركة وتشتت الانتباه)",
+      questions: [
+        "صعوبة إنهاء التفاصيل",
+        "نسيان المواعيد أو الالتزامات",
+        "صعوبة تنظيم المهام",
+        "تأجيل المهام التي تحتاج تركيزًا",
+        "التشتت بسهولة",
+        "مقاطعة الآخرين في الحديث"
+      ],
+      scale: ["0 - أبدًا", "1 - نادرًا", "2 - أحيانًا", "3 - غالبًا", "4 - دائمًا"],
+      interpret: score => {
+        if (score < 12) return ["لا يوجد مؤشر قوي", "green", "لا حاجة لتدخل حالياً.", "بعد شهر"];
+        return ["احتمال لـ ADHD", "orange", "تقييم اختصاصي وبدء خطة علاجية محتملة.", "خلال أسبوع"];
+      }
+   
+  },
+
+who5: {
+      title: "WHO-5 (مؤشر الرفاهية العام)",
+      questions: [
+        "شعرت بأنني فزت بأشياء كانت مهمة لي",
+        "شعرت بالسعادة العامة",
+        "شعرت بالراحة أثناء اليوم",
+        "كنت منتعشًا ومليئًا بالطاقة",
+        "اهتممت بحياتي اليومية"
+      ],
+      scale: [
+        "0 - لمرة واحدة أو لا شيء",
+        "1 - قليلًا",
+        "2 - أحيانًا",
+        "3 - كثيرًا",
+        "4 - دائمًا"
+      ],
+      interpret: score => {
+        if (score <= 8) 
+          return ["رفاهية منخفضة", "red", "ينصح باستشارة اختصاصي دعم نفسي.", "بعد أسبوعين"];
+        if (score <= 13) 
+          return ["رفاهية متوسطة", "orange", "تقنيات تعزيز الرفاهية + متابعة.", "بعد أسبوع"];
+        return ["رفاهية جيدة", "green", "لا حاجة لتدخل، راقب الحالة.", "بعد شهر"];
+      }
+    },
+
+    psqi: {
+      title: "PSQI (مؤشر جودة النوم)",
+      questions: [
+        "مدى صعوبة النوم أثناء الأسبوع الماضي",
+        "عدد ساعات النوم المعتادة ليلاً",
+        "مدى شعورك بالراحة بعد الاستيقاظ",
+        "استخدامك لأدوية تساعد على النوم",
+        "مشاكل التنفس أثناء النوم",
+        "الشعور بالتعب أو النعاس أثناء اليوم",
+        "انزعاجات أخرى (ضوضاء/ضوء) تؤثر على نومك"
+      ],
+      scale: [
+        "0 - لا على الإطلاق",
+        "1 - قليلًا",
+        "2 - بعض الشيء",
+        "3 - كثيرًا"
+      ],
+      interpret: score => {
+        if (score <= 5) 
+          return ["جودة نوم جيدة", "green", "لا حاجة لتدخل، راقب الحالة.", "بعد شهر"];
+        if (score <= 10) 
+          return ["جودة نوم متوسطة", "orange", "تقنيات تحسين النوم + استشارة خفيفة.", "بعد أسبوعين"];
+        return ["جودة نوم ضعيفة", "red", "استشارة اختصاصي نوم.", "أسبوع"];
+      }
+    }
+};
+</script>
+<script>
+  function loadTest() {
+    const type = document.getElementById("testType").value;
+    const area = document.getElementById("questionsArea");
+    area.innerHTML = "";
+
+    if (tests[type]) {
+      tests[type].questions.forEach((q, index) => {
+        const options = tests[type].scale.map((label, value) =>
+          `<option value="${value}">${label}</option>`
+        ).join("");
+
+        area.innerHTML += `
+          <div class="mb-3">
+            <label class="form-label">${index + 1}. ${q}</label>
+            <select class="form-select answer">${options}</select>
+          </div>
+        `;
+      });
+    }
+  }
+
+  function calculate() {
+    const answers = document.querySelectorAll(".answer");
+    let score = 0;
+    answers.forEach(a => score += parseInt(a.value));
+
+    const name = document.getElementById("name").value;
+    const age = parseInt(document.getElementById("age").value);
+    const gender = document.getElementById("gender").value;
+    const testKey = document.getElementById("testType").value;
+    const test = tests[testKey];
+
+    if (!test || answers.length === 0) {
+      alert("الرجاء اختيار اختبار والإجابة على الأسئلة.");
+      return;
+    }
+
+    const [diagnosis, color, recommendation, reevaluation] = test.interpret(score);
+
+    let recoText = recommendation;
+    if (age < 18) recoText += " (ينصح بتخصيص الجلسات للمراهقين)";
+    if (age > 60) recoText += " (مراعاة الاعتبارات الجسدية والعمرية)";
+    if (gender === "أنثى" && testKey === "phq9") recoText += " (يمكن النظر في مجموعات دعم نسائية)";
+
+    document.getElementById("r_name").textContent = name;
+    document.getElementById("r_age").textContent = age;
+    document.getElementById("r_gender").textContent = gender;
+    document.getElementById("r_test").textContent = test.title;
+    document.getElementById("r_score").textContent = score;
+    document.getElementById("r_diag").textContent = diagnosis;
+    document.getElementById("r_reco").textContent = recoText;
+    document.getElementById("r_review").textContent = reevaluation;
+
+    const indicator = document.getElementById("indicator");
+    indicator.className = "indicator " + color;
+
+    document.getElementById("resultsCard").classList.remove("d-none");
+  }
+
+</script>
+</body>
+</html>
