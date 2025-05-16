@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
@@ -87,6 +87,8 @@
     <div class="recommend-box">
       <p><strong>التوصيات:</strong> <span id="r_reco"></span></p>
       <p><strong>موعد إعادة التقييم:</strong> <span id="r_review"></span></p>
+<button class="btn btn-secondary mt-3" onclick="backToTest()">العودة للاختبار</button>
+
     </div>
   </div>
 </div>
@@ -105,7 +107,7 @@
         "قلة الشهية أو الأكل الزائد",
         "الشعور بأنك فاشل أو خذلت الآخرين",
         "صعوبة في التركيز",
-        "البطء أو النشاط الزائد",
+        "بطء (بالكلام - الحركة) أو نشاط زائد يلاحظه الآخرون",
         "أفكار الموت أو إيذاء النفس"
       ],
       scale: ["0 - لا على الإطلاق", "1 - لأيام قليلة", "2 - أكثر من نصف الأيام", "3 - دائمًا تقريبًا"],
@@ -298,5 +300,18 @@ who5: {
   }
 
 </script>
+<script>
+  // الدالة التي تخفي بطاقة النتائج وتعيد المستخدم لبداية الاختبار
+  function backToTest() {
+    // إخفاء بطاقة النتائج
+    document.getElementById("resultsCard").classList.add("d-none");
+    // تمرير الصفحة إلى بداية النموذج
+    window.scrollTo({ top: document.querySelector(".card.p-4").offsetTop, behavior: "smooth" });
+    // (اختياري) إعادة تعيين الإجابات إذا أردت
+    document.getElementById("testType").value = "";
+    document.getElementById("questionsArea").innerHTML = "";
+  }
+</script>
+
 </body>
 </html>
