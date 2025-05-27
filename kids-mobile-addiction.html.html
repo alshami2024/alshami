@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>استبيان إدمان الأطفال على الموبايل</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(to top left, #f2f8ff, #dcefff);
+            margin: 0;
+            padding: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            max-width: 850px;
+            margin: auto;
+        }
+
+        h2, h3 {
+            color: #2c3e50;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+            color: #34495e;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        .question-block {
+            margin-bottom: 20px;
+        }
+
+        .options label {
+            display: block;
+            margin: 5px 0;
+        }
+
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            margin: 25px auto 0;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <form id="surveyForm">
+        <h2>استبيان حول إدمان الأطفال على الهواتف المحمولة</h2>
+        <p>نرجو منكم التفضل بالإجابة على الأسئلة التالية بكل صدق وموضوعية. جميع المعلومات سرية وتُستخدم لأغراض البحث فقط.</p>
+
+        <h3>معلومات عامة</h3>
+
+        <label>الجنس:</label>
+        <input type="radio" name="gender" value="ذكر"> ذكر
+        <input type="radio" name="gender" value="أنثى"> أنثى
+
+        <label>العمر:</label>
+        <select name="age">
+            <option>أقل من 25</option>
+            <option>25 – 35</option>
+            <option>36 – 45</option>
+            <option>أكثر من 45</option>
+        </select>
+
+        <label>عدد الأطفال:</label>
+        <select name="children">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>أكثر من 3</option>
+        </select>
+
+        <label>عمر الطفل محل الدراسة:</label>
+        <select name="child_age">
+            <option>أقل من 4 سنوات</option>
+            <option>4 – 6 سنوات</option>
+            <option>7 – 10 سنوات</option>
+            <option>أكثر من 10 سنوات</option>
+        </select>
+
+        <h3>أسئلة عن سلوك الطفل في استخدام الهاتف</h3>
+
+        <script>
+            const questions = [
+                "يستخدم طفلي الهاتف المحمول يوميًا.",
+                "يقضي طفلي أكثر من ساعتين متواصلتين على الهاتف.",
+                "يفضّل الهاتف على اللعب مع أقرانه.",
+                "يُظهر علامات انزعاج أو غضب عند منعه من الهاتف.",
+                "يستخدم الهاتف أثناء تناول الطعام.",
+                "يتجاهل مهامه الدراسية بسبب الهاتف.",
+                "يتأثر مزاجه بعد استخدام الهاتف.",
+                "يستخدم الهاتف قبل النوم مباشرة.",
+                "ينخفض تواصله الأسري بسبب الهاتف.",
+                "يعاني من صعوبة في النوم بسبب الهاتف."
+            ];
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const container = document.getElementById("dynamic-questions");
+                questions.forEach((q, i) => {
+                    const qNum = i + 1;
+                    const div = document.createElement("div");
+                    div.className = "question-block";
+                    div.innerHTML = `
+                        <label>${qNum}. ${q}</label>
+                        <div class="options">
+                            <label><input type="radio" name="q${qNum}" value="نادرًا جدًا"> نادرًا جدًا</label>
+                            <label><input type="radio" name="q${qNum}" value="نادرًا"> نادرًا</label>
+                            <label><input type="radio" name="q${qNum}" value="أحيانًا"> أحيانًا</label>
+                            <label><input type="radio" name="q${qNum}" value="غالبًا"> غالبًا</label>
+                            <label><input type="radio" name="q${qNum}" value="دائمًا"> دائمًا</label>
+                        </div>
+                    `;
+                    container.appendChild(div);
+                });
+            });
+        </script>
+
+        <div id="dynamic-questions"></div>
+
+        <h3>أسئلة مفتوحة</h3>
+
+        <label>ما الأسباب التي دفعت طفلك لاستخدام الهاتف بشكل مفرط؟</label>
+        <textarea name="reason" rows="3"></textarea>
+
+        <label>ما التحديات التي تواجهك في تقليل استخدامه؟</label>
+        <textarea name="challenges" rows="3"></textarea>
+
+        <label>ما الحلول المقترحة برأيك؟</label>
+        <textarea name="solutions" rows="3"></textarea>
+
+        <label>هل لاحظت تغيّرات في سلوك طفلك بعد استخدامه للهاتف؟ صفها.</label>
+        <textarea name="behavior_change" rows="3"></textarea>
+
+        <label>ما نوع المحتوى الذي يفضله طفلك على الهاتف؟</label>
+        <textarea name="content_type" rows="3"></textarea>
+
+        <label>هل تستخدم أدوات رقابة أبوية؟ ولماذا؟</label>
+        <textarea name="parental_control" rows="3"></textarea>
+
+        <button type="submit">إرسال</button>
+    </form>
+  </div>
+<footer style="text-align: center; margin-top: 40px; padding: 15px; color: #6b7280; font-size: 14px;">
+    Jamal-Alshami © 2025
+  </footer>
+    <script>
+       document.getElementById("surveyForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    // نصوص الأسئلة
+    const questions = [
+        "يستخدم طفلي الهاتف المحمول يوميًا.",
+        "يقضي طفلي أكثر من ساعتين متواصلتين على الهاتف.",
+        "يفضّل الهاتف على اللعب مع أقرانه.",
+        "يُظهر علامات انزعاج أو غضب عند منعه من الهاتف.",
+        "يستخدم الهاتف أثناء تناول الطعام.",
+        "يتجاهل مهامه الدراسية بسبب الهاتف.",
+        "يتأثر مزاجه بعد استخدام الهاتف.",
+        "يستخدم الهاتف قبل النوم مباشرة.",
+        "ينخفض تواصله الأسري بسبب الهاتف.",
+        "يعاني من صعوبة في النوم بسبب الهاتف."
+    ];
+
+    let message = "📋 *استبيان حول إدمان الأطفال على الهواتف المحمولة*\n\n";
+
+    message += "👤 *معلومات عامة:*\n";
+    message += `• الجنس: ${formData.get("gender")}\n`;
+    message += `• العمر: ${formData.get("age")}\n`;
+    message += `• عدد الأطفال: ${formData.get("children")}\n`;
+    message += `• عمر الطفل: ${formData.get("child_age")}\n\n`;
+
+    message += "📱 *أسئلة سلوك الطفل:*\n";
+    questions.forEach((q, i) => {
+        const answer = formData.get(`q${i + 1}`) || "لم يُجب";
+        message += `*${i + 1}.* ${q}\n➤ الإجابة: ${answer}\n`;
+    });
+
+    message += "\n📝 *أسئلة مفتوحة:*\n";
+    message += `• *الأسباب:* ${formData.get("reason") || "—"}\n`;
+    message += `• *التحديات:* ${formData.get("challenges") || "—"}\n`;
+    message += `• *الحلول المقترحة:* ${formData.get("solutions") || "—"}\n`;
+    message += `• *تغيّرات السلوك:* ${formData.get("behavior_change") || "—"}\n`;
+    message += `• *نوع المحتوى المفضل:* ${formData.get("content_type") || "—"}\n`;
+    message += `• *أدوات الرقابة الأبوية:* ${formData.get("parental_control") || "—"}\n`;
+
+    // إرسال إلى التليجرام
+    const botToken = "7595667236:AAFOpx-b18jFoTjSw3d0kcveigJobrwniiU";
+    const chatId = "152435304";
+
+    fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            chat_id: chatId,
+            text: message,
+            parse_mode: "Markdown"
+        })
+    }).then(response => {
+        if (response.ok) {
+            alert("✅ تم إرسال الاستبيان بنجاح.");
+            document.getElementById("surveyForm").reset();
+        } else {
+            alert("❌ حدث خطأ أثناء الإرسال.");
+        }
+    });
+});
+
+    </script>
+
+</body>
+</html>
