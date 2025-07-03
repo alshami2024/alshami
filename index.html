@@ -1,209 +1,662 @@
 ﻿<!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>تقييم الإيمان بالخرافات</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-            direction: rtl;
-            text-align: right;
-        }
-        header {
-            background-color: #004d40;
-            color: white;
-            padding: 10px;
-            display: flex;
-            justify-content: space-between;
-        }
-        .header-right, .header-left {
-            font-weight: bold;
-        }
-        main {
-            max-width: 600px;
-            margin: 50px auto;
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .question {
-            margin-bottom: 15px;
-        }
-        .question input {
-            margin-right: 5px;
-        }
-        button {
-            width: 100%;
-            padding: 10px;
-            background-color: #004d40;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #00332e;
-        }
-        #result {
-            margin-top: 20px;
-            text-align: center;
-            font-size: 18px;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>نظام إدارة وتحليل درجات الطلاب</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; padding: 20px; }
+    th, td { font-size: 0.9rem; }
+    .stat-card { margin-bottom: 1rem; }
+    canvas { max-width: 100%; height: auto !important; }
+    .stat-card .card {
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .print-univ-header {
+      font-size: 2.6rem !important;
+      font-weight: bold !important;
+      text-align: center;
+      margin-bottom: 0.6rem !important;
+      font-family: 'Cairo', 'Tajawal', Arial, sans-serif !important;
+    }
+    .print-section {
+      font-size: 1.3rem !important;
+      font-weight: 600 !important;
+      color: #2a555e;
+      text-align: center;
+      margin-bottom: 0.4rem !important;
+      font-family: 'Tajawal', 'Cairo', Arial, sans-serif !important;
+    }
+    .print-title {
+      font-size: 2rem !important;
+      font-weight: bold !important;
+      color: #0d6efd;
+      text-align: center;
+      margin-bottom: 0.8rem !important;
+      font-family: 'Cairo', 'Tajawal', Arial, sans-serif !important;
+    }
+   @media print {
+  /* لون الخلفية و إعداد الصفحة للطباعة */
+  body {
+    background: white !important;
+    padding: 30px 18px !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  /* إظهار الشعار والهيدر */
+  #printHeaderWrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 18px !important;
+    gap: 20px !important;
+  }
+  #printLogo {
+    display: inline !important;
+    height: 70px !important;
+    margin-left: 18px !important;
+  }
+  #univHeader {
+    display: inline !important;
+    font-size: 2.6rem !important;
+    font-weight: bold !important;
+    margin-bottom: 0 !important;
+    font-family: 'Cairo', 'Tajawal', Arial, sans-serif !important;
+  }
+  /* عنوان القسم وعنوان الصفحة */
+  .print-section {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    color: #2a555e !important;
+    text-align: center !important;
+    margin-bottom: 0.4rem !important;
+    font-family: 'Tajawal', 'Cairo', Arial, sans-serif !important;
+  }
+  .print-title {
+    font-size: 2rem !important;
+    font-weight: bold !important;
+    color: #0d6efd !important;
+    text-align: center !important;
+    margin-bottom: 0.8rem !important;
+    font-family: 'Cairo', 'Tajawal', Arial, sans-serif !important;
+  }
+  /* تنسيقات الجدول للطباعة */
+  .table-responsive, .dataTables_scrollBody {
+    overflow: visible !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    background: white !important;
+    padding: 0 !important;
+    direction: rtl !important;
+  }
+  #gradesTable, .dataTable {
+    width: max-content !important;
+    min-width: 98% !important;
+    border-collapse: collapse !important;
+    table-layout: auto !important;
+    background: white !important;
+    font-size: 10px !important;
+    margin-right: 0 !important;
+    margin-left: auto !important;
+    direction: rtl !important;
+  }
+  #gradesTable th, #gradesTable td {
+    padding: 4px 7px !important;
+    font-size: 10px !important;
+    white-space: nowrap !important;
+    word-break: keep-all !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+    max-width: 120px !important;
+    text-align: center !important;
+    border: 1px solid #333 !important;
+    vertical-align: middle !important;
+  }
+  #gradesTable th {
+    background: #eaf1fb !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    text-align: center !important;
+  }
+  /* تلوين الخلايا حسب حالة النجاح */
+  td[style*="background-color: #28a745"] { background-color: #28a745 !important; color: white !important;}
+  td[style*="background-color: #ffc107"] { background-color: #ffc107 !important; color: black !important;}
+  td[style*="background-color: #dc3545"] { background-color: #dc3545 !important; color: white !important;}
+  /* إخفاء العناصر غير المهمة للطباعة */
+  .dataTables_filter,
+  .dataTables_length,
+  .dataTables_info,
+  .dataTables_paginate,
+  .dt-buttons,
+  #downloadButtons,
+  #filterBtn,
+  #nonPrintTitle,
+  #stats,
+  #printBtn,
+  .print-btn,
+  footer,
+  .row.mb-3,
+  .mb-4,
+  .mb-5,
+  label,
+  input,
+  select,
+  button
+  {
+    display: none !important;
+  }
+}
+
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-right"> </div>
-        <div class="header-left">جمال الشامي</div>
-    </header>
+  <div class="container" id="reportSection">
+<img id="printLogo" src="logo.png" alt="شعار الجامعة" style="display:none; max-height:80px; margin:auto;"/>
 
-    <main>
-        <h1>تقييم مدى إيمانك بالخرافات</h1>
-        <form id="quizForm">
-            <div class="question">
-                <label>1. هل تؤمن بالحظ الجيد أو السيء؟</label>
-                <div>
-                    <input type="radio" name="q1" value="1"> نعم<br>
-                    <input type="radio" name="q1" value="0"> لا
-                </div>
-            </div>
+    <h1 id="univHeader" class="text-center mb-3" style="display:none">جامعة الضالع</h1>
+    <h2 class="text-center mb-4" id="nonPrintTitle">نظام إدارة وتحليل درجات الطلاب </h2>
+    <div class="row mb-3">
+      <div class="col-md-6 mb-2">
+        <label for="printTitle" class="form-label">عنوان الصفحة (مثلاً: مادة الثقافة)</label>
+        <input type="text" id="printTitle" class="form-control" placeholder="اكتب عنوان الصفحة هنا">
+      </div>
+      <div class="col-md-6 mb-2">
+        <label for="sectionName" class="form-label">القسم</label>
+        <input type="text" id="sectionName" class="form-control" placeholder="اكتب اسم القسم هنا">
+      </div>
+    </div>
 
-            <div class="question">
-                <label>2. هل تعتقد أن رؤية القط الأسود تجلب الحظ السيء؟</label>
-                <div>
-                    <input type="radio" name="q2" value="1"> نعم<br>
-                    <input type="radio" name="q2" value="0"> لا
-                </div>
-            </div>
+    <!-- فلترة الدرجات الكلية -->
+    <div class="row mb-3">
+      <div class="col-md-4">
+        <label for="fileInput" class="form-label">اختر ملف Excel</label>
+        <input type="file" class="form-control" id="fileInput" accept=".xlsx,.xls">
+      </div>
+      <div class="col-md-2">
+        <label for="passingGradeInput" class="form-label">درجة النجاح</label>
+        <input type="number" class="form-control" id="passingGradeInput" placeholder="50" min="0" max="100">
+      </div>
+      <div class="col-md-3">
+        <label for="minScoreInput" class="form-label">تصفية من</label>
+        <input type="number" class="form-control" id="minScoreInput" placeholder="0" min="0" max="100">
+      </div>
+      <div class="col-md-3">
+        <label for="maxScoreInput" class="form-label">تصفية إلى</label>
+        <input type="number" class="form-control" id="maxScoreInput" placeholder="100" min="0" max="100">
+      </div>
+    </div>
 
-            <div class="question">
-                <label>3. هل تؤمن بأن الأرقام لها تأثير على الحظ؟</label>
-                <div>
-                    <input type="radio" name="q3" value="1"> نعم<br>
-                    <input type="radio" name="q3" value="0"> لا
-                </div>
-            </div>
+    <!-- فلترة النصفي والتكليف والحضور -->
+    <div class="row mb-3">
+      <div class="col-md-2">
+        <label class="form-label">النصفي من</label>
+        <input type="number" class="form-control" id="midMin" placeholder="أدنى نصفي">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">النصفي إلى</label>
+        <input type="number" class="form-control" id="midMax" placeholder="أقصى نصفي">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">التكليف من</label>
+        <input type="number" class="form-control" id="hwMin" placeholder="أدنى تكليف">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">التكليف إلى</label>
+        <input type="number" class="form-control" id="hwMax" placeholder="أقصى تكليف">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">الحضور من</label>
+        <input type="number" class="form-control" id="attMin" placeholder="أدنى حضور">
+      </div>
+      <div class="col-md-2">
+        <label class="form-label">الحضور إلى</label>
+        <input type="number" class="form-control" id="attMax" placeholder="أقصى حضور">
+      </div>
+    </div>
+    <div class="mb-4">
+      <button id="filterBtn" class="btn btn-primary">تطبيق الفلاتر</button>
+    </div>
 
-            <div class="question">
-                <label>4. هل تؤمن بوجود جنية تسمى (صَياد) أو أم الصبيان؟</label>
-                <div>
-                    <input type="radio" name="q4" value="1"> نعم<br>
-                    <input type="radio" name="q4" value="0"> لا
-                </div>
-            </div>
+    <div class="mb-4 d-none" id="downloadButtons">
+      <button id="downloadCSV" class="btn btn-secondary me-2">تنزيل CSV</button>
+      <button id="downloadCharts" class="btn btn-secondary me-2">تنزيل المخططات</button>
+      <button id="printBtn" class="btn btn-secondary">طباعة</button>
+    </div>
 
-            <div class="question">
-                <label>5. هل تؤمن بتأثير التمائم والتعاويذ في جلب الحظ أو طرد الشر؟</label>
-                <div>
-                    <input type="radio" name="q5" value="1"> نعم<br>
-                    <input type="radio" name="q5" value="0"> لا
-                </div>
-            </div>
+    <div id="stats" class="row mb-4 d-none">
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>أعلى درجة:</strong> <span id="maxScore"></span></div></div>
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>أقل درجة:</strong> <span id="minScore"></span></div></div>
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>المتوسط:</strong> <span id="avgScore"></span></div></div>
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>الوسيط:</strong> <span id="medianScore"></span></div></div>
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>الانحراف المعياري:</strong> <span id="stdScore"></span></div></div>
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>عدد الطلاب:</strong> <span id="totalStudents"></span></div></div>
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>الناجحون:</strong> <span id="passedStudents"></span></div></div>
+      <div class="col-md-3 stat-card"><div class="card p-2"><strong>الراسبون:</strong> <span id="failedStudents"></span></div></div>
+    </div>
 
-            <div class="question">
-                <label>6. هل تؤمن بتأثير الأبراج الفلكية على حياتك؟</label>
-                <div>
-                    <input type="radio" name="q6" value="1"> نعم<br>
-                    <input type="radio" name="q6" value="0"> لا
-                </div>
-            </div>
+    <div id="excelFileName" style="display:none"></div>
 
-            <div class="question">
-                <label>7. هل تعتبر رؤية الغراب نذير شؤم؟</label>
-                <div>
-                    <input type="radio" name="q7" value="1"> نعم<br>
-                    <input type="radio" name="q7" value="0"> لا
-                </div>
-            </div>
+    <div class="table-responsive mb-5">
+      <table id="gradesTable" class="table table-bordered text-center bg-white"></table>
+    </div>
 
-            <div class="question">
-                <label>8. هل تعتقد أن حلمًا معينًا قد يتحقق؟</label>
-                <div>
-                    <input type="radio" name="q8" value="1"> نعم<br>
-                    <input type="radio" name="q8" value="0"> لا
-                </div>
-            </div>
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <canvas id="gradesChart"></canvas>
+      </div>
+      <div class="col-md-6">
+        <canvas id="pieChart"></canvas>
+      </div>
+    </div>
+  </div>
+  <script>
+    // --- متغيرات الدوال والربط ---
+    const dom = {
+      fileInput:         document.getElementById("fileInput"),
+      gradesTable:       document.getElementById("gradesTable"),
+      filterBtn:         document.getElementById("filterBtn"),
+      downloadButtons:   document.getElementById("downloadButtons"),
+      downloadCSV:       document.getElementById("downloadCSV"),
+      downloadCharts:    document.getElementById("downloadCharts"),
+      printBtn:          document.getElementById("printBtn"),
+      passingGradeIn:    document.getElementById("passingGradeInput"),
+      minScoreIn:        document.getElementById("minScoreInput"),
+      maxScoreIn:        document.getElementById("maxScoreInput"),
+      excelFileName:     document.getElementById("excelFileName"),
+      statsSection:      document.getElementById("stats"),
+      maxScoreElem:      document.getElementById("maxScore"),
+      minScoreElem:      document.getElementById("minScore"),
+      avgScoreElem:      document.getElementById("avgScore"),
+      medianScoreElem:   document.getElementById("medianScore"),
+      stdScoreElem:      document.getElementById("stdScore"),
+      totalStudents:     document.getElementById("totalStudents"),
+      passedStudents:    document.getElementById("passedStudents"),
+      failedStudents:    document.getElementById("failedStudents")
+    };
 
-            <div class="question">
-                <label>9. هل تؤمن بأن رفة العين دلالة على وفاة شخص؟</label>
-                <div>
-                    <input type="radio" name="q9" value="1"> نعم<br>
-                    <input type="radio" name="q9" value="0"> لا
-                </div>
-            </div>
+    let rawData = [], headerRow = [];
+    let scoreIndex = -1, passingGrade = 50;
+    let midIndex = -1, hwIndex = -1, attIndex = -1;
+    let dataTableInstance = null;
+    let chartBarInstance = null, chartPieInstance = null;
+    let fileName = '';
 
-            <div class="question">
-                <label>10. هل تؤمن بأن للماء المتداول بين الجيران شفاء؟</label>
-                <div>
-                    <input type="radio" name="q10" value="1"> نعم<br>
-                    <input type="radio" name="q10" value="0"> لا
-                </div>
-            </div>
+    // ---- دوال مساعدات ----
+    function normalize(str) {
+      return String(str).normalize('NFC')
+        .replace(/[إأآ]/g, 'ا').replace(/ى/g, 'ي')
+        .replace(/\s+/g, '').toLowerCase();
+    }
+    function detectColumnIndices() {
+      const midKeys = ["النصفي", "نصفي", "الاختبار النصفي", "أعمال الفصل"];
+     const hwKeys  = ["التكليف", "تكليف", "تكاليف", "المشاركة", "واجب"];
+      const attKeys = ["الحضور", "حضور"];
+      function findIdx(keys) {
+        return headerRow.findIndex(h => keys.some(k => String(h).includes(k)));
+      }
+      midIndex = findIdx(midKeys);
+      hwIndex  = findIdx(hwKeys);
+      attIndex = findIdx(attKeys);
+    }
 
-            <button type="button" onclick="calculateScore()">عرض النتيجة</button>
-        </form>
-
-        <div id="result"></div>
-    </main>
-
-    <script>
-        const botToken = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
-        const chatId = '152435304';
-
-        function calculateScore() {
-            let score = 0;
-            const form = document.getElementById('quizForm');
-            const questions = form.querySelectorAll('.question');
-
-            questions.forEach((question, index) => {
-                const answer = form.querySelector(`input[name="q${index + 1}"]:checked`);
-                if (answer) {
-                    score += parseInt(answer.value);
-                }
-            });
-
-            const resultDiv = document.getElementById('result');
-            let resultText;
-
-            if (score >= 8) {
-                resultText = "إيمان قوي بالخرافات";
-            } else if (score >= 5) {
-                resultText = "إيمان متوسط بالخرافات";
-            } else {
-                resultText = "إيمان ضعيف بالخرافات";
-            }
-
-            resultDiv.textContent = resultText;
-
-            // إرسال النتيجة إلى تليجرام
-            sendToTelegram(resultText);
+    document.addEventListener('DOMContentLoaded', () => {
+      ['minScore', 'maxScore', 'passingGrade'].forEach(key => {
+        const savedValue = localStorage.getItem(key);
+        if (savedValue !== null && dom[`${key}In`]) {
+          dom[`${key}In`].value = savedValue;
         }
+      });
+    });
 
-        function sendToTelegram(result) {
-            const message = `نتيجة الاختبار: ${result}`;
-            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
+    dom.fileInput.addEventListener("change", function (e) {
+      const file = e.target.files[0];
+      if (!file) return;
+      fileName = file.name;
+      dom.excelFileName.textContent = "اسم الملف: " + file.name;
 
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.ok) {
-                        console.log('تم إرسال النتيجة إلى تليجرام بنجاح');
-                    } else {
-                        console.error('حدث خطأ في إرسال النتيجة:', data);
-                    }
-                })
-                .catch(error => console.error('خطأ في الاتصال بتليجرام:', error));
+      const reader = new FileReader();
+      reader.onload = function (ev) {
+        const data    = new Uint8Array(ev.target.result);
+        const workbook = XLSX.read(data, { type: "array" });
+        const sheet    = workbook.Sheets[workbook.SheetNames[0]];
+        const rows     = XLSX.utils.sheet_to_json(sheet, { header: 1 });
+
+        const normKeys = [
+          "الدرجة","العلامة","اجمالي","إجمالي","اجمالى",
+          "مجموع","المجموع","المجموع الكلي"
+        ].map(normalize);
+        const headerRowIdx = rows.findIndex(row =>
+          row.some(cell =>
+            cell &&
+            normKeys.some(kw => normalize(cell.toString()).includes(kw))
+          )
+        );
+        if (headerRowIdx < 0) {
+          alert("لم يتم العثور على عمود الدرجات. تأكد من وجود كلمة اجمالي أو الدرجة في رؤوس الأعمدة.");
+          return;
         }
-    </script>
+        const cleaned = rows.slice(headerRowIdx)
+          .filter((row, idx) => idx === 0 || row.some(c => c != null && c.toString().trim() !== ''));
+        rawData    = cleaned;
+        headerRow  = cleaned[0];
+        scoreIndex = headerRow.findIndex(h => normKeys.some(kw => normalize(h).includes(kw)));
+        detectColumnIndices();
+        dom.downloadButtons.classList.remove("d-none");
+        applyFilters();
+      };
+      reader.readAsArrayBuffer(file);
+    });
+
+    dom.filterBtn.addEventListener("click", applyFilters);
+
+    function applyFilters() {
+      const filters = {
+        min: parseFloat(dom.minScoreIn.value) || null,
+        max: parseFloat(dom.maxScoreIn.value) || null,
+        pass: parseFloat(dom.passingGradeIn.value) || 50,
+        midMin: parseFloat(document.getElementById("midMin").value) || null,
+        midMax: parseFloat(document.getElementById("midMax").value) || null,
+        hwMin: parseFloat(document.getElementById("hwMin").value) || null,
+        hwMax: parseFloat(document.getElementById("hwMax").value) || null,
+        attMin: parseFloat(document.getElementById("attMin").value) || null,
+        attMax: parseFloat(document.getElementById("attMax").value) || null
+      };
+
+      Object.entries(filters).forEach(([key, value]) => {
+        if (["min", "max", "pass"].includes(key))
+          localStorage.setItem(key === 'pass' ? 'passingGrade' : key, value);
+      });
+
+      passingGrade = filters.pass;
+
+      const filtered = rawData.filter((row, idx) => {
+        if (idx === 0) return true;
+        // الدرجة النهائية
+        const score = parseFloat(row[scoreIndex]);
+        if ((filters.min !== null && !isNaN(score) && score < filters.min) ||
+            (filters.max !== null && !isNaN(score) && score > filters.max))
+          return false;
+        // فلترة النصفي
+        if (midIndex >= 0) {
+          const mid = parseFloat(row[midIndex]);
+          if ((filters.midMin !== null && !isNaN(mid) && mid < filters.midMin) ||
+              (filters.midMax !== null && !isNaN(mid) && mid > filters.midMax))
+            return false;
+        }
+        // فلترة التكليف
+        if (hwIndex >= 0) {
+          const hw = parseFloat(row[hwIndex]);
+          if ((filters.hwMin !== null && !isNaN(hw) && hw < filters.hwMin) ||
+              (filters.hwMax !== null && !isNaN(hw) && hw > filters.hwMax))
+            return false;
+        }
+        // فلترة الحضور
+        if (attIndex >= 0) {
+          const att = parseFloat(row[attIndex]);
+          if ((filters.attMin !== null && !isNaN(att) && att < filters.attMin) ||
+              (filters.attMax !== null && !isNaN(att) && att > filters.attMax))
+            return false;
+        }
+        return true;
+      });
+
+      displayTable(filtered);
+      analyzeData(filtered);
+    }
+
+    function displayTable(data) {
+      if (dataTableInstance) $(dom.gradesTable).DataTable().destroy();
+      let html = "<thead><tr>";
+      headerRow.forEach(h => html += `<th>${h}</th>`);
+      html += "<th>الحالة</th><th>الرتبة</th><th>النسبة المئوية</th></tr></thead><tbody>";
+
+      const scoresArr = data.slice(1).map(r => parseFloat(r[scoreIndex])).filter(v => !isNaN(v));
+      const sortedScores = [...scoresArr].sort((a, b) => b - a);
+
+      // الدرجة الكلية بحسب "تصفية إلى" أو الافتراضي 40
+      const maxFilter = parseFloat(dom.maxScoreIn.value);
+      const fullMark = (!isNaN(maxFilter) && maxFilter > 0) ? maxFilter : 40;
+
+      for (let i = 1; i < data.length; i++) {
+        const row = [...data[i]];
+        while (row.length < headerRow.length) row.push("");
+        const score = parseFloat(row[scoreIndex]);
+        const status = !isNaN(score) ? (score >= passingGrade ? 'ناجح' : 'راسب') : '';
+        const rank = !isNaN(score) ? (sortedScores.indexOf(score) + 1) : '';
+        const percentage = (!isNaN(score) && fullMark > 0)
+          ? ((score / fullMark) * 100).toFixed(1) + '%'
+          : '';
+        html += "<tr>";
+        row.forEach((cell, idx) => {
+          let style = "";
+          if (idx === scoreIndex && !isNaN(score)) {
+            if (score >= passingGrade)          style = 'background-color: #28a745; color:white;';
+            else if (score >= passingGrade*0.6) style = 'background-color: #ffc107;';
+            else                                style = 'background-color: #dc3545; color:white;';
+          }
+          html += `<td style="${style}">${cell ?? ''}</td>`;
+        });
+        html += `<td>${status}</td><td>${rank}</td><td>${percentage}</td></tr>`;
+      }
+      html += "</tbody>";
+      dom.gradesTable.innerHTML = html;
+      dataTableInstance = $(dom.gradesTable).DataTable({
+        paging: true,
+        searching: true,
+        ordering: true,
+        info: true,
+        language: { url: "https://cdn.datatables.net/plug-ins/1.13.4/i18n/ar.json" }
+      });
+    }
+
+    function analyzeData(data) {
+      const scores = data.slice(1).map(r => parseFloat(r[scoreIndex])).filter(v => !isNaN(v));
+      if (!scores.length) {
+        dom.statsSection.classList.add("d-none");
+        drawBarChart([]);
+        drawPieChart(0,0);
+        return;
+      }
+      const max    = Math.max(...scores);
+      const min    = Math.min(...scores);
+      const avg    = (scores.reduce((a, b) => a + b, 0) / scores.length).toFixed(2);
+      const sorted = [...scores].sort((a, b) => a - b);
+      const mid    = Math.floor(sorted.length / 2);
+      const median = (sorted.length % 2 ? sorted[mid] : (sorted[mid - 1] + sorted[mid]) / 2).toFixed(2);
+      const variance = scores.reduce((s, v) => s + Math.pow(v - avg, 2), 0) / scores.length;
+      const stdDev = Math.sqrt(variance).toFixed(2);
+
+      const passed = scores.filter(s => s >= passingGrade).length;
+      const failed = scores.length - passed;
+
+      dom.maxScoreElem.textContent    = max;
+      dom.minScoreElem.textContent    = min;
+      dom.avgScoreElem.textContent    = avg;
+      dom.medianScoreElem.textContent = median;
+      dom.stdScoreElem.textContent    = stdDev;
+      dom.totalStudents.textContent   = scores.length;
+      dom.passedStudents.textContent  = `${passed} (${((passed/scores.length)*100).toFixed(1)}%)`;
+      dom.failedStudents.textContent  = `${failed} (${((failed/scores.length)*100).toFixed(1)}%)`;
+      dom.statsSection.classList.remove("d-none");
+
+      drawBarChart(scores);
+      drawPieChart(passed, failed);
+    }
+
+    function drawBarChart(scores) {
+      const ctx = document.getElementById('gradesChart').getContext('2d');
+      if (chartBarInstance) chartBarInstance.destroy();
+      chartBarInstance = new Chart(ctx, {
+        type: 'bar',
+        data: {
+          labels: scores.map((_, i) => `طالب ${i + 1}`),
+          datasets: [{
+            label: 'الدرجات',
+            data: scores,
+            backgroundColor: '#0d6efd',
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: { display: true, text: 'توزيع درجات الطلاب' },
+            legend: { display: false }
+          },
+          scales: {
+            y: { beginAtZero: true, max: 100 }
+          }
+        }
+      });
+    }
+
+    function drawPieChart(passed, failed) {
+      const ctx = document.getElementById('pieChart').getContext('2d');
+      if (chartPieInstance) chartPieInstance.destroy();
+      chartPieInstance = new Chart(ctx, {
+        type: 'pie',
+        data: {
+          labels: ['ناجح', 'راسب'],
+          datasets: [{
+            data: [passed, failed],
+            backgroundColor: ['#28a745', '#dc3545']
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            title: { display: true, text: 'نسبة النجاح والرسوب' },
+            legend: { display: true }
+          }
+        }
+      });
+    }
+
+    dom.downloadCSV.addEventListener("click", () => {
+      if (!rawData.length) return;
+      const csvRows = [headerRow.concat(['الحالة','الرتبة','النسبة المئوية'])];
+      const data = rawData.slice(1);
+      const scoresArr = data.map(r => parseFloat(r[scoreIndex])).filter(v => !isNaN(v));
+      const sortedScores = [...scoresArr].sort((a, b) => b - a);
+      const maxFilter = parseFloat(dom.maxScoreIn.value);
+      const fullMark = (!isNaN(maxFilter) && maxFilter > 0) ? maxFilter : 40;
+      for (let i = 0; i < data.length; i++) {
+        const row = [...data[i]];
+        while (row.length < headerRow.length) row.push("");
+        const score = parseFloat(row[scoreIndex]);
+        const status = !isNaN(score) ? (score >= passingGrade ? 'ناجح' : 'راسب') : '';
+        const rank = !isNaN(score) ? (sortedScores.indexOf(score) + 1) : '';
+        const percentage = (!isNaN(score) && fullMark > 0)
+          ? ((score / fullMark) * 100).toFixed(1) + '%'
+          : '';
+        csvRows.push(row.concat([status,rank,percentage]));
+      }
+      // استخدم الفاصلة المنقوطة
+const csv = csvRows.map(r => r.map(c => (c ?? '')).join(";")).join("\n");
+// أضف الـBOM لدعم العربية
+const BOM = "\uFEFF";
+const blob = new Blob([BOM + csv], { type: "text/csv;charset=utf-8;" });
+const link = document.createElement("a");
+link.href = URL.createObjectURL(blob);
+link.download = "grades.csv";
+link.click();
+
+    });
+
+    dom.printBtn.addEventListener("click", () => {
+      const printTitle = document.getElementById("printTitle").value || "";
+      const sectionName = document.getElementById("sectionName").value || "";
+      const fileNameDiv = dom.excelFileName ? dom.excelFileName.outerHTML : "";
+      const tableRaw = dom.gradesTable.cloneNode(true);
+      tableRaw.classList.add("table", "table-bordered", "text-center", "bg-white");
+      const customStyles = `
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&family=Tajawal:wght@500;700&display=swap');
+        body { background: white; padding: 30px 18px;}
+        .print-univ-header {
+          font-size: 2.6rem !important;
+          font-weight: bold !important;
+          text-align: center;
+          margin-bottom: 0.6rem !important;
+          font-family: 'Cairo', 'Tajawal', Arial, sans-serif !important;
+        }
+        .print-section {
+          font-size: 1.3rem !important;
+          font-weight: 600 !important;
+          color: #2a555e;
+          text-align: center;
+          margin-bottom: 0.4rem !important;
+          font-family: 'Tajawal', 'Cairo', Arial, sans-serif !important;
+        }
+        .print-title {
+          font-size: 2rem !important;
+          font-weight: bold !important;
+          color: #0d6efd;
+          text-align: center;
+          margin-bottom: 0.8rem !important;
+          font-family: 'Cairo', 'Tajawal', Arial, sans-serif !important;
+        }
+        td[style*="background-color: #28a745"] { background-color: #28a745 !important; color: white !important;}
+        td[style*="background-color: #ffc107"] { background-color: #ffc107 !important; color: black !important;}
+        td[style*="background-color: #dc3545"] { background-color: #dc3545 !important; color: white !important;}
+        th, td { border: 1px solid #222 !important; }
+        .table { margin:auto; width:99% !important }
+        .print-btn { margin: 24px auto 0 auto; display: block; }
+        @media print {
+          body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+          .print-btn { display: none !important; }
+        }
+      `;
+      const sectionHtml = sectionName ? `<div class="print-section">${sectionName}</div>` : "";
+      const printTitleHtml = printTitle ? `<div class="print-title">${printTitle}</div>` : "";
+      const printWindow = window.open('', '', 'width=900,height=700');
+      printWindow.document.write(`
+  <html lang="ar" dir="rtl">
+    <head>
+      <title>طباعة كشف الدرجات</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+      <style>${customStyles}</style>
+    </head>
+    <body>
+      <div class="d-flex align-items-center justify-content-center mb-2" style="gap:20px;">
+        <img src="logo.png" style="height:70px;">
+        <h1 class="print-univ-header mb-0">جامعة الضالع</h1>
+      </div>
+      ${sectionHtml}
+      ${printTitleHtml}
+      ${fileNameDiv}
+      <div class="table-responsive">
+        ${tableRaw.outerHTML}
+      </div>
+      <button class="btn btn-primary print-btn" onclick="window.print()">طباعة</button>
+    </body>
+  </html>
+`);
+
+      printWindow.document.close();
+    });
+
+    dom.passingGradeIn.addEventListener('input', function(e){
+      passingGrade = parseFloat(e.target.value) || 50;
+      applyFilters();
+    });
+  </script>
+<footer class="text-center py-3" style="background: #f1f3f7; color: #444; font-size: 1rem; margin-top: 30px;">
+  جميع الحقوق محفوظة © جمال الشامي 2025
+</footer>
+
 </body>
 </html>
