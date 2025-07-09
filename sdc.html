@@ -1,0 +1,373 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة تحكم بيانات الطلاب</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+  <style>
+    :root {
+      --primary-color: #0a9396;
+      --secondary-color: #005f73;
+      --danger-color: #ae2012;
+      --bg-color: #f0f8ff;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --card-shadow: 0 4px 12px rgba(0, 87, 115, 0.08);
+      --border-color: #e0e0e0;
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.dark-mode {
+      --bg-color: #121212;
+      --card-bg: #1e1e1e;
+      --text-color: #e0e0e0;
+      --border-color: #333;
+      --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+      padding: 0 10px;
+    }
+    h1 { color: var(--secondary-color); text-align: center; margin: 0; font-size: 28px; }
+    .theme-switch-wrapper { display: flex; align-items: center; }
+    .theme-switch { display: inline-block; height: 34px; position: relative; width: 60px; }
+    .theme-switch input { display:none; }
+    .slider { background-color: #ccc; bottom: 0; cursor: pointer; left: 0; position: absolute; right: 0; top: 0; transition: .4s; border-radius: 34px; }
+    .slider:before { background-color: #fff; bottom: 4px; content: ""; height: 26px; left: 4px; position: absolute; transition: .4s; width: 26px; border-radius: 50%; }
+    input:checked + .slider { background-color: var(--primary-color); }
+    input:checked + .slider:before { transform: translateX(26px); }
+
+    #file-selector-container {
+      text-align: center; background-color: var(--card-bg); padding: 40px; border-radius: 12px;
+      max-width: 600px; margin: 40px auto; box-shadow: var(--card-shadow);
+    }
+    
+    #dashboard {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      max-width: 900px;
+      margin: 20px auto;
+    }
+    .stat-card {
+      background-color: var(--card-bg);
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: var(--card-shadow);
+      border-top: 4px solid var(--primary-color);
+    }
+    .stat-card h3 { margin: 0 0 5px 0; font-size: 16px; color: var(--secondary-color); }
+    .stat-card .value { font-size: 28px; font-weight: 700; color: var(--primary-color); }
+    .stat-card.danger { border-top-color: var(--danger-color); }
+    .stat-card.danger .value { color: var(--danger-color); }
+
+    .controls {
+      background-color: var(--card-bg); padding: 20px; border-radius: 12px;
+      max-width: 900px; margin: 20px auto; box-shadow: var(--card-shadow);
+      display: flex; flex-wrap: wrap; gap: 20px;
+    }
+    .control-group { flex: 1; min-width: 250px; }
+    label, select, button, input[type="search"] {
+      width: 100%; margin-bottom: 5px; font-size: 16px; font-family: 'Cairo', sans-serif;
+    }
+    select, input[type="search"] {
+      padding: 10px; border: 1px solid var(--border-color); border-radius: 8px;
+      background-color: var(--bg-color); color: var(--text-color);
+    }
+
+    .actions { display: flex; justify-content: center; gap: 10px; flex-wrap: wrap; margin: 30px auto; max-width: 900px; }
+    .action-btn {
+      background-color: var(--primary-color); color: white; padding: 10px 20px; border-radius: 8px;
+      border: none; font-size: 15px; cursor: pointer; transition: all 0.2s ease;
+      display: flex; align-items: center; gap: 8px;
+    }
+    .action-btn:hover { transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .print-btn { background-color: #3d405b; }
+
+    .data-container { max-width: 900px; margin: 20px auto; }
+    .card, .lesson-card {
+      background-color: var(--card-bg); padding: 20px; border-radius: 12px;
+      margin-bottom: 15px; box-shadow: var(--card-shadow); transition: all 0.3s ease;
+      border-left: 5px solid var(--primary-color);
+    }
+    .card:hover { transform: scale(1.02); }
+    .card.at-risk { border-left-color: var(--danger-color); }
+    .card strong { color: var(--secondary-color); }
+
+    #charts-container { max-width: 900px; margin: 40px auto; }
+    .chart-card {
+      background: var(--card-bg); padding: 20px; border-radius: 12px; box-shadow: var(--card-shadow);
+    }
+    
+    #main-content { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>لوحة تحكم بيانات الطلاب</h1>
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="theme-toggle">
+        <input type="checkbox" id="theme-toggle" />
+        <div class="slider"></div>
+      </label>
+    </div>
+  </div>
+
+  <div id="file-selector-container">
+    <p>ابدأ باختيار ملف بيانات الفصل الدراسي (json.)</p>
+    <input type="file" id="fileInput" accept=".json" style="display: none;" />
+    <button id="browseBtn" class="action-btn">📂 اختيار ملف</button>
+  </div>
+
+  <div id="main-content">
+    <div id="dashboard"></div>
+    <div class="controls">
+      <div class="control-group">
+        <label for="filterCourse">📘 تصفية حسب المقرر:</label>
+        <select id="filterCourse"></select>
+      </div>
+      <div class="control-group">
+        <label for="searchInput">🔍 بحث بالاسم أو الرقم الجامعي:</label>
+        <input type="search" id="searchInput" placeholder="اكتب للبحث...">
+      </div>
+    </div>
+    <div class="actions">
+      <!-- تمت إزالة onclick من هنا -->
+      <button id="printStudentsBtn" class="action-btn print-btn">🖨️ طباعة كشف الطلاب</button>
+      <button id="exportExcelBtn" class="action-btn">📥 تصدير Excel</button>
+      <button id="printLessonsBtn" class="action-btn print-btn">🖨️ طباعة جدول الدروس</button>
+    </div>
+    <div class="data-container" id="studentList"></div>
+    <div id="charts-container"></div>
+    <div class="data-container" id="lessonsList"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // --- تعريف كل العناصر هنا ---
+        const fileInput = document.getElementById('fileInput');
+        const browseBtn = document.getElementById('browseBtn');
+        const fileSelectorContainer = document.getElementById('file-selector-container');
+        const mainContent = document.getElementById('main-content');
+        const dashboardDiv = document.getElementById('dashboard');
+        const filterCourseSelect = document.getElementById('filterCourse');
+        const searchInput = document.getElementById('searchInput');
+        const studentListDiv = document.getElementById('studentList');
+        const chartsContainer = document.getElementById('charts-container');
+        const lessonsListDiv = document.getElementById('lessonsList');
+        const themeToggle = document.getElementById('theme-toggle');
+        // --- أزرار الإجراءات ---
+        const printStudentsBtn = document.getElementById('printStudentsBtn');
+        const exportExcelBtn = document.getElementById('exportExcelBtn');
+        const printLessonsBtn = document.getElementById('printLessonsBtn');
+
+        let allStudentsData = [], allLessonsData = {}, allCourses = [];
+        let gradeChartInstance;
+
+        // --- ربط الأحداث برمجيًا ---
+        browseBtn.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', handleFileSelect);
+        filterCourseSelect.addEventListener('change', updateDisplay);
+        searchInput.addEventListener('input', updateDisplay);
+        themeToggle.addEventListener('change', handleThemeToggle);
+        
+        // --- ربط أزرار الإجراءات بالدوال الخاصة بها ---
+        printStudentsBtn.addEventListener('click', printOnlyReport);
+        exportExcelBtn.addEventListener('click', downloadExcel);
+        printLessonsBtn.addEventListener('click', printLessons);
+
+        // --- دوال التطبيق ---
+        
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const fileContent = JSON.parse(e.target.result);
+                    if (!fileContent.myapp_students || !fileContent.myapp_courses) throw new Error("الملف لا يحتوي على الصيغة المطلوبة.");
+                    allStudentsData = JSON.parse(fileContent.myapp_students);
+                    allCourses = JSON.parse(fileContent.myapp_courses);
+                    allLessonsData = {};
+                    for (const key in fileContent) {
+                        if (key.startsWith("myapp_lessons_")) {
+                            allLessonsData[key.replace("myapp_lessons_", "")] = JSON.parse(fileContent[key]);
+                        }
+                    }
+                    fileSelectorContainer.style.display = 'none';
+                    mainContent.style.display = 'block';
+                    populateCoursesFilter();
+                    updateDisplay();
+                } catch (error) {
+                    alert('خطأ في معالجة الملف: ' + error.message);
+                    fileInput.value = '';
+                }
+            };
+            reader.readAsText(file);
+        }
+        
+        function populateCoursesFilter() {
+            const courseSet = new Set(allCourses);
+            allStudentsData.forEach(s => courseSet.add(s.course));
+            filterCourseSelect.innerHTML = '<option value="">-- كل المقررات --</option>';
+            [...courseSet].sort().forEach(course => {
+                filterCourseSelect.innerHTML += `<option value="${course}">${course}</option>`;
+            });
+        }
+
+        function updateDisplay() {
+            const filteredStudents = getFilteredStudents();
+            displayDashboardStats(filteredStudents);
+            displayStudents(filteredStudents);
+            displayLessons(filterCourseSelect.value);
+            createGradeChart(filteredStudents);
+        }
+
+        function getFilteredStudents() {
+            const courseFilter = filterCourseSelect.value;
+            const searchTerm = searchInput.value.toLowerCase();
+            let filtered = allStudentsData;
+            if (courseFilter) {
+                filtered = filtered.filter(s => s.course === courseFilter);
+            }
+            if (searchTerm) {
+                filtered = filtered.filter(s => 
+                    s.name.toLowerCase().includes(searchTerm) || 
+                    (s.id && s.id.toLowerCase().includes(searchTerm))
+                );
+            }
+            return filtered;
+        }
+        
+  function displayDashboardStats(students) {
+    const totalStudents = students.length;
+    if (totalStudents === 0 && allStudentsData.length === 0) {
+        dashboardDiv.innerHTML = '';
+        return;
+    }
+
+    // حساب المتوسطات من المصدر الحقيقي
+    const avgGradeRaw = totalStudents > 0
+        ? students.reduce((acc, s) => acc + (parseFloat(s.grade) || 0), 0) / totalStudents
+        : 0;
+
+    const avgAttendanceRaw = totalStudents > 0
+        ? students.reduce((acc, s) => acc + (parseFloat(s.attendance) || 0), 0) / totalStudents
+        : 0;
+    const avgGradePercent = (avgGradeRaw / 30) * 100;
+    const avgAttendancePercent = (avgAttendanceRaw / 10) * 100;
+    const atRiskStudents = students.filter(s => {
+        const grade = parseFloat(s.grade) || 0;       // من 30
+        const attendance = parseFloat(s.attendance) || 0; // من 10
+        const total = grade + attendance;             // من 40
+        return total < 20;                            // أقل من 50%
+    }).length;
+
+    dashboardDiv.innerHTML = `
+        <div class="stat-card"><h3>إجمالي الطلاب</h3><div class="value">${totalStudents}</div></div>
+        <div class="stat-card"><h3>متوسط الدرجة</h3><div class="value">${avgGradePercent.toFixed(1)}%</div></div>
+        <div class="stat-card"><h3>متوسط الحضور</h3><div class="value">${avgAttendancePercent.toFixed(1)}%</div></div>
+        <div class="stat-card danger"><h3>بحاجة لمتابعة</h3><div class="value">${atRiskStudents}</div></div>
+    `;
+}
+
+
+
+
+        function displayStudents(students) {
+            studentListDiv.innerHTML = '<h2>الطلاب</h2>';
+            if (students.length === 0) {
+                studentListDiv.innerHTML += '<p style="text-align:center;">لا يوجد طلاب مطابقون لمعايير البحث.</p>';
+                return;
+            }
+            students.forEach(student => {
+                const grade = parseFloat(student.grade) || 0;
+                const attendance = parseFloat(student.attendance) || 0;
+                const isAtRisk = grade < 50 || attendance < 60;
+                studentListDiv.innerHTML += `
+                    <div class="card ${isAtRisk ? 'at-risk' : ''}">
+                        <strong>${student.name}</strong><br>
+                        <small>الرقم: ${student.id || 'N/A'} | المقرر: ${student.course}</small><br>
+                        <span>الدرجة: ${grade}</span> | <span>الحضور: ${attendance}%</span> | <strong>المجموع: ${grade + attendance}</strong>
+                    </div>
+                `;
+            });
+        }
+
+        function displayLessons(course) {
+            lessonsListDiv.innerHTML = '';
+            if (course && allLessonsData[course] && allLessonsData[course].length > 0) {
+                lessonsListDiv.innerHTML = `<h2>دروس مقرر: ${course}</h2>`;
+                allLessonsData[course].forEach(lesson => {
+                    lessonsListDiv.innerHTML += `
+                        <div class="lesson-card">
+                            <strong>${lesson.title}</strong> - <small>تاريخ: ${lesson.date}</small>
+                            <div style="white-space: pre-wrap; margin-top: 10px; background: rgba(0,0,0,0.03); padding: 10px; border-radius: 5px;">${lesson.summary}</div>
+                        </div>
+                    `;
+                });
+            }
+        }
+        
+        function createGradeChart(students) {
+            chartsContainer.innerHTML = '';
+            if (students.length < 2) return;
+            chartsContainer.innerHTML = '<div class="chart-card"><h3>توزيع الدرجات الإجمالية</h3><canvas id="gradeChart"></canvas></div>';
+            const ctx = document.getElementById('gradeChart').getContext('2d');
+            const gradeRanges = { '0-19 (رسوب)':0, '20-23 (مقبول)':0, '24-27':0, '28-31 (جيد)':0, '25-32 (جيد جدا)':0, '36-40 (ممتاز)':0 };
+            students.forEach(s => {
+                const total = (parseFloat(s.grade) || 0) + (parseFloat(s.attendance) || 0);
+                if (total < 20) gradeRanges['0-19 (رسوب)']++;
+                else if (total < 24) gradeRanges['20-23 (مقبول)']++;
+                else if (total < 28) gradeRanges['24-27']++;
+                else if (total < 32) gradeRanges['28-31 (جيد)']++;
+                else if (total < 36) gradeRanges['32-35 (جيد جدا)']++;
+                else gradeRanges['36-40 (ممتاز)']++;
+            });
+            if (gradeChartInstance) gradeChartInstance.destroy();
+            gradeChartInstance = new Chart(ctx, { type: 'bar', data: { labels: Object.keys(gradeRanges), datasets: [{ label: 'عدد الطلاب', data: Object.values(gradeRanges), backgroundColor: ['#e63946', '#fca311', '#a8dadc', '#457b9d', '#1d3557', '#008000'], borderRadius: 5 }] }, options: { responsive: true, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } } });
+        }
+
+        function handleThemeToggle() {
+            document.body.classList.toggle('dark-mode', this.checked);
+            localStorage.setItem('darkMode', this.checked);
+        }
+        
+        // --- دوال الطباعة والتصدير الآن داخل النطاق الصحيح ---
+        function printOnlyReport() { const filtered = getFilteredStudents(); if(filtered.length === 0) return alert("لا يوجد طلاب لطباعتهم."); const reportWindow=window.open("","","height=900,width=1000"); reportWindow.document.write(`<html dir="rtl"><head><title>تقرير الطلاب</title><style>body{font-family:Tahoma,sans-serif;padding:20px}h2{color:#005f73;text-align:center}table{width:100%;border-collapse:collapse;margin-top:20px}th,td{border:1px solid #ccc;padding:8px;text-align:center;font-size:12px}th{background-color:#0a9396;color:white}td[style*='right']{text-align:right}@media print{body{-webkit-print-color-adjust:exact;color-adjust:exact}}</style></head><body><h2>📋 تقرير الطلاب</h2><table><thead><tr><th>#</th><th>الرقم</th><th>الاسم</th><th>الدرجة</th><th>الحضور</th><th>المجموع</th></tr></thead><tbody>`); filtered.forEach((s, i) => { const g = parseFloat(s.grade) || 0, a = parseFloat(s.attendance) || 0; reportWindow.document.write(`<tr><td>${i+1}</td><td>${s.id||"N/A"}</td><td style="text-align:right;">${s.name}</td><td>${g}</td><td>${a}</td><td>${g+a}</td></tr>`); }); reportWindow.document.write(`</tbody></table><script>setTimeout(()=>{window.print();window.close()},500);<\/script></body></html>`); reportWindow.document.close(); }
+        function downloadExcel() { const filtered = getFilteredStudents(); if(filtered.length === 0) return alert("لا يوجد طلاب لتصديرهم."); const header=["م","الرقم الجامعي","الاسم","الدرجة","الحضور","المجموع"]; const data=[header]; filtered.forEach((s, i) => { const g = parseFloat(s.grade) || 0, a = parseFloat(s.attendance) || 0; data.push([i+1, s.id||"N/A", s.name, g, a, g+a]); }); const ws=XLSX.utils.aoa_to_sheet(data); if(!ws['!props']) ws['!props']={}; ws['!props'].RTL=true; ws['!cols']=[{wch:5},{wch:20},{wch:35},{wch:10},{wch:10},{wch:10}]; const range=XLSX.utils.decode_range(ws['!ref']); for(let r=range.s.r;r<=range.e.r;++r) for(let c=range.s.c;c<=range.e.c;++c) { const cell_ref=XLSX.utils.encode_cell({c:c,r:r}); if(ws[cell_ref]) ws[cell_ref].s={font:{name:"Cairo",sz:11,bold:r===0,color:r===0?{rgb:"FFFFFF"}:{rgb:"000000"}},alignment:{vertical:"center",horizontal:"center"},border:{top:{style:"thin"},bottom:{style:"thin"},left:{style:"thin"},right:{style:"thin"}},fill:r===0?{fgColor:{rgb:"005f73"}}:undefined}; } const wb=XLSX.utils.book_new(); XLSX.utils.book_append_sheet(wb,ws,"تقرير الطلاب"); XLSX.writeFile(wb,`تقرير الطلاب.xlsx`); }
+        function printLessons() { const course = filterCourseSelect.value; if (!course) return alert("يرجى اختيار مقرر أولاً."); const lessons = allLessonsData[course]; if (!lessons || lessons.length === 0) return alert("لا توجد دروس لطباعتها لهذا المقرر."); const reportWindow=window.open("","","height=900,width=1000"); reportWindow.document.write(`<html dir="rtl"><head><title>جدول الدروس - ${course}</title><style>body{font-family:Cairo,sans-serif;padding:20px}h2{color:#005f73;text-align:center}table{width:100%;border-collapse:collapse;margin-top:20px}th,td{border:1px solid #ccc;padding:10px;text-align:right;font-size:14px}th{background-color:#0a9396;color:white;text-align:center}td.summary{white-space:pre-wrap}</style></head><body><h2>🗓️ جدول الدروس - مقرر: ${course}</h2><table><thead><tr><th>عنوان الدرس</th><th>التاريخ</th><th>ملخص المحتوى</th></tr></thead><tbody>`); lessons.forEach(lesson => { reportWindow.document.write(`<tr><td>${lesson.title}</td><td>${lesson.date}</td><td class="summary">${lesson.summary}</td></tr>`); }); reportWindow.document.write(`</tbody></table><script>setTimeout(()=>{window.print();window.close()},500);<\/script></body></html>`); reportWindow.document.close(); }
+
+        // --- تشغيل الوضع الليلي عند التحميل إذا كان محفوظاً ---
+        const darkMode = localStorage.getItem('darkMode') === 'true';
+        themeToggle.checked = darkMode;
+        document.body.classList.toggle('dark-mode', darkMode);
+    });
+  </script>
+  <footer class="no-print" style="text-align: center; margin-top: 40px; color: #777; font-size: 14px;">
+    جميع الحقوق محفوظة © جمال الشامي 2025
+  </footer>
+</body>
+</html>
