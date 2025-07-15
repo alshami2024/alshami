@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>بوابة الطالب - عرض الدرجات</title>
+  <style>
+    :root {
+      --main-color: #0a9396;
+      --accent-color: #005f73;
+      --bg-color: #f0f2f5;
+      --text-color: #333;
+      --card-bg: #ffffff;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    }
+
+    body {
+      font-family: Tahoma, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--accent-color);
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+
+    .search-box {
+      background-color: var(--card-bg);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 14px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    button {
+      width: 100%;
+      padding: 14px;
+      font-size: 18px;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      background-color: var(--main-color);
+      color: white;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: var(--accent-color);
+    }
+
+    #result-area, #loader, #error-message {
+      display: none;
+      margin-top: 25px;
+    }
+
+    .student-card {
+      background-color: var(--card-bg);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      text-align: right;
+      border-right: 5px solid var(--main-color);
+    }
+
+    .student-card h2 {
+      margin-top: 0;
+      color: var(--accent-color);
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .student-card p {
+      font-size: 18px;
+      line-height: 1.8;
+      margin: 10px 0;
+    }
+
+    .student-card p strong {
+      color: var(--accent-color);
+      margin-left: 8px;
+    }
+    
+    .loader {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid var(--main-color);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .footer {
+        margin-top: 20px;
+        font-size: 12px;
+        color: #888;
+    }
+    .footer a {
+        color: var(--main-color);
+        text-decoration: none;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>🎓 بوابة الطالب</h1>
+    <div class="search-box">
+      <label for="studentId" style="display:block; margin-bottom:10px; font-weight:bold;">أدخل رقمك الجامعي لعرض نتيجتك</label>
+      <input type="text" id="studentId" placeholder="الرقم الجامعي">
+      <button onclick="findMyGrades()">🔍 بحــــث</button>
+    </div>
+
+    <div id="loader">
+      <div class="loader"></div>
+    </div>
+    
+    <div id="error-message" style="color:red; font-weight:bold;"></div>
+
+    <div id="result-area">
+      <div class="student-card">
+        <h2 id="studentName"></h2>
+        <p><strong>المقرر:</strong> <span id="studentCourse"></span></p>
+        <p><strong>الدرجة:</strong> <span id="studentGrade"></span></p>
+        <p><strong>الحضور:</strong> <span id="studentAttendance"></span></p>
+      </div>
+    </div>
+    
+    <div class="footer">
+        <p>Jamal-Alshami © 2025  <a href="settings.html"></a></p>
+    </div>
+  </div>
+
+<script>
+
+async function findMyGrades() {
+    const studentIdInput = document.getElementById('studentId').value.trim();
+    const loader = document.getElementById('loader');
+    const resultArea = document.getElementById('result-area');
+    const errorMessage = document.getElementById('error-message');
+
+    resultArea.style.display = 'none';
+    errorMessage.style.display = 'none';
+
+    if (!studentIdInput) {
+        errorMessage.textContent = 'الرجاء إدخال الرقم الجامعي.';
+        errorMessage.style.display = 'block';
+        return;
+    }
+
+    loader.style.display = 'block';
+
+   
+    const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            
+            throw new Error('فشل تحميل البيانات. تأكد من أن المستودع عام والملف موجود.');
+        }
+
+        const allData = await response.json();
+        
+  
+        const students = JSON.parse(allData.myapp_students || '[]');
+        const foundStudent = students.find(student => student.id === studentIdInput);
+        
+        loader.style.display = 'none';
+
+        if (foundStudent) {
+            document.getElementById('studentName').textContent = `أهلاً بك، ${foundStudent.name || 'طالب'}`;
+            document.getElementById('studentCourse').textContent = foundStudent.course || 'غير محدد';
+            document.getElementById('studentGrade').textContent = foundStudent.grade || 'لم ترصد بعد';
+            document.getElementById('studentAttendance').textContent = foundStudent.attendance || 'لا توجد بيانات';
+            resultArea.style.display = 'block';
+        } else {
+            errorMessage.textContent = 'لم يتم العثور على طالب بهذا الرقم. يرجى التأكد من الرقم المدخل.';
+            errorMessage.style.display = 'block';
+        }
+
+    } catch (error) {
+        loader.style.display = 'none';
+        errorMessage.textContent = error.message;
+        errorMessage.style.display = 'block';
+        console.error('Error fetching grades:', error);
+    }
+}
+</script>
+
+</body>
+</html>
