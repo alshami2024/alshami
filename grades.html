@@ -39,6 +39,26 @@
       font-size: 28px;
     }
 
+    /* New styles for the stats notification box */
+    #assignment-stats {
+      background: #e0f2f1; /* Light teal background */
+      border-right: 5px solid var(--accent-color);
+      color: var(--accent-color);
+      padding: 15px 20px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+      font-size: 1.1em;
+      font-weight: bold;
+      box-shadow: var(--shadow);
+      display: none; /* Hidden by default, shown by JS */
+    }
+    #assignment-stats strong {
+        font-size: 1.3em;
+        font-weight: 900;
+        margin: 0 5px;
+    }
+
+
     .search-box {
       background-color: var(--card-bg);
       padding: 30px;
@@ -139,6 +159,10 @@
 
   <div class="container">
     <h1>🎓 بوابة الطالب</h1>
+    
+    <!-- New Notification Box -->
+    <div id="assignment-stats"></div>
+    
     <div class="search-box">
       <label for="studentId" style="display:block; margin-bottom:10px; font-weight:bold;">أدخل رقمك الجامعي لعرض نتيجتك</label>
       <input type="text" id="studentId" placeholder="الرقم الجامعي">
@@ -165,9 +189,45 @@
       <p>
           <span>Jamal-Alshami © 2025</span>
           
+      </p>
   </div>
 
 <script>
+// This new function runs as soon as the page is loaded
+document.addEventListener('DOMContentLoaded', async () => {
+    const statsContainer = document.getElementById('assignment-stats');
+    const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
+
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            // Don't show an error for stats, just fail silently.
+            return;
+        }
+        const allData = await response.json();
+        const students = JSON.parse(allData.myapp_students || '[]');
+
+        if (students.length > 0) {
+            // Filter students who have a grade recorded (not the placeholder text)
+            const gradedStudentsCount = students.filter(student => student.grade && String(student.grade).trim() !== 'لم ترصد بعد').length;
+            
+            // Create an exciting and beautiful message
+            if (gradedStudentsCount > 0) {
+                statsContainer.innerHTML = `
+                    🏆 تم تسليم التكليف من قبل <strong>${gradedStudentsCount}</strong> من الطلاب! استعلم عن نتيجتك الآن 👇
+                `;
+                statsContainer.style.display = 'block'; // Show the container
+            }
+        }
+    } catch (error) {
+        console.error('Error fetching stats:', error);
+        // Hide the container if there's any error
+        statsContainer.style.display = 'none';
+    }
+});
+
+
+// The original function for searching grades remains the same
 async function findMyGrades() {
     const studentIdInput = document.getElementById('studentId').value.trim();
     const loader = document.getElementById('loader');
@@ -218,39 +278,6 @@ async function findMyGrades() {
         console.error('Error fetching grades:', error);
     }
 }
-</script>
-
-<script>
-
-  document.addEventListener('DOMContentLoaded', function() {
-    const counterElement = document.getElementById('visit-counter');
-    const storageKey = 'pageVisitsCount_grades'; 
-
-    if (typeof(Storage) !== "undefined") {
-      let count = localStorage.getItem(storageKey);
-
-      if (count === null) {
-        
-        count = 1;
-      } else {
-       
-        count = parseInt(count) + 1;
-      }
-
-      
-      localStorage.setItem(storageKey, count);
-
-      
-      if(counterElement) {
-        counterElement.textContent = count;
-      }
-    } else {
-      
-      if(counterElement) {
-        counterElement.textContent = "غير مدعوم";
-      }
-    }
-  });
 </script>
 
 </body>
