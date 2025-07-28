@@ -8,6 +8,7 @@
     :root {
       --main-color: #0a9396;
       --accent-color: #005f73;
+      --secondary-accent-color: #00778f;
       --bg-color: #f0f2f5;
       --text-color: #333;
       --card-bg: #ffffff;
@@ -24,7 +25,7 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      flex-direction: column; /* To allow footer to sit below the container */
+      flex-direction: column;
     }
 
     .container {
@@ -39,9 +40,8 @@
       font-size: 28px;
     }
 
-    /* New styles for the stats notification box */
     #assignment-stats {
-      background: #e0f2f1; /* Light teal background */
+      background: #e0f2f1;
       border-right: 5px solid var(--accent-color);
       color: var(--accent-color);
       padding: 15px 20px;
@@ -50,14 +50,13 @@
       font-size: 1.1em;
       font-weight: bold;
       box-shadow: var(--shadow);
-      display: none; /* Hidden by default, shown by JS */
+      display: none;
     }
     #assignment-stats strong {
         font-size: 1.3em;
         font-weight: 900;
         margin: 0 5px;
     }
-
 
     .search-box {
       background-color: var(--card-bg);
@@ -93,6 +92,14 @@
     button:hover {
       background-color: var(--accent-color);
     }
+    
+    #showGradedBtn {
+        background-color: var(--secondary-accent-color);
+        margin-top: 10px;
+    }
+    #showGradedBtn:hover {
+        background-color: var(--accent-color);
+    }
 
     #result-area, #loader, #error-message {
       display: none;
@@ -127,6 +134,10 @@
       margin-left: 8px;
     }
     
+    #department-row {
+        display: none;
+    }
+
     .loader {
       border: 5px solid #f3f3f3;
       border-top: 5px solid var(--main-color);
@@ -143,14 +154,118 @@
     }
     
     .footer {
-        margin-top: 30px; /* Increased margin for better spacing */
-        font-size: 14px;   /* Slightly larger font for readability */
-        color: #666;       /* Softer color */
+        margin-top: 30px;
+        font-size: 14px;
+        color: #666;
         text-align: center;
     }
-    .footer strong {
-        color: var(--accent-color);
+    
+    /* --- Modal Styles --- */
+    .modal {
+        display: none; 
+        position: fixed; 
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.5);
+        animation: fadeIn 0.3s;
+    }
+    
+    @keyframes fadeIn {
+      from {opacity: 0} 
+      to {opacity: 1}
+    }
+
+    .modal-content {
+        background-color: #fefefe;
+        margin: 10% auto;
+        padding: 25px;
+        border-radius: 12px;
+        width: 90%;
+        max-width: 500px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+        position: relative;
+        text-align: right;
+        animation: slideIn 0.4s;
+    }
+    
+    @keyframes slideIn {
+      from {transform: translateY(-50px); opacity: 0}
+      to {transform: translateY(0); opacity: 1}
+    }
+
+    .close-button {
+        color: #aaa;
+        position: absolute;
+        left: 15px;
+        top: 10px;
+        font-size: 28px;
         font-weight: bold;
+        cursor: pointer;
+    }
+
+    .modal-content h2 {
+        color: var(--accent-color);
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    
+    #graded-students-ul {
+        list-style: none;
+        padding: 0;
+        max-height: 60vh; 
+        overflow-y: auto;
+    }
+    
+    .student-list-item {
+        background-color: #e9f5f5;
+        border-right: 4px solid var(--secondary-accent-color);
+        margin-bottom: 8px;
+        padding: 12px 15px;
+        border-radius: 6px;
+        font-weight: bold;
+        color: var(--accent-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* --- UPDATED: Style for the course header --- */
+    .course-header {
+        background-color: var(--accent-color);
+        color: white;
+        padding: 10px 15px;
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+        font-weight: bold;
+        /* Flexbox for alignment */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    /* --- NEW: Style for the count badge --- */
+    .student-count-badge {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: white;
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-size: 0.85em;
+        font-weight: normal;
+    }
+    
+    .student-grade-in-list {
+        background-color: var(--main-color);
+        color: white;
+        padding: 4px 12px;
+        border-radius: 16px;
+        font-size: 0.9em;
     }
 
   </style>
@@ -159,80 +274,147 @@
 
   <div class="container">
     <h1>🎓 بوابة الطالب</h1>
-    
-    <!-- New Notification Box -->
     <div id="assignment-stats"></div>
-    
     <div class="search-box">
       <label for="studentId" style="display:block; margin-bottom:10px; font-weight:bold;">أدخل رقمك الجامعي لعرض نتيجتك</label>
       <input type="text" id="studentId" placeholder="الرقم الجامعي">
       <button onclick="findMyGrades()">🔍 بحــــث</button>
+      <button id="showGradedBtn" onclick="showGradedStudentsList()">🏆 عرض القائمة</button>
     </div>
-
-    <div id="loader">
-      <div class="loader"></div>
-    </div>
-    
+    <div id="loader"><div class="loader"></div></div>
     <div id="error-message" style="color:red; font-weight:bold;"></div>
-
     <div id="result-area">
       <div class="student-card">
         <h2 id="studentName"></h2>
         <p><strong>المقرر:</strong> <span id="studentCourse"></span></p>
+        <p id="department-row"><strong>القسم:</strong> <span id="studentDepartment"></span></p>
         <p><strong>الدرجة:</strong> <span id="studentGrade"></span></p>
         <p><strong>الحضور:</strong> <span id="studentAttendance"></span></p>
       </div>
     </div>
   </div>
   
+  <div id="graded-list-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="closeModal()">×</span>
+      <h2>الطلاب الذين تم رصد درجاتهم</h2>
+      <div id="modal-loader" style="display: none;"><div class="loader"></div></div>
+      <ul id="graded-students-ul"></ul>
+    </div>
+  </div>
+  
   <div class="footer">
-      <p>
-          <span>Jamal-Alshami © 2025</span>
-          
-      </p>
+      <p><span>Jamal-Alshami © 2025</span></p>
   </div>
 
 <script>
-// This new function runs as soon as the page is loaded
-document.addEventListener('DOMContentLoaded', async () => {
-    const statsContainer = document.getElementById('assignment-stats');
+const modal = document.getElementById('graded-list-modal');
+
+async function showGradedStudentsList() {
+    const listUl = document.getElementById('graded-students-ul');
+    const modalLoader = document.getElementById('modal-loader');
+    
+    modal.style.display = 'block';
+    modalLoader.style.display = 'block';
+    listUl.innerHTML = '';
+
     const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
 
     try {
         const response = await fetch(url);
-        if (!response.ok) {
-            // Don't show an error for stats, just fail silently.
-            return;
-        }
+        if (!response.ok) throw new Error('فشل تحميل البيانات.');
+
         const allData = await response.json();
         const students = JSON.parse(allData.myapp_students || '[]');
+        
+        const gradedStudents = students.filter(s => s.grade && String(s.grade).trim() !== 'لم ترصد بعد');
 
-        if (students.length > 0) {
-            // Filter students who have a grade recorded (not the placeholder text)
-            const gradedStudentsCount = students.filter(student => student.grade && String(student.grade).trim() !== 'لم ترصد بعد').length;
+        if (gradedStudents.length === 0) {
+            listUl.innerHTML = '<li>لم يتم رصد أي درجة حتى الآن.</li>';
+            modalLoader.style.display = 'none';
+            return;
+        }
+
+        const groupedByCourse = gradedStudents.reduce((acc, student) => {
+            const course = student.course || 'مادة غير محددة';
+            if (!acc[course]) {
+                acc[course] = [];
+            }
+            acc[course].push(student);
+            return acc;
+        }, {});
+
+        // --- UPDATED: Display the list grouped by course with student count ---
+        for (const course in groupedByCourse) {
+            const courseHeader = document.createElement('li');
+            courseHeader.className = 'course-header';
             
-            // Create an exciting and beautiful message
-            if (gradedStudentsCount > 0) {
-                statsContainer.innerHTML = `
-                    🏆 تم تسليم التكليف من قبل <strong>${gradedStudentsCount}</strong> من الطلاب! استعلم عن نتيجتك الآن 👇
+            const studentCount = groupedByCourse[course].length; // Calculate student count
+
+            // Create header with course name and the count badge
+            courseHeader.innerHTML = `
+                <span>${course}</span>
+                <span class="student-count-badge">العدد: ${studentCount}</span>
+            `;
+            listUl.appendChild(courseHeader);
+
+            // Add the students under that header
+            groupedByCourse[course].forEach(student => {
+                const studentLi = document.createElement('li');
+                studentLi.className = 'student-list-item';
+                studentLi.innerHTML = `
+                    <span>${student.name}</span>
+                    <span class="student-grade-in-list">${student.grade}</span>
                 `;
-                statsContainer.style.display = 'block'; // Show the container
+                listUl.appendChild(studentLi);
+            });
+        }
+        
+        modalLoader.style.display = 'none';
+
+    } catch (error) {
+        modalLoader.style.display = 'none';
+        listUl.innerHTML = `<li>حدث خطأ: ${error.message}</li>`;
+    }
+}
+
+
+function closeModal() {
+    modal.style.display = 'none';
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) closeModal();
+}
+
+document.addEventListener('DOMContentLoaded', async () => {
+    // This function is unchanged
+    const statsContainer = document.getElementById('assignment-stats');
+    const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
+    try {
+        const response = await fetch(url);
+        if (!response.ok) return;
+        const allData = await response.json();
+        const students = JSON.parse(allData.myapp_students || '[]');
+        if (students.length > 0) {
+            const gradedStudentsCount = students.filter(student => student.grade && String(student.grade).trim() !== 'لم ترصد بعد').length;
+            if (gradedStudentsCount > 0) {
+                statsContainer.innerHTML = `🏆 تم تسليم التكليف من قبل <strong>${gradedStudentsCount}</strong> من الطلاب! استعلم عن نتيجتك الآن 👇`;
+                statsContainer.style.display = 'block';
             }
         }
     } catch (error) {
         console.error('Error fetching stats:', error);
-        // Hide the container if there's any error
-        statsContainer.style.display = 'none';
     }
 });
 
-
-// The original function for searching grades remains the same
 async function findMyGrades() {
+    // This function is unchanged
     const studentIdInput = document.getElementById('studentId').value.trim();
     const loader = document.getElementById('loader');
     const resultArea = document.getElementById('result-area');
     const errorMessage = document.getElementById('error-message');
+    const departmentRow = document.getElementById('department-row');
 
     resultArea.style.display = 'none';
     errorMessage.style.display = 'none';
@@ -244,17 +426,13 @@ async function findMyGrades() {
     }
 
     loader.style.display = 'block';
-   
     const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
 
     try {
         const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error('فشل تحميل البيانات. تأكد من أن المستودع عام والملف موجود.');
-        }
+        if (!response.ok) throw new Error('فشل تحميل البيانات.');
 
         const allData = await response.json();
-  
         const students = JSON.parse(allData.myapp_students || '[]');
         const foundStudent = students.find(student => student.id === studentIdInput);
         
@@ -265,20 +443,26 @@ async function findMyGrades() {
             document.getElementById('studentCourse').textContent = foundStudent.course || 'غير محدد';
             document.getElementById('studentGrade').textContent = foundStudent.grade || 'لم ترصد بعد';
             document.getElementById('studentAttendance').textContent = foundStudent.attendance || 'لا توجد بيانات';
+
+            if(foundStudent.department) {
+                document.getElementById('studentDepartment').textContent = foundStudent.department;
+                departmentRow.style.display = 'block';
+            } else {
+                departmentRow.style.display = 'none';
+            }
+
             resultArea.style.display = 'block';
         } else {
-            errorMessage.textContent = 'لم يتم العثور على طالب بهذا الرقم. يرجى التأكد من الرقم المدخل.';
+            errorMessage.textContent = 'لم يتم العثور على طالب بهذا الرقم.';
             errorMessage.style.display = 'block';
         }
-
     } catch (error) {
         loader.style.display = 'none';
         errorMessage.textContent = error.message;
-        errorMessage.style.display = 'block';
         console.error('Error fetching grades:', error);
     }
 }
 </script>
 
 </body>
-</html>
+</html>```
