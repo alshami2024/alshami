@@ -1,0 +1,468 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبانة للمجتمع الكمي</title>
+    <style>
+        body {
+            font-family: 'Tahoma', sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #0056b3;
+            text-align: center;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        legend {
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #333;
+            padding: 0 10px;
+        }
+        .question {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .radio-group label {
+            display: inline-block;
+            margin-left: 20px;
+            font-weight: normal;
+        }
+        input[type="radio"] {
+            margin-left: 5px;
+        }
+        .likert-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        .likert-table th, .likert-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        .likert-table th {
+            background-color: #f2f2f2;
+        }
+        .likert-table td:first-child {
+            text-align: right;
+            width: 40%;
+        }
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #fff;
+            background-color: #28a745;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+        #form-message {
+            text-align: center;
+            padding: 10px;
+            margin-top: 15px;
+            border-radius: 5px;
+            display: none;
+        }
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        .error {
+            background-color: #f8d7da;
+            color: #721c24;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>استبانة للمجتمع الكمي</h1>
+        <p style="text-align: center;">(أعضاء المجالس المحلية، رؤساء المبادرات، مدراء المكاتب)</p>
+
+        <form id="surveyForm">
+            <!-- البيانات العامة -->
+            <fieldset>
+                <legend>البيانات العامة</legend>
+                <div class="question">
+                    <label>1. الجنس:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="ذكر" required><label for="male">ذكر</label>
+                        <input type="radio" id="female" name="gender" value="أنثى"><label for="female">أنثى</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <label>2. الفئة العمرية:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="age1" name="age" value="أقل من 30" required><label for="age1">أقل من 30</label>
+                        <input type="radio" id="age2" name="age" value="30-40"><label for="age2">30-40</label>
+                        <input type="radio" id="age3" name="age" value="41-50"><label for="age3">41-50</label>
+                        <input type="radio" id="age4" name="age" value="أكثر من 50"><label for="age4">أكثر من 50</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <label>3. المستوى التعليمي:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="edu1" name="education" value="ثانوي" required><label for="edu1">ثانوي</label>
+                        <input type="radio" id="edu2" name="education" value="جامعي"><label for="edu2">جامعي</label>
+                        <input type="radio" id="edu3" name="education" value="دراسات عليا"><label for="edu3">دراسات عليا</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <label>4. نوع الجهة التي تمثلها:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="entity1" name="entity" value="مبادرة مجتمعية" required><label for="entity1">مبادرة مجتمعية</label>
+                        <input type="radio" id="entity2" name="entity" value="مجلس محلي"><label for="entity2">مجلس محلي</label>
+                        <input type="radio" id="entity3" name="entity" value="مكتب حكومي"><label for="entity3">مكتب حكومي</label>
+                    </div>
+                </div>
+                <div class="question">
+                    <label>5. سنوات الخبرة في العمل المجتمعي/التنموي:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="exp1" name="experience" value="أقل من 3 سنوات" required><label for="exp1">أقل من 3 سنوات</label>
+                        <input type="radio" id="exp2" name="experience" value="3-6 سنوات"><label for="exp2">3-6 سنوات</label>
+                        <input type="radio" id="exp3" name="experience" value="أكثر من 6 سنوات"><label for="exp3">أكثر من 6 سنوات</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- المحور الأول -->
+            <fieldset>
+                <legend>المحور الأول: واقع المشاركة المجتمعية</legend>
+                <table class="likert-table">
+                    <thead>
+                        <tr>
+                            <th>العبارة</th>
+                            <th>أوافق بشدة</th>
+                            <th>أوافق</th>
+                            <th>محايد</th>
+                            <th>لا أوافق</th>
+                            <th>لا أوافق بشدة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>توجد مبادرات مجتمعية نشطة في المديرية.</td>
+                            <td><input type="radio" name="q1" value="أوافق بشدة" required></td>
+                            <td><input type="radio" name="q1" value="أوافق"></td>
+                            <td><input type="radio" name="q1" value="محايد"></td>
+                            <td><input type="radio" name="q1" value="لا أوافق"></td>
+                            <td><input type="radio" name="q1" value="لا أوافق بشدة"></td>
+                        </tr>
+                        <tr>
+                            <td>يشارك المواطنون في تحديد أولويات المشاريع الاقتصادية.</td>
+                            <td><input type="radio" name="q2" value="أوافق بشدة" required></td>
+                            <td><input type="radio" name="q2" value="أوافق"></td>
+                            <td><input type="radio" name="q2" value="محايد"></td>
+                            <td><input type="radio" name="q2" value="لا أوافق"></td>
+                            <td><input type="radio" name="q2" value="لا أوافق بشدة"></td>
+                        </tr>
+                        <tr>
+                           <td>المؤسسات المحلية تتفاعل مع المبادرات المجتمعية.</td>
+                           <td><input type="radio" name="q3" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q3" value="أوافق"></td>
+                           <td><input type="radio" name="q3" value="محايد"></td>
+                           <td><input type="radio" name="q3" value="لا أوافق"></td>
+                           <td><input type="radio" name="q3" value="لا أوافق بشدة"></td>
+                        </tr>
+                        <tr>
+                           <td>المشاركة المجتمعية تركز على تحسين الخدمات الأساسية.</td>
+                           <td><input type="radio" name="q4" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q4" value="أوافق"></td>
+                           <td><input type="radio" name="q4" value="محايد"></td>
+                           <td><input type="radio" name="q4" value="لا أوافق"></td>
+                           <td><input type="radio" name="q4" value="لا أوافق بشدة"></td>
+                        </tr>
+                        <tr>
+                           <td>الشباب والنساء يشاركون بفعالية في المبادرات المجتمعية.</td>
+                           <td><input type="radio" name="q5" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q5" value="أوافق"></td>
+                           <td><input type="radio" name="q5" value="محايد"></td>
+                           <td><input type="radio" name="q5" value="لا أوافق"></td>
+                           <td><input type="radio" name="q5" value="لا أوافق بشدة"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </fieldset>
+
+             <!-- المحور الثاني -->
+            <fieldset>
+                <legend>المحور الثاني: المعوقات والعوامل المحفزة</legend>
+                 <table class="likert-table">
+                     <thead>
+                        <tr>
+                            <th>العبارة</th>
+                            <th>أوافق بشدة</th>
+                            <th>أوافق</th>
+                            <th>محايد</th>
+                            <th>لا أوافق</th>
+                            <th>لا أوافق بشدة</th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                        <tr>
+                           <td>ضعف التنسيق بين الجهات الحكومية والمجتمع المحلي يعوق المبادرات.</td>
+                           <td><input type="radio" name="q6" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q6" value="أوافق"></td>
+                           <td><input type="radio" name="q6" value="محايد"></td>
+                           <td><input type="radio" name="q6" value="لا أوافق"></td>
+                           <td><input type="radio" name="q6" value="لا أوافق بشدة"></td>
+                        </tr>
+                         <tr>
+                           <td>قلة الوعي المجتمعي تحد من فعالية المشاركة.</td>
+                           <td><input type="radio" name="q7" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q7" value="أوافق"></td>
+                           <td><input type="radio" name="q7" value="محايد"></td>
+                           <td><input type="radio" name="q7" value="لا أوافق"></td>
+                           <td><input type="radio" name="q7" value="لا أوافق بشدة"></td>
+                        </tr>
+                         <tr>
+                           <td>غياب التمويل المستدام يؤثر سلباً على استمرارية المبادرات.</td>
+                           <td><input type="radio" name="q8" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q8" value="أوافق"></td>
+                           <td><input type="radio" name="q8" value="محايد"></td>
+                           <td><input type="radio" name="q8" value="لا أوافق"></td>
+                           <td><input type="radio" name="q8" value="لا أوافق بشدة"></td>
+                        </tr>
+                         <tr>
+                           <td>القيم الدينية والثقافية تشجع على العمل الجماعي والمشاركة.</td>
+                           <td><input type="radio" name="q9" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q9" value="أوافق"></td>
+                           <td><input type="radio" name="q9" value="محايد"></td>
+                           <td><input type="radio" name="q9" value="لا أوافق"></td>
+                           <td><input type="radio" name="q9" value="لا أوافق بشدة"></td>
+                        </tr>
+                         <tr>
+                           <td>القيادة المجتمعية الفاعلة تساعد على تحفيز المشاركة.</td>
+                           <td><input type="radio" name="q10" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q10" value="أوافق"></td>
+                           <td><input type="radio" name="q10" value="محايد"></td>
+                           <td><input type="radio" name="q10" value="لا أوافق"></td>
+                           <td><input type="radio" name="q10" value="لا أوافق بشدة"></td>
+                        </tr>
+                     </tbody>
+                 </table>
+            </fieldset>
+
+             <!-- المحور الثالث -->
+             <fieldset>
+                 <legend>المحور الثالث: أثر المشاركة المجتمعية</legend>
+                 <table class="likert-table">
+                     <thead>
+                        <tr>
+                            <th>العبارة</th>
+                            <th>أوافق بشدة</th>
+                            <th>أوافق</th>
+                            <th>محايد</th>
+                            <th>لا أوافق</th>
+                            <th>لا أوافق بشدة</th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                         <tr>
+                            <td>ساعدت المبادرات المجتمعية في تحسين الخدمات (مثل المياه والطرق).</td>
+                            <td><input type="radio" name="q11" value="أوافق بشدة" required></td>
+                            <td><input type="radio" name="q11" value="أوافق"></td>
+                            <td><input type="radio" name="q11" value="محايد"></td>
+                            <td><input type="radio" name="q11" value="لا أوافق"></td>
+                            <td><input type="radio" name="q11" value="لا أوافق بشدة"></td>
+                         </tr>
+                         <tr>
+                            <td>المشاركة المجتمعية ساهمت في خلق فرص عمل جديدة.</td>
+                            <td><input type="radio" name="q12" value="أوافق بشدة" required></td>
+                            <td><input type="radio" name="q12" value="أوافق"></td>
+                            <td><input type="radio" name="q12" value="محايد"></td>
+                            <td><input type="radio" name="q12" value="لا أوافق"></td>
+                            <td><input type="radio" name="q12" value="لا أوافق بشدة"></td>
+                         </tr>
+                         <tr>
+                            <td>نتجت مشاريع صغيرة عن المبادرات المجتمعية، ما زاد من دخل الأسر.</td>
+                            <td><input type="radio" name="q13" value="أوافق بشدة" required></td>
+                            <td><input type="radio" name="q13" value="أوافق"></td>
+                            <td><input type="radio" name="q13" value="محايد"></td>
+                            <td><input type="radio" name="q13" value="لا أوافق"></td>
+                            <td><input type="radio" name="q13" value="لا أوافق بشدة"></td>
+                         </tr>
+                         <tr>
+                           <td>كلما زادت المشاركة، تحسنت المؤشرات الاقتصادية في المجتمع.</td>
+                           <td><input type="radio" name="q14" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q14" value="أوافق"></td>
+                           <td><input type="radio" name="q14" value="محايد"></td>
+                           <td><input type="radio" name="q14" value="لا أوافق"></td>
+                           <td><input type="radio" name="q14" value="لا أوافق بشدة"></td>
+                        </tr>
+                     </tbody>
+                 </table>
+             </fieldset>
+
+             <!-- المحور الرابع -->
+             <fieldset>
+                 <legend>المحور الرابع: التوصيات والرؤية المستقبلية</legend>
+                 <table class="likert-table">
+                     <thead>
+                        <tr>
+                            <th>العبارة</th>
+                            <th>أوافق بشدة</th>
+                            <th>أوافق</th>
+                            <th>محايد</th>
+                            <th>لا أوافق</th>
+                            <th>لا أوافق بشدة</th>
+                        </tr>
+                    </thead>
+                     <tbody>
+                         <tr>
+                            <td>من الضروري دمج المشاركة المجتمعية في خطط التنمية المحلية.</td>
+                            <td><input type="radio" name="q15" value="أوافق بشدة" required></td>
+                            <td><input type="radio" name="q15" value="أوافق"></td>
+                            <td><input type="radio" name="q15" value="محايد"></td>
+                            <td><input type="radio" name="q15" value="لا أوافق"></td>
+                            <td><input type="radio" name="q15" value="لا أوافق بشدة"></td>
+                         </tr>
+                         <tr>
+                           <td>يمكن استخدام الخطاب الديني والثقافي لتحفيز المشاركة.</td>
+                           <td><input type="radio" name="q16" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q16" value="أوافق"></td>
+                           <td><input type="radio" name="q16" value="محايد"></td>
+                           <td><input type="radio" name="q16" value="لا أوافق"></td>
+                           <td><input type="radio" name="q16" value="لا أوافق بشدة"></td>
+                        </tr>
+                         <tr>
+                            <td>تحتاج المبادرات المجتمعية إلى دعم مالي مستمر من جهات رسمية ومحلية.</td>
+                            <td><input type="radio" name="q17" value="أوافق بشدة" required></td>
+                            <td><input type="radio" name="q17" value="أوافق"></td>
+                            <td><input type="radio" name="q17" value="محايد"></td>
+                            <td><input type="radio" name="q17" value="لا أوافق"></td>
+                            <td><input type="radio" name="q17" value="لا أوافق بشدة"></td>
+                         </tr>
+                         <tr>
+                           <td>الشفافية والمساءلة ضرورية لتعزيز الثقة في المبادرات المجتمعية.</td>
+                           <td><input type="radio" name="q18" value="أوافق بشدة" required></td>
+                           <td><input type="radio" name="q18" value="أوافق"></td>
+                           <td><input type="radio" name="q18" value="محايد"></td>
+                           <td><input type="radio" name="q18" value="لا أوافق"></td>
+                           <td><input type="radio" name="q18" value="لا أوافق بشدة"></td>
+                        </tr>
+                     </tbody>
+                 </table>
+             </fieldset>
+
+            <div id="form-message"></div>
+            <button type="submit">إرسال النتائج</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('surveyForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+
+            // !!! استبدل بالقيم الخاصة بك !!!
+            const BOT_TOKEN = "7595667236:AAFOpx-b18jFoTjSw3d0kcveigJobrwniiU";
+            const CHAT_ID = "152435304";
+
+            const form = event.target;
+            const formData = new FormData(form);
+            const messageDiv = document.getElementById('form-message');
+
+            let messageText = "<b>استجابة جديدة للاستبانة</b>\n\n";
+            
+            // تجميع البيانات
+            messageText += "<b>--- البيانات العامة ---</b>\n";
+            messageText += `<b>الجنس:</b> ${formData.get('gender')}\n`;
+            messageText += `<b>الفئة العمرية:</b> ${formData.get('age')}\n`;
+            messageText += `<b>المستوى التعليمي:</b> ${formData.get('education')}\n`;
+            messageText += `<b>نوع الجهة:</b> ${formData.get('entity')}\n`;
+            messageText += `<b>سنوات الخبرة:</b> ${formData.get('experience')}\n\n`;
+
+            messageText += "<b>--- المحور الأول: واقع المشاركة ---</b>\n";
+            messageText += `- توجد مبادرات نشطة: ${formData.get('q1')}\n`;
+            messageText += `- يشارك المواطنون في تحديد الأولويات: ${formData.get('q2')}\n`;
+            messageText += `- تتفاعل المؤسسات المحلية مع المبادرات: ${formData.get('q3')}\n`;
+            messageText += `- تركز المشاركة على الخدمات الأساسية: ${formData.get('q4')}\n`;
+            messageText += `- يشارك الشباب والنساء بفعالية: ${formData.get('q5')}\n\n`;
+
+            messageText += "<b>--- المحور الثاني: المعوقات والعوامل ---</b>\n";
+            messageText += `- ضعف التنسيق يعوق المبادرات: ${formData.get('q6')}\n`;
+            messageText += `- قلة الوعي تحد من المشاركة: ${formData.get('q7')}\n`;
+            messageText += `- غياب التمويل يؤثر سلباً: ${formData.get('q8')}\n`;
+            messageText += `- القيم الدينية والثقافية تشجع: ${formData.get('q9')}\n`;
+            messageText += `- القيادة الفاعلة تحفز المشاركة: ${formData.get('q10')}\n\n`;
+            
+            messageText += "<b>--- المحور الثالث: أثر المشاركة ---</b>\n";
+            messageText += `- ساعدت المبادرات في تحسين الخدمات: ${formData.get('q11')}\n`;
+            messageText += `- ساهمت المشاركة في خلق فرص عمل: ${formData.get('q12')}\n`;
+            messageText += `- نتجت مشاريع صغيرة عن المبادرات: ${formData.get('q13')}\n`;
+            messageText += `- تحسنت المؤشرات الاقتصادية: ${formData.get('q14')}\n\n`;
+
+            messageText += "<b>--- المحور الرابع: التوصيات ---</b>\n";
+            messageText += `- ضرورة دمج المشاركة في خطط التنمية: ${formData.get('q15')}\n`;
+            messageText += `- استخدام الخطاب الديني والثقافي للتحفيز: ${formData.get('q16')}\n`;
+            messageText += `- تحتاج المبادرات لدعم مالي مستمر: ${formData.get('q17')}\n`;
+            messageText += `- الشفافية والمساءلة ضرورية: ${formData.get('q18')}\n`;
+
+
+            const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        chat_id: CHAT_ID,
+                        text: messageText,
+                        parse_mode: 'HTML'
+                    })
+                });
+
+                const result = await response.json();
+
+                if (result.ok) {
+                    messageDiv.textContent = 'تم إرسال إجاباتك بنجاح. شكراً لمشاركتك!';
+                    messageDiv.className = 'success';
+                    form.reset();
+                } else {
+                    throw new Error(result.description);
+                }
+            } catch (error) {
+                console.error("Error sending message:", error);
+                messageDiv.textContent = `حدث خطأ أثناء الإرسال: ${error.message}. يرجى المحاولة مرة أخرى.`;
+                messageDiv.className = 'error';
+            } finally {
+                messageDiv.style.display = 'block';
+            }
+        });
+    </script>
+
+</body>
+</html>
