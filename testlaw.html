@@ -1,0 +1,198 @@
+﻿
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>امتحان القانون الدولي الخاص (الجنسية والموطن)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #0056b3; --secondary-color: #007bff; --light-gray: #f8f9fa; --dark-gray: #343a40; --success-color: #28a745; --danger-color: #dc3545; --background-color: #e9ecef; --text-color: #212529; --white: #fff; }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--background-color); margin: 0; padding: 20px; color: var(--text-color); direction: rtl; }
+        .container { background-color: var(--white); border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); width: 95%; max-width: 900px; margin: 0 auto; padding: 30px; }
+        h1, h2, h3 { color: var(--dark-gray); font-weight: 700; }
+        .form-group { margin-bottom: 15px; } .form-group label { display: block; margin-bottom: 5px; font-weight: 500; }
+        .form-group input[type="text"] { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        .btn { background-color: var(--primary-color); color: var(--white); border: none; padding: 12px 25px; font-size: 18px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; }
+        .btn:hover { background-color: #004a99; } .btn:disabled { background-color: #ccc; }
+        .btn-danger { background-color: var(--danger-color); }
+        .exam-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+        .timer { font-size: 1.2em; color: var(--danger-color); font-weight: bold; }
+        .question-card { background: var(--light-gray); border: 1px solid #dee2e6; border-radius: 10px; padding: 20px; margin-bottom: 20px; text-align: right; }
+        .question-card ul { list-style: none; padding: 0; }
+        .choices li { padding: 10px; margin: 8px 0; background: var(--white); border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+        .choices li:hover { background-color: #e3f2fd; }
+        .choices li.correct { background-color: #d4edda !important; border-color: #c3e6cb; }
+        .choices li.incorrect { background-color: #f8d7da !important; border-color: #f5c6cb; }
+        #navigation-buttons { display: flex; justify-content: space-between; margin-top: 20px; }
+        #progressBarContainer { width: 100%; background-color: #e9ecef; border-radius: 20px; margin-bottom: 25px; overflow: hidden; }
+        #progressBar { width: 0%; height: 20px; background-color: var(--success-color); border-radius: 20px; transition: width 0.5s; text-align: center; color: white; line-height: 20px; }
+        #certificate { display: none; border: 5px solid var(--primary-color); padding: 30px; margin-top: 30px; text-align: center; background: linear-gradient(135deg, #f9f9f9, #eef8ff); }
+        #startScreen, #examArea, #resultContainer { display: none; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="studentExamView" style="display:block;">
+        <div id="startScreen" style="display:block;">
+            <h1 id="examTitleStudent"></h1>
+            <p id="examDescriptionStudent" style="white-space: pre-wrap;"></p>
+            <div class="form-group"><label for="studentName">أدخل اسمك الكامل لبدء الاختبار</label><input type="text" id="studentName" placeholder="الاسم الكامل"></div>
+            <button id="startExamBtn" class="btn">بدء الاختبار</button>
+        </div>
+        <div id="examArea">
+            <div class="exam-header"><h2 id="welcomeStudent"></h2><div id="timer" class="timer"></div></div>
+            <div id="progressBarContainer"><div id="progressBar"></div></div>
+            <div id="questionsContainer"></div>
+            <div id="navigation-buttons"></div>
+            <button id="finishExamBtn" class="btn btn-danger" style="margin-top: 20px; width:100%;">إنهاء وتسليم الاختبار</button>
+        </div>
+        <div id="resultContainer">
+             <h2 id="resultTitle"></h2><p id="resultSummary"></p>
+             <div id="reviewContainer"></div>
+             <div id="certificate">
+                <h2>شهادة إتمام</h2><p>تشهد هذه الشهادة بأن الطالب/ة:</p><h3 id="certName"></h3>
+                <p>قد أتم الاختبار بنجاح وحصل/ت على درجة:</p><h3 id="certScore"></h3>
+                <p>بتاريخ: <span id="certDate"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const examData = {"config":{"title":"امتحان القانون الدولي الخاص (الجنسية والموطن)","description":"تجريبي","layout":"one-by-one","time":5,"shuffle":true,"noGoingBack":true,"disableCheating":true,"monitorTabs":true,"learningMode":false,"singleUseMode":false,"showResults":true,"enableReview":false,"enableCertificate":true,"successPercentage":50,"botToken":"7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y","chatId":"152435304"},"questions":[{"text":"أيّ من الحالات الآتية تُعتبر تطبيقًا لمبدأ \"حق الدم\" وفقًا للتعديل الجديد في القانون اليمني؟","choices":["أ) مولود في اليمن لأبوين أجنبيين.","ب) مولود في لندن لأم يمنية وأب بريطاني.","ج) مولود لأبوين مجهولي الجنسية في اليمن.","د) مولود لأب يمني وأم أجنبية في دولة أجنبية."],"correctAnswer":1},{"text":"ما الهدف من اشتراط استمرار الزوجية لمدة أربع سنوات لاكتساب الزوجة الأجنبية جنسية زوجها اليمني؟","choices":["أ) ضمان حصول الزوجة على الحماية الدبلوماسية.","ب) حماية الدولة من التزامات مالية تجاه الزوجة.","ج) تمكين الزوجة من التقدم لوظائف حكومية.","د) إثبات رغبة الزوجة في الاستقرار وتأكيد العلاقة الزوجية."],"correctAnswer":3},{"text":"أي من الخيارات التالية يُعد أحد الآثار التطبيقية للتعديل الأخير 2009 في المادة (3/أ) من قانون الجنسية اليمني؟","choices":["أ) منح الجنسية تلقائيًا لكل من وُلد في اليمن.","ب) المساواة بين الأم والأب في نقل الجنسية.","ج) إلغاء الجنسية عن مزدوجي الجنسية.","د) حرمان الأطفال مجهولي النسب من الجنسية."],"correctAnswer":1},{"text":"أي من الشروط التالية يُمكن الإعفاء منه عند منح الجنسية لذوي الكفاءات المطلوبة وفق المادة (5)؟","choices":["أ) الإلمام باللغة العربية.","ب) بلوغ سن الرشد.","ج) الإقامة المشروعة لمدة 10 سنوات.","د) حسن السيرة والسلوك."],"correctAnswer":0},{"text":"طفل وُلد في اليمن لأم يمنية وأب غير معروف، ما الأساس القانوني الذي يضمن له الجنسية اليمنية؟","choices":["أ) حق الإقليم فقط.","ب) حق الدم المعدل.","ج) التجنس الاضطراري.","د) الحماية من انعدام الجنسية."],"correctAnswer":3},{"text":"أيّ مما يلي يُعد الفرق الجوهري بين الموطن ومحل الإقامة وفقاً للقانون اليمني؟","choices":["أ) الموطن قانوني ومحل الإقامة سياسي.","ب) الموطن مؤقت والإقامة دائمة.","ج) الموطن يرتبط بنية البقاء، والإقامة بغرض مؤقت.","د) الموطن مرتبط بالسكن والإقامة مرتبطة بالجنسية."],"correctAnswer":2},{"text":"ما نوع الموطن الذي يفرضه القانون على عديمي الأهلية أو ناقصيها في التشريع اليمني؟","choices":["أ) الموطن الخاص.","ب) الموطن العام.","ج) الموطن الإقليمي.","د) الموطن القانوني."],"correctAnswer":3},{"text":"وفقاً للاتجاه الأول في الفقه اليمني، ما شرط اكتساب الأجنبي موطناً في اليمن؟","choices":["أ) الحصول على عقد عمل.","ب) الإقامة في اليمن أكثر من 5 سنوات.","ج) الإقامة القانونية بإذن السلطات.","د) إثبات النية في الزواج من مواطن يمني."],"correctAnswer":1},{"text":"عند عدم اختيار الأطراف لقانون يحكم التزاماتهم التعاقدية، يُطبق القانون بناءً على:","choices":["أ) جنسية المدعي.","ب) قانون بلد توقيع العقد.","ج) قانون موطن المدعى عليه.","د) القانون اليمني تلقائياً."],"correctAnswer":2},{"text":"ما علاقة الموطن بتنفيذ الأحكام الأجنبية في اليمن؟","choices":["أ) يُنفذ الحكم بناءً على الموطن في بلد الحكم فقط.","ب) لا يشترط أي ارتباط بالموطن لتنفيذ الحكم.","ج) يجب التحقق من اختصاص المحكمة الأجنبية بناء على موطن المدعى عليه.","د) تُنفذ الأحكام تلقائياً إذا كانت صادرة من دولة عربية."],"correctAnswer":2}]};
+    let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, currentQuestionIndex = 0, tabSwitchCount = 0;
+    const startScreen = document.getElementById('startScreen'), examArea = document.getElementById('examArea'), resultContainer = document.getElementById('resultContainer');
+    
+    window.onload = function() {
+        const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+        if (examData.config.singleUseMode && localStorage.getItem(uniqueExamId)) {
+            document.body.innerHTML = `<div class="container" style="text-align:center;"><h1>تم قفل الاختبار</h1><p>لقد قمت ببدء هذا الاختبار بالفعل من هذا المتصفح. لا يمكنك إجراؤه مرة أخرى.</p></div>`;
+            return;
+        }
+        document.getElementById('examTitleStudent').textContent = examData.config.title;
+        document.getElementById('examDescriptionStudent').textContent = examData.config.description;
+        document.getElementById('startExamBtn').addEventListener('click', () => {
+            studentName = document.getElementById('studentName').value.trim();
+            if (studentName) startTheExam(); else alert('الرجاء إدخال اسمك.');
+        });
+    };
+    
+    function startTheExam() {
+        if (examData.config.singleUseMode) {
+             const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+             localStorage.setItem(uniqueExamId, 'true');
+        }
+        startScreen.style.display = 'none'; examArea.style.display = 'block';
+        document.getElementById('welcomeStudent').textContent = `بالتوفيق، ${studentName}!`;
+        if (examData.config.time > 0) startTimer(examData.config.time * 60); else document.getElementById('timer').style.display = 'none';
+        if (examData.config.shuffle) { examData.questions.sort(() => Math.random() - 0.5); }
+        setupSmartFeatures(); renderQuestionsForStudent();
+        document.getElementById('finishExamBtn').addEventListener('click', () => { if(confirm("هل أنت متأكد من رغبتك في إنهاء الاختبار؟")) finishTheExam(); });
+        window.addEventListener('beforeunload', (event) => {
+            const isExamFinished = resultContainer.style.display === 'block';
+            if (examData.config.noGoingBack && !isExamFinished) {
+                finishTheExam();
+                event.preventDefault();
+                event.returnValue = 'هل أنت متأكد من رغبتك في المغادرة؟ سيتم إنهاء اختبارك تلقائياً.';
+            }
+        });
+    }
+    
+    function renderQuestionsForStudent() {
+        const container = document.getElementById('questionsContainer'); container.innerHTML = '';
+        if (examData.config.layout === 'one-by-one') { renderSingleQuestion(currentQuestionIndex); updateNavigationButtons(); } 
+        else { examData.questions.forEach((q, index) => container.appendChild(createQuestionElement(q, index))); }
+        updateProgressBar();
+    }
+    function createQuestionElement(q, index) {
+        const qElem = document.createElement('div'); qElem.className = 'question-card'; qElem.id = `question-${index}`;
+        const choicesHTML = q.choices.map((choice, i) => `<li onclick="handleChoiceClick(${index}, ${i}, this)"><input type="radio" name="q${index}" id="q${index}c${i}" value="${i}" ${studentAnswers[index] === i ? 'checked' : ''}><label for="q${index}c${i}">${choice}</label></li>`).join('');
+        qElem.innerHTML = `<h3>السؤال ${index + 1}: ${q.text}</h3><ul class="choices">${choicesHTML}</ul>`;
+        return qElem;
+    }
+    function handleChoiceClick(qIndex, cIndex, liElement) {
+        studentAnswers[qIndex] = cIndex;
+        liElement.querySelector('input').checked = true;
+        if (examData.config.layout === 'one-by-one' && examData.config.learningMode) {
+            const isCorrect = (cIndex === examData.questions[qIndex].correctAnswer);
+            const choices = liElement.parentElement.querySelectorAll('li');
+            choices.forEach(item => { item.style.pointerEvents = 'none'; item.classList.remove('correct', 'incorrect'); });
+            liElement.classList.add(isCorrect ? 'correct' : 'incorrect');
+        }
+        updateProgressBar();
+    }
+    function renderSingleQuestion(index) { document.getElementById('questionsContainer').appendChild(createQuestionElement(examData.questions[index], index)); }
+    function updateNavigationButtons() {
+        const nav = document.getElementById('navigation-buttons');
+        if (examData.config.layout !== 'one-by-one') { nav.style.display = 'none'; return; }
+        let prevButtonHTML = '';
+        if (!examData.config.noGoingBack) { prevButtonHTML = `<button id="prevBtn" class="btn">السابق</button>`; }
+        nav.innerHTML = `${prevButtonHTML}<button id="nextBtn" class="btn">التالي</button>`;
+        const nextBtn = document.getElementById('nextBtn');
+        nextBtn.disabled = currentQuestionIndex === examData.questions.length - 1;
+        nextBtn.addEventListener('click', () => { if (currentQuestionIndex < examData.questions.length - 1) { currentQuestionIndex++; renderQuestionsForStudent(); } });
+        if (!examData.config.noGoingBack) {
+            const prevBtn = document.getElementById('prevBtn');
+            prevBtn.disabled = currentQuestionIndex === 0;
+            prevBtn.addEventListener('click', () => { if (currentQuestionIndex > 0) { currentQuestionIndex--; renderQuestionsForStudent(); } });
+        }
+    }
+    function updateProgressBar() {
+        const answered = studentAnswers.filter(a => a !== null).length, progress = (answered / examData.questions.length) * 100;
+        const bar = document.getElementById('progressBar'); bar.style.width = `${progress}%`; bar.textContent = `${Math.round(progress)}%`;
+    }
+    function setupSmartFeatures() {
+        if (examData.config.disableCheating) { ['contextmenu', 'copy', 'paste'].forEach(evt => document.body.addEventListener(evt, e => e.preventDefault())); }
+        if (examData.config.monitorTabs) { document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') tabSwitchCount++; }); }
+    }
+    async function finishTheExam() {
+        clearInterval(timerInterval); examArea.style.display = 'none'; resultContainer.style.display = 'block';
+        let score = 0; studentAnswers.forEach((answer, i) => { if (answer === examData.questions[i].correctAnswer) score++; });
+        const total = examData.questions.length;
+        document.getElementById('resultTitle').textContent = 'تم الانتهاء من الامتحان!';
+        if (examData.config.showResults) {
+            let summary = `مرحباً ${studentName}، نتيجتك هي: <strong>${score} / ${total}</strong>`;
+            if (examData.config.monitorTabs && tabSwitchCount > 0) summary += `<br><small style="color:var(--danger-color);">تم تسجيل خروجك من الصفحة ${tabSwitchCount} مرات.</small>`;
+            document.getElementById('resultSummary').innerHTML = summary;
+        } else { document.getElementById('resultSummary').textContent = "شكراً لك، تم تسليم إجاباتك بنجاح."; }
+        if (examData.config.showResults && examData.config.enableReview) renderReview();
+        if (examData.config.enableCertificate && (score / total * 100) >= examData.config.successPercentage) renderCertificate(score, total);
+        if (examData.config.botToken && examData.config.chatId) await sendResultsToTelegram(score, total);
+    }
+    function renderReview() {
+        const container = document.getElementById('reviewContainer'); container.innerHTML = '<h3>مراجعة الإجابات:</h3>';
+        examData.questions.forEach((q, i) => {
+            const isCorrect = studentAnswers[i] === q.correctAnswer;
+            container.innerHTML += `<div class="question-card" style="background:${isCorrect ? '#d4edda' : '#f8d7da'};"><p><strong>${q.text}</strong></p><p>إجابتك: ${studentAnswers[i] !== null ? q.choices[studentAnswers[i]] : "لم تتم الإجابة"} ${isCorrect ? '✔️' : '❌'}</p>${!isCorrect ? `<p style="color:var(--primary-color);">الإجابة الصحيحة: ${q.choices[q.correctAnswer]}</p>` : ''}</div>`;
+        });
+    }
+    function renderCertificate(score, total) {
+        const cert = document.getElementById('certificate'); cert.style.display = 'block';
+        document.getElementById('certName').textContent = studentName; document.getElementById('certScore').textContent = `${score} / ${total}`;
+        document.getElementById('certDate').textContent = new Date().toLocaleDateString('ar-EG');
+    }
+    function startTimer(duration) {
+        let timer = duration; const el = document.getElementById('timer');
+        timerInterval = setInterval(() => {
+            let m = parseInt(timer / 60, 10), s = parseInt(timer % 60, 10);
+            m = m < 10 ? "0" + m : m; s = s < 10 ? "0" + s : s; el.textContent = `${m}:${s}`;
+            if (--timer < 0) { clearInterval(timerInterval); alert('انتهى الوقت!'); finishTheExam(); }
+        }, 1000);
+    }
+    async function sendResultsToTelegram(score, total) {
+        const { botToken, chatId, title } = examData.config;
+        let msg = `*📊 نتيجة اختبار جديدة*\n\n*الاختبار:* ${title}\n*الطالب:* ${studentName}\n*النتيجة:* ${score} من ${total}\n*مرات الخروج:* ${tabSwitchCount}`;
+        const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+        try {
+            const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chat_id: chatId, text: msg, parse_mode: 'Markdown' }), keepalive: true });
+            if (!res.ok) console.error("Telegram API error:", await res.json());
+        } catch (error) { console.error("Fetch error:", error); }
+    }
+</script>
+<footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f1f1f1; position: fixed; bottom: 0; width: 100%;">
+       2025 © Copyright Jamal-Alshami
+    </footer>
+</body>
+</html>
