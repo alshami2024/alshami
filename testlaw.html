@@ -1,3 +1,4 @@
+﻿
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -61,7 +62,7 @@
 </div>
 <script>
     const examData = {"config":{"title":"امتحان القانون الدولي الخاص (الجنسية والموطن)","description":"تجريبي","layout":"one-by-one","time":5,"shuffle":true,"noGoingBack":true,"disableCheating":true,"monitorTabs":true,"learningMode":false,"singleUseMode":false,"showResults":true,"enableReview":false,"enableCertificate":true,"successPercentage":50,"botToken":"7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y","chatId":"152435304"},"questions":[{"text":"أيّ من الحالات الآتية تُعتبر تطبيقًا لمبدأ \"حق الدم\" وفقًا للتعديل الجديد في القانون اليمني؟","choices":["أ) مولود في اليمن لأبوين أجنبيين.","ب) مولود في لندن لأم يمنية وأب بريطاني.","ج) مولود لأبوين مجهولي الجنسية في اليمن.","د) مولود لأب يمني وأم أجنبية في دولة أجنبية."],"correctAnswer":1},{"text":"ما الهدف من اشتراط استمرار الزوجية لمدة أربع سنوات لاكتساب الزوجة الأجنبية جنسية زوجها اليمني؟","choices":["أ) ضمان حصول الزوجة على الحماية الدبلوماسية.","ب) حماية الدولة من التزامات مالية تجاه الزوجة.","ج) تمكين الزوجة من التقدم لوظائف حكومية.","د) إثبات رغبة الزوجة في الاستقرار وتأكيد العلاقة الزوجية."],"correctAnswer":3},{"text":"أي من الخيارات التالية يُعد أحد الآثار التطبيقية للتعديل الأخير 2009 في المادة (3/أ) من قانون الجنسية اليمني؟","choices":["أ) منح الجنسية تلقائيًا لكل من وُلد في اليمن.","ب) المساواة بين الأم والأب في نقل الجنسية.","ج) إلغاء الجنسية عن مزدوجي الجنسية.","د) حرمان الأطفال مجهولي النسب من الجنسية."],"correctAnswer":1},{"text":"أي من الشروط التالية يُمكن الإعفاء منه عند منح الجنسية لذوي الكفاءات المطلوبة وفق المادة (5)؟","choices":["أ) الإلمام باللغة العربية.","ب) بلوغ سن الرشد.","ج) الإقامة المشروعة لمدة 10 سنوات.","د) حسن السيرة والسلوك."],"correctAnswer":0},{"text":"طفل وُلد في اليمن لأم يمنية وأب غير معروف، ما الأساس القانوني الذي يضمن له الجنسية اليمنية؟","choices":["أ) حق الإقليم فقط.","ب) حق الدم المعدل.","ج) التجنس الاضطراري.","د) الحماية من انعدام الجنسية."],"correctAnswer":3},{"text":"أيّ مما يلي يُعد الفرق الجوهري بين الموطن ومحل الإقامة وفقاً للقانون اليمني؟","choices":["أ) الموطن قانوني ومحل الإقامة سياسي.","ب) الموطن مؤقت والإقامة دائمة.","ج) الموطن يرتبط بنية البقاء، والإقامة بغرض مؤقت.","د) الموطن مرتبط بالسكن والإقامة مرتبطة بالجنسية."],"correctAnswer":2},{"text":"ما نوع الموطن الذي يفرضه القانون على عديمي الأهلية أو ناقصيها في التشريع اليمني؟","choices":["أ) الموطن الخاص.","ب) الموطن العام.","ج) الموطن الإقليمي.","د) الموطن القانوني."],"correctAnswer":3},{"text":"وفقاً للاتجاه الأول في الفقه اليمني، ما شرط اكتساب الأجنبي موطناً في اليمن؟","choices":["أ) الحصول على عقد عمل.","ب) الإقامة في اليمن أكثر من 5 سنوات.","ج) الإقامة القانونية بإذن السلطات.","د) إثبات النية في الزواج من مواطن يمني."],"correctAnswer":1},{"text":"عند عدم اختيار الأطراف لقانون يحكم التزاماتهم التعاقدية، يُطبق القانون بناءً على:","choices":["أ) جنسية المدعي.","ب) قانون بلد توقيع العقد.","ج) قانون موطن المدعى عليه.","د) القانون اليمني تلقائياً."],"correctAnswer":2},{"text":"ما علاقة الموطن بتنفيذ الأحكام الأجنبية في اليمن؟","choices":["أ) يُنفذ الحكم بناءً على الموطن في بلد الحكم فقط.","ب) لا يشترط أي ارتباط بالموطن لتنفيذ الحكم.","ج) يجب التحقق من اختصاص المحكمة الأجنبية بناء على موطن المدعى عليه.","د) تُنفذ الأحكام تلقائياً إذا كانت صادرة من دولة عربية."],"correctAnswer":2}]};
-    let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, heartbeatInterval, currentQuestionIndex = 0, tabSwitchCount = 0;
+    let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, currentQuestionIndex = 0, tabSwitchCount = 0;
     const startScreen = document.getElementById('startScreen'), examArea = document.getElementById('examArea'), resultContainer = document.getElementById('resultContainer');
     
     window.onload = function() {
@@ -89,17 +90,14 @@
         if (examData.config.shuffle) { examData.questions.sort(() => Math.random() - 0.5); }
         setupSmartFeatures(); renderQuestionsForStudent();
         document.getElementById('finishExamBtn').addEventListener('click', () => { if(confirm("هل أنت متأكد من رغبتك في إنهاء الاختبار؟")) finishTheExam(); });
-        
-        // **[تعديل 1: إضافة رسالة تحذير أكثر فعالية عند إغلاق الصفحة]**
         window.addEventListener('beforeunload', (event) => {
-            if (examArea.style.display === 'block') { // Make sure the exam is running
+            const isExamFinished = resultContainer.style.display === 'block';
+            if (examData.config.noGoingBack && !isExamFinished) {
+                finishTheExam();
                 event.preventDefault();
-                event.returnValue = 'سيتم إنهاء اختبارك تلقائيًا إذا غادرت. هل أنت متأكد؟';
+                event.returnValue = 'هل أنت متأكد من رغبتك في المغادرة؟ سيتم إنهاء اختبارك تلقائياً.';
             }
         });
-
-        // **[تعديل 2: بدء إرسال نبضات إلى Telegram لمحاكاة تتبع الخادم]**
-        startHeartbeat();
     }
     
     function renderQuestionsForStudent() {
@@ -150,10 +148,7 @@
         if (examData.config.monitorTabs) { document.addEventListener('visibilitychange', () => { if (document.visibilityState === 'hidden') tabSwitchCount++; }); }
     }
     async function finishTheExam() {
-        clearInterval(timerInterval); 
-        // **[تعديل 3: إيقاف نبضات Telegram عند انتهاء الاختبار بشكل طبيعي]**
-        clearInterval(heartbeatInterval); 
-        examArea.style.display = 'none'; resultContainer.style.display = 'block';
+        clearInterval(timerInterval); examArea.style.display = 'none'; resultContainer.style.display = 'block';
         let score = 0; studentAnswers.forEach((answer, i) => { if (answer === examData.questions[i].correctAnswer) score++; });
         const total = examData.questions.length;
         document.getElementById('resultTitle').textContent = 'تم الانتهاء من الامتحان!';
@@ -194,22 +189,6 @@
             const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ chat_id: chatId, text: msg, parse_mode: 'Markdown' }), keepalive: true });
             if (!res.ok) console.error("Telegram API error:", await res.json());
         } catch (error) { console.error("Fetch error:", error); }
-    }
-    
-    // **[تعديل 4: دالة جديدة لإرسال نبضات حية إلى Telegram]**
-    function startHeartbeat() {
-        const heartbeatIntervalInSeconds = 30; // إرسال نبضة كل 30 ثانية
-        const { botToken, chatId, title } = examData.config;
-        if (!botToken || !chatId) return;
-
-        heartbeatInterval = setInterval(() => {
-            const message = `نبض حي: الطالب ${studentName} لا يزال في الاختبار.`;
-            const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
-            const requestBody = JSON.stringify({ chat_id: chatId, text: message });
-
-            // Using keepalive allows the request to be sent even if the page closes
-            navigator.sendBeacon(url, requestBody);
-        }, heartbeatIntervalInSeconds * 1000);
     }
 </script>
 <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #f1f1f1; position: fixed; bottom: 0; width: 100%;">
