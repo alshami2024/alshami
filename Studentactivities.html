@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>التسجيل في الأنشطة الطلابية</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        
+     
+        .logo-container {
+            text-align: center;
+            margin-bottom: 5px; 
+        }
+
+        .logo-container img {
+            max-width: 150px; 
+            height: auto; 
+        }
+     
+
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        select:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #notification {
+            text-align: center;
+            margin-top: 20px;
+            font-weight: 600;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .error {
+            color: red;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #777;
+            font-size: 14px;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+        /* Media Query */
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+
+            h2 {
+                font-size: 22px;
+            }
+
+            input[type="text"],
+            input[type="tel"],
+            select,
+            button {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <div class="logo-container">
+        <img src="https://alshami2024.github.io/alshami/logo.png" alt="شعار الأنشطة الطلابية">
+    </div>
+    <div class="container">
+        <h2>التسجيل في الأنشطة الطلابية</h2>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">الاسم الكامل</label>
+                <input type="text" id="name" name="name" placeholder="ادخل اسمك الكامل" required>
+            </div>
+            <div class="form-group">
+                <label for="college">الكلية</label>
+                <input type="text" id="college" name="college" placeholder="ادخل اسم الكلية" required>
+            </div>
+            <div class="form-group">
+                <label for="department">القسم</label>
+                <input type="text" id="department" name="department" placeholder="ادخل اسم القسم" required>
+            </div>
+            <div class="form-group">
+                <label for="level">المستوى</label>
+                <select id="level" name="level" required>
+                    <option value="" disabled selected>اختر المستوى</option>
+                    <option value="المستوى الأول">المستوى الأول</option>
+                    <option value="المستوى الثاني">المستوى الثاني</option>
+                    <option value="المستوى الثالث">المستوى الثالث</option>
+                    <option value="المستوى الرابع">المستوى الرابع</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="activity">نوع النشاط</label>
+                <select id="activity" name="activity" required>
+                    <option value="" disabled selected>اختر نوع النشاط</option>
+                    <option value="رياضي">رياضي</option>
+                    <option value="ثقافي">ثقافي</option>
+                    <option value="اجتماعي">اجتماعي</option>
+                    <option value="تطوعي">تطوعي</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="phone">رقم الهاتف</label>
+                <input type="tel" id="phone" name="phone" placeholder="ادخل رقم هاتفك" required>
+            </div>
+            <button type="submit">تسجيل الآن</button>
+            <div id="notification"></div>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 | Jamal-Alshami</p>
+    </footer>
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const botToken = '7595667236:AAFOpx-b18jFoTjSw3d0kcveigJobrwniiU';
+            const chatId = '152435304';
+
+            const name = document.getElementById('name').value;
+            const college = document.getElementById('college').value;
+            const department = document.getElementById('department').value;
+            const level = document.getElementById('level').value;
+            const activity = document.getElementById('activity').value;
+            const phone = document.getElementById('phone').value;
+            const notification = document.getElementById('notification');
+
+            let message = `
+<b>تسجيل جديد في الأنشطة الطلابية:</b>
+-----------------------------------
+<b>الاسم:</b> ${name}
+<b>الكلية:</b> ${college}
+<b>القسم:</b> ${department}
+<b>المستوى:</b> ${level}
+<b>نوع النشاط:</b> ${activity}
+<b>رقم الهاتف:</b> ${phone}
+            `;
+
+            const url = `https://api.telegram.org/bot${botToken}/sendMessage`;
+
+            const params = {
+                chat_id: chatId,
+                text: message,
+                parse_mode: 'HTML'
+            };
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(params)
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    notification.textContent = 'تم التسجيل بنجاح!';
+                    notification.className = 'success';
+                    document.getElementById('registrationForm').reset();
+                } else {
+                    notification.textContent = 'حدث خطأ أثناء التسجيل. حاول مرة أخرى.';
+                    notification.className = 'error';
+                }
+            })
+            .catch(error => {
+                notification.textContent = 'حدث خطأ في الشبكة. يرجى التحقق من اتصالك.';
+                notification.className = 'error';
+                console.error('Error:', error);
+            });
+        });
+    </script>
+
+</body>
+</html>
