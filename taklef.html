@@ -1,219 +1,86 @@
-
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="ar">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة التكاليف</title>
+    <title>إشعار انتهاء التكليف</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7fc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
             margin: 0;
-            padding: 0;
+            background: linear-gradient(135deg, #f0f4f8, #c8d3e0);
+            font-family: 'Cairo', sans-serif;
+            text-align: center;
+            direction: rtl; /* Set direction to right-to-left for Arabic */
         }
 
         .container {
-            width: 80%;
-            margin: 50px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+            padding: 50px 70px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: scale(1);
+            transition: transform 0.3s ease-in-out;
         }
 
-        h1 {
-            color: #4CAF50;
-            text-align: center;
+        .container:hover {
+            transform: scale(1.03);
         }
 
-        .form-group {
-            margin-bottom: 20px;
-            text-align: right;
+        .message {
+            color: #2c3e50;
+            font-size: 2.5em;
+            font-weight: 700;
+            margin: 0;
+            letter-spacing: 1px;
+            position: relative;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
-        label {
-            font-size: 16px;
-            font-weight: bold;
-            color: #333;
-        }
-
-        textarea, input[type="text"], input[type="file"] {
-            width: 100%;
-            padding: 12px;
-            border-radius: 8px;
-            border: 1px solid #ddd;
-            margin-top: 10px;
-            font-size: 16px;
-            background-color: #f9f9f9;
-        }
-
-        textarea {
-            height: 120px;
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            font-size: 16px;
+        .message::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 5px;
+            background-color: #3498db;
             border-radius: 5px;
-            cursor: pointer;
-            display: block;
-            margin: 20px auto;
+            animation: lineExpand 1.5s ease-in-out;
         }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 12px;
-            color: #777;
-            text-align: center;
-        }
-
-        .success-message {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            border-radius: 5px;
-            text-align: center;
-            display: none;
-        }
-
-        .error-message {
-            background-color: #f44336;
-            color: white;
-            padding: 10px;
-            margin-top: 20px;
-            border-radius: 5px;
-            text-align: center;
-            display: none;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                width: 90%;
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
             }
-            button {
-                width: 100%;
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes lineExpand {
+            from {
+                width: 0;
+            }
+            to {
+                width: 80px;
             }
         }
     </style>
 </head>
 <body>
 
-<div class="container">
-    <h1>تكاليف الطلاب:</h1>
-
-    <p>يرجى ملء البيانات المطلوبة وإرفاق الصور الخاصة بالتكاليف.</p>
-
-    <form id="assignmentForm">
-        <div class="form-group">
-            <label for="studentName">اسم الطالب:</label>
-            <input type="text" id="studentName" placeholder="أدخل اسم الطالب هنا">
-        </div>
-
-        <div class="form-group">
-            <h3>السؤال الأول:</h3>
-            <p>ناقش الفرق بين حق الدم وحق الإقليم كأساسين لاكتساب الجنسية، وأيهما يحقق عدالة أكبر في رأيك، ولماذا؟</p>
-            <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
-            <input type="file" accept="image/*" id="file1">
-        </div>
-
-        <div class="form-group">
-            <h3>السؤال الثاني:</h3>
-            <p>دكتور من جنسية عربية يعمل في إحدى الجامعات اليمنية منذ سنوات طويلة، وكان يتقاضى راتبًا قدره 2000 دولار أمريكي بصفته مقيمًا أجنبيًا. مؤخرًا، مُنح الجنسية اليمنية تقديرًا لوفائه، وتم تعديل راتبه ليصبح 60,000 ريال يمني أسوة بزملائه اليمنيين في نفس الجامعة.
-ما الآثار القانونية المترتبة على منحه الجنسية اليمنية من حيث الحقوق والواجبات؟
-وهل يحق له المطالبة بالاحتفاظ براتبه السابق بعد تغيير جنسيته؟</p>
-            <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
-            <input type="file" accept="image/*" id="file2">
-        </div>
-
-        <button type="button" onclick="sendToTelegram()">إرسال التكاليف</button>
-    </form>
-
-    <div id="successMessage" class="success-message">
-        تم إرسال التكاليف بنجاح!
+    <div class="container">
+        <h1 class="message">انتهى موعد التكليف</h1>
     </div>
-
-    <div id="errorMessage" class="error-message">
-        يجب عليك إدخال اسم الطالب وإرفاق صورة لكل تكليف!
-    </div>
-</div>
-
-<div class="footer">
-    <p>&copy; 2024 جميع الحقوق محفوظة جمال الشامي.</p>
-</div>
-
-<script>
-    async function sendToTelegram() {
-        const button = document.querySelector('button[type="button"]');
-        button.disabled = true;
-        button.textContent = "جاري الإرسال...";
-
-        const studentName = document.getElementById('studentName').value;
-        const answer1 = document.getElementById('answer1').value;
-        const answer2 = document.getElementById('answer2').value;
-        const file1 = document.getElementById('file1').files[0];
-        const file2 = document.getElementById('file2').files[0];
-
-        if (!studentName || (!file1 && !file2)) {
-            document.getElementById('errorMessage').style.display = 'block';
-            button.disabled = false;
-            button.textContent = "إرسال التكاليف";
-            return;
-        }
-
-        const message = `تكاليف الطالب: ${studentName}\n\nالتكليف الأول: ${answer1}\n\nالتكليف الثاني: ${answer2}`;
-
-        const token = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
-        const chatId = '152435304';
-
-        try {
-            await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ chat_id: chatId, text: message }),
-            });
-
-            if (file1) await sendPhotoToTelegram(token, chatId, file1);
-            if (file2) await sendPhotoToTelegram(token, chatId, file2);
-
-            showSuccessMessage();
-        } catch (error) {
-            console.error('حدث خطأ أثناء الإرسال:', error);
-        } finally {
-            button.disabled = false;
-            button.textContent = "إرسال التكاليف";
-        }
-    }
-
-    async function sendPhotoToTelegram(token, chatId, file) {
-        const formData = new FormData();
-        formData.append('chat_id', chatId);
-        formData.append('photo', file);
-
-        await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
-            method: 'POST',
-            body: formData,
-        });
-    }
-
-    function showSuccessMessage() {
-        const successMessage = document.getElementById('successMessage');
-        successMessage.style.display = 'block';
-        setTimeout(() => {
-            successMessage.style.display = 'none';
-        }, 3000);
-    }
-</script>
 
 </body>
 </html>
