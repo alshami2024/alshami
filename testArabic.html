@@ -101,8 +101,8 @@
     };
     
     function startTheExam() {
-        if (examData.config.singleUseMode) {
-             const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+        if (examData.config.singleUseMode) {const uniqueExamId = `examStarted_v2_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+
              localStorage.setItem(uniqueExamId, 'true');
         }
         sendStartNotificationToTelegram();
