@@ -282,5 +282,76 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "جمل",
+    "submissionDate": "2025-08-24T08:51:23.262Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "answers": [
+      {
+        "question": "معنى كلمة \"فلسفة\" في أصلها اليوناني هو:",
+        "answer": "ب. حب الجدل.",
+        "isCorrect": false,
+        "correctAnswer": "د. حب الحكمة."
+      },
+      {
+        "question": "أول من استخدم لفظ \"الفلسفة\" بمعنى البحث عن طبيعة الأشياء هو:",
+        "answer": "ج. فيثاغورس.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "فلسفة القيم أو الأكسيولوجيا تتضمن دراسة:",
+        "answer": "ب. الذكاء والإدراك.",
+        "isCorrect": false,
+        "correctAnswer": "أ. الحق والخير والجمال."
+      },
+      {
+        "question": "لعلاقة بين الدين والفلسفة في جوهرها تقوم على:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "د. التكامل في البحث عن الحقيقة."
+      },
+      {
+        "question": "\"مبحث الوجود\" في الفلسفة يسمى أيضًا:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. الأنطولوجيا."
+      },
+      {
+        "question": "مبدأ \"عدم التناقض\" يعني:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. الشيء لا يمكن أن يتصف بصفة ونقيضها معًا."
+      },
+      {
+        "question": "\"الإبستمولوجيا\" هو فرع الفلسفة الذي يدرس:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ج. المعرفة."
+      },
+      {
+        "question": "من أدوات المنهج الاستنباطي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. القياس الصوري."
+      },
+      {
+        "question": "الفلسفة عند أرسطو هي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. البحث عن الوجود بما هو موجود."
+      },
+      {
+        "question": "من مصادر المعرفة في الفلسفة:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ج. الحس والعقل."
+      }
+    ]
   }
 ]
