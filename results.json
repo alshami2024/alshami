@@ -69,5 +69,76 @@
         "correctAnswer": "ج. المعرفة."
       }
     ]
+  },
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-08-24T08:37:45.671Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "answers": [
+      {
+        "question": "الفلسفة عند أرسطو هي:",
+        "answer": "أ. البحث عن السعادة.",
+        "isCorrect": false,
+        "correctAnswer": "ب. البحث عن الوجود بما هو موجود."
+      },
+      {
+        "question": "معنى كلمة \"فلسفة\" في أصلها اليوناني هو:",
+        "answer": "ج. حب العلم.",
+        "isCorrect": false,
+        "correctAnswer": "د. حب الحكمة."
+      },
+      {
+        "question": "لعلاقة بين الدين والفلسفة في جوهرها تقوم على:",
+        "answer": "ب. الانفصال التام.",
+        "isCorrect": false,
+        "correctAnswer": "د. التكامل في البحث عن الحقيقة."
+      },
+      {
+        "question": "أول من استخدم لفظ \"الفلسفة\" بمعنى البحث عن طبيعة الأشياء هو:",
+        "answer": "د. أرسطو.",
+        "isCorrect": false,
+        "correctAnswer": "ج. فيثاغورس."
+      },
+      {
+        "question": "من مصادر المعرفة في الفلسفة:",
+        "answer": "ب. الحدس فقط.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الحس والعقل."
+      },
+      {
+        "question": "مبدأ \"عدم التناقض\" يعني:",
+        "answer": "ج. لكل شيء ضد.",
+        "isCorrect": false,
+        "correctAnswer": "ب. الشيء لا يمكن أن يتصف بصفة ونقيضها معًا."
+      },
+      {
+        "question": "\"مبحث الوجود\" في الفلسفة يسمى أيضًا:",
+        "answer": "أ. الإبستمولوجيا.",
+        "isCorrect": false,
+        "correctAnswer": "ب. الأنطولوجيا."
+      },
+      {
+        "question": "فلسفة القيم أو الأكسيولوجيا تتضمن دراسة:",
+        "answer": "ج. السفسطة والمنطق.",
+        "isCorrect": false,
+        "correctAnswer": "أ. الحق والخير والجمال."
+      },
+      {
+        "question": "\"الإبستمولوجيا\" هو فرع الفلسفة الذي يدرس:",
+        "answer": "د. الأخلاق.",
+        "isCorrect": false,
+        "correctAnswer": "ج. المعرفة."
+      },
+      {
+        "question": "من أدوات المنهج الاستنباطي:",
+        "answer": "ب. القياس الصوري.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
