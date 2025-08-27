@@ -503,5 +503,106 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "مستورة أمين عبد الرحيم",
+    "submissionDate": "2025-08-27T16:33:05.474Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 15
+    },
+    "tabSwitchCount": 0,
+    "answers": [
+      {
+        "question": "الجملة التي اشتملت على اسم مصدر هي",
+        "answer": "كتابة الطالب واجباته سر نجاحه",
+        "isCorrect": false,
+        "correctAnswer": "أعجبني نصحك الطلاب"
+      },
+      {
+        "question": "ما دل على حدث مقترن بزمن هو",
+        "answer": "الفعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الإسلام ديني. \n\nيجوز ضبط ياء المتكلم في كلمة (ديني) بالسكون والفتح.",
+        "answer": "صح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (ولولا دفع الله الناس بعضهم ببعض لفسدت الأرض) \nإعراب كلمة (الناس)",
+        "answer": "مفعول به منصوب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يعمل المصدر بتقدير (ما) والفعل، إذا أريد به",
+        "answer": "المستقبل",
+        "isCorrect": false,
+        "correctAnswer": "الحال"
+      },
+      {
+        "question": "الاسم الذي يلازم الإضافة إلى الفعل الماضي فقط، هو",
+        "answer": "إذ",
+        "isCorrect": false,
+        "correctAnswer": "لما"
+      },
+      {
+        "question": "الآية التي اشتملت على كلمة (قبل) مبنية هي",
+        "answer": "لله الأمر من قبل ومن بعد",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "سرني إتقان سعاد وفاطمة إعراب الجملة. \n\nالضبط الصحيح لكلمة فاطمة",
+        "answer": "جواز الجر مراعاة للفظ، وجواز الرفع مراعاة للمحل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (فإذا نُفخ في الصور نفخةٌ واحدة) \nإعراب كلمة (نفخة)",
+        "answer": "مفعول مطلق",
+        "isCorrect": false,
+        "correctAnswer": "نائب فاعل"
+      },
+      {
+        "question": "الجملة التي اشتملت على مصدر غير عامل هي",
+        "answer": "نال الطالب الجائزة لحفظه القرآن",
+        "isCorrect": false,
+        "correctAnswer": "أجابت أمل إجابة وافية الامتحان"
+      },
+      {
+        "question": "قال الشاعر:\nضيعفُ النكايةِ أعداءه... \nيخال الفرار يراخي الأجل. \n\nنوع المصدر في البيت السابق",
+        "answer": "لا شيء مما سبق",
+        "isCorrect": false,
+        "correctAnswer": "مصدر محلى بأل"
+      },
+      {
+        "question": "من حق المسلم على المسلم إجابته الدعوة، والسلام عليه. \nاستخرج (اسم مصدر) من الجملة",
+        "answer": "السلام",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (والله أنبتكم من الأرض نباتا) \nكلمة (نباتا)",
+        "answer": "اسم مصدر",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (ونوحا هدينا من قبلُ) \nإعراب كلمة (قبل) في الآية",
+        "answer": "ظرف زمان مبني في محل نصب",
+        "isCorrect": false,
+        "correctAnswer": "ظرف زمان مبني في محل جر"
+      },
+      {
+        "question": "سررت بمساعدة محمد الكريم الفقراء. \n\nالضبط الصحيح لكلمة (الكريم)",
+        "answer": "الكسر مراعاة للفظ، والرفع مراعاة للمحل",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
