@@ -907,5 +907,106 @@
         "correctAnswer": "الفعل"
       }
     ]
+  },
+  {
+    "studentName": "ياسمين أحمد سلام",
+    "submissionDate": "2025-08-27T19:49:26.907Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 15
+    },
+    "tabSwitchCount": 0,
+    "answers": [
+      {
+        "question": "الاسم الذي يلازم الإضافة إلى الفعل الماضي فقط، هو",
+        "answer": "إذا",
+        "isCorrect": false,
+        "correctAnswer": "لما"
+      },
+      {
+        "question": "يعمل المصدر بتقدير (ما) والفعل، إذا أريد به",
+        "answer": "الحال",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "سرني إتقان سعاد وفاطمة إعراب الجملة. \n\nالضبط الصحيح لكلمة فاطمة",
+        "answer": "وجوب الجر فقط",
+        "isCorrect": false,
+        "correctAnswer": "جواز الجر مراعاة للفظ، وجواز الرفع مراعاة للمحل"
+      },
+      {
+        "question": "الإسلام ديني. \n\nيجوز ضبط ياء المتكلم في كلمة (ديني) بالسكون والفتح.",
+        "answer": "صح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (ونوحا هدينا من قبلُ) \nإعراب كلمة (قبل) في الآية",
+        "answer": "ظرف زمان منصوب",
+        "isCorrect": false,
+        "correctAnswer": "ظرف زمان مبني في محل جر"
+      },
+      {
+        "question": "قال تعالى: (ولولا دفع الله الناس بعضهم ببعض لفسدت الأرض) \nإعراب كلمة (الناس)",
+        "answer": "مضاف إليه مجرور",
+        "isCorrect": false,
+        "correctAnswer": "مفعول به منصوب"
+      },
+      {
+        "question": "قال تعالى: (والله أنبتكم من الأرض نباتا) \nكلمة (نباتا)",
+        "answer": "مصدر",
+        "isCorrect": false,
+        "correctAnswer": "اسم مصدر"
+      },
+      {
+        "question": "سررت بمساعدة محمد الكريم الفقراء. \n\nالضبط الصحيح لكلمة (الكريم)",
+        "answer": "الكسر فقط",
+        "isCorrect": false,
+        "correctAnswer": "الكسر مراعاة للفظ، والرفع مراعاة للمحل"
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم مصدر هي",
+        "answer": "أعجبني نصحك الطلاب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ما دل على حدث مقترن بزمن هو",
+        "answer": "المصدر",
+        "isCorrect": false,
+        "correctAnswer": "الفعل"
+      },
+      {
+        "question": "قال تعالى: (فإذا نُفخ في الصور نفخةٌ واحدة) \nإعراب كلمة (نفخة)",
+        "answer": "مفعول مطلق",
+        "isCorrect": false,
+        "correctAnswer": "نائب فاعل"
+      },
+      {
+        "question": "الآية التي اشتملت على كلمة (قبل) مبنية هي",
+        "answer": "لله الأمر من قبل ومن بعد",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على مصدر غير عامل هي",
+        "answer": "أجابت أمل إجابة وافية الامتحان",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال الشاعر:\nضيعفُ النكايةِ أعداءه... \nيخال الفرار يراخي الأجل. \n\nنوع المصدر في البيت السابق",
+        "answer": "مصدر محلى بأل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من حق المسلم على المسلم إجابته الدعوة، والسلام عليه. \nاستخرج (اسم مصدر) من الجملة",
+        "answer": "السلام",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
