@@ -69,5 +69,76 @@
         "correctAnswer": "ج. الحس والعقل."
       }
     ]
+  },
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-08-29T09:28:17.993Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "answers": [
+      {
+        "question": "فلسفة القيم أو الأكسيولوجيا تتضمن دراسة:",
+        "answer": "ب. الذكاء والإدراك.",
+        "isCorrect": false,
+        "correctAnswer": "أ. الحق والخير والجمال."
+      },
+      {
+        "question": "الفلسفة عند أرسطو هي:",
+        "answer": "ج. البحث عن الجماليات.",
+        "isCorrect": false,
+        "correctAnswer": "ب. البحث عن الوجود بما هو موجود."
+      },
+      {
+        "question": "\"الإبستمولوجيا\" هو فرع الفلسفة الذي يدرس:",
+        "answer": "ب. الوجود.",
+        "isCorrect": false,
+        "correctAnswer": "ج. المعرفة."
+      },
+      {
+        "question": "من مصادر المعرفة في الفلسفة:",
+        "answer": "أ. السمع فقط.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الحس والعقل."
+      },
+      {
+        "question": "لعلاقة بين الدين والفلسفة في جوهرها تقوم على:",
+        "answer": "ب. الانفصال التام.",
+        "isCorrect": false,
+        "correctAnswer": "د. التكامل في البحث عن الحقيقة."
+      },
+      {
+        "question": "مبدأ \"عدم التناقض\" يعني:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. الشيء لا يمكن أن يتصف بصفة ونقيضها معًا."
+      },
+      {
+        "question": "\"مبحث الوجود\" في الفلسفة يسمى أيضًا:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. الأنطولوجيا."
+      },
+      {
+        "question": "أول من استخدم لفظ \"الفلسفة\" بمعنى البحث عن طبيعة الأشياء هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ج. فيثاغورس."
+      },
+      {
+        "question": "من أدوات المنهج الاستنباطي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. القياس الصوري."
+      },
+      {
+        "question": "معنى كلمة \"فلسفة\" في أصلها اليوناني هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "د. حب الحكمة."
+      }
+    ]
   }
 ]
