@@ -1,1 +1,73 @@
-[]
+[
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-08-29T13:00:57.991Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "answers": [
+      {
+        "question": "من أدوات المنهج الاستنباطي:",
+        "answer": "أ. التجريب المعملي.",
+        "isCorrect": false,
+        "correctAnswer": "ب. القياس الصوري."
+      },
+      {
+        "question": "\"الإبستمولوجيا\" هو فرع الفلسفة الذي يدرس:",
+        "answer": "ج. المعرفة.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "\"مبحث الوجود\" في الفلسفة يسمى أيضًا:",
+        "answer": "ب. الأنطولوجيا.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "معنى كلمة \"فلسفة\" في أصلها اليوناني هو:",
+        "answer": "ج. حب العلم.",
+        "isCorrect": false,
+        "correctAnswer": "د. حب الحكمة."
+      },
+      {
+        "question": "من مصادر المعرفة في الفلسفة:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ج. الحس والعقل."
+      },
+      {
+        "question": "لعلاقة بين الدين والفلسفة في جوهرها تقوم على:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "د. التكامل في البحث عن الحقيقة."
+      },
+      {
+        "question": "فلسفة القيم أو الأكسيولوجيا تتضمن دراسة:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "أ. الحق والخير والجمال."
+      },
+      {
+        "question": "أول من استخدم لفظ \"الفلسفة\" بمعنى البحث عن طبيعة الأشياء هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ج. فيثاغورس."
+      },
+      {
+        "question": "مبدأ \"عدم التناقض\" يعني:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. الشيء لا يمكن أن يتصف بصفة ونقيضها معًا."
+      },
+      {
+        "question": "الفلسفة عند أرسطو هي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. البحث عن الوجود بما هو موجود."
+      }
+    ]
+  }
+]
