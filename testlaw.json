@@ -646,5 +646,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "هاجر الماوري",
+    "submissionDate": "2025-09-04T06:36:11.295Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "أسس الفلسفة",
+    "answers": [
+      {
+        "question": "المنهج الاستنباطي يبدأ دائماً بفحص الجزئيات التجريبية.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "أي من المناهج التالية اعتمدت في تطوير البرهان الرياضي حسب ديكارت؟",
+        "answer": "أ. القياس الصوري وحده.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الحدس والاستنباط العقلي."
+      },
+      {
+        "question": "أرسطو اعتبر الفلسفة الأولى هي علم البحث عن الله كالموجود الأول.",
+        "answer": "خطأ.",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "ينطلق البحث الفلسفي من \"مبدأ الواقعية\"، فما أبرز خصائصه؟",
+        "answer": "د. يخص فئة قليلة من البشر فقط.",
+        "isCorrect": false,
+        "correctAnswer": "أ. استحالة الاستدلال البرهاني عليه."
+      },
+      {
+        "question": "يعتمد الاستقراء الناقص على:",
+        "answer": "ب. فحص عدد محدود من العينات وتعميم النتائج.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الإدراك الحسي عند الجشطالت يكون دائماً مباشر لكل وليس أجزاء.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يمكن الاستدلال البرهاني على وجود الواقعية بشكل عقلي مجرد مطلقاً.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "الفلسفة والدين لا يتفقان في أي شيء على الإطلاق.",
+        "answer": "خطأ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "بمَ تفسر كثرة الأمراض ونسبتها للسحر في مناطق معينة حسب الفلسفة؟",
+        "answer": "ج. تأثير خارق للكائنات الماورائية.",
+        "isCorrect": false,
+        "correctAnswer": "ب. استعداد نفسي وتنشئة اجتماعية."
+      },
+      {
+        "question": "متى يعتبر الإنسان فيلسوفاً؟",
+        "answer": "ب. إذا اتخذ التفكير الفلسفي حرفة واكتسب براعة.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
