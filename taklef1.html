@@ -151,8 +151,8 @@
 
 <script>
     const SECRET_KEY = 'my-super-secret-key-12345';
-    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX1/zTKK2QG39vQ8MIvUfDaYD6T9Qchvu5LXLVMHxkWUXtBaAQIci3OT5rcwOxKmoVnO83FDgX2SaMg==';
-    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX18n4alQJrt3h4t0xaqFx0sTxuG8khEOL10=';
+    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX1+tbOoCOOdJZ0mxAHBKKd7fgviqxUpIf9JPfSGyGLhIxnesUhgTW7Uxtar+YO/0eYbrWW4fXeUqdg==';
+    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX197T0W5hr8xwbE+qNdS8F1sIwkvlmjRxbs=';
 
     const token = CryptoJS.AES.decrypt(ENCRYPTED_BOT_TOKEN, SECRET_KEY).toString(CryptoJS.enc.Utf8);
     const chatId = CryptoJS.AES.decrypt(ENCRYPTED_CHAT_ID, SECRET_KEY).toString(CryptoJS.enc.Utf8);
