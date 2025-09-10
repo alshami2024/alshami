@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحة التكاليف</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -120,14 +121,14 @@
 
         <div class="form-group">
             <h3>التكليف الأول:</h3>
-            <p>ي</p>
+            <p>سسسسسسسس</p>
             <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file1">
         </div>
 
         <div class="form-group">
             <h3>التكليف الثاني:</h3>
-            <p>ي</p>
+            <p>ييييييييي</p>
             <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file2">
         </div>
@@ -149,6 +150,13 @@
 </div>
 
 <script>
+    const SECRET_KEY = 'my-super-secret-key-12345';
+    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX18+A5DD1VWdIL/7qNkWIq8v4sDHReTBQUnOkV9foogq0xIV7kwgx9j1/1H4O0tfeVjVBXlkz9RsJQ==';
+    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX1/Cj5wVA9xwUoVbTszzoKxhW1EsizvEY7Q=';
+
+    const token = CryptoJS.AES.decrypt(ENCRYPTED_BOT_TOKEN, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+    const chatId = CryptoJS.AES.decrypt(ENCRYPTED_CHAT_ID, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+
     async function sendToTelegram() {
         const button = document.querySelector('button[type="button"]');
         button.disabled = true;
@@ -168,9 +176,6 @@
         }
 
         const message = `تكاليف الطالب: ${studentName}\n\nالتكليف الأول: ${answer1}\n\nالتكليف الثاني: ${answer2}`;
-
-        const token = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
-        const chatId = '152435304';
 
         try {
             await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
@@ -212,7 +217,6 @@
         }, 3000);
     }
 </script>
-
 </body>
 </html>
     
