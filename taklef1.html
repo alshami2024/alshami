@@ -121,14 +121,14 @@
 
         <div class="form-group">
             <h3>التكليف الأول:</h3>
-            <p>جمال</p>
+            <p>ي</p>
             <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file1">
         </div>
 
         <div class="form-group">
             <h3>التكليف الثاني:</h3>
-            <p>الشامي</p>
+            <p>ي</p>
             <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file2">
         </div>
@@ -151,8 +151,8 @@
 
 <script>
     const SECRET_KEY = 'my-super-secret-key-12345';
-    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX1+ICLZXCwPNqix7BNSake3WZIf1IKrhmriznIl0mLgg7HgegooqmnUZT07+5yDxBeoyFHC7sldGfw==';
-    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX18ox3VycilhcyAhwzCfqv0kHRDMuhOGTSs=';
+    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX1/zTKK2QG39vQ8MIvUfDaYD6T9Qchvu5LXLVMHxkWUXtBaAQIci3OT5rcwOxKmoVnO83FDgX2SaMg==';
+    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX18n4alQJrt3h4t0xaqFx0sTxuG8khEOL10=';
 
     const token = CryptoJS.AES.decrypt(ENCRYPTED_BOT_TOKEN, SECRET_KEY).toString(CryptoJS.enc.Utf8);
     const chatId = CryptoJS.AES.decrypt(ENCRYPTED_CHAT_ID, SECRET_KEY).toString(CryptoJS.enc.Utf8);
