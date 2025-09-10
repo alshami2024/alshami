@@ -1,0 +1,266 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>القانون الدولي الخاص - الجنسية والموطن</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #0056b3; --secondary-color: #007bff; --light-gray: #f8f9fa; --dark-gray: #343a40; --success-color: #28a745; --danger-color: #dc3545; --background-color: #e9ecef; --text-color: #212529; --white: #fff; }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--background-color); margin: 0; padding: 20px; color: var(--text-color); direction: rtl; }
+        .container { background-color: var(--white); border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); width: 95%; max-width: 900px; margin: 0 auto; padding: 30px; }
+        h1, h2, h3 { color: var(--dark-gray); font-weight: 700; }
+        .form-group { margin-bottom: 15px; } .form-group label { display: block; margin-bottom: 5px; font-weight: 500; }
+        .form-group input[type="text"], .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        .btn { background-color: var(--primary-color); color: var(--white); border: none; padding: 12px 25px; font-size: 18px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; }
+        .btn:hover { background-color: #004a99; } .btn:disabled { background-color: #ccc; }
+        .btn-danger { background-color: var(--danger-color); }
+        .exam-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+        .timer { font-size: 1.2em; color: var(--danger-color); font-weight: bold; }
+        .question-card { background: var(--light-gray); border: 1px solid #dee2e6; border-radius: 10px; padding: 20px; margin-bottom: 20px; text-align: right; }
+        .question-card ul { list-style: none; padding: 0; }
+        .choices li { padding: 10px; margin: 8px 0; background: var(--white); border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+        .choices li:hover { background-color: #e3f2fd; }
+        .choices li.correct { background-color: #d4edda !important; border-color: #c3e6cb; }
+        .choices li.incorrect { background-color: #f8d7da !important; border-color: #f5c6cb; }
+        .essay-answer { width: 100%; min-height: 120px; resize: vertical; margin-top: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        #navigation-buttons { display: flex; justify-content: space-between; margin-top: 20px; }
+        #progressBarContainer { width: 100%; background-color: #e9ecef; border-radius: 20px; margin-bottom: 25px; overflow: hidden; }
+        #progressBar { width: 0%; height: 20px; background-color: var(--success-color); border-radius: 20px; transition: width 0.5s; text-align: center; color: white; line-height: 20px; }
+        #certificate { display: none; border: 5px solid var(--primary-color); padding: 30px; margin-top: 30px; text-align: center; background: linear-gradient(135deg, #f9f9f9, #eef8ff); }
+        #startScreen, #examArea, #resultContainer { display: none; }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="studentExamView" style="display:block;">
+        <div id="startScreen" style="display:block;">
+            <h1 id="examTitleStudent"></h1>
+            <p id="examDescriptionStudent" style="white-space: pre-wrap;"></p>
+            
+        <div class="form-group">
+            <label for="studentName">أدخل اسمك الكامل</label>
+            <input type="text" id="studentName" placeholder="الاسم الكامل">
+        </div>
+        
+        <div class="form-group">
+            <label for="accessCode">أدخل رمز الدخول</label>
+            <input type="text" id="accessCode" placeholder="رمز الدخول">
+        </div>
+    
+            <button id="startExamBtn" class="btn">بدء الاختبار</button>
+        </div>
+        <div id="examArea">
+            <div class="exam-header"><h2 id="welcomeStudent"></h2><div id="timer" class="timer"></div></div>
+            <div id="progressBarContainer"><div id="progressBar"></div></div>
+            <div id="questionsContainer"></div>
+            <div id="navigation-buttons"></div>
+            <button id="finishExamBtn" class="btn btn-danger" style="margin-top: 20px; width:100%;">إنهاء وتسليم الاختبار</button>
+        </div>
+        <div id="resultContainer">
+             <h2 id="resultTitle"></h2><p id="resultSummary"></p>
+             <div id="reviewContainer"></div>
+             <div id="certificate">
+                <h2>شهادة إتمام</h2><p>تشهد هذه الشهادة بأن الطالب/ة:</p><h3 id="certName"></h3>
+                <p>قد أتم الاختبار بنجاح وحصل/ت على درجة:</p><h3 id="certScore"></h3>
+                <p>بتاريخ: <span id="certDate"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const encodedExamData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXA5bUUyWUxZcDltRzJZalpoaURZcDltRTJLL1ppTm1FMllvZzJLZlpoTml1MktmWXRTQXRJTmluMllUWXJObUcyTFBaaXRpcElObUkyS2ZaaE5tRjJZall0OW1HSWl3aVpHVnpZM0pwY0hScGIyNGlPaUxaaHRpMTJZSFppaUlzSW5OMFlYSjBWR2x0WlNJNklpSXNJbVZ1WkZScGJXVWlPaUlpTENKc1lYbHZkWFFpT2lKdmJtVXRZbmt0YjI1bElpd2lkR2x0WlNJNk1UVXNJbk5vZFdabWJHVWlPblJ5ZFdVc0ltNXZSMjlwYm1kQ1lXTnJJanAwY25WbExDSmthWE5oWW14bFEyaGxZWFJwYm1jaU9uUnlkV1VzSW0xdmJtbDBiM0pVWVdKeklqcDBjblZsTENKbWFXNXBjMmhQYmxOM2FYUmphQ0k2Wm1Gc2MyVXNJbXhsWVhKdWFXNW5UVzlrWlNJNlptRnNjMlVzSW5OcGJtZHNaVlZ6WlUxdlpHVWlPbVpoYkhObExDSnphRzkzVW1WemRXeDBjeUk2ZEhKMVpTd2laVzVoWW14bFVtVjJhV1YzSWpwbVlXeHpaU3dpWlc1aFlteGxRMlZ5ZEdsbWFXTmhkR1VpT25SeWRXVXNJblJvWlcxbElqb2laR1ZtWVhWc2RDSXNJbk4xWTJObGMzTlFaWEpqWlc1MFlXZGxJam8xTUN3aVltOTBWRzlyWlc0aU9pSlZNa1p6WkVkV2ExZ3hPVkpKUVdoQlNGRXlhbmhhTUZWRmIwdHdNVlZsVWpNNFRIVkNSVmRHWkVweWExQjJTUzk0WVcxQmNTdHVZVUphVFVJNFVHVnFRM2x5UmxOak5VOXJTVkkyUXpOMldEVnVjME5LUVQwOUlpd2lZMmhoZEVsa0lqb2lWVEpHYzJSSFZtdFlNVGxKYlhWb04xUjRkV05HY2tkUmVUWjBiVFo1VFRaRWJqaFRlR1psUnpGM1ZUMGlMQ0puYVhSb2RXSlViMnRsYmlJNklsVXlSbk5rUjFacldERXJLMkZuYmpkRU4yWXlVVGRGU2pSRU9XRTFLM1ZTVlRsb1NqSXpWMll6V0RORWVYaGhiSHBOVHpOaE1Tc3djakFyZUVwUGJ5dEdOVzVSU2xweU5IaFBORU5TY0RFNE1GQkNlSHAzUFQwaUxDSnlaWE4xYkhSelJtbHNaVzVoYldVaU9pSjBaWE4wYkdGM0xtcHpiMjRpTENKaFkyTmxjM05EYjI1MGNtOXNJanA3SW1WdVlXSnNaV1FpT25SeWRXVXNJbk4wZFdSbGJuUnpJanBiZXlKdVlXMWxJam9pMllYWXJkbUYySzhnMktmWmhObUYyTEhaZ3Rpb0lpd2lZMjlrWlNJNklqa3pNRE0wTkNKOVhYMTlMQ0p4ZFdWemRHbHZibk1pT2x0N0luUmxlSFFpT2lMWXA5bUUyTG5aZ3RtSTJLallxU0RZcDltRTJZWFpodGkxMllqWXRTRFl1ZG1FMllyWmg5aW5JTm1FMktyWmd0aXYyWXJaaFNEWW85bUkyTEhZcDltQ0lObUYyTExaaU5peDJLa2cyWVRZcGRpcjJLallwOWlxSU5pajJZZ2cyWWJaZ2RtS0lOaW4yWVRZck5tRzJMUFppdGlwSU5pbjJZVFppdG1GMlliWml0aXBJTmlxMkxUWmhkbUVPaUlzSW5SNWNHVWlPaUp0WTNFaUxDSmphRzlwWTJWeklqcGJJdGluMllUWXJkaW8yTE1nMllYWmhpRFlzOW1HMktrZzJLWFpoTm1KSU5pejJZYllxdG1LMllZZzJZSFpndGkzTGlJc0l0aW4yWVRZdXRpeDJLZlpoZGlwSU5pdDJLclppU0F5TUNEWW85bUUyWUVnMkxIWml0aW4yWVFnMllIWmd0aTNMaUlzSXRpbjJZVFlyZGlvMkxNZzJZallwOW1FMkxyWXNkaW4yWVhZcVNEWmhkaTVJTmk1MksvWmhTRFlwOW1FMktYWXJ0bUUyS2ZaaENEWXFOaTUyWUxaaU5pbzJLa2cyS1BZdE5pdkxpSXNJdGlsMkxQWmd0aW4yTGNnMktmWmhOaXMyWWJZczltSzJLa2cyS2ZaaE5pajJMWFpoTm1LMktrZzJLclpoTm1DMktmWXB0bUsyWXZZcHk0aVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1uMHNleUowWlhoMElqb2kyTG5aaHRpdklOaW4yWVBZcXRpejJLZllxQ0RZcDltRTJLUFppTm1FMktmWXJ5RFlwOW1FMllMWXRkaXhJTmluMllUWXJObUcyTFBaaXRpcElOaW4yWVRaaXRtRjJZYlppdGlwSU5pbzJLZlpoTmlxMktqWXVkbUsyS25ZakNEWmhkaW5JTmluMllUWXROaXgyTGNnMktmWmhOaWoyTFBZcDlpejJZb2cyS2ZaaE5tRjJMZlpoTm1JMktqWW55SXNJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0aW8yWVRaaU5pNklOaXoyWVlnMktmWmhOaXgyTFRZcnk0aUxDTFlwOW1FMktYWmd0aW4yWVhZcVNEWmhkaTVJTmluMllUWW85aW9JTm1CMllvZzJLZlpoTm1LMllYWmhpNGlMQ0xZcjlpeDJLZllzOWlwSU5pbjJZVFpoTmk2MktrZzJLZlpoTmk1MkxIWXFObUsyS2t1SWl3aTJLclppTmluMllIWXNTRFlyZGl6MllZZzJLZlpoTml6MllYWXVkaXBMaUpkTENKamIzSnlaV04wUVc1emQyVnlJam94ZlN4N0luUmxlSFFpT2lMWmhkbUdJTml1MkxYWXA5aW0yTFVnMktmWmhOaXMyWWJZczltSzJLa2cyTG5Zcjlpbk9pSXNJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0aW4yWVRZdGRtQjJLa2cyS2ZaaE5pMDJLN1l0ZG1LMktrdUlpd2kyS2ZaaE5pMzJLZllxTmk1SU5pbjJZVFlwZG1FMkxMWXA5bUYyWW91SWl3aTJLZlpoTml0MllYWXA5bUsyS2tnMktmWmhOaXYyWWpaaE5tSzJLa3VJaXdpMllMWXA5aW8yWVRaaXRpcElOaW4yWVRZcXRtRzJLZllzdG1FTGlKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpvemZTeDdJblJsZUhRaU9pTFlwOW1FMllYWXFOaXYyS01nMktmWmhOaWoyTFBZcDlpejJZb2cyWUhaaWlEWXJkbUYyS2ZaaXRpcElOaW4yWVRZck5tRzJMUFppdGlwSU5pbjJZVFpoZG1EMktyWXM5aW8yS2tnMllmWmlEb2lMQ0owZVhCbElqb2liV054SWl3aVkyaHZhV05sY3lJNld5TFlyZGk0MkxFZzJMUFlyZGlvMllmWXB5RFlvOW1JSU5pbDJMUFpndGluMkxmWmg5aW5JTm1FMktQWmlpRFlzOWlvMktndUlpd2kyTGJaaGRpbjJZWWcyS2ZaaE5pdDJZWFlwOW1LMktrZzJLZlpoTml2MktqWmhObUkyWVhZcDlpejJZcllxU0RZcDltRTJLL1ppTm1FMllyWXFTRFpoTm1IMktjdUlpd2kyWVhaaHRpdDJZZllweURZcXRtRTJZTFlwOWltMllyWXA5bUxJTm1FMllUWW85aXoyTEhZcVNEWXFOaW4yWVRZcXRpbzJMblppdGlwTGlJc0lpRFlwZG1GMllQWXA5bUcyWXJZcVNEWXM5aXQyS2paaDlpbklObUkyWUhaZ2lEWXROaXgyWWpZdHlEWmhkaXQySy9ZcjlpcElObUIyWUxZdHk0aVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk0zMHNleUowWlhoMElqb2kyS3JaZzltRjJZWWcyS1BaaDltRjJZcllxU0RZcDltRTJLelpodGl6MllyWXFTRFpnZG1LT2lJc0luUjVjR1VpT2lKdFkzRWlMQ0pqYUc5cFkyVnpJanBiSXRpcTJLM1lyOW1LMks4ZzJLZlpoTml0MllMWmlObUNMaUlzSXRpcTJLM1lyOW1LMks4ZzJLZlpoTmluMllUWXF0aXkyS2ZaaGRpbjJLb3VJaXdpSU5pcTJLM1lyOW1LMks4ZzJLZlpoTm1DMktmWmh0bUkyWVl1SWl3aTJZUFpoQ0RaaGRpbklOaXoyS2paZ2k0aVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk0zMHNleUowWlhoMElqb2kyWVhaaGlEWXROaXgyWWpZdHlEWXA5bUUyWVhaaU5pMzJZWWcyS2ZaaE5tRjJLZllyOW1LT2lJc0luUjVjR1VpT2lKdFkzRWlMQ0pqYUc5cFkyVnpJanBiSXRtRzJZcllxU0RZcDltRTJLalpndGluMktFZzJZSFpndGkzTGlJc0l0aW4yWVRZcGRtQzJLZlpoZGlwSU5pbjJZVFpnZGk1MllUWml0aXBJTmluMllUWmhkaXoyS3JaaGRpeDJLa3VJaXdpMkxYWmhOaXBJTmluMllUWXI5bUZJTm1GMkxrZzJLZlpoTm1GMllQWXA5bUdMaUlzSXRpbjJZVFlyTm1HMkxQWml0aXBMaUpkTENKamIzSnlaV04wUVc1emQyVnlJam94ZlN4N0luUmxlSFFpT2lMWXA5bUUyWVhaaU5pMzJZWWcyS2ZaaE5pcTJLellwOWl4MllvZzJZZlppQ0RaaGRpcjJLZlpoQ0RZdWRtRTJZazZJaXdpZEhsd1pTSTZJbTFqY1NJc0ltTm9iMmxqWlhNaU9sc2kyS2ZaaE5tRjJZall0OW1HSU5pbjJZVFlydGluMkxVdUlpd2kyS2ZaaE5tRjJZall0OW1HSU5pbjJZVFl1ZGluMllVdUlpd2kyS2ZaaE5tRjJZall0OW1HSU5pbjJZVFlwZG1FMkxMWXA5bUYyWW91SWl3aTJLZlpoTm1GMllqWXQ5bUdJTmluMllUWXVkaW4yS2JaaE5tS0xpSmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3dmU3g3SW5SbGVIUWlPaUxaZ2RtS0lOaW4yWVRaZ3RpbjJZYlppTm1HSU5pbjJZVFlyOW1JMllUWmlpRFlwOW1FMks3WXA5aTEySXdnMktmWmhObUYyWWpZdDltR0lObUsyWVhZcTltRU9pSXNJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0aW4yWVRaaGRtRDJLZlpoaURZcDltRTJMRFppaURaaXRtUDJZalpoTml2SU5tQjJZclpoeURZcDltRTJMVFlydGkxTGlJc0l0aXgyS2ZZcU5pMzJLa2cyS2paaXRtR0lOaW4yWVRZdE5pdTJMVWcyWWpZcGRtQzJZVFppdG1GSU5pbjJZVFlyOW1JMllUWXFTNGlMQ0xaaGRpczJMSFlyeURaaGRtRDJLZlpoaURaaE5tRTJMblpoZG1FTGlJc0l0bUYySzNaaENEWXA5bUUyS1haZ3RpbjJZWFlxU0RZcDltRTJZWFlwTm1DMktyWXFTNGlYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNWDBzZXlKMFpYaDBJam9pMllIWmlpRFlzOW1LMktmWmdpRFlvOWl0MllQWXA5bUZJTmluMllUWmhkbUkyTGZaaHRpTUlOaWwyTERZcHlEWW85aXYyTEhZck5pcUlOaTAyTEhaZzlpcElObUIyWW9nMkxuWmd0aXYyWWZZcHlEWXROaXgyTGNnWENMWmhkaXQyWVBaaGRpcElOaTUySy9aaGx3aUlObUQyWVhZcmRtRDJZWFlxU0RaaGRpdTJLcllwOWl4MktuWWpDRFpoOW1FSU5tSzJMbllyeURZc05tRTJZTWcyWUxZcDltRzJZalpodG1LMll2WXA5aWZJaXdpZEhsd1pTSTZJbTFqY1NJc0ltTm9iMmxqWlhNaU9sc2kyWVRZcHlEWml0aXMyWWpZc2lEWmhkaTMyWVRaZ3RpbjJZc2cyS1BaaGRpbjJZVWcyS2ZaaE5tQzJMYllwOWloSU5pbjJZVFppdG1GMlliWmlpNGlMQ0xaaXRpczJZallzaURZcGRpdzJLY2cyWWpZcDltQjJZSWcyS2ZaaE5pMzJMSFpnZGluMllZZzJMblpoTm1LMlljdUlpd2kyWXJZck5tSTJMSWcyWUhaZ3RpM0lOaWwyTERZcHlEWmc5aW4yWVlnMktQWXJkaXZJTmluMllUWW85aTMyTEhZcDltQklObUsyWVhaaHRtSzJLZlppeTRpTENMWmhOaW5JTm1LMkt6WmlOaXlJTm1CMllvZzJLZlpoTmk1MllUWXA5bUMyS2ZZcWlEWXA5bUUyS3JZck5pbjJMSFppdGlwSU5pbjJZVFlyOW1JMllUWml0aXBMaUpkTENKamIzSnlaV04wUVc1emQyVnlJam94ZlN4N0luUmxlSFFpT2lMWmg5bUVJTmlsMkxQWmd0aW4yTGNnMktmWmhOaXMyWWJZczltSzJLa2cyS2ZaaE5pajJMWFpoTm1LMktrZzJZWFpoZG1EMllZZzJZTFlwOW1HMllqWmh0aW4yWXZZbnlJc0luUjVjR1VpT2lKdFkzRWlMQ0pqYUc5cFkyVnpJanBiSXRtRzJMblpoU0RZcU5tRzJLZllvZG1MSU5pNTJZVFppU0RaZ3RpeDJLZllzU0RaaGRtR0lOaW4yWVRaaU5peTJZcllzUzRpTENMWmh0aTUyWVVnMktYWXNOaW5JTm1DMkxiWXFpRFpoZGl0MllQWmhkaXBJTmlvMkxEWmhObURMaUlzSXRtRTJLY2cyWXJZck5tSTJMSWcyWVhZdDltRTJZTFlwOW1MSU5pMzJLalpndGluMllzZzJZVFpoTml2MkxQWXF0bUkyTEV1SWl3aTJZcllyTm1JMkxJZzJLWFlzTmluSU5pbjJZUFlxdGl6MktnZzJLelpodGl6MllyWXFTRFlvOWl1MkxIWmlTNGlYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNbjBzZXlKMFpYaDBJam9pMktmWmhObUYyWWpZdDltR0lObUsyWS9ZczlpcTJLN1lyOW1GSU5tQjJZb2cyS3JaaHRpbjJMTFl1U0RZcDltRTJZTFppTmluMlliWml0bUdJTm1FMktyWXJkaXYyWXJZcnlEWXA5bUUyWUxZcDltRzJZalpoaURZcDltRTJZallwOWlzMktnZzJLZlpoTmlxMkxmWXFObUsyWUlpTENKMGVYQmxJam9pYldOeElpd2lZMmh2YVdObGN5STZXeUxZdGRpdDJZcllyU0lzSXRpdTJMZllveUpkTENKamIzSnlaV04wUVc1emQyVnlJam93ZlN4N0luUmxlSFFpT2lMWXJkbUNJTmluMllUWXBkbUMyWVRaaXRtRklObUsyTG5aaHRtS0lOaW4yWVBZcXRpejJLZllxQ0RZcDltRTJLelpodGl6MllyWXFTRFlxTm1HMktmWW9kbUxJTmk1MllUWmlTRFlyTm1HMkxQWml0aXBJTmluMllUWmlOaW4yWVRZcjltSzJZWWcyS2pZdXRpMklOaW4yWVRaaHRpNDJMRWcyTG5aaGlEWmhkbUQyS2ZaaGlEWXA5bUUyWVhaaXRtRTJLZllyeUlzSW5SNWNHVWlPaUp0WTNFaUxDSmphRzlwWTJWeklqcGJJdGkxMkszWml0aXRJaXdpMks3WXQ5aWpJbDBzSW1OdmNuSmxZM1JCYm5OM1pYSWlPakY5TEhzaWRHVjRkQ0k2SXRpbjJZVFlwZG1DMktmWmhkaXBJTmk2MllyWXNTRFlwOW1FMllMWXA5bUcyWWpaaHRtSzJLa2cyS3JaZzltQjJZb2cyWVRZcDltRDJLcllzOWluMktnZzJLZlpoTm1GMllqWXQ5bUdJTm1JMllIWmdpRFlwOW1FMktmWXF0aXMyS2ZaaHlEWXA5bUUyS1BaaU5tRUlpd2lkSGx3WlNJNkltMWpjU0lzSW1Ob2IybGpaWE1pT2xzaTJMWFlyZG1LMkswaUxDTFlydGkzMktNaVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1YMHNleUowWlhoMElqb2kyS3JZck5tRzJMTWcyWXJaaGRtRzJZb2cyS2pZck5tRzJMUFppdGlwSU5pajJLelpodGlvMllyWXFTRFlyOW1JMllZZzJLWFlzTm1HSU5tSzJLVFlyOW1LSU5pcTJZVFpndGluMktiWml0aW4yWXNnMllUWXBkaXoyWUxZcDlpM0lOaXMyWWJZczltSzJLclpoeURZcDltRTJZclpoZG1HMllyWXFTSXNJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0aTEySzNaaXRpdElpd2kySzdZdDlpaklsMHNJbU52Y25KbFkzUkJibk4zWlhJaU9qRjlMSHNpZEdWNGRDSTZJdG1LMllYWmc5bUdJTm1FMllUWXROaXUyTFVnMktQWmhpRFppdG1EMllqWmhpRFpoTm1ISU5pajJZUFlxOWl4SU5tRjJZWWcyWVhaaU5pMzJZWWcyWUhaaWlEWXA5bUUyWUxZcDltRzJZalpoaURZcDltRTJZclpoZG1HMllvaUxDSjBlWEJsSWpvaWJXTnhJaXdpWTJodmFXTmxjeUk2V3lMWXRkaXQyWXJZclNJc0l0aXUyTGZZb3lKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpvd2ZTeDdJblJsZUhRaU9pTFppdGk1MktyWXFOaXhJTmluMllUWmhkbUkyTGZaaGlEWXA5bUUyWUxZcDltRzJZalpodG1LSU5tRzJZall1ZG1MMktjZzJZWFpoaURZcDltRTJZWFppTmkzMllZZzJLZlpoTml3MllvZzJZcllydGlxMktmWXNkbUhJTmluMllUWXROaXUyTFVnMktqWmh0bUIyTFBaaHlEWmhObUYyWVhZcDlpeDJMUFlxU0RaaHRpMDJLZll0OW1ISU5pbjJZVFlxdGlzMktmWXNkbUtJaXdpZEhsd1pTSTZJbTFqY1NJc0ltTm9iMmxqWlhNaU9sc2kyTFhZcmRtSzJLMGlMQ0xZcnRpMzJLTWlYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNWDBzZXlKMFpYaDBJam9pMllyWmhkbUQyWVlnMkxQWXJkaW9JTmluMllUWXJObUcyTFBaaXRpcElOaW4yWVRZbzlpMTJZVFppdGlwSU5tSTJZSFpnaURZcDltRTJZWFlwOWl2MktrZ01UY2lMQ0owZVhCbElqb2liV054SWl3aVkyaHZhV05sY3lJNld5TFl0ZGl0MllyWXJTSXNJdGl1MkxmWW95SmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3hmU3g3SW5SbGVIUWlPaUxZbzlpdDJLOGcyTFRZc2RtSTJMY2cyS2ZaaE5tRjJZall0OW1HSU5pbjJZVFpoZGluMksvWmlpRFpoOW1JSU5tRzJZcllxU0RZcDltRTJLalpndGluMktFaUxDSjBlWEJsSWpvaWJXTnhJaXdpWTJodmFXTmxjeUk2V3lMWXRkaXQyWXJZclNJc0l0aXUyTGZZb3lKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblJsZUhRaU9pTFpoTmluSU5tSzJLM1pnaURaaE5tRTJMZlpnZG1FSU5tRjJLelpoOW1JMllRZzJLZlpoTmlqMktnZzJLZlpoTm1GMllqWmhObUkySzhnMllIWmlpRFlwOW1FMllyWmhkbUdJTm1FMktQWmhTRFppdG1GMlliWml0aXBJTmluMllUWXJkaTEyWWpaaENEWXVkbUUyWWtnMktmWmhOaXMyWWJZczltSzJLa2cyS2ZaaE5tSzJZWFpodG1LMktraUxDSjBlWEJsSWpvaWJXTnhJaXdpWTJodmFXTmxjeUk2V3lMWXRkaXQyWXJZclNJc0l0aXUyTGZZb3lKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblJsZUhRaU9pTFlwOW1FMllYWmlOaTMyWVlnMktmWmhOaXUyS2ZZdFNEWml0aXgyS3JZcU5pM0lOaW8yS3paaGRtSzJMa2cyS2ZaaE5pajJMblpoZGluMllRZzJLZlpoTm1DMktmWmh0bUkyWWJaaXRpcElpd2lkSGx3WlNJNkltMWpjU0lzSW1Ob2IybGpaWE1pT2xzaTJMWFlyZG1LMkswaUxDTFlydGkzMktNaVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1YMWRmUT09';
+    
+    // START: DECRYPTION LOGIC
+   
+    const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
+    
+    
+    const examData = JSON.parse(decodeURIComponent(escape(atob(atob(encodedExamData)))));
+
+    
+    try {
+        if (examData.config.botToken) {
+            const decryptedBytes = CryptoJS.AES.decrypt(examData.config.botToken, SECRET_KEY);
+            examData.config.botToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+        }
+        if (examData.config.chatId) {
+            const decryptedBytes = CryptoJS.AES.decrypt(examData.config.chatId, SECRET_KEY);
+            examData.config.chatId = decryptedBytes.toString(CryptoJS.enc.Utf8);
+        }
+        if (examData.config.githubToken) {
+            const decryptedBytes = CryptoJS.AES.decrypt(examData.config.githubToken, SECRET_KEY);
+            examData.config.githubToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+        }
+    } catch (e) {
+        console.error("Decryption failed! The secret key might be wrong or data is corrupt.", e);
+    }
+    // END: DECRYPTION LOGIC
+
+    const GITHUB_OWNER = 'alshami2024';
+    const GITHUB_REPO = 'alshami';
+
+    let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, currentQuestionIndex = 0, tabSwitchCount = 0, examFinished = false;
+    const startScreen = document.getElementById('startScreen'), examArea = document.getElementById('examArea'), resultContainer = document.getElementById('resultContainer');
+    const accessControl = examData.config.accessControl || { enabled: false, students: [] };
+    
+    window.onload = function() {
+        const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+        if (examData.config.singleUseMode && localStorage.getItem(uniqueExamId)) {
+            document.body.innerHTML = `<div class="container" style="text-align:center;"><h1>تم قفل الاختبار</h1><p>لقد قمت ببدء هذا الاختبار بالفعل من هذا المتصفح. لا يمكنك إجراؤه مرة أخرى.</p></div>`;
+            return;
+        }
+
+        const now = new Date();
+        const startTime = examData.config.startTime ? new Date(examData.config.startTime) : null;
+        const endTime = examData.config.endTime ? new Date(examData.config.endTime) : null;
+
+        if (startTime && now < startTime) {
+            document.getElementById('startScreen').innerHTML = `<h1>الاختبار غير متاح بعد</h1><p>سيكون الاختبار متاحًا في: ${startTime.toLocaleString('ar-EG')}</p>`;
+            return;
+        }
+
+        if (endTime && now > endTime) {
+            document.getElementById('startScreen').innerHTML = `<h1>انتهت فترة الاختبار</h1><p>لقد انتهت الفترة المحددة لإجراء هذا الاختبار.</p>`;
+            return;
+        }
+
+        document.getElementById('examTitleStudent').textContent = examData.config.title;
+        document.getElementById('examDescriptionStudent').textContent = examData.config.description;
+        document.getElementById('startExamBtn').addEventListener('click', validateStudentAndStart);
+    };
+    
+    function validateStudentAndStart() {
+        const nameInput = document.getElementById('studentName').value.trim();
+        if (!nameInput) {
+            alert('الرجاء إدخال اسمك.');
+            return;
+        }
+
+        if (accessControl.enabled) {
+            const codeInput = document.getElementById('accessCode').value.trim();
+            if (!codeInput) {
+                alert('الرجاء إدخال رمز الدخول.');
+                return;
+            }
+            const isValidStudent = accessControl.students.some(student => 
+                student.name.trim().toLowerCase() === nameInput.toLowerCase() && student.code === codeInput
+            );
+
+            if (isValidStudent) {
+                studentName = nameInput;
+                startTheExam();
+            } else {
+                alert('الاسم أو رمز الدخول غير صحيح. يرجى المحاولة مرة أخرى.');
+            }
+        } else {
+            studentName = nameInput;
+            startTheExam();
+        }
+    }
+    
+    function startTheExam() {
+        if (examData.config.singleUseMode) {
+             const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+             localStorage.setItem(uniqueExamId, 'true');
+        }
+        sendStartNotificationToTelegram();
+        startScreen.style.display = 'none'; examArea.style.display = 'block';
+        document.getElementById('welcomeStudent').textContent = `بالتوفيق، ${studentName}!`;
+        if (examData.config.time > 0) startTimer(examData.config.time * 60); else document.getElementById('timer').style.display = 'none';
+        if (examData.config.shuffle) { examData.questions.sort(() => Math.random() - 0.5); }
+        setupSmartFeatures(); renderQuestionsForStudent();
+        document.getElementById('finishExamBtn').addEventListener('click', () => { if(confirm("هل أنت متأكد من رغبتك في إنهاء الاختبار؟")) finishTheExam(); });
+    }
+    
+    function renderQuestionsForStudent(){const container=document.getElementById("questionsContainer");container.innerHTML="",examData.config.layout==="one-by-one"?(renderSingleQuestion(currentQuestionIndex),updateNavigationButtons()):examData.questions.forEach((e,t)=>container.appendChild(createQuestionElement(e,t))),updateProgressBar()}function createQuestionElement(e,t){const n=document.createElement("div");n.className="question-card",n.id=`question-${t}`;let o=`<h3>السؤال ${t+1}: ${e.text}</h3>`;if("mcq"===e.type){const i=e.choices.map((e,n)=>`<li onclick="handleChoiceClick(${t}, ${n}, this)"><input type="radio" name="q${t}" id="q${t}c${n}" value="${n}" ${studentAnswers[t]===n?"checked":""}><label for="q${t}c${n}">${e}</label></li>`).join("");o+=`<ul class="choices">${i}</ul>`}else{const s=studentAnswers[t]||"";o+=`<textarea class="essay-answer" oninput="handleEssayInput(${t}, this.value)" placeholder="اكتب إجابتك هنا...">${s}</textarea>`}return n.innerHTML=o,n}function handleChoiceClick(e,t,n){studentAnswers[e]=t,n.querySelector("input").checked=!0,examData.config.layout==="one-by-one"&&examData.config.learningMode&&"mcq"===examData.questions[e].type&&((n.classList.add(t===examData.questions[e].correctAnswer?"correct":"incorrect"),n.parentElement.querySelectorAll("li").forEach(e=>{e.style.pointerEvents="none"}))),updateProgressBar()}function handleEssayInput(e,t){studentAnswers[e]=t.trim(),updateProgressBar()}function renderSingleQuestion(e){document.getElementById("questionsContainer").appendChild(createQuestionElement(examData.questions[e],e))}function updateNavigationButtons(){const e=document.getElementById("navigation-buttons");if("one-by-one"!==examData.config.layout)return void(e.style.display="none");let t="";examData.config.noGoingBack||(t='<button id="prevBtn" class="btn">السابق</button>'),e.innerHTML=`${t}<button id="nextBtn" class="btn">التالي</button>`;const n=document.getElementById("nextBtn");n.disabled=currentQuestionIndex===examData.questions.length-1,n.addEventListener("click",()=>{currentQuestionIndex<examData.questions.length-1&&(currentQuestionIndex++,renderQuestionsForStudent())}),examData.config.noGoingBack||(document.getElementById("prevBtn").disabled=0===currentQuestionIndex,document.getElementById("prevBtn").addEventListener("click",()=>{currentQuestionIndex>0&&(currentQuestionIndex--,renderQuestionsForStudent())}))}function updateProgressBar(){const e=studentAnswers.filter(e=>null!==e&&""!==e).length,t=e/examData.questions.length*100,n=document.getElementById("progressBar");n.style.width=`${t}%`,n.textContent=`${Math.round(t)}%`}
+    function setupSmartFeatures(){if(examData.config.disableCheating){["contextmenu","copy","paste"].forEach(evt=>document.body.addEventListener(evt,e=>e.preventDefault()))}if(examData.config.monitorTabs){document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&!examFinished){tabSwitchCount++;if(examData.config.finishOnSwitch){alert("لقد خرجت من نافذة الاختبار، سيتم إنهاء الاختبار وإرسال نتيجتك الحالية.");finishTheExam()}}})}}
+    async function finishTheExam(){if(examFinished)return;examFinished=!0;clearInterval(timerInterval);examArea.style.display="none";resultContainer.style.display="block";let e=0,t=0;if(examData.questions.forEach((n,o)=>{("mcq"===n.type&&(t++,studentAnswers[o]===n.correctAnswer&&e++))}),document.getElementById("resultTitle").textContent="تم الانتهاء من الامتحان!",examData.config.showResults){let n=`مرحباً ${studentName}، نتيجتك في أسئلة الاختيار من متعدد هي: <strong>${e} / ${t}</strong>`;examData.questions.some(e=>"essay"===e.type)&&(n+='<br><small>الأسئلة المقالية تتطلب تصحيحًا يدويًا وستظهر نتيجتها لاحقاً.</small>'),examData.config.monitorTabs&&tabSwitchCount>0&&(n+=`<br><small style="color:var(--danger-color);">تم تسجيل خروجك من الصفحة ${tabSwitchCount} مرات.</small>`),document.getElementById("resultSummary").innerHTML=n}else document.getElementById("resultSummary").textContent="شكراً لك، تم تسليم إجاباتك بنجاح.";examData.config.showResults&&examData.config.enableReview&&renderReview(),examData.config.enableCertificate&&t>0&&e/t*100>=examData.config.successPercentage&&renderCertificate(e,t),examData.config.botToken&&examData.config.chatId&&await sendResultsToTelegram(e,t); if(examData.config.githubToken && examData.config.resultsFilename){await saveResultsToGithub(e, t);}}
+    function renderReview(){const e=document.getElementById("reviewContainer");e.innerHTML="<h3>مراجعة الإجابات:</h3>",examData.questions.forEach((t,n)=>{let o="";o="mcq"===t.type?`<div class="question-card" style="background:${studentAnswers[n]===t.correctAnswer?"#d4edda":"#f8d7da"};"><p><strong>${t.text}</strong></p><p>إجابتك: ${null!==studentAnswers[n]?t.choices[studentAnswers[n]]:"لم تتم الإجابة"} ${studentAnswers[n]===t.correctAnswer?"✔️":"❌"}</p>${studentAnswers[n]!==t.correctAnswer?`<p style="color:var(--primary-color);">الإجابة الصحيحة: ${t.choices[t.correctAnswer]}</p>`:""}</div>`:`<div class="question-card" style="background: #e9ecef;"><p><strong>(سؤال مقالي) ${t.text}</strong></p><p style="font-weight:bold;">إجابتك:</p><p style="white-space: pre-wrap; background: #fff; padding:10px; border-radius:5px;">${studentAnswers[n]?studentAnswers[n].replace(/</g,"&lt;").replace(/>/g,"&gt;"):"لم تتم الإجابة"}</p></div>`,e.innerHTML+=o})}function renderCertificate(e,t){const n=document.getElementById("certificate");n.style.display="block",document.getElementById("certName").textContent=studentName,document.getElementById("certScore").textContent=`${e} / ${t}`,document.getElementById("certDate").textContent=(new Date).toLocaleDateString("ar-EG")}function startTimer(e){let t=e;const n=document.getElementById("timer");timerInterval=setInterval(()=>{let e=parseInt(t/60,10),o=parseInt(t%60,10);e=e<10?"0"+e:e,o=o<10?"0"+o:o,n.textContent=`${e}:${o}`,--t<0&&(clearInterval(timerInterval),alert("انتهى الوقت!"),finishTheExam())},1e3)}async function sendResultsToTelegram(e,t){const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}let a=`*📊 نتيجة اختبار جديدة*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}\n*نتيجة الاختيار من متعدد:* ${e} من ${t}\n*مرات الخروج:* ${tabSwitchCount}`;let d="\n\n*الإجابات المقالية*",r=!1;examData.questions.forEach((e,t)=>{("essay"===e.type&&(r=!0,d+=`\n\n*❓ السؤال: ${i(e.text)}*\n*📝 إجابة الطالب:*\n${i(studentAnswers[t]||"لم تتم الإجابة")}`))}),r&&(a+=d);const c=`https://api.telegram.org/bot${n}/sendMessage`;try{a.length>4096&&(a=a.substring(0,4e3)+"\n\n... (تم اقتطاع الرسالة لأنها طويلة جداً)");const l=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});l.ok||console.error("Telegram API Error:",await l.json())}catch(p){console.error("Fetch error or issue sending to Telegram:",p)}}async function sendStartNotificationToTelegram(){const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}const a=`*🔔 بدء اختبار جديد*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}`,c=`https://api.telegram.org/bot${n}/sendMessage`;try{const l=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});l.ok||console.error("Telegram API Error (Start Notification):",await l.json())}catch(p){console.error("Fetch error sending start notification:",p)}}
+    
+    async function saveResultsToGithub(correctMcq, totalMcq) {
+        const token = examData.config.githubToken;
+        const filename = examData.config.resultsFilename;
+        if (!token || !filename) { return; } 
+        const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${filename}`;
+
+        const resultData = {
+            studentName: studentName,
+            submissionDate: new Date().toISOString(),
+            mcqScore: { correct: correctMcq, total: totalMcq },
+            tabSwitchCount: tabSwitchCount,
+            // START: NEW ADDITION
+            examTitle: examData.config.title, // Add exam title here
+            // END: NEW ADDITION
+            answers: examData.questions.map((q, index) => {
+                const studentAnswerRaw = studentAnswers[index];
+                let studentAnswerText = studentAnswerRaw;
+                let isCorrect = null;
+                let correctAnswerText = null;
+
+                if (q.type === 'mcq') {
+                    isCorrect = (studentAnswerRaw === q.correctAnswer);
+                    studentAnswerText = (studentAnswerRaw !== null) ? q.choices[studentAnswerRaw] : "لم تتم الإجابة";
+                    if (!isCorrect) {
+                        correctAnswerText = q.choices[q.correctAnswer];
+                    }
+                }
+
+                return {
+                    question: q.text,
+                    answer: studentAnswerText,
+                    isCorrect: isCorrect,
+                    correctAnswer: correctAnswerText
+                };
+            })
+        };
+
+        try {
+            let currentContent = [];
+            let sha;
+            try {
+                const res = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+                if (res.ok) {
+                    const data = await res.json();
+                    sha = data.sha;
+                    currentContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                } else if (res.status !== 404) {
+                    throw new Error(`GitHub API error on fetch: ${res.statusText}`);
+                }
+            } catch (fetchError) {
+                console.warn("Could not fetch existing results file. A new one will be created.", fetchError);
+            }
+            
+            currentContent.push(resultData);
+            const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentContent, null, 2))));
+            
+            const response = await fetch(url, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: `إضافة نتيجة الطالب: ${studentName}`,
+                    content: updatedContent,
+                    sha: sha
+                })
+            });
+
+            if (!response.ok) {
+                 const errorData = await response.json();
+                 throw new Error(`Failed to save results: ${errorData.message}`);
+            }
+            console.log('Results saved to GitHub successfully.');
+            document.getElementById("resultSummary").innerHTML += '<br><small style="color:green;">تم حفظ نتيجتك بنجاح.</small>';
+
+        } catch (error) {
+            console.error("Error saving results to GitHub:", error);
+            document.getElementById("resultSummary").innerHTML += '<br><small style="color:red;">حدث خطأ أثناء محاولة حفظ نتيجتك.</small>';
+        }
+    }
+</script>
+</body>
+</html>
