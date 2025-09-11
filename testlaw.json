@@ -2614,5 +2614,137 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "محمد المرقب",
+    "submissionDate": "2025-09-11T06:10:34.075Z",
+    "mcqScore": {
+      "correct": 13,
+      "total": 20
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن",
+    "answers": [
+      {
+        "question": "في القانون الدولي الخاص، الموطن يمثل:",
+        "answer": "رابطة بين الشخص وإقليم الدولة.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "في سياق أحكام الموطن، إذا أدرجت شركة في عقدها شرط \"محكمة عدن\" كمحكمة مختارة، هل يعد ذلك قانونيًا؟",
+        "answer": "يجوز إذا وافق الطرفان عليه.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الإقامة غير القانونية تكفي لاكتساب الموطن وفق الاتجاه الأول",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "عند اكتساب الأولاد القصر الجنسية اليمنية بالتبعية، ما الشرط الأساسي المطلوب؟",
+        "answer": "الإقامة مع الأب في اليمن.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من خصائص الجنسية عدا:",
+        "answer": "قابلية التنازل.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "تجنس يمني بجنسية أجنبية دون إذن يؤدي تلقائياً لإسقاط جنسيته اليمنية",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من شروط الموطن المادي:",
+        "answer": "نية البقاء فقط.",
+        "isCorrect": false,
+        "correctAnswer": "الإقامة الفعلية المستمرة."
+      },
+      {
+        "question": "المبدأ الأساسي في حماية الجنسية المكتسبة هو:",
+        "answer": " إمكانية سحبها وفق شروط محددة فقط.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أحد شروط الموطن المادي هو نية البقاء",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الموطن التجاري هو مثال على:",
+        "answer": "الموطن الخاص.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "هل إسقاط الجنسية الأصلية ممكن قانوناً؟",
+        "answer": "لا يجوز مطلقاً طبقاً للدستور.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الموطن يُستخدم في تنازع القوانين لتحديد القانون الواجب التطبيق",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "تكمن أهمية الجنسية في:",
+        "answer": "كل ما سبق.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يمكن سحب الجنسية الأصلية وفق المادة 17",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حق الإقليم يعني اكتساب الجنسية بناءً على جنسية الوالدين بغض النظر عن مكان الميلاد",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "العقوبة المنصوص عليها لتقديم أوراق مزورة لإثبات أو نفي الجنسية اليمنية تشمل:",
+        "answer": "الغرامة حتى 20 ألف ريال فقط.",
+        "isCorrect": false,
+        "correctAnswer": "الحبس والغرامة مع عدم الإخلال بعقوبة أشد."
+      },
+      {
+        "question": "يعتبر الموطن القانوني نوعًا من الموطن الذي يختاره الشخص بنفسه لممارسة نشاطه التجاري",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يمكن للشخص أن يكون له أكثر من موطن في القانون اليمني",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا يحق للطفل مجهول الأب المولود في اليمن لأم يمنية الحصول على الجنسية اليمنية",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الموطن الخاص يرتبط بجميع الأعمال القانونية",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      }
+    ]
   }
 ]
