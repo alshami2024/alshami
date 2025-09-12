@@ -5212,5 +5212,59 @@
         "correctAnswer": "صح."
       }
     ]
+  },
+  {
+    "studentName": "أزهار الرقيمي",
+    "submissionDate": "2025-09-12T20:20:22.310Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 7
+    },
+    "tabSwitchCount": 1,
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن",
+    "answers": [
+      {
+        "question": "العقوبة المنصوص عليها لتقديم أوراق مزورة لإثبات أو نفي الجنسية اليمنية تشمل:",
+        "answer": "الحبس والغرامة مع عدم الإخلال بعقوبة أشد.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا يحق للطفل مجهول الأب المولود في اليمن لأم يمنية الحصول على الجنسية اليمنية",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المبدأ الأساسي في حماية الجنسية المكتسبة هو:",
+        "answer": "ضمان الحماية الدبلوماسية الدولية لها.",
+        "isCorrect": false,
+        "correctAnswer": " إمكانية سحبها وفق شروط محددة فقط."
+      },
+      {
+        "question": "الموطن الخاص يرتبط بجميع الأعمال القانونية",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الموطن التجاري هو مثال على:",
+        "answer": "الموطن الخاص.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "عند اكتساب الأولاد القصر الجنسية اليمنية بالتبعية، ما الشرط الأساسي المطلوب؟",
+        "answer": "الإقامة مع الأب في اليمن.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أحد شروط الموطن المادي هو نية البقاء",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
