@@ -3982,5 +3982,59 @@
         "correctAnswer": "ب. كل جسم مركب والمركب مفتقر، والمفتقر ممكن لا واجب الوجود."
       }
     ]
+  },
+  {
+    "studentName": "عبدالرحمن الخطيب",
+    "submissionDate": "2025-09-12T16:24:30.880Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 7
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن",
+    "answers": [
+      {
+        "question": "الموطن التجاري هو مثال على:",
+        "answer": "الموطن الخاص.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العقوبة المنصوص عليها لتقديم أوراق مزورة لإثبات أو نفي الجنسية اليمنية تشمل:",
+        "answer": "الحبس والغرامة مع عدم الإخلال بعقوبة أشد.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا يحق للطفل مجهول الأب المولود في اليمن لأم يمنية الحصول على الجنسية اليمنية",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الموطن الخاص يرتبط بجميع الأعمال القانونية",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "عند اكتساب الأولاد القصر الجنسية اليمنية بالتبعية، ما الشرط الأساسي المطلوب؟",
+        "answer": "الإقامة مع الأب في اليمن.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أحد شروط الموطن المادي هو نية البقاء",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المبدأ الأساسي في حماية الجنسية المكتسبة هو:",
+        "answer": " إمكانية سحبها وفق شروط محددة فقط.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
