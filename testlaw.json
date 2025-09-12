@@ -4252,5 +4252,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "أماني قايد محسن عُميَّان",
+    "submissionDate": "2025-09-12T17:13:06.424Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "العقيدة (1)",
+    "answers": [
+      {
+        "question": "الفرق بين السمع والبصر في الله والسمع والبصر في البشر أن:",
+        "answer": "أ. سمعه وبصره بمعنى العلم دون آلة أو حدق أو صماخ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من لوازم التوحيد الذي نبهت عليه آية {قل هو الله أحد}:",
+        "answer": "ج. نفي العدد عن الذات الإلهية.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "في الفرق بين الإدراك والعلم عند الله:",
+        "answer": "أ. الإدراك يكون عند وجود المدركات والعلم لا يشترط ذلك.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "القول بإرادة الله للمعاصي يلزم منه:",
+        "answer": "ج. أن العاصي مطيع لإرادته.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الفرق بين الصفات الثبوتية والسلبية أن الثبوتية:",
+        "answer": "ج. تثبت الكمال، بينما السلبية تنفي كل ما يلزم النقص.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "تعريف العلم بأنه إدراك الشيء على ما هو عليه إدراكًا جازمًا مطابقًا للواقع، ينقسم في علم العقيدة إلى:",
+        "answer": "د. علم تجريبي وعلم عقلي.",
+        "isCorrect": false,
+        "correctAnswer": "ب. علم ضروري وعلم نظري."
+      },
+      {
+        "question": "استدلال الزيدية والمعتزلة بعدم رؤية الله في الآخرة يعتمد على:",
+        "answer": "أ. أن الرؤية لا تكون إلا للجسم أو العرض، والله منزه عن كليهما.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "القول بأن العالم قديم لا حـادث يناقض:",
+        "answer": "ج. برهان الحدوث والأدلة العقلية والنقلية.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الغنى المطلق عند الله يعني:",
+        "answer": "د. الغنى الذاتي عن كل ما سواه بلا حاجة.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "دليل نفي الجسمية عن الله أن:",
+        "answer": "د. كل جسم فانٍ.",
+        "isCorrect": false,
+        "correctAnswer": "ب. كل جسم مركب والمركب مفتقر، والمفتقر ممكن لا واجب الوجود."
+      }
+    ]
   }
 ]
