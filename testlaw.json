@@ -8326,5 +8326,107 @@
         "correctAnswer": "خطأ."
       }
     ]
+  },
+  {
+    "studentName": "سميه عارف صالح الشامي",
+    "submissionDate": "2025-09-13T19:10:44.601Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 15
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "العقيدة (1)",
+    "answers": [
+      {
+        "question": "يكفي الإقرار الظاهري بالشهادتين دون معرفة ويقين لصحة الاعتقاد.",
+        "answer": "خطأ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "القول بأن العَالَم قديم موافق للشرع والعقل.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "المقصود ببرهان الحدوث المستخدم لإثبات وجود الصانع:",
+        "answer": "أ. أن كل حادث له محدث والعالم حادث.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أي الطرق التالية رُفض اعتمادها وحدها لتحصيل العقيدة؟",
+        "answer": "ب. البرهان والقياس العقلي.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الذوق والإلهام والتعليم المحض والتقليد والسمع المجرد."
+      },
+      {
+        "question": "ما وجه الاستدلال العقلي على وحدانية الله تعالى؟",
+        "answer": "ج. الاستقراء الجزئي.",
+        "isCorrect": false,
+        "correctAnswer": "ب. دليل التمانع وفساد النظام عند تعدد الآلهة."
+      },
+      {
+        "question": "لفطرة وحدها تكفي لمعرفة الله، ولا حاجة للنظر العقلي.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "النظر العقلي واجب شرعًا وعقلًا لتحصيل اليقين في أصول الدين.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الاكتفاء بالسمع وحده يكفي لإثبات العقيدة دون الحاجة للعقل.",
+        "answer": "خطأ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العَالَم قديم غير مسبوق بالعدم، ولذلك لا يحتاج إلى محدث.",
+        "answer": "خطأ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ما الأساس المنهجي المعتمد عند تعارض ظاهر النقل مع دليل العقل القطعي في هذا المقرر؟",
+        "answer": "د. إسقاط الدليلين معًا.",
+        "isCorrect": false,
+        "correctAnswer": "ج. تأويل الظاهر بما يوافق القطع العقلي."
+      },
+      {
+        "question": "السمع (النقل) يمكن أن يُحتج به قبل إثبات صدق النبي ووجود الله بالعقل.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "ما المقصود بالبقاء في صفات الله الذاتية؟",
+        "answer": "د. استمرار الوجود بلا انقطاع.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قدرة الله أزلية شاملة تتعلق بالمقدورات الممكنة، ولا يدخل المحال في القدرة.",
+        "answer": "خطأ.",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "لاختلاف بين الناس في نتائج النظر سببه الخلل في ترتيب المقدمات أو ضعف الاستدلال.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الصفات الذاتية لله مثل القدرة والعلم والحياة أزلية.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
