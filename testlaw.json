@@ -9652,5 +9652,137 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-09-14T07:02:32.298Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 20
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "العقيدة (1)",
+    "answers": [
+      {
+        "question": "التقليد يورث اليقين في العقيدة مثل النظر العقلي",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "التسلسل في العلل ممكن عقلاً ولا يبطل برهان الحدوث",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "معنى \"واجب الوجود\":",
+        "answer": "الموجود الذي لا يحتاج إلى غيره ولا يقبل العدم.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "عند الزيدية والمعتزلة، العلم الإلهي هو:",
+        "answer": "عين الذات، وليس شيئاً مستقلاً عنها.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من لوازم وحدانية الله تعالى:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "الانفراد بالخلق والتدبير."
+      },
+      {
+        "question": "العلم الضروري هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "العلم الذي لا يحتاج إلى دليل أو استدلال."
+      },
+      {
+        "question": "الله تعالى مريد للطاعات كاره للمعاصي، تنزيهاً له عن إرادة القبيح",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "الكلام الإلهي حادث مخلوق، ولا يصح القول بقدمه لأنه مركب من أصوات وأعراض",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "السمع والبصر في حق الله يعنيان:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "أنه عالم بالمسموعات والمبصرات من غير حواس."
+      },
+      {
+        "question": "الاختلاف بين الناس في نتائج النظر سببه الخلل في ترتيب المقدمات أو ضعف الاستدلال",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "إرادة الله تشمل الطاعات والمعاصي على السواء عند جميع الفرق",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "\"كل حادث له محدث\" يدل على:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "برهان الحدوث."
+      },
+      {
+        "question": "لا يصح القول بأن الله يشبه المخلوقات أو تحلّ فيه الحوادث",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "نعمة الله على العبد دليل على لطفه وعلمه وقدرته",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "\"المعاد\" في العقيدة الإسلامية هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "رجوع العباد إلى الله يوم القيامة للبعث والحساب."
+      },
+      {
+        "question": "العقل أصلٌ في إثبات السمع، ولا يُحتج بالنقل إلا بعد إثبات صدق النبي",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "معنى التوحيد في اصطلاح المتكلمين:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "نفي الشريك عن الله في الذات والصفات والأفعال والعبادة."
+      },
+      {
+        "question": "الفطرة وحدها تكفي لمعرفة الله، ولا حاجة للنظر العقلي",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الدليل العقلي على استحالة تعدد الآلهة هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "أن التعدد يستلزم الاختلاف والافتقار، وهذا محال على الإله."
+      },
+      {
+        "question": "معنى \"التأويل\" في علم التوحيد:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "حمل اللفظ على معنى يحتمله لغة عند قيام دليل عقلي قاطع."
+      }
+    ]
   }
 ]
