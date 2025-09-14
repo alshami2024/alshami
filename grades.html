@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>بوابة الطالب - عرض الدرجات</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <style>
     :root {
       --main-color: #0a9396;
@@ -13,10 +14,12 @@
       --text-color: #333;
       --card-bg: #ffffff;
       --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      --success-color: #28a745;
+      --fail-color: #dc3545;
     }
 
     body {
-      font-family: Tahoma, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg-color);
       color: var(--text-color);
       margin: 0;
@@ -26,6 +29,7 @@
       align-items: center;
       min-height: 100vh;
       flex-direction: column;
+      overflow-x: hidden;
     }
 
     .container {
@@ -40,22 +44,46 @@
       font-size: 28px;
     }
 
-    #assignment-stats {
-      background: #e0f2f1;
-      border-right: 5px solid var(--accent-color);
+    /* New Dashboard Section */
+    #dashboard-stats {
+      background: linear-gradient(135deg, #e0f2f1, #c8e6c9);
+      border-right: 5px solid var(--success-color);
       color: var(--accent-color);
-      padding: 15px 20px;
-      border-radius: 8px;
-      margin-bottom: 25px;
+      padding: 20px;
+      border-radius: 12px;
+      margin-bottom: 30px;
       font-size: 1.1em;
       font-weight: bold;
       box-shadow: var(--shadow);
       display: none;
+      text-align: right;
     }
-    #assignment-stats strong {
-        font-size: 1.3em;
+    #dashboard-stats h3 {
+        margin-top: 0;
+        color: var(--main-color);
+    }
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .stat-item {
+        background-color: rgba(255,255,255,0.7);
+        padding: 10px;
+        border-radius: 8px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+    .stat-item .stat-value {
+        font-size: 1.5em;
+        color: var(--accent-color);
         font-weight: 900;
-        margin: 0 5px;
+        margin-top: 5px;
+    }
+    .stat-item .stat-label {
+        font-size: 0.8em;
+        color: #666;
     }
 
     .search-box {
@@ -75,6 +103,11 @@
       margin-bottom: 15px;
       box-sizing: border-box;
       text-align: center;
+      transition: border-color 0.3s;
+    }
+    input[type="text"]:focus {
+        border-color: var(--main-color);
+        outline: none;
     }
 
     button {
@@ -86,26 +119,27 @@
       cursor: pointer;
       background-color: var(--main-color);
       color: white;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, transform 0.2s;
     }
 
     button:hover {
       background-color: var(--accent-color);
+      transform: translateY(-2px);
     }
     
     #showGradedBtn {
         background-color: var(--secondary-accent-color);
         margin-top: 10px;
     }
-    #showGradedBtn:hover {
-        background-color: var(--accent-color);
-    }
 
     #result-area, #loader, #error-message {
       display: none;
       margin-top: 25px;
     }
-
+    #result-area {
+      animation: fadeIn 0.8s;
+    }
+    
     .student-card {
       background-color: var(--card-bg);
       padding: 25px;
@@ -113,29 +147,80 @@
       box-shadow: var(--shadow);
       text-align: right;
       border-right: 5px solid var(--main-color);
-    }
-
-    .student-card h2 {
-      margin-top: 0;
-      color: var(--accent-color);
-      border-bottom: 1px solid #eee;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-
-    .student-card p {
-      font-size: 18px;
-      line-height: 1.8;
-      margin: 10px 0;
-    }
-
-    .student-card p strong {
-      color: var(--accent-color);
-      margin-left: 8px;
+      opacity: 0;
+      animation: fadeIn 0.8s forwards;
     }
     
-    #department-row {
-        display: none;
+    .student-card .info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      background-color: #f8f9fa;
+      border-radius: 8px;
+      box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+      animation: slideInRight 0.5s ease-out forwards;
+      opacity: 0;
+    }
+    .student-card .info-item:nth-child(2) { animation-delay: 0.1s; }
+    .student-card .info-item:nth-child(3) { animation-delay: 0.2s; }
+    .student-card .info-item:nth-child(4) { animation-delay: 0.3s; }
+    .student-card .info-item:nth-child(5) { animation-delay: 0.4s; }
+    .student-card .info-item:nth-child(6) { animation-delay: 0.5s; }
+
+    .student-card .info-item i {
+        color: var(--main-color);
+        margin-left: 15px;
+        font-size: 1.2em;
+    }
+    
+    .student-card .info-item strong {
+        color: var(--accent-color);
+        margin-left: 8px;
+        font-size: 1.1em;
+    }
+
+    #total-grade-row {
+        font-size: 20px;
+        font-weight: bold;
+        color: var(--accent-color);
+        margin-top: 20px;
+        padding-top: 15px;
+        border-top: 2px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #studentTotalGrade {
+        font-size: 1.5em;
+        font-weight: 900;
+        color: var(--accent-color);
+    }
+    
+    .progress-bar {
+        background-color: #e9ecef;
+        border-radius: 15px;
+        height: 10px;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+    .progress-fill {
+        height: 100%;
+        width: 0;
+        background-color: var(--success-color);
+        border-radius: 15px;
+        transition: width 1s ease-in-out;
+    }
+    
+    /* New Animations */
+    @keyframes slideInRight {
+      from { transform: translateX(-20px); opacity: 0; }
+      to { transform: translateX(0); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
 
     .loader {
@@ -174,14 +259,9 @@
         animation: fadeIn 0.3s;
     }
     
-    @keyframes fadeIn {
-      from {opacity: 0} 
-      to {opacity: 1}
-    }
-
     .modal-content {
         background-color: #fefefe;
-        margin: 10% auto;
+        margin: 5% auto;
         padding: 25px;
         border-radius: 12px;
         width: 90%;
@@ -213,7 +293,40 @@
         margin-top: 0;
         margin-bottom: 20px;
     }
+
+    .search-modal-input {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+      text-align: right;
+      transition: border-color 0.3s;
+    }
+    .search-modal-input:focus {
+        outline: none;
+        border-color: var(--main-color);
+    }
     
+    .sort-container {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+        justify-content: flex-end;
+    }
+    .sort-container label {
+        margin-left: 10px;
+        color: #666;
+    }
+    .sort-container select {
+        padding: 8px;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+    }
+
     #graded-students-ul {
         list-style: none;
         padding: 0;
@@ -232,9 +345,18 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    }
+    .student-list-item:hover {
+        transform: translateX(5px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
     
-    /* --- UPDATED: Style for the course header --- */
+    /* Dynamic Grade Colors */
+    .grade-high { background-color: #28a745 !important; } /* أخضر */
+    .grade-medium { background-color: #ffc107 !important; } /* برتقالي */
+    .grade-low { background-color: #dc3545 !important; }   /* أحمر */
+
     .course-header {
         background-color: var(--accent-color);
         color: white;
@@ -244,13 +366,11 @@
         margin-bottom: 10px;
         font-size: 1.1em;
         font-weight: bold;
-        /* Flexbox for alignment */
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     
-    /* --- NEW: Style for the count badge --- */
     .student-count-badge {
         background-color: rgba(255, 255, 255, 0.2);
         color: white;
@@ -266,6 +386,7 @@
         padding: 4px 12px;
         border-radius: 16px;
         font-size: 0.9em;
+        font-weight: bold;
     }
 
   </style>
@@ -274,7 +395,24 @@
 
   <div class="container">
     <h1>🎓 بوابة الطالب</h1>
-    <div id="assignment-stats"></div>
+    <div id="dashboard-stats">
+        <h3>📊 إحصاءات عامة</h3>
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div id="average-grade" class="stat-value">--</div>
+                <div class="stat-label">متوسط الدرجات</div>
+            </div>
+            <div class="stat-item">
+                <div id="highest-grade" class="stat-value">--</div>
+                <div class="stat-label">أعلى درجة</div>
+            </div>
+            <div class="stat-item">
+                <div id="passed-students" class="stat-value">--</div>
+                <div class="stat-label">الطلاب الناجحون</div>
+            </div>
+        </div>
+    </div>
+    
     <div class="search-box">
       <label for="studentId" style="display:block; margin-bottom:10px; font-weight:bold;">أدخل رقمك الجامعي لعرض نتيجتك</label>
       <input type="text" id="studentId" placeholder="الرقم الجامعي">
@@ -283,21 +421,56 @@
     </div>
     <div id="loader"><div class="loader"></div></div>
     <div id="error-message" style="color:red; font-weight:bold;"></div>
+    
     <div id="result-area">
-      <div class="student-card">
-        <h2 id="studentName"></h2>
-        <p><strong>المقرر:</strong> <span id="studentCourse"></span></p>
-        <p id="department-row"><strong>القسم:</strong> <span id="studentDepartment"></span></p>
-        <p><strong>الدرجة:</strong> <span id="studentGrade"></span></p>
-        <p><strong>الحضور:</strong> <span id="studentAttendance"></span></p>
-      </div>
+        <div class="student-card">
+            <h2>أهلاً بك، <span id="studentName"></span></h2>
+            <div class="info-item">
+                <i class="fas fa-book-open"></i><strong>المقرر:</strong> <span id="studentCourse"></span>
+            </div>
+            <div class="info-item" id="department-row">
+                <i class="fas fa-university"></i><strong>القسم:</strong> <span id="studentDepartment"></span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-star"></i><strong>درجة التكليف:</strong> <span id="studentGrade"></span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-calendar-check"></i><strong>الحضور:</strong> <span id="studentAttendance"></span>
+            </div>
+            <div id="total-grade-row" style="display: none;">
+                <div style="display: flex; align-items: center;">
+                    <i class="fas fa-award" style="font-size: 1.5em; margin-left: 10px;"></i>
+                    <strong>المجموع الكلي:</strong>
+                </div>
+                <div style="text-align: left;">
+                    <span id="studentTotalGrade"></span>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <div class="progress-bar">
+                    <div id="grade-progress-fill" class="progress-fill"></div>
+                </div>
+                <div style="text-align: center; font-size: 0.9em; color: #666; margin-top: 5px;">
+                    <span id="grade-percentage"></span>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
   
   <div id="graded-list-modal" class="modal">
     <div class="modal-content">
       <span class="close-button" onclick="closeModal()">×</span>
-      <h2>الطلاب الذين تم رصد درجاتهم</h2>
+      <h2><i class="fas fa-users"></i> الطلاب الذين تم رصد درجاتهم</h2>
+      <input type="text" id="search-input" placeholder="ابحث باسم الطالب..." class="search-modal-input" onkeyup="filterAndSortStudents()">
+      <div class="sort-container">
+          <label for="sort-select">الفرز حسب:</label>
+          <select id="sort-select" onchange="filterAndSortStudents()">
+              <option value="name">الاسم</option>
+              <option value="grade_desc">الدرجة (من الأعلى للأدنى)</option>
+              <option value="grade_asc">الدرجة (من الأدنى للأعلى)</option>
+          </select>
+      </div>
       <div id="modal-loader" style="display: none;"><div class="loader"></div></div>
       <ul id="graded-students-ul"></ul>
     </div>
@@ -309,6 +482,7 @@
 
 <script>
 const modal = document.getElementById('graded-list-modal');
+let allStudentsData = [];
 
 async function showGradedStudentsList() {
     const listUl = document.getElementById('graded-students-ul');
@@ -317,6 +491,12 @@ async function showGradedStudentsList() {
     modal.style.display = 'block';
     modalLoader.style.display = 'block';
     listUl.innerHTML = '';
+
+    if (allStudentsData.length > 0) {
+        filterAndSortStudents();
+        modalLoader.style.display = 'none';
+        return;
+    }
 
     const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
 
@@ -327,49 +507,15 @@ async function showGradedStudentsList() {
         const allData = await response.json();
         const students = JSON.parse(allData.myapp_students || '[]');
         
-        const gradedStudents = students.filter(s => s.grade && String(s.grade).trim() !== 'لم ترصد بعد');
+        allStudentsData = students.filter(s => s.grade && String(s.grade).trim() !== 'لم ترصد بعد');
 
-        if (gradedStudents.length === 0) {
+        if (allStudentsData.length === 0) {
             listUl.innerHTML = '<li>لم يتم رصد أي درجة حتى الآن.</li>';
             modalLoader.style.display = 'none';
             return;
         }
-
-        const groupedByCourse = gradedStudents.reduce((acc, student) => {
-            const course = student.course || 'مادة غير محددة';
-            if (!acc[course]) {
-                acc[course] = [];
-            }
-            acc[course].push(student);
-            return acc;
-        }, {});
-
-        // --- UPDATED: Display the list grouped by course with student count ---
-        for (const course in groupedByCourse) {
-            const courseHeader = document.createElement('li');
-            courseHeader.className = 'course-header';
-            
-            const studentCount = groupedByCourse[course].length; // Calculate student count
-
-            // Create header with course name and the count badge
-            courseHeader.innerHTML = `
-                <span>${course}</span>
-                <span class="student-count-badge">العدد: ${studentCount}</span>
-            `;
-            listUl.appendChild(courseHeader);
-
-            // Add the students under that header
-            groupedByCourse[course].forEach(student => {
-                const studentLi = document.createElement('li');
-                studentLi.className = 'student-list-item';
-                studentLi.innerHTML = `
-                    <span>${student.name}</span>
-                    <span class="student-grade-in-list">${student.grade}</span>
-                `;
-                listUl.appendChild(studentLi);
-            });
-        }
         
+        filterAndSortStudents();
         modalLoader.style.display = 'none';
 
     } catch (error) {
@@ -378,9 +524,97 @@ async function showGradedStudentsList() {
     }
 }
 
+function renderStudentsList(studentsToRender) {
+    const listUl = document.getElementById('graded-students-ul');
+    listUl.innerHTML = '';
+
+    const groupedByCourse = studentsToRender.reduce((acc, student) => {
+        const course = student.course || 'مادة غير محددة';
+        if (!acc[course]) {
+            acc[course] = [];
+        }
+        acc[course].push(student);
+        return acc;
+    }, {});
+
+    for (const course in groupedByCourse) {
+        const courseHeader = document.createElement('li');
+        courseHeader.className = 'course-header';
+        
+        const studentCount = groupedByCourse[course].length; 
+
+        courseHeader.innerHTML = `
+            <span>${course}</span>
+            <span class="student-count-badge">العدد: ${studentCount}</span>
+        `;
+        listUl.appendChild(courseHeader);
+
+        groupedByCourse[course].forEach(student => {
+            const grade = parseInt(student.grade, 10) || 0;
+            const attendance = parseInt(student.attendance, 10) || 0;
+            const totalGrade = grade + attendance;
+            const gradeClass = getGradeClass(totalGrade);
+            const studentLi = document.createElement('li');
+            studentLi.className = 'student-list-item';
+            studentLi.innerHTML = `
+                <span>${student.name}</span>
+                <span class="student-grade-in-list ${gradeClass}">${totalGrade}</span>
+            `;
+            listUl.appendChild(studentLi);
+        });
+    }
+}
+
+function filterAndSortStudents() {
+    const searchInput = document.getElementById('search-input').value.toLowerCase();
+    const sortValue = document.getElementById('sort-select').value;
+    
+    let filteredStudents = allStudentsData.filter(student => 
+        (student.name && student.name.toLowerCase().includes(searchInput)) || 
+        (student.id && student.id.toLowerCase().includes(searchInput))
+    );
+
+    if (sortValue === 'name') {
+        filteredStudents.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+    } else if (sortValue === 'grade_desc') {
+        filteredStudents.sort((a, b) => {
+            const gradeA = (parseInt(a.grade, 10) || 0) + (parseInt(a.attendance, 10) || 0);
+            const gradeB = (parseInt(b.grade, 10) || 0) + (parseInt(b.attendance, 10) || 0);
+            return gradeB - gradeA;
+        });
+    } else if (sortValue === 'grade_asc') {
+        filteredStudents.sort((a, b) => {
+            const gradeA = (parseInt(a.grade, 10) || 0) + (parseInt(a.attendance, 10) || 0);
+            const gradeB = (parseInt(b.grade, 10) || 0) + (parseInt(b.attendance, 10) || 0);
+            return gradeA - gradeB;
+        });
+    }
+
+    renderStudentsList(filteredStudents);
+}
+
+function getGradeClass(totalGrade) {
+    if (isNaN(totalGrade)) return '';
+
+    if (totalGrade >= 36) return 'grade-high';
+    if (totalGrade >= 28) return 'grade-medium';
+    return 'grade-low';
+}
+
+function getGradeCategory(totalGrade) {
+    if (isNaN(totalGrade)) return 'لم تُصنف بعد';
+
+    if (totalGrade >= 36) return 'ممتاز';
+    if (totalGrade >= 32) return 'جيد جداً';
+    if (totalGrade >= 28) return 'جيد';
+    if (totalGrade >= 24) return 'مقبول';
+    return 'راسب';
+}
+
 
 function closeModal() {
     modal.style.display = 'none';
+    document.getElementById('search-input').value = '';
 }
 
 window.onclick = function(event) {
@@ -388,20 +622,29 @@ window.onclick = function(event) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    // This function is unchanged
-    const statsContainer = document.getElementById('assignment-stats');
+    const dashboardStats = document.getElementById('dashboard-stats');
     const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
     try {
         const response = await fetch(url);
         if (!response.ok) return;
         const allData = await response.json();
         const students = JSON.parse(allData.myapp_students || '[]');
-        if (students.length > 0) {
-            const gradedStudentsCount = students.filter(student => student.grade && String(student.grade).trim() !== 'لم ترصد بعد').length;
-            if (gradedStudentsCount > 0) {
-                statsContainer.innerHTML = `🏆 تم تسليم التكليف من قبل <strong>${gradedStudentsCount}</strong> من الطلاب! استعلم عن نتيجتك الآن 👇`;
-                statsContainer.style.display = 'block';
-            }
+        
+        const gradedStudents = students.filter(student => student.grade && String(student.grade).trim() !== 'لم ترصد بعد');
+        if (gradedStudents.length > 0) {
+            dashboardStats.style.display = 'block';
+            
+            const totalGrades = gradedStudents.map(s => (parseInt(s.grade, 10) || 0) + (parseInt(s.attendance, 10) || 0));
+            const totalSum = totalGrades.reduce((sum, grade) => sum + grade, 0);
+            const average = (totalSum / totalGrades.length).toFixed(1);
+            const highest = Math.max(...totalGrades);
+            
+            const passedStudents = totalGrades.filter(grade => grade >= 24).length; // Grade 24 is passing (60% of 40)
+            const passedPercentage = ((passedStudents / gradedStudents.length) * 100).toFixed(0);
+
+            document.getElementById('average-grade').textContent = average;
+            document.getElementById('highest-grade').textContent = highest;
+            document.getElementById('passed-students').textContent = `${passedStudents} (${passedPercentage}%)`;
         }
     } catch (error) {
         console.error('Error fetching stats:', error);
@@ -409,13 +652,11 @@ document.addEventListener('DOMContentLoaded', async () => {
 });
 
 async function findMyGrades() {
-    // This function is unchanged
     const studentIdInput = document.getElementById('studentId').value.trim();
     const loader = document.getElementById('loader');
     const resultArea = document.getElementById('result-area');
     const errorMessage = document.getElementById('error-message');
-    const departmentRow = document.getElementById('department-row');
-
+    
     resultArea.style.display = 'none';
     errorMessage.style.display = 'none';
 
@@ -439,17 +680,31 @@ async function findMyGrades() {
         loader.style.display = 'none';
 
         if (foundStudent) {
-            document.getElementById('studentName').textContent = `أهلاً بك، ${foundStudent.name || 'طالب'}`;
+            const grade = parseInt(foundStudent.grade, 10) || 0;
+            const attendance = parseInt(foundStudent.attendance, 10) || 0;
+            const totalGrade = grade + attendance;
+            const gradePercentage = ((totalGrade / 40) * 100).toFixed(0);
+            
+            document.getElementById('studentName').textContent = foundStudent.name || 'طالب';
             document.getElementById('studentCourse').textContent = foundStudent.course || 'غير محدد';
-            document.getElementById('studentGrade').textContent = foundStudent.grade || 'لم ترصد بعد';
-            document.getElementById('studentAttendance').textContent = foundStudent.attendance || 'لا توجد بيانات';
+            document.getElementById('studentGrade').textContent = `${foundStudent.grade || 'لم ترصد بعد'} (من 30)`;
+            document.getElementById('studentAttendance').textContent = `${foundStudent.attendance || 'لا توجد بيانات'} (من 10)`;
 
+            const departmentRow = document.getElementById('department-row');
             if(foundStudent.department) {
                 document.getElementById('studentDepartment').textContent = foundStudent.department;
-                departmentRow.style.display = 'block';
+                departmentRow.style.display = 'flex';
             } else {
                 departmentRow.style.display = 'none';
             }
+
+            document.getElementById('studentTotalGrade').textContent = `${totalGrade} (${getGradeCategory(totalGrade)})`;
+            document.getElementById('total-grade-row').style.display = 'flex';
+            
+            const progressFill = document.getElementById('grade-progress-fill');
+            progressFill.style.width = `${gradePercentage}%`;
+            progressFill.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue(`--${getGradeClass(totalGrade)}`).trim();
+            document.getElementById('grade-percentage').textContent = `${gradePercentage}%`;
 
             resultArea.style.display = 'block';
         } else {
@@ -465,4 +720,4 @@ async function findMyGrades() {
 </script>
 
 </body>
-</html>```
+</html>
