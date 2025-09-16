@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>بوابة الطالب - عرض الدرجات</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
     :root {
       --main-color: #0a9396;
@@ -389,6 +390,13 @@
         font-weight: bold;
     }
 
+    .chart-container {
+        position: relative;
+        height: 200px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
   </style>
 </head>
 <body>
@@ -454,6 +462,9 @@
                     <span id="grade-percentage"></span>
                 </div>
             </div>
+            <div class="chart-container">
+                <canvas id="gradeChart"></canvas>
+            </div>
         </div>
     </div>
   </div>
@@ -487,6 +498,7 @@
 <script>
 const modal = document.getElementById('graded-list-modal');
 let allStudentsData = [];
+let gradeChart = null;
 
 async function showGradedStudentsList() {
     const listUl = document.getElementById('graded-students-ul');
@@ -718,6 +730,9 @@ async function findMyGrades() {
             progressFill.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue(`--${getGradeClass(totalGrade)}`).trim();
             document.getElementById('grade-percentage').textContent = `${gradePercentage}%`;
 
+            // Update the chart
+            updateGradeChart(grade, attendance);
+
             resultArea.style.display = 'block';
         } else {
             errorMessage.textContent = 'لم يتم العثور على طالب بهذا الرقم.';
@@ -728,6 +743,57 @@ async function findMyGrades() {
         errorMessage.textContent = error.message;
         console.error('Error fetching grades:', error);
     }
+}
+
+function updateGradeChart(grade, attendance) {
+    const ctx = document.getElementById('gradeChart').getContext('2d');
+    if (gradeChart) {
+        gradeChart.destroy();
+    }
+    gradeChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['درجة التكليف', 'الحضور', 'الدرجة المتبقية'],
+            datasets: [{
+                data: [grade, attendance, 40 - (grade + attendance)],
+                backgroundColor: [
+                    '#0a9396',
+                    '#005f73',
+                    '#ccc'
+                ],
+                hoverOffset: 4
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            cutout: '60%',
+            plugins: {
+                legend: {
+                    position: 'bottom',
+                    labels: {
+                        font: {
+                            family: 'Segoe UI'
+                        }
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed !== null) {
+                                label += context.parsed + ' نقطة';
+                            }
+                            return label;
+                        }
+                    }
+                }
+            }
+        }
+    });
 }
 </script>
 
