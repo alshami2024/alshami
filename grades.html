@@ -397,6 +397,34 @@
         margin-top: 20px;
     }
 
+    /* New Alerts Section */
+    .alert-card {
+        background-color: #fff3cd; /* Yellow for alerts */
+        color: #856404;
+        padding: 15px;
+        border-radius: 8px;
+        border-right: 5px solid #ffc107;
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+        text-align: right;
+        font-weight: bold;
+        animation: fadeIn 0.8s;
+    }
+    .alert-card.success {
+        background-color: #d4edda;
+        color: #155724;
+        border-color: #28a745;
+    }
+    .alert-card.warning {
+        background-color: #fff3cd;
+        color: #856404;
+        border-color: #ffc107;
+    }
+    .alert-card i {
+        font-size: 1.5em;
+        margin-left: 15px;
+    }
   </style>
 </head>
 <body>
@@ -465,6 +493,7 @@
             <div class="chart-container">
                 <canvas id="gradeChart"></canvas>
             </div>
+            <div id="alert-message-box"></div>
         </div>
     </div>
   </div>
@@ -732,6 +761,9 @@ async function findMyGrades() {
 
             // Update the chart
             updateGradeChart(grade, attendance);
+            
+            // Show alert message
+            showAlertMessage(totalGrade);
 
             resultArea.style.display = 'block';
         } else {
@@ -750,12 +782,13 @@ function updateGradeChart(grade, attendance) {
     if (gradeChart) {
         gradeChart.destroy();
     }
+    const remainingGrade = Math.max(0, 40 - (grade + attendance));
     gradeChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
             labels: ['الدرجة', 'الحضور', 'الدرجة المتبقية'],
             datasets: [{
-                data: [grade, attendance, 40 - (grade + attendance)],
+                data: [grade, attendance, remainingGrade],
                 backgroundColor: [
                     '#0a9396',
                     '#005f73',
@@ -794,6 +827,34 @@ function updateGradeChart(grade, attendance) {
             }
         }
     });
+}
+
+function showAlertMessage(totalGrade) {
+    const alertBox = document.getElementById('alert-message-box');
+    let message = '';
+    let icon = '';
+    let className = '';
+
+    if (totalGrade >= 36) {
+        message = '🎉 تهانينا! لقد حققت درجة ممتازة. عمل رائع!';
+        icon = 'fas fa-trophy';
+        className = 'success';
+    } else if (totalGrade >= 24) {
+        message = '👏🏻 لقد نجحت في المقرر. استمر في العمل الجيد.';
+        icon = 'fas fa-check-circle';
+        className = 'success';
+    } else {
+        message = '⚠️ لم تنجح في المقرر. يمكنك التواصل مع الأستاذ لمعرفة فرص التحسين.';
+        icon = 'fas fa-exclamation-triangle';
+        className = 'warning';
+    }
+    
+    alertBox.innerHTML = `
+        <div class="alert-card ${className}">
+            <i class="${icon}"></i>
+            <span>${message}</span>
+        </div>
+    `;
 }
 </script>
 
