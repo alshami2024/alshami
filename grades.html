@@ -432,7 +432,7 @@
                 <i class="fas fa-university"></i><strong>القسم:</strong> <span id="studentDepartment"></span>
             </div>
             <div class="info-item">
-                <i class="fas fa-star"></i><strong>الدرجة</strong> <span id="studentGrade"></span>
+                <i class="fas fa-star"></i><strong>درجة التكليف:</strong> <span id="studentGrade"></span>
             </div>
             <div class="info-item">
                 <i class="fas fa-calendar-check"></i><strong>الحضور:</strong> <span id="studentAttendance"></span>
@@ -470,6 +470,10 @@
               <option value="grade_desc">الدرجة (من الأعلى للأدنى)</option>
               <option value="grade_asc">الدرجة (من الأدنى للأعلى)</option>
           </select>
+          <label for="course-select" style="margin-right: 15px; margin-left: 10px;">عرض المادة:</label>
+          <select id="course-select" onchange="filterAndSortStudents()">
+              <option value="all">الكل</option>
+          </select>
       </div>
       <div id="modal-loader" style="display: none;"><div class="loader"></div></div>
       <ul id="graded-students-ul"></ul>
@@ -493,6 +497,7 @@ async function showGradedStudentsList() {
     listUl.innerHTML = '';
 
     if (allStudentsData.length > 0) {
+        populateCourseSelect();
         filterAndSortStudents();
         modalLoader.style.display = 'none';
         return;
@@ -515,6 +520,7 @@ async function showGradedStudentsList() {
             return;
         }
         
+        populateCourseSelect();
         filterAndSortStudents();
         modalLoader.style.display = 'none';
 
@@ -525,54 +531,60 @@ async function showGradedStudentsList() {
 }
 
 function renderStudentsList(studentsToRender) {
+    const courseSelectValue = document.getElementById('course-select').value;
     const listUl = document.getElementById('graded-students-ul');
     listUl.innerHTML = '';
-
-    const groupedByCourse = studentsToRender.reduce((acc, student) => {
-        const course = student.course || 'مادة غير محددة';
-        if (!acc[course]) {
-            acc[course] = [];
-        }
-        acc[course].push(student);
-        return acc;
-    }, {});
-
-    for (const course in groupedByCourse) {
+    
+    if (courseSelectValue !== 'all' && studentsToRender.length > 0) {
         const courseHeader = document.createElement('li');
         courseHeader.className = 'course-header';
-        
-        const studentCount = groupedByCourse[course].length; 
-
+        const studentCount = studentsToRender.length;
         courseHeader.innerHTML = `
-            <span>${course}</span>
+            <span>${courseSelectValue}</span>
             <span class="student-count-badge">العدد: ${studentCount}</span>
         `;
         listUl.appendChild(courseHeader);
-
-        groupedByCourse[course].forEach(student => {
-            const grade = parseInt(student.grade, 10) || 0;
-            const attendance = parseInt(student.attendance, 10) || 0;
-            const totalGrade = grade + attendance;
-            const gradeClass = getGradeClass(totalGrade);
-            const studentLi = document.createElement('li');
-            studentLi.className = 'student-list-item';
-            studentLi.innerHTML = `
-                <span>${student.name}</span>
-                <span class="student-grade-in-list ${gradeClass}">${totalGrade}</span>
-            `;
-            listUl.appendChild(studentLi);
-        });
     }
+    
+    studentsToRender.forEach(student => {
+        const grade = parseInt(student.grade, 10) || 0;
+        const attendance = parseInt(student.attendance, 10) || 0;
+        const totalGrade = grade + attendance;
+        const gradeClass = getGradeClass(totalGrade);
+        const studentLi = document.createElement('li');
+        studentLi.className = 'student-list-item';
+        studentLi.innerHTML = `
+            <span>${student.name}</span>
+            <span class="student-grade-in-list ${gradeClass}">${totalGrade}</span>
+        `;
+        listUl.appendChild(studentLi);
+    });
 }
+
+function populateCourseSelect() {
+    const courseSelect = document.getElementById('course-select');
+    courseSelect.innerHTML = '<option value="all">الكل</option>';
+    const courses = [...new Set(allStudentsData.map(student => student.course))].filter(Boolean).sort();
+    courses.forEach(course => {
+        const option = document.createElement('option');
+        option.value = course;
+        option.textContent = course;
+        courseSelect.appendChild(option);
+    });
+}
+
 
 function filterAndSortStudents() {
     const searchInput = document.getElementById('search-input').value.toLowerCase();
     const sortValue = document.getElementById('sort-select').value;
+    const courseSelectValue = document.getElementById('course-select').value;
     
-    let filteredStudents = allStudentsData.filter(student => 
-        (student.name && student.name.toLowerCase().includes(searchInput)) || 
-        (student.id && student.id.toLowerCase().includes(searchInput))
-    );
+    let filteredStudents = allStudentsData.filter(student => {
+        const matchesSearch = (student.name && student.name.toLowerCase().includes(searchInput)) || 
+                            (student.id && student.id.toLowerCase().includes(searchInput));
+        const matchesCourse = courseSelectValue === 'all' || student.course === courseSelectValue;
+        return matchesSearch && matchesCourse;
+    });
 
     if (sortValue === 'name') {
         filteredStudents.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
