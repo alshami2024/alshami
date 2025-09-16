@@ -19,6 +19,17 @@
       --fail-color: #dc3545;
     }
 
+    /* Dark Mode Variables */
+    body.dark-mode {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --card-bg: #1e1e1e;
+      --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      --main-color: #48bfe3;
+      --accent-color: #0a9396;
+      --secondary-accent-color: #00b4d8;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: var(--bg-color);
@@ -31,6 +42,7 @@
       min-height: 100vh;
       flex-direction: column;
       overflow-x: hidden;
+      transition: background-color 0.3s, color 0.3s;
     }
 
     .container {
@@ -47,7 +59,7 @@
 
     /* New Dashboard Section */
     #dashboard-stats {
-      background: linear-gradient(135deg, #e0f2f1, #c8e6c9);
+      background: linear-gradient(135deg, var(--bg-color), var(--card-bg));
       border-right: 5px solid var(--success-color);
       color: var(--accent-color);
       padding: 20px;
@@ -76,6 +88,9 @@
         text-align: center;
         box-shadow: 0 2px 5px rgba(0,0,0,0.05);
     }
+    body.dark-mode .stat-item {
+      background-color: rgba(255,255,255,0.05);
+    }
     .stat-item .stat-value {
         font-size: 1.5em;
         color: var(--accent-color);
@@ -84,7 +99,7 @@
     }
     .stat-item .stat-label {
         font-size: 0.8em;
-        color: #666;
+        color: var(--text-color);
     }
 
     .search-box {
@@ -105,6 +120,11 @@
       box-sizing: border-box;
       text-align: center;
       transition: border-color 0.3s;
+    }
+    body.dark-mode input[type="text"] {
+        background-color: #333;
+        color: #e0e0e0;
+        border-color: #555;
     }
     input[type="text"]:focus {
         border-color: var(--main-color);
@@ -163,6 +183,9 @@
       animation: slideInRight 0.5s ease-out forwards;
       opacity: 0;
     }
+    body.dark-mode .student-card .info-item {
+      background-color: #2a2a2a;
+    }
     .student-card .info-item:nth-child(2) { animation-delay: 0.1s; }
     .student-card .info-item:nth-child(3) { animation-delay: 0.2s; }
     .student-card .info-item:nth-child(4) { animation-delay: 0.3s; }
@@ -192,6 +215,9 @@
         justify-content: space-between;
         align-items: center;
     }
+    body.dark-mode #total-grade-row {
+        border-top-color: #333;
+    }
 
     #studentTotalGrade {
         font-size: 1.5em;
@@ -205,6 +231,9 @@
         height: 10px;
         margin-top: 10px;
         overflow: hidden;
+    }
+    body.dark-mode .progress-bar {
+        background-color: #3a3a3a;
     }
     .progress-fill {
         height: 100%;
@@ -233,6 +262,10 @@
       animation: spin 1s linear infinite;
       margin: 0 auto;
     }
+    body.dark-mode .loader {
+        border-color: #333;
+        border-top-color: var(--main-color);
+    }
 
     @keyframes spin {
       0% { transform: rotate(0deg); }
@@ -244,6 +277,9 @@
         font-size: 14px;
         color: #666;
         text-align: center;
+    }
+    body.dark-mode .footer {
+        color: #aaa;
     }
     
     /* --- Modal Styles --- */
@@ -261,7 +297,7 @@
     }
     
     .modal-content {
-        background-color: #fefefe;
+        background-color: var(--card-bg);
         margin: 5% auto;
         padding: 25px;
         border-radius: 12px;
@@ -306,6 +342,11 @@
       text-align: right;
       transition: border-color 0.3s;
     }
+    body.dark-mode .search-modal-input {
+        background-color: #333;
+        color: #e0e0e0;
+        border-color: #555;
+    }
     .search-modal-input:focus {
         outline: none;
         border-color: var(--main-color);
@@ -316,16 +357,23 @@
         align-items: center;
         margin-bottom: 15px;
         justify-content: flex-end;
+        flex-wrap: wrap;
     }
     .sort-container label {
         margin-left: 10px;
-        color: #666;
+        color: var(--text-color);
     }
     .sort-container select {
         padding: 8px;
         border-radius: 6px;
         border: 1px solid #ccc;
         font-size: 14px;
+        background-color: var(--card-bg);
+        color: var(--text-color);
+    }
+    body.dark-mode .sort-container select {
+        background-color: #333;
+        border-color: #555;
     }
 
     #graded-students-ul {
@@ -347,6 +395,11 @@
         justify-content: space-between;
         align-items: center;
         transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+    }
+    body.dark-mode .student-list-item {
+        background-color: #2a2a2a;
+        color: #e0e0e0;
+        border-right-color: var(--secondary-accent-color);
     }
     .student-list-item:hover {
         transform: translateX(5px);
@@ -425,9 +478,45 @@
         font-size: 1.5em;
         margin-left: 15px;
     }
+
+    /* Dark mode toggle button */
+    #darkModeToggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background: var(--card-bg);
+      color: var(--text-color);
+      border: 1px solid var(--text-color);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      font-size: 1.2em;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: all 0.3s;
+    }
+    #darkModeToggle:hover {
+      transform: scale(1.1);
+    }
+    
+    /* New Modal for Student Details */
+    #student-details-modal .info-item {
+        background-color: var(--bg-color);
+        border-right: 4px solid var(--main-color);
+    }
+    body.dark-mode #student-details-modal .info-item {
+      background-color: #333;
+    }
+    #student-details-modal #studentTotalGrade {
+        color: var(--main-color);
+    }
+
   </style>
 </head>
 <body>
+  <button id="darkModeToggle" onclick="toggleDarkMode()">
+      <i class="fas fa-moon"></i>
+  </button>
 
   <div class="container">
     <h1>🎓 بوابة الطالب</h1>
@@ -446,6 +535,9 @@
                 <div id="passed-students" class="stat-value">--</div>
                 <div class="stat-label">الطلاب الناجحون</div>
             </div>
+        </div>
+        <div class="chart-container">
+            <canvas id="gradeDistributionChart"></canvas>
         </div>
     </div>
     
@@ -468,7 +560,7 @@
                 <i class="fas fa-university"></i><strong>القسم:</strong> <span id="studentDepartment"></span>
             </div>
             <div class="info-item">
-                <i class="fas fa-star"></i><strong>الدرجة:</strong> <span id="studentGrade"></span>
+                <i class="fas fa-star"></i><strong>درجة التكليف:</strong> <span id="studentGrade"></span>
             </div>
             <div class="info-item">
                 <i class="fas fa-calendar-check"></i><strong>الحضور:</strong> <span id="studentAttendance"></span>
@@ -519,21 +611,54 @@
       <ul id="graded-students-ul"></ul>
     </div>
   </div>
+
+  <div id="student-details-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeDetailsModal()">×</span>
+        <h2><i class="fas fa-user-circle"></i> بيانات الطالب</h2>
+        <div class="info-item">
+            <i class="fas fa-user-tag"></i><strong>الاسم:</strong> <span id="modal-student-name"></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-id-card"></i><strong>الرقم الجامعي:</strong> <span id="modal-student-id"></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-book-open"></i><strong>المقرر:</strong> <span id="modal-student-course"></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-star"></i><strong>الدرجة:</strong> <span id="modal-student-grade"></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-calendar-check"></i><strong>الحضور:</strong> <span id="modal-student-attendance"></span>
+        </div>
+        <div id="total-grade-row" style="display: flex;">
+            <div style="display: flex; align-items: center;">
+                <i class="fas fa-award" style="font-size: 1.5em; margin-left: 10px;"></i>
+                <strong>المجموع الكلي:</strong>
+            </div>
+            <div style="text-align: left;">
+                <span id="modal-student-total-grade"></span>
+            </div>
+        </div>
+    </div>
+  </div>
   
   <div class="footer">
       <p><span>Jamal-Alshami © 2025</span></p>
   </div>
 
 <script>
-const modal = document.getElementById('graded-list-modal');
+const gradedListModal = document.getElementById('graded-list-modal');
+const studentDetailsModal = document.getElementById('student-details-modal');
 let allStudentsData = [];
 let gradeChart = null;
+let gradeDistributionChart = null;
 
 async function showGradedStudentsList() {
     const listUl = document.getElementById('graded-students-ul');
     const modalLoader = document.getElementById('modal-loader');
     
-    modal.style.display = 'block';
+    gradedListModal.style.display = 'block';
     modalLoader.style.display = 'block';
     listUl.innerHTML = '';
 
@@ -592,14 +717,33 @@ function renderStudentsList(studentsToRender) {
         const attendance = parseInt(student.attendance, 10) || 0;
         const totalGrade = grade + attendance;
         const gradeClass = getGradeClass(totalGrade);
+        const statusIcon = totalGrade >= 24 ? '✅' : '❌';
         const studentLi = document.createElement('li');
         studentLi.className = 'student-list-item';
         studentLi.innerHTML = `
-            <span>${student.name}</span>
+            <span>${statusIcon} ${student.name}</span>
             <span class="student-grade-in-list ${gradeClass}">${totalGrade}</span>
         `;
+        studentLi.onclick = () => showStudentDetails(student);
         listUl.appendChild(studentLi);
     });
+}
+
+function showStudentDetails(student) {
+    document.getElementById('modal-student-name').textContent = student.name;
+    document.getElementById('modal-student-id').textContent = student.id;
+    document.getElementById('modal-student-course').textContent = student.course;
+    document.getElementById('modal-student-grade').textContent = `${student.grade || 'لم ترصد بعد'} (من 30)`;
+    document.getElementById('modal-student-attendance').textContent = `${student.attendance || 'لا توجد بيانات'} (من 10)`;
+    
+    const totalGrade = (parseInt(student.grade, 10) || 0) + (parseInt(student.attendance, 10) || 0);
+    document.getElementById('modal-student-total-grade').textContent = `${totalGrade} (${getGradeCategory(totalGrade)})`;
+
+    studentDetailsModal.style.display = 'block';
+}
+
+function closeDetailsModal() {
+    studentDetailsModal.style.display = 'none';
 }
 
 function populateCourseSelect() {
@@ -666,12 +810,13 @@ function getGradeCategory(totalGrade) {
 
 
 function closeModal() {
-    modal.style.display = 'none';
+    gradedListModal.style.display = 'none';
     document.getElementById('search-input').value = '';
 }
 
 window.onclick = function(event) {
-    if (event.target == modal) closeModal();
+    if (event.target == gradedListModal) closeModal();
+    if (event.target == studentDetailsModal) closeDetailsModal();
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
@@ -698,6 +843,9 @@ document.addEventListener('DOMContentLoaded', async () => {
             document.getElementById('average-grade').textContent = average;
             document.getElementById('highest-grade').textContent = highest;
             document.getElementById('passed-students').textContent = `${passedStudents} (${passedPercentage}%)`;
+            
+            // Update grade distribution chart
+            updateGradeDistributionChart(totalGrades);
         }
     } catch (error) {
         console.error('Error fetching stats:', error);
@@ -855,6 +1003,90 @@ function showAlertMessage(totalGrade) {
             <span>${message}</span>
         </div>
     `;
+}
+
+function updateGradeDistributionChart(grades) {
+    const excellent = grades.filter(g => g >= 36).length;
+    const veryGood = grades.filter(g => g >= 32 && g < 36).length;
+    const good = grades.filter(g => g >= 28 && g < 32).length;
+    const acceptable = grades.filter(g => g >= 24 && g < 28).length;
+    const failed = grades.filter(g => g < 24).length;
+
+    const ctx = document.getElementById('gradeDistributionChart').getContext('2d');
+    if (gradeDistributionChart) {
+        gradeDistributionChart.destroy();
+    }
+    gradeDistributionChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['ممتاز', 'جيد جداً', 'جيد', 'مقبول', 'راسب'],
+            datasets: [{
+                label: 'عدد الطلاب',
+                data: [excellent, veryGood, good, acceptable, failed],
+                backgroundColor: [
+                    '#28a745',
+                    '#17a2b8',
+                    '#0a9396',
+                    '#ffc107',
+                    '#dc3545'
+                ],
+                borderColor: [
+                    '#28a745',
+                    '#17a2b8',
+                    '#0a9396',
+                    '#ffc107',
+                    '#dc3545'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        color: getComputedStyle(document.documentElement).getPropertyValue('--text-color'),
+                        stepSize: 1
+                    }
+                },
+                x: {
+                    ticks: {
+                        color: getComputedStyle(document.documentElement).getPropertyValue('--text-color')
+                    }
+                }
+            },
+            plugins: {
+                legend: {
+                    display: false
+                }
+            }
+        }
+    });
+}
+
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    const isDarkMode = document.body.classList.contains('dark-mode');
+    const toggleBtn = document.getElementById('darkModeToggle');
+    if (isDarkMode) {
+        toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+    } else {
+        toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+    
+    // Update charts to match the new color scheme
+    if (gradeChart) {
+        gradeChart.options.scales.y.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+        gradeChart.options.scales.x.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+        gradeChart.update();
+    }
+    if (gradeDistributionChart) {
+        gradeDistributionChart.options.scales.y.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+        gradeDistributionChart.options.scales.x.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+        gradeDistributionChart.update();
+    }
 }
 </script>
 
