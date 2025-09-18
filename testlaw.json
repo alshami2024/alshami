@@ -9754,5 +9754,137 @@
         "correctAnswer": "صح."
       }
     ]
+  },
+  {
+    "studentName": "يسرى عباس محمد الملحاني",
+    "submissionDate": "2025-09-18T06:22:04.983Z",
+    "mcqScore": {
+      "correct": 14,
+      "total": 20
+    },
+    "tabSwitchCount": 9,
+    "examTitle": "العقيدة (1)",
+    "answers": [
+      {
+        "question": "معنى التوحيد في اصطلاح المتكلمين:",
+        "answer": "نفي الشريك عن الله في الذات والصفات والأفعال والعبادة.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العلم الضروري هو:",
+        "answer": "العلم الذي لا يحتاج إلى دليل أو استدلال.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الكلام الإلهي حادث مخلوق، ولا يصح القول بقدمه لأنه مركب من أصوات وأعراض",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "التسلسل في العلل ممكن عقلاً ولا يبطل برهان الحدوث",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من لوازم وحدانية الله تعالى:",
+        "answer": "تعدد الصفات الإلهية.",
+        "isCorrect": false,
+        "correctAnswer": "الانفراد بالخلق والتدبير."
+      },
+      {
+        "question": "\"المعاد\" في العقيدة الإسلامية هو:",
+        "answer": "رجوع العباد إلى الله يوم القيامة للبعث والحساب.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العقل أصلٌ في إثبات السمع، ولا يُحتج بالنقل إلا بعد إثبات صدق النبي",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الله تعالى مريد للطاعات كاره للمعاصي، تنزيهاً له عن إرادة القبيح",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الفطرة وحدها تكفي لمعرفة الله، ولا حاجة للنظر العقلي",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "عند الزيدية والمعتزلة، العلم الإلهي هو:",
+        "answer": "عين الذات، وليس شيئاً مستقلاً عنها.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "\"كل حادث له محدث\" يدل على:",
+        "answer": "برهان المعاد.",
+        "isCorrect": false,
+        "correctAnswer": "برهان الحدوث."
+      },
+      {
+        "question": "السمع والبصر في حق الله يعنيان:",
+        "answer": "أنه عالم بالمسموعات والمبصرات من غير حواس.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الدليل العقلي على استحالة تعدد الآلهة هو:",
+        "answer": "أن القرآن ذكر وحدانية الله فقط.",
+        "isCorrect": false,
+        "correctAnswer": "أن التعدد يستلزم الاختلاف والافتقار، وهذا محال على الإله."
+      },
+      {
+        "question": "معنى \"واجب الوجود\":",
+        "answer": "الموجود الذي لا يحتاج إلى غيره ولا يقبل العدم.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إرادة الله تشمل الطاعات والمعاصي على السواء عند جميع الفرق",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "التقليد يورث اليقين في العقيدة مثل النظر العقلي",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "لا يصح القول بأن الله يشبه المخلوقات أو تحلّ فيه الحوادث",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "معنى \"التأويل\" في علم التوحيد:",
+        "answer": "حمل اللفظ على معنى يحتمله لغة عند قيام دليل عقلي قاطع.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الاختلاف بين الناس في نتائج النظر سببه الخلل في ترتيب المقدمات أو ضعف الاستدلال",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "نعمة الله على العبد دليل على لطفه وعلمه وقدرته",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
