@@ -560,7 +560,7 @@
                 <i class="fas fa-university"></i><strong>القسم:</strong> <span id="studentDepartment"></span>
             </div>
             <div class="info-item">
-                <i class="fas fa-star"></i><strong>درجة التكليف:</strong> <span id="studentGrade"></span>
+                <i class="fas fa-star"></i><strong>الدرجة:</strong> <span id="studentGrade"></span>
             </div>
             <div class="info-item">
                 <i class="fas fa-calendar-check"></i><strong>الحضور:</strong> <span id="studentAttendance"></span>
@@ -792,10 +792,9 @@ function filterAndSortStudents() {
 
 function getGradeClass(totalGrade) {
     if (isNaN(totalGrade)) return '';
-
-    if (totalGrade >= 36) return 'grade-high';
-    if (totalGrade >= 28) return 'grade-medium';
-    return 'grade-low';
+    if (totalGrade >= 28) return 'grade-high'; 
+    if (totalGrade >= 20) return 'grade-medium'; 
+    return 'grade-low'; 
 }
 
 function getGradeCategory(totalGrade) {
@@ -804,8 +803,8 @@ function getGradeCategory(totalGrade) {
     if (totalGrade >= 36) return 'ممتاز';
     if (totalGrade >= 32) return 'جيد جداً';
     if (totalGrade >= 28) return 'جيد';
-    if (totalGrade >= 24) return 'مقبول';
-    return 'راسب';
+    if (totalGrade >= 20) return 'مقبول'; 
+    return 'راسب'; 
 }
 
 
@@ -837,14 +836,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             const average = (totalSum / totalGrades.length).toFixed(1);
             const highest = Math.max(...totalGrades);
             
-            const passedStudents = totalGrades.filter(grade => grade >= 24).length; // Grade 24 is passing (60% of 40)
+            const passedStudents = totalGrades.filter(grade => grade >= 20).length; 
             const passedPercentage = ((passedStudents / gradedStudents.length) * 100).toFixed(0);
 
             document.getElementById('average-grade').textContent = average;
             document.getElementById('highest-grade').textContent = highest;
             document.getElementById('passed-students').textContent = `${passedStudents} (${passedPercentage}%)`;
             
-            // Update grade distribution chart
+            
             updateGradeDistributionChart(totalGrades);
         }
     } catch (error) {
@@ -907,10 +906,10 @@ async function findMyGrades() {
             progressFill.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue(`--${getGradeClass(totalGrade)}`).trim();
             document.getElementById('grade-percentage').textContent = `${gradePercentage}%`;
 
-            // Update the chart
+            
             updateGradeChart(grade, attendance);
             
-            // Show alert message
+            
             showAlertMessage(totalGrade);
 
             resultArea.style.display = 'block';
@@ -976,7 +975,6 @@ function updateGradeChart(grade, attendance) {
         }
     });
 }
-
 function showAlertMessage(totalGrade) {
     const alertBox = document.getElementById('alert-message-box');
     let message = '';
@@ -987,7 +985,7 @@ function showAlertMessage(totalGrade) {
         message = '🎉 تهانينا! لقد حققت درجة ممتازة. عمل رائع!';
         icon = 'fas fa-trophy';
         className = 'success';
-    } else if (totalGrade >= 24) {
+    } else if (totalGrade >= 20) { 
         message = '👏🏻 لقد نجحت في المقرر. استمر في العمل الجيد.';
         icon = 'fas fa-check-circle';
         className = 'success';
@@ -996,21 +994,14 @@ function showAlertMessage(totalGrade) {
         icon = 'fas fa-exclamation-triangle';
         className = 'warning';
     }
-    
-    alertBox.innerHTML = `
-        <div class="alert-card ${className}">
-            <i class="${icon}"></i>
-            <span>${message}</span>
-        </div>
-    `;
 }
 
 function updateGradeDistributionChart(grades) {
     const excellent = grades.filter(g => g >= 36).length;
     const veryGood = grades.filter(g => g >= 32 && g < 36).length;
     const good = grades.filter(g => g >= 28 && g < 32).length;
-    const acceptable = grades.filter(g => g >= 24 && g < 28).length;
-    const failed = grades.filter(g => g < 24).length;
+    const acceptable = grades.filter(g => g >= 20 && g < 28).length; 
+    const failed = grades.filter(g => g < 20).length;
 
     const ctx = document.getElementById('gradeDistributionChart').getContext('2d');
     if (gradeDistributionChart) {
@@ -1076,7 +1067,6 @@ function toggleDarkMode() {
         toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
     }
     
-    // Update charts to match the new color scheme
     if (gradeChart) {
         gradeChart.options.scales.y.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
         gradeChart.options.scales.x.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
