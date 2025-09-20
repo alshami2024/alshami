@@ -717,7 +717,7 @@ function renderStudentsList(studentsToRender) {
         const attendance = parseInt(student.attendance, 10) || 0;
         const totalGrade = grade + attendance;
         const gradeClass = getGradeClass(totalGrade);
-        const statusIcon = totalGrade >= 24 ? '✅' : '❌';
+        const statusIcon = totalGrade >= 20 ? '✅' : '❌';
         const studentLi = document.createElement('li');
         studentLi.className = 'student-list-item';
         studentLi.innerHTML = `
