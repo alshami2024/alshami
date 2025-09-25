@@ -2304,5 +2304,77 @@
         "correctAnswer": "نائب فاعل"
       }
     ]
+  },
+  {
+    "studentName": "مستورة أمين عبد الرحيم",
+    "submissionDate": "2025-09-25T16:55:56.026Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "tabSwitchCount": 1,
+    "examTitle": "تكليف (تدريبات النحو رقم 5) ",
+    "answers": [
+      {
+        "question": "ما ملوم أخوك على نزاهته\n\nإعراب كلمة (أخوك)",
+        "answer": "فاعل سد مسد الخبر",
+        "isCorrect": false,
+        "correctAnswer": "نائب فاعل سد مسد الخبر"
+      },
+      {
+        "question": "الجملة التي اشتملت على صفة مشبهة هي:",
+        "answer": "لا تصاحب حسودا نعمة غيره",
+        "isCorrect": false,
+        "correctAnswer": "الفائز فرحٌ قلبه"
+      },
+      {
+        "question": "تعلمت العلم على يد عالم فطن عقله. \n\nصيغة المبالغة في الجملة هي",
+        "answer": "فطن",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الصناعة اليابانية معلومة جودتها. \n\nاشتملت الجملة السابقة على",
+        "answer": "اسم مفعول",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الكلمات التالية من صيغ المبالغة عدا",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "شجاع"
+      },
+      {
+        "question": "الله سميعٌ عباده. \n\nاشتملت الجملة السابقة على",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صيغة مبالغة"
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم فاعل غير عامل هي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "كان محمدٌ زائر المريض البارحة"
+      },
+      {
+        "question": "الخيل معقود في نواصيها الخير إلى يوم القيامة. \n\nإعراب كلمة (الخير)",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "نائب فاعل"
+      },
+      {
+        "question": "طلب الراكب من سائق السيارة أن يسرع حتى لا يدركه المبيت خارج منزله. \n\nاسم المفعول في الجملة السابقة هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "المبيت"
+      },
+      {
+        "question": "اسم الفاعل يشتق من الفعل الثلاثي اللازم",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      }
+    ]
   }
 ]
