@@ -2448,5 +2448,77 @@
         "correctAnswer": "نائب فاعل"
       }
     ]
+  },
+  {
+    "studentName": "مستورة أمين عبد الرحيم",
+    "submissionDate": "2025-09-25T16:59:15.273Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 10
+    },
+    "tabSwitchCount": 1,
+    "examTitle": "تكليف (تدريبات النحو رقم 5) ",
+    "answers": [
+      {
+        "question": "الجملة التي اشتملت على اسم فاعل غير عامل هي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "كان محمدٌ زائر المريض البارحة"
+      },
+      {
+        "question": "الصناعة اليابانية معلومة جودتها. \n\nاشتملت الجملة السابقة على",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "اسم مفعول"
+      },
+      {
+        "question": "ما ملوم أخوك على نزاهته\n\nإعراب كلمة (أخوك)",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "نائب فاعل سد مسد الخبر"
+      },
+      {
+        "question": "كل الكلمات التالية من صيغ المبالغة عدا",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "شجاع"
+      },
+      {
+        "question": "تعلمت العلم على يد عالم فطن عقله. \n\nصيغة المبالغة في الجملة هي",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "فطن"
+      },
+      {
+        "question": "اسم الفاعل يشتق من الفعل الثلاثي اللازم",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "طلب الراكب من سائق السيارة أن يسرع حتى لا يدركه المبيت خارج منزله. \n\nاسم المفعول في الجملة السابقة هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "المبيت"
+      },
+      {
+        "question": "الخيل معقود في نواصيها الخير إلى يوم القيامة. \n\nإعراب كلمة (الخير)",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "نائب فاعل"
+      },
+      {
+        "question": "الله سميعٌ عباده. \n\nاشتملت الجملة السابقة على",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صيغة مبالغة"
+      },
+      {
+        "question": "الجملة التي اشتملت على صفة مشبهة هي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "الفائز فرحٌ قلبه"
+      }
+    ]
   }
 ]
