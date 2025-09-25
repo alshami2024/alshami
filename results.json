@@ -2592,5 +2592,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "مستورة أمين عبد الرحيم",
+    "submissionDate": "2025-09-25T17:00:29.035Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تكليف (تدريبات النحو رقم 5) ",
+    "answers": [
+      {
+        "question": "كل الكلمات التالية من صيغ المبالغة عدا",
+        "answer": "فعال",
+        "isCorrect": false,
+        "correctAnswer": "شجاع"
+      },
+      {
+        "question": "طلب الراكب من سائق السيارة أن يسرع حتى لا يدركه المبيت خارج منزله. \n\nاسم المفعول في الجملة السابقة هو:",
+        "answer": "المبيت",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم فاعل غير عامل هي:",
+        "answer": "كان محمدٌ زائر المريض البارحة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الخيل معقود في نواصيها الخير إلى يوم القيامة. \n\nإعراب كلمة (الخير)",
+        "answer": "خبر مبتدأ",
+        "isCorrect": false,
+        "correctAnswer": "نائب فاعل"
+      },
+      {
+        "question": "ما ملوم أخوك على نزاهته\n\nإعراب كلمة (أخوك)",
+        "answer": "نائب فاعل سد مسد الخبر",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "اسم الفاعل يشتق من الفعل الثلاثي اللازم",
+        "answer": "صح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تعلمت العلم على يد عالم فطن عقله. \n\nصيغة المبالغة في الجملة هي",
+        "answer": "فطن",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الصناعة اليابانية معلومة جودتها. \n\nاشتملت الجملة السابقة على",
+        "answer": "اسم مفعول",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الله سميعٌ عباده. \n\nاشتملت الجملة السابقة على",
+        "answer": "صيغة مبالغة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على صفة مشبهة هي:",
+        "answer": "الفائز فرحٌ قلبه",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
