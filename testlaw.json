@@ -17290,5 +17290,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "٠",
+    "submissionDate": "2025-09-26T10:00:00.010Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تاريخ وفلسفة القانون",
+    "answers": [
+      {
+        "question": "ما هي إحدى مميزات عصر التدوين؟",
+        "answer": "إلغاء المحاكم الدينية أو الحد منها.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "في الرؤية الدينية، بدأت مرحلة الإمامة بنبي الله إبراهيم",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ما هي إحدى أهميات دراسة تاريخ القانون؟",
+        "answer": "تنمية الملكة القانونية لاستنباط الأحكام.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ما هي إحدى النتائج المترتبة على ظهور العرف؟\n",
+        "answer": "سرية القاعدة القانونية.",
+        "isCorrect": false,
+        "correctAnswer": "مرونة القاعدة القانونية."
+      },
+      {
+        "question": "القانون سابق لوجود الدولة",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لماذا يرى المذهب الوضعي (اللاعقلي) ضرورة الفصل بين القانون والأخلاق؟",
+        "answer": "لأن الأخلاق جزء من الفلسفة، بينما القانون علم مستقل.",
+        "isCorrect": false,
+        "correctAnswer": "لأن القانون يعتمد على الجزاء المادي، بينما الأخلاق تعتمد على الجزاء المعنوي."
+      },
+      {
+        "question": "من أول من أرشد إلى علم التاريخ",
+        "answer": "القرآن الكريم.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الهدف الأساسي للقانون هو تنظيم السلوك الاجتماعي",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "في الرؤية الدينية، ما هي المرحلة الأولى لنشأة القانون؟",
+        "answer": "مرحلة الفطرة.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "التدوين يعني نفس الشيء مثل التشريع",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
