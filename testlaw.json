@@ -1510,5 +1510,29 @@
         "correctAnswer": "أ. وجوب الفصل بين القانون والأخلاق."
       }
     ]
+  },
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-09-28T18:25:03.875Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 1
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "برمجة",
+    "answers": [
+      {
+        "question": "عىف",
+        "answer": "تتتخخح",
+        "isCorrect": null,
+        "correctAnswer": null
+      },
+      {
+        "question": "عرف البرمجة",
+        "answer": "ت",
+        "isCorrect": false,
+        "correctAnswer": "ن"
+      }
+    ]
   }
 ]
