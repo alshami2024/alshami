@@ -2808,5 +2808,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "ناصر عبدالله محمد الخطيب",
+    "submissionDate": "2025-09-28T18:26:59.346Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 9
+    },
+    "tabSwitchCount": 1,
+    "examTitle": "تدريبات نحو مرحلة المطور",
+    "answers": [
+      {
+        "question": "أريد أن تفهموا النحو\n\nاستخرج المفعول به للفعل (أريد)",
+        "answer": "فهم",
+        "isCorrect": null,
+        "correctAnswer": null
+      },
+      {
+        "question": "ظننت أن لا ينجح المهمل. \n\nالضبط الصحيح للفعل (ينجح)",
+        "answer": "جواز الرفع والنصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أطمع أن يغفر الله لي\n\nالضبط الصحيح لكلمة (يغفر)",
+        "answer": "النصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يسعدني أن تكون متميزا بين أقرانك. \n\nإعراب المصدر المؤول في الجملة السابقة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "فاعل"
+      },
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع مباشرة عدا",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "لام التعليل"
+      },
+      {
+        "question": "علمت أن سوف يتحسن الطقس. \n\nحكم (أن) في الجملة السابقة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "أحسب أن ستصل الرحلة في موعدها. \n\nحكم (أن) في الجملة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "الجملة المرسومة بصورة صحيحة هي...",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "المسلمون لن يتأخروا عن نجدة إخوانهم"
+      },
+      {
+        "question": "يبطل عمل (أن) مطلقا إذا كانت مسبوقة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "بالعلم"
+      },
+      {
+        "question": "يبطل عمل (أن) إذا كانت مسبوقة بما يفيد الظن أو شبهه في الحالة التالية",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "إذا كان الفاصل بينها وبين الفعل المضارع ب(قد والسين وسوف)"
+      }
+    ]
   }
 ]
