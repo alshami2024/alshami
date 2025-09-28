@@ -2736,5 +2736,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "محمد داود محمد امين",
+    "submissionDate": "2025-09-28T18:24:11.765Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 9
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات نحو مرحلة المطور",
+    "answers": [
+      {
+        "question": "أحسب أن ستصل الرحلة في موعدها. \n\nحكم (أن) في الجملة",
+        "answer": "يجوز إعمالها وإهمالها",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "الجملة المرسومة بصورة صحيحة هي...",
+        "answer": "المسلمون لن يتأخرو عن نجدة إخوانهم",
+        "isCorrect": false,
+        "correctAnswer": "المسلمون لن يتأخروا عن نجدة إخوانهم"
+      },
+      {
+        "question": "أريد أن تفهموا النحو\n\nاستخرج المفعول به للفعل (أريد)",
+        "answer": null,
+        "isCorrect": null,
+        "correctAnswer": null
+      },
+      {
+        "question": "ظننت أن لا ينجح المهمل. \n\nالضبط الصحيح للفعل (ينجح)",
+        "answer": "النصب",
+        "isCorrect": false,
+        "correctAnswer": "جواز الرفع والنصب"
+      },
+      {
+        "question": "يسعدني أن تكون متميزا بين أقرانك. \n\nإعراب المصدر المؤول في الجملة السابقة",
+        "answer": "مبتدأ",
+        "isCorrect": false,
+        "correctAnswer": "فاعل"
+      },
+      {
+        "question": "علمت أن سوف يتحسن الطقس. \n\nحكم (أن) في الجملة السابقة",
+        "answer": "عاملة تنصب الفعل المضارع",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "يبطل عمل (أن) مطلقا إذا كانت مسبوقة",
+        "answer": "بالعلم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أطمع أن يغفر الله لي\n\nالضبط الصحيح لكلمة (يغفر)",
+        "answer": "جواز الرفع والنصب",
+        "isCorrect": false,
+        "correctAnswer": "النصب"
+      },
+      {
+        "question": "يبطل عمل (أن) إذا كانت مسبوقة بما يفيد الظن أو شبهه في الحالة التالية",
+        "answer": "إذا كان الفاصل بينها وبين الفعل المضارع ب (لا) النافية",
+        "isCorrect": false,
+        "correctAnswer": "إذا كان الفاصل بينها وبين الفعل المضارع ب(قد والسين وسوف)"
+      },
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع مباشرة عدا",
+        "answer": "لام التعليل",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
