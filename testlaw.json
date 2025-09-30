@@ -1822,5 +1822,77 @@
         "correctAnswer": "صح."
       }
     ]
+  },
+  {
+    "studentName": "محمود سليم حسين الحمري",
+    "submissionDate": "2025-09-30T14:06:48.675Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "أسس الفلسفة",
+    "answers": [
+      {
+        "question": "الأكسيولوجيا لفظ يوناني مركب من \"Axios\" بمعنى قيمة و\"Logos\" بمعنى علم أو عقل",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ابن سينا قال إن الله واجب الوجود لذاته وبذاته.",
+        "answer": "خطأ.",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "الوجوب العقلي يعني أن الفعل يكتسب قيمته من العادات الاجتماعية.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "طاليس اعتبر أن أصل الوجود:",
+        "answer": "ب. الهواء.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الماء."
+      },
+      {
+        "question": "القيمة لا تعني إلا ما هو مادي ملموس.",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "المذهب الذي يرد كل الوجود إلى مبدأ واحد يسمى:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. الواحدية."
+      },
+      {
+        "question": "الإبستمولوجيا تهتم بدراسة:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "أ. مصادر المعرفة وحدودها."
+      },
+      {
+        "question": "الأنطولوجيا تعني:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. علم الوجود."
+      },
+      {
+        "question": "باسكال اعتبر أن الوصول للحقيقة يتطلب:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ج. الإيمان والعقل معاً."
+      },
+      {
+        "question": "من الذي اعتبر أن الوجوب العقلي يعد مصدراً للأخلاق؟",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. جمال الشامي."
+      }
+    ]
   }
 ]
