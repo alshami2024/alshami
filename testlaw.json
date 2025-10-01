@@ -2830,5 +2830,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "ستر الله عبد الواحد علي الغرباني",
+    "submissionDate": "2025-10-01T16:29:29.003Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "أسس الفلسفة",
+    "answers": [
+      {
+        "question": "الإبستمولوجيا تهتم بدراسة:",
+        "answer": "أ. مصادر المعرفة وحدودها.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "القيمة لا تعني إلا ما هو مادي ملموس.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "المذهب الذي يرد كل الوجود إلى مبدأ واحد يسمى:",
+        "answer": "د. الشكية.",
+        "isCorrect": false,
+        "correctAnswer": "ب. الواحدية."
+      },
+      {
+        "question": "الأكسيولوجيا لفظ يوناني مركب من \"Axios\" بمعنى قيمة و\"Logos\" بمعنى علم أو عقل",
+        "answer": "خطأ.",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "الوجوب العقلي يعني أن الفعل يكتسب قيمته من العادات الاجتماعية.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "طاليس اعتبر أن أصل الوجود:",
+        "answer": "ب. الهواء.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الماء."
+      },
+      {
+        "question": "باسكال اعتبر أن الوصول للحقيقة يتطلب:",
+        "answer": "د. الرياضيات وحدها.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الإيمان والعقل معاً."
+      },
+      {
+        "question": "من الذي اعتبر أن الوجوب العقلي يعد مصدراً للأخلاق؟",
+        "answer": "ب. جمال الشامي.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الأنطولوجيا تعني:",
+        "answer": "ب. علم الوجود.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ابن سينا قال إن الله واجب الوجود لذاته وبذاته.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
