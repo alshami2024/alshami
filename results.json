@@ -2880,5 +2880,77 @@
         "correctAnswer": "إذا كان الفاصل بينها وبين الفعل المضارع ب(قد والسين وسوف)"
       }
     ]
+  },
+  {
+    "studentName": "احمد الحريري",
+    "submissionDate": "2025-10-02T03:03:28.063Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 9
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات نحو مرحلة المطور",
+    "answers": [
+      {
+        "question": "أحسب أن ستصل الرحلة في موعدها. \n\nحكم (أن) في الجملة",
+        "answer": "عاملة تنصب الفعل المضارع",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع مباشرة عدا",
+        "answer": "أن",
+        "isCorrect": false,
+        "correctAnswer": "لام التعليل"
+      },
+      {
+        "question": "ظننت أن لا ينجح المهمل. \n\nالضبط الصحيح للفعل (ينجح)",
+        "answer": "الرفع",
+        "isCorrect": false,
+        "correctAnswer": "جواز الرفع والنصب"
+      },
+      {
+        "question": "علمت أن سوف يتحسن الطقس. \n\nحكم (أن) في الجملة السابقة",
+        "answer": "عاملة تنصب الفعل المضارع",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "أطمع أن يغفر الله لي\n\nالضبط الصحيح لكلمة (يغفر)",
+        "answer": "النصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أريد أن تفهموا النحو\n\nاستخرج المفعول به للفعل (أريد)",
+        "answer": "اردت",
+        "isCorrect": null,
+        "correctAnswer": null
+      },
+      {
+        "question": "يبطل عمل (أن) مطلقا إذا كانت مسبوقة",
+        "answer": "بالظن",
+        "isCorrect": false,
+        "correctAnswer": "بالعلم"
+      },
+      {
+        "question": "يبطل عمل (أن) إذا كانت مسبوقة بما يفيد الظن أو شبهه في الحالة التالية",
+        "answer": "إذا كان الفاصل بينها وبين الفعل المضارع ب(قد والسين وسوف)",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة المرسومة بصورة صحيحة هي...",
+        "answer": "المسلمون لن يتأخروا عن نجدة إخوانهم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يسعدني أن تكون متميزا بين أقرانك. \n\nإعراب المصدر المؤول في الجملة السابقة",
+        "answer": "فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
