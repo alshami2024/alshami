@@ -3118,5 +3118,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "باسمه طاهر ناصر الاغبس",
+    "submissionDate": "2025-10-02T19:03:13.878Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "tabSwitchCount": 1,
+    "examTitle": "أسس الفلسفة",
+    "answers": [
+      {
+        "question": "القيمة لا تعني إلا ما هو مادي ملموس.",
+        "answer": "خطأ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ابن سينا قال إن الله واجب الوجود لذاته وبذاته.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الأكسيولوجيا لفظ يوناني مركب من \"Axios\" بمعنى قيمة و\"Logos\" بمعنى علم أو عقل",
+        "answer": "خطأ.",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "الأنطولوجيا تعني:",
+        "answer": "ج. علم الأخلاق.",
+        "isCorrect": false,
+        "correctAnswer": "ب. علم الوجود."
+      },
+      {
+        "question": "طاليس اعتبر أن أصل الوجود:",
+        "answer": "ب. الهواء.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الماء."
+      },
+      {
+        "question": "الوجوب العقلي يعني أن الفعل يكتسب قيمته من العادات الاجتماعية.",
+        "answer": "خطأ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "باسكال اعتبر أن الوصول للحقيقة يتطلب:",
+        "answer": "ج. الإيمان والعقل معاً.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الإبستمولوجيا تهتم بدراسة:",
+        "answer": "أ. مصادر المعرفة وحدودها.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المذهب الذي يرد كل الوجود إلى مبدأ واحد يسمى:",
+        "answer": "ج. المثالية.",
+        "isCorrect": false,
+        "correctAnswer": "ب. الواحدية."
+      },
+      {
+        "question": "من الذي اعتبر أن الوجوب العقلي يعد مصدراً للأخلاق؟",
+        "answer": "ب. جمال الشامي.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
