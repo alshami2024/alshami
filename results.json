@@ -3096,5 +3096,77 @@
         "correctAnswer": "بالعلم"
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-02T18:03:20.221Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "اختبار منتصف الفصل الأول",
+    "answers": [
+      {
+        "question": "(كي) التي تنصب الفعل المضارع مباشرة هي",
+        "answer": "المصدرية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع مباشرة عدا",
+        "answer": "لام التعليل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حرف النصب الذي يدل على معنى الجواب والجزاء هو",
+        "answer": "إذن",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي ينصب فيها الفعل المضارع بعد (إذن) ",
+        "answer": "سأحفظ القرآن. إذن والله تفلح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أحب أن يتعلم المرء العربية. \n\nإعراب المصدر المؤول في الجملة",
+        "answer": "في محل نصب مفعول به",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أحسب أن يتعدل الجو. \n\nحكم الفعل المضارع بعد (أن) ",
+        "answer": "جواز الرفع والنصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يبطل عمل (أن) فلا تنصب الفعل المضارع، في الحالة التالية",
+        "answer": "إذا سبقها ما يدل على العلم واليقين",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي لا يجوز نصب الفعل المضارع فيها بعد (أن) هي",
+        "answer": "أعلم أن سيفوز أحمد بالجائزة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "سافر الطالب لكي يدرس الطب. \n\nنوع (كي) في الجملة السابقة",
+        "answer": "مصدرية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "اعلموا أن ستنقص درجات من لم يشارك في حل التمارين. \n\nالضبط الصحيح لكلمة (ينقص) ",
+        "answer": "الرفع",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
