@@ -2952,5 +2952,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-02T17:51:13.987Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 9
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات نحو مرحلة المطور",
+    "answers": [
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع مباشرة عدا",
+        "answer": "لام التعليل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أريد أن تفهموا النحو\n\nاستخرج المفعول به للفعل (أريد)",
+        "answer": "أن تفهموا",
+        "isCorrect": null,
+        "correctAnswer": null
+      },
+      {
+        "question": "أطمع أن يغفر الله لي\n\nالضبط الصحيح لكلمة (يغفر)",
+        "answer": "النصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أحسب أن ستصل الرحلة في موعدها. \n\nحكم (أن) في الجملة",
+        "answer": "غير عاملة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يسعدني أن تكون متميزا بين أقرانك. \n\nإعراب المصدر المؤول في الجملة السابقة",
+        "answer": "فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة المرسومة بصورة صحيحة هي...",
+        "answer": "المسلمون لن يتأخروا عن نجدة إخوانهم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ظننت أن لا ينجح المهمل. \n\nالضبط الصحيح للفعل (ينجح)",
+        "answer": "جواز الرفع والنصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يبطل عمل (أن) مطلقا إذا كانت مسبوقة",
+        "answer": "بالعلم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يبطل عمل (أن) إذا كانت مسبوقة بما يفيد الظن أو شبهه في الحالة التالية",
+        "answer": "إذا كان الفاصل بينها وبين الفعل المضارع ب(قد والسين وسوف)",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "علمت أن سوف يتحسن الطقس. \n\nحكم (أن) في الجملة السابقة",
+        "answer": "غير عاملة",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
