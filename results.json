@@ -3024,5 +3024,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-02T17:56:13.894Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 9
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات نحو مرحلة المطور",
+    "answers": [
+      {
+        "question": "ظننت أن لا ينجح المهمل. \n\nالضبط الصحيح للفعل (ينجح)",
+        "answer": "جواز الرفع والنصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يبطل عمل (أن) إذا كانت مسبوقة بما يفيد الظن أو شبهه في الحالة التالية",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "إذا كان الفاصل بينها وبين الفعل المضارع ب(قد والسين وسوف)"
+      },
+      {
+        "question": "أحسب أن ستصل الرحلة في موعدها. \n\nحكم (أن) في الجملة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "أطمع أن يغفر الله لي\n\nالضبط الصحيح لكلمة (يغفر)",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "النصب"
+      },
+      {
+        "question": "أريد أن تفهموا النحو\n\nاستخرج المفعول به للفعل (أريد)",
+        "answer": null,
+        "isCorrect": null,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة المرسومة بصورة صحيحة هي...",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "المسلمون لن يتأخروا عن نجدة إخوانهم"
+      },
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع مباشرة عدا",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "لام التعليل"
+      },
+      {
+        "question": "علمت أن سوف يتحسن الطقس. \n\nحكم (أن) في الجملة السابقة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "غير عاملة"
+      },
+      {
+        "question": "يسعدني أن تكون متميزا بين أقرانك. \n\nإعراب المصدر المؤول في الجملة السابقة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "فاعل"
+      },
+      {
+        "question": "يبطل عمل (أن) مطلقا إذا كانت مسبوقة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "بالعلم"
+      }
+    ]
   }
 ]
