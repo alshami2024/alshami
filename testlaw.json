@@ -3262,5 +3262,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "شكرية أحمد أحمد الصايدي",
+    "submissionDate": "2025-10-03T11:25:29.789Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "أسس الفلسفة",
+    "answers": [
+      {
+        "question": "الأنطولوجيا تعني:",
+        "answer": "ب. علم الوجود.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ابن سينا قال إن الله واجب الوجود لذاته وبذاته.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "القيمة لا تعني إلا ما هو مادي ملموس.",
+        "answer": "خطأ.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المذهب الذي يرد كل الوجود إلى مبدأ واحد يسمى:",
+        "answer": "ب. الواحدية.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من الذي اعتبر أن الوجوب العقلي يعد مصدراً للأخلاق؟",
+        "answer": "ب. جمال الشامي.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "باسكال اعتبر أن الوصول للحقيقة يتطلب:",
+        "answer": "ج. الإيمان والعقل معاً.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الأكسيولوجيا لفظ يوناني مركب من \"Axios\" بمعنى قيمة و\"Logos\" بمعنى علم أو عقل",
+        "answer": "خطأ.",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "طاليس اعتبر أن أصل الوجود:",
+        "answer": "د. التراب.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الماء."
+      },
+      {
+        "question": "الإبستمولوجيا تهتم بدراسة:",
+        "answer": "ج. الأخلاق والمعايير.",
+        "isCorrect": false,
+        "correctAnswer": "أ. مصادر المعرفة وحدودها."
+      },
+      {
+        "question": "الوجوب العقلي يعني أن الفعل يكتسب قيمته من العادات الاجتماعية.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      }
+    ]
   }
 ]
