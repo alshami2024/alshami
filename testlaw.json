@@ -3550,5 +3550,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "جيهان عدنان الغرباني",
+    "submissionDate": "2025-10-03T13:18:56.309Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "أسس الفلسفة",
+    "answers": [
+      {
+        "question": "طاليس اعتبر أن أصل الوجود:",
+        "answer": "ج. الماء.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الإبستمولوجيا تهتم بدراسة:",
+        "answer": "أ. مصادر المعرفة وحدودها.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من الذي اعتبر أن الوجوب العقلي يعد مصدراً للأخلاق؟",
+        "answer": "ب. جمال الشامي.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الوجوب العقلي يعني أن الفعل يكتسب قيمته من العادات الاجتماعية.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "الأكسيولوجيا لفظ يوناني مركب من \"Axios\" بمعنى قيمة و\"Logos\" بمعنى علم أو عقل",
+        "answer": "خطأ.",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "باسكال اعتبر أن الوصول للحقيقة يتطلب:",
+        "answer": "ج. الإيمان والعقل معاً.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "القيمة لا تعني إلا ما هو مادي ملموس.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "المذهب الذي يرد كل الوجود إلى مبدأ واحد يسمى:",
+        "answer": "ب. الواحدية.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الأنطولوجيا تعني:",
+        "answer": "أ. علم الجوهر.",
+        "isCorrect": false,
+        "correctAnswer": "ب. علم الوجود."
+      },
+      {
+        "question": "ابن سينا قال إن الله واجب الوجود لذاته وبذاته.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
