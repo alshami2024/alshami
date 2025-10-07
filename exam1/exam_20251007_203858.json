@@ -142,5 +142,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-07T18:22:13.160Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات نحوية1",
+    "answers": [
+      {
+        "question": "البيت الذي اشتمل على حرف مختص بالفعل المضارع هو:",
+        "answer": "ولو أنما أسعى لأدنى معيشة كفاني..... ولم أطلب قليل من المال",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل العلامات التالية مشتركة بين الفعل المضارع وفعل الأمر عدا..",
+        "answer": "تاء التأنيث الساكنة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (فسبح بحمد ربك واستغفره إنه كان توابا) \n\nالحرف غير المختص (المشترك) في الآية الكريم مما يلي هو",
+        "answer": "واو العطف",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "فاز الطالب بجائزة حفظ القرآن الكريم. \n\nالاسم الذي علامته الإسناد في الجملة هو:",
+        "answer": "الطالب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجر علامة خاصة بـ",
+        "answer": "الاسم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الحرف (لم) علامة خاصة مميزة للفعل",
+        "answer": "المضارع",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قرأت كتاب النحو. \n\nفي كلمة (النحو) من علامات الاسم",
+        "answer": "كل ما سبق",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "استقم.",
+        "answer": "كلام تام مفيد",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العلامة الخاصة المميزة للفعل الماضي هي:",
+        "answer": "تاء الفاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الحروف الناسخة",
+        "answer": "مختصة بالأسماء",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
