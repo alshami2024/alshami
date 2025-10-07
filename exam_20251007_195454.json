@@ -1,0 +1,74 @@
+[
+  {
+    "studentName": "تفاني الصيادي",
+    "submissionDate": "2025-10-07T16:57:43.301Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "أسس الفلسفة",
+    "answers": [
+      {
+        "question": "ابن سينا قال إن الله واجب الوجود لذاته وبذاته.",
+        "answer": "صح.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الأنطولوجيا تعني:",
+        "answer": "ب. علم الوجود.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الإبستمولوجيا تهتم بدراسة:",
+        "answer": "ج. الأخلاق والمعايير.",
+        "isCorrect": false,
+        "correctAnswer": "أ. مصادر المعرفة وحدودها."
+      },
+      {
+        "question": "طاليس اعتبر أن أصل الوجود:",
+        "answer": "د. التراب.",
+        "isCorrect": false,
+        "correctAnswer": "ج. الماء."
+      },
+      {
+        "question": "المذهب الذي يرد كل الوجود إلى مبدأ واحد يسمى:",
+        "answer": "ج. المثالية.",
+        "isCorrect": false,
+        "correctAnswer": "ب. الواحدية."
+      },
+      {
+        "question": "الوجوب العقلي يعني أن الفعل يكتسب قيمته من العادات الاجتماعية.",
+        "answer": "صح.",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "الأكسيولوجيا لفظ يوناني مركب من \"Axios\" بمعنى قيمة و\"Logos\" بمعنى علم أو عقل",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صح."
+      },
+      {
+        "question": "من الذي اعتبر أن الوجوب العقلي يعد مصدراً للأخلاق؟",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ب. جمال الشامي."
+      },
+      {
+        "question": "القيمة لا تعني إلا ما هو مادي ملموس.",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "خطأ."
+      },
+      {
+        "question": "باسكال اعتبر أن الوصول للحقيقة يتطلب:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ج. الإيمان والعقل معاً."
+      }
+    ]
+  }
+]
