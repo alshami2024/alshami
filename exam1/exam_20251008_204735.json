@@ -214,5 +214,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "أحمد أمين كمال فهمي",
+    "submissionDate": "2025-10-11T21:28:41.044Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات نحوية 7-1",
+    "answers": [
+      {
+        "question": "الجملة التي فيها (أن) لا تنصب الفعل المضارع",
+        "answer": "أعلم أن سيفهم الطلاب النحو",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة الصحيحة فيما يلي هي..",
+        "answer": "يا أهل القرآن لن تفلحوا حتى تعملوا به",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع مباشرة عدا...",
+        "answer": "لام التعليل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (وما كان الله ليضيع إيمانكم) \n\nحكم إضمار (أن) في الآية السابقة",
+        "answer": "الوجوب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "هلا تركت مصاحبة رفقاء السوء فتستقيم حالك. \n\nنوع الأمر في الجملة السابقة",
+        "answer": "تحضيض",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إن الله لا يمل حتى تملوا. \n\nمعنى (حتى) في الجملة الماضية",
+        "answer": "بمعنى (إلى)",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "وطّن نفسك على مختلف الخيارات لكي تحافظ على نفسك من الصدمات. \n\nنوع (كي) في الجملة السابقة.",
+        "answer": "المصدرية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "(كي) التي تنصب الفعل المضارع مباشرة بنفسها هي...",
+        "answer": "المصدرية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة الصحيحة فيما يلي هي",
+        "answer": "ذاكر حتى تنجح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي تنصب فيها (إذن) الفعل المضارع هي..",
+        "answer": "سأحفظ القرآن. إذن والله تفلح",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
