@@ -751,8 +751,6 @@ async function populateYearSelectors(students) {
     academicYearSelect.innerHTML = '<option value="">اختر العام</option>'; 
     modalYearSelect.innerHTML = '<option value="all">الكل</option>';
     
-    // لا يتم تعيين defaultYear هنا
-    
     years.forEach(year => {
         // حقل العام في واجهة البحث
         const optionSearch = document.createElement('option');
@@ -823,15 +821,115 @@ async function filterDashboardStats() {
 
 // 2. Modified: DOMContentLoaded to initialize everything
 document.addEventListener('DOMContentLoaded', async () => {
+    // تحميل البيانات في البداية وتخزينها عالميًا
     const students = await fetchAllData();
-    allStudentsData = students; // تخزين جميع البيانات عالمياً
+    allStudentsData = students; 
     
-    // ملء المحددات. لم يعد يتم تعيين قيمة افتراضية.
     await populateYearSelectors(students); 
     
     // لن يتم استدعاء filterDashboardStats() هنا لأن القيم الافتراضية فارغة.
     toggleListButton(); // فحص حالة الأزرار عند التحميل الأولي (يجب أن يكون مخفياً)
 });
+
+
+// دالة البحث عن الدرجات (تم تصحيحها لضمان البحث الفعال)
+async function findMyGrades() {
+    const studentIdInput = document.getElementById('studentId').value.trim();
+    const academicYear = document.getElementById('academicYear').value;
+    const semester = document.getElementById('semester').value;
+
+    const loader = document.getElementById('loader');
+    const resultArea = document.getElementById('result-area');
+    const errorMessage = document.getElementById('error-message');
+    
+    resultArea.style.display = 'none';
+    errorMessage.style.display = 'none';
+    
+    // 1. التحقق من الإدخالات الأساسية
+    if (!studentIdInput || !academicYear || !semester) {
+        errorMessage.textContent = 'الرجاء إدخال الرقم الجامعي واختيار العام والفصل الدراسي.';
+        errorMessage.style.display = 'block';
+        return;
+    }
+
+    loader.style.display = 'block';
+    
+    // 2. ضمان تحميل البيانات (إجراء احتياطي إذا فشل التحميل الأولي)
+    if (allStudentsData.length === 0) {
+        try {
+            allStudentsData = await fetchAllData();
+            if (allStudentsData.length === 0) {
+                throw new Error('لم يتم تحميل بيانات الطلاب.');
+            }
+        } catch (error) {
+            loader.style.display = 'none';
+            errorMessage.textContent = 'حدث خطأ في تحميل البيانات الأساسية.';
+            errorMessage.style.display = 'block';
+            console.error(error);
+            return;
+        }
+    }
+    
+    // 3. البحث عن الطالب باستخدام .trim() لضمان تطابق الأرقام الجامعية
+    const normalizedId = studentIdInput; 
+    
+    const foundStudent = allStudentsData.find(student => 
+        (student.id ? student.id.trim() : '') === normalizedId && 
+        student.year === academicYear && 
+        student.semester === semester 
+    );
+    
+    loader.style.display = 'none';
+
+    if (foundStudent) {
+        // 4. عرض النتائج
+        const grade = parseInt(foundStudent.grade, 10) || 0;
+        const attendance = parseInt(foundStudent.attendance, 10) || 0;
+        const totalGrade = grade + attendance;
+        const gradePercentage = ((totalGrade / 40) * 100).toFixed(0);
+        
+        document.getElementById('studentName').textContent = foundStudent.name || 'طالب';
+        document.getElementById('studentCourse').textContent = foundStudent.course || 'غير محدد';
+        
+        document.getElementById('displayAcademicYear').textContent = foundStudent.year || 'غير محدد';
+        document.getElementById('displaySemester').textContent = foundStudent.semester || 'غير محدد';
+
+        document.getElementById('studentGrade').textContent = `${foundStudent.grade || 'لم ترصد بعد'} (من 30)`;
+        document.getElementById('studentAttendance').textContent = `${foundStudent.attendance || 'لا توجد بيانات'} (من 10)`;
+
+        const departmentRow = document.getElementById('department-row');
+        if(foundStudent.department) {
+            document.getElementById('studentDepartment').textContent = foundStudent.department;
+            departmentRow.style.display = 'flex';
+        } else {
+            departmentRow.style.display = 'none';
+        }
+
+        document.getElementById('studentTotalGrade').textContent = `${totalGrade} (${getGradeCategory(totalGrade)})`;
+        document.getElementById('total-grade-row').style.display = 'flex';
+        
+        const progressFill = document.getElementById('grade-progress-fill');
+        progressFill.style.width = `${gradePercentage}%`;
+        
+        let gradeColor;
+        if (totalGrade >= 36) gradeColor = getComputedStyle(document.documentElement).getPropertyValue('--success-color');
+        else if (totalGrade >= 28) gradeColor = getComputedStyle(document.documentElement).getPropertyValue('--grade-medium') || '#ffc107'; 
+        else gradeColor = getComputedStyle(document.documentElement).getPropertyValue('--fail-color');
+        
+        progressFill.style.backgroundColor = gradeColor;
+
+        document.getElementById('grade-percentage').textContent = `${gradePercentage}%`;
+        
+        updateGradeChart(grade, attendance);
+        showAlertMessage(totalGrade);
+        resultArea.style.display = 'block';
+
+    } else {
+        // 5. عدم العثور على الطالب
+        errorMessage.textContent = 'لم يتم العثور على نتيجة لهذا الرقم الجامعي في العام والفصل المحددين.';
+        errorMessage.style.display = 'block';
+    }
+}
 
 
 // دالة عرض قائمة الطلاب المُرصَدة
@@ -845,7 +943,6 @@ async function showGradedStudentsList() {
 
     if (!academicYear || !semester) {
         alert("الرجاء تحديد العام والفصل الدراسي أولاً.");
-        // يتم إخفاء الزر بواسطة toggleListButton() بالفعل، ولكن هذا للتأكيد
         document.getElementById('showGradedBtn').style.display = 'none';
         return;
     }
@@ -854,11 +951,16 @@ async function showGradedStudentsList() {
     modalLoader.style.display = 'block';
     listUl.innerHTML = '';
 
+    // ضمان تحميل البيانات
     if (allStudentsData.length === 0) {
-        // إذا لم يتم جلب البيانات بعد، قم بجلبها وتخزينها
-        const students = await fetchAllData();
-        allStudentsData = students;
-        await populateYearSelectors(students); 
+        try {
+            allStudentsData = await fetchAllData();
+            await populateYearSelectors(allStudentsData);
+        } catch (error) {
+            modalLoader.style.display = 'none';
+            listUl.innerHTML = `<li>حدث خطأ في تحميل البيانات: ${error.message}</li>`;
+            return;
+        }
     }
     
     // تصفية الطلاب الذين لديهم درجات مرصودة فقط
