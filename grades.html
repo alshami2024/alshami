@@ -110,7 +110,7 @@
       margin-bottom: 20px;
     }
 
-    input[type="text"] {
+    input[type="text"], .search-box select { /* إضافة تنسيق لحقول select */
       width: 100%;
       padding: 14px;
       font-size: 18px;
@@ -121,12 +121,18 @@
       text-align: center;
       transition: border-color 0.3s;
     }
-    body.dark-mode input[type="text"] {
+    .search-box select {
+        text-align: right;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+    body.dark-mode input[type="text"], body.dark-mode .search-box select {
         background-color: #333;
         color: #e0e0e0;
         border-color: #555;
     }
-    input[type="text"]:focus {
+    input[type="text"]:focus, .search-box select:focus {
         border-color: var(--main-color);
         outline: none;
     }
@@ -191,6 +197,8 @@
     .student-card .info-item:nth-child(4) { animation-delay: 0.3s; }
     .student-card .info-item:nth-child(5) { animation-delay: 0.4s; }
     .student-card .info-item:nth-child(6) { animation-delay: 0.5s; }
+    .student-card .info-item:nth-child(7) { animation-delay: 0.6s; }
+    .student-card .info-item:nth-child(8) { animation-delay: 0.7s; }
 
     .student-card .info-item i {
         color: var(--main-color);
@@ -362,6 +370,8 @@
     .sort-container label {
         margin-left: 10px;
         color: var(--text-color);
+        font-size: 0.9em;
+        white-space: nowrap;
     }
     .sort-container select {
         padding: 8px;
@@ -510,6 +520,16 @@
     #student-details-modal #studentTotalGrade {
         color: var(--main-color);
     }
+    
+    /* Responsive adjustment for select menus in search box */
+    .select-group {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+    .select-group select {
+        flex: 1;
+    }
 
   </style>
 </head>
@@ -521,7 +541,7 @@
   <div class="container">
     <h1>🎓 بوابة الطالب</h1>
     <div id="dashboard-stats">
-        <h3>📊 إحصاءات عامة</h3>
+        <h3>📊 إحصاءات العام الدراسي المحدد</h3>
         <div class="stats-grid">
             <div class="stat-item">
                 <div id="average-grade" class="stat-value">--</div>
@@ -542,10 +562,22 @@
     </div>
     
     <div class="search-box">
-      <label for="studentId" style="display:block; margin-bottom:10px; font-weight:bold;">أدخل رقمك الجامعي لعرض نتيجتك</label>
+      <label for="studentId" style="display:block; margin-bottom:10px; font-weight:bold;">أدخل رقمك الجامعي واختَر العام والفصل الدراسي</label>
+      
+      <div class="select-group">
+        <select id="academicYear">
+            <option value="">اختر العام</option>
+            </select>
+        <select id="semester">
+            <option value="">اختر الفصل</option>
+            <option value="الفصل الأول">الفصل الأول</option>
+            <option value="الفصل الثاني">الفصل الثاني</option>
+            <option value="الفصل الصيفي">الفصل الصيفي</option>
+        </select>
+      </div>
       <input type="text" id="studentId" placeholder="الرقم الجامعي">
       <button onclick="findMyGrades()">🔍 بحــــث</button>
-      <button id="showGradedBtn" onclick="showGradedStudentsList()">🏆 عرض القائمة</button>
+      <button id="showGradedBtn" onclick="showGradedStudentsList()" style="display: none;">🏆 عرض القائمة</button>
     </div>
     <div id="loader"><div class="loader"></div></div>
     <div id="error-message" style="color:red; font-weight:bold;"></div>
@@ -558,6 +590,13 @@
             </div>
             <div class="info-item" id="department-row">
                 <i class="fas fa-university"></i><strong>القسم:</strong> <span id="studentDepartment"></span>
+            </div>
+            
+            <div class="info-item">
+                <i class="fas fa-calendar-alt"></i><strong>العام الدراسي:</strong> <span id="displayAcademicYear"></span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-clock"></i><strong>الفصل الدراسي:</strong> <span id="displaySemester"></span>
             </div>
             <div class="info-item">
                 <i class="fas fa-star"></i><strong>الدرجة:</strong> <span id="studentGrade"></span>
@@ -596,15 +635,26 @@
       <h2><i class="fas fa-users"></i> الطلاب الذين تم رصد درجاتهم</h2>
       <input type="text" id="search-input" placeholder="ابحث باسم الطالب..." class="search-modal-input" onkeyup="filterAndSortStudents()">
       <div class="sort-container">
-          <label for="sort-select">الفرز حسب:</label>
-          <select id="sort-select" onchange="filterAndSortStudents()">
-              <option value="name">الاسم</option>
-              <option value="grade_desc">الدرجة (من الأعلى للأدنى)</option>
-              <option value="grade_asc">الدرجة (من الأدنى للأعلى)</option>
+          <label for="modal-year-select">العام:</label>
+          <select id="modal-year-select" onchange="filterAndSortStudents()">
+              <option value="all">الكل</option>
           </select>
-          <label for="course-select" style="margin-right: 15px; margin-left: 10px;">عرض المادة:</label>
+          <label for="modal-semester-select">الفصل:</label>
+          <select id="modal-semester-select" onchange="filterAndSortStudents()">
+              <option value="all">الكل</option>
+              <option value="الفصل الأول">الفصل الأول</option>
+              <option value="الفصل الثاني">الفصل الثاني</option>
+              <option value="الفصل الصيفي">الفصل الصيفي</option>
+          </select>
+          <label for="course-select">المادة:</label>
           <select id="course-select" onchange="filterAndSortStudents()">
               <option value="all">الكل</option>
+          </select>
+          <label for="sort-select">الفرز:</label>
+          <select id="sort-select" onchange="filterAndSortStudents()">
+              <option value="name">الاسم</option>
+              <option value="grade_desc">الدرجة (الأعلى)</option>
+              <option value="grade_asc">الدرجة (الأدنى)</option>
           </select>
       </div>
       <div id="modal-loader" style="display: none;"><div class="loader"></div></div>
@@ -621,6 +671,12 @@
         </div>
         <div class="info-item">
             <i class="fas fa-id-card"></i><strong>الرقم الجامعي:</strong> <span id="modal-student-id"></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-calendar-alt"></i><strong>العام الدراسي:</strong> <span id="modal-student-year"></span>
+        </div>
+        <div class="info-item">
+            <i class="fas fa-clock"></i><strong>الفصل الدراسي:</strong> <span id="modal-student-semester"></span>
         </div>
         <div class="info-item">
             <i class="fas fa-book-open"></i><strong>المقرر:</strong> <span id="modal-student-course"></span>
@@ -650,88 +706,232 @@
 <script>
 const gradedListModal = document.getElementById('graded-list-modal');
 const studentDetailsModal = document.getElementById('student-details-modal');
-let allStudentsData = [];
+let allStudentsData = []; // يحمل بيانات جميع الطلاب
 let gradeChart = null;
 let gradeDistributionChart = null;
+const API_URL = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
 
+// دالة جلب البيانات الأساسية
+async function fetchAllData() {
+    try {
+        const response = await fetch(API_URL);
+        if (!response.ok) throw new Error('فشل تحميل البيانات.');
+        const allData = await response.json();
+        const students = JSON.parse(allData.myapp_students || '[]');
+        return students;
+    } catch (error) {
+        console.error('Error in fetchAllData:', error);
+        return [];
+    }
+}
+
+// دالة التحقق من اختيار العام والفصل وعرض/إخفاء زر القائمة
+function toggleListButton() {
+    const academicYear = document.getElementById('academicYear').value;
+    const semester = document.getElementById('semester').value;
+    const showGradedBtn = document.getElementById('showGradedBtn');
+
+    if (academicYear && semester) {
+        showGradedBtn.style.display = 'block';
+    } else {
+        showGradedBtn.style.display = 'none';
+    }
+}
+
+// 1. Modified: Populate selectors and remove setting defaults
+async function populateYearSelectors(students) {
+    const academicYearSelect = document.getElementById('academicYear');
+    const modalYearSelect = document.getElementById('modal-year-select');
+    const semesterSelect = document.getElementById('semester'); // Main search semester
+    
+    // استخراج السنوات الفريدة وفرزها تنازليًا
+    const years = [...new Set(students.map(student => student.year))].filter(Boolean).sort().reverse();
+
+    // القيمة الافتراضية "اختر العام" تم تعيينها في HTML
+    academicYearSelect.innerHTML = '<option value="">اختر العام</option>'; 
+    modalYearSelect.innerHTML = '<option value="all">الكل</option>';
+    
+    // لا يتم تعيين defaultYear هنا
+    
+    years.forEach(year => {
+        // حقل العام في واجهة البحث
+        const optionSearch = document.createElement('option');
+        optionSearch.value = year;
+        optionSearch.textContent = year;
+        academicYearSelect.appendChild(optionSearch);
+        
+        // حقل العام في نافذة قائمة الطلاب
+        const optionModal = document.createElement('option');
+        optionModal.value = year;
+        optionModal.textContent = year;
+        modalYearSelect.appendChild(optionModal);
+    });
+
+    // تعيين الفصل الافتراضي لـ "اختر الفصل"
+    semesterSelect.value = "";
+    
+    // إضافة مستمعي أحداث لتحديث لوحة القيادة وحالة الزر عند التغيير
+    academicYearSelect.onchange = () => { filterDashboardStats(); toggleListButton(); };
+    semesterSelect.onchange = () => { filterDashboardStats(); toggleListButton(); };
+
+    // لا يتم إرجاع قيم افتراضية بعد الآن
+    return {}; 
+}
+
+// 3. New: Filter dashboard stats based on selected year/semester
+async function filterDashboardStats() {
+    const academicYear = document.getElementById('academicYear').value;
+    const semester = document.getElementById('semester').value;
+    
+    const dashboardStats = document.getElementById('dashboard-stats');
+    if (!academicYear || !semester) {
+        // إخفاء لوحة القيادة إذا لم يتم اختيار العام والفصل
+        dashboardStats.style.display = 'none';
+        return;
+    }
+
+    // تصفية بيانات الطلاب للعام والفصل المحددين
+    const filteredStudents = allStudentsData.filter(student => 
+        student.year === academicYear && 
+        student.semester === semester
+    );
+
+    // تصفية الطلاب الذين لديهم درجات مرصودة فقط من القائمة المفلترة
+    const gradedStudents = filteredStudents.filter(student => student.grade && String(student.grade).trim() !== 'لم ترصد بعد' && String(student.grade).trim() !== '');
+
+    if (gradedStudents.length > 0) {
+        dashboardStats.style.display = 'block';
+        
+        const totalGrades = gradedStudents.map(s => (parseInt(s.grade, 10) || 0) + (parseInt(s.attendance, 10) || 0));
+        const totalSum = totalGrades.reduce((sum, grade) => sum + grade, 0);
+        const average = (totalSum / totalGrades.length).toFixed(1);
+        const highest = Math.max(...totalGrades);
+        
+        const passedStudents = totalGrades.filter(grade => grade >= 20).length; 
+        const passedPercentage = ((passedStudents / gradedStudents.length) * 100).toFixed(0);
+
+        document.getElementById('average-grade').textContent = average;
+        document.getElementById('highest-grade').textContent = highest;
+        document.getElementById('passed-students').textContent = `${passedStudents} (${passedPercentage}%)`;
+        
+        updateGradeDistributionChart(totalGrades);
+    } else {
+        dashboardStats.style.display = 'none';
+    }
+}
+
+
+// 2. Modified: DOMContentLoaded to initialize everything
+document.addEventListener('DOMContentLoaded', async () => {
+    const students = await fetchAllData();
+    allStudentsData = students; // تخزين جميع البيانات عالمياً
+    
+    // ملء المحددات. لم يعد يتم تعيين قيمة افتراضية.
+    await populateYearSelectors(students); 
+    
+    // لن يتم استدعاء filterDashboardStats() هنا لأن القيم الافتراضية فارغة.
+    toggleListButton(); // فحص حالة الأزرار عند التحميل الأولي (يجب أن يكون مخفياً)
+});
+
+
+// دالة عرض قائمة الطلاب المُرصَدة
 async function showGradedStudentsList() {
     const listUl = document.getElementById('graded-students-ul');
     const modalLoader = document.getElementById('modal-loader');
+    
+    // التأكد من أن العام والفصل محددين قبل فتح القائمة
+    const academicYear = document.getElementById('academicYear').value;
+    const semester = document.getElementById('semester').value;
+
+    if (!academicYear || !semester) {
+        alert("الرجاء تحديد العام والفصل الدراسي أولاً.");
+        // يتم إخفاء الزر بواسطة toggleListButton() بالفعل، ولكن هذا للتأكيد
+        document.getElementById('showGradedBtn').style.display = 'none';
+        return;
+    }
     
     gradedListModal.style.display = 'block';
     modalLoader.style.display = 'block';
     listUl.innerHTML = '';
 
-    if (allStudentsData.length > 0) {
-        populateCourseSelect();
-        filterAndSortStudents();
+    if (allStudentsData.length === 0) {
+        // إذا لم يتم جلب البيانات بعد، قم بجلبها وتخزينها
+        const students = await fetchAllData();
+        allStudentsData = students;
+        await populateYearSelectors(students); 
+    }
+    
+    // تصفية الطلاب الذين لديهم درجات مرصودة فقط
+    const gradedStudents = allStudentsData.filter(s => s.grade && String(s.grade).trim() !== 'لم ترصد بعد' && String(s.grade).trim() !== '');
+    
+    if (gradedStudents.length === 0) {
+        listUl.innerHTML = '<li>لم يتم رصد أي درجة حتى الآن.</li>';
         modalLoader.style.display = 'none';
         return;
     }
+    
+    // تعيين قيم التصفية في المودال لتطابق ما تم اختياره في الواجهة الرئيسية
+    document.getElementById('modal-year-select').value = academicYear;
+    document.getElementById('modal-semester-select').value = semester;
 
-    const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
-
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('فشل تحميل البيانات.');
-
-        const allData = await response.json();
-        const students = JSON.parse(allData.myapp_students || '[]');
-        
-        allStudentsData = students.filter(s => s.grade && String(s.grade).trim() !== 'لم ترصد بعد');
-
-        if (allStudentsData.length === 0) {
-            listUl.innerHTML = '<li>لم يتم رصد أي درجة حتى الآن.</li>';
-            modalLoader.style.display = 'none';
-            return;
-        }
-        
-        populateCourseSelect();
-        filterAndSortStudents();
-        modalLoader.style.display = 'none';
-
-    } catch (error) {
-        modalLoader.style.display = 'none';
-        listUl.innerHTML = `<li>حدث خطأ: ${error.message}</li>`;
-    }
+    populateCourseSelect(gradedStudents); 
+    filterAndSortStudents(); // تطبيق التصفية بناءً على الاختيار الحالي
+    modalLoader.style.display = 'none';
 }
 
+
 function renderStudentsList(studentsToRender) {
-    const courseSelectValue = document.getElementById('course-select').value;
     const listUl = document.getElementById('graded-students-ul');
     listUl.innerHTML = '';
     
-    if (courseSelectValue !== 'all' && studentsToRender.length > 0) {
+    // تجميع الطلاب حسب المقرر
+    const studentsByCourse = studentsToRender.reduce((acc, student) => {
+        const course = student.course || 'غير محدد';
+        if (!acc[course]) acc[course] = [];
+        acc[course].push(student);
+        return acc;
+    }, {});
+
+    for (const course in studentsByCourse) {
+        const studentsInCourse = studentsByCourse[course];
         const courseHeader = document.createElement('li');
         courseHeader.className = 'course-header';
-        const studentCount = studentsToRender.length;
+        const studentCount = studentsInCourse.length;
+        // عرض العام والفصل في رأس المقرر داخل المودال
+        const yearDisplay = document.getElementById('modal-year-select').value !== 'all' ? `العام: ${document.getElementById('modal-year-select').value} | ` : '';
+        const semesterDisplay = document.getElementById('modal-semester-select').value !== 'all' ? `الفصل: ${document.getElementById('modal-semester-select').value} | ` : '';
+
         courseHeader.innerHTML = `
-            <span>${courseSelectValue}</span>
-            <span class="student-count-badge">العدد: ${studentCount}</span>
+            <span>${course}</span>
+            <span class="student-count-badge">${yearDisplay}${semesterDisplay}العدد: ${studentCount}</span>
         `;
         listUl.appendChild(courseHeader);
+
+        studentsInCourse.forEach(student => {
+            const grade = parseInt(student.grade, 10) || 0;
+            const attendance = parseInt(student.attendance, 10) || 0;
+            const totalGrade = grade + attendance;
+            const gradeClass = getGradeClass(totalGrade);
+            const statusIcon = totalGrade >= 20 ? '✅' : '❌'; // افتراض أن درجة النجاح هي 20
+            const studentLi = document.createElement('li');
+            studentLi.className = 'student-list-item';
+            studentLi.innerHTML = `
+                <span>${statusIcon} ${student.name}</span>
+                <span class="student-grade-in-list ${gradeClass}">${totalGrade}</span>
+            `;
+            studentLi.onclick = () => showStudentDetails(student);
+            listUl.appendChild(studentLi);
+        });
     }
-    
-    studentsToRender.forEach(student => {
-        const grade = parseInt(student.grade, 10) || 0;
-        const attendance = parseInt(student.attendance, 10) || 0;
-        const totalGrade = grade + attendance;
-        const gradeClass = getGradeClass(totalGrade);
-        const statusIcon = totalGrade >= 20 ? '✅' : '❌';
-        const studentLi = document.createElement('li');
-        studentLi.className = 'student-list-item';
-        studentLi.innerHTML = `
-            <span>${statusIcon} ${student.name}</span>
-            <span class="student-grade-in-list ${gradeClass}">${totalGrade}</span>
-        `;
-        studentLi.onclick = () => showStudentDetails(student);
-        listUl.appendChild(studentLi);
-    });
 }
 
 function showStudentDetails(student) {
     document.getElementById('modal-student-name').textContent = student.name;
     document.getElementById('modal-student-id').textContent = student.id;
+    // عرض العام والفصل في نافذة التفاصيل
+    document.getElementById('modal-student-year').textContent = student.year || 'غير محدد';
+    document.getElementById('modal-student-semester').textContent = student.semester || 'غير محدد';
+
     document.getElementById('modal-student-course').textContent = student.course;
     document.getElementById('modal-student-grade').textContent = `${student.grade || 'لم ترصد بعد'} (من 30)`;
     document.getElementById('modal-student-attendance').textContent = `${student.attendance || 'لا توجد بيانات'} (من 10)`;
@@ -746,14 +946,20 @@ function closeDetailsModal() {
     studentDetailsModal.style.display = 'none';
 }
 
-function populateCourseSelect() {
+// دالة ملء حقل اختيار المقرر
+function populateCourseSelect(studentsList) {
     const courseSelect = document.getElementById('course-select');
+    // تجميع الدورات الفريدة من البيانات المتاحة حالياً
+    const courses = [...new Set(studentsList.map(student => student.course))].filter(Boolean).sort();
+    
+    const currentCourse = courseSelect.value;
+    
     courseSelect.innerHTML = '<option value="all">الكل</option>';
-    const courses = [...new Set(allStudentsData.map(student => student.course))].filter(Boolean).sort();
     courses.forEach(course => {
         const option = document.createElement('option');
         option.value = course;
         option.textContent = course;
+        if (course === currentCourse) option.selected = true;
         courseSelect.appendChild(option);
     });
 }
@@ -763,12 +969,22 @@ function filterAndSortStudents() {
     const searchInput = document.getElementById('search-input').value.toLowerCase();
     const sortValue = document.getElementById('sort-select').value;
     const courseSelectValue = document.getElementById('course-select').value;
+    // جلب قيم تصفية العام والفصل من المودال
+    const modalYearSelectValue = document.getElementById('modal-year-select').value;
+    const modalSemesterSelectValue = document.getElementById('modal-semester-select').value;
     
-    let filteredStudents = allStudentsData.filter(student => {
+    // تصفية الطلاب الذين لديهم درجات مرصودة أولاً
+    const gradedStudents = allStudentsData.filter(s => s.grade && String(s.grade).trim() !== 'لم ترصد بعد' && String(s.grade).trim() !== '');
+
+    let filteredStudents = gradedStudents.filter(student => {
         const matchesSearch = (student.name && student.name.toLowerCase().includes(searchInput)) || 
                             (student.id && student.id.toLowerCase().includes(searchInput));
         const matchesCourse = courseSelectValue === 'all' || student.course === courseSelectValue;
-        return matchesSearch && matchesCourse;
+        // تطبيق تصفية العام والفصل
+        const matchesYear = modalYearSelectValue === 'all' || student.year === modalYearSelectValue;
+        const matchesSemester = modalSemesterSelectValue === 'all' || student.semester === modalSemesterSelectValue;
+        
+        return matchesSearch && matchesCourse && matchesYear && matchesSemester;
     });
 
     if (sortValue === 'name') {
@@ -792,9 +1008,9 @@ function filterAndSortStudents() {
 
 function getGradeClass(totalGrade) {
     if (isNaN(totalGrade)) return '';
-    if (totalGrade >= 28) return 'grade-high'; 
-    if (totalGrade >= 20) return 'grade-medium'; 
-    return 'grade-low'; 
+    if (totalGrade >= 36) return 'grade-high'; // ممتاز
+    if (totalGrade >= 28) return 'grade-medium'; // جيد
+    return 'grade-low'; // راسب أو مقبول
 }
 
 function getGradeCategory(totalGrade) {
@@ -811,117 +1027,15 @@ function getGradeCategory(totalGrade) {
 function closeModal() {
     gradedListModal.style.display = 'none';
     document.getElementById('search-input').value = '';
+    // إعادة تعيين محددات التصفية في المودال عند الإغلاق
+    document.getElementById('modal-year-select').value = 'all';
+    document.getElementById('modal-semester-select').value = 'all';
+    document.getElementById('course-select').value = 'all';
 }
 
 window.onclick = function(event) {
     if (event.target == gradedListModal) closeModal();
     if (event.target == studentDetailsModal) closeDetailsModal();
-}
-
-document.addEventListener('DOMContentLoaded', async () => {
-    const dashboardStats = document.getElementById('dashboard-stats');
-    const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
-    try {
-        const response = await fetch(url);
-        if (!response.ok) return;
-        const allData = await response.json();
-        const students = JSON.parse(allData.myapp_students || '[]');
-        
-        const gradedStudents = students.filter(student => student.grade && String(student.grade).trim() !== 'لم ترصد بعد');
-        if (gradedStudents.length > 0) {
-            dashboardStats.style.display = 'block';
-            
-            const totalGrades = gradedStudents.map(s => (parseInt(s.grade, 10) || 0) + (parseInt(s.attendance, 10) || 0));
-            const totalSum = totalGrades.reduce((sum, grade) => sum + grade, 0);
-            const average = (totalSum / totalGrades.length).toFixed(1);
-            const highest = Math.max(...totalGrades);
-            
-            const passedStudents = totalGrades.filter(grade => grade >= 20).length; 
-            const passedPercentage = ((passedStudents / gradedStudents.length) * 100).toFixed(0);
-
-            document.getElementById('average-grade').textContent = average;
-            document.getElementById('highest-grade').textContent = highest;
-            document.getElementById('passed-students').textContent = `${passedStudents} (${passedPercentage}%)`;
-            
-            
-            updateGradeDistributionChart(totalGrades);
-        }
-    } catch (error) {
-        console.error('Error fetching stats:', error);
-    }
-});
-
-async function findMyGrades() {
-    const studentIdInput = document.getElementById('studentId').value.trim();
-    const loader = document.getElementById('loader');
-    const resultArea = document.getElementById('result-area');
-    const errorMessage = document.getElementById('error-message');
-    
-    resultArea.style.display = 'none';
-    errorMessage.style.display = 'none';
-
-    if (!studentIdInput) {
-        errorMessage.textContent = 'الرجاء إدخال الرقم الجامعي.';
-        errorMessage.style.display = 'block';
-        return;
-    }
-
-    loader.style.display = 'block';
-    const url = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
-
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error('فشل تحميل البيانات.');
-
-        const allData = await response.json();
-        const students = JSON.parse(allData.myapp_students || '[]');
-        const foundStudent = students.find(student => student.id === studentIdInput);
-        
-        loader.style.display = 'none';
-
-        if (foundStudent) {
-            const grade = parseInt(foundStudent.grade, 10) || 0;
-            const attendance = parseInt(foundStudent.attendance, 10) || 0;
-            const totalGrade = grade + attendance;
-            const gradePercentage = ((totalGrade / 40) * 100).toFixed(0);
-            
-            document.getElementById('studentName').textContent = foundStudent.name || 'طالب';
-            document.getElementById('studentCourse').textContent = foundStudent.course || 'غير محدد';
-            document.getElementById('studentGrade').textContent = `${foundStudent.grade || 'لم ترصد بعد'} (من 30)`;
-            document.getElementById('studentAttendance').textContent = `${foundStudent.attendance || 'لا توجد بيانات'} (من 10)`;
-
-            const departmentRow = document.getElementById('department-row');
-            if(foundStudent.department) {
-                document.getElementById('studentDepartment').textContent = foundStudent.department;
-                departmentRow.style.display = 'flex';
-            } else {
-                departmentRow.style.display = 'none';
-            }
-
-            document.getElementById('studentTotalGrade').textContent = `${totalGrade} (${getGradeCategory(totalGrade)})`;
-            document.getElementById('total-grade-row').style.display = 'flex';
-            
-            const progressFill = document.getElementById('grade-progress-fill');
-            progressFill.style.width = `${gradePercentage}%`;
-            progressFill.style.backgroundColor = getComputedStyle(document.documentElement).getPropertyValue(`--${getGradeClass(totalGrade)}`).trim();
-            document.getElementById('grade-percentage').textContent = `${gradePercentage}%`;
-
-            
-            updateGradeChart(grade, attendance);
-            
-            
-            showAlertMessage(totalGrade);
-
-            resultArea.style.display = 'block';
-        } else {
-            errorMessage.textContent = 'لم يتم العثور على طالب بهذا الرقم.';
-            errorMessage.style.display = 'block';
-        }
-    } catch (error) {
-        loader.style.display = 'none';
-        errorMessage.textContent = error.message;
-        console.error('Error fetching grades:', error);
-    }
 }
 
 function updateGradeChart(grade, attendance) {
@@ -930,6 +1044,10 @@ function updateGradeChart(grade, attendance) {
         gradeChart.destroy();
     }
     const remainingGrade = Math.max(0, 40 - (grade + attendance));
+    const mainColor = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
+    const accentColor = getComputedStyle(document.documentElement).getPropertyValue('--accent-color');
+    const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+
     gradeChart = new Chart(ctx, {
         type: 'doughnut',
         data: {
@@ -937,8 +1055,8 @@ function updateGradeChart(grade, attendance) {
             datasets: [{
                 data: [grade, attendance, remainingGrade],
                 backgroundColor: [
-                    '#0a9396',
-                    '#005f73',
+                    mainColor,
+                    accentColor,
                     '#ccc'
                 ],
                 hoverOffset: 4
@@ -954,7 +1072,8 @@ function updateGradeChart(grade, attendance) {
                     labels: {
                         font: {
                             family: 'Segoe UI'
-                        }
+                        },
+                        color: textColor
                     }
                 },
                 tooltip: {
@@ -994,6 +1113,13 @@ function showAlertMessage(totalGrade) {
         icon = 'fas fa-exclamation-triangle';
         className = 'warning';
     }
+    
+    alertBox.innerHTML = `
+        <div class="alert-card ${className}">
+            <i class="${icon}"></i>
+            <span>${message}</span>
+        </div>
+    `;
 }
 
 function updateGradeDistributionChart(grades) {
@@ -1007,6 +1133,8 @@ function updateGradeDistributionChart(grades) {
     if (gradeDistributionChart) {
         gradeDistributionChart.destroy();
     }
+    const textColor = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
+
     gradeDistributionChart = new Chart(ctx, {
         type: 'bar',
         data: {
@@ -1038,13 +1166,13 @@ function updateGradeDistributionChart(grades) {
                 y: {
                     beginAtZero: true,
                     ticks: {
-                        color: getComputedStyle(document.documentElement).getPropertyValue('--text-color'),
+                        color: textColor,
                         stepSize: 1
                     }
                 },
                 x: {
                     ticks: {
-                        color: getComputedStyle(document.documentElement).getPropertyValue('--text-color')
+                        color: textColor
                     }
                 }
             },
@@ -1067,15 +1195,19 @@ function toggleDarkMode() {
         toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
     }
     
+    // إعادة رسم المخططات لتحديث ألوان النصوص
     if (gradeChart) {
-        gradeChart.options.scales.y.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
-        gradeChart.options.scales.x.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
-        gradeChart.update();
+        gradeChart.destroy();
+        const gradeText = document.getElementById('studentGrade').textContent;
+        const attendanceText = document.getElementById('studentAttendance').textContent;
+        // استخراج القيمة العددية من النص
+        const foundGrade = parseInt(gradeText.split('(')[0].trim()) || 0;
+        const foundAttendance = parseInt(attendanceText.split('(')[0].trim()) || 0;
+        updateGradeChart(foundGrade, foundAttendance);
     }
     if (gradeDistributionChart) {
-        gradeDistributionChart.options.scales.y.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
-        gradeDistributionChart.options.scales.x.ticks.color = getComputedStyle(document.documentElement).getPropertyValue('--text-color');
-        gradeDistributionChart.update();
+        // إعادة حساب وعرض الإحصاءات للمخطط بناءً على التحديد الحالي في لوحة القيادة
+        filterDashboardStats();
     }
 }
 </script>
