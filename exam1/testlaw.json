@@ -418,5 +418,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-16T15:21:41.073Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات 1",
+    "answers": [
+      {
+        "question": "كلمة (آباء) فقد شرطا من شروط الأسماء الستة، وهو... ",
+        "answer": "الإفراد",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (ورفع أبويه على العرش وخروا له سجدا) \n\nإعراب كلمة (أبويه) ",
+        "answer": "مفعول به منصوب وعلامة نصبه الياء لأنه ملحق بالمثنى",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الآية التي اشتملت على اسم من الأسماء الستة هي",
+        "answer": "يوم يفر المرء من أخيه",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذا تسمى شخص باسم (زيدان) فإنه لا يجوز تثنية هذا الاسم",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "تعتبر أسماء الإشارة (هذان -هاتان) من صور المثنى",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل علامات الإعراب التالية أصلية عدا",
+        "answer": "الياء",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "(جاد الحق) لا تصح تثنيته لأنه مركب مزجي",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المركب الذي يجوز تثنيته هو المركب الإضافي مثل (صلاح الدين) ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الاسم المعرب الذي علامات إعرابه:\nالواو في الرفع، والألف في النصب، والياء في الجر .. هو",
+        "answer": "الأسماء الستة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الكسرة علامة فرعية للنصب في... ",
+        "answer": "جمع المؤنث السالم",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
