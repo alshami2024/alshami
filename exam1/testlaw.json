@@ -214,5 +214,137 @@
         "correctAnswer": "لام الجحود"
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-16T10:28:55.467Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "الاختبار القصير",
+    "answers": [
+      {
+        "question": "أساعد في عمل المعروف لكي أنال رضا الله. \n\n(كي) في الجملة تعليلية",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "فاء السببية التي تنصب الفعل المضارع بأن مضمرة بعدها هي... ",
+        "answer": "التي يكون ما قبلها سببا لما بعدها",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (إنما أمره إذا أراد شيئا أن يقول له كن فيكون) \n\nفي كلمة (فيكون) حكم الفعل المضارع",
+        "answer": "وجوب الرفع",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المتكلم فيستمع الناس باهتمام الخطيب. \n\nالفعل (يستمع) فعل مضارع منصوب بأن مضمرة جوازا بعد فاء العطف",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل ما يأتي ينصب الفعل المضارع بنفسه مباشرة عدا",
+        "answer": "لام التعليل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي لا تعمل فيها (إذن) هي",
+        "answer": "سأحفظ القرآن. إذن سوف تفلح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ظننت أن يعتدل الجو. \n\nالفعل المضارع (يعتدل) ",
+        "answer": "يجوز نصبه ورفعه",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الحالة التي لا تنصب فيها (أن) الفعل المضارع هي",
+        "answer": "إذا كانت مسبوقة بما يدل على العلم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (وما كان الله ليضيع إيمانكم) \n\nاللام في كلمة (ليضيع) ",
+        "answer": "لام الجحود",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة الصحيحة مما يلي هي",
+        "answer": "أيقن المسلمون أن سينتصرون على عدوهم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أيقنت أن سينصر الله المسلمون. \nالفعل (ينصر) مضارع منصوب وعلامة نصبه الفتحة الظاهرة",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "درست مقرر النحو بشكل جيد فأيقنت أن سأحصل على الدرجة الكاملة في الاختبار. \n\nالفعل (أحصل) مضارع مرفوع. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "البيت الذي اشتمل على فعل مضارع منصوب بأن مضمرة وجوبا هو:",
+        "answer": "لأستسهلن الصعب أو أدرك المنى... فما انقادت الآمال إلا لصابر",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أرجو أن يغفر الله لي. \n\nالفعل يغفر يجب نصبه بأن",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (فالتقطه آل فرعون ليكون لهم عدوا وحزنا) \nنوع اللام في كلمة (ليكون) ",
+        "answer": "لام العاقبة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "وكنت إذا غمزت قناة قوم .. كسرت كعوبها أو تستقيما. \n\nحكم إضمار (أن) بعد (أو) في البيت",
+        "answer": "الوجوب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (واعبد ربك حتى يأتيك اليقين) \n\n(حتى) في هذه الآية جاءت بمعنى",
+        "answer": "الغاية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "هلا اجتهدت فتنجح\n\nنوع الطلب في الجملة السابقة",
+        "answer": "تحضيض",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "عدد الحروف التي تنصب الفعل المضارع بأن مضمرة وجوبا بعدها ستة",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الحرف الذي ينصب ظاهرا ومضمرا هو",
+        "answer": "أن",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
