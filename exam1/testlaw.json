@@ -70,5 +70,77 @@
         "correctAnswer": "لام الجحود"
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-16T10:12:41.281Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "الاختبار القصير",
+    "answers": [
+      {
+        "question": "كل ما يأتي ينصب الفعل المضارع بنفسه مباشرة عدا",
+        "answer": "لام التعليل",
+        "isCorrect": false,
+        "correctAnswer": "كي"
+      },
+      {
+        "question": "الحالة التي لا تنصب فيها (أن) الفعل المضارع هي",
+        "answer": "إذا كانت مسبوقة بما يدل على العلم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الحرف الذي ينصب ظاهرا ومضمرا هو",
+        "answer": "أن",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أيقنت أن سينصر الله المسلمون. \nالفعل (ينصر) مضارع منصوب وعلامة نصبه الفتحة الظاهرة",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ظننت أن يعتدل الجو. \n\nالفعل المضارع (يعتدل) ",
+        "answer": "يجوز نصبه ورفعه",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي لا تعمل فيها (إذن) هي",
+        "answer": "سأحفظ القرآن. إذن سوف تفلح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "درست مقرر النحو بشكل جيد فأيقنت أن سأحصل على الدرجة الكاملة في الاختبار. \n\nالفعل (أحصل) مضارع مرفوع. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أساعد في عمل المعروف لكي أنال رضا الله. \n\n(كي) في الجملة تعليلية",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أرجو أن يغفر الله لي. \n\nالفعل يغفر يجب نصبه بأن",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (وما كان الله ليضيع إيمانكم) \n\nاللام في كلمة (ليضيع) ",
+        "answer": "لام الجحود",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
