@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تدريبات 1</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --primary-color: #0056b3; --secondary-color: #007bff; --light-gray: #f8f9fa; --dark-gray: #343a40; --success-color: #28a745; --danger-color: #dc3545; --background-color: #e9ecef; --text-color: #212529; --white: #fff; }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--background-color); margin: 0; padding: 20px; color: var(--text-color); direction: rtl; }
+        .container { background-color: var(--white); border-radius: 15px; box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); width: 95%; max-width: 900px; margin: 0 auto; padding: 30px; }
+        h1, h2, h3 { color: var(--dark-gray); font-weight: 700; }
+        .form-group { margin-bottom: 15px; } .form-group label { display: block; margin-bottom: 5px; font-weight: 500; }
+        .form-group input[type="text"], .form-group textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        .btn { background-color: var(--primary-color); color: var(--white); border: none; padding: 12px 25px; font-size: 18px; font-weight: bold; border-radius: 8px; cursor: pointer; transition: background-color 0.3s; }
+        .btn:hover { background-color: #004a99; } .btn:disabled { background-color: #ccc; }
+        .btn-danger { background-color: var(--danger-color); }
+        .exam-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; }
+        .timer { font-size: 1.2em; color: var(--danger-color); font-weight: bold; }
+        .question-card { background: var(--light-gray); border: 1px solid #dee2e6; border-radius: 10px; padding: 20px; margin-bottom: 20px; text-align: right; }
+        .question-card ul { list-style: none; padding: 0; }
+        .choices li { padding: 10px; margin: 8px 0; background: var(--white); border: 1px solid #ddd; border-radius: 8px; cursor: pointer; transition: all 0.2s; }
+        .choices li:hover { background-color: #e3f2fd; }
+        .choices li.correct { background-color: #d4edda !important; border-color: #c3e6cb; }
+        .choices li.incorrect { background-color: #f8d7da !important; border-color: #f5c6cb; }
+        .essay-answer { width: 100%; min-height: 120px; resize: vertical; margin-top: 15px; padding: 10px; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
+        #navigation-buttons { display: flex; justify-content: space-between; margin-top: 20px; }
+        #progressBarContainer { width: 100%; background-color: #e9ecef; border-radius: 20px; margin-bottom: 25px; overflow: hidden; }
+        #progressBar { width: 0%; height: 20px; background-color: var(--success-color); border-radius: 20px; transition: width 0.5s; text-align: center; color: white; line-height: 20px; }
+        #certificate { display: none; border: 5px solid var(--primary-color); padding: 30px; margin-top: 30px; text-align: center; background: linear-gradient(135deg, #f9f9f9, #eef8ff); }
+        #startScreen, #examArea, #resultContainer, #savingResultsScreen { display: none; }
+        .saving-screen { text-align: center; padding: 50px; }
+        .spinner { border: 8px solid #f3f3f3; border-top: 8px solid var(--primary-color); border-radius: 50%; width: 60px; height: 60px; animation: spin 2s linear infinite; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="studentExamView" style="display:block;">
+        <div id="startScreen" style="display:block;">
+            <h1 id="examTitleStudent"></h1>
+            <p id="examDescriptionStudent" style="white-space: pre-wrap;"></p>
+            
+        <div class="form-group">
+            <label for="studentName">أدخل اسمك الكامل</label>
+            <input type="text" id="studentName" placeholder="الاسم الكامل">
+        </div>
+        
+    
+            <button id="startExamBtn" class="btn">بدء الاختبار</button>
+        </div>
+        <div id="examArea">
+            <div class="exam-header"><h2 id="welcomeStudent"></h2><div id="timer" class="timer"></div></div>
+            <div id="progressBarContainer"><div id="progressBar"></div></div>
+            <div id="questionsContainer"></div>
+            <div id="navigation-buttons"></div>
+            <button id="finishExamBtn" class="btn btn-danger" style="margin-top: 20px; width:100%;">إنهاء وتسليم الاختبار</button>
+        </div>
+        <div id="savingResultsScreen" class="saving-screen">
+            <div class="spinner"></div>
+            <h3>جاري حفظ نتيجتك...</h3>
+            <p>الرجاء عدم إغلاق هذه الصفحة.</p>
+        </div>
+        <div id="resultContainer">
+             <h2 id="resultTitle"></h2><p id="resultSummary"></p>
+             <div id="reviewContainer"></div>
+             <div id="certificate">
+                <h2>شهادة إتمام</h2><p>تشهد هذه الشهادة بأن الطالب/ة:</p><h3 id="certName"></h3>
+                <p>قد أتم الاختبار بنجاح وحصل/ت على درجة:</p><h3 id="certScore"></h3>
+                <p>بتاريخ: <span id="certDate"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const encodedExamData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXF0aXYyTEhaaXRpbzJLZllxaUF4SWl3aVpHVnpZM0pwY0hScGIyNGlPaUxZcDlpdTJLcllxTmluMkxFZzJZWFlydGkxMkxVNklOaW4yWVRaaHRpdDJZZ2dmQ0RZcnk0ZzJMbllxTml2MktmWmhOaXgyWUxaaXRpb0lOaW4yWVRZdE5pbjJZWFppaUI4SU5pbjJZVFlzZGluMktqWXVTRFpoZGkzMllqWXNTSXNJbk4wWVhKMFZHbHRaU0k2SWpJd01qVXRNVEF0TVRoVU1UTTZORFlpTENKbGJtUlVhVzFsSWpvaU1qQXlOUzB4TUMweU0xUXlNem8xT1NJc0lteGhlVzkxZENJNkltOXVaUzFpZVMxdmJtVWlMQ0owYVcxbElqb3lNQ3dpYzJoMVptWnNaU0k2Wm1Gc2MyVXNJbTV2UjI5cGJtZENZV05ySWpwbVlXeHpaU3dpWkdsellXSnNaVU5vWldGMGFXNW5JanBtWVd4elpTd2liVzl1YVhSdmNsUmhZbk1pT25SeWRXVXNJbVpwYm1semFFOXVVM2RwZEdOb0lqcG1ZV3h6WlN3aWJHVmhjbTVwYm1kTmIyUmxJanBtWVd4elpTd2ljMmx1WjJ4bFZYTmxUVzlrWlNJNmRISjFaU3dpYzJodmQxSmxjM1ZzZEhNaU9uUnlkV1VzSW1WdVlXSnNaVkpsZG1sbGR5STZkSEoxWlN3aVpXNWhZbXhsUTJWeWRHbG1hV05oZEdVaU9uUnlkV1VzSW5Sb1pXMWxJam9pWkdWbVlYVnNkQ0lzSW5OMVkyTmxjM05RWlhKalpXNTBZV2RsSWpvek1Dd2lZbTkwVkc5clpXNGlPaUpWTWtaelpFZFdhMWd4TDJsalVUTXlaVkpLUjI1ak4zSjRjbkJUZWpWUkswSkVaMU15VUVsMGJuRlBiVmxpWlVSVFZXSXdhM1ZYY2xsek1rZDVWelZCVVVOR1RYQkNVa0pLWkhWNVl6Qm5ValZXWlRoTWR6MDlJaXdpWTJoaGRFbGtJam9pVlRKR2MyUkhWbXRZTVRsVWJsRm5NbVpRVVVoQ1ExTTVZMmxsWnl0UWNYRlNUa0pZZHpGTGEzZHRRVDBpTENKbmFYUm9kV0pVYjJ0bGJpSTZJbFV5Um5Oa1IxWnJXREU0ZG5CU2MxUnhSRXhIU1hveFZIZEVkRVJxTDBsNk9VeHdNRzFNWWpFdk5UVkRNSGhOZFdGcVFsUjZVSEY0VjFOME5TczJWMU5aU0RsTVdWSlFhMnR5TVVOaE9VcEpkREZRUjBWQlBUMGlMQ0p5WlhOMWJIUnpSbWxzWlc1aGJXVWlPaUowWlhOMGJHRjNMbXB6YjI0aUxDSmhZMk5sYzNORGIyNTBjbTlzSWpwN0ltVnVZV0pzWldRaU9tWmhiSE5sTENKemRIVmtaVzUwY3lJNlcxMTlmU3dpY1hWbGMzUnBiMjV6SWpwYmV5SjBaWGgwSWpvaTJLZlpoTmluMkxQWmhTRFlwOW1FMksvWXA5bUVJTmk1MllUWmlTRFpoZGk1MlliWmlTRFl0TmluMktiWXVTRFpnZG1LSU5pczJZYllzOW1ISU5tSDJZZ2lMQ0owZVhCbElqb2liV054SWl3aVkyaHZhV05sY3lJNld5TFlwOW1FMlliWmc5aXgyS2tpTENMWXA5bUUyWVhZdWRpeDJZSFlxU0pkTENKamIzSnlaV04wUVc1emQyVnlJam93ZlN4N0luUmxlSFFpT2lMWXA5bUUyTGJaaGRtSzJMRWdLTmlsMllyWXA5bURLU0FpTENKMGVYQmxJam9pYldOeElpd2lZMmh2YVdObGN5STZXeUxZc2RtQjJMa2cyWVhZcXRpMTJZUWlMQ0xaaHRpMTJLZ2cyWVhaaHRtQjJMWFpoQ0lzSXRtRzJMWFlxQ0RaaGRpcTJMWFpoQ0lzSXRpeDJZSFl1U0RaaGRtRzJZSFl0ZG1FSWwwc0ltTnZjbkpsWTNSQmJuTjNaWElpT2pGOUxIc2lkR1Y0ZENJNkl0aW4yWVRZdHRtRjJZcllzU0RZcDltRTJMRFppaURaaXRpMTJLMGcyS1BaaGlEWml0aWoyS3JaaWlEWmhObUUyTEhaZ2RpNUlObUkyS2ZaaE5tRzJMWFlxQ0RaaU5pbjJZVFlyTml4SU5tSDJZZ2lMQ0owZVhCbElqb2liV054SWl3aVkyaHZhV05sY3lJNld5TFlxdGluMktFZzJLZlpoTm1CMktmWXVkbUVJaXdpMlliWmlObUdJTmluMllUWmh0aXoyWWpZcVNJc0l0bUcyS2NnMktmWmhObUYyS3JaZzltRTJZWFppdG1HSWl3aTJZcllwOWloSU5pbjJZVFpoZGlxMllQWmhObUZJbDBzSW1OdmNuSmxZM1JCYm5OM1pYSWlPako5TEhzaWRHVjRkQ0k2SXRpbjJZVFl0ZGl2MllyWmd0aW4yWVlnMkxQWXA5bUIyTEhZcHlEWmhOaWoySy9ZcDlpaElOaW4yWVRZdWRtRjJMSFlxUzRnWEc1Y2J0aW4yWVRZdHRtRjJZcllzU0RaZ2RtS0lObUQyWVRaaGRpcElDallzOWluMllIWXNkaW5LU0FpTENKMGVYQmxJam9pYldOeElpd2lZMmh2YVdObGN5STZXeUxaZ2RtS0lObUYySzNaaENEWXNkbUIyTGtnMllIWXA5aTUyWVFpTENMWmdkbUtJTm1GMkszWmhDRFpodGkxMktnZzJZWFpnZGk1MllqWmhDRFlxTm1ISWwwc0ltTnZjbkpsWTNSQmJuTjNaWElpT2pGOUxIc2lkR1Y0ZENJNkl0aWwyTERZcHlEWXA5aXEyTFhaaENEWXA5bUUyTGJaaGRtSzJMRWcyS2pZcDltRTJLZllzOW1GSU5tQjJZclpnOW1JMllZZzJLWFl1ZGl4MktmWXFObUhJaXdpZEhsd1pTSTZJbTFqY1NJc0ltTm9iMmxqWlhNaU9sc2kyWUhaaWlEWmhkaXQyWVFnMkt6WXNTRFlwOWl6MllVZzJZWFlyTml4MllqWXNTSXNJdG1CMllvZzJZWFlyZG1FSU5pczJMRWcyWVhZdHRpbjJZRWcyS1haaE5tSzJZY2lYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNWDBzZXlKMFpYaDBJam9pMktmWmhOaTMyWVRZcDlpb0lObUQyS2ZaaHRtSTJLY2cyWVhZczlpcTJZWFlxdGk1MllyWmhpRFpnZG1LSU5pbjJZVFlzZGl0MllUWXFTRFlwZG1FMllrZzJLZlpoTmlvMkxFdUlGeHVYRzdZcDlpMDJLclpoZG1FMktvZzJLZlpoTmlzMllYWmhOaXBJTmk1MllUWmlTSXNJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0aTIyWVhaaXRpeElOaXgyWUhZdVNJc0l0aTIyWVhaaXRpeElObUcyTFhZcUNJc0l0aTIyWVhaaXRpeElOaXMyTEVpTENMWmhOaW5JTmkwMllyWW9TRFpoZG1GMktjZzJMUFlxTm1DSWwwc0ltTnZjbkpsWTNSQmJuTjNaWElpT2pCOUxIc2lkR1Y0ZENJNkl0aW4yWVRZck5tRjJZVFlxU0RZcDltRTJLclppaURZcDlpMDJLclpoZG1FMktvZzJMblpoTm1KSU5pMjJZWFppdGl4SU5tQjJZb2cyWVhZcmRtRUlObUcyTFhZcUNEWmhkbUIyTG5aaU5tRUlOaW8yWWZZakNEWmg5bUtMaTRnSWl3aWRIbHdaU0k2SW0xamNTSXNJbU5vYjJsalpYTWlPbHNpMktmWmhObUYyS1RaaGRtRzJLZllxaURaaXRpMzJMblpoaURZcDltRTJZVFpoeURaaU5peDJMUFppTm1FMlljaUxDTFlvOWl6MkxuWXI5bUcyWW9nMlliWXVOaW4yWUhZcVNEWXA5bUUySy9ZcDlpeElpd2kyS1BZdGRpbzJLM1podGluSU5pNTJZVFppU0RaZ2RpMzJMSFlxU0RZcDltRTJLWFlzOW1FMktmWmhTNGlMQ0xZcnRpeDJLelpodGluSU5tRTJMWFpoTmluMktrZzJLZlpoTm1GMkxyWXNkaW9JbDBzSW1OdmNuSmxZM1JCYm5OM1pYSWlPakY5TEhzaWRHVjRkQ0k2SXRpejJZVFpoZG1HMktjZzJLUFpoZGl4MlliWXB5RFpoTm1FMlljZzJLcll1ZGluMllUWmlTNGdYRzVjYnRpbjJZVFl0dG1GMllyWXNTRFpnZG1LSU5tRDJZVFpoZGlwSUNqWW85bUYyTEhaaHRpbktTQWlMQ0owZVhCbElqb2liV054SWl3aVkyaHZhV05sY3lJNld5TFpnZG1LSU5tRjJLM1poQ0RZc2RtQjJMa2lMQ0xaZ2RtS0lObUYySzNaaENEWmh0aTEyS2dpTENMWmdkbUtJTm1GMkszWmhDRFlyTml4SWwwc0ltTnZjbkpsWTNSQmJuTjNaWElpT2pKOUxIc2lkR1Y0ZENJNkl0bUQyWVFnMktmWmhOaTIyWVhZcDlpbTJMRWcyS2ZaaE5pcTJLZlpoTm1LMktrZzJZVFpoTml4MllIWXVTRFpnZG1DMkxjZzJMbllyOWluSWl3aWRIbHdaU0k2SW0xamNTSXNJbU5vYjJsalpYTWlPbHNpMktyWXA5aWhJTmluMllUWmdkaW4yTG5aaENJc0l0aWoyWVRaZ1NEWXA5bUUyS2ZZcTltRzJZclpoaUlzSXRtRzJLY2cyS2ZaaE5tRjJLclpnOW1FMllYWml0bUdJaXdpMllqWXA5bUlJTmluMllUWXJObUYyS2ZZdWRpcElsMHNJbU52Y25KbFkzUkJibk4zWlhJaU9qSjlMSHNpZEdWNGRDSTZJdGlqMlliWXFpRFlxdGl0MllIWXVObUsyWVlnMllQWXF0aW4yS2dnMktmWmhObUUyWWN1SUZ4dVhHN1podG1JMkxrZzJLZlpoTmkyMllYWml0aXhJTm1CMllvZzJZUFpoTm1GMktrZ0tOaXEySzNaZ2RpNDJZclpoaWtnSWl3aWRIbHdaU0k2SW0xamNTSXNJbU5vYjJsalpYTWlPbHNpMllyWXA5aWhJTmluMllUWmhkaXEyWVBaaE5tRklpd2kyWXJZcDlpaElOaW4yWVRaaGRpdTJLZll0OWlvMktraVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1YMWRmUT09';
+    
+    // START: DECRYPTION LOGIC
+    const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
+    
+    const examData = JSON.parse(decodeURIComponent(escape(atob(atob(encodedExamData)))));
+
+    try {
+        if (examData.config.botToken) {
+            const decryptedBytes = CryptoJS.AES.decrypt(examData.config.botToken, SECRET_KEY);
+            examData.config.botToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+        }
+        if (examData.config.chatId) {
+            const decryptedBytes = CryptoJS.AES.decrypt(examData.config.chatId, SECRET_KEY);
+            examData.config.chatId = decryptedBytes.toString(CryptoJS.enc.Utf8);
+        }
+        if (examData.config.githubToken) {
+            const decryptedBytes = CryptoJS.AES.decrypt(examData.config.githubToken, SECRET_KEY);
+            examData.config.githubToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+        }
+    } catch (e) {
+        console.error("Decryption failed! The secret key might be wrong or data is corrupt.", e);
+    }
+    // END: DECRYPTION LOGIC
+
+    const GITHUB_OWNER = 'alshami2024';
+    const GITHUB_REPO = 'alshami';
+
+    let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, currentQuestionIndex = 0, tabSwitchCount = 0, examFinished = false;
+    const startScreen = document.getElementById('startScreen'), examArea = document.getElementById('examArea'), resultContainer = document.getElementById('resultContainer'), savingResultsScreen = document.getElementById('savingResultsScreen');
+    const accessControl = examData.config.accessControl || { enabled: false, students: [] };
+    
+    window.onload = function() {
+        const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+        if (examData.config.singleUseMode && localStorage.getItem(uniqueExamId)) {
+            document.body.innerHTML = `<div class="container" style="text-align:center;"><h1>تم قفل الاختبار</h1><p>لقد قمت ببدء هذا الاختبار بالفعل من هذا المتصفح. لا يمكنك إجراؤه مرة أخرى.</p></div>`;
+            return;
+        }
+
+        const now = new Date();
+        const startTime = examData.config.startTime ? new Date(examData.config.startTime) : null;
+        const endTime = examData.config.endTime ? new Date(examData.config.endTime) : null;
+
+        if (startTime && now < startTime) {
+            document.getElementById('startScreen').innerHTML = `<h1>الاختبار غير متاح بعد</h1><p>سيكون الاختبار متاحًا في: ${startTime.toLocaleString('ar-EG')}</p>`;
+            return;
+        }
+
+        if (endTime && now > endTime) {
+            document.getElementById('startScreen').innerHTML = `<h1>انتهت فترة الاختبار</h1><p>لقد انتهت الفترة المحددة لإجراء هذا الاختبار.</p>`;
+            return;
+        }
+
+        document.getElementById('examTitleStudent').textContent = examData.config.title;
+        document.getElementById('examDescriptionStudent').textContent = examData.config.description;
+        document.getElementById('startExamBtn').addEventListener('click', validateStudentAndStart);
+    };
+    
+    async function validateStudentAndStart() {
+        const nameInput = document.getElementById('studentName').value.trim();
+        if (!nameInput) {
+            alert('الرجاء إدخال اسمك.');
+            return;
+        }
+    
+        if (accessControl.enabled) {
+            const codeInput = document.getElementById('accessCode').value.trim();
+            if (!codeInput) {
+                alert('الرجاء إدخال رمز الدخول.');
+                return;
+            }
+            const isValidStudent = accessControl.students.some(student => 
+                student.name.trim().toLowerCase() === nameInput.toLowerCase() && student.code === codeInput
+            );
+    
+            if (!isValidStudent) {
+                alert('الاسم أو رمز الدخول غير صحيح. يرجى المحاولة مرة أخرى.');
+                return;
+            }
+    
+            // NEW: Check for existing results for one-time access
+            if (examData.config.singleUseMode && examData.config.githubToken && examData.config.resultsFilename) {
+                try {
+                    // 💡 تم تعديل دالة checkIfStudentHasTakenExam لاستخدام مسار /exam/
+                    const hasTakenExam = await checkIfStudentHasTakenExam(nameInput, examData.config.githubToken, `exam1/${examData.config.resultsFilename}`);
+                    if (hasTakenExam) {
+                        alert('لقد قمت بإجراء هذا الاختبار مسبقًا. لا يمكن إجراؤه مرة أخرى.');
+                        return;
+                    }
+                } catch (error) {
+                    console.error("Error checking for existing results:", error);
+                    alert("حدث خطأ أثناء التحقق من محاولات سابقة. يرجى المحاولة لاحقاً.");
+                    return;
+                }
+            }
+    
+            studentName = nameInput;
+            startTheExam();
+        } else {
+            studentName = nameInput;
+            startTheExam();
+        }
+    }
+    
+    // NEW: Function to check if a student has already submitted results
+    // 💡 تم تعديل الدالة لتقبل مسار الملف بالكامل
+    async function checkIfStudentHasTakenExam(studentName, githubToken, fullFilenamePath) {
+        const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${fullFilenamePath}`;
+        
+        try {
+            const response = await fetch(url, { headers: { 'Authorization': `token ${githubToken}` } });
+            if (response.status === 404) {
+                return false; // File doesn't exist, so no results yet.
+            }
+            if (!response.ok) {
+                throw new Error(`GitHub API error: ${response.statusText}`);
+            }
+            
+            const data = await response.json();
+            const content = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+            
+            return content.some(result => result.studentName.trim().toLowerCase() === studentName.toLowerCase());
+        } catch (error) {
+            console.error("Error fetching results from GitHub:", error);
+            return false; // Assume no existing results to allow the student to proceed in case of API error.
+        }
+    }
+    
+    function startTheExam() {
+        if (examData.config.singleUseMode) {
+             const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+             localStorage.setItem(uniqueExamId, 'true');
+        }
+        sendStartNotificationToTelegram();
+        startScreen.style.display = 'none'; examArea.style.display = 'block';
+        document.getElementById('welcomeStudent').textContent = `بالتوفيق، ${studentName}!`;
+        if (examData.config.time > 0) startTimer(examData.config.time * 60); else document.getElementById('timer').style.display = 'none';
+        if (examData.config.shuffle) { examData.questions.sort(() => Math.random() - 0.5); }
+        setupSmartFeatures(); renderQuestionsForStudent();
+        document.getElementById('finishExamBtn').addEventListener('click', () => { if(confirm("هل أنت متأكد من رغبتك في إنهاء الاختبار؟")) finishTheExam(); });
+    }
+    
+    function renderQuestionsForStudent(){const container=document.getElementById("questionsContainer");container.innerHTML="",examData.config.layout==="one-by-one"?(renderSingleQuestion(currentQuestionIndex),updateNavigationButtons()):examData.questions.forEach((e,t)=>container.appendChild(createQuestionElement(e,t))),updateProgressBar()}function createQuestionElement(e,t){const n=document.createElement("div");n.className="question-card",n.id=`question-${t}`;let o=`<h3>السؤال ${t+1}: ${e.text}</h3>`;if("mcq"===e.type){const i=e.choices.map((e,n)=>`<li onclick="handleChoiceClick(${t}, ${n}, this)"><input type="radio" name="q${t}" id="q${t}c${n}" value="${n}" ${studentAnswers[t]===n?"checked":""}><label for="q${t}c${n}">${e}</label></li>`).join("");o+=`<ul class="choices">${i}</ul>`}else{const s=studentAnswers[t]||"";o+=`<textarea class="essay-answer" oninput="handleEssayInput(${t}, this.value)" placeholder="اكتب إجابتك هنا...">${s}</textarea>`}return n.innerHTML=o,n}function handleChoiceClick(e,t,n){studentAnswers[e]=t,n.querySelector("input").checked=!0,examData.config.layout==="one-by-one"&&examData.config.learningMode&&"mcq"===examData.questions[e].type&&((n.classList.add(t===examData.questions[e].correctAnswer?"correct":"incorrect"),n.parentElement.querySelectorAll("li").forEach(e=>{e.style.pointerEvents="none"}))),updateProgressBar()}function handleEssayInput(e,t){studentAnswers[e]=t.trim(),updateProgressBar()}function renderSingleQuestion(e){document.getElementById("questionsContainer").appendChild(createQuestionElement(examData.questions[e],e))}function updateNavigationButtons(){const e=document.getElementById("navigation-buttons");if("one-by-one"!==examData.config.layout)return void(e.style.display="none");let t="";examData.config.noGoingBack||(t='<button id="prevBtn" class="btn">السابق</button>'),e.innerHTML=`${t}<button id="nextBtn" class="btn">التالي</button>`;const n=document.getElementById("nextBtn");n.disabled=currentQuestionIndex===examData.questions.length-1,n.addEventListener("click",()=>{currentQuestionIndex<examData.questions.length-1&&(currentQuestionIndex++,renderQuestionsForStudent())}),examData.config.noGoingBack||(document.getElementById("prevBtn").disabled=0===currentQuestionIndex,document.getElementById("prevBtn").addEventListener("click",()=>{currentQuestionIndex>0&&(currentQuestionIndex--,renderQuestionsForStudent())}))}function updateProgressBar(){const e=studentAnswers.filter(e=>null!==e&&""!==e).length,t=e/examData.questions.length*100,n=document.getElementById("progressBar");n.style.width=`${t}%`,n.textContent=`${Math.round(t)}%`}
+    function setupSmartFeatures(){if(examData.config.disableCheating){["contextmenu","copy","paste"].forEach(evt=>document.body.addEventListener(evt,e=>e.preventDefault()))}if(examData.config.monitorTabs){document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&!examFinished){tabSwitchCount++;if(examData.config.finishOnSwitch){alert("لقد خرجت من نافذة الاختبار، سيتم إنهاء الاختبار وإرسال نتيجتك الحالية.");finishTheExam()}}})}}
+    
+    async function finishTheExam(){
+        if(examFinished) return;
+        examFinished = true;
+        clearInterval(timerInterval);
+        examArea.style.display = "none";
+        
+        // عرض شاشة الحفظ قبل أي شيء آخر
+        if (examData.config.githubToken && examData.config.resultsFilename) {
+            savingResultsScreen.style.display = 'block';
+            await saveResultsToGithub();
+            savingResultsScreen.style.display = 'none';
+        }
+    
+        resultContainer.style.display = "block";
+        
+        // حساب النتيجة
+        let correctMcq = 0, totalMcq = 0;
+        examData.questions.forEach((q, index) => {
+            if ("mcq" === q.type) {
+                totalMcq++;
+                if (studentAnswers[index] === q.correctAnswer) {
+                    correctMcq++;
+                }
+            }
+        });
+        
+        document.getElementById("resultTitle").textContent = "تم الانتهاء من الامتحان!";
+        if(examData.config.showResults){
+            let summaryHtml = `مرحباً ${studentName}، نتيجتك في أسئلة الاختيار من متعدد هي: <strong>${correctMcq} / ${totalMcq}</strong>`;
+            if (examData.questions.some(q => "essay" === q.type)) {
+                summaryHtml += '<br><small>الأسئلة المقالية تتطلب تصحيحًا يدويًا وستظهر نتيجتها لاحقاً.</small>';
+            }
+            if (examData.config.monitorTabs && tabSwitchCount > 0) {
+                summaryHtml += `<br><small style="color:var(--danger-color);">تم تسجيل خروجك من الصفحة ${tabSwitchCount} مرات.</small>`;
+            }
+            document.getElementById("resultSummary").innerHTML = summaryHtml;
+        } else {
+            document.getElementById("resultSummary").textContent = "شكراً لك، تم تسليم إجاباتك بنجاح.";
+        }
+    
+        if (examData.config.showResults && examData.config.enableReview) {
+            renderReview();
+        }
+        
+        if (examData.config.enableCertificate && totalMcq > 0 && (correctMcq / totalMcq * 100) >= examData.config.successPercentage) {
+            renderCertificate(correctMcq, totalMcq);
+        }
+        
+        if (examData.config.botToken && examData.config.chatId) {
+            await sendResultsToTelegram(correctMcq, totalMcq);
+        }
+    }
+
+    function renderReview(){const e=document.getElementById("reviewContainer");e.innerHTML="<h3>مراجعة الإجابات:</h3>",examData.questions.forEach((t,n)=>{let o="";o="mcq"===t.type?`<div class="question-card" style="background:${studentAnswers[n]===t.correctAnswer?"#d4edda":"#f8d7da"};"><p><strong>${t.text}</strong></p><p>إجابتك: ${null!==studentAnswers[n]?t.choices[studentAnswers[n]]:"لم تتم الإجابة"} ${studentAnswers[n]===t.correctAnswer?"✔️":"❌"}</p>${studentAnswers[n]!==t.correctAnswer?`<p style="color:var(--primary-color);">الإجابة الصحيحة: ${t.choices[t.correctAnswer]}</p>`:""}</div>`:`<div class="question-card" style="background: #e9ecef;"><p><strong>(سؤال مقالي) ${t.text}</strong></p><p style="font-weight:bold;">إجابتك:</p><p style="white-space: pre-wrap; background: #fff; padding:10px; border-radius:5px;">${studentAnswers[n]?studentAnswers[n].replace(/</g,"&lt;").replace(/>/g,"&gt;"):"لم تتم الإجابة"}</p></div>`,e.innerHTML+=o})}function renderCertificate(e,t){const n=document.getElementById("certificate");n.style.display="block",document.getElementById("certName").textContent=studentName,document.getElementById("certScore").textContent=`${e} / ${t}`,document.getElementById("certDate").textContent=(new Date).toLocaleDateString("ar-EG")}function startTimer(e){let t=e;const n=document.getElementById("timer");timerInterval=setInterval(()=>{let e=parseInt(t/60,10),o=parseInt(t%60,10);e=e<10?"0"+e:e,o=o<10?"0"+o:o,n.textContent=`${e}:${o}`,--t<0&&(clearInterval(timerInterval),alert("انتهى الوقت!"),finishTheExam())},1e3)}async function sendResultsToTelegram(e,t){const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}let a=`*📊 نتيجة اختبار جديدة*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}\n*نتيجة الاختيار من متعدد:* ${e} من ${t}\n*مرات الخروج:* ${tabSwitchCount}`;let d="\n\n*الإجابات المقالية*",r=!1;examData.questions.forEach((e,t)=>{("essay"===e.type&&(r=!0,d+=`\n\n*❓ السؤال: ${i(e.text)}*\n*📝 إجابة الطالب:*\n${i(studentAnswers[t]||"لم تتم الإجابة")}`))}),r&&(a+=d);const c=`https://api.telegram.org/bot${n}/sendMessage`;try{a.length>4096&&(a=a.substring(0,4e3)+"\n\n... (تم اقتطاع الرسالة لأنها طويلة جداً)");const l=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});l.ok||console.error("Telegram API Error:",await l.json())}catch(p){console.error("Fetch error or issue sending to Telegram:",p)}}async function sendStartNotificationToTelegram(){const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}const a=`*🔔 بدء اختبار جديد*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}`,c=`https://api.telegram.org/bot${n}/sendMessage`;try{const l=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});l.ok||console.error("Telegram API Error (Start Notification):",await l.json())}catch(p){console.error("Fetch error sending start notification:",p)}}
+    
+    async function saveResultsToGithub() {
+        const token = examData.config.githubToken;
+        const filename = examData.config.resultsFilename;
+        if (!token || !filename) { return; } 
+        
+        // 💡 التعديل هنا: تمت إضافة مسار المجلد 'exam/' 
+        const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/exam1/${filename}`;
+        
+        let correctMcq = 0, totalMcq = 0;
+        examData.questions.forEach((q, index) => {
+            if ("mcq" === q.type) {
+                totalMcq++;
+                if (studentAnswers[index] === q.correctAnswer) {
+                    correctMcq++;
+                }
+            }
+        });
+
+        const resultData = {
+            studentName: studentName,
+            submissionDate: new Date().toISOString(),
+            mcqScore: { correct: correctMcq, total: totalMcq },
+            tabSwitchCount: tabSwitchCount,
+            examTitle: examData.config.title,
+            answers: examData.questions.map((q, index) => {
+                const studentAnswerRaw = studentAnswers[index];
+                let studentAnswerText = studentAnswerRaw;
+                let isCorrect = null;
+                let correctAnswerText = null;
+
+                if (q.type === 'mcq') {
+                    isCorrect = (studentAnswerRaw === q.correctAnswer);
+                    studentAnswerText = (studentAnswerRaw !== null) ? q.choices[studentAnswerRaw] : "لم تتم الإجابة";
+                    if (!isCorrect) {
+                        correctAnswerText = q.choices[q.correctAnswer];
+                    }
+                }
+
+                return {
+                    question: q.text,
+                    answer: studentAnswerText,
+                    isCorrect: isCorrect,
+                    correctAnswer: correctAnswerText
+                };
+            })
+        };
+
+        try {
+            let currentContent = [];
+            let sha;
+            try {
+                const res = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+                if (res.ok) {
+                    const data = await res.json();
+                    sha = data.sha;
+                    currentContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                } else if (res.status !== 404) {
+                    throw new Error(`GitHub API error on fetch: ${res.statusText}`);
+                }
+            } catch (fetchError) {
+                console.warn("Could not fetch existing results file. A new one will be created.", fetchError);
+            }
+            
+            currentContent.push(resultData);
+            const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentContent, null, 2))));
+            
+            const response = await fetch(url, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: `إضافة نتيجة الطالب: ${studentName}`,
+                    content: updatedContent,
+                    sha: sha
+                })
+            });
+
+            if (!response.ok) {
+                 const errorData = await response.json();
+                 throw new Error(`Failed to save results: ${errorData.message}`);
+            }
+            console.log('Results saved to GitHub successfully.');
+
+        } catch (error) {
+            console.error("Error saving results to GitHub:", error);
+            document.getElementById("resultSummary").innerHTML += '<br><small style="color:red;">حدث خطأ أثناء محاولة حفظ نتيجتك.</small>';
+        }
+    }
+
+</script>
+</body>
+</html>
