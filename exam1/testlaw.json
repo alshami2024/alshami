@@ -490,5 +490,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "م",
+    "submissionDate": "2025-10-18T04:11:21.133Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات 1",
+    "answers": [
+      {
+        "question": "تعتبر أسماء الإشارة (هذان -هاتان) من صور المثنى",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل علامات الإعراب التالية أصلية عدا",
+        "answer": "الياء",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الكسرة علامة فرعية للنصب في... ",
+        "answer": "جمع التكسير",
+        "isCorrect": false,
+        "correctAnswer": "جمع المؤنث السالم"
+      },
+      {
+        "question": "إذا تسمى شخص باسم (زيدان) فإنه لا يجوز تثنية هذا الاسم",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الاسم المعرب الذي علامات إعرابه:\nالواو في الرفع، والألف في النصب، والياء في الجر .. هو",
+        "answer": "المثنى",
+        "isCorrect": false,
+        "correctAnswer": "الأسماء الستة"
+      },
+      {
+        "question": "الآية التي اشتملت على اسم من الأسماء الستة هي",
+        "answer": "قالوا إن يسرق فقد سرق له أخٌ له من قبل",
+        "isCorrect": false,
+        "correctAnswer": "يوم يفر المرء من أخيه"
+      },
+      {
+        "question": "(جاد الحق) لا تصح تثنيته لأنه مركب مزجي",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المركب الذي يجوز تثنيته هو المركب الإضافي مثل (صلاح الدين) ",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "قال تعالى: (ورفع أبويه على العرش وخروا له سجدا) \n\nإعراب كلمة (أبويه) ",
+        "answer": "مفعول به منصوب وعلامة نصبه الياء لأنه مثنى",
+        "isCorrect": false,
+        "correctAnswer": "مفعول به منصوب وعلامة نصبه الياء لأنه ملحق بالمثنى"
+      },
+      {
+        "question": "كلمة (آباء) فقد شرطا من شروط الأسماء الستة، وهو... ",
+        "answer": "الإفراد",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
