@@ -562,5 +562,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "ا",
+    "submissionDate": "2025-10-18T04:14:02.455Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات 1",
+    "answers": [
+      {
+        "question": "(جاد الحق) لا تصح تثنيته لأنه مركب مزجي",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذا تسمى شخص باسم (زيدان) فإنه لا يجوز تثنية هذا الاسم",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الكسرة علامة فرعية للنصب في... ",
+        "answer": "جمع المؤنث السالم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل علامات الإعراب التالية أصلية عدا",
+        "answer": "الياء",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الاسم المعرب الذي علامات إعرابه:\nالواو في الرفع، والألف في النصب، والياء في الجر .. هو",
+        "answer": "المثنى",
+        "isCorrect": false,
+        "correctAnswer": "الأسماء الستة"
+      },
+      {
+        "question": "المركب الذي يجوز تثنيته هو المركب الإضافي مثل (صلاح الدين) ",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "قال تعالى: (ورفع أبويه على العرش وخروا له سجدا) \n\nإعراب كلمة (أبويه) ",
+        "answer": "مفعول به منصوب وعلامة نصبه الياء لأنه من الأسماء الستة",
+        "isCorrect": false,
+        "correctAnswer": "مفعول به منصوب وعلامة نصبه الياء لأنه ملحق بالمثنى"
+      },
+      {
+        "question": "الآية التي اشتملت على اسم من الأسماء الستة هي",
+        "answer": "قالوا إن يسرق فقد سرق له أخٌ له من قبل",
+        "isCorrect": false,
+        "correctAnswer": "يوم يفر المرء من أخيه"
+      },
+      {
+        "question": "تعتبر أسماء الإشارة (هذان -هاتان) من صور المثنى",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "كلمة (آباء) فقد شرطا من شروط الأسماء الستة، وهو... ",
+        "answer": "الإفراد",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
