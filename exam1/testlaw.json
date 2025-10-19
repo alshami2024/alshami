@@ -994,5 +994,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "ناصر يوسف احمد",
+    "submissionDate": "2025-10-19T10:32:05.312Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "tabSwitchCount": 1,
+    "examTitle": "تدريبات الضمائر1",
+    "answers": [
+      {
+        "question": "الاسم الدال على معنى شائع في جنسه هو",
+        "answer": "المعرفة",
+        "isCorrect": false,
+        "correctAnswer": "النكرة"
+      },
+      {
+        "question": "الضمير (إياك) ",
+        "answer": "رفع منفصل",
+        "isCorrect": false,
+        "correctAnswer": "نصب منفصل"
+      },
+      {
+        "question": "الضمير الذي يصح أن يأتي للرفع والنصب والجر هو",
+        "answer": "ياء المتكلم",
+        "isCorrect": false,
+        "correctAnswer": "نا المتكلمين"
+      },
+      {
+        "question": "الصديقان سافرا لأداء العمرة. \n\nالضمير في كلمة (سافرا) ",
+        "answer": "في محل رفع فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذا اتصل الضمير بالاسم فيكون إعرابه",
+        "answer": "في محل جر مضاف إليه",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الطلاب كانوا مستمتعين في الرحلة إلى البر. \n\nاشتملت الجملة على",
+        "answer": "ضمير نصب",
+        "isCorrect": false,
+        "correctAnswer": "ضمير رفع"
+      },
+      {
+        "question": "الجملة التي اشتملت على ضمير في محل نصب مفعول به، هي.. ",
+        "answer": "النساء خرجنَ لصلاة العيد",
+        "isCorrect": false,
+        "correctAnswer": "أسعدني نظافة الدار"
+      },
+      {
+        "question": "سلمنا أمرنا لله تعالى. \n\nالضمير في كلمة (أمرنا) ",
+        "answer": "في محل نصب",
+        "isCorrect": false,
+        "correctAnswer": "في محل جر"
+      },
+      {
+        "question": "كل الضمائر التالية للرفع فقط عدا",
+        "answer": "تاء الفاعل",
+        "isCorrect": false,
+        "correctAnswer": "نا المتكلمين"
+      },
+      {
+        "question": "أنت تحفظين كتاب الله. \n\nنوع الضمير في كلمة (تحفظين) ",
+        "answer": "ياء المخاطبة",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
