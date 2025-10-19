@@ -1066,5 +1066,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "محمد انس احمد",
+    "submissionDate": "2025-10-19T15:23:12.120Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "tabSwitchCount": 1,
+    "examTitle": "تدريبات الضمائر1",
+    "answers": [
+      {
+        "question": "الاسم الدال على معنى شائع في جنسه هو",
+        "answer": "النكرة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الضمير (إياك) ",
+        "answer": "نصب منفصل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الضمير الذي يصح أن يأتي للرفع والنصب والجر هو",
+        "answer": "نا المتكلمين",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الصديقان سافرا لأداء العمرة. \n\nالضمير في كلمة (سافرا) ",
+        "answer": "في محل رفع فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذا اتصل الضمير بالاسم فيكون إعرابه",
+        "answer": "في محل جر مضاف إليه",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الطلاب كانوا مستمتعين في الرحلة إلى البر. \n\nاشتملت الجملة على",
+        "answer": "ضمير رفع",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على ضمير في محل نصب مفعول به، هي.. ",
+        "answer": "أصبحنا على فطرة الإسلام.",
+        "isCorrect": false,
+        "correctAnswer": "أسعدني نظافة الدار"
+      },
+      {
+        "question": "سلمنا أمرنا لله تعالى. \n\nالضمير في كلمة (أمرنا) ",
+        "answer": "في محل رفع",
+        "isCorrect": false,
+        "correctAnswer": "في محل جر"
+      },
+      {
+        "question": "كل الضمائر التالية للرفع فقط عدا",
+        "answer": "نا المتكلمين",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أنت تحفظين كتاب الله. \n\nنوع الضمير في كلمة (تحفظين) ",
+        "answer": "ياء المخاطبة",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
