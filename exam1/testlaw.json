@@ -2530,5 +2530,137 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "أحمد ياسر أبوزيد محمد",
+    "submissionDate": "2025-10-20T18:24:35.347Z",
+    "mcqScore": {
+      "correct": 18,
+      "total": 20
+    },
+    "tabSwitchCount": 2,
+    "examTitle": "تدريبات نحو الثاني مطور",
+    "answers": [
+      {
+        "question": "الكلمة التي تدل على معنى في ذاتها غير مقترنة بزمن هي",
+        "answer": "الاسم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على حرف غير مختص هي",
+        "answer": "شارك الطالب في مسابقة حفظ القرآن وفاز",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العلامة الخاصة بالفعل الماضي مما يلي هي",
+        "answer": "تاء التأنيث الساكنة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "وقف المؤمن رافعاً يديه يدعو ربه. \n\nالاسم الذي علامته الإسناد في الجملة السابقة هو",
+        "answer": "المؤمن",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حروف الاستفهام ",
+        "answer": "غير مختصة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "(السين وسوف)\nمن علامات الفعل",
+        "answer": "المختصة بالمضارع",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الكلمة التي تتغير حركة آخرها تبعا لتغير العوامل الداخلة عليها تسمى",
+        "answer": "معرب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الأسماء التالية مبنية عدا",
+        "answer": "سهام",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الفعل الماضي",
+        "answer": "مبني دائما",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل مضارع مبني هي",
+        "answer": "الطالب يجتهدنّ في دراسته",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم مبني هي",
+        "answer": "ما أعظم هؤلاء الطلاب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الفعل المضارع معرب إلا إذا اتصلت به",
+        "answer": "كل ما سبق",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي تشتمل على فعل يعرب بحركة مقدرة هي",
+        "answer": "المؤمن يخشى ربه ويسعى في رضاه",
+        "isCorrect": false,
+        "correctAnswer": "أن تدعو الناس إلى الخير خير من الدعاء عليهم"
+      },
+      {
+        "question": "الجر علامة خاصة بالأسماء",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "الكلمة التي تدل على الطلب ولا تقبل علامات الفعل نحو (صه) تسمى فعل أمر",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الأصل في الأسماء البناء",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العقل لا يرمي النفايات في طريق الناس. \n\nالفعل (يرمي) يعرب بحركة مقدر",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المسلمات يطعن الله ورسوله. \n\nاشتملت الجملة على فعل معرب",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ياء المخاطبة علامة مشتركة بين الفعل المضارع وفعل الأمر. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذا قالت حذام فصدقوها فإن القول ما قالت حذام. \n\nتعرب كلمة (حذام) فاعل مرفوع وعلامة رفعه الضمة الظاهرة. ",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
