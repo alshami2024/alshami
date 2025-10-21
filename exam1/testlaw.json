@@ -2794,5 +2794,137 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "محمد أشرف السيد البرهامي",
+    "submissionDate": "2025-10-21T17:09:09.745Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 20
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات نحو الثاني مطور",
+    "answers": [
+      {
+        "question": "الكلمة التي تدل على معنى في ذاتها غير مقترنة بزمن هي",
+        "answer": "الفعل",
+        "isCorrect": false,
+        "correctAnswer": "الاسم"
+      },
+      {
+        "question": "الجملة التي اشتملت على حرف غير مختص هي",
+        "answer": "لعل الفرج قريب",
+        "isCorrect": false,
+        "correctAnswer": "شارك الطالب في مسابقة حفظ القرآن وفاز"
+      },
+      {
+        "question": "العلامة الخاصة بالفعل الماضي مما يلي هي",
+        "answer": "ياء المخاطبة",
+        "isCorrect": false,
+        "correctAnswer": "تاء التأنيث الساكنة"
+      },
+      {
+        "question": "وقف المؤمن رافعاً يديه يدعو ربه. \n\nالاسم الذي علامته الإسناد في الجملة السابقة هو",
+        "answer": "المؤمن",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حروف الاستفهام ",
+        "answer": "مختصة بالاسم",
+        "isCorrect": false,
+        "correctAnswer": "غير مختصة"
+      },
+      {
+        "question": "(السين وسوف)\nمن علامات الفعل",
+        "answer": "المشتركة بين الماضي والمضارع",
+        "isCorrect": false,
+        "correctAnswer": "المختصة بالمضارع"
+      },
+      {
+        "question": "الكلمة التي تتغير حركة آخرها تبعا لتغير العوامل الداخلة عليها تسمى",
+        "answer": "معرب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الأسماء التالية مبنية عدا",
+        "answer": "كيف",
+        "isCorrect": false,
+        "correctAnswer": "سهام"
+      },
+      {
+        "question": "الفعل الماضي",
+        "answer": "مبني دائما",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل مضارع مبني هي",
+        "answer": "الطالب يجتهد في دراسته",
+        "isCorrect": false,
+        "correctAnswer": "الطالب يجتهدنّ في دراسته"
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم مبني هي",
+        "answer": "ما أعظم هؤلاء الطلاب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الفعل المضارع معرب إلا إذا اتصلت به",
+        "answer": "نون التوكيد",
+        "isCorrect": false,
+        "correctAnswer": "كل ما سبق"
+      },
+      {
+        "question": "الجملة التي تشتمل على فعل يعرب بحركة مقدرة هي",
+        "answer": "أن تدعو الناس إلى الخير خير من الدعاء عليهم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجر علامة خاصة بالأسماء",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "الكلمة التي تدل على الطلب ولا تقبل علامات الفعل نحو (صه) تسمى فعل أمر",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الأصل في الأسماء البناء",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "العقل لا يرمي النفايات في طريق الناس. \n\nالفعل (يرمي) يعرب بحركة مقدر",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "المسلمات يطعن الله ورسوله. \n\nاشتملت الجملة على فعل معرب",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ياء المخاطبة علامة مشتركة بين الفعل المضارع وفعل الأمر. ",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "إذا قالت حذام فصدقوها فإن القول ما قالت حذام. \n\nتعرب كلمة (حذام) فاعل مرفوع وعلامة رفعه الضمة الظاهرة. ",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      }
+    ]
   }
 ]
