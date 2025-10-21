@@ -2998,5 +2998,77 @@
         "correctAnswer": "خطأ"
       }
     ]
+  },
+  {
+    "studentName": "مشاري يوسف الحريري",
+    "submissionDate": "2025-10-21T20:41:05.962Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "tabSwitchCount": 5,
+    "examTitle": "تدريبات 1",
+    "answers": [
+      {
+        "question": "كل علامات الإعراب التالية أصلية عدا",
+        "answer": "الياء",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الآية التي اشتملت على اسم من الأسماء الستة هي",
+        "answer": "قالوا إن يسرق فقد سرق له أخٌ له من قبل",
+        "isCorrect": false,
+        "correctAnswer": "يوم يفر المرء من أخيه"
+      },
+      {
+        "question": "الكسرة علامة فرعية للنصب في... ",
+        "answer": "جمع المؤنث السالم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "(جاد الحق) لا تصح تثنيته لأنه مركب مزجي",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "إذا تسمى شخص باسم (زيدان) فإنه لا يجوز تثنية هذا الاسم",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الاسم المعرب الذي علامات إعرابه:\nالواو في الرفع، والألف في النصب، والياء في الجر .. هو",
+        "answer": "الأسماء الستة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: (ورفع أبويه على العرش وخروا له سجدا) \n\nإعراب كلمة (أبويه) ",
+        "answer": "مفعول به منصوب وعلامة نصبه الياء لأنه مثنى",
+        "isCorrect": false,
+        "correctAnswer": "مفعول به منصوب وعلامة نصبه الياء لأنه ملحق بالمثنى"
+      },
+      {
+        "question": "المركب الذي يجوز تثنيته هو المركب الإضافي مثل (صلاح الدين) ",
+        "answer": "خطأ",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "كلمة (آباء) فقد شرطا من شروط الأسماء الستة، وهو... ",
+        "answer": "الإفراد",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "تعتبر أسماء الإشارة (هذان -هاتان) من صور المثنى",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      }
+    ]
   }
 ]
