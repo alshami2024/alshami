@@ -3070,5 +3070,77 @@
         "correctAnswer": "خطأ"
       }
     ]
+  },
+  {
+    "studentName": "محمود عبد الحفيظ حمدون",
+    "submissionDate": "2025-10-23T07:13:15.774Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات الضمائر1",
+    "answers": [
+      {
+        "question": "الاسم الدال على معنى شائع في جنسه هو",
+        "answer": "النكرة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الضمير (إياك) ",
+        "answer": "نصب منفصل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الضمير الذي يصح أن يأتي للرفع والنصب والجر هو",
+        "answer": "نا المتكلمين",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الصديقان سافرا لأداء العمرة. \n\nالضمير في كلمة (سافرا) ",
+        "answer": "في محل رفع فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذا اتصل الضمير بالاسم فيكون إعرابه",
+        "answer": "في محل جر مضاف إليه",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الطلاب كانوا مستمتعين في الرحلة إلى البر. \n\nاشتملت الجملة على",
+        "answer": "ضمير نصب",
+        "isCorrect": false,
+        "correctAnswer": "ضمير رفع"
+      },
+      {
+        "question": "الجملة التي اشتملت على ضمير في محل نصب مفعول به، هي.. ",
+        "answer": "أصبحنا على فطرة الإسلام.",
+        "isCorrect": false,
+        "correctAnswer": "أسعدني نظافة الدار"
+      },
+      {
+        "question": "سلمنا أمرنا لله تعالى. \n\nالضمير في كلمة (أمرنا) ",
+        "answer": "في محل رفع",
+        "isCorrect": false,
+        "correctAnswer": "في محل جر"
+      },
+      {
+        "question": "كل الضمائر التالية للرفع فقط عدا",
+        "answer": "ألف الاثنين",
+        "isCorrect": false,
+        "correctAnswer": "نا المتكلمين"
+      },
+      {
+        "question": "أنت تحفظين كتاب الله. \n\nنوع الضمير في كلمة (تحفظين) ",
+        "answer": "ياء المخاطبة",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
