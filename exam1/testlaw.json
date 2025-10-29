@@ -4426,5 +4426,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-10-29T18:47:46.957Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات الرابع (مطور) 2",
+    "answers": [
+      {
+        "question": "العَلَم الذي الذي يشعر لمدح أو هو ذم هو:",
+        "answer": "اللقب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على مركب تركيب إسنادي هي:",
+        "answer": "كان الشيخ جاد الحق شيخ الأزهر ومفتي جمهورية مصر سابقا",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "(أسد) إذا صار علما على شخص، فهو علم منقول عن",
+        "answer": "اسم جنس",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "نوع اسم (أكرم) ",
+        "answer": "منقول",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على علم بالغلبة هي",
+        "answer": "زار المعتمر المدينة وتجول في أماكنها التاريخية",
+        "isCorrect": false,
+        "correctAnswer": "زار السائح القاهرة ومكث فيها ثلاثة أيام"
+      },
+      {
+        "question": "قال تعالى: {قَالُواْ أَضْغَاثُ أَحْلاَمٍ وَمَا نَحْنُ بِتَأْوِيلِ الأَحْلاَمِ بِعَالِمِينَ} [يوسف:44]\nكلمة (نحن)... ",
+        "answer": "معرفة",
+        "isCorrect": false,
+        "correctAnswer": "نكرة"
+      },
+      {
+        "question": "الجملة التي اشتملت على ضمير مستتر وجوباً هي:",
+        "answer": "أحب أن يفهم الطلاب النحو",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "تكلم الخطيب فأجاد وأفاد. \nحكم استتار الضمير في الجملة السابقة. ",
+        "answer": "جائز",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الطبيبان يساعدان المرضى. \nنوع الضمير في الجملة السابقة... ",
+        "answer": "بارز",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يسعدني أن تنالوا أعلى الدرجات. \n\nالضمير المتصل في كلمة (تنالوا) ",
+        "answer": "مبني في محل رفع فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
