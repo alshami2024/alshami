@@ -4498,5 +4498,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالله سعد",
+    "submissionDate": "2025-10-29T20:59:47.091Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات الرابع (مطور) 2",
+    "answers": [
+      {
+        "question": "يسعدني أن تنالوا أعلى الدرجات. \n\nالضمير المتصل في كلمة (تنالوا) ",
+        "answer": "مبني في محل رفع فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الطبيبان يساعدان المرضى. \nنوع الضمير في الجملة السابقة... ",
+        "answer": "مستتر",
+        "isCorrect": false,
+        "correctAnswer": "بارز"
+      },
+      {
+        "question": "الجملة التي اشتملت على ضمير مستتر وجوباً هي:",
+        "answer": "أحب أن يفهم الطلاب النحو",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على مركب تركيب إسنادي هي:",
+        "answer": "سافر الطالب إلى حضرموت للسياحة",
+        "isCorrect": false,
+        "correctAnswer": "كان الشيخ جاد الحق شيخ الأزهر ومفتي جمهورية مصر سابقا"
+      },
+      {
+        "question": "الجملة التي اشتملت على علم بالغلبة هي",
+        "answer": "زار السائح القاهرة ومكث فيها ثلاثة أيام",
+        "isCorrect": false,
+        "correctAnswer": "زار المعتمر المدينة وتجول في أماكنها التاريخية"
+      },
+      {
+        "question": "قال تعالى: {قَالُواْ أَضْغَاثُ أَحْلاَمٍ وَمَا نَحْنُ بِتَأْوِيلِ الأَحْلاَمِ بِعَالِمِينَ} [يوسف:44]\nكلمة (نحن)...",
+        "answer": "نكرة",
+        "isCorrect": false,
+        "correctAnswer": "معرفة"
+      },
+      {
+        "question": "تكلم الخطيب فأجاد وأفاد. \nحكم استتار الضمير في الجملة السابقة. ",
+        "answer": "واجب",
+        "isCorrect": false,
+        "correctAnswer": "جائز"
+      },
+      {
+        "question": "نوع اسم (أكرم) ",
+        "answer": "منقول",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "(أسد) إذا صار علما على شخص، فهو علم منقول عن",
+        "answer": "صفة",
+        "isCorrect": false,
+        "correctAnswer": "اسم جنس"
+      },
+      {
+        "question": "العَلَم الذي الذي يشعر بمدح أو هو ذم هو:",
+        "answer": "الكنية",
+        "isCorrect": false,
+        "correctAnswer": "اللقب"
+      }
+    ]
   }
 ]
