@@ -6010,5 +6010,101 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "احمد محمد عزيز السيد",
+    "submissionDate": "2025-10-31T12:09:38.185Z",
+    "mcqScore": {
+      "correct": 14,
+      "total": 14
+    },
+    "tabSwitchCount": 11,
+    "examTitle": "تدريبات الثالث (مطور) 2",
+    "answers": [
+      {
+        "question": "الآية التي احتوت على ملحق بالمثنى هي",
+        "answer": "{قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ}",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الأسماء التالية يصح تثنيتها عدا",
+        "answer": "مدارس",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الجمل التالية صحيحة عدا",
+        "answer": "شارك أخاك في عمل الخير",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الضمة علامة أصلية للرفع في المعربات التالية عدا",
+        "answer": "جمع المذكر السالم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا يصح تثنية كلمة (معدي كرب) لأنه مركب  إسنادي. ",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة الصحيحة مما يلي هي:",
+        "answer": "إذا تثاءبت فأغلق فاك",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المركب الذي يصح تثنيته مما يلي هو",
+        "answer": "صلاح الدين",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "التفاحتان (كلتاهما) ناضجتان. ما بين القوسين ملحق بالمثنى. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الآية التي لا تشتمل على اسم من الأسماء الستة هي",
+        "answer": "{قَالَ رَبِّ إِنِّي لا أَمْلِكُ إِلاَّ نَفْسِي وَأَخِي} ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "{وَأَمَّا الْغُلَامُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ فَخَشِينَا أَن يُرْهِقَهُمَا طُغْيَاناً وَكُفْراً} [الكهف:80]\n\nإعراب كلمة (أبواه) ",
+        "answer": "اسم كان مرفوع وعلامة رفعه الألف لأنه ملحق بالمثنى",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "سافر الأخوان لزيارة أقاربهما. كلمة (الأخوان) من الأسماء الستة",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي ورد فيها (كلا) ملحقا بالمثنى هي",
+        "answer": "كرم المدير المتسابقين كليهما",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "نال المجرمان عقوبتهما. كلمة المجرمان ترفع بالألف لأنها مثنى",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا تستقيم حياة البشر على كوكب (زحل). ما بين القوسين تصح تثنيته",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
