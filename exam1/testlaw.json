@@ -6592,5 +6592,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عمرو محمد العنانى",
+    "submissionDate": "2025-11-01T18:11:30.833Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات الرابع (مطور) 2",
+    "answers": [
+      {
+        "question": "تكلم الخطيب فأجاد وأفاد. \nحكم استتار الضمير في الجملة السابقة. ",
+        "answer": "ممتنع",
+        "isCorrect": false,
+        "correctAnswer": "جائز"
+      },
+      {
+        "question": "الجملة التي اشتملت على ضمير مستتر وجوباً هي:",
+        "answer": "أحب أن يفهم الطلاب النحو",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العَلَم الذي الذي يشعر بمدح أو هو ذم هو:",
+        "answer": "الكنية",
+        "isCorrect": false,
+        "correctAnswer": "اللقب"
+      },
+      {
+        "question": "الجملة التي اشتملت على علم بالغلبة هي",
+        "answer": "كانت بغداد عاصمة الدولة العباسية",
+        "isCorrect": false,
+        "correctAnswer": "زار المعتمر المدينة وتجول في أماكنها التاريخية"
+      },
+      {
+        "question": "(أسد) إذا صار علما على شخص، فهو علم منقول عن",
+        "answer": "اسم جنس",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الطبيبان يساعدان المرضى. \nنوع الضمير في الجملة السابقة... ",
+        "answer": "بارز",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "نوع اسم (أكرم) ",
+        "answer": "مرتجل",
+        "isCorrect": false,
+        "correctAnswer": "منقول"
+      },
+      {
+        "question": "قال تعالى: {قَالُواْ أَضْغَاثُ أَحْلاَمٍ وَمَا نَحْنُ بِتَأْوِيلِ الأَحْلاَمِ بِعَالِمِينَ} [يوسف:44]\nكلمة (نحن)...",
+        "answer": "معرفة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على مركب تركيب إسنادي هي:",
+        "answer": "سافر الطالب إلى حضرموت للسياحة",
+        "isCorrect": false,
+        "correctAnswer": "كان الشيخ جاد الحق شيخ الأزهر ومفتي جمهورية مصر سابقا"
+      },
+      {
+        "question": "يسعدني أن تنالوا أعلى الدرجات. \n\nالضمير المتصل في كلمة (تنالوا) ",
+        "answer": "مبني في محل رفع فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
