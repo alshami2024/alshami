@@ -7096,5 +7096,89 @@
         "correctAnswer": "مبني في محل رفع فاعل"
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-11-02T21:05:50.669Z",
+    "mcqScore": {
+      "correct": 12,
+      "total": 12
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "اختبار مقرر الفقه 3 (مؤجل) ",
+    "answers": [
+      {
+        "question": "حكم النكاح لذي شهوة لا يخاف الزنا",
+        "answer": "سنة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حكم التعريض بخطبة المطلقة الرجعية",
+        "answer": "محرم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل الأمور التالية من شروط الولي في النكاح، عدا:",
+        "answer": "السمع",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "شقيق تولى عقد نكاح شقيقته كون والدها مسافرًا ولا يعرف مكانه، فحكم العقد:",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال ولي أمر المرأة لرجل - مازحاً -: زوجتك ابنتي. فقال الرجل: قبلت. فحكم عقد النكاح في هذه الصورة:",
+        "answer": "ينعقد النكاح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "المرأة التي إذنها في النكاح الصمت وهو المعبر عن قبولها هي:",
+        "answer": "البكر",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حكم عقد النكاح بالكتابة أوبالإشارة من الأخرس",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "من خطب امرأة سبقه غيره إلى خطبتها وأجيب، فقد ارتكب محرمًا، ولو عقد فعقده صحيح. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "فارق السن من الأمور المعتبرة في الكفاءة",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لو زالت الكفاءة بعد العقد فليس من حق المرأة الفسخ",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذا أجبر الأب ابنه أو ابنته غير المكلف على النكاح فإن النكاح لا يصح",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يجوز أن تنظر المرأة إلى ما عدا ما بين السرة إلى الركبة للرجل الأجنبي",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
