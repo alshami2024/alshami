@@ -6952,5 +6952,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عواشة",
+    "submissionDate": "2025-11-02T17:25:01.243Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات النحو والبلاغة الصف التاسع",
+    "answers": [
+      {
+        "question": "{أُولَئِكَ الَّذِينَ اشْتَرَوُاْ الضَّلاَلَةَ بِالْهُدَى وَالْعَذَابَ بِالْمَغْفِرَةِ فَمَا أَصْبَرَهُمْ عَلَى النَّارِ}[البقرة:175].\nاشتملت الآية على",
+        "answer": "استعارة تصريحية",
+        "isCorrect": false,
+        "correctAnswer": "استعارة مكنية"
+      },
+      {
+        "question": "ولم أرقبلي من مشى البحر نحوه\n         ولا رجلاً قامت تعانقه الأسد. \n\nاشتمل البيت على الخيال التالي\n",
+        "answer": "استعارة مكنية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "«اِهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ»\nاشتملت الآية على ",
+        "answer": "استعارة مكنية",
+        "isCorrect": false,
+        "correctAnswer": "استعارة تصريحية"
+      },
+      {
+        "question": "نعم خلقاً الصدق. \n\nصورة الفاعل في الجملة",
+        "answer": "ضمير مستتر",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حبذا الخلق الصدق\n\nالمخصوص بالمدح",
+        "answer": "الخلق",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "بئس من تصادق الكذوب. \n\nإعراب كلمة (من) ",
+        "answer": "اسم موصول مبني في محل رفع فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أكمل الفراغ:\nنحن .... نؤمن بالله واليوم الآخر",
+        "answer": "المسلمين",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الاجتهاد الاجتهاد فإنه سبيل التفوق. \n\nنوع الأسلوب السابق",
+        "answer": "إغراء",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إياك الكذب \n\nالضبط الصحيح لكلمة (الكذب) ",
+        "answer": "بالنصب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على أسلوب اختصاص",
+        "answer": "نحن طلاب العلم نحب قراءة الكتب",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
