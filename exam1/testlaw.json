@@ -7282,5 +7282,107 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "شريف إبراهيم احمد الباز",
+    "submissionDate": "2025-11-03T10:39:52.214Z",
+    "mcqScore": {
+      "correct": 11,
+      "total": 15
+    },
+    "tabSwitchCount": 2,
+    "examTitle": "تدريبات الثاني مطور 2",
+    "answers": [
+      {
+        "question": "كل ما يأتي من الأفعال مبني دائما عدا",
+        "answer": "الفعل المضارع",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الاسم المعرب الذي آخره ألف لازمة هو",
+        "answer": "الاسم المقصور",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على حرف غير مختص هي",
+        "answer": "أمحمدٌ مسافر؟ ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "العلامات التي تقدر في الاسم المقصور هي",
+        "answer": "الضمة والفتحة والكسرة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "(إنما يخشى الله من عباده العلماء) كلمة (يخشى) معرب بحركة مقدرة. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا تصاحب أخا الجهل. كلمة (أخا) اسم مقصور. ",
+        "answer": "صحيح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يا طالب العلم صحح نيتك. اشتملت الجملة على حرف مختص بالاسم. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي تشتمل على فعل مضارع مبني هي",
+        "answer": "الطالبات يجتهدن في حفظ كتاب الله",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم يعرب بحركة مقدرة على الألف المحذوفة",
+        "answer": "قرأت سلوى القصة",
+        "isCorrect": false,
+        "correctAnswer": "أنزل الله هدىً ينير السبيل للناس"
+      },
+      {
+        "question": "ما تتغير حركة آخره لاختلاف العوامل الداخلة عليه هو",
+        "answer": "المعرب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الاسم المقصور من الكلمات التالية هو:",
+        "answer": "الفتى",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "كل ما يأتي من العلامات مشتركة بين الأفعال الثلاثة عدا",
+        "answer": "نون النسوة",
+        "isCorrect": false,
+        "correctAnswer": "تاء التأنيث الساكنة"
+      },
+      {
+        "question": "الجملة التي تشتمل على اسم مبني هي",
+        "answer": "يتعجب المرء كيف يشرك الإنسان بالله تعالى",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الآية التي اشتملت على فعل يعرب بحركة مقدرة هي:",
+        "answer": "{إِنَّ أَبِي يَدْعُوكَ لِيَجْزِيَكَ أَجْرَ مَا سَقَيْتَ لَنَا}",
+        "isCorrect": false,
+        "correctAnswer": "{لَّيْسَ عَلَيْكَ هُدَاهُمْ وَلَكِنَّ اللَّهَ يَهْدِي مَن يَشاء}"
+      },
+      {
+        "question": "فاز (هذا) المتسابق بالجائزة. ما بين القوسين اسم معرب",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
