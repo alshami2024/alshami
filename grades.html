@@ -709,6 +709,7 @@ const studentDetailsModal = document.getElementById('student-details-modal');
 let allStudentsData = []; // يحمل بيانات جميع الطلاب
 let gradeChart = null;
 let gradeDistributionChart = null;
+// ملاحظة: يرجى التأكد من أن هذا الرابط يعمل بشكل صحيح ويحتوي على البيانات
 const API_URL = `https://raw.githubusercontent.com/alshami2024/alshami/main/grades.json?v=${Date.now()}`;
 
 // دالة جلب البيانات الأساسية
@@ -738,16 +739,15 @@ function toggleListButton() {
     }
 }
 
-// 1. Modified: Populate selectors and remove setting defaults
+// 1. Populate selectors and remove setting defaults
 async function populateYearSelectors(students) {
     const academicYearSelect = document.getElementById('academicYear');
     const modalYearSelect = document.getElementById('modal-year-select');
-    const semesterSelect = document.getElementById('semester'); // Main search semester
+    const semesterSelect = document.getElementById('semester'); 
     
     // استخراج السنوات الفريدة وفرزها تنازليًا
     const years = [...new Set(students.map(student => student.year))].filter(Boolean).sort().reverse();
 
-    // القيمة الافتراضية "اختر العام" تم تعيينها في HTML
     academicYearSelect.innerHTML = '<option value="">اختر العام</option>'; 
     modalYearSelect.innerHTML = '<option value="all">الكل</option>';
     
@@ -765,25 +765,22 @@ async function populateYearSelectors(students) {
         modalYearSelect.appendChild(optionModal);
     });
 
-    // تعيين الفصل الافتراضي لـ "اختر الفصل"
     semesterSelect.value = "";
     
     // إضافة مستمعي أحداث لتحديث لوحة القيادة وحالة الزر عند التغيير
     academicYearSelect.onchange = () => { filterDashboardStats(); toggleListButton(); };
     semesterSelect.onchange = () => { filterDashboardStats(); toggleListButton(); };
 
-    // لا يتم إرجاع قيم افتراضية بعد الآن
     return {}; 
 }
 
-// 3. New: Filter dashboard stats based on selected year/semester
+// 2. Filter dashboard stats based on selected year/semester
 async function filterDashboardStats() {
     const academicYear = document.getElementById('academicYear').value;
     const semester = document.getElementById('semester').value;
     
     const dashboardStats = document.getElementById('dashboard-stats');
     if (!academicYear || !semester) {
-        // إخفاء لوحة القيادة إذا لم يتم اختيار العام والفصل
         dashboardStats.style.display = 'none';
         return;
     }
@@ -819,7 +816,7 @@ async function filterDashboardStats() {
 }
 
 
-// 2. Modified: DOMContentLoaded to initialize everything
+// 3. DOMContentLoaded to initialize everything
 document.addEventListener('DOMContentLoaded', async () => {
     // تحميل البيانات في البداية وتخزينها عالميًا
     const students = await fetchAllData();
@@ -827,12 +824,11 @@ document.addEventListener('DOMContentLoaded', async () => {
     
     await populateYearSelectors(students); 
     
-    // لن يتم استدعاء filterDashboardStats() هنا لأن القيم الافتراضية فارغة.
-    toggleListButton(); // فحص حالة الأزرار عند التحميل الأولي (يجب أن يكون مخفياً)
+    toggleListButton(); // فحص حالة الأزرار عند التحميل الأولي
 });
 
 
-// دالة البحث عن الدرجات (تم تصحيحها لضمان البحث الفعال)
+// دالة البحث عن الدرجات
 async function findMyGrades() {
     const studentIdInput = document.getElementById('studentId').value.trim();
     const academicYear = document.getElementById('academicYear').value;
@@ -854,7 +850,7 @@ async function findMyGrades() {
 
     loader.style.display = 'block';
     
-    // 2. ضمان تحميل البيانات (إجراء احتياطي إذا فشل التحميل الأولي)
+    // 2. ضمان تحميل البيانات
     if (allStudentsData.length === 0) {
         try {
             allStudentsData = await fetchAllData();
@@ -870,7 +866,7 @@ async function findMyGrades() {
         }
     }
     
-    // 3. البحث عن الطالب باستخدام .trim() لضمان تطابق الأرقام الجامعية
+    // 3. البحث عن الطالب
     const normalizedId = studentIdInput; 
     
     const foundStudent = allStudentsData.find(student => 
@@ -976,7 +972,7 @@ async function showGradedStudentsList() {
     document.getElementById('modal-year-select').value = academicYear;
     document.getElementById('modal-semester-select').value = semester;
 
-    populateCourseSelect(gradedStudents); 
+    // لم نعد نستدعي populateCourseSelect هنا، بل داخل filterAndSortStudents
     filterAndSortStudents(); // تطبيق التصفية بناءً على الاختيار الحالي
     modalLoader.style.display = 'none';
 }
@@ -1048,64 +1044,85 @@ function closeDetailsModal() {
     studentDetailsModal.style.display = 'none';
 }
 
-// دالة ملء حقل اختيار المقرر
+// دالة ملء حقل اختيار المقرر - تم تعديلها لتستقبل قائمة مفلترة من الطلاب
 function populateCourseSelect(studentsList) {
     const courseSelect = document.getElementById('course-select');
-    // تجميع الدورات الفريدة من البيانات المتاحة حالياً
+    // تجميع الدورات الفريدة من البيانات المتاحة حالياً في القائمة الممررة
     const courses = [...new Set(studentsList.map(student => student.course))].filter(Boolean).sort();
     
-    const currentCourse = courseSelect.value;
+    // حفظ القيمة المحددة حاليًا قبل التحديث
+    const currentSelectedCourse = courseSelect.value;
     
     courseSelect.innerHTML = '<option value="all">الكل</option>';
     courses.forEach(course => {
         const option = document.createElement('option');
         option.value = course;
         option.textContent = course;
-        if (course === currentCourse) option.selected = true;
+        // إذا كان المقرر المختار سابقًا موجودًا في القائمة الجديدة، أبقه محددًا
+        if (course === currentSelectedCourse) {
+            option.selected = true;
+        }
         courseSelect.appendChild(option);
     });
+    
+    // إذا كانت القيمة المحددة سابقًا غير موجودة الآن، أعد التحديد إلى "الكل"
+    const newCourseList = ['all', ...courses];
+    if (!newCourseList.includes(currentSelectedCourse)) {
+        courseSelect.value = 'all';
+    }
 }
 
 
+// دالة التصفية والفرز - تم تعديلها لتضم تحديث قائمة المقررات
 function filterAndSortStudents() {
     const searchInput = document.getElementById('search-input').value.toLowerCase();
     const sortValue = document.getElementById('sort-select').value;
-    const courseSelectValue = document.getElementById('course-select').value;
-    // جلب قيم تصفية العام والفصل من المودال
     const modalYearSelectValue = document.getElementById('modal-year-select').value;
     const modalSemesterSelectValue = document.getElementById('modal-semester-select').value;
     
     // تصفية الطلاب الذين لديهم درجات مرصودة أولاً
     const gradedStudents = allStudentsData.filter(s => s.grade && String(s.grade).trim() !== 'لم ترصد بعد' && String(s.grade).trim() !== '');
 
-    let filteredStudents = gradedStudents.filter(student => {
-        const matchesSearch = (student.name && student.name.toLowerCase().includes(searchInput)) || 
-                            (student.id && student.id.toLowerCase().includes(searchInput));
-        const matchesCourse = courseSelectValue === 'all' || student.course === courseSelectValue;
-        // تطبيق تصفية العام والفصل
+    // 1. التصفية الأولية حسب العام والفصل فقط
+    let studentsFilteredByYearSemester = gradedStudents.filter(student => {
         const matchesYear = modalYearSelectValue === 'all' || student.year === modalYearSelectValue;
         const matchesSemester = modalSemesterSelectValue === 'all' || student.semester === modalSemesterSelectValue;
-        
-        return matchesSearch && matchesCourse && matchesYear && matchesSemester;
+        return matchesYear && matchesSemester;
     });
 
+    // 2. تحديث قائمة المقررات بناءً على التصفية الأولية
+    populateCourseSelect(studentsFilteredByYearSemester); 
+    // قراءة قيمة المقرر المختار بعد التحديث
+    const currentCourseSelectValue = document.getElementById('course-select').value;
+
+    // 3. تطبيق التصفية النهائية (البحث والمقرر)
+    let finalFilteredStudents = studentsFilteredByYearSemester.filter(student => {
+        const matchesSearch = (student.name && student.name.toLowerCase().includes(searchInput)) || 
+                            (student.id && student.id.toLowerCase().includes(searchInput));
+        // استخدام القيمة المحدثة
+        const matchesCourse = currentCourseSelectValue === 'all' || student.course === currentCourseSelectValue;
+        
+        return matchesSearch && matchesCourse;
+    });
+
+    // 4. تطبيق الفرز
     if (sortValue === 'name') {
-        filteredStudents.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
+        finalFilteredStudents.sort((a, b) => (a.name || '').localeCompare(b.name || ''));
     } else if (sortValue === 'grade_desc') {
-        filteredStudents.sort((a, b) => {
+        finalFilteredStudents.sort((a, b) => {
             const gradeA = (parseInt(a.grade, 10) || 0) + (parseInt(a.attendance, 10) || 0);
             const gradeB = (parseInt(b.grade, 10) || 0) + (parseInt(b.attendance, 10) || 0);
             return gradeB - gradeA;
         });
     } else if (sortValue === 'grade_asc') {
-        filteredStudents.sort((a, b) => {
+        finalFilteredStudents.sort((a, b) => {
             const gradeA = (parseInt(a.grade, 10) || 0) + (parseInt(a.attendance, 10) || 0);
             const gradeB = (parseInt(b.grade, 10) || 0) + (parseInt(b.attendance, 10) || 0);
             return gradeA - gradeB;
         });
     }
 
-    renderStudentsList(filteredStudents);
+    renderStudentsList(finalFilteredStudents);
 }
 
 function getGradeClass(totalGrade) {
