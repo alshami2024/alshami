@@ -1,99 +1,222 @@
+
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>إعلان هام - نهاية التكاليف الجامعية</title>
+    <title>صفحة التكاليف</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     <style>
-        /* Base styles */
         body {
-            font-family: 'Arial', sans-serif; /* A clean, widely available font */
-            background-color: #f4f7f6; /* Light, calming background */
-            color: #333;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f7fc;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4CAF50;
             text-align: center;
         }
 
-        /* Container for the main message */
-        .container {
-            background-color: #ffffff; /* White card background */
-            padding: 40px 60px;
-            border-radius: 12px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-            max-width: 600px;
-            width: 90%;
-            border-top: 5px solid #007bff; /* A prominent university-style color */
-        }
-
-        /* Heading style */
-        h1 {
-            color: #007bff; /* Matching the border color */
-            font-size: 2.5em;
+        .form-group {
             margin-bottom: 20px;
+            text-align: right;
+        }
+
+        label {
+            font-size: 16px;
             font-weight: bold;
+            color: #333;
         }
 
-        /* Main body text style */
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 30px;
+        textarea, input[type="text"], input[type="file"] {
+            width: 100%;
+            padding: 12px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+            font-size: 16px;
+            background-color: #f9f9f9;
         }
 
-        /* Highlight style for the well-wishes */
-        .success-message {
-            color: #28a745; /* Green for success/good wishes */
-            font-weight: 600;
-            font-size: 1.4em;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
+        textarea {
+            height: 120px;
         }
 
-        /* Optional: Footer or signature */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
         .footer {
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #6c757d;
+            margin-top: 40px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
         }
 
-        /* Responsive adjustments */
-        @media (max-width: 600px) {
+        .success-message {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+
+        .error-message {
+            background-color: #f44336;
+            color: white;
+            padding: 10px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+            display: none;
+        }
+
+        @media (max-width: 768px) {
             .container {
-                padding: 30px 20px;
+                width: 90%;
             }
-            h1 {
-                font-size: 2em;
-            }
-            p {
-                font-size: 1.1em;
+            button {
+                width: 100%;
             }
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>🎉 إعلان هام 🎉</h1>
-        
-        <p>
-            نُعلن لجميع طلابنا الأعزاء عن **انتهاء فترة تسليم التكاليف والواجبات الجامعية** لهذا الفصل الدراسي.
-        </p>
+<div class="container">
+    <h1>تكاليف الطلاب:</h1>
 
-        <hr style="border: 0; height: 1px; background-color: #ddd; margin: 25px 0;">
-        
-        <p class="success-message">
-            **نتمنى لكافة الطلاب والطالبات التوفيق والنجاح** في الامتحانات القادمة وفي مسيرتهم التعليمية.
-        </p>
-        
-        <div class="footer">
-            مع أطيب التمنيات   
+    <p>يرجى ملء البيانات المطلوبة وإرفاق الصور الخاصة بالتكاليف.</p>
+
+    <form id="assignmentForm">
+        <div class="form-group">
+            <label for="studentName">اسم الطالب:</label>
+            <input type="text" id="studentName" placeholder="أدخل اسم الطالب هنا">
         </div>
+
+        <div class="form-group">
+            <h3>التكليف الأول:</h3>
+            <p>ما هي المدلولات الثلاثة للقانون الدستوري، وما مزايا وعيوب كل منها؟ حلّل أي المدلولات أكثر دقة علميًا مع التعليل.</p>
+            <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
+            <input type="file" accept="image/*" id="file1">
+        </div>
+
+        <div class="form-group">
+            <h3>التكليف الثاني:</h3>
+            <p>اشرح كيف تنشأ الدساتير العرفية، وما هي أشكالها المختلفة؟ ثم حلّل العلاقة بين العرف الدستوري والدستور المكتوب في الأنظمة الدستورية المعاصرة.</p>
+            <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
+            <input type="file" accept="image/*" id="file2">
+        </div>
+
+        <button type="button" onclick="sendToTelegram()">إرسال التكاليف</button>
+    </form>
+
+    <div id="successMessage" class="success-message">
+        تم إرسال التكاليف بنجاح!
     </div>
 
+    <div id="errorMessage" class="error-message">
+        يجب عليك إدخال اسم الطالب وإرفاق صورة لكل تكليف!
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2024 جميع الحقوق محفوظة جمال الشامي.</p>
+</div>
+
+<script>
+    const SECRET_KEY = 'my-super-secret-key-12345';
+    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX1957jX1+sXHIHMJNfWKtO7pki11qHhvB/B0QLkiH7Fw0V/BymynhbzuGSwSI3XFwnXYbZuOTAdAUw==';
+    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX1+UGyOq/DK3/vZKtoNMgEPf4p6WSyj4Jls=';
+
+    const token = CryptoJS.AES.decrypt(ENCRYPTED_BOT_TOKEN, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+    const chatId = CryptoJS.AES.decrypt(ENCRYPTED_CHAT_ID, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+
+    async function sendToTelegram() {
+        const button = document.querySelector('button[type="button"]');
+        button.disabled = true;
+        button.textContent = "جاري الإرسال...";
+
+        const studentName = document.getElementById('studentName').value;
+        const answer1 = document.getElementById('answer1').value;
+        const answer2 = document.getElementById('answer2').value;
+        const file1 = document.getElementById('file1').files[0];
+        const file2 = document.getElementById('file2').files[0];
+
+        if (!studentName || (!file1 && !file2)) {
+            document.getElementById('errorMessage').style.display = 'block';
+            button.disabled = false;
+            button.textContent = "إرسال التكاليف";
+            return;
+        }
+
+        const message = `تكاليف الطالب: ${studentName}\n\nالتكليف الأول: ${answer1}\n\nالتكليف الثاني: ${answer2}`;
+
+        try {
+            await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ chat_id: chatId, text: message }),
+            });
+
+            if (file1) await sendPhotoToTelegram(token, chatId, file1);
+            if (file2) await sendPhotoToTelegram(token, chatId, file2);
+
+            showSuccessMessage();
+        } catch (error) {
+            console.error('حدث خطأ أثناء الإرسال:', error);
+        } finally {
+            button.disabled = false;
+            button.textContent = "إرسال التكاليف";
+        }
+    }
+
+    async function sendPhotoToTelegram(token, chatId, file) {
+        const formData = new FormData();
+        formData.append('chat_id', chatId);
+        formData.append('photo', file);
+
+        await fetch(`https://api.telegram.org/bot${token}/sendPhoto`, {
+            method: 'POST',
+            body: formData,
+        });
+    }
+
+    function showSuccessMessage() {
+        const successMessage = document.getElementById('successMessage');
+        successMessage.style.display = 'block';
+        setTimeout(() => {
+            successMessage.style.display = 'none';
+        }, 3000);
+    }
+</script>
 </body>
 </html>
+    
