@@ -7690,5 +7690,77 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-11-13T09:30:58.478Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "الاختبار القصير  (الثاني مطور) ",
+    "answers": [
+      {
+        "question": "الكلمة التي لا معنى لها في نفسها هي:",
+        "answer": "الحرف",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال تعالى: {لَا أُقْسِمُ بِهَذَا الْبَلَدِ} اشتملت الآية على:",
+        "answer": "فعل مضارع",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الإسناد علامة خاصة بالاسم، وموضعه هو:",
+        "answer": "المبتدأ في الجملة الاسمية والفاعل في الجملة الفعلية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم مبني هي:",
+        "answer": "المسلمون أدوا صلاة الاستسقاء",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الجملة التي تشتمل على اسم منقوص هي:",
+        "answer": "ما أعظم الداعي الذي يعمل بما يقول",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الفتيات يساعدن في عمل الخير. اشتملت الجملة على فعل معرب.",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "ياء المخاطبة علامة مشتركة بين الفعل المضارع وفعل الأمر. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إن الساعي في الخير محبوب. كلمة (الساعي) اسم منقوص يعرب بحركة مقدرة. ",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "أنزل الله تعالى التوراة على موسى عليه السلام. كلمة (موسى) تعرب بحركة مقدرة منع من ظهورها الثقل. ",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "سلمت القضية إلى محامٍ عبقري. كلمة (محامٍ) مرسومة بطريقة صحيحة. ",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
