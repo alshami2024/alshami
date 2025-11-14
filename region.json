@@ -954,7 +954,7 @@
     ]
   },
   {
-    "name": "فتح علي مثنى جحيش",
+    "name": "فتح علي مثنى صالح جحيش",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
@@ -4106,6 +4106,24 @@
   {
     "name": "يوسف عبده عبدالله لطف المهدي",
     "subject": "تنازع القوانين",
+    "attendance": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  {
+    "name": "عبدالله عبدالملك اميرالدين الحوثي",
+    "subject": "القانون الدستوري",
     "attendance": [
       null,
       null,
