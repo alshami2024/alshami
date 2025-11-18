@@ -1,0 +1,27 @@
+[
+  {
+    "studentName": "احمد",
+    "submissionDate": "2025-11-18T22:14:57.320Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "الفلسفة",
+    "answers": [
+      {
+        "type": "essay",
+        "question": "صاحب نظرية الوجوب العقلي هو",
+        "answer": "جمال الشامي",
+        "isGraded": true,
+        "maxScore": 10,
+        "essayScore": 9,
+        "aiGradeSuggestion": "9"
+      }
+    ],
+    "essayScore": {
+      "totalScore": 9,
+      "totalMax": 10
+    }
+  }
+]
