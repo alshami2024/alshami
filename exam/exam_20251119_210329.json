@@ -24,5 +24,31 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-11-19T18:10:29.308Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 2
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "الفلسفة",
+    "answers": [
+      {
+        "type": "mcq",
+        "question": "من هو الشخص الظاهر في الضورة",
+        "answer": "افلاطون.",
+        "isCorrect": false,
+        "correctAnswer": "أرسطو."
+      },
+      {
+        "type": "mcq",
+        "question": "ما الصورة الظاهرة",
+        "answer": "دار الحجر.",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
