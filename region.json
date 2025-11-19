@@ -2805,7 +2805,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ابراهيم محمد صالح الوشلي",
@@ -2823,7 +2824,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "احمد صالح احمد عمر الصلاحي",
@@ -2841,7 +2843,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "احمد منصر سالم الطيري",
@@ -2859,7 +2862,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ادم حسن احمد الحنق",
@@ -2877,7 +2881,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ازهار ناصر محمد صالح الرقيمي",
@@ -2895,12 +2900,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "اسامه عبده مسعد صالح السقندراني",
     "subject": "تنازع القوانين",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -2911,9 +2918,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "بدر احمد محمد علي الهندي",
@@ -2931,7 +2938,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "بشار عبدالله احمد ناجي الهادي",
@@ -2949,7 +2957,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "بشار محمد احمد علي الجدس",
@@ -2967,14 +2976,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "بكر محمد احمد محمد المنتصر",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -2985,7 +2995,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "جارالله نايف صالح حيدان",
@@ -3003,7 +3014,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حاتم علي حسن عبدالله  المام",
@@ -3021,14 +3033,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حارث مسعد عبدالله ناجي شطيف",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3039,7 +3052,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حسن علي علي الدمتي",
@@ -3057,7 +3071,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حسين طاهر مانع الحلقبي",
@@ -3075,7 +3090,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حكيمه محمد حزام عايض الشغدري",
@@ -3093,7 +3109,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حميد احمد مسعد الكنديش",
@@ -3111,7 +3128,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "خالد على مسعد عبدالرحمن الجبلي",
@@ -3129,7 +3147,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "سفيان عبده حمود السيد",
@@ -3147,14 +3166,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "شروق جبران احمد ناصر الحيدري",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3165,7 +3185,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "شفيقة محمد علي القاضي",
@@ -3183,7 +3204,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "صادق صالح احمد قايد",
@@ -3201,7 +3223,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "صدرالدين محسن صالح المنتصر",
@@ -3219,14 +3242,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "صلاح احمد مثنى ناصر",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3237,7 +3261,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "صلاح قايد علي احمد الشرعبي",
@@ -3255,7 +3280,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "طارق حمود احمد فارع العميسي",
@@ -3273,14 +3299,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عايد علي صالح عبدالله النقيب",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3291,14 +3318,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبد الحسين احمد علي المرقب",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3309,14 +3337,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالاله محمد احمد مقبل المسعدي",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3327,14 +3356,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالرحمن عادل عبدالرحمن الخطيب",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3345,7 +3375,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالرحمن محمد عبدالله عرجاش",
@@ -3363,14 +3394,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالرحيم مجاهد احمد ثابت الوادي",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3381,7 +3413,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالله صالح عبدالله صالح",
@@ -3399,14 +3432,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالملك احمد مثنى العجي",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -3417,7 +3451,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالواحد صالح يحيى سعد التام",
@@ -3435,7 +3470,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عدنان علي صالح هديان",
@@ -3453,7 +3489,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عزالدين احمد ناصر الشامي",
@@ -3471,7 +3508,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عقيل منصور صالح حرقاش",
@@ -3489,7 +3527,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "علي احمد عبدالله علي منصور",
@@ -3507,7 +3546,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "علي خالد مسعد احمد البيل",
@@ -3525,7 +3565,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عماد سعيد صالح سعيد",
@@ -3543,7 +3584,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عمار عبد الله محمد البكيلي",
@@ -3561,7 +3603,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عمر صالح محس صالح الهادي",
@@ -3579,7 +3622,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عمر مختار محمود محمد سفيان",
@@ -3597,7 +3641,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عمرو عبدالله محمد البكيلي",
@@ -3615,7 +3660,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عمرو نبيل عبده حسين الجشوبي",
@@ -3633,7 +3679,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عواطف عبدالرحمن احمد احمد العبسي",
@@ -3651,12 +3698,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "غمدان محمد مسعد يحيى الصيادي",
     "subject": "تنازع القوانين",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -3667,9 +3716,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "فايز عبدالعزيز احمد الصيادي",
@@ -3687,12 +3736,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "فنون وضاح سعد علي الموتي",
     "subject": "تنازع القوانين",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -3703,9 +3754,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "فهد عبدالله مصلح الجرموزي",
@@ -3723,7 +3774,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "قايد ناصر صالح الحلقبي",
@@ -3741,7 +3793,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "ماجد مسعد سعيد الشامي",
@@ -3759,7 +3812,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ماهر عبدالله علي منصر",
@@ -3777,7 +3831,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "مجد عبداللطيف يحيى الدبيس",
@@ -3795,7 +3850,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محسن عامر محسن ناجي عامر",
@@ -3813,7 +3869,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد احمد سعد العكاد",
@@ -3831,48 +3888,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد عبدالحميد حسين عقبات",
     "subject": "تنازع القوانين",
     "attendance": [
       null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "محمد قايد ناجي الظاهري",
-    "subject": "تنازع القوانين",
-    "attendance": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "محمد محسن ناصر المرقب",
-    "subject": "تنازع القوانين",
-    "attendance": [
       "حاضر",
       null,
       null,
@@ -3883,9 +3906,47 @@
       null,
       null,
       null,
+      null
+    ],
+    "attendancePercent": 0
+  },
+  {
+    "name": "محمد قايد ناجي الظاهري",
+    "subject": "تنازع القوانين",
+    "attendance": [
+      null,
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
+  },
+  {
+    "name": "محمد محسن ناصر المرقب",
+    "subject": "تنازع القوانين",
+    "attendance": [
+      "حاضر",
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "محمد ناجي صالح غالب",
@@ -3903,7 +3964,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمود عبداللطيف علي يحيى علاو",
@@ -3921,7 +3983,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "مسعد نبيل محسن عبدالله الصيادي",
@@ -3939,7 +4002,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "مسعد، قايد احمد الغرباني",
@@ -3957,7 +4021,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "معتصم ناجي صالح قاسم ابوحاتم",
@@ -3975,7 +4040,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "معين مسعد ناجي يحيى",
@@ -3993,7 +4059,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "مهيب نعمان محمد هلال",
@@ -4011,7 +4078,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "موسى عارف محمد علي القعر",
@@ -4029,12 +4097,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "ناصر علي محمد الحيدري",
     "subject": "تنازع القوانين",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -4045,9 +4115,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "نوح زيد احمد الحكيم",
@@ -4065,7 +4135,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "هاشم احسن حسين الشريف",
@@ -4083,7 +4154,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "هيثم قاسم صالح احمد الغرباني",
@@ -4101,7 +4173,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "يوسف عبده عبدالله لطف المهدي",
@@ -4119,7 +4192,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالله عبدالملك اميرالدين الحوثي",
