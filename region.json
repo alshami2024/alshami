@@ -4,7 +4,7 @@
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -15,7 +15,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "ابراهيم محمد محسن معافا العمري",
@@ -33,12 +34,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ابوبكر فاروق علي احمد المصرف",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -49,9 +52,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "ابوبكر يوسف قاسم محمد عبدالله",
@@ -69,14 +72,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "احمد صابر محمد علي طه جريز",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -87,14 +91,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "احمد فهد علي محمد الهادي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -105,7 +110,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "احمد مسعد عباد صالح المعطي",
@@ -123,7 +129,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "احمد ناصر احمد علي الذرحاني",
@@ -141,12 +148,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ارزاق محمد مسعد صالح القحيزه",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -157,9 +166,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "اسامة سعيد احمد علي المحقني",
@@ -177,7 +186,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "اسماعيل طاهر مسعد ابوسويد",
@@ -195,48 +205,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "اشيد جمال صالح احمد الصيادي",
     "subject": "القانون الدستوري",
     "attendance": [
       "حاضر",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "امين قاسم عبدالقوي اليعيسي",
-    "subject": "القانون الدستوري",
-    "attendance": [
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "بدر عبده فيصل علي القاضي",
-    "subject": "القانون الدستوري",
-    "attendance": [
       "حاضر",
       null,
       null,
@@ -247,9 +223,47 @@
       null,
       null,
       null,
+      null
+    ],
+    "attendancePercent": 16.666666666666664
+  },
+  {
+    "name": "امين قاسم عبدالقوي اليعيسي",
+    "subject": "القانون الدستوري",
+    "attendance": [
+      null,
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
+  },
+  {
+    "name": "بدر عبده فيصل علي القاضي",
+    "subject": "القانون الدستوري",
+    "attendance": [
+      "حاضر",
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "بسمة محمد احمد محمد محمود",
@@ -267,7 +281,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "توفيق عبدالغني مسعد الصيادي",
@@ -285,7 +300,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "جابر عامر حسن شرف الصبري",
@@ -303,12 +319,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "جبريل محمد احمد صالح عبدالكريم",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -319,9 +337,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "جهاد علي عبده قايد الشامي",
@@ -339,7 +357,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حزام زياد  مسعد علي عبادي",
@@ -357,7 +376,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "حمدي احمد حسن قاسم العميسي",
@@ -375,7 +395,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "خالد علي محسن احمد",
@@ -393,7 +414,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ذياب حاتم عبدالله احمد كيوان",
@@ -411,7 +433,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "رباب صالح مسعد مثنى المريسي",
@@ -429,7 +452,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ربيع ناجي علي حسين العميسي",
@@ -447,7 +471,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "رسيل عادل سعد صالح عبدالرحيم",
@@ -465,12 +490,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "رغد ریدان ناجي عبدالله منصور",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -481,16 +508,16 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "رمزي حزام قاسم عبدالله الحميدي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -501,7 +528,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "ريم احمد صالح احمد الصلاحي",
@@ -519,14 +547,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "سترالله عبدالواحد علي مثنى الغرباني",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -537,7 +566,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "سلام ناجي احمد صهبان",
@@ -555,14 +585,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "سليمان احمد علي الحجاجي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -573,14 +604,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "سليمان حسين غالب الضاحي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -591,7 +623,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "سليمان عباد حسن احمد",
@@ -609,12 +642,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "سمير عبدالرحمن نصر المحقني",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -625,9 +660,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "سيف الاسلام قاسم عبدالله حيدره",
@@ -645,7 +680,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "شهاب الدين محمد صالح احمد الشمسي",
@@ -663,12 +699,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "صالح احمد محمد مصلح الصيادي",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -679,9 +717,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "صالح حسين غالب الضاحي",
@@ -699,7 +737,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "صالح محمد صالح محمد عبدالله",
@@ -717,12 +756,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "طارق عزيز عبدالله علي الحيدري",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -733,9 +774,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "طاهر مانع طاهر مصلح المدحجي",
@@ -753,12 +794,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عادل صالح محمد احمد عتيق",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -769,16 +812,16 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "عبدالحميد احمد ناجي احمد محمود",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -789,7 +832,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "عبدالله عبدالسلام عبدالله كريب",
@@ -807,30 +851,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "عبدالله علي قايد حسن الشامي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "عبدالمجيد ذياب محمد احمد العميسي",
-    "subject": "القانون الدستوري",
-    "attendance": [
       "حاضر",
       null,
       null,
@@ -841,9 +869,28 @@
       null,
       null,
       null,
+      null
+    ],
+    "attendancePercent": 8.333333333333332
+  },
+  {
+    "name": "عبدالمجيد ذياب محمد احمد العميسي",
+    "subject": "القانون الدستوري",
+    "attendance": [
+      "حاضر",
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "عصام احمد صالح الماطري",
@@ -861,7 +908,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "علي صلاح مسعد النامس",
@@ -879,30 +927,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "علي يحيى احمد اسماعيل علي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "عمر عبدالعزيز مسعد طويل",
-    "subject": "القانون الدستوري",
-    "attendance": [
       "حاضر",
       null,
       null,
@@ -913,9 +945,28 @@
       null,
       null,
       null,
+      null
+    ],
+    "attendancePercent": 8.333333333333332
+  },
+  {
+    "name": "عمر عبدالعزيز مسعد طويل",
+    "subject": "القانون الدستوري",
+    "attendance": [
+      "حاضر",
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "عيسى عبده احمد الصيفي",
@@ -933,7 +984,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "غمدان ناجي احمد مصلح الذيباني",
@@ -951,7 +1003,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "فتح علي مثنى صالح جحيش",
@@ -969,12 +1022,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "فرحان محمد مسعد عبدالرحيم الضحياني",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -985,9 +1040,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 16.666666666666664
   },
   {
     "name": "قناص عماد صالح قايد عبدالرحيم",
@@ -1005,12 +1060,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "كوثر عبده حمود أحمد السيد",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -1021,16 +1078,16 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "مازن مسعد مثنى محمد التركي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -1041,14 +1098,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "مجاد محمد اسماعيل مساعد الفقيه",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -1059,7 +1117,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "مجدي ابراهيم احمد العمدي",
@@ -1077,7 +1136,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محسن محمد عبده الغرباني",
@@ -1095,7 +1155,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محسن مصلح مسعد صالح",
@@ -1113,14 +1174,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد الرائد حسين سعيد مقبل",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -1131,7 +1193,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد زايد ناجي سعيد الضبيع",
@@ -1149,7 +1212,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "محمد طه حمود حمدي الخوبري",
@@ -1167,7 +1231,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد عبدالحكيم محسن محمد قير",
@@ -1185,7 +1250,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد عبدالرحمن محمد الخطيب",
@@ -1203,7 +1269,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد عبداللطيف ناصر مسعد الصوفي",
@@ -1221,7 +1288,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد عبده محسن صالح الرقيمي",
@@ -1239,7 +1307,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد علي عبدالحفيظ",
@@ -1257,7 +1326,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمد مصلح علي صالح الازرقي",
@@ -1275,14 +1345,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "محمود سليم حسين ناجي الحمري",
     "subject": "القانون الدستوري",
     "attendance": [
       "حاضر",
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -1293,30 +1364,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "مرام جبر صالح علي الحلقبي",
     "subject": "القانون الدستوري",
     "attendance": [
       "حاضر",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "مرام عبدالرقيب علي احمد الزقري",
-    "subject": "القانون الدستوري",
-    "attendance": [
       "حاضر",
       null,
       null,
@@ -1327,9 +1382,28 @@
       null,
       null,
       null,
+      null
+    ],
+    "attendancePercent": 8.333333333333332
+  },
+  {
+    "name": "مرام عبدالرقيب علي احمد الزقري",
+    "subject": "القانون الدستوري",
+    "attendance": [
+      "حاضر",
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "مسعد صالح مسعد علي الصيادي",
@@ -1347,14 +1421,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "معين سعيد احمد سالم الهادي",
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -1365,7 +1440,8 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "موفق جبران عبدالله عميان",
@@ -1383,14 +1459,15 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "ناصر عبده احمد عبدالله الجماعي",
     "subject": "القانون الدستوري",
     "attendance": [
       "حاضر",
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -1401,30 +1478,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "نجم الدين نصر مثنى احمد الجرموزي",
     "subject": "القانون الدستوري",
     "attendance": [
       "حاضر",
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null,
-      null
-    ]
-  },
-  {
-    "name": "نوال محمد علي قايد الجحدري",
-    "subject": "القانون الدستوري",
-    "attendance": [
       "حاضر",
       null,
       null,
@@ -1435,9 +1496,28 @@
       null,
       null,
       null,
+      null
+    ],
+    "attendancePercent": 8.333333333333332
+  },
+  {
+    "name": "نوال محمد علي قايد الجحدري",
+    "subject": "القانون الدستوري",
+    "attendance": [
+      "حاضر",
+      "حاضر",
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "هادي عبدالكريم صالح ناجي الهادي",
@@ -1455,12 +1535,14 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 0
   },
   {
     "name": "يعقوب محمد محمود محمد سفيان",
     "subject": "القانون الدستوري",
     "attendance": [
+      "حاضر",
       "حاضر",
       null,
       null,
@@ -1471,9 +1553,9 @@
       null,
       null,
       null,
-      null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   },
   {
     "name": "ابتسام قايد احمد سعيد",
@@ -4200,7 +4282,7 @@
     "subject": "القانون الدستوري",
     "attendance": [
       null,
-      null,
+      "حاضر",
       null,
       null,
       null,
@@ -4211,6 +4293,7 @@
       null,
       null,
       null
-    ]
+    ],
+    "attendancePercent": 8.333333333333332
   }
 ]
