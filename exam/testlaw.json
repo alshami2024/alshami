@@ -888,5 +888,108 @@
         "correctAnswer": "الأخلاق."
       }
     ]
+  },
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-11-20T08:27:10.248Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 13
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "امتحان نهاية الفصل الدراسي",
+    "answers": [
+      {
+        "type": "mcq",
+        "question": "يرى أفلاطون أن عالم المثل يمثل:",
+        "answer": "الوجود الحقيقي.",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "ما هو علم الأنطولوجيا؟",
+        "answer": "علم النفس.",
+        "isCorrect": false,
+        "correctAnswer": "علم الوجود."
+      },
+      {
+        "type": "mcq",
+        "question": "المعرفة الإنسانية محدودة وقاصرة بشكل مطلق",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "العلم الذي يدرس وسائل المعرفة وحدودها يسمى:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "الإبستمولوجيا ."
+      },
+      {
+        "type": "mcq",
+        "question": "المذهب العقلي يرى أن مصدر المعرفة هو:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "العقل."
+      },
+      {
+        "type": "mcq",
+        "question": "قيمة الخير تدرسها فلسفة:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "الأخلاق."
+      },
+      {
+        "type": "mcq",
+        "question": "من خصائص \"واجب الوجود\":",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "لا يحتاج إلى علة."
+      },
+      {
+        "type": "mcq",
+        "question": "ينتمي سؤال: \"هل الوجود مادي أم روحي؟\" إلى:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "مبحث الوجود."
+      },
+      {
+        "type": "mcq",
+        "question": "من فروع القيم ما يلي:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "الحق والجمال والخير."
+      },
+      {
+        "type": "mcq",
+        "question": "الحدس يصنف كأحد مصادر المعرفة",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "type": "mcq",
+        "question": "مبحث الوجود يبحث في أصل الكون",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "صحيح"
+      },
+      {
+        "type": "mcq",
+        "question": "الوجود في <span style=\"color: rgb(205, 29, 29); text-decoration-line: underline;\">الفلسفة </span>يُدرس باعتباره:",
+        "answer": "ظواهر حسية فقط.",
+        "isCorrect": false,
+        "correctAnswer": "كل ما هو كائن."
+      },
+      {
+        "type": "mcq",
+        "question": "القيم المطلقة تتميز بأنها:",
+        "answer": "لم تتم الإجابة",
+        "isCorrect": false,
+        "correctAnswer": "ثابتة لا تتغير."
+      }
+    ]
   }
 ]
