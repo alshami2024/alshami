@@ -80,5 +80,87 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "عبدالرقيب",
+    "submissionDate": "2025-11-20T11:03:11.074Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "اختبار",
+    "answers": [
+      {
+        "type": "mcq",
+        "question": "ما نوع الأسلوب البلاغي في التعبير عن الفرق بين إرادة الله وإرادة متبعي الشهوات في قوله تعالى: {وَاللَّهُ يُرِيدُ أَن يَتُوبَ عَلَيْكُمْ وَيُرِيدُ الَّذِينَ يَتَّبِعُونَ الشَّهَوَاتِ أَن تَمِيلُواْ مَيْلاً عَظِيماً}؟",
+        "answer": "مقابلة",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "ما حكم الفعل المضارع \"تَأْكُلُواْ\" في قوله تعالى: {لاَ تَأْكُلُواْ أَمْوَالَكُمْ}؟",
+        "answer": "مجزوم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "في قوله تعالى: {لاَ تَأْكُلُواْ أَمْوَالَكُمْ بَيْنَكُمْ بِالْبَاطِلِ}، يُعد هذا التعبير من باب:",
+        "answer": "الكناية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "الجملة {إِنَّ اللَّهَ كَانَ بِكُمْ رَحِيماً} في سياق الآيات جاءت لغرض:",
+        "answer": "التوكيد والتعليل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "ما إعراب كلمة \"ضَعِيفاً\" في قوله تعالى: {وَخُلِقَ الإِنسَانُ ضَعِيفاً}؟",
+        "answer": "حال",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "ما الوظيفة النحوية لكلمة \"مَيْلاً\" في قوله تعالى: {أَن تَمِيلُواْ مَيْلاً عَظِيماً}؟",
+        "answer": "مفعول مطلق",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "في قوله تعالى: {يُرِيدُ الَّذِينَ يَتَّبِعُونَ الشَّهَوَاتِ}، كلمة \"الَّذِينَ\" تُعرب:",
+        "answer": "فاعل",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "ما نوع كلمة \"مَن\" في قوله تعالى: {وَمَن يَفْعَلْ ذَلِكَ عُدْوَاناً وَظُلْماً}؟",
+        "answer": "اسم شرط جازم",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "الغرض البلاغي من قوله تعالى: {وَكَانَ ذَلِكَ عَلَى اللَّهِ يَسِيراً} هو:",
+        "answer": "التأكيد على القدرة الإلهية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "ما الوظيفة النحوية لكلمة \"تِجَارَةً\" في قوله تعالى: {إِلاَّ أَن تَكُونَ تِجَارَةً عَن تَرَاضٍ مِّنكُمْ}؟",
+        "answer": "خبر تكون",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
