@@ -121,14 +121,14 @@
 
         <div class="form-group">
             <h3>التكليف الأول:</h3>
-            <p>ما هي المدلولات الثلاثة للقانون الدستوري، وما مزايا وعيوب كل منها؟ حلّل أي المدلولات أكثر دقة علميًا مع التعليل.</p>
+            <p>ما دور الرأي العام في تعزيز القوة الإلزامية للقانون الدستوري؟ حلل مع الإشارة إلى تجارب ثورات الربيع العربي. </p>
             <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file1">
         </div>
 
         <div class="form-group">
             <h3>التكليف الثاني:</h3>
-            <p>اشرح كيف تنشأ الدساتير العرفية، وما هي أشكالها المختلفة؟ ثم حلّل العلاقة بين العرف الدستوري والدستور المكتوب في الأنظمة الدستورية المعاصرة.</p>
+            <p>ما هو الجزاء الدستوري؟ </p>
             <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file2">
         </div>
@@ -151,8 +151,8 @@
 
 <script>
     const SECRET_KEY = 'my-super-secret-key-12345';
-    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX1957jX1+sXHIHMJNfWKtO7pki11qHhvB/B0QLkiH7Fw0V/BymynhbzuGSwSI3XFwnXYbZuOTAdAUw==';
-    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX1+UGyOq/DK3/vZKtoNMgEPf4p6WSyj4Jls=';
+    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX19wEdOSqQSmlb2NsweSJQM14DN2RuGUrtU8biRfxmnNbhdgNw/TJjeN+8zWTlOvS77KpF8RGEDe7A==';
+    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX1/9J4EZHhmWKDVDpHuD6cqik1y+CV3nz7w=';
 
     const token = CryptoJS.AES.decrypt(ENCRYPTED_BOT_TOKEN, SECRET_KEY).toString(CryptoJS.enc.Utf8);
     const chatId = CryptoJS.AES.decrypt(ENCRYPTED_CHAT_ID, SECRET_KEY).toString(CryptoJS.enc.Utf8);
