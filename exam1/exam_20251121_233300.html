@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>اختبار</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- المتغيرات العامة --- */
+        :root { 
+            --primary-color: #0056b3; --secondary-color: #007bff; 
+            --light-gray: #f8f9fa; --dark-gray: #343a40; 
+            --success-color: #28a745; --danger-color: #dc3545; 
+            --background-color: #e9ecef; --text-color: #212529; --white: #fff; 
+        }
+        
+        /* --- التنسيقات الأساسية (موبايل أولاً) --- */
+        body { 
+            font-family: 'Tajawal', sans-serif; 
+            background-color: var(--background-color); 
+            margin: 0; 
+            padding: 10px; 
+            color: var(--text-color); 
+            direction: rtl; 
+            line-height: 1.6;
+        }
+
+        .container { 
+            background-color: var(--white); 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+            width: 100%; 
+            max-width: 100%; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+
+        h1 { font-size: 1.5rem; margin-bottom: 10px; color: var(--dark-gray); }
+        h2 { font-size: 1.2rem; color: var(--dark-gray); }
+
+        .form-group { margin-bottom: 15px; } 
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group input[type="text"], .form-group textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; 
+            font-size: 16px; 
+            box-sizing: border-box;
+        }
+
+        .btn { 
+            background-color: var(--primary-color); color: var(--white); border: none; 
+            padding: 14px 20px; font-size: 16px; font-weight: bold; border-radius: 10px; 
+            cursor: pointer; transition: background-color 0.3s; 
+            width: 100%; 
+            display: block;
+            margin-bottom: 10px;
+        }
+        .btn:hover { background-color: #004a99; } 
+        .btn:disabled { background-color: #ccc; }
+        .btn-danger { background-color: var(--danger-color); }
+
+        .question-card { 
+            background: var(--light-gray); border: 1px solid #dee2e6; 
+            border-radius: 10px; padding: 15px; margin-bottom: 20px; text-align: right; 
+        }
+        
+        .exam-header { 
+            display: flex; flex-direction: column; 
+            gap: 10px; align-items: center; margin-bottom: 20px; text-align: center;
+        }
+        
+        .timer { 
+            font-size: 1.2em; color: var(--danger-color); font-weight: bold; 
+            background: #fff; padding: 5px 15px; border-radius: 20px; border: 1px solid #ddd;
+        }
+
+        .choices li { 
+            padding: 12px; margin: 8px 0; background: var(--white); 
+            border: 1px solid #ddd; border-radius: 8px; cursor: pointer; 
+            transition: all 0.2s; display: flex; align-items: center; gap: 10px;
+        }
+        .choices li:active { background-color: #e3f2fd; }
+        .choices li label { cursor: pointer; flex: 1; }
+        .choices li.correct { background-color: #d4edda !important; border-color: #c3e6cb; }
+        .choices li.incorrect { background-color: #f8d7da !important; border-color: #f5c6cb; }
+
+        /* تنسيق حقل الإجابة المقالي */
+        .essay-answer { 
+            width: 100%;             /* عرض كامل */
+            box-sizing: border-box;  /* احتساب الحواف ضمن العرض لمنع الخروج عن الشاشة */
+            min-height: 150px;       /* ارتفاع أدنى مريح للكتابة */
+            padding: 12px 15px;      /* مسافات داخلية مريحة */
+            border: 1px solid #ccc;  /* إطار ناعم */
+            border-radius: 8px;      /* حواف دائرية */
+            font-family: inherit;    /* نفس خط الصفحة (تجوّال) */
+            font-size: 16px;         /* حجم خط مناسب للقراءة */
+            line-height: 1.6;        /* تباعد أسطر مريح */
+            resize: vertical;        /* السماح بالتكبير عمودياً فقط */
+            margin-top: 10px;        /* مسافة بين السؤال والحقل */
+            background-color: #fff;  /* لون خلفية أبيض */
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* تأثير عند الضغط للكتابة */
+        .essay-answer:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+        }
+        
+        #navigation-buttons { display: flex; gap: 10px; margin-top: 20px; }
+        #progressBarContainer { width: 100%; background-color: #e9ecef; border-radius: 20px; margin-bottom: 25px; height: 10px; }
+        #progressBar { height: 100%; background-color: var(--success-color); border-radius: 20px; transition: width 0.5s; }
+
+        .q-image-container { text-align: center; margin-bottom: 15px; width: 100%; }
+        .q-image { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+        .saving-screen { text-align: center; padding: 30px; }
+        .spinner { border: 5px solid #f3f3f3; border-top: 5px solid var(--primary-color); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        @media (min-width: 768px) {
+            body { padding: 40px; background-color: #e0e5ec; }
+            .container { width: 80%; max-width: 900px; padding: 40px; border-radius: 16px; }
+            h1 { font-size: 2.2rem; }
+            .btn { width: auto; display: inline-block; min-width: 150px; margin-left: 10px; }
+            .exam-header { flex-direction: row; justify-content: space-between; }
+            .question-card { padding: 30px; }
+            .choices li:hover { transform: translateX(-5px); background-color: #f1f8ff; }
+            #navigation-buttons { justify-content: flex-end; }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="studentExamView" style="display:block;">
+        <div id="startScreen" style="display:block;">
+            <h1 id="examTitleStudent"></h1>
+            <p id="examDescriptionStudent" style="white-space: pre-wrap; color:#666;"></p>
+            <hr style="border:0; border-top:1px solid #eee; margin: 20px 0;">
+            
+            <div class="form-group">
+                <label for="studentName">أدخل اسمك الكامل</label>
+                <input type="text" id="studentName" placeholder="الاسم الكامل">
+            </div>
+            
+        
+            <button id="startExamBtn" class="btn">بدء الاختبار 🚀</button>
+        </div>
+
+        <div id="examArea" style="display:none;">
+            <div class="exam-header">
+                <h3 id="welcomeStudent" style="margin:0;"></h3>
+                <div id="timer" class="timer">00:00</div>
+            </div>
+            <div id="progressBarContainer" title="التقدم"><div id="progressBar"></div></div>
+            <div id="questionsContainer"></div>
+            <div id="navigation-buttons"></div>
+            <button id="finishExamBtn" class="btn btn-danger" style="margin-top: 30px; width:100%;">إنهاء وتسليم الاختبار 🏁</button>
+        </div>
+
+        <div id="savingResultsScreen" class="saving-screen" style="display:none;">
+            <div class="spinner"></div>
+            <h3>جاري حفظ إجاباتك...</h3>
+            <p>الرجاء الانتظار وعدم إغلاق الصفحة.</p>
+        </div>
+
+        <div id="resultContainer" style="display:none;">
+             <div style="text-align:center; margin-bottom:20px;">
+                <h2 id="resultTitle"></h2>
+                <p id="resultSummary" style="font-size:1.1em; margin-top:10px;"></p>
+             </div>
+             <div id="reviewContainer"></div>
+             <div id="certificate" style="display:none; border: 5px double var(--primary-color); padding: 30px; margin-top: 30px; text-align: center; background: #fff;">
+                <h2 style="color:var(--primary-color);">شهادة إتمام</h2>
+                <p>تشهد إدارة الاختبار بأن الطالب/ة:</p>
+                <h1 id="certName" style="color:#333;"></h1>
+                <p>قد أتم الاختبار بنجاح وحصل على درجة:</p>
+                <h2 id="certScore" style="color:var(--success-color);"></h2>
+                <p>بتاريخ: <span id="certDate"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        const encodedExamData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXA5aXUyS3JZcU5pbjJMRWlMQ0prWlhOamNtbHdkR2x2YmlJNklpSXNJbk4wWVhKMFZHbHRaU0k2SWlJc0ltVnVaRlJwYldVaU9pSWlMQ0pzWVhsdmRYUWlPaUp2Ym1VdFlua3RiMjVsSWl3aWRHbHRaU0k2TVRBc0luTm9kV1ptYkdVaU9uUnlkV1VzSW01dlIyOXBibWRDWVdOcklqcG1ZV3h6WlN3aVpHbHpZV0pzWlVOb1pXRjBhVzVuSWpwbVlXeHpaU3dpYlc5dWFYUnZjbFJoWW5NaU9uUnlkV1VzSW1acGJtbHphRTl1VTNkcGRHTm9JanBtWVd4elpTd2liR1ZoY201cGJtZE5iMlJsSWpwbVlXeHpaU3dpYzJsdVoyeGxWWE5sVFc5a1pTSTZabUZzYzJVc0luTm9iM2RTWlhOMWJIUnpJanAwY25WbExDSmxibUZpYkdWU1pYWnBaWGNpT25SeWRXVXNJbVZ1WVdKc1pVTmxjblJwWm1sallYUmxJanAwY25WbExDSjBhR1Z0WlNJNkltUmxabUYxYkhRaUxDSnpkV05qWlhOelVHVnlZMlZ1ZEdGblpTSTZOVEFzSW1KdmRGUnZhMlZ1SWpvaVZUSkdjMlJIVm10WU1UaHdZWFV2UVRCTlZuVk9aMnc1U0U5SGNFUlhOQzl2Vm5wYVZWQm9VVmRUVG1kUlZWUkpWMUJNTmtac1YyaFZUa1pCWXpGaWVEWmxVbVlyUW5GTlN5OUthV0ZZTkhwelRXMWFOM2M5UFNJc0ltTm9ZWFJKWkNJNklsVXlSbk5rUjFacldERTVialZMYVRVNFoyb3ZaRFpTYlhOaE4zSXlZbXhqTjJwTU1XcHZZbnBqT0VFOUlpd2laMmwwYUhWaVZHOXJaVzRpT2lKVk1rWnpaRWRXYTFneE9WVXlRMHRzWkV0RFNFdDNia1pyUm5ONVZFZDNhMlp5Wm5oMWRISTJSM0pTY0UxMVIxb3hUbThyZVdwRlowdEJVWFpZTkdFd1ZHbFpOSFpUV2s1SFZIWTFSVzFRVXpRd2RXTkpkejA5SWl3aWNtVnpkV3gwYzBacGJHVnVZVzFsSWpvaVpYaGhiVjh5TURJMU1URXlNVjh5TXpNek1EQXVhbk52YmlJc0ltRmpZMlZ6YzBOdmJuUnliMndpT25zaVpXNWhZbXhsWkNJNlptRnNjMlVzSW5OMGRXUmxiblJ6SWpwYlhYMTlMQ0p4ZFdWemRHbHZibk1pT2x0N0luUjVjR1VpT2lKdFkzRWlMQ0owWlhoMElqb2kyWVhZcHlEWXA5bUUyWVhaaU5tQzJMa2cyS2ZaaE5pbDJMbllzZGluMktqWmlpRFpoTm1EMllUWmhkaXBJRndpMktyWmc5aW4yWVRaaXRtQlhDSWcyWUhaaWlEWXA5bUUyTFRZdDlpeElOaW4yWVRZbzltSTJZUWcyWVhaaGlEWXA5bUUyS2paaXRpcTJKOGlMQ0pqYUc5cFkyVnpJanBiSXRtQjJLZll1ZG1FSU5tRjJMSFpnZG1JMkxraUxDTFpoZG1CMkxuWmlObUVJTmlvMlljZzJZWFpodGkxMllqWXFDSXNJdG1GMkxiWXA5bUJJTmlsMllUWml0bUhJTm1GMkt6WXNkbUkyTEVpTENMWXJ0aW8yTEVnMllYWXNkbUIyWWpZdVNKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblI1Y0dVaU9pSnRZM0VpTENKMFpYaDBJam9pMllYWXB5RFpodG1JMkxrZzJZUFpoTm1GMktrZ1hDTFpoZG1PMllaY0lpRFpnZG1LSU5tQzJZalpoTm1ISUZ3aTJZalpoZG1HSU5tSzJMbll0Q0RZcTltRjJLZlpodG1LMllZZzJLM1ppTm1FMktmWmkxd2kySjhpTENKamFHOXBZMlZ6SWpwYkl0aW4yTFBaaFNEWmhkbUkyTFhaaU5tRUlpd2kySzNZc2RtQklOaW4yTFBZcXRtQjJZZllwOW1GSWl3aTJLZllzOW1GSU5pMDJMSFl0eURZck5pbjJMTFpoU0lzSXRpdDJMSFpnU0RaaHRtQjJZb2lYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNbjBzZXlKMGVYQmxJam9pYldOeElpd2lkR1Y0ZENJNkl0bUYyS2NnMktYWXVkaXgyS2ZZcUNEWmc5bUUyWVhZcVNCY0l0aXIyWVhZcDltRzJZclpobHdpSU5tQjJZb2cyS2ZaaE5pbzJZcllxaURZcDltRTJMVFl1ZGl4MllyWW55SXNJbU5vYjJsalpYTWlPbHNpMktyWmhkbUsyWXJZc2lEWmhkbUcyTFhaaU5pb0lOaW8yS2ZaaE5tSzJLZllvU0lzSXRtRjJZSFl1ZG1JMllRZzJLalpoeURaaGRtRzJMWFppTmlvSU5pbzJLZlpoTm1LMktmWW9TRFpoTmlqMlliWmh5RFpoZG1FMkszWmdpRFlxTmlzMllYWXVTRFlwOW1FMllYWXNObUQyTEVnMktmWmhOaXoyS2ZaaE5tRklpd2kyWUhZcDlpNTJZUWcyWVhZc2RtQjJZall1U0RZcU5pbjJZVFppTmluMllnaUxDTFl1Tml4MllFZzJMTFpoZGluMllZZzJZWFpodGkxMllqWXFDRFlxTmluMllUWmdkaXEySzNZcVNKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblI1Y0dVaU9pSnRZM0VpTENKMFpYaDBJam9pMllYWXB5RFlwOW1FMllqWXVObUsyWUhZcVNEWXA5bUUyWWJZcmRtSTJZcllxU0RaaE5tRDJZVFpoZGlwSUZ3aTJLM1ppTm1FMktmWmkxd2lJTm1CMllvZzJMbllxTmluMkxIWXFTQmNJdGlyMllYWXA5bUcyWXJaaGlEWXJkbUkyWVRZcDltTFhDTFlueUlzSW1Ob2IybGpaWE1pT2xzaTJZWFl0dGluMllFZzJLWFpoTm1LMlljaUxDTFlyZGluMllRaUxDTFlxdG1GMllyWml0aXlJaXdpMllYWmdkaTUyWWpaaENEWXFObUhJbDBzSW1OdmNuSmxZM1JCYm5OM1pYSWlPako5TEhzaWRIbHdaU0k2SW0xamNTSXNJblJsZUhRaU9pTFpoZGluSU5tRzJZall1U0JjSXRtRTJLZGNJaURaZ2RtS0lOaTUyS2pZcDlpeDJLa2dYQ0xaaE5pbklOaWoyS2pZcHlEWmhObURYQ0xZbnlJc0ltTm9iMmxqWlhNaU9sc2kyWVRZcHlEWXA5bUUyWWJZcDltSDJZcllxU0lzSXRtRTJLY2cyS2ZaaE5tRzJLZlpnZG1LMktrZzJZVFpoTm1CMkxuWmhDSXNJdG1FMktjZzJLZlpoTm1HMktmWmdkbUsyS2tnMllUWmhOaXMyWWJZc3lJc0l0bUUyS2NnMktmWmhOaTUyS2ZZdDltQjJLa2lYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNbjBzZXlKMGVYQmxJam9pYldOeElpd2lkR1Y0ZENJNkl0bUYyS2NnMktmWmhOaTEyWWpZc2RpcElOaW4yWVRZcU5tSzJLZlpodG1LMktrZzJZSFppaURaZ3RtSTJZUWcyS2ZaaE5pMDJLZll1ZGl4SUZ3aTJMUFlwdG1GMktvZzJLclpnOWluMllUWml0bUJJTmluMllUWXJkbUsyS2ZZcVZ3aTJKOGlMQ0pqYUc5cFkyVnpJanBiSXRpcTJMVFlxTm1LMlljZzJLalpoTm1LMkxvaUxDTFlwOWl6MktyWXVkaW4yTEhZcVNEWXF0aTEyTEhaaXRpdDJZcllxU0lzSXRtRDJZYllwOW1LMktrZzJMblpoaURZdGRtQjJLa2lMQ0xaaGRpczJLZllzaURaaGRpeDJMUFpoQ0pkTENKamIzSnlaV04wUVc1emQyVnlJam95ZlN4N0luUjVjR1VpT2lKdFkzRWlMQ0owWlhoMElqb2kyWVhZcHlEWXA5bUUyTHJZc2RpMklOaW4yWVRZcU5tRTJLZll1dG1LSU5tRjJZWWcyS2ZZczlpcTJLN1lyOWluMllVZzJMbllxTmluMkxIWXFTQmNJdG1FMktjZzJLUFlxTmluSU5tRTJZTmNJaURaZ2RtS0lObUgyTERZcHlEWXA5bUUyTFBaaXRpbjJZTFlueUlzSW1Ob2IybGpaWE1pT2xzaTJLZlpoTml2MkxuWXA5aWhJTmlvMktmWmhOaXoyWWpZb1NJc0l0aW4yWVRZcXRpNTJLellxQ0RaaU5pbjJZVFlxdGl0MkxEWml0aXhMOWluMllUWXF0bUcyS2paaXRtSElpd2kyS2ZaaE5pcTJZWFpodG1LSWl3aTJLZlpoTm1GMksvWXJTSmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3hmU3g3SW5SNWNHVWlPaUp0WTNFaUxDSjBaWGgwSWpvaTJZWFlweURZcDltRTJZTFppdG1GMktrZzJLZlpoTmlvMllUWXA5aTYyWXJZcVNEWW85bUlJTmluMllUWmdkbUQyTEhaaXRpcElOaW4yWVRZcXRtS0lObUsySzNaaGRtRTJZZllweURZcDltRTJMVFl0OWl4SU5pbjJZVFlxOWluMlliWmlpQmNJdG1JMllYWmhpRFppdGk1MkxRZzJLdlpoZGluMlliWml0bUdJTml0MllqWmhOaW4yWXNnMllUWXB5RFlvOWlvMktjZzJZVFpneURaaXRpejJLUFpoVndpMko4aUxDSmphRzlwWTJWeklqcGJJdG1JMkxYWmdTRFlyTm1GMktmWmhDRFlwOW1FMkxmWXFObUsyTG5ZcVNJc0l0aXYyTG5aaU5pcElObUUyWVRZcXRtQjJLZllwTm1FSWl3aTJLM1pnOW1GMktrZzJLcll1ZGlvMkxFZzJMblpoaURZcXRpczJMSFlxTmlwSU5pdDJZcllwOWlxMllyWXFTSXNJdGlxMllMWXNkbUsyTEVnMllUWXJkbUMyWXJaZ3RpcElOaTUyWVRaaGRtSzJLa2lYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNbjBzZXlKMGVYQmxJam9pYldOeElpd2lkR1Y0ZENJNkl0bUYyS2NnMktmWmhOaTUyWVRZcDltQzJLa2cyS2ZaaE5pbzJZVFlwOWk2MllyWXFTRFlxTm1LMllZZzJLZlpoTm1CMkxuWmhObUsyWVlnWENMWXM5aW0yWVhZcWx3aUlObUlJRndpMllyWXM5aWoyWVZjSWlEWmdkbUtJTmluMllUWXFObUsyS3JZbnlJc0ltTm9iMmxqWlhNaU9sc2kyTGZZcU5pbjJZSWlMQ0xaaGRtQzJLZllxTm1FMktraUxDTFlyTm1HMktmWXN5RFlwOWkwMktyWmd0aW4yWUxaaWlJc0l0aXEyWWpZc2RtSzJZY2lYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNbjBzZXlKMGVYQmxJam9pYldOeElpd2lkR1Y0ZENJNkl0bUYyS2NnMktmWmhOaTAyTG5aaU5peElOaW4yWVRaaGRpejJZcll0OWl4SU5pNTJZVFppU0RZcDltRTJMVFlwOWk1MkxFZzJZSFppaURaaDlpdzJLY2cyS2ZaaE5pbzJZcllxdGlmSWl3aVkyaHZhV05sY3lJNld5TFlwOW1FMkxIWXA5aXQyS2tnMllqWXA5bUUyTFBZdWRpbjJLL1lxU0lzSXRpbjJZVFlvOW1GMllRZzJZallwOW1FMktyWmdkaW4yS1RaaENJc0l0aW4yWVRZdHRpczJMRWcyWWpZcDltRTJZcllvOWl6SWl3aTJLZlpoTm1CMks3WXNTRFppTmluMllUWXA5aTUyS3JZc3RpbjJMSWlYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNbjFkZlE9PQ==';
+        const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
+        const examData = JSON.parse(decodeURIComponent(escape(atob(atob(encodedExamData)))));
+
+        try {
+            if (examData.config.botToken) {
+                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.botToken, SECRET_KEY);
+                examData.config.botToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            }
+            if (examData.config.chatId) {
+                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.chatId, SECRET_KEY);
+                examData.config.chatId = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            }
+            if (examData.config.githubToken) {
+                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.githubToken, SECRET_KEY);
+                examData.config.githubToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            }
+        } catch (e) { console.error("Decryption failed!", e); }
+
+        const GITHUB_OWNER = 'alshami2024';
+        const GITHUB_REPO = 'alshami';
+
+        let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, currentQuestionIndex = 0, tabSwitchCount = 0, examFinished = false;
+        const startScreen = document.getElementById('startScreen'), examArea = document.getElementById('examArea'), resultContainer = document.getElementById('resultContainer'), savingResultsScreen = document.getElementById('savingResultsScreen');
+        const accessControl = examData.config.accessControl || { enabled: false, students: [] };
+        
+        window.onload = function() {
+            const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+            if (examData.config.singleUseMode && localStorage.getItem(uniqueExamId)) {
+                document.body.innerHTML = `<div class="container" style="text-align:center;"><h1>تم قفل الاختبار</h1><p>لقد قمت ببدء هذا الاختبار بالفعل من هذا المتصفح. لا يمكنك إجراؤه مرة أخرى.</p></div>`;
+                return;
+            }
+            const now = new Date();
+            const startTime = examData.config.startTime ? new Date(examData.config.startTime) : null;
+            const endTime = examData.config.endTime ? new Date(examData.config.endTime) : null;
+            if (startTime && now < startTime) {
+                document.getElementById('startScreen').innerHTML = `<h1>الاختبار غير متاح بعد</h1><p>سيكون الاختبار متاحًا في: ${startTime.toLocaleString('ar-EG')}</p>`;
+                return;
+            }
+            if (endTime && now > endTime) {
+                document.getElementById('startScreen').innerHTML = `<h1>انتهت فترة الاختبار</h1><p>لقد انتهت الفترة المحددة لإجراء هذا الاختبار.</p>`;
+                return;
+            }
+            document.getElementById('examTitleStudent').textContent = examData.config.title;
+            document.getElementById('examDescriptionStudent').textContent = examData.config.description;
+            document.getElementById('startExamBtn').addEventListener('click', validateStudentAndStart);
+        };
+        
+        async function validateStudentAndStart() {
+            const nameInput = document.getElementById('studentName').value.trim();
+            if (!nameInput) { alert('الرجاء إدخال اسمك.'); return; }
+            if (accessControl.enabled) {
+                const codeInput = document.getElementById('accessCode').value.trim();
+                if (!codeInput) { alert('الرجاء إدخال رمز الدخول.'); return; }
+                const isValidStudent = accessControl.students.some(student => 
+                    student.name.trim().toLowerCase() === nameInput.toLowerCase() && student.code === codeInput
+                );
+                if (!isValidStudent) { alert('الاسم أو رمز الدخول غير صحيح.'); return; }
+                if (examData.config.singleUseMode && examData.config.githubToken && examData.config.resultsFilename) {
+                    try {
+                        const hasTakenExam = await checkIfStudentHasTakenExam(nameInput, examData.config.githubToken, `exam/${examData.config.resultsFilename}`);
+                        if (hasTakenExam) { alert('لقد قمت بإجراء هذا الاختبار مسبقًا.'); return; }
+                    } catch (error) { console.error(error); return; }
+                }
+                studentName = nameInput; startTheExam();
+            } else { studentName = nameInput; startTheExam(); }
+        }
+        
+        async function checkIfStudentHasTakenExam(studentName, githubToken, fullFilenamePath) {
+            const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${fullFilenamePath}`;
+            try {
+                const response = await fetch(url, { headers: { 'Authorization': `token ${githubToken}` } });
+                if (response.status === 404) return false;
+                if (!response.ok) throw new Error('GitHub Error');
+                const data = await response.json();
+                const content = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                return content.some(result => result.studentName.trim().toLowerCase() === studentName.toLowerCase());
+            } catch (error) { return false; }
+        }
+        
+        function startTheExam() {
+            if (examData.config.singleUseMode) {
+                const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+                localStorage.setItem(uniqueExamId, 'true');
+            }
+            sendStartNotificationToTelegram();
+            startScreen.style.display = 'none'; examArea.style.display = 'block';
+            document.getElementById('welcomeStudent').textContent = `بالتوفيق، ${studentName}!`;
+            if (examData.config.time > 0) startTimer(examData.config.time * 60); else document.getElementById('timer').style.display = 'none';
+            if (examData.config.shuffle) { examData.questions.sort(() => Math.random() - 0.5); }
+            setupSmartFeatures(); renderQuestionsForStudent();
+            document.getElementById('finishExamBtn').addEventListener('click', () => { if(confirm("هل أنت متأكد من رغبتك في إنهاء الاختبار؟")) finishTheExam(); });
+        }
+        
+        function renderQuestionsForStudent(){const container=document.getElementById("questionsContainer");container.innerHTML="",examData.config.layout==="one-by-one"?(renderSingleQuestion(currentQuestionIndex),updateNavigationButtons()):examData.questions.forEach((e,t)=>container.appendChild(createQuestionElement(e,t))),updateProgressBar()}
+        
+        function createQuestionElement(e,t){
+            const n=document.createElement("div");n.className="question-card",n.id=`question-${t}`;
+            let imgHtml = e.image ? `<div class="q-image-container"><img src="${e.image}" class="q-image"></div>` : '';
+            let o=`${imgHtml}<h3>السؤال ${t+1}: ${e.text}</h3>`;
+            if("mcq"===e.type || "tf"===e.type){
+                const choicesList = e.type === "tf" ? ["صح", "خطأ"] : e.choices;
+                const i=choicesList.map((lbl,idx)=>`<li onclick="handleChoiceClick(${t}, ${idx}, this)"><input type="radio" name="q${t}" id="q${t}c${idx}" value="${idx}" ${studentAnswers[t]===idx?"checked":""}><label for="q${t}c${idx}">${lbl}</label></li>`).join("");o+=`<ul class="choices">${i}</ul>`
+            }else{
+                const s=studentAnswers[t]||"";o+=`<textarea class="essay-answer" oninput="handleEssayInput(${t}, this.value)" placeholder="اكتب إجابتك هنا...">${s}</textarea>`
+            }
+            return n.innerHTML=o,n;
+        }
+        
+        function handleChoiceClick(e,t,n){
+            studentAnswers[e]=t;
+            n.querySelector("input").checked=!0;
+            const qType = examData.questions[e].type;
+            if(examData.config.layout==="one-by-one" && examData.config.learningMode && (qType==="mcq" || qType==="tf")){
+                const isCorrect = t === examData.questions[e].correctAnswer;
+                n.classList.add(isCorrect ? "correct" : "incorrect");
+                n.parentElement.querySelectorAll("li").forEach(li=>{li.style.pointerEvents="none"});
+            }
+            updateProgressBar();
+        }
+
+        function handleEssayInput(e,t){studentAnswers[e]=t.trim(),updateProgressBar()}
+        function renderSingleQuestion(e){document.getElementById("questionsContainer").appendChild(createQuestionElement(examData.questions[e],e))}
+        function updateNavigationButtons(){const e=document.getElementById("navigation-buttons");if("one-by-one"!==examData.config.layout)return void(e.style.display="none");let t="";examData.config.noGoingBack||(t='<button id="prevBtn" class="btn">السابق</button>'),e.innerHTML=`${t}<button id="nextBtn" class="btn">التالي</button>`;const n=document.getElementById("nextBtn");n.disabled=currentQuestionIndex===examData.questions.length-1,n.addEventListener("click",()=>{currentQuestionIndex<examData.questions.length-1&&(currentQuestionIndex++,renderQuestionsForStudent())}),examData.config.noGoingBack||(document.getElementById("prevBtn").disabled=0===currentQuestionIndex,document.getElementById("prevBtn").addEventListener("click",()=>{currentQuestionIndex>0&&(currentQuestionIndex--,renderQuestionsForStudent())}))}
+        function updateProgressBar(){const e=studentAnswers.filter(e=>null!==e&&""!==e).length,t=e/examData.questions.length*100,n=document.getElementById("progressBar");n.style.width=`${t}%`,n.textContent=`${Math.round(t)}%`}
+        function setupSmartFeatures(){if(examData.config.disableCheating){["contextmenu","copy","paste"].forEach(evt=>document.body.addEventListener(evt,e=>e.preventDefault()))}if(examData.config.monitorTabs){document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&!examFinished){tabSwitchCount++;if(examData.config.finishOnSwitch){alert("لقد خرجت من نافذة الاختبار، سيتم إنهاء الاختبار.");finishTheExam()}}})}}
+        
+        async function finishTheExam(){
+            if(examFinished) return;
+            examFinished = true;
+            clearInterval(timerInterval);
+            examArea.style.display = "none";
+            if (examData.config.githubToken && examData.config.resultsFilename) {
+                savingResultsScreen.style.display = 'block';
+                await saveResultsToGithub(); 
+                savingResultsScreen.style.display = 'none';
+            }
+            resultContainer.style.display = "block";
+            let correctMcq = 0, totalMcq = 0;
+            examData.questions.forEach((q, index) => {
+                if ("mcq" === q.type || "tf" === q.type) {
+                    totalMcq++;
+                    if (studentAnswers[index] === q.correctAnswer) correctMcq++;
+                }
+            });
+            document.getElementById("resultTitle").textContent = "تم الانتهاء من الامتحان!";
+            if(examData.config.showResults){
+                let summaryHtml = `مرحباً ${studentName}، نتيجتك في الأسئلة الآلية هي: <strong>${correctMcq} / ${totalMcq}</strong>`;
+                if (examData.questions.some(q => "essay" === q.type)) {
+                    summaryHtml += '<br><small>الأسئلة المقالية تتطلب تصحيحًا يدوياً/آلياً وستظهر نتيجتها النهائية لاحقاً.</small>';
+                }
+                if (examData.config.monitorTabs && tabSwitchCount > 0) {
+                    summaryHtml += `<br><small style="color:var(--danger-color);">تم تسجيل خروجك من الصفحة ${tabSwitchCount} مرات.</small>`;
+                }
+                document.getElementById("resultSummary").innerHTML = summaryHtml;
+            } else {
+                document.getElementById("resultSummary").textContent = "شكراً لك، تم تسليم إجاباتك بنجاح.";
+            }
+            if (examData.config.showResults && examData.config.enableReview) renderReview();
+            if (examData.config.enableCertificate && totalMcq > 0 && (correctMcq / totalMcq * 100) >= examData.config.successPercentage) {
+                renderCertificate(correctMcq, totalMcq);
+            }
+            if (examData.config.botToken && examData.config.chatId) await sendResultsToTelegram(correctMcq, totalMcq);
+        }
+    
+        function renderReview(){
+            const e=document.getElementById("reviewContainer");
+            e.innerHTML="<h3>مراجعة الإجابات:</h3>";
+            examData.questions.forEach((t,n)=>{
+                let o="";
+                if(t.type === "mcq" || t.type === "tf") {
+                    const choicesList = t.type === "tf" ? ["صح", "خطأ"] : t.choices;
+                    const userAns = choicesList[studentAnswers[n]] || "لم تتم الإجابة";
+                    const correctAns = choicesList[t.correctAnswer];
+                    const isCorrect = studentAnswers[n] === t.correctAnswer;
+                    
+                    o=`<div class="question-card" style="background:${isCorrect?"#d4edda":"#f8d7da"};"><p><strong>${t.text}</strong></p><p>إجابتك: ${userAns} ${isCorrect?"✔️":"❌"}</p>${!isCorrect?`<p style="color:var(--primary-color);">الإجابة الصحيحة: ${correctAns}</p>`:""}</div>`;
+                } else {
+                    o=`<div class="question-card" style="background: #e9ecef;"><p><strong>(سؤال مقالي) ${t.text}</strong></p><p style="font-weight:bold;">إجابتك:</p><p style="white-space: pre-wrap; background: #fff; padding:10px; border-radius:5px;">${studentAnswers[n]?studentAnswers[n].replace(/</g,"&lt;").replace(/>/g,"&gt;"):"لم تتم الإجابة"}</p></div>`;
+                }
+                e.innerHTML+=o;
+            });
+        }
+
+        function renderCertificate(e,t){const n=document.getElementById("certificate");n.style.display="block",document.getElementById("certName").textContent=studentName,document.getElementById("certScore").textContent=`${e} / ${t}`,document.getElementById("certDate").textContent=(new Date).toLocaleDateString("ar-EG")}
+        function startTimer(e){let t=e;const n=document.getElementById("timer");timerInterval=setInterval(()=>{let e=parseInt(t/60,10),o=parseInt(t%60,10);e=e<10?"0"+e:e,o=o<10?"0"+o:o,n.textContent=`${e}:${o}`,--t<0&&(clearInterval(timerInterval),alert("انتهى الوقت!"),finishTheExam())},1e3)}
+        
+        async function sendResultsToTelegram(e,t){
+            const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;
+            function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}
+            let a=`*📊 نتيجة اختبار جديدة*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}\n*النتيجة الآلية:* ${e} من ${t}\n*مرات الخروج:* ${tabSwitchCount}`;
+            let d="\n\n*الإجابات المقالية*",r=!1;
+            examData.questions.forEach((e,t)=>{("essay"===e.type&&(r=!0,d+=`\n\n*❓ السؤال: ${i(e.text)}*\n*📝 إجابة الطالب:*\n${i(studentAnswers[t]||"لم تتم الإجابة")}`))});
+            r&&(a+=d);
+            const c=`https://api.telegram.org/bot${n}/sendMessage`;
+            try{
+                a.length>4096&&(a=a.substring(0,4e3)+"\n\n... (تم اقتطاع الرسالة لأنها طويلة جداً)");
+                const l=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});
+            }catch(p){console.error("Fetch error or issue sending to Telegram:",p)}
+        }
+
+        async function sendStartNotificationToTelegram(){
+            const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;
+            function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}
+            const a=`*🔔 بدء اختبار جديد*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}`,c=`https://api.telegram.org/bot${n}/sendMessage`;
+            try{await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});}catch(p){}
+        }
+        
+        async function saveResultsToGithub() {
+            const token = examData.config.githubToken;
+            const filename = examData.config.resultsFilename;
+            if (!token || !filename) { return; } 
+            const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/exam1/${filename}`;
+            let correctMcq = 0, totalMcq = 0;
+            examData.questions.forEach((q, index) => {
+                if ("mcq" === q.type || "tf" === q.type) {
+                    totalMcq++;
+                    if (studentAnswers[index] === q.correctAnswer) correctMcq++;
+                }
+            });
+            const resultData = {
+                studentName: studentName,
+                submissionDate: new Date().toISOString(),
+                mcqScore: { correct: correctMcq, total: totalMcq },
+                tabSwitchCount: tabSwitchCount,
+                examTitle: examData.config.title,
+                answers: examData.questions.map((q, index) => {
+                    const studentAnswerRaw = studentAnswers[index];
+                    let studentAnswerText = studentAnswerRaw;
+                    let isCorrect = null;
+                    let correctAnswerText = null;
+                    if (q.type === 'mcq' || q.type === 'tf') {
+                        const choicesList = q.type === "tf" ? ["صح", "خطأ"] : q.choices;
+                        isCorrect = (studentAnswerRaw === q.correctAnswer);
+                        studentAnswerText = (studentAnswerRaw !== null) ? choicesList[studentAnswerRaw] : "لم تتم الإجابة";
+                        if (!isCorrect) correctAnswerText = choicesList[q.correctAnswer];
+                    } else if (q.type === 'essay') {
+                        studentAnswerText = studentAnswerRaw;
+                        isCorrect = null;
+                        correctAnswerText = null;
+                        return { type: 'essay', question: q.text, answer: studentAnswerText, isGraded: false, maxScore: q.maxScore || 0 };
+                    }
+                    return { type: q.type, question: q.text, answer: studentAnswerText, isCorrect: isCorrect, correctAnswer: correctAnswerText };
+                })
+            };
+            try {
+                let currentContent = [];
+                let sha;
+                try {
+                    const res = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+                    if (res.ok) {
+                        const data = await res.json();
+                        sha = data.sha;
+                        currentContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                    }
+                } catch (fetchError) { }
+                currentContent.push(resultData);
+                const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentContent, null, 2))));
+                const response = await fetch(url, {
+                    method: 'PUT',
+                    headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: `إضافة نتيجة الطالب: ${studentName}`, content: updatedContent, sha: sha })
+                });
+            } catch (error) { document.getElementById("resultSummary").innerHTML += '<br><small style="color:red;">حدث خطأ أثناء محاولة حفظ نتيجتك.</small>'; }
+        }
+    </script>
+    </body>
+    </html>
+    
