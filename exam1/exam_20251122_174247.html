@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>تدريبات السابع (مطور)2</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* --- المتغيرات العامة --- */
+        :root { 
+            --primary-color: #0056b3; --secondary-color: #007bff; 
+            --light-gray: #f8f9fa; --dark-gray: #343a40; 
+            --success-color: #28a745; --danger-color: #dc3545; 
+            --background-color: #e9ecef; --text-color: #212529; --white: #fff; 
+        }
+        
+        /* --- التنسيقات الأساسية (موبايل أولاً) --- */
+        body { 
+            font-family: 'Tajawal', sans-serif; 
+            background-color: var(--background-color); 
+            margin: 0; 
+            padding: 10px; 
+            color: var(--text-color); 
+            direction: rtl; 
+            line-height: 1.6;
+        }
+
+        .container { 
+            background-color: var(--white); 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+            width: 100%; 
+            max-width: 100%; 
+            margin: 0 auto; 
+            padding: 20px; 
+            box-sizing: border-box;
+        }
+
+        h1 { font-size: 1.5rem; margin-bottom: 10px; color: var(--dark-gray); }
+        h2 { font-size: 1.2rem; color: var(--dark-gray); }
+
+        .form-group { margin-bottom: 15px; } 
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group input[type="text"], .form-group textarea { 
+            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; 
+            font-size: 16px; 
+            box-sizing: border-box;
+        }
+
+        .btn { 
+            background-color: var(--primary-color); color: var(--white); border: none; 
+            padding: 14px 20px; font-size: 16px; font-weight: bold; border-radius: 10px; 
+            cursor: pointer; transition: background-color 0.3s; 
+            width: 100%; 
+            display: block;
+            margin-bottom: 10px;
+        }
+        .btn:hover { background-color: #004a99; } 
+        .btn:disabled { background-color: #ccc; }
+        .btn-danger { background-color: var(--danger-color); }
+
+        .question-card { 
+            background: var(--light-gray); border: 1px solid #dee2e6; 
+            border-radius: 10px; padding: 15px; margin-bottom: 20px; text-align: right; 
+        }
+        
+        .exam-header { 
+            display: flex; flex-direction: column; 
+            gap: 10px; align-items: center; margin-bottom: 20px; text-align: center;
+        }
+        
+        .timer { 
+            font-size: 1.2em; color: var(--danger-color); font-weight: bold; 
+            background: #fff; padding: 5px 15px; border-radius: 20px; border: 1px solid #ddd;
+        }
+
+        .choices li { 
+            padding: 12px; margin: 8px 0; background: var(--white); 
+            border: 1px solid #ddd; border-radius: 8px; cursor: pointer; 
+            transition: all 0.2s; display: flex; align-items: center; gap: 10px;
+        }
+        .choices li:active { background-color: #e3f2fd; }
+        .choices li label { cursor: pointer; flex: 1; }
+        .choices li.correct { background-color: #d4edda !important; border-color: #c3e6cb; }
+        .choices li.incorrect { background-color: #f8d7da !important; border-color: #f5c6cb; }
+
+        /* تنسيق حقل الإجابة المقالي */
+        .essay-answer { 
+            width: 100%;             /* عرض كامل */
+            box-sizing: border-box;  /* احتساب الحواف ضمن العرض لمنع الخروج عن الشاشة */
+            min-height: 150px;       /* ارتفاع أدنى مريح للكتابة */
+            padding: 12px 15px;      /* مسافات داخلية مريحة */
+            border: 1px solid #ccc;  /* إطار ناعم */
+            border-radius: 8px;      /* حواف دائرية */
+            font-family: inherit;    /* نفس خط الصفحة (تجوّال) */
+            font-size: 16px;         /* حجم خط مناسب للقراءة */
+            line-height: 1.6;        /* تباعد أسطر مريح */
+            resize: vertical;        /* السماح بالتكبير عمودياً فقط */
+            margin-top: 10px;        /* مسافة بين السؤال والحقل */
+            background-color: #fff;  /* لون خلفية أبيض */
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        /* تأثير عند الضغط للكتابة */
+        .essay-answer:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
+        }
+        
+        #navigation-buttons { display: flex; gap: 10px; margin-top: 20px; }
+        #progressBarContainer { width: 100%; background-color: #e9ecef; border-radius: 20px; margin-bottom: 25px; height: 10px; }
+        #progressBar { height: 100%; background-color: var(--success-color); border-radius: 20px; transition: width 0.5s; }
+
+        .q-image-container { text-align: center; margin-bottom: 15px; width: 100%; }
+        .q-image { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+
+        .saving-screen { text-align: center; padding: 30px; }
+        .spinner { border: 5px solid #f3f3f3; border-top: 5px solid var(--primary-color); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 20px auto; }
+        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+        @media (min-width: 768px) {
+            body { padding: 40px; background-color: #e0e5ec; }
+            .container { width: 80%; max-width: 900px; padding: 40px; border-radius: 16px; }
+            h1 { font-size: 2.2rem; }
+            .btn { width: auto; display: inline-block; min-width: 150px; margin-left: 10px; }
+            .exam-header { flex-direction: row; justify-content: space-between; }
+            .question-card { padding: 30px; }
+            .choices li:hover { transform: translateX(-5px); background-color: #f1f8ff; }
+            #navigation-buttons { justify-content: flex-end; }
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="studentExamView" style="display:block;">
+        <div id="startScreen" style="display:block;">
+            <h1 id="examTitleStudent"></h1>
+            <p id="examDescriptionStudent" style="white-space: pre-wrap; color:#666;"></p>
+            <hr style="border:0; border-top:1px solid #eee; margin: 20px 0;">
+            
+            <div class="form-group">
+                <label for="studentName">أدخل اسمك الكامل</label>
+                <input type="text" id="studentName" placeholder="الاسم الكامل">
+            </div>
+            
+        
+            <button id="startExamBtn" class="btn">بدء الاختبار 🚀</button>
+        </div>
+
+        <div id="examArea" style="display:none;">
+            <div class="exam-header">
+                <h3 id="welcomeStudent" style="margin:0;"></h3>
+                <div id="timer" class="timer">00:00</div>
+            </div>
+            <div id="progressBarContainer" title="التقدم"><div id="progressBar"></div></div>
+            <div id="questionsContainer"></div>
+            <div id="navigation-buttons"></div>
+            <button id="finishExamBtn" class="btn btn-danger" style="margin-top: 30px; width:100%;">إنهاء وتسليم الاختبار 🏁</button>
+        </div>
+
+        <div id="savingResultsScreen" class="saving-screen" style="display:none;">
+            <div class="spinner"></div>
+            <h3>جاري حفظ إجاباتك...</h3>
+            <p>الرجاء الانتظار وعدم إغلاق الصفحة.</p>
+        </div>
+
+        <div id="resultContainer" style="display:none;">
+             <div style="text-align:center; margin-bottom:20px;">
+                <h2 id="resultTitle"></h2>
+                <p id="resultSummary" style="font-size:1.1em; margin-top:10px;"></p>
+             </div>
+             <div id="reviewContainer"></div>
+             <div id="certificate" style="display:none; border: 5px double var(--primary-color); padding: 30px; margin-top: 30px; text-align: center; background: #fff;">
+                <h2 style="color:var(--primary-color);">شهادة إتمام</h2>
+                <p>تشهد إدارة الاختبار بأن الطالب/ة:</p>
+                <h1 id="certName" style="color:#333;"></h1>
+                <p>قد أتم الاختبار بنجاح وحصل على درجة:</p>
+                <h2 id="certScore" style="color:var(--success-color);"></h2>
+                <p>بتاريخ: <span id="certDate"></span></p>
+            </div>
+        </div>
+    </div>
+</div>
+    <script>
+        const encodedExamData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXF0aXYyTEhaaXRpbzJLZllxaURZcDltRTJMUFlwOWlvMkxrZ0tObUYyTGZaaU5peEtUSWlMQ0prWlhOamNtbHdkR2x2YmlJNkl0aW4ySzdZcXRpbzJLZllzU0RaaGRpdTJMWFl0VG9nMktmWmhObUcySzNaaUNCOElOaXZMaURZdWRpbzJLL1lwOW1FMkxIWmd0bUsyS2dnMktmWmhOaTAyS2ZaaGRtS0lId2cyS2ZaaE5pejJLZllxTmk1SU5tRjJMZlppTml4SWl3aWMzUmhjblJVYVcxbElqb2lJaXdpWlc1a1ZHbHRaU0k2SWlJc0lteGhlVzkxZENJNkltOXVaUzFpZVMxdmJtVWlMQ0owYVcxbElqb3dMQ0p6YUhWbVpteGxJanBtWVd4elpTd2libTlIYjJsdVowSmhZMnNpT21aaGJITmxMQ0prYVhOaFlteGxRMmhsWVhScGJtY2lPbVpoYkhObExDSnRiMjVwZEc5eVZHRmljeUk2Wm1Gc2MyVXNJbVpwYm1semFFOXVVM2RwZEdOb0lqcG1ZV3h6WlN3aWJHVmhjbTVwYm1kTmIyUmxJanBtWVd4elpTd2ljMmx1WjJ4bFZYTmxUVzlrWlNJNlptRnNjMlVzSW5Ob2IzZFNaWE4xYkhSeklqcDBjblZsTENKbGJtRmliR1ZTWlhacFpYY2lPblJ5ZFdVc0ltVnVZV0pzWlVObGNuUnBabWxqWVhSbElqcDBjblZsTENKMGFHVnRaU0k2SW1SbFptRjFiSFFpTENKemRXTmpaWE56VUdWeVkyVnVkR0ZuWlNJNk5UQXNJbUp2ZEZSdmEyVnVJam9pVlRKR2MyUkhWbXRZTVRobVFUQkZkbHB2TmpocldpdHhiVXBoTlU1b2FIRlFNazlGYTBaSlVYUTJWeTk1Y1dKMGRHdG9SMmQ2VWpGMVRVNUxiVVZPTW5VeGRtZFNVbVk1SzI5NmVIaHVXSFJMWXpkV1VtYzlQU0lzSW1Ob1lYUkpaQ0k2SWxVeVJuTmtSMVpyV0RFNFlUVlpZME01Y2tkb0sycFhRMVZWZFhnNFZsQnZabXRyTkdWWVdWSkxXVWs5SWl3aVoybDBhSFZpVkc5clpXNGlPaUpWTWtaelpFZFdhMWd4T1haMlowVkdWWGxuZDNWcFIxazFlRFkxU0V4bmIxRklURzAxT1M4eGJGaEVTamxIT0doSmEzVTNkMnhDZGswMlZXZHZXVTlZVDA5MGJHZGxSRWxFUlVnMFl6bHFNVmgzU2xoUVVUMDlJaXdpY21WemRXeDBjMFpwYkdWdVlXMWxJam9pZEdWemRHeGhkeTVxYzI5dUlpd2lZV05qWlhOelEyOXVkSEp2YkNJNmV5SmxibUZpYkdWa0lqcG1ZV3h6WlN3aWMzUjFaR1Z1ZEhNaU9sdGRmWDBzSW5GMVpYTjBhVzl1Y3lJNlczc2lkR1Y0ZENJNkl0aW4yWVRaaE5pbjJZVWcyS2ZaaE5pcTJZb2cyWXJaajltRzJMWFpqdGlvSU5pbzJMbllyOW1IMktjZzJLZlpoTm1CMkxuWmhDRFlwOW1FMllYWXR0aW4yTEhZdVNEWXFOaWoyWVlnMllYWXR0bUYyTEhZcVNEWmlOaXMyWWpZcU5tTDJLY2cyWWZaaWlJc0luQnZhVzUwY3lJNk1pd2lhVzFoWjJVaU9pSWlMQ0pwYldGblpWZHBaSFJvSWpvaUlpd2lhVzFoWjJWSVpXbG5hSFFpT2lJaUxDSjBlWEJsSWpvaWJXTnhJaXdpWTJodmFXTmxjeUk2V3lMWmhOaW4yWVVnMktmWmhOaXEyTG5aaE5tSzJZUWlMQ0xaaE5pbjJZVWcyS2ZaaE5pNTJLZlpndGlvMktraUxDTFpoTmluMllVZzJLZlpoTmlzMkszWmlOaXZJaXdpMktmWmhObUUyS2ZaaFNEWXA5bUUyTExZcDlpbTJLL1lxU0pkTENKamIzSnlaV04wUVc1emQyVnlJam95ZlN4N0luUmxlSFFpT2lMWXM5aW4yWUhZc1NEWXA5bUUyS3JZcDlpczJMRWcyS2pZcU5pMjJLZll1ZGlxMlljZzJZVFppdGl1MkxQWXNTRFlxdGlzMktmWXNkaXEyWWN1SUZ4dVhHN1podG1JMkxrZzJLZlpoTm1FMktmWmhTRFpnZG1LSU5pbjJZVFpnZGk1MllRZzJLZlpoTm1GMkxiWXA5aXgyTGtnS05tRTJZcllydGl6MkxFcElDSXNJbkJ2YVc1MGN5STZNaXdpYVcxaFoyVWlPaUlpTENKcGJXRm5aVmRwWkhSb0lqb2lJaXdpYVcxaFoyVklaV2xuYUhRaU9pSWlMQ0owZVhCbElqb2liV054SWl3aVkyaHZhV05sY3lJNld5TFpoTmluMllVZzJLZlpoTmlxMkxuWmhObUsyWVFpTENMWmhOaW4yWVVnMktmWmhOaTUyS2ZaZ3RpbzJLa2lMQ0xaaE5pbjJZVWcyS2ZaaE5pczJLM1ppTml2SWl3aTJLZlpoTm1FMktmWmhTRFlwOW1FMkxMWXA5aW0ySy9ZcVNKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblJsZUhRaU9pTFpndGluMllRZzJLcll1ZGluMllUWmlUb2dlOW1JMlk3WXI5bVIyWTRnMllQWmp0aXIyWkRaaXRpeDJZd2cyWVhaa2RtUTJZYlpraURZbzltTzJZZlprdG1FMlpBZzJLZlpoTm1TMllQWmtOaXEyWTdZcDlpbzJaQWcyWVRaanRtSTJaSWcyWXJaanRpeDJZL1lyOW1SMlkvWmlObUcyWTdaZzltUDJZVWcyWVhaa2RtUTJZWWcyS2paanRpNTJaTFlyOW1RSU5pbDJaRFppdG1GMlk3WXA5bUcyWkRaZzltUDJZWFpraURaZzltUDJZSFprZG1PMktmWXNkaW4yWXNnMkszWmp0aXoyWTdZcjlpbjJZc2cyWVhaa2RtUTJZYlpraURZdWRtUTJZYllyOW1RSU5pajJZN1podG1CMlkvWXM5bVEyWWZaa05tRklObUYyWkhaa05tR0lOaW8yWTdZdWRtUzJLL1prQ0RaaGRtTzJLY2cyS3JaanRpbzJZN1ppdG1SMlk3Wmh0bU9JTm1FMlk3Wmg5bVAyWVhaanlEWXA5bUUyWkxZcmRtTzJZTFprZG1QSU5tQjJZN1lwOWk1MlpMWmdkbVAyWWpZcDltU0lObUkyWTdZcDlpMTJaTFpnZG1PMkszWmo5bUkyS2Zaa2lEWXJkbU8yS3Jaa2RtTzJZa2cyWXJaanRpajJaTFlxdG1RMllvZzJLZlpoTm1FMlpIWmp0bUgyWThnMktqWmtOaWoyWTdaaGRtUzJMSFprTm1IMlpBZzJLWFprTm1HMlpIWmppRFlwOW1FMllUWmtkbU8yWWZaamlEWXVkbU8yWVRaanRtSklObUQyWS9aaE5tUjJaQWcyTFRaanRtSzJaTFlvZG1OSU5tQzJZN1lyOW1RMllyWXNkbU1mU0JiMktmWmhOaW8yWUxZc2RpcE9qRXdPVjB1WEc1Y2J0aXMyS2ZZb2RpcUlOaXQyS3JaaVNEWXFObUYyTG5aaHRtSklpd2ljRzlwYm5Seklqb3lMQ0pwYldGblpTSTZJaUlzSW1sdFlXZGxWMmxrZEdnaU9pSWlMQ0pwYldGblpVaGxhV2RvZENJNklpSXNJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0aW4yWVRZcXRpNTJZVFppdG1FSU5tSTJLZlpoTml6MktqWXFObUsyS2tpTENMWXA5bUUyTHJZcDltSzJLa2lYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNWDBzZXlKMFpYaDBJam9pMkxQWXA5bUIyTEhaa2lEWmhkaTUyWW9nMllqWW85bUQyTEhaaGRtTzJZTXVYRzVjYnRtRzJZall1U0FvMktmWmhObUkyS2ZaaUNrZzJZSFppaURZcDltRTJLelpoZG1FMktraUxDSndiMmx1ZEhNaU9qSXNJbWx0WVdkbElqb2lJaXdpYVcxaFoyVlhhV1IwYUNJNklpSXNJbWx0WVdkbFNHVnBaMmgwSWpvaUlpd2lkSGx3WlNJNkltMWpjU0lzSW1Ob2IybGpaWE1pT2xzaTJZallwOW1JSU5pbjJZVFl1ZGkzMllFaUxDTFppTmluMllnZzJLZlpoTm1GMkxuWml0aXBJaXdpMllqWXA5bUlJTmluMllUWXA5aXoyS3JZcHRtRzJLZlpnZG1LMktraVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1YMHNleUowWlhoMElqb2kyWVRaaU5tRTJLY2cyS3JaaU5tQzJMblpqeURaaGRpNTJLcllzZG1SSU5tQjJLUFlzZGkyMllyWmp0bUhJQzR1TGlEWmhkaW5JTm1EMlliWXFpRFlvOW1JMkt2WXNTRFlwZGlxMkxIWXA5aW8yS2ZaaXlEWXVkbUUyWWtnMktyWXNkaW9MaUJjYmx4dTJZYlppTmk1SU5pbjJZVFpnZGluMktFZzJZSFppaURZcDltRTJLalppdGlxSWl3aWNHOXBiblJ6SWpveUxDSnBiV0ZuWlNJNklpSXNJbWx0WVdkbFYybGtkR2dpT2lJaUxDSnBiV0ZuWlVobGFXZG9kQ0k2SWlJc0luUjVjR1VpT2lKdFkzRWlMQ0pqYUc5cFkyVnpJanBiSXRtQjJLZllvU0RZcDltRTJMUFlxTmlvMllyWXFTSXNJdG1CMktmWW9TRFlwOW1FMkxuWXA5aTMyWUhZcVNKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblJsZUhRaU9pTFpndGluMllRZzJLcll1ZGluMllUWmlUb2dlOW1CMlk3WXA5bUUyWkxZcXRtTzJZTFpqdGkzMlk3Wmg5bVBJTmlpMllUWmp5RFpnZG1RMkxIWmt0aTUyWTdaaU5tUzJZYlpqaURaaE5tUTJZclpqdG1EMlkvWmlObUcyWTRnMllUWmp0bUgyWS9aaGRtU0lOaTUyWTdZcjltUDJZalprZGluMllzZzJZalpqdGl0Mlk3WXN0bU8yWWJZcDltTElOaWwyWkRaaHRtUjJZNGcyWUhaa05peDJaTFl1ZG1PMllqWmt0bUcyWTRnMllqWmp0bUgyWTdZcDltRjJZN1lwOW1HMlk0ZzJZalpqdGlzMlkvWmh0bVAyWWpZcjltTzJZZlpqOW1GMlk3WXB5RFpnOW1PMktmWmh0bVAyWWpZcHlEWXJ0bU8yS2ZZdDltUTJLYlprTm1LMlliWmpuMGdXOWluMllUWmd0aTFPamhkTGx4dVhHN1lyZG1EMllVZzJLWFl0dG1GMktmWXNTRFlvOW1HSU5tQjJZb2cyWUxaaU5tRTJZYzZJQ2paaE5tSzJZUFppTm1HS1NBaUxDSndiMmx1ZEhNaU9qSXNJbWx0WVdkbElqb2lJaXdpYVcxaFoyVlhhV1IwYUNJNklpSXNJbWx0WVdkbFNHVnBaMmgwSWpvaUlpd2lkSGx3WlNJNkltMWpjU0lzSW1Ob2IybGpaWE1pT2xzaTJZallwOWlzMktnaUxDTFlyTmluMktiWXNpSXNJdG1GMllYWXF0bUcyTGtpWFN3aVkyOXljbVZqZEVGdWMzZGxjaUk2TVgwc2V5SjBaWGgwSWpvaTJLZlpoTmlvMllyWXFpRFlwOW1FMkxUWXVkaXgyWW9nMktmWmhOaXcyWW9nMllyWXF0aTIyWVhaaGlEWmdkaTUyWVRZcHlEWmhkaTIyS2ZZc2RpNTJLY2cyWVhaaHRpMTJZallxTmluSU5pbzJLUFpoaURaaGRpMjJZWFlzZGlwSU5tSTJLelppTmlvMktjZzJZZlppQ0lzSW5CdmFXNTBjeUk2TWl3aWFXMWhaMlVpT2lJaUxDSnBiV0ZuWlZkcFpIUm9Jam9pSWl3aWFXMWhaMlZJWldsbmFIUWlPaUlpTENKMGVYQmxJam9pYldOeElpd2lZMmh2YVdObGN5STZXeUxaaU5tRTJLallzeURZdWRpbzJLZllvZGlwSU5tSTJLclpndGl4SU5pNTJZclpodG1LTGk0dUlOaWoySzNZcUNEWXBkbUUyWW9nMllYWmhpRFpoTmlvMkxNZzJLZlpoTmkwMllIWmlObUJJaXdpMktYWmh0bUtJTm1JMllMWXF0bUUyWW9nMkxQWmhObUsyWVBZcHlEWXE5bUZJTmlqMkxuWmd0bUUyWWNnTGk0dUlObUQyS2ZaaE5pcjJZallzU0RaaXRpMjJMSFlxQ0RaaE5tRjJLY2cyTG5ZcDltQjJLb2cyS2ZaaE5pbzJZTFlzU0lzSXRtRTJLUFlzOWlxMkxQWmg5bUUyWVlnMktmWmhOaTEyTG5ZcUNEWW85bUlJTmlqMksvWXNkbURJTmluMllUWmhkbUcyWWt1TGk0ZzJZSFpoZGluSU5pbjJZYlpndGluMksvWXFpRFlwOW1FMktMWmhkaW4yWVFnMktYWmhOaW5JTm1FMkxYWXA5aW8yTEV1SUNKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveWZTeDdJblJsZUhRaU9pTFpoOW1FMktjZzJLM1lwOW1CMkxqWXFpRFl1ZG1FMllrZzJLZlpoTmkxMllUWXA5aXBJTm1JMllyWXF0bUkyS2dnMktmWmhObUUyWWNnMkxuWmhObUsyWU11SUZ4dVhHN1podG1JMkxrZzJLZlpoTmkzMllUWXFDRFpnZG1LSU5pbjJZVFlyTm1GMllUWXFTRFlwOW1FMkxQWXA5aW8yWUxZcVNJc0luQnZhVzUwY3lJNk1pd2lhVzFoWjJVaU9pSWlMQ0pwYldGblpWZHBaSFJvSWpvaUlpd2lhVzFoWjJWSVpXbG5hSFFpT2lJaUxDSjBlWEJsSWpvaWJXTnhJaXdpWTJodmFXTmxjeUk2V3lMWW85bUYyTEVpTENMWXVkaXgyTFlpTENMWXF0aXQyTGJaaXRpMklpd2kyS2ZZczlpcTJZSFpoOWluMllVaVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1uMHNleUowWlhoMElqb2kyWVBaaENEWXA5bUUyS1BZcjltSTJLZllxaURZcDltRTJLcllwOW1FMllyWXFTRFlxdG1HMkxYWXFDRFlwOW1FMllIWXVkbUVJTmluMllUWmhkaTIyS2ZZc2RpNUlOaW8yS1BaaGlEWmhkaTIyWVhZc2RpcElOaXMyWWpZcDlpeTJLY2cyTG5Zcjlpbklpd2ljRzlwYm5Seklqb3lMQ0pwYldGblpTSTZJaUlzSW1sdFlXZGxWMmxrZEdnaU9pSWlMQ0pwYldGblpVaGxhV2RvZENJNklpSXNJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0bUUyS2ZaaFNEWXA5bUUyS3JZdWRtRTJZclpoQ0lzSXRtRTJLZlpoU0RZcDltRTJMbllwOW1DMktqWXFTSXNJdG1CMktmWW9TRFlwOW1FMkxuWXQ5bUJJaXdpMllIWXA5aWhJTmluMllUWXM5aW8yS2paaXRpcElsMHNJbU52Y25KbFkzUkJibk4zWlhJaU9qTjlMSHNpZEdWNGRDSTZJdG1LMktjZzJLZllxTm1HSU5pbjJZVFpnOWl4MktmWmhTRFlvOW1FMktjZzJLcllyOW1HMllnZzJZSFlxdGlvMkxYWXNkbU9JQzR1SU5tRjJLY2cyWUxZcnlEWXJkaXYyS3ZaaU5tRElObUIyWVhZcHlEWXNkaW4yS0VnMllQWmhkbUdJTml6MllYWXVkaW5MaUJjYnRtRzJZall1U0RZcDltRTJMZlpoTmlvSU5tQjJZb2cyS2ZaaE5pbzJZcllxaTRnSWl3aWNHOXBiblJ6SWpveUxDSnBiV0ZuWlNJNklpSXNJbWx0WVdkbFYybGtkR2dpT2lJaUxDSnBiV0ZuWlVobGFXZG9kQ0k2SWlJc0luUjVjR1VpT2lKdFkzRWlMQ0pqYUc5cFkyVnpJanBiSXRpajJZWFlzU0lzSXRpNTJMSFl0aUlzSXRpcTJLM1l0dG1LMkxZaUxDTFlwOWl6MktyWmdkbUgyS2ZaaFNKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZWMTk=';
+        const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
+        const examData = JSON.parse(decodeURIComponent(escape(atob(atob(encodedExamData)))));
+
+        try {
+            if (examData.config.botToken) {
+                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.botToken, SECRET_KEY);
+                examData.config.botToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            }
+            if (examData.config.chatId) {
+                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.chatId, SECRET_KEY);
+                examData.config.chatId = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            }
+            if (examData.config.githubToken) {
+                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.githubToken, SECRET_KEY);
+                examData.config.githubToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
+            }
+        } catch (e) { console.error("Decryption failed!", e); }
+
+        const GITHUB_OWNER = 'alshami2024';
+        const GITHUB_REPO = 'alshami';
+
+        let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, currentQuestionIndex = 0, tabSwitchCount = 0, examFinished = false;
+        const startScreen = document.getElementById('startScreen'), examArea = document.getElementById('examArea'), resultContainer = document.getElementById('resultContainer'), savingResultsScreen = document.getElementById('savingResultsScreen');
+        const accessControl = examData.config.accessControl || { enabled: false, students: [] };
+        
+        window.onload = function() {
+            const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+            if (examData.config.singleUseMode && localStorage.getItem(uniqueExamId)) {
+                document.body.innerHTML = `<div class="container" style="text-align:center;"><h1>تم قفل الاختبار</h1><p>لقد قمت ببدء هذا الاختبار بالفعل من هذا المتصفح. لا يمكنك إجراؤه مرة أخرى.</p></div>`;
+                return;
+            }
+            const now = new Date();
+            const startTime = examData.config.startTime ? new Date(examData.config.startTime) : null;
+            const endTime = examData.config.endTime ? new Date(examData.config.endTime) : null;
+            if (startTime && now < startTime) {
+                document.getElementById('startScreen').innerHTML = `<h1>الاختبار غير متاح بعد</h1><p>سيكون الاختبار متاحًا في: ${startTime.toLocaleString('ar-EG')}</p>`;
+                return;
+            }
+            if (endTime && now > endTime) {
+                document.getElementById('startScreen').innerHTML = `<h1>انتهت فترة الاختبار</h1><p>لقد انتهت الفترة المحددة لإجراء هذا الاختبار.</p>`;
+                return;
+            }
+            document.getElementById('examTitleStudent').textContent = examData.config.title;
+            document.getElementById('examDescriptionStudent').textContent = examData.config.description;
+            document.getElementById('startExamBtn').addEventListener('click', validateStudentAndStart);
+        };
+        
+        async function validateStudentAndStart() {
+            const nameInput = document.getElementById('studentName').value.trim();
+            if (!nameInput) { alert('الرجاء إدخال اسمك.'); return; }
+            if (accessControl.enabled) {
+                const codeInput = document.getElementById('accessCode').value.trim();
+                if (!codeInput) { alert('الرجاء إدخال رمز الدخول.'); return; }
+                const isValidStudent = accessControl.students.some(student => 
+                    student.name.trim().toLowerCase() === nameInput.toLowerCase() && student.code === codeInput
+                );
+                if (!isValidStudent) { alert('الاسم أو رمز الدخول غير صحيح.'); return; }
+                if (examData.config.singleUseMode && examData.config.githubToken && examData.config.resultsFilename) {
+                    try {
+                        const hasTakenExam = await checkIfStudentHasTakenExam(nameInput, examData.config.githubToken, `exam/${examData.config.resultsFilename}`);
+                        if (hasTakenExam) { alert('لقد قمت بإجراء هذا الاختبار مسبقًا.'); return; }
+                    } catch (error) { console.error(error); return; }
+                }
+                studentName = nameInput; startTheExam();
+            } else { studentName = nameInput; startTheExam(); }
+        }
+        
+        async function checkIfStudentHasTakenExam(studentName, githubToken, fullFilenamePath) {
+            const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${fullFilenamePath}`;
+            try {
+                const response = await fetch(url, { headers: { 'Authorization': `token ${githubToken}` } });
+                if (response.status === 404) return false;
+                if (!response.ok) throw new Error('GitHub Error');
+                const data = await response.json();
+                const content = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                return content.some(result => result.studentName.trim().toLowerCase() === studentName.toLowerCase());
+            } catch (error) { return false; }
+        }
+        
+        function startTheExam() {
+            if (examData.config.singleUseMode) {
+                const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
+                localStorage.setItem(uniqueExamId, 'true');
+            }
+            sendStartNotificationToTelegram();
+            startScreen.style.display = 'none'; examArea.style.display = 'block';
+            document.getElementById('welcomeStudent').textContent = `بالتوفيق، ${studentName}!`;
+            if (examData.config.time > 0) startTimer(examData.config.time * 60); else document.getElementById('timer').style.display = 'none';
+            if (examData.config.shuffle) { examData.questions.sort(() => Math.random() - 0.5); }
+            setupSmartFeatures(); renderQuestionsForStudent();
+            document.getElementById('finishExamBtn').addEventListener('click', () => { if(confirm("هل أنت متأكد من رغبتك في إنهاء الاختبار؟")) finishTheExam(); });
+        }
+        
+        function renderQuestionsForStudent(){const container=document.getElementById("questionsContainer");container.innerHTML="",examData.config.layout==="one-by-one"?(renderSingleQuestion(currentQuestionIndex),updateNavigationButtons()):examData.questions.forEach((e,t)=>container.appendChild(createQuestionElement(e,t))),updateProgressBar()}
+        
+        function createQuestionElement(e,t){
+            const n=document.createElement("div");n.className="question-card",n.id=`question-${t}`;
+            let imgHtml = e.image ? `<div class="q-image-container"><img src="${e.image}" class="q-image"></div>` : '';
+            let o=`${imgHtml}<h3>السؤال ${t+1}: ${e.text}</h3>`;
+            if("mcq"===e.type || "tf"===e.type){
+                const choicesList = e.type === "tf" ? ["صح", "خطأ"] : e.choices;
+                const i=choicesList.map((lbl,idx)=>`<li onclick="handleChoiceClick(${t}, ${idx}, this)"><input type="radio" name="q${t}" id="q${t}c${idx}" value="${idx}" ${studentAnswers[t]===idx?"checked":""}><label for="q${t}c${idx}">${lbl}</label></li>`).join("");o+=`<ul class="choices">${i}</ul>`
+            }else{
+                const s=studentAnswers[t]||"";o+=`<textarea class="essay-answer" oninput="handleEssayInput(${t}, this.value)" placeholder="اكتب إجابتك هنا...">${s}</textarea>`
+            }
+            return n.innerHTML=o,n;
+        }
+        
+        function handleChoiceClick(e,t,n){
+            studentAnswers[e]=t;
+            n.querySelector("input").checked=!0;
+            const qType = examData.questions[e].type;
+            if(examData.config.layout==="one-by-one" && examData.config.learningMode && (qType==="mcq" || qType==="tf")){
+                const isCorrect = t === examData.questions[e].correctAnswer;
+                n.classList.add(isCorrect ? "correct" : "incorrect");
+                n.parentElement.querySelectorAll("li").forEach(li=>{li.style.pointerEvents="none"});
+            }
+            updateProgressBar();
+        }
+
+        function handleEssayInput(e,t){studentAnswers[e]=t.trim(),updateProgressBar()}
+        function renderSingleQuestion(e){document.getElementById("questionsContainer").appendChild(createQuestionElement(examData.questions[e],e))}
+        function updateNavigationButtons(){const e=document.getElementById("navigation-buttons");if("one-by-one"!==examData.config.layout)return void(e.style.display="none");let t="";examData.config.noGoingBack||(t='<button id="prevBtn" class="btn">السابق</button>'),e.innerHTML=`${t}<button id="nextBtn" class="btn">التالي</button>`;const n=document.getElementById("nextBtn");n.disabled=currentQuestionIndex===examData.questions.length-1,n.addEventListener("click",()=>{currentQuestionIndex<examData.questions.length-1&&(currentQuestionIndex++,renderQuestionsForStudent())}),examData.config.noGoingBack||(document.getElementById("prevBtn").disabled=0===currentQuestionIndex,document.getElementById("prevBtn").addEventListener("click",()=>{currentQuestionIndex>0&&(currentQuestionIndex--,renderQuestionsForStudent())}))}
+        function updateProgressBar(){const e=studentAnswers.filter(e=>null!==e&&""!==e).length,t=e/examData.questions.length*100,n=document.getElementById("progressBar");n.style.width=`${t}%`,n.textContent=`${Math.round(t)}%`}
+        function setupSmartFeatures(){if(examData.config.disableCheating){["contextmenu","copy","paste"].forEach(evt=>document.body.addEventListener(evt,e=>e.preventDefault()))}if(examData.config.monitorTabs){document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&!examFinished){tabSwitchCount++;if(examData.config.finishOnSwitch){alert("لقد خرجت من نافذة الاختبار، سيتم إنهاء الاختبار.");finishTheExam()}}})}}
+        
+        async function finishTheExam(){
+            if(examFinished) return;
+            examFinished = true;
+            clearInterval(timerInterval);
+            examArea.style.display = "none";
+            if (examData.config.githubToken && examData.config.resultsFilename) {
+                savingResultsScreen.style.display = 'block';
+                await saveResultsToGithub(); 
+                savingResultsScreen.style.display = 'none';
+            }
+            resultContainer.style.display = "block";
+            let correctMcq = 0, totalMcq = 0;
+            examData.questions.forEach((q, index) => {
+                if ("mcq" === q.type || "tf" === q.type) {
+                    totalMcq++;
+                    if (studentAnswers[index] === q.correctAnswer) correctMcq++;
+                }
+            });
+            document.getElementById("resultTitle").textContent = "تم الانتهاء من الامتحان!";
+            if(examData.config.showResults){
+                let summaryHtml = `مرحباً ${studentName}، نتيجتك في الأسئلة الآلية هي: <strong>${correctMcq} / ${totalMcq}</strong>`;
+                if (examData.questions.some(q => "essay" === q.type)) {
+                    summaryHtml += '<br><small>الأسئلة المقالية تتطلب تصحيحًا يدوياً/آلياً وستظهر نتيجتها النهائية لاحقاً.</small>';
+                }
+                if (examData.config.monitorTabs && tabSwitchCount > 0) {
+                    summaryHtml += `<br><small style="color:var(--danger-color);">تم تسجيل خروجك من الصفحة ${tabSwitchCount} مرات.</small>`;
+                }
+                document.getElementById("resultSummary").innerHTML = summaryHtml;
+            } else {
+                document.getElementById("resultSummary").textContent = "شكراً لك، تم تسليم إجاباتك بنجاح.";
+            }
+            if (examData.config.showResults && examData.config.enableReview) renderReview();
+            if (examData.config.enableCertificate && totalMcq > 0 && (correctMcq / totalMcq * 100) >= examData.config.successPercentage) {
+                renderCertificate(correctMcq, totalMcq);
+            }
+            if (examData.config.botToken && examData.config.chatId) await sendResultsToTelegram(correctMcq, totalMcq);
+        }
+    
+        function renderReview(){
+            const e=document.getElementById("reviewContainer");
+            e.innerHTML="<h3>مراجعة الإجابات:</h3>";
+            examData.questions.forEach((t,n)=>{
+                let o="";
+                if(t.type === "mcq" || t.type === "tf") {
+                    const choicesList = t.type === "tf" ? ["صح", "خطأ"] : t.choices;
+                    const userAns = choicesList[studentAnswers[n]] || "لم تتم الإجابة";
+                    const correctAns = choicesList[t.correctAnswer];
+                    const isCorrect = studentAnswers[n] === t.correctAnswer;
+                    
+                    o=`<div class="question-card" style="background:${isCorrect?"#d4edda":"#f8d7da"};"><p><strong>${t.text}</strong></p><p>إجابتك: ${userAns} ${isCorrect?"✔️":"❌"}</p>${!isCorrect?`<p style="color:var(--primary-color);">الإجابة الصحيحة: ${correctAns}</p>`:""}</div>`;
+                } else {
+                    o=`<div class="question-card" style="background: #e9ecef;"><p><strong>(سؤال مقالي) ${t.text}</strong></p><p style="font-weight:bold;">إجابتك:</p><p style="white-space: pre-wrap; background: #fff; padding:10px; border-radius:5px;">${studentAnswers[n]?studentAnswers[n].replace(/</g,"&lt;").replace(/>/g,"&gt;"):"لم تتم الإجابة"}</p></div>`;
+                }
+                e.innerHTML+=o;
+            });
+        }
+
+        function renderCertificate(e,t){const n=document.getElementById("certificate");n.style.display="block",document.getElementById("certName").textContent=studentName,document.getElementById("certScore").textContent=`${e} / ${t}`,document.getElementById("certDate").textContent=(new Date).toLocaleDateString("ar-EG")}
+        function startTimer(e){let t=e;const n=document.getElementById("timer");timerInterval=setInterval(()=>{let e=parseInt(t/60,10),o=parseInt(t%60,10);e=e<10?"0"+e:e,o=o<10?"0"+o:o,n.textContent=`${e}:${o}`,--t<0&&(clearInterval(timerInterval),alert("انتهى الوقت!"),finishTheExam())},1e3)}
+        
+        async function sendResultsToTelegram(e,t){
+            const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;
+            function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}
+            let a=`*📊 نتيجة اختبار جديدة*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}\n*النتيجة الآلية:* ${e} من ${t}\n*مرات الخروج:* ${tabSwitchCount}`;
+            let d="\n\n*الإجابات المقالية*",r=!1;
+            examData.questions.forEach((e,t)=>{("essay"===e.type&&(r=!0,d+=`\n\n*❓ السؤال: ${i(e.text)}*\n*📝 إجابة الطالب:*\n${i(studentAnswers[t]||"لم تتم الإجابة")}`))});
+            r&&(a+=d);
+            const c=`https://api.telegram.org/bot${n}/sendMessage`;
+            try{
+                a.length>4096&&(a=a.substring(0,4e3)+"\n\n... (تم اقتطاع الرسالة لأنها طويلة جداً)");
+                const l=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});
+            }catch(p){console.error("Fetch error or issue sending to Telegram:",p)}
+        }
+
+        async function sendStartNotificationToTelegram(){
+            const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;
+            function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}
+            const a=`*🔔 بدء اختبار جديد*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}`,c=`https://api.telegram.org/bot${n}/sendMessage`;
+            try{await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});}catch(p){}
+        }
+        
+        async function saveResultsToGithub() {
+            const token = examData.config.githubToken;
+            const filename = examData.config.resultsFilename;
+            if (!token || !filename) { return; } 
+            const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/exam1/${filename}`;
+            let correctMcq = 0, totalMcq = 0;
+            examData.questions.forEach((q, index) => {
+                if ("mcq" === q.type || "tf" === q.type) {
+                    totalMcq++;
+                    if (studentAnswers[index] === q.correctAnswer) correctMcq++;
+                }
+            });
+            const resultData = {
+                studentName: studentName,
+                submissionDate: new Date().toISOString(),
+                mcqScore: { correct: correctMcq, total: totalMcq },
+                tabSwitchCount: tabSwitchCount,
+                examTitle: examData.config.title,
+                answers: examData.questions.map((q, index) => {
+                    const studentAnswerRaw = studentAnswers[index];
+                    let studentAnswerText = studentAnswerRaw;
+                    let isCorrect = null;
+                    let correctAnswerText = null;
+                    if (q.type === 'mcq' || q.type === 'tf') {
+                        const choicesList = q.type === "tf" ? ["صح", "خطأ"] : q.choices;
+                        isCorrect = (studentAnswerRaw === q.correctAnswer);
+                        studentAnswerText = (studentAnswerRaw !== null) ? choicesList[studentAnswerRaw] : "لم تتم الإجابة";
+                        if (!isCorrect) correctAnswerText = choicesList[q.correctAnswer];
+                    } else if (q.type === 'essay') {
+                        studentAnswerText = studentAnswerRaw;
+                        isCorrect = null;
+                        correctAnswerText = null;
+                        return { type: 'essay', question: q.text, answer: studentAnswerText, isGraded: false, maxScore: q.maxScore || 0 };
+                    }
+                    return { type: q.type, question: q.text, answer: studentAnswerText, isCorrect: isCorrect, correctAnswer: correctAnswerText };
+                })
+            };
+            try {
+                let currentContent = [];
+                let sha;
+                try {
+                    const res = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
+                    if (res.ok) {
+                        const data = await res.json();
+                        sha = data.sha;
+                        currentContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
+                    }
+                } catch (fetchError) { }
+                currentContent.push(resultData);
+                const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentContent, null, 2))));
+                const response = await fetch(url, {
+                    method: 'PUT',
+                    headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: `إضافة نتيجة الطالب: ${studentName}`, content: updatedContent, sha: sha })
+                });
+            } catch (error) { document.getElementById("resultSummary").innerHTML += '<br><small style="color:red;">حدث خطأ أثناء محاولة حفظ نتيجتك.</small>'; }
+        }
+    </script>
+    </body>
+    </html>
+    
