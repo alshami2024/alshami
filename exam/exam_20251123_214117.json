@@ -1,0 +1,56 @@
+[
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-11-23T18:43:48.136Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 6
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "اختبار",
+    "answers": [
+      {
+        "type": "mcq",
+        "question": "ما هو الهدف الرئيسي لعلم المنطق؟",
+        "answer": "عصمة الذهن عن الخطأ في الفكر",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "مَن هو الفيلسوف الذي يُعتبر مؤسس علم المنطق الصوري في التراث الغربي؟",
+        "answer": "أرسطو",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "tf",
+        "question": "الاستدلال الاستنباطي (القياس) هو أحد الأقسام الرئيسية التي يدرسها علم المنطق.",
+        "answer": "صح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "tf",
+        "question": "يهتم علم المنطق بشكل أساسي بدراسة الظواهر الطبيعية والتجارب الحسية.",
+        "answer": "صح",
+        "isCorrect": false,
+        "correctAnswer": "خطأ"
+      },
+      {
+        "type": "mcq",
+        "question": "ما هو المصطلح الذي يُستخدم في علم المنطق للدلالة على إدراك المفردات بلا حكم؟",
+        "answer": "التصور",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "tf",
+        "question": "علم المنطق هو آلة قانونية تعصم الذهن عن الخطأ في التفكير.",
+        "answer": "صح",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
+  }
+]
