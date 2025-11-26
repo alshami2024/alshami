@@ -19,5 +19,21 @@
       9
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "جمال الشامي",
+    "submissionDate": "2025-11-26T17:55:03.109Z",
+    "score": {
+      "correct": 5,
+      "total": 10
+    },
+    "wrongAnswers": [
+      0,
+      3,
+      6,
+      7,
+      9
+    ],
+    "tabSwitchCount": 0
   }
 ]
