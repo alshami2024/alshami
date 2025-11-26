@@ -8,5 +8,15 @@
     },
     "wrongAnswers": [],
     "tabSwitchCount": 1
+  },
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-11-26T20:11:16.831Z",
+    "score": {
+      "correct": 5,
+      "total": 5
+    },
+    "wrongAnswers": [],
+    "tabSwitchCount": 0
   }
 ]
