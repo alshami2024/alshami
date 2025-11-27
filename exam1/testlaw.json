@@ -8217,5 +8217,89 @@
     },
     "wrongAnswers": [],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-11-27T08:36:47.830Z",
+    "mcqScore": {
+      "correct": 12,
+      "total": 12
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "اختبار مقرر الفقه 3",
+    "answers": [
+      {
+        "question": "حكم النكاح لمن يخاف الزنا",
+        "answer": "واجب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حكم التعريض بخطبة المعتدة البائن. ",
+        "answer": "جائز",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "قال ولي المرأة للخاطب: زوجتك ابنتي. فقال الخاطب: قبلت. \nفما حكم عقد النكاح بالصورة السابقة علماً بأن الأب لديه خمس بنات. ",
+        "answer": "لا يصح العقد",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "إذن المرأة الثيب في قبول النكاح، يكون بـ",
+        "answer": "الكلام، بأن تصرح بالقبول أو الرفض",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "حكم تولي الأخ ولاية النكاح على أخته مع وجود والده بلا عذر",
+        "answer": "لا يصح العقد",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الأمور التالية معتبرة في الكفاءة في النكاح عدا",
+        "answer": "السن",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا تصح شهادة النساء على عقد النكاح",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يجوز للأب إجبار ابنه المكلف على الزواج",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يصح أن تتولى الأنثى ولاية النكاح على غيرها",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "الكفاءة في النكاح شرط لصحته",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "يجوز نظر الطبيب لمواضع الحاجة من المرأة الأجنبية للمدواة",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "question": "لا يصح الإيجاب والقبول في النكاح بغير اللغة العربية",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
