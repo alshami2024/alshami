@@ -189,5 +189,22 @@
       9
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "ابو علي",
+    "submissionDate": "2025-11-27T17:41:23.223Z",
+    "score": {
+      "correct": 4,
+      "total": 10
+    },
+    "wrongAnswers": [
+      1,
+      2,
+      5,
+      6,
+      7,
+      8
+    ],
+    "tabSwitchCount": 0
   }
 ]
