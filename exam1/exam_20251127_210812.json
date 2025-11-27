@@ -15,5 +15,22 @@
       9
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "محمد عقبات",
+    "submissionDate": "2025-11-27T18:12:05.274Z",
+    "score": {
+      "correct": 4,
+      "total": 10
+    },
+    "wrongAnswers": [
+      0,
+      3,
+      5,
+      6,
+      8,
+      9
+    ],
+    "tabSwitchCount": 0
   }
 ]
