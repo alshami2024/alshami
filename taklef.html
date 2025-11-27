@@ -121,14 +121,14 @@
 
         <div class="form-group">
             <h3>التكليف الأول:</h3>
-            <p>ما دور الرأي العام في تعزيز القوة الإلزامية للقانون الدستوري؟ حلل مع الإشارة إلى تجارب ثورات الربيع العربي. </p>
+            <p>أي أساليب وضع الدساتير يحقق أعلى درجات الشرعية الديمقراطية؟ ولماذا؟</p>
             <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file1">
         </div>
 
         <div class="form-group">
             <h3>التكليف الثاني:</h3>
-            <p>ما هو الجزاء الدستوري؟ </p>
+            <p>ما الفرق الجوهري بين أسلوب المنحة وأسلوب العقد في وضع الدساتير؟</p>
             <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file2">
         </div>
@@ -151,8 +151,8 @@
 
 <script>
     const SECRET_KEY = 'my-super-secret-key-12345';
-    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX19wEdOSqQSmlb2NsweSJQM14DN2RuGUrtU8biRfxmnNbhdgNw/TJjeN+8zWTlOvS77KpF8RGEDe7A==';
-    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX1/9J4EZHhmWKDVDpHuD6cqik1y+CV3nz7w=';
+    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX19l52uotvbunMCeGtzCiFEsTOOWKWLRKHRlsZB/Lhn+hM66rqNJBgewob+NcdJt4fAAg3bLx6Q7Zw==';
+    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX19U7FvR3ASX8PG+2TmFxMSeJWwaZKRnfJM=';
 
     const token = CryptoJS.AES.decrypt(ENCRYPTED_BOT_TOKEN, SECRET_KEY).toString(CryptoJS.enc.Utf8);
     const chatId = CryptoJS.AES.decrypt(ENCRYPTED_CHAT_ID, SECRET_KEY).toString(CryptoJS.enc.Utf8);
