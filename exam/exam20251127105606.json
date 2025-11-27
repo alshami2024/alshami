@@ -157,5 +157,20 @@
       6
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "جمالك",
+    "submissionDate": "2025-11-27T17:38:42.804Z",
+    "score": {
+      "correct": 6,
+      "total": 10
+    },
+    "wrongAnswers": [
+      1,
+      2,
+      5,
+      6
+    ],
+    "tabSwitchCount": 0
   }
 ]
