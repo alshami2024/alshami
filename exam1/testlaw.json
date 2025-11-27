@@ -8301,5 +8301,17 @@
         "correctAnswer": null
       }
     ]
+  },
+  {
+    "studentName": "هاجر عقيل عبده مسعد عازب",
+    "submissionDate": "2025-11-27T17:44:57.783Z",
+    "score": {
+      "correct": 1,
+      "total": 2
+    },
+    "wrongAnswers": [
+      0
+    ],
+    "tabSwitchCount": 0
   }
 ]
