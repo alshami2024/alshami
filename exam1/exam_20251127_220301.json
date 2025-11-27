@@ -1,0 +1,97 @@
+[
+  {
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-11-27T19:08:07.988Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تُنصب الفعل المضارع بعد 'واو المعية' إذا سبقتها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طلب (أمر، نهي، استفهام...) أو نفي"
+      },
+      {
+        "question": "أي من الكلمات التالية تُعد من نواصب الفعل المضارع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لنْ"
+      },
+      {
+        "question": "ما الغرض من استخدام 'لام التعليل' في جملة 'أدرس لأنجح'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السبب والغاية"
+      },
+      {
+        "question": "لكي تكون اللام 'لام الجحود' يجب أن تُسبق بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كان الناقصة المنفية (مثل: ما كان، لم يكن)"
+      },
+      {
+        "question": "ما إعراب الفعل 'تنجح' في جملة 'اجتهد كي تنجح'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فعل مضارع منصوب"
+      },
+      {
+        "question": "الفعل المضارع المنصوب في جملة 'يسرني أن تتقن عملك' هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تتقن"
+      },
+      {
+        "question": "أي أداة من أدوات النصب تدل على نفي الفعل في المستقبل؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لنْ"
+      },
+      {
+        "question": "أي من الأدوات التالية ليست من نواصب الفعل المضارع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لمْ"
+      },
+      {
+        "question": "'حتى' تكون ناصبة للفعل المضارع إذا دلّت على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الغاية أو التعليل"
+      },
+      {
+        "question": "في أي جملة مما يلي جاءت 'الفاء' فاءً سببيةً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ذاكر بجدٍ فتنجح."
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
