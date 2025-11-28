@@ -1186,5 +1186,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "جمال",
+    "submissionDate": "2025-11-28T09:10:32.026Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من المذاهب الكلامية التالية اتفقت على وجوب اللطف الإلهي على الله تعالى إذا تعلق بالتكليف؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الزيدية والمعتزلة."
+      },
+      {
+        "question": "أيٌّ من المعاني التالية ليس من المعاني الرئيسية لوصف الله بـ «حكيم» عند المتكلمين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يُكره العباد على فعل الطاعات والمعاصي."
+      },
+      {
+        "question": "يرى المعتزلة والزيدية أن أفعال العباد مخلوقة لله، وأن العبد لا استقلال له بالفعل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما هو تعريف اللطف الإلهي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما يوجب على المكلف فعل الطاعة قسرًا.",
+        "correctAnswer": "كل ما يقرب المكلف من الطاعة ويصرفه عن المعصية."
+      },
+      {
+        "question": "ما هو الوصف الدقيق للفعل \"المباح\" من أفعال الإنسان؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يستحق فاعله المدح بفعله ولا يستحق الذم بتركه.",
+        "correctAnswer": "لا مدح فيه ولا ذم لا بفعله ولا بتركه."
+      },
+      {
+        "question": "ما هو معنى العدل كفعل في اصطلاح المتكلمين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ألا تتهمه.",
+        "correctAnswer": "تنزيه الله عن القبيح والإخلال بالواجب."
+      },
+      {
+        "question": "من الأدلة النقلية على أن العبد محدث لأفعاله، ذكر القرآن الكريم إضافة الأفعال للعباد من جهة الكسب فقط.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الرد على شبهة عدم القدرة على إعادة الفعل بنفس الدقة هو أن العجز عن الإعادة ناتج عن نقص في القدرة البشرية ذاتها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يميز الناس بين أفعالهم الإرادية وغير الإرادية، ويعلمون أنهم محدثون للأولى دون الثانية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "لو كان الله خالقاً لأفعال العباد، لنسبت إليه الكبائر والفواحش لأنها من جملة أفعالنا.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
