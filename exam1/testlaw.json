@@ -8334,5 +8334,22 @@
       13
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "عبدالله فيصل فالح",
+    "submissionDate": "2025-11-28T14:48:01.180Z",
+    "score": {
+      "correct": 9,
+      "total": 15
+    },
+    "wrongAnswers": [
+      0,
+      2,
+      8,
+      9,
+      11,
+      12
+    ],
+    "tabSwitchCount": 18
   }
 ]
