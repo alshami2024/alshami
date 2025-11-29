@@ -9096,5 +9096,17 @@
       }
     ],
     "tabSwitchCount": 6
+  },
+  {
+    "studentName": "علاء ممدوح عبد الحميد",
+    "submissionDate": "2025-11-29T14:42:22.679Z",
+    "score": {
+      "correct": 14,
+      "total": 15
+    },
+    "wrongAnswers": [
+      13
+    ],
+    "tabSwitchCount": 0
   }
 ]
