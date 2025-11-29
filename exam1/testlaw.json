@@ -9453,5 +9453,146 @@
       14
     ],
     "tabSwitchCount": 12
+  },
+  {
+    "studentName": "ناصر عبدالله الخكيب",
+    "submissionDate": "2025-11-29T19:15:46.606Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي بلد تسافر أسافر معك. إعراب (أي): اسم شرط مبني في محل نصب ظرف مكان.&nbsp;",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{</span>أَيْنَمَا تَكُونُواْ يُدْرِكُّمُ الْمَوْتُ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span> . إعراب اسم الشرط (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">أينما</span>):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم شرط مبني في محل نصب ظرف مكان"
+      },
+      {
+        "question": "كل أسماء الشرط مبنية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أي"
+      },
+      {
+        "question": "\n              (إن كنت تحب الخير افعله). الجملة السابقة صحيحة.&nbsp; ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كل ما يأتي من أدوات الشرط أسماء عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذما"
+      },
+      {
+        "question": "مهما&nbsp; تطع والديك يرض الله عنك. إعراب اسم الشرط (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">مهما</span>):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم شرط مبني في محل نصب مفعول به",
+        "correctAnswer": "اسم شرط مبني في محل رفع مبتدأ"
+      },
+      {
+        "question": "الآية التي اشتملت على اسم شرط معرب هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{أَيَّمَا الْأَجَلَيْنِ قَضَيْتُ فَلَا عُدْوَانَ عَلَيَّ}"
+      },
+      {
+        "question": "لا تهمل الرياضة تمرض. الضبط الصحيح لكلمة (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">تمرض</span>):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تمرضْ",
+        "correctAnswer": "تمرضُ"
+      },
+      {
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{</span>مَن يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِي<span style=\"font-family: ATRADBDO, sans-serif;\">}</span> . سبب اقتران جواب الشرط بالفاء في الآية السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جملة الشرط اسمية"
+      },
+      {
+        "question": "لا تقترب من النار تحرقك. الفعل (تحرق) مجزوم بجواب الطلب.&nbsp;",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "كيفما تعامل الناس يعاملوك. إعراب اسم الشرط (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">كيفما</span>):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم شرط مبني في محل نصب حال"
+      },
+      {
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَمَن يَفْعَلْ ذَلِكَ عُدْوَاناً وَظُلْماً فَسَوْفَ نُصْلِيهِ نَاراً<span style=\"font-family: ATRADBDO, sans-serif;\">}</span> . حكم اقتران جواب الشرط بالفاء في الآية السابقة.",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوجوب"
+      },
+      {
+        "question": "لولا تزورنا نكرمك. الفعل (نكرم) مجزوم بجواب الطلب.&nbsp;",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل مضارع مجزوم بجواب الطلب، هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خذ من أخيك مبلغاً تسدد به ديونك",
+        "correctAnswer": "هلاّ أطعت والديك تفلح"
+      },
+      {
+        "question": "من يهمل دروسه فلن يتفوق. يجب اقتران جواب الشرط بالفاء في الجملة السابقة.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      }
+    ],
+    "tabSwitchCount": 15
   }
 ]
