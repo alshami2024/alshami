@@ -1173,5 +1173,110 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "فوزي",
+    "submissionDate": "2025-11-29T15:22:49.702Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "لا ينشئ القانون الدولي الخاص حقوقًا موضوعية جديدة للأطراف، بل يقوم بوظيفة تنظيمية وتنسيقية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "القواعد المباشرة لا تقدم الحل الموضوعي للنزاع، بل تشير إلى القانون الواجب التطبيق عليه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "القانون الدولي الخاص هو فرع من فروع القانون العام يُعنى بتنظيم العلاقات الخاصة ذات العنصر الأجنبي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أي مما يلي يُعتبر من المصادر التفسيرية (غير الرسمية) للقانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الفقه القانوني."
+      },
+      {
+        "question": "في غياب العنصر الأجنبي، تُعد العلاقة القانونية دولية خاصة، وتُحكم مباشرة بقواعد القانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "القاعدة القانونية التي تنص على أن 'تخضع أهلية الشخص لقانون جنسيته' تُعد مثالاً على أي نوع من القواعد في القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قاعدة إسناد."
+      },
+      {
+        "question": "عندما يُبرم عقد في تركيا بين شركة يمنية وأخرى مصرية، وتُنفذ آثاره في اليمن، ما هي أنواع العناصر الأجنبية الموجودة في هذه العلاقة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "العنصر الشخصي والمكاني."
+      },
+      {
+        "question": "أي من الوظائف التالية لا تعتبر وظيفة أساسية للقانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد القانون الواجب التطبيق على العلاقات ذات العنصر الأجنبي.",
+        "correctAnswer": "إنشاء حقوق موضوعية جديدة للأطراف في العلاقات الدولية."
+      },
+      {
+        "question": "ما هو التركيز الأساسي للقانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إيجاد حقوق موضوعية جديدة للأفراد.",
+        "correctAnswer": "تحديد القانون والمحكمة المختصة في العلاقات الخاصة ذات العنصر الأجنبي."
+      },
+      {
+        "question": "تُعد المعاهدات الدولية والفقه القانوني من المصادر الرسمية للقانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
