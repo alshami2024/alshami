@@ -47,29 +47,12 @@
             display: block;
         }
 
-        @media (max-width: 600px) {
-            .container { padding: 15px; }
-            .question-card { padding: 15px; }
-            .btn { width: 100%; margin: 5px 0; }
-        }
-        
-                    :root { --primary-color: #d35400; --secondary-color: #e67e22; --light-gray: #fae5d3; --dark-gray: #5d4037; --success-color: #27ae60; --danger-color: #c0392b; --background-color: #fdf6e3; --text-color: #5d4037; --white: #fff; }
-                    body { background-color: var(--background-color); }
-                    .container { border-top: 5px solid var(--primary-color); }
-                    h1, h2, h3 { color: #d35400; }
-                    .btn { background-color: #e67e22; color: #fff; }
-                    .btn:hover { background-color: #d35400; }
-                    .question-card { background-color: #fff8f0; border: 1px solid #edbb99; }
-                    .choices li { background-color: #fff; border-color: #edbb99; }
-                    .choices li:hover { background-color: #fae5d3; }
-                    #certificate { background: #fffaf0; border: 8px solid #d35400; color: #5d4037; }
-                
-/* --- Smart Timer Styles --- */
+       /* --- Smart Timer Styles (تنسيقات المؤقت الشاملة) --- */
 .smart-timer-container {
     position: absolute;
-    top: -25px; /* يظهر نصفه خارج الكارت */
+    top: -25px;
     left: 20px;
-    z-index: 10;
+    z-index: 100; /* رفع الطبقة لضمان الظهور فوق كل العناصر */
 }
 
 .smart-timer {
@@ -77,7 +60,7 @@
     height: 60px;
     border-radius: 50%;
     background: #ffffff;
-    border: 5px solid #2ecc71; /* لون البداية: أخضر */
+    border: 5px solid #2ecc71; /* اللون الأخضر الأساسي */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,34 +69,66 @@
     color: #2c3e50;
     box-shadow: 0 4px 15px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
+    box-sizing: border-box; /* ضمان احتساب الإطار ضمن الحجم */
 }
 
-/* مرحلة التحذير (برتقالي) */
+/* مراحل التحذير والخطر (التأثيرات) */
 .timer-warning {
-    border-color: #f39c12;
-    color: #d35400;
+    border-color: #f39c12 !important;
+    color: #d35400 !important;
 }
 
-/* مرحلة الخطر (أحمر + نبض) */
 .timer-danger {
-    border-color: #e74c3c;
-    color: #c0392b;
-    background: #fff5f5;
+    border-color: #e74c3c !important;
+    color: #c0392b !important;
+    background: #fff5f5 !important;
     animation: pulse-red 1s infinite;
 }
 
 @keyframes pulse-red {
-    0% {
-        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7);
-        transform: scale(1);
+    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); transform: scale(1); }
+    70% { box-shadow: 0 0 0 15px rgba(231, 76, 60, 0); transform: scale(1.1); }
+    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); transform: scale(1); }
+}
+
+/* --- تخصيص الموبايل (Mobile Styles) --- */
+@media (max-width: 600px) {
+    .container { padding: 15px; }
+    
+    /* توسيع الكارد لإعطاء مساحة */
+    .question-card { 
+        padding: 25px 15px 15px 15px !important; 
+        overflow: visible !important; /* السماح للمؤقت بالخروج عن حدود الكارد */
     }
-    70% {
-        box-shadow: 0 0 0 15px rgba(231, 76, 60, 0);
-        transform: scale(1.1);
+
+    /* تعديل مكان وحجم المؤقت للموبايل */
+    .smart-timer-container {
+        top: -20px !important;
+        left: 10px !important;
     }
-    100% {
-        box-shadow: 0 0 0 0 rgba(231, 76, 60, 0);
-        transform: scale(1);
+
+    .smart-timer {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1rem !important;
+        border-width: 4px !important; /* إجبار ظهور الإطار */
+        border-style: solid !important; /* تأكيد نوع الإطار */
+    }
+
+    /* إزاحة نص السؤال لليمين حتى لا يغطيه المؤقت */
+    .question-card h3 {
+        margin-top: 10px;
+        padding-left: 50px !important; /* مساحة فارغة مكان المؤقت */
+        line-height: 1.6;
+    }
+
+    /* تحريك زر الصوت للأسفل */
+    .voice-btn {
+        top: auto !important;
+        bottom: 10px !important;
+        left: 10px !important;
+        width: 30px !important;
+        height: 30px !important;
     }
 }
 /* --- Modern Result Screen Styles --- */
@@ -231,7 +246,53 @@
 }
 @keyframes fall { to { transform: translateY(100vh) rotate(720deg); } }
 @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
-    </style>
+
+                    :root { --primary-color: #6c5ce7; --secondary-color: #a29bfe; --light-gray: #f3f0ff; --dark-gray: #2d3436; --success-color: #00b894; --danger-color: #d63031; --background-color: #dfe6e9; --text-color: #2d3436; --white: #fff; }
+                    body { background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); min-height: 100vh; }
+                    .container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 16px; }
+                    .btn { background: linear-gradient(45deg, #6c5ce7, #a29bfe); border: none; box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4); }
+                    .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(108, 92, 231, 0.6); }
+                    .question-card { box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: none; }
+                    .choices li { transition: all 0.3s ease; border: 2px solid #f3f0ff; }
+                    .choices li:hover { border-color: #6c5ce7; transform: translateX(-5px); }
+                    #certificate { background: #fff; border: 2px solid #6c5ce7; box-shadow: 0 0 20px rgba(108, 92, 231, 0.2); }
+                  
+/* --- Waiting Room Styles (شاشة الانتظار) --- */
+#waitingRoom, #expiredRoom {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, #2c3e50, #000);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.5s ease-out;
+}
+
+.waiting-icon { font-size: 4rem; margin-bottom: 20px; color: #f39c12; animation: float 3s infinite ease-in-out; }
+.expired-icon { font-size: 4rem; margin-bottom: 20px; color: #e74c3c; }
+
+.countdown-container {
+    display: flex; gap: 15px; margin-top: 30px; direction: ltr; /* لجعل الأرقام من اليسار لليمين */
+}
+.time-box {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 80px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.time-val { font-size: 2.5rem; font-weight: bold; display: block; color: #00d2d3; font-family: monospace; }
+.time-label { font-size: 0.8rem; color: #ccc; text-transform: uppercase; margin-top: 5px; }
+
+@keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }  
+</style>
 </head>
 <body>
 <div class="container">
@@ -323,12 +384,36 @@
                 <p>التاريخ: <span id="certDate"></span></p>
             </div>
 
-            <div id="reviewArea" style="text-align: right; margin-top: 40px;"></div>
+<div id="reviewArea" style="text-align: right; margin-top: 40px;"></div>
         </div>
+    </div> 
+    
+    </div> <div id="waitingRoom" style="display:none;">
+    <i class="fa-solid fa-hourglass-start waiting-icon"></i>
+    <h1 style="margin:0;">عذراً، لم يبدأ الاختبار بعد</h1>
+    <p style="color:#aaa; margin-top:10px;">سيتم فتح الاختبار تلقائياً خلال:</p>
+    
+    <div class="countdown-container">
+        <div class="time-box"><span id="cd-days" class="time-val">00</span><span class="time-label">يوم</span></div>
+        <div class="time-box"><span id="cd-hours" class="time-val">00</span><span class="time-label">ساعة</span></div>
+        <div class="time-box"><span id="cd-minutes" class="time-val">00</span><span class="time-label">دقيقة</span></div>
+        <div class="time-box"><span id="cd-seconds" class="time-val">00</span><span class="time-label">ثانية</span></div>
+    </div>
+    <div style="margin-top: 30px; font-size: 0.9rem; opacity: 0.7;">
+        <i class="fa-solid fa-calendar-day"></i> موعد البدء: <span id="startDateDisplay" style="color:#fff; font-weight:bold;"></span>
+    </div>
+</div>
+
+<div id="expiredRoom" style="display:none;">
+    <i class="fa-solid fa-lock expired-icon"></i>
+    <h1>انتهت صلاحية الاختبار</h1>
+    <p>للأسف، لقد انتهى الوقت المحدد للدخول لهذا الاختبار.</p>
+    <div style="margin-top:20px; padding:10px; background:rgba(231, 76, 60, 0.2); border-radius:8px;">
+        تاريخ الانتهاء: <span id="endDateDisplay"></span>
     </div>
 
 <script>
-    const encodedData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXA5bUUyTG5aZ3RtSzJLL1lxU0FvTWlraUxDSmtaWE5qY21sd2RHbHZiaUk2SXRpcTJLellzZG1LMktqWmlpQXRJTmlxMkxuWmhObUsyWVhaaWlJc0luTjBZWEowVkdsdFpTSTZJakl3TWpVdE1URXRNamRVTVRBNk5Ua2lMQ0psYm1SVWFXMWxJam9pTWpBeU5TMHhNaTB3TkZReE1EbzFPU0lzSW14aGVXOTFkQ0k2SW05dVpTMWllUzF2Ym1VaUxDSjBhVzFsSWpveE1Dd2ljMmgxWm1ac1pTSTZkSEoxWlN3aWJtOUhiMmx1WjBKaFkyc2lPblJ5ZFdVc0ltUnBjMkZpYkdWRGFHVmhkR2x1WnlJNmRISjFaU3dpYlc5dWFYUnZjbFJoWW5NaU9uUnlkV1VzSW1acGJtbHphRTl1VTNkcGRHTm9JanBtWVd4elpTd2liR1ZoY201cGJtZE5iMlJsSWpwbVlXeHpaU3dpYzJsdVoyeGxWWE5sVFc5a1pTSTZabUZzYzJVc0luTm9iM2RTWlhOMWJIUnpJanAwY25WbExDSmxibUZpYkdWU1pYWnBaWGNpT21aaGJITmxMQ0psYm1GaWJHVkRaWEowYVdacFkyRjBaU0k2Wm1Gc2MyVXNJbVZ1WVdKc1pWUmxlSFJVYjFOd1pXVmphQ0k2Wm1Gc2MyVXNJbVZ1WVdKc1pVRkpWSFYwYjNJaU9tWmhiSE5sTENKbGJtRmliR1ZUYldGeWRGSmxkSEo1SWpwMGNuVmxMQ0p3WlhKUmRXVnpkR2x2YmxScGJXVnlJanBtWVd4elpTd2ljR1Z5VVhWbGMzUnBiMjVUWldOdmJtUnpJam96TUN3aWRHaGxiV1VpT2lKM1lYSnRJaXdpYzNWalkyVnpjMUJsY21ObGJuUmhaMlVpT2pVd0xDSmliM1JVYjJ0bGJpSTZJbFV5Um5Oa1IxWnJXREVyYUhoT01scFpWblpvZGxnM0wwNUtUMHRWWkRsWVJqVkxibGhuZGpWaU9WQmliM2h6TVZkNlFtdFVjR1ZxVUhCeE1IZEtkamczZUc0cmNrUndRVUZtU3pGSmQybGFSM2xyWW5KblBUMGlMQ0pqYUdGMFNXUWlPaUpWTWtaelpFZFdhMWd4T0ZBMFIyb3hNRmgyVFVZNGRUSm1iM2R2ZW5KSlIwTmFMMFp1UVRsVFUxRk5QU0lzSW1kcGRHaDFZbFJ2YTJWdUlqb2lWVEpHYzJSSFZtdFlNVGhUTDNNMmJEaGxabmgwVDFCWFZWTm5hVUZIZDNkbWNFNHdVRkV5UzBWdWIxSnZWSGxsVDJJd2R6Z3lMMmRMYWpSbGRUSlljM0YwY21STmFsZG9PV05OWm5oYWVYQjNPRU5UYWtFOVBTSXNJbkpsYzNWc2RITkdhV3hsYm1GdFpTSTZJbVY0WVcweU1ESTFNVEV5TnpFd05UWXdOaTVxYzI5dUlpd2lZV05qWlhOelEyOXVkSEp2YkNJNmV5SmxibUZpYkdWa0lqcG1ZV3h6WlN3aWMzUjFaR1Z1ZEhNaU9sdGRmWDBzSW5GMVpYTjBhVzl1Y3lJNlczc2lkSGx3WlNJNkltMWpjU0lzSW5SbGVIUWlPaUxaaGRpbklObUgyWWdnMllYWXVkbUcyWWtnMktmWmhOaTUySy9aaENEWmc5bUIyTG5aaENEWmdkbUtJTmluMkxYWXQ5bUUyS2ZZclNEWXA5bUUyWVhZcXRtRDJZVFpoZG1LMlliWW55SXNJbU5vYjJsalpYTWlPbHNpMktYWmh0aTEyS2ZaZ1NEWXA5bUUyTHJaaXRpeElOaW8ySy9aZ2RpNUlOaXQyWUxaaU5tQzJZY2cyS1BaaUNEWXF0aXMyWWJZcUNEWXA5bUUyTGpaaE5tRkxpSXNJdGlxMlliWXN0bUsyWWNnMktmWmhObUUyWWNnMkxuWmhpRFlwOW1FMllMWXFObUsySzBnMllqWXA5bUUyS1hZcnRtRTJLZlpoQ0RZcU5pbjJZVFppTmluMkt6WXFDNGlMQ0xZbzltRTJLY2cyS3JZcXRtSDJZWFpoeTRpTENMWXF0aTUyS2ZZcjltRUlOaW4yWVRZdE5tSzJLYlppdG1HSU5tSTJLcllzOWluMllqWml0bUgyWVhZcHk0aVhTd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1YMHNleUowZVhCbElqb2liV054SWl3aWRHVjRkQ0k2SXRpajJZclpqTm1SSU5tRjJZWWcyS2ZaaE5tRjJMbllwOW1HMllvZzJLZlpoTmlxMktmWmhObUsyS2tnMllUWml0aXpJTm1GMllZZzJLZlpoTm1GMkxuWXA5bUcyWW9nMktmWmhOaXgyS2JaaXRpejJZcllxU0RaaE5tSTJMWFpnU0RZcDltRTJZVFpoeURZcU5tQUlNS3IySzNaZzltSzJZWEN1eURZdWRtRzJLOGcyS2ZaaE5tRjJLclpnOW1FMllYWml0bUcySjhpTENKamFHOXBZMlZ6SWpwYkl0aWoyWWJaaHlEWmhOaW5JTm1LMllIWXVkbUVJTmluMllUWmd0aW8yWXJZclNEWmlObUUyS2NnMllyWXJ0bUUyWkVnMktqWXA5bUUyWWpZcDlpczJLZ3VJaXdpMktQWmh0bUhJTml3MllnZzJLM1pnOW1GMktrZzJZSFppaURZcnRtRTJZTFpoeURaaE5tRTJLUFl0Tm1LMktmWW9TNGlMQ0xZbzltRzJZY2cyTG5ZcDltRTJZVWcyS2pZcDltRTJLUFl0Tm1LMktmWW9TRFl1ZG1FMllrZzJZallyTm1ISU5pbjJZVFlxdG1CMkxYWml0bUVMaUlzSXRpajJZYlpoeURaaXRtUDJZUFlzZG1ISU5pbjJZVFl1ZGlvMktmWXJ5RFl1ZG1FMllrZzJZSFl1ZG1FSU5pbjJZVFl0OWluMkxuWXA5aXFJTm1JMktmWmhObUYyTG5ZcDlpMTJZb3VJbDBzSW1OdmNuSmxZM1JCYm5OM1pYSWlPak45TEhzaWRHVjRkQ0k2SXRtRjJLY2cyWWZaaUNEWXF0aTUyTEhaaXRtQklOaW4yWVRaaE5pMzJZRWcyS2ZaaE5pbDJZVFpoOW1LMko4aUxDSnBiV0ZuWlNJNmJuVnNiQ3dpZEhsd1pTSTZJbTFqY1NJc0ltTm9iMmxqWlhNaU9sc2kyWVBaaENEWmhkaW5JTm1LMllqWXJOaW9JTmk1MllUWmlTRFlwOW1FMllYWmc5bUUyWUVnMllIWXVkbUVJTmluMllUWXQ5aW4yTG5ZcVNEWmd0aXoyTEhaaTlpbkxpSXNJdG1EMllRZzJZWFlweURaaXRtQzJMSFlxQ0RZcDltRTJZWFpnOW1FMllFZzJZWFpoaURZcDltRTJMZllwOWk1MktrZzJZalppdGkxMkxIWmdkbUhJTmk1MllZZzJLZlpoTm1GMkxuWXRkbUsyS2t1SWl3aTJLZlpoTmlqMllIWXVkaW4yWVFnMktmWmhOaWwyWVRaaDltSzJLa2cyS2ZaaE5pcTJZb2cyWVRZcHlEWXF0aXEyTG5aaE5tQ0lOaW8yS2ZaaE5pcTJZUFpoTm1LMllFZzJZWFl0OW1FMllMWmk5aW5MaUlzSXRpbjJZVFpoZGkxMktmWXB0aW9JTmluMllUWXF0bUtJTmlxMkxYWml0aW9JTmluMllUWXVkaW8ySzhnMllIWmd0aTNMaUpkTENKamIzSnlaV04wUVc1emQyVnlJam94ZlN4N0luUjVjR1VpT2lKdFkzRWlMQ0owWlhoMElqb2kyS1BaaWlEWmhkbUdJTmluMllUWmhkaXcyS2ZaaDlpb0lOaW4yWVRaZzltRTJLZlpoZG1LMktrZzJLZlpoTmlxMktmWmhObUsyS2tnMktmWXF0bUIyWUxZcWlEWXVkbUUyWWtnMllqWXJObUkyS2dnMktmWmhObUUyTGZaZ1NEWXA5bUUyS1haaE5tSDJZb2cyTG5aaE5tSklOaW4yWVRaaE5tSElOaXEyTG5ZcDltRTJZa2cyS1hZc05pbklOaXEyTG5aaE5tQ0lOaW8yS2ZaaE5pcTJZUFpoTm1LMllIWW55SXNJbU5vYjJsalpYTWlPbHNpMktmWmhObUYyS3pZcU5peDJLa2cyWWpZcDltRTJMUFpoTm1CMllyWXFTNGlMQ0xZcDltRTJMTFppdGl2MllyWXFTRFppTmluMllUWmhkaTUyS3JZc3RtRTJLa3VJaXdpMktmWmhOaWoyTFRZcDlpNTJMSFlxU0RaaU5pbjJZVFpoZGluMktyWXNkbUsySy9aaXRpcExpSXNJdG1EMllRZzJLZlpoTm1GMkxEWXA5bUgyS2dnMktmWmhOaWwyTFBaaE5pbjJZWFppdGlwTGlKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblI1Y0dVaU9pSnRZM0VpTENKMFpYaDBJam9pMllYWXB5RFpoOW1JSU5pbjJZVFppTmkxMllFZzJLZlpoTml2MllMWml0bUNJTm1FMllUWmdkaTUyWVFnWENMWXA5bUUyWVhZcU5pbjJLMWNJaURaaGRtR0lOaWoyWUhZdWRpbjJZUWcyS2ZaaE5pbDJZYllzOWluMlliWW55SXNJbU5vYjJsalpYTWlPbHNpMllyWXM5aXEySzNaZ2lEWmdkaW4yTG5aaE5tSElOaW4yWVRaaGRpdjJLMGcyS2paZ2RpNTJZVFpoeURaaU5pbjJZVFlzTm1GSU5pbzJLcllzZG1EMlljdUlpd2kyWVRZcHlEWmhkaXYySzBnMllIWml0bUhJTm1JMllUWXB5RFlzTm1GSU5tRTJLY2cyS2paZ2RpNTJZVFpoeURaaU5tRTJLY2cyS2pZcXRpeDJZUFpoeTRpTENMWml0aXoyS3JZcmRtQ0lObUIyS2ZZdWRtRTJZY2cyS2ZaaE5tRjJLL1lyU0RZcU5tQjJMblpoTm1ISU5tSTJZVFlweURaaXRpejJLcllyZG1DSU5pbjJZVFlzTm1GSU5pbzJLcllzZG1EMlljdUlpd2kyWXJZczlpcTJLM1pnaURaZ2RpbjJMblpoTm1ISU5pbjJZVFlzTm1GSU5pbzJZSFl1ZG1FMlljdUlsMHNJbU52Y25KbFkzUkJibk4zWlhJaU9qRjlMSHNpZEhsd1pTSTZJblJtSWl3aWRHVjRkQ0k2SXRtSzJZWFppdGl5SU5pbjJZVFpodGluMkxNZzJLalppdG1HSU5pajJZSFl1ZGluMllUWmg5bUZJTmluMllUWXBkaXgyS2ZZcjltSzJLa2cyWWpZdXRtSzJMRWcyS2ZaaE5pbDJMSFlwOWl2MllyWXFkaU1JTm1JMllyWXVkbUUyWVhaaU5tR0lOaWoyWWJaaDltRklObUYySzNZcjlpcjJZalpoaURaaE5tRTJLUFppTm1FMllrZzJLL1ppTm1HSU5pbjJZVFlxOWluMlliWml0aXBMaUlzSW1OdmNuSmxZM1JCYm5OM1pYSWlPakI5TEhzaWRIbHdaU0k2SW5SbUlpd2lkR1Y0ZENJNkl0bUsyTEhaaVNEWXA5bUUyWVhZdWRpcTJMTFpoTmlwSU5tSTJLZlpoTml5MllyWXI5bUsyS2tnMktQWmhpRFlvOW1CMkxuWXA5bUVJTmluMllUWXVkaW8yS2ZZcnlEWmhkaXUyWVRaaU5tQzJLa2cyWVRaaE5tSDJJd2cyWWpZbzltR0lOaW4yWVRZdWRpbzJLOGcyWVRZcHlEWXA5aXoyS3JaZ3RtRTJLZlpoQ0RaaE5tSElOaW8yS2ZaaE5tQjJMblpoQzRpTENKamIzSnlaV04wUVc1emQyVnlJam94ZlN4N0luUjVjR1VpT2lKMFppSXNJblJsZUhRaU9pTFpoZG1HSU5pbjJZVFlvOWl2MllUWXFTRFlwOW1FMlliWmd0bUUyWXJZcVNEWXVkbUUyWWtnMktQWmhpRFlwOW1FMkxuWXFOaXZJTm1GMkszWXI5aXJJTm1FMktQWmdkaTUyS2ZaaE5tSDJJd2cyTERaZzlpeElOaW4yWVRaZ3RpeDJLTFpoaURZcDltRTJZUFlzZG1LMllVZzJLWFl0dGluMllIWXFTRFlwOW1FMktQWmdkaTUyS2ZaaENEWmhObUUyTG5ZcU5pbjJLOGcyWVhaaGlEWXJObUgyS2tnMktmWmhObUQyTFBZcUNEWmdkbUMyTGN1SWl3aVkyOXljbVZqZEVGdWMzZGxjaUk2TVgwc2V5SjBlWEJsSWpvaWRHWWlMQ0owWlhoMElqb2kyWVRaaUNEWmc5aW4yWVlnMktmWmhObUUyWWNnMks3WXA5bUUyWUxZcDltTElObUUyS1BaZ2RpNTJLZlpoQ0RZcDltRTJMbllxTmluMksvWWpDRFpoTm1HMkxQWXFOaXFJTmlsMllUWml0bUhJTmluMllUWmc5aW8yS2ZZcHRpeElObUkyS2ZaaE5tQjJZallwOWl0MkxRZzJZVFlvOW1HMllmWXB5RFpoZG1HSU5pczJZWFpoTmlwSU5pajJZSFl1ZGluMllUWmh0aW5MaUlzSW1OdmNuSmxZM1JCYm5OM1pYSWlPakI5TEhzaWRIbHdaU0k2SW5SbUlpd2lkR1Y0ZENJNkl0aW4yWVRZc2RpdklOaTUyWVRaaVNEWXROaW8yWWZZcVNEWXVkaXYyWVVnMktmWmhObUMySy9Zc2RpcElOaTUyWVRaaVNEWXBkaTUyS2ZZcjlpcElOaW4yWVRaZ2RpNTJZUWcyS2paaHRtQjJMTWcyS2ZaaE5pdjJZTFlxU0RaaDltSUlOaWoyWVlnMktmWmhOaTUyS3pZc2lEWXVkbUdJTmluMllUWXBkaTUyS2ZZcjlpcElObUcyS2ZZcXRpc0lOaTUyWVlnMlliWmd0aTFJTm1CMllvZzJLZlpoTm1DMksvWXNkaXBJTmluMllUWXFOaTAyTEhaaXRpcElOaXcyS2ZZcXRtSDJLY3VJaXdpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNWDFkZlE9PQ==';
+    const encodedData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXA5bUUyTG5aZ3RtSzJLL1lxU0FvTWlraUxDSmtaWE5qY21sd2RHbHZiaUk2SXRpcTJLellzZG1LMktqWmlpQXRJTmlxMkxuWmhObUsyWVhaaWlJc0luTjBZWEowVkdsdFpTSTZJakl3TWpVdE1URXRNamRVTVRBNk5Ua2lMQ0psYm1SVWFXMWxJam9pTWpBeU5TMHhNaTB3TkZReE1EbzFPU0lzSW14aGVXOTFkQ0k2SW05dVpTMWllUzF2Ym1VaUxDSjBhVzFsSWpveE1Dd2ljMmgxWm1ac1pTSTZkSEoxWlN3aWMyaDFabVpzWlVOb2IybGpaWE1pT21aaGJITmxMQ0p1YjBkdmFXNW5RbUZqYXlJNmRISjFaU3dpWkdsellXSnNaVU5vWldGMGFXNW5JanAwY25WbExDSnRiMjVwZEc5eVZHRmljeUk2ZEhKMVpTd2labWx1YVhOb1QyNVRkMmwwWTJnaU9tWmhiSE5sTENKc1pXRnlibWx1WjAxdlpHVWlPbVpoYkhObExDSnphVzVuYkdWVmMyVk5iMlJsSWpwbVlXeHpaU3dpYzJodmQxSmxjM1ZzZEhNaU9uUnlkV1VzSW1WdVlXSnNaVkpsZG1sbGR5STZabUZzYzJVc0ltVnVZV0pzWlVObGNuUnBabWxqWVhSbElqcDBjblZsTENKbGJtRmliR1ZVWlhoMFZHOVRjR1ZsWTJnaU9tWmhiSE5sTENKbGJtRmliR1ZCU1ZSMWRHOXlJanBtWVd4elpTd2laVzVoWW14bFUyMWhjblJTWlhSeWVTSTZabUZzYzJVc0luQmxjbEYxWlhOMGFXOXVWR2x0WlhJaU9tWmhiSE5sTENKd1pYSlJkV1Z6ZEdsdmJsTmxZMjl1WkhNaU9qTXdMQ0owYUdWdFpTSTZJbkIxY25Cc1pTSXNJbk4xWTJObGMzTlFaWEpqWlc1MFlXZGxJam8xTUN3aVltOTBWRzlyWlc0aU9pSlZNa1p6WkVkV2ExZ3hPV1YzT1dRck0wdzNORWN4YUVWMlRGRlZURE5WVjFKQlowNUNVa1JzTUZRMWNrRkJZMHhoV0dFdlF6ZDJXUzlPYVRVeFVEaG1MMVppVms5dVpVUkdVREV4YlZCUFMwcDFaVkZwZHowOUlpd2lZMmhoZEVsa0lqb2lWVEpHYzJSSFZtdFlNUzlYU0hONGRqZHBUa1JUVTFWbUsxaGlXWE5XWlV0VWQyWjRNazk0UlROWWR6MGlMQ0puYVhSb2RXSlViMnRsYmlJNklsVXlSbk5rUjFacldERXJZMnRhZVdGaU5taGtPVE5OYlhOU1MzZHZiSFJYT1dWb1ZDdFZZVFpzTWxZMmNXWllVV2hrTVRsd1NrRjFXRUpTTTFSdlozaHJZVUpuVm01S09ITjRXbFZyV1ZKSFFsYzVlVE4zUFQwaUxDSnlaWE4xYkhSelJtbHNaVzVoYldVaU9pSmxlR0Z0TWpBeU5URXhNamN4TURVMk1EWXVhbk52YmlJc0ltRmpZMlZ6YzBOdmJuUnliMndpT25zaVpXNWhZbXhsWkNJNlptRnNjMlVzSW5OMGRXUmxiblJ6SWpwYlhYMTlMQ0p4ZFdWemRHbHZibk1pT2x0N0luUjVjR1VpT2lKdFkzRWlMQ0owWlhoMElqb2kyWVhZcHlEWmg5bUlJTm1GMkxuWmh0bUpJTmluMllUWXVkaXYyWVFnMllQWmdkaTUyWVFnMllIWmlpRFlwOWkxMkxmWmhOaW4ySzBnMktmWmhObUYyS3JaZzltRTJZWFppdG1HMko4aUxDSmphRzlwWTJWeklqcGJJdGlsMlliWXRkaW4yWUVnMktmWmhOaTYyWXJZc1NEWXFOaXYyWUhZdVNEWXJkbUMyWWpaZ3RtSElOaWoyWWdnMktyWXJObUcyS2dnMktmWmhOaTQyWVRaaFM0aUxDTFlxdG1HMkxMWml0bUhJTmluMllUWmhObUhJTmk1MllZZzJLZlpoTm1DMktqWml0aXRJTm1JMktmWmhOaWwySzdaaE5pbjJZUWcyS2pZcDltRTJZallwOWlzMktndUlpd2kyS1BaaE5pbklOaXEyS3JaaDltRjJZY3VJaXdpMktyWXVkaW4ySy9aaENEWXA5bUUyTFRaaXRpbTJZclpoaURaaU5pcTJMUFlwOW1JMllyWmg5bUYyS2N1SWwwc0ltTnZjbkpsWTNSQmJuTjNaWElpT2pGOUxIc2lkSGx3WlNJNkltMWpjU0lzSW5SbGVIUWlPaUxZbzltSzJZelprU0RaaGRtR0lOaW4yWVRaaGRpNTJLZlpodG1LSU5pbjJZVFlxdGluMllUWml0aXBJTm1FMllyWXN5RFpoZG1HSU5pbjJZVFpoZGk1MktmWmh0bUtJTmluMllUWXNkaW0yWXJZczltSzJLa2cyWVRaaU5pMTJZRWcyS2ZaaE5tRTJZY2cyS2paZ0NEQ3E5aXQyWVBaaXRtRndyc2cyTG5aaHRpdklOaW4yWVRaaGRpcTJZUFpoTm1GMllyWmh0aWZJaXdpWTJodmFXTmxjeUk2V3lMWW85bUcyWWNnMllUWXB5RFppdG1CMkxuWmhDRFlwOW1FMllMWXFObUsySzBnMllqWmhOaW5JTm1LMks3WmhObVJJTmlvMktmWmhObUkyS2ZZck5pb0xpSXNJdGlqMlliWmh5RFlzTm1JSU5pdDJZUFpoZGlwSU5tQjJZb2cySzdaaE5tQzJZY2cyWVRaaE5pajJMVFppdGluMktFdUlpd2kyS1BaaHRtSElOaTUyS2ZaaE5tRklOaW8yS2ZaaE5pajJMVFppdGluMktFZzJMblpoTm1KSU5tSTJLelpoeURZcDltRTJLclpnZGkxMllyWmhDNGlMQ0xZbzltRzJZY2cyWXJaajltRDJMSFpoeURZcDltRTJMbllxTmluMks4ZzJMblpoTm1KSU5tQjJMblpoQ0RZcDltRTJMZllwOWk1MktmWXFpRFppTmluMllUWmhkaTUyS2ZZdGRtS0xpSmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3pmU3g3SW5SbGVIUWlPaUxaaGRpbklObUgyWWdnMktyWXVkaXgyWXJaZ1NEWXA5bUUyWVRZdDltQklOaW4yWVRZcGRtRTJZZlppdGlmSWl3aWFXMWhaMlVpT201MWJHd3NJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0bUQyWVFnMllYWXB5RFppdG1JMkt6WXFDRFl1ZG1FMllrZzJLZlpoTm1GMllQWmhObUJJTm1CMkxuWmhDRFlwOW1FMkxmWXA5aTUyS2tnMllMWXM5aXgyWXZZcHk0aUxDTFpnOW1FSU5tRjJLY2cyWXJaZ3RpeDJLZ2cyS2ZaaE5tRjJZUFpoTm1CSU5tRjJZWWcyS2ZaaE5pMzJLZll1ZGlwSU5tSTJZcll0ZGl4MllIWmh5RFl1ZG1HSU5pbjJZVFpoZGk1MkxYWml0aXBMaUlzSXRpbjJZVFlvOW1CMkxuWXA5bUVJTmluMllUWXBkbUUyWWZaaXRpcElOaW4yWVRZcXRtS0lObUUyS2NnMktyWXF0aTUyWVRaZ2lEWXFOaW4yWVRZcXRtRDJZVFppdG1CSU5tRjJMZlpoTm1DMll2WXB5NGlMQ0xZcDltRTJZWFl0ZGluMktiWXFDRFlwOW1FMktyWmlpRFlxdGkxMllyWXFDRFlwOW1FMkxuWXFOaXZJTm1CMllMWXR5NGlYU3dpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNWDBzZXlKMGVYQmxJam9pYldOeElpd2lkR1Y0ZENJNkl0aWoyWW9nMllYWmhpRFlwOW1FMllYWXNOaW4yWWZZcUNEWXA5bUUyWVBaaE5pbjJZWFppdGlwSU5pbjJZVFlxdGluMllUWml0aXBJTmluMktyWmdkbUMyS29nMkxuWmhObUpJTm1JMkt6WmlOaW9JTmluMllUWmhOaTMyWUVnMktmWmhOaWwyWVRaaDltS0lOaTUyWVRaaVNEWXA5bUUyWVRaaHlEWXF0aTUyS2ZaaE5tSklOaWwyTERZcHlEWXF0aTUyWVRaZ2lEWXFOaW4yWVRZcXRtRDJZVFppdG1CMko4aUxDSmphRzlwWTJWeklqcGJJdGluMllUWmhkaXMyS2pZc2RpcElObUkyS2ZaaE5pejJZVFpnZG1LMktrdUlpd2kyS2ZaaE5peTJZcllyOW1LMktrZzJZallwOW1FMllYWXVkaXEyTExaaE5pcExpSXNJdGluMllUWW85aTAyS2ZZdWRpeDJLa2cyWWpZcDltRTJZWFlwOWlxMkxIWml0aXYyWXJZcVM0aUxDTFpnOW1FSU5pbjJZVFpoZGl3MktmWmg5aW9JTmluMllUWXBkaXoyWVRZcDltRjJZcllxUzRpWFN3aVkyOXljbVZqZEVGdWMzZGxjaUk2TVgwc2V5SjBlWEJsSWpvaWJXTnhJaXdpZEdWNGRDSTZJdG1GMktjZzJZZlppQ0RZcDltRTJZall0ZG1CSU5pbjJZVFlyOW1DMllyWmdpRFpoTm1FMllIWXVkbUVJRndpMktmWmhObUYyS2pZcDlpdFhDSWcyWVhaaGlEWW85bUIyTG5ZcDltRUlOaW4yWVRZcGRtRzJMUFlwOW1HMko4aUxDSmphRzlwWTJWeklqcGJJdG1LMkxQWXF0aXQyWUlnMllIWXA5aTUyWVRaaHlEWXA5bUUyWVhZcjlpdElOaW8yWUhZdWRtRTJZY2cyWWpZcDltRTJMRFpoU0RZcU5pcTJMSFpnOW1ITGlJc0l0bUUyS2NnMllYWXI5aXRJTm1CMllyWmh5RFppTm1FMktjZzJMRFpoU0RaaE5pbklOaW8yWUhZdWRtRTJZY2cyWWpaaE5pbklOaW8yS3JZc2RtRDJZY3VJaXdpMllyWXM5aXEySzNaZ2lEWmdkaW4yTG5aaE5tSElOaW4yWVRaaGRpdjJLMGcyS2paZ2RpNTJZVFpoeURaaU5tRTJLY2cyWXJZczlpcTJLM1pnaURZcDltRTJMRFpoU0RZcU5pcTJMSFpnOW1ITGlJc0l0bUsyTFBZcXRpdDJZSWcyWUhZcDlpNTJZVFpoeURZcDltRTJMRFpoU0RZcU5tQjJMblpoTm1ITGlKZExDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblI1Y0dVaU9pSjBaaUlzSW5SbGVIUWlPaUxaaXRtRjJZcllzaURZcDltRTJZYllwOWl6SU5pbzJZclpoaURZbzltQjJMbllwOW1FMllmWmhTRFlwOW1FMktYWXNkaW4ySy9aaXRpcElObUkyTHJaaXRpeElOaW4yWVRZcGRpeDJLZllyOW1LMktuWWpDRFppTm1LMkxuWmhObUYyWWpaaGlEWW85bUcyWWZaaFNEWmhkaXQySy9ZcTltSTJZWWcyWVRaaE5pajJZalpoTm1KSU5pdjJZalpoaURZcDltRTJLdllwOW1HMllyWXFTNGlMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3dmU3g3SW5SNWNHVWlPaUowWmlJc0luUmxlSFFpT2lMWml0aXgyWWtnMktmWmhObUYyTG5ZcXRpeTJZVFlxU0RaaU5pbjJZVFlzdG1LMksvWml0aXBJTmlqMllZZzJLUFpnZGk1MktmWmhDRFlwOW1FMkxuWXFOaW4ySzhnMllYWXJ0bUUyWWpaZ3RpcElObUUyWVRaaDlpTUlObUkyS1BaaGlEWXA5bUUyTG5ZcU5pdklObUUyS2NnMktmWXM5aXEyWUxaaE5pbjJZUWcyWVRaaHlEWXFOaW4yWVRaZ2RpNTJZUXVJaXdpWTI5eWNtVmpkRUZ1YzNkbGNpSTZNWDBzZXlKMGVYQmxJam9pZEdZaUxDSjBaWGgwSWpvaTJZWFpoaURZcDltRTJLUFlyOW1FMktrZzJLZlpoTm1HMllMWmhObUsyS2tnMkxuWmhObUpJTmlqMllZZzJLZlpoTmk1MktqWXJ5RFpoZGl0MksvWXF5RFpoTmlqMllIWXVkaW4yWVRaaDlpTUlOaXcyWVBZc1NEWXA5bUUyWUxZc2RpaTJZWWcyS2ZaaE5tRDJMSFppdG1GSU5pbDJMYllwOW1CMktrZzJLZlpoTmlqMllIWXVkaW4yWVFnMllUWmhOaTUyS2pZcDlpdklObUYyWVlnMkt6Wmg5aXBJTmluMllUWmc5aXoyS2dnMllIWmd0aTNMaUlzSW1OdmNuSmxZM1JCYm5OM1pYSWlPakY5TEhzaWRIbHdaU0k2SW5SbUlpd2lkR1Y0ZENJNkl0bUUyWWdnMllQWXA5bUdJTmluMllUWmhObUhJTml1MktmWmhObUMyS2ZaaXlEWmhOaWoyWUhZdWRpbjJZUWcyS2ZaaE5pNTJLallwOWl2Mkl3ZzJZVFpodGl6MktqWXFpRFlwZG1FMllyWmh5RFlwOW1FMllQWXFOaW4yS2JZc1NEWmlOaW4yWVRaZ2RtSTJLZllyZGkwSU5tRTJLUFpodG1IMktjZzJZWFpoaURZck5tRjJZVFlxU0RZbzltQjJMbllwOW1FMlliWXB5NGlMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3dmU3g3SW5SNWNHVWlPaUowWmlJc0luUmxlSFFpT2lMWXA5bUUyTEhZcnlEWXVkbUUyWWtnMkxUWXFObUgyS2tnMkxuWXI5bUZJTmluMllUWmd0aXYyTEhZcVNEWXVkbUUyWWtnMktYWXVkaW4ySy9ZcVNEWXA5bUUyWUhZdWRtRUlOaW8yWWJaZ2RpeklOaW4yWVRZcjltQzJLa2cyWWZaaUNEWW85bUdJTmluMllUWXVkaXMyTElnMkxuWmhpRFlwOW1FMktYWXVkaW4ySy9ZcVNEWmh0aW4yS3JZckNEWXVkbUdJTm1HMllMWXRTRFpnZG1LSU5pbjJZVFpndGl2MkxIWXFTRFlwOW1FMktqWXROaXgyWXJZcVNEWXNOaW4yS3JaaDlpbkxpSXNJbU52Y25KbFkzUkJibk4zWlhJaU9qRjlYWDA9';
     const GEMINI_KEY = '';
     const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
     let fullExamData = JSON.parse(decodeURIComponent(escape(atob(atob(encodedData)))));
@@ -351,7 +436,7 @@
     const GITHUB_OWNER = 'alshami2024';
     const GITHUB_REPO = 'alshami';
 
-    let currentQuestions = [...fullExamData.questions];
+    let currentQuestions = JSON.parse(JSON.stringify(fullExamData.questions));
     let studentAnswers = {};
     let currentIndex = 0;
     let studentName = "";
@@ -361,6 +446,21 @@
     let examFinished = false;
     let examStartTime = null;
     function validateAndStart() {
+const now = new Date();
+        if (fullExamData.config.startTime) {
+            const start = new Date(fullExamData.config.startTime);
+            if (now < start) {
+                alert("⛔ عذراً، الاختبار لم يبدأ بعد!\nموعد البدء: " + start.toLocaleString());
+                return;
+            }
+        }
+        if (fullExamData.config.endTime) {
+            const end = new Date(fullExamData.config.endTime);
+            if (now > end) {
+                alert("⛔ عذراً، انتهى وقت الاختبار!\nموعد الانتهاء: " + end.toLocaleString());
+                return;
+            }
+        }
         const nameInput = document.getElementById('studentName').value.trim();
         if(!nameInput) return alert("أدخل اسمك");
         
@@ -387,6 +487,36 @@
         document.getElementById('examArea').style.display = 'block';
 examStartTime = new Date();
         if(fullExamData.config.shuffle && !isRetryMode) currentQuestions.sort(() => Math.random() - 0.5);
+// --- ميزة خلط الاختيارات (Shuffle Choices) ---
+        if(fullExamData.config.shuffleChoices && !isRetryMode) {
+            currentQuestions.forEach(q => {
+                // التأكد أن السؤال من نوع خيارات (mcq) وليس صح/خطأ (tf)
+                // والتأكد أن لديه خيارات للإجابة
+                if ((q.type === 'mcq' || q.type === 'MCQ') && q.choices && q.choices.length > 0) {
+                    
+                    // 1. ربط كل نص بالفهرس الأصلي له (عشان نعرف وين راحت الإجابة الصحيحة)
+                    let mappedChoices = q.choices.map((text, originalIndex) => {
+                        return { text: text, originalIndex: originalIndex };
+                    });
+
+                    // 2. خلط المصفوفة عشوائياً
+                    mappedChoices.sort(() => Math.random() - 0.5);
+
+                    // 3. تحديث نصوص الخيارات في السؤال بالترتيب الجديد
+                    q.choices = mappedChoices.map(item => item.text);
+
+                    // 4. تحديث رقم الإجابة الصحيحة ليشير للموقع الجديد
+                    // نبحث: وين صار العنصر اللي كان رقمه هو (correctAnswer)؟
+                    const newCorrectIndex = mappedChoices.findIndex(item => item.originalIndex == q.correctAnswer);
+                    
+                    if (newCorrectIndex !== -1) {
+                        q.correctAnswer = newCorrectIndex;
+                    }
+                }
+            });
+        }
+        
+        // ---------------------------------
         if(fullExamData.config.time > 0) startTimer(fullExamData.config.time * 60);
         else document.getElementById('timer').style.display = 'none';
 
@@ -913,6 +1043,71 @@ document.getElementById('resultStudentName').innerText = studentName;
             });
         }
     }
+// --- Smart Timing System (نظام التوقيت الذكي) ---
+    (function checkExamStatus() {
+        const waitingRoom = document.getElementById('waitingRoom');
+        const expiredRoom = document.getElementById('expiredRoom');
+        const startDisplay = document.getElementById('startDateDisplay');
+        const endDisplay = document.getElementById('endDateDisplay');
+        
+        // 1. جلب التواريخ
+        const startTimeStr = fullExamData.config.startTime;
+        const endTimeStr = fullExamData.config.endTime;
+        
+        if (!startTimeStr && !endTimeStr) return; // الاختبار مفتوح دائماً
+        
+        const startDate = startTimeStr ? new Date(startTimeStr) : null;
+        const endDate = endTimeStr ? new Date(endTimeStr) : null;
+        
+        if(startDisplay && startDate) startDisplay.innerText = startDate.toLocaleString('ar-EG');
+        if(endDisplay && endDate) endDisplay.innerText = endDate.toLocaleString('ar-EG');
+
+        // دالة التحديث المستمر
+        const timer = setInterval(() => {
+            const now = new Date();
+
+            // أ) حالة الاختبار المنتهي
+            if (endDate && now > endDate) {
+                clearInterval(timer);
+                waitingRoom.style.display = 'none';
+                expiredRoom.style.display = 'flex'; // إظهار شاشة الانتهاء
+                document.querySelector('.container').style.display = 'none'; // إخفاء المحتوى الأصلي
+                return;
+            }
+
+            // ب) حالة الاختبار الذي لم يبدأ (الانتظار)
+            if (startDate && now < startDate) {
+                waitingRoom.style.display = 'flex'; // إظهار شاشة الانتظار
+                document.querySelector('.container').style.display = 'none'; // إخفاء المحتوى الأصلي
+                
+                // حساب الوقت المتبقي
+                const diff = startDate - now;
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+                // تحديث العدادات
+                document.getElementById('cd-days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('cd-hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('cd-minutes').innerText = minutes.toString().padStart(2, '0');
+                document.getElementById('cd-seconds').innerText = seconds.toString().padStart(2, '0');
+            } 
+            // ج) حالة الاختبار المفتوح (حان الوقت!)
+            else {
+                // إذا كنا في شاشة الانتظار، نخفيها ونظهر الاختبار
+                if (waitingRoom.style.display !== 'none') {
+                    waitingRoom.style.opacity = '0';
+                    setTimeout(() => {
+                        waitingRoom.style.display = 'none';
+                        document.querySelector('.container').style.display = 'block';
+                        // تشغيل صوت تنبيه بسيط (اختياري)
+                        // new Audio('notification.mp3').play().catch(e=>{});
+                    }, 500);
+                }
+            }
+        }, 1000); // تحديث كل ثانية
+    })();
 </script>
 </body>
 </html>
