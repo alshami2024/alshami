@@ -3,137 +3,250 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>القانون الدستوري</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
-        /* --- المتغيرات العامة --- */
-        :root { 
-            --primary-color: #0056b3; --secondary-color: #007bff; 
-            --light-gray: #f8f9fa; --dark-gray: #343a40; 
-            --success-color: #28a745; --danger-color: #dc3545; 
-            --background-color: #e9ecef; --text-color: #212529; --white: #fff; 
-        }
+        :root { --primary-color: #0056b3; --bg-color: #e9ecef; --white: #fff; --danger: #dc3545; --success: #28a745; --warning: #ffc107; }
+        body { font-family: 'Tajawal', sans-serif; background-color: var(--bg-color); margin: 0; padding: 15px; direction: rtl; line-height: 1.6; }
+        .container { background-color: var(--white); border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); max-width: 850px; margin: 0 auto; padding: 25px; min-height: 80vh; position: relative; }
+        .btn { background: var(--primary-color); color: #fff; border: none; padding: 12px 20px; border-radius: 8px; cursor: pointer; font-family: inherit; margin: 5px; font-weight: bold; transition: 0.3s; }
+        .btn:hover { opacity: 0.9; transform: translateY(-2px); }
+        .btn-danger { background: var(--danger); }
+        .btn-success { background: var(--success); }
+        .btn-warning { background: var(--warning); color: #000; }
         
-        /* --- التنسيقات الأساسية (موبايل أولاً) --- */
-        body { 
-            font-family: 'Tajawal', sans-serif; 
-            background-color: var(--background-color); 
-            margin: 0; 
-            padding: 10px; 
-            color: var(--text-color); 
-            direction: rtl; 
-            line-height: 1.6;
-        }
-
-        .container { 
-            background-color: var(--white); 
-            border-radius: 12px; 
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
-            width: 100%; 
-            max-width: 100%; 
-            margin: 0 auto; 
-            padding: 20px; 
-            box-sizing: border-box;
-        }
-
-        h1 { font-size: 1.5rem; margin-bottom: 10px; color: var(--dark-gray); }
-        h2 { font-size: 1.2rem; color: var(--dark-gray); }
-
-        .form-group { margin-bottom: 15px; } 
-        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
-        .form-group input[type="text"], .form-group textarea { 
-            width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; 
-            font-size: 16px; 
-            box-sizing: border-box;
-        }
-
-        .btn { 
-            background-color: var(--primary-color); color: var(--white); border: none; 
-            padding: 14px 20px; font-size: 16px; font-weight: bold; border-radius: 10px; 
-            cursor: pointer; transition: background-color 0.3s; 
-            width: 100%; 
+        .question-card { background: #f8f9fa; border: 1px solid #dee2e6; border-radius: 12px; padding: 20px; margin-bottom: 20px; position: relative; transition: 0.3s; }
+        .question-card:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        
+        .choices { list-style: none; padding: 0; }
+        .choices li { background: #fff; border: 1px solid #ddd; padding: 12px; margin: 8px 0; border-radius: 8px; cursor: pointer; display: flex; align-items: center; gap: 10px; transition: 0.2s; }
+        .choices li:hover { background: #e9ecef; border-color: var(--primary-color); }
+        .choices li.selected { border-color: var(--primary-color); background: #e7f1ff; font-weight: bold; }
+        
+        .voice-btn { position: absolute; top: 15px; left: 15px; background: #fff; border: 1px solid #ddd; width: 35px; height: 35px; border-radius: 50%; color: #555; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: 0.3s; }
+        .voice-btn:hover { background: var(--primary-color); color: #fff; border-color: var(--primary-color); }
+        
+        .ai-explanation-box { background: #e3f2fd; border-right: 4px solid #2196f3; padding: 15px; margin-top: 15px; border-radius: 6px; display: none; font-size: 0.95em; line-height: 1.8; animation: fadeIn 0.5s; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(-5px); } to { opacity: 1; transform: translateY(0); } }
+        
+        .spinner { display: inline-block; width: 18px; height: 18px; border: 3px solid rgba(0,0,0,0.1); border-radius: 50%; border-top-color: var(--primary-color); animation: spin 1s linear infinite; vertical-align: middle; }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        
+        input[type="text"], input[type="password"] { width: 100%; padding: 12px; margin: 8px 0; border: 1px solid #ccc; border-radius: 8px; box-sizing: border-box; }
+        .timer-badge { background: #ffeeee; color: var(--danger); padding: 5px 15px; border-radius: 20px; font-weight: bold; border: 1px solid #ffcccc; }
+        
+        .footer-copyright {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #888;
+            width: 100%;
             display: block;
-            margin-bottom: 10px;
-        }
-        .btn:hover { background-color: #004a99; } 
-        .btn:disabled { background-color: #ccc; }
-        .btn-danger { background-color: var(--danger-color); }
-
-        .question-card { 
-            background: var(--light-gray); border: 1px solid #dee2e6; 
-            border-radius: 10px; padding: 15px; margin-bottom: 20px; text-align: right; 
-        }
-        
-        .exam-header { 
-            display: flex; flex-direction: column; 
-            gap: 10px; align-items: center; margin-bottom: 20px; text-align: center;
-        }
-        
-        .timer { 
-            font-size: 1.2em; color: var(--danger-color); font-weight: bold; 
-            background: #fff; padding: 5px 15px; border-radius: 20px; border: 1px solid #ddd;
         }
 
-        .choices li { 
-            padding: 12px; margin: 8px 0; background: var(--white); 
-            border: 1px solid #ddd; border-radius: 8px; cursor: pointer; 
-            transition: all 0.2s; display: flex; align-items: center; gap: 10px;
-        }
-        .choices li:active { background-color: #e3f2fd; }
-        .choices li label { cursor: pointer; flex: 1; }
-        .choices li.correct { background-color: #d4edda !important; border-color: #c3e6cb; }
-        .choices li.incorrect { background-color: #f8d7da !important; border-color: #f5c6cb; }
+       /* --- Smart Timer Styles (تنسيقات المؤقت الشاملة) --- */
+.smart-timer-container {
+    position: absolute;
+    top: -25px;
+    left: 20px;
+    z-index: 100; /* رفع الطبقة لضمان الظهور فوق كل العناصر */
+}
 
-        /* تنسيق حقل الإجابة المقالي */
-        .essay-answer { 
-            width: 100%;             /* عرض كامل */
-            box-sizing: border-box;  /* احتساب الحواف ضمن العرض لمنع الخروج عن الشاشة */
-            min-height: 150px;       /* ارتفاع أدنى مريح للكتابة */
-            padding: 12px 15px;      /* مسافات داخلية مريحة */
-            border: 1px solid #ccc;  /* إطار ناعم */
-            border-radius: 8px;      /* حواف دائرية */
-            font-family: inherit;    /* نفس خط الصفحة (تجوّال) */
-            font-size: 16px;         /* حجم خط مناسب للقراءة */
-            line-height: 1.6;        /* تباعد أسطر مريح */
-            resize: vertical;        /* السماح بالتكبير عمودياً فقط */
-            margin-top: 10px;        /* مسافة بين السؤال والحقل */
-            background-color: #fff;  /* لون خلفية أبيض */
-            transition: border-color 0.3s, box-shadow 0.3s;
-        }
+.smart-timer {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 5px solid #2ecc71; /* اللون الأخضر الأساسي */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: #2c3e50;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    box-sizing: border-box; /* ضمان احتساب الإطار ضمن الحجم */
+}
 
-        /* تأثير عند الضغط للكتابة */
-        .essay-answer:focus {
-            border-color: var(--primary-color);
-            outline: none;
-            box-shadow: 0 0 0 3px rgba(0, 86, 179, 0.1);
-        }
-        
-        #navigation-buttons { display: flex; gap: 10px; margin-top: 20px; }
-        #progressBarContainer { width: 100%; background-color: #e9ecef; border-radius: 20px; margin-bottom: 25px; height: 10px; }
-        #progressBar { height: 100%; background-color: var(--success-color); border-radius: 20px; transition: width 0.5s; }
+/* مراحل التحذير والخطر (التأثيرات) */
+.timer-warning {
+    border-color: #f39c12 !important;
+    color: #d35400 !important;
+}
 
-        .q-image-container { text-align: center; margin-bottom: 15px; width: 100%; }
-        .q-image { max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+.timer-danger {
+    border-color: #e74c3c !important;
+    color: #c0392b !important;
+    background: #fff5f5 !important;
+    animation: pulse-red 1s infinite;
+}
 
-        .saving-screen { text-align: center; padding: 30px; }
-        .spinner { border: 5px solid #f3f3f3; border-top: 5px solid var(--primary-color); border-radius: 50%; width: 50px; height: 50px; animation: spin 1s linear infinite; margin: 20px auto; }
-        @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0.7); transform: scale(1); }
+    70% { box-shadow: 0 0 0 15px rgba(231, 76, 60, 0); transform: scale(1.1); }
+    100% { box-shadow: 0 0 0 0 rgba(231, 76, 60, 0); transform: scale(1); }
+}
 
-        @media (min-width: 768px) {
-            body { padding: 40px; background-color: #e0e5ec; }
-            .container { width: 80%; max-width: 900px; padding: 40px; border-radius: 16px; }
-            h1 { font-size: 2.2rem; }
-            .btn { width: auto; display: inline-block; min-width: 150px; margin-left: 10px; }
-            .exam-header { flex-direction: row; justify-content: space-between; }
-            .question-card { padding: 30px; }
-            .choices li:hover { transform: translateX(-5px); background-color: #f1f8ff; }
-            #navigation-buttons { justify-content: flex-end; }
-        }
-        
+/* --- تخصيص الموبايل (Mobile Styles) --- */
+@media (max-width: 600px) {
+    .container { padding: 15px; }
+    
+    /* توسيع الكارد لإعطاء مساحة */
+    .question-card { 
+        padding: 25px 15px 15px 15px !important; 
+        overflow: visible !important; /* السماح للمؤقت بالخروج عن حدود الكارد */
+    }
+
+    /* تعديل مكان وحجم المؤقت للموبايل */
+    .smart-timer-container {
+        top: -20px !important;
+        left: 10px !important;
+    }
+
+    .smart-timer {
+        width: 45px !important;
+        height: 45px !important;
+        font-size: 1rem !important;
+        border-width: 4px !important; /* إجبار ظهور الإطار */
+        border-style: solid !important; /* تأكيد نوع الإطار */
+    }
+
+    /* إزاحة نص السؤال لليمين حتى لا يغطيه المؤقت */
+    .question-card h3 {
+        margin-top: 10px;
+        padding-left: 50px !important; /* مساحة فارغة مكان المؤقت */
+        line-height: 1.6;
+    }
+
+    /* تحريك زر الصوت للأسفل */
+    .voice-btn {
+        top: auto !important;
+        bottom: 10px !important;
+        left: 10px !important;
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+/* --- Modern Result Screen Styles --- */
+.result-dashboard {
+    text-align: center;
+    padding: 20px 0;
+    animation: slideUp 0.5s ease-out;
+}
+
+/* دائرة النتيجة المتحركة */
+.score-circle-container {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 25px;
+}
+.score-circle {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(var(--primary-color) 0%, #eee 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 1s ease-out;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.score-inner {
+    width: 85%;
+    height: 85%;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.score-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--primary-color);
+    line-height: 1;
+}
+.score-label {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* رسالة التقييم */
+.grade-message {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2d3436;
+}
+.grade-subtext {
+    color: #636e72;
+    margin-bottom: 30px;
+}
+
+/* شبكة الإحصائيات */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.stat-card {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 12px;
+    border: 1px solid #eee;
+    transition: transform 0.2s;
+}
+.stat-card:hover { transform: translateY(-3px); border-color: var(--primary-color); }
+.stat-icon { font-size: 1.5rem; margin-bottom: 8px; display: block; }
+.stat-val { font-size: 1.2rem; font-weight: bold; display: block; color: #2d3436; }
+.stat-lbl { font-size: 0.8rem; color: #888; }
+
+/* أزرار التحكم الجديدة */
+.action-buttons-grid {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.action-btn-modern {
+    padding: 12px 25px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s;
+    font-size: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.btn-retry { background: linear-gradient(135deg, #f39c12, #e67e22); color: white; }
+.btn-review { background: linear-gradient(135deg, #3498db, #2980b9); color: white; }
+.btn-print { background: linear-gradient(135deg, #2d3436, #636e72); color: white; }
+.btn-cert { background: linear-gradient(135deg, #2ecc71, #27ae60); color: white; }
+.action-btn-modern:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.15); opacity: 0.95; }
+
+/* تأثير الكونفيتي (احتفال) */
+.confetti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    animation: fall linear forwards;
+    z-index: 9999;
+}
+@keyframes fall { to { transform: translateY(100vh) rotate(720deg); } }
+@keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+
                     :root { --primary-color: #6c5ce7; --secondary-color: #a29bfe; --light-gray: #f3f0ff; --dark-gray: #2d3436; --success-color: #00b894; --danger-color: #d63031; --background-color: #dfe6e9; --text-color: #2d3436; --white: #fff; }
                     body { background: linear-gradient(135deg, #6c5ce7 0%, #a29bfe 100%); min-height: 100vh; }
                     .container { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 16px; }
@@ -143,327 +256,859 @@
                     .choices li { transition: all 0.3s ease; border: 2px solid #f3f0ff; }
                     .choices li:hover { border-color: #6c5ce7; transform: translateX(-5px); }
                     #certificate { background: #fff; border: 2px solid #6c5ce7; box-shadow: 0 0 20px rgba(108, 92, 231, 0.2); }
-                
-    </style>
+                  
+/* --- Waiting Room Styles (شاشة الانتظار) --- */
+#waitingRoom, #expiredRoom {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(135deg, #2c3e50, #000);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.5s ease-out;
+}
+
+.waiting-icon { font-size: 4rem; margin-bottom: 20px; color: #f39c12; animation: float 3s infinite ease-in-out; }
+.expired-icon { font-size: 4rem; margin-bottom: 20px; color: #e74c3c; }
+
+.countdown-container {
+    display: flex; gap: 15px; margin-top: 30px; direction: ltr; /* لجعل الأرقام من اليسار لليمين */
+}
+.time-box {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 15px;
+    border-radius: 10px;
+    min-width: 80px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+.time-val { font-size: 2.5rem; font-weight: bold; display: block; color: #00d2d3; font-family: monospace; }
+.time-label { font-size: 0.8rem; color: #ccc; text-transform: uppercase; margin-top: 5px; }
+
+@keyframes float { 0% { transform: translateY(0px); } 50% { transform: translateY(-20px); } 100% { transform: translateY(0px); } }  
+</style>
 </head>
 <body>
 <div class="container">
-    <div id="studentExamView" style="display:block;">
-        <div id="startScreen" style="display:block;">
-            <h1 id="examTitleStudent"></h1>
-            <p id="examDescriptionStudent" style="white-space: pre-wrap; color:#666;"></p>
-            <hr style="border:0; border-top:1px solid #eee; margin: 20px 0;">
-            
-            <div class="form-group">
-                <label for="studentName">أدخل اسمك الكامل</label>
-                <input type="text" id="studentName" placeholder="الاسم الكامل">
-            </div>
-            
+    <div id="startScreen">
+        <h1 style="color:var(--primary-color); margin-bottom:10px;">القانون الدستوري</h1>
+        <p style="color:#666; margin-bottom:20px;">تجريبي</p>
+        <div style="background:#f1f3f5; padding:15px; border-radius:8px; margin-bottom:20px;">
+            <i class="fa-regular fa-clock"></i> المدة: 10 دقيقة <br>
+            <i class="fa-solid fa-list-ol"></i> عدد الأسئلة: 10
+        </div>
+        <hr style="border:0; border-top:1px solid #eee; margin: 20px 0;">
         
-            <button id="startExamBtn" class="btn">بدء الاختبار 🚀</button>
+        <div class="form-group">
+            <label for="studentName">أدخل اسمك الكامل</label>
+            <input type="text" id="studentName" placeholder="الاسم الكامل">
+        </div>
+        
+    
+        
+        <button onclick="validateAndStart()" class="btn">بدء الاختبار 🚀</button>
+
+        <div class="footer-copyright">Jamal-Alshami © 2025</div>
         </div>
 
-        <div id="examArea" style="display:none;">
-            <div class="exam-header">
-                <h3 id="welcomeStudent" style="margin:0;"></h3>
-                <div id="timer" class="timer">00:00</div>
+    <div id="examArea" style="display:none;">
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px;">
+            <div style="font-weight:bold;"><i class="fa-regular fa-user"></i> <span id="studentNameDisplay"></span></div>
+            <div id="timer" class="timer-badge">00:00</div>
+        </div>
+        
+        <div style="height:8px; background:#eee; border-radius:10px; margin-bottom:25px; overflow:hidden;">
+            <div id="progressBar" style="height:100%; width:0%; background:var(--success); transition:0.4s ease-out;"></div>
+        </div>
+        
+        <div id="questionsContainer"></div>
+        
+        <div id="navButtons" style="margin-top:25px; display:flex; gap:10px; justify-content: flex-end; flex-wrap: wrap;"></div>
+    </div>
+
+    <div id="savingScreen" style="display:none; text-align:center; padding:40px;">
+        <div class="spinner" style="width:50px; height:50px; border-width:5px;"></div>
+        <h3>جاري حفظ إجاباتك...</h3>
+        <p>يرجى عدم إغلاق الصفحة</p>
+    </div>
+
+   <div id="resultScreen" style="display:none;">
+        <div class="result-dashboard">
+            <div class="score-circle-container">
+                <div id="scoreCircle" class="score-circle">
+                    <div class="score-inner">
+                        <span id="finalScoreNumber" class="score-number">0%</span>
+                        <span class="score-label">النتيجة النهائية</span>
+                    </div>
+                </div>
             </div>
-            <div id="progressBarContainer" title="التقدم"><div id="progressBar"></div></div>
-            <div id="questionsContainer"></div>
-            <div id="navigation-buttons"></div>
-            <button id="finishExamBtn" class="btn btn-danger" style="margin-top: 30px; width:100%;">إنهاء وتسليم الاختبار 🏁</button>
-        </div>
 
-        <div id="savingResultsScreen" class="saving-screen" style="display:none;">
-            <div class="spinner"></div>
-            <h3>جاري حفظ إجاباتك...</h3>
-            <p>الرجاء الانتظار وعدم إغلاق الصفحة.</p>
-        </div>
+            <h2 id="resultStudentName" style="margin: -10px 0 15px; color: var(--primary-color); font-size: 1.4rem;"></h2>
+            
+            <div id="gradeMessage" class="grade-message"></div>
+            <div id="gradeSubtext" class="grade-subtext"></div>
 
-        <div id="resultContainer" style="display:none;">
-             <div style="text-align:center; margin-bottom:20px;">
-                <h2 id="resultTitle"></h2>
-                <p id="resultSummary" style="font-size:1.1em; margin-top:10px;"></p>
-             </div>
-             <div id="reviewContainer"></div>
-             <div id="certificate" style="display:none; border: 5px double var(--primary-color); padding: 30px; margin-top: 30px; text-align: center; background: #fff;">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-icon" style="color:#2ecc71">✔️</span>
+                    <span id="statCorrect" class="stat-val">0</span>
+                    <span class="stat-lbl">إجابة صحيحة</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon" style="color:#e74c3c">❌</span>
+                    <span id="statWrong" class="stat-val">0</span>
+                    <span class="stat-lbl">إجابة خاطئة</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-icon" style="color:#3498db">⏱️</span>
+                    <span id="statTime" class="stat-val">00:00</span>
+                    <span class="stat-lbl">الوقت المستغرق</span>
+                </div>
+            </div>
+
+            <div id="modernActionButtons" class="action-buttons-grid"></div>
+
+            <div id="certificateArea" style="display:none; border: 10px double var(--primary-color); padding: 30px; margin-top: 30px; background: #fff; position: relative;">
+                <div style="position:absolute; top:10px; left:10px; opacity:0.1;"><i class="fa-solid fa-award" style="font-size:100px;"></i></div>
                 <h2 style="color:var(--primary-color);">شهادة إتمام</h2>
                 <p>تشهد إدارة الاختبار بأن الطالب/ة:</p>
-                <h1 id="certName" style="color:#333;"></h1>
-                <p>قد أتم الاختبار بنجاح وحصل على درجة:</p>
-                <h2 id="certScore" style="color:var(--success-color);"></h2>
-                <p>بتاريخ: <span id="certDate"></span></p>
+                <h1 id="certName" style="margin: 15px 0;"></h1>
+                <p>قد اجتاز الاختبار بنجاح بنتيجة:</p>
+                <h2 id="certScore" style="color:var(--success);"></h2>
+                <p>التاريخ: <span id="certDate"></span></p>
             </div>
+
+<div id="reviewArea" style="text-align: right; margin-top: 40px;"></div>
         </div>
+    </div> 
+    
+    </div> <div id="waitingRoom" style="display:none;">
+    <i class="fa-solid fa-hourglass-start waiting-icon"></i>
+    <h1 style="margin:0;">عذراً، لم يبدأ الاختبار بعد</h1>
+    <p style="color:#aaa; margin-top:10px;">سيتم فتح الاختبار تلقائياً خلال:</p>
+    
+    <div class="countdown-container">
+        <div class="time-box"><span id="cd-days" class="time-val">00</span><span class="time-label">يوم</span></div>
+        <div class="time-box"><span id="cd-hours" class="time-val">00</span><span class="time-label">ساعة</span></div>
+        <div class="time-box"><span id="cd-minutes" class="time-val">00</span><span class="time-label">دقيقة</span></div>
+        <div class="time-box"><span id="cd-seconds" class="time-val">00</span><span class="time-label">ثانية</span></div>
+    </div>
+    <div style="margin-top: 30px; font-size: 0.9rem; opacity: 0.7;">
+        <i class="fa-solid fa-calendar-day"></i> موعد البدء: <span id="startDateDisplay" style="color:#fff; font-weight:bold;"></span>
     </div>
 </div>
-    <script>
-        const encodedExamData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXA5bUUyWUxZcDltRzJZalpoaURZcDltRTJLL1lzOWlxMllqWXNkbUtJaXdpWkdWelkzSnBjSFJwYjI0aU9pTFlxdGlzMkxIWml0aW8yWW9pTENKemRHRnlkRlJwYldVaU9pSWlMQ0psYm1SVWFXMWxJam9pSWl3aWJHRjViM1YwSWpvaWIyNWxMV0o1TFc5dVpTSXNJblJwYldVaU9qRXdMQ0p6YUhWbVpteGxJanAwY25WbExDSnViMGR2YVc1blFtRmpheUk2ZEhKMVpTd2laR2x6WVdKc1pVTm9aV0YwYVc1bklqcDBjblZsTENKdGIyNXBkRzl5VkdGaWN5STZkSEoxWlN3aVptbHVhWE5vVDI1VGQybDBZMmdpT21aaGJITmxMQ0pzWldGeWJtbHVaMDF2WkdVaU9tWmhiSE5sTENKemFXNW5iR1ZWYzJWTmIyUmxJanBtWVd4elpTd2ljMmh2ZDFKbGMzVnNkSE1pT25SeWRXVXNJbVZ1WVdKc1pWSmxkbWxsZHlJNlptRnNjMlVzSW1WdVlXSnNaVU5sY25ScFptbGpZWFJsSWpwMGNuVmxMQ0owYUdWdFpTSTZJbkIxY25Cc1pTSXNJbk4xWTJObGMzTlFaWEpqWlc1MFlXZGxJam8xTUN3aVltOTBWRzlyWlc0aU9pSlZNa1p6WkVkV2ExZ3hPSFYyTW5ocE5WRmtPWEExYlRBdmVETnlZMFprZEZSTWVVRlVXV3RrWkhoRVFVSkZjVlpUT1Zwd1pqUmthRGxtYXpGc0wwTmhkSGs1VkRJcmRVa3JRWFowZUc0elRsWkhOSEZOWnowOUlpd2lZMmhoZEVsa0lqb2lWVEpHYzJSSFZtdFlNUzlEUkhoNllTczBNR1ZQTkU0NUwyVTVZVnBuWm1zME9FUm1OblZpV1c5RFl6MGlMQ0puYVhSb2RXSlViMnRsYmlJNklsVXlSbk5rUjFacldERXJURVZuTVV0WVFtOWthWEV2V1c5d1Ixa3JUVEowUkVaNk0wUmFPVEpMVHpsMmNIYzVSVXBuUlRWRlRFWnBkRlpVWXk5TE0wbEZkSEJ5VFhoa1UwTktWRzQzUkVoeVNYSnZMMFZuUFQwaUxDSnlaWE4xYkhSelJtbHNaVzVoYldVaU9pSmxlR0Z0TWpBeU5URXhNall4TlRReU5Ea3Vhbk52YmlJc0ltRmpZMlZ6YzBOdmJuUnliMndpT25zaVpXNWhZbXhsWkNJNlptRnNjMlVzSW5OMGRXUmxiblJ6SWpwYlhYMTlMQ0p4ZFdWemRHbHZibk1pT2x0N0luUjVjR1VpT2lKdFkzRWlMQ0owWlhoMElqb2kyWVhZcHlEWmg5bUlJTmluMllUWW85aTEyWVFnMktmWmhObUUyTHJaaU5tS0lObUUyWVBaaE5tRjJLa2dYQ0xZcjlpejJLclppTml4WENJZzJZSFppaURZcDltRTJZVFl1dGlwSU5pbjJZVFpnZGluMkxIWXM5bUsyS25ZbnlJc0ltTm9iMmxqWlhNaU9sc2kyWVhaZ3RpMzJMa2cyWWpZcDlpdDJLOGcyS2paaGRpNTJZYlppU0RZcDltRTJLclpodGk0MllyWmhTSXNJdG1GMllMWXQ5aTUyS2ZaaGpvZ1hDTFlyOWl6MktwY0lpRFlxTm1GMkxuWmh0bUpJTmluMllUWXM5bUUyTGZZcVNEWmlGd2kyWWpZc1Z3aUlOaW8yWVhZdWRtRzJZa2cyTFhZcDlpdDJLZ2lMQ0xaaGRtQzJMZll1ZGluMllZNklGd2kySy9ZczlpcVhDSWcyS2paaGRpNTJZYlppU0RZcDltRTJZTFlwOWk1MksvWXFTRFlvOW1JSU5pbjJZVFlvOWl6MktmWXN5RFppRndpMllqWXNWd2lJTmlvMllYWXVkbUcyWWtnMkxYWXA5aXQyS2dpTENMWmc5bUUyWVhZcVNEWmhOaW4yS3JaaXRtRzJZcllxU0RZcXRpNTJZYlppaURZcDltRTJLcllvOWl6MllyWXN5SmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3lmU3g3SW5SNWNHVWlPaUp0WTNFaUxDSjBaWGgwSWpvaTJLUFppaURaaGRtR0lOaW4yWVRZcDltRzJLclpndGluMksvWXA5aXFJTmluMllUWXF0aW4yWVRaaXRpcElOaXEyWWpZck5tSElObUUyWVRaaGRpdjJZVFppTm1FSU5pbjJZVFpoTmk2MllqWmlpQW8yS2ZaaE5pbjJMVFlxdG1DMktmWmd0bUtLU0RaaE5tRTJZTFlwOW1HMllqWmhpRFlwOW1FMksvWXM5aXEyWWpZc2RtSzJKOGlMQ0pqYUc5cFkyVnpJanBiSXRpbjJMbllxdGl4MktmWmdkbUhJTmlvMktmWmhOaXYyTFBZcDlpcTJZcllzU0RZcDltRTJMbllzZG1CMllyWXFTSXNJdGlxMkxIWmc5bUsyTExaaHlEWXVkbUUyWWtnMllYWXR0bUYyWWpaaGlEWXA5bUUyWUxaaU5pbjJMbllyeURZcDltRTJLL1lzOWlxMllqWXNkbUsyS2tpTENMWXF0aXMyS2ZaaDltRTJZY2cyWVRaaE5pcTJMZlppTml4SU5pbjJZVFlxdGluMkxIWml0aXUyWW9nMllUWmhOaXYyTFBZcDlpcTJZcllzU0lzSXRpMTJMblppTmlvMktrZzJLcllyZGl2MllyWXJ5RFpodGkzMktmWmdpRFlwOW1FMllMWXA5bUcyWWpaaGlEWXA5bUUySy9ZczlpcTJZallzZG1LSU5pbzJLL1pndGlwSWwwc0ltTnZjbkpsWTNSQmJuTjNaWElpT2pKOUxIc2lkR1Y0ZENJNkl0bUYyWVlnMllYWXN0aW4yWXJZcHlEWXA5bUUyWVhZcjltRTJZalpoQ0RZcDltRTJMVFpnOW1FMllvZ0tOaW4yWVRaaU5pcjJLZllwdG1DMllvcElObUUyWVRaZ3RpbjJZYlppTm1HSU5pbjJZVFlyOWl6MktyWmlOaXgyWW82SWl3aWFXMWhaMlVpT201MWJHd3NJblI1Y0dVaU9pSnRZM0VpTENKamFHOXBZMlZ6SWpwYkl0aW4yWVRZcDlpNTJLcllzZGluMllFZzJLallwOW1FMksvWXM5aW4yS3JaaXRpeElOaW4yWVRZdWRpeDJZSFppdGlwSU5pNjJZcllzU0RZcDltRTJZWFpnOWlxMllqWXFOaXBJaXdpMktYWmhkbUQyS2ZaaHRtSzJLa2cyS1hZcjlpeDJLZllyQ0RaaGRtSTJMYlppTmk1MktmWXFpRFl1dG1LMkxFZzJLL1lzOWlxMllqWXNkbUsyS2tnMllIWmlpRFlwOW1FMllqWXE5bUsyWUxZcVNJc0l0aW4yWVRaaU5pMjJZallyU0RaaU5pbjJZVFlzOW1IMllqWmhOaXBJTm1CMllvZzJLcllyZGl2MllyWXJ5RFpoZGluSU5tSDJZZ2cySy9ZczlpcTJZallzZG1LSWl3aTJLZlpoTm1GMkxIWmlObUcyS2tnMllIWmlpRFpoZG1JMktmWmc5aW8yS2tnMktmWmhOaXEyTGZaaU5peDJLZllxaURZcDltRTJLL1lzOWlxMllqWXNkbUsyS2tpWFN3aVkyOXljbVZqZEVGdWMzZGxjaUk2TW4wc2V5SjBlWEJsSWpvaWJXTnhJaXdpZEdWNGRDSTZJdG1LMkxIWmlTRFlwOW1FMllYWXI5bUUyWWpaaENEWXA5bUUyWVhaaU5pMjJZall1ZG1LSUNqWXA5bUUyS3paaU5tSDJMSFppaWtnMktQWmhpRFlwOW1FMllMWXA5bUcyWWpaaGlEWXA5bUUySy9ZczlpcTJZallzZG1LSU5tSDJZZ2cyWVhZck5tRjJZall1ZGlwSU5pbjJZVFpndG1JMktmWXVkaXZJTmluMllUWmd0aW4yWWJaaU5tRzJZcllxU0RZcDltRTJLclppaURZcXRtRzJMalpoU0RZdE5pazJZalpoaURZcDltRTJLM1pnOW1GSU5tQjJZb2cyS2ZaaE5pdjJZalpoTmlwMkl3ZzJZallwOW1FMllYWXVkbUsyS2ZZc1NEWXA5bUUyS1BZczlpbjJMUFppaURaZ2RtSzJZY2cyWWZaaURvaUxDSmphRzlwWTJWeklqcGJJdGluMllUWmhkaTEySy9Zc1NEWXA5bUUyTFRaZzltRTJZb2cyWVRaaE5tQzJLZll1ZGl2MktrZ0tOaW4yWVRaaU5pcjJZclpndGlwSU5pbjJZVFlyOWl6MktyWmlOaXgyWXJZcVNraUxDTFlwOWl6MllVZzJLZlpoTm1JMkt2Wml0bUMyS2tnMktmWmhOaXEyWW9nMktyWXF0aTIyWVhaaGlEWXA5bUUyWUxaaU5pbjJMbllyeUlzSXRtRjJMYlpoZG1JMllZZzJLZlpoTm1DMktmWXVkaXYyS2tnMllqWmhkbUkyTGJaaU5pNTJZZllweURZcU5pNjJMWWcyS2ZaaE5tRzJMallzU0RZdWRtR0lOaTAyWVBaaE5tSDJLY2cyS1BaaUNEWmhkaTEySy9Zc2RtSDJLY2lMQ0xZdWRpdjJLOGcyS2ZaaE5tRjJZallwOWl2SU5pbjJZVFppTmluMkxIWXI5aXBJTm1CMllvZzJLZlpoTm1JMkt2Wml0bUMyS2tnMktmWmhOaXYyTFBZcXRtSTJMSFppdGlwSWwwc0ltTnZjbkpsWTNSQmJuTjNaWElpT2pKOUxIc2lkSGx3WlNJNkltMWpjU0lzSW5SbGVIUWlPaUxaaU5tQjJZTFppOWluSU5tRTJZVFlzZGlqMllvZzJLZlpoTml4MktmWXJOaXRJTmluMllUWXNObUtJTm1LMktUWmc5aXZJTmluMllUWXQ5aW8yWXJZdWRpcElOaW4yWVRZcGRtRTJMTFlwOW1GMllyWXFTRFpoTm1FMllMWXA5bUcyWWpaaGlEWXA5bUUySy9ZczlpcTJZallzZG1LMkl3ZzJLUFppaURaaGRtRjJLY2cyWXJaaE5tS0lObUsyWS9ZdWRpdklOaXMyTExZcDlpaDJZc2cyTFBaaXRpbjJMUFppdG1MMktjZzJMblpoTm1KSU5tRjJLN1lwOW1FMllIWXFTRFlwOW1FMllMWmlOaW4yTG5ZcnlEWXA5bUUySy9ZczlpcTJZallzZG1LMktuWW55SXNJbU5vYjJsalpYTWlPbHNpMktYWmhOaTYyS2ZZb1NEWW85bUlJTm1JMllMWmdTRFlxdG1HMllIWml0aXdJTmluMllUWmd0bUkyS2ZaaHRtSzJZWWcyS2ZaaE5tRjJLN1lwOW1FMllIWXFTRFpoTm1FMksvWXM5aXEyWWpZc1NJc0l0aTUyTExaaENEWXA5bUUyWVhZczlpazJZalpoTm1LMllZZzJMblpoaURZcDltRTJZWFlydGluMllUWmdkaW4yS29nMktmWmhOaXMyTFBaaXRtRjJLa2lMQ0xZczlpdDJLZ2cyS2ZaaE5pbzJMSFpoTm1GMktmWmhpRFpoTm1FMkt2Wmd0aXBJTm1GMllZZzJLZlpoTml0MllQWmlObUYyS2tpTENMWmdkaXgyTFlnMkxuWmd0bUkyS2pZcDlpcUlOaW4yWUxZcXRpMTJLZllyOW1LMktrZzJLL1ppTm1FMllyWXFTSmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3lmU3g3SW5SNWNHVWlPaUowWmlJc0luUmxlSFFpT2lMWml0bVAyTG5ZcXRpbzJMRWcySy9ZczlpcTJZallzU0RZcDltRTJZalpoTmluMllyWXA5aXFJTmluMllUWmhkaXEySzNZcjlpcElOaW4yWVRZbzltRjJMSFppdG1EMllyWXFkaU1JTmluMllUWXNObUtJTmlqMlkvWmd0aXhJTmk1MktmWmhTQXhOemczMllYWWpDRFlvOW1JMllRZzJLL1lzOWlxMllqWXNTRFpoZG1EMktyWmlOaW9JTml0MksvWml0aXJJTm1FMktjZzJZcllzdGluMllRZzJZYllwOW1CMkxEWXA5bUxJTml0MktyWmlTRFlwOW1FMllyWmlObUZMaUlzSW1OdmNuSmxZM1JCYm5OM1pYSWlPakI5TEhzaWRIbHdaU0k2SW5SbUlpd2lkR1Y0ZENJNkl0bUsyS3JZczltRklOaWoyTFBaaE5tSTJLZ2cyS2ZaaE5tRjJZYllyZGlwSU5tQjJZb2cyWWJZdE5pajJLa2cyS2ZaaE5pdjJMUFlwOWlxMllyWXNTRFlxTmkwMkxIWXVkbUsyS2tnMkxUWXVkaW8yWXJZcVNEWmd0bUkyWXJZcVNEWmh0aTQyTEhZcDltTElObUUyWVRaaGRpMDJLZllzZG1EMktrZzJLZlpoTm1GMktqWXA5aTAyTEhZcVNEWmhObUUyWVhaaU5pbjJMZlpodG1LMllZZzJZSFppaURaaU5pMjJMblpoeTRpTENKamIzSnlaV04wUVc1emQyVnlJam94ZlN4N0luUjVjR1VpT2lKMFppSXNJblJsZUhRaU9pTFppdGk1MktyWXFOaXhJTmlqMkxQWmhObUkyS2dnMktmWmhOaXMyWVhZdWRtSzJLa2cyS2ZaaE5pcTJLUFlzOW1LMkxQWml0aXBJTm1CMllvZzJZall0dGk1SU5pbjJZVFlyOWl6MktmWXF0bUsyTEVnMktmWmhOaWoyWUxaaENEWXI5bUsyWVhaZ3RpeDJLZll0OW1LMktrZzJZalpnZG1DMktmWml5RFpoTmlsMkt6WmhkaW4yTGtnMktmWmhObUIyWUxaaHlEWXA5bUUySy9ZczlpcTJZallzZG1LSU5pbjJZVFpoZGk1MktmWXRkaXhMaUlzSW1OdmNuSmxZM1JCYm5OM1pYSWlPakY5TEhzaWRIbHdaU0k2SW5SbUlpd2lkR1Y0ZENJNkl0bUsyTFRZcXRpeDJMY2cyWUhaaWlEWXA5bUUyTEhaZzltR0lOaW4yWVRaaGRpbjJLL1ppaURaaE5tRTJMbllzZG1CSU5pbjJZVFlyOWl6MktyWmlOaXgyWW9nMktQWmhpRFppdGlxMllQWXNkaXhJTmluMllUWXM5bUUyWWpaZ3lEWmhkaXgyS2tnMllqWXA5aXQySy9ZcVNEWmdkbUMyTGNnMllUWml0aTEyS2pZclNEWmd0aW4yTG5ZcjlpcElOaTUyTEhaZ2RtSzJLa2cyWVhaaE5peTJZWFlxUzRpTENKamIzSnlaV04wUVc1emQyVnlJam94ZlN4N0luUjVjR1VpT2lKMFppSXNJblJsZUhRaU9pTFppdGl4MllIWXRpRFl1dGluMllUWXFObUsyS2tnMktmWmhObUIyWUxaaHlEWXA5bUUySy9ZczlpcTJZallzZG1LSU5pbjJZVFpoZGk1MktmWXRkaXhJTmluMllUWXVkaXgyWUVnMktmWmhObUYyTG5ZcjltRUlObUIyWW9nMktmWmhOaXYyTFBZcDlpcTJZcllzU0RZcDltRTJLellwOW1GMksvWXFTRFpoTmlqMlliWmh5RFppdG1QMllIWXNkaTZJTmluMllUWmh0aTFJTmluMllUWXI5aXoyS3JaaU5peDJZb2cyWVhaaGlEWmhkaXQyS3JaaU5pbjJZY2cyWWpaaXRtUDJZVFl1dG1LSU5pbDJLellzZGluMktIWXA5aXFJTmluMllUWXF0aTUySy9aaXRtRUlOaW4yWVRZcjlpejJLclppTml4MllvZzJLZlpoTml4MkxQWmhkbUsyS2t1SWl3aVkyOXljbVZqZEVGdWMzZGxjaUk2TUgxZGZRPT0=';
-        const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
-        const examData = JSON.parse(decodeURIComponent(escape(atob(atob(encodedExamData)))));
+
+<div id="expiredRoom" style="display:none;">
+    <i class="fa-solid fa-lock expired-icon"></i>
+    <h1>انتهت صلاحية الاختبار</h1>
+    <p>للأسف، لقد انتهى الوقت المحدد للدخول لهذا الاختبار.</p>
+    <div style="margin-top:20px; padding:10px; background:rgba(231, 76, 60, 0.2); border-radius:8px;">
+        تاريخ الانتهاء: <span id="endDateDisplay"></span>
+    </div>
+
+<script>
+    const encodedData = 'ZXlKamIyNW1hV2NpT25zaWRHbDBiR1VpT2lMWXA5bUUyWUxZcDltRzJZalpoaURZcDltRTJLL1lzOWlxMllqWXNkbUtJaXdpWkdWelkzSnBjSFJwYjI0aU9pTFlxdGlzMkxIWml0aW8yWW9pTENKemRHRnlkRlJwYldVaU9pSWlMQ0psYm1SVWFXMWxJam9pSWl3aWJHRjViM1YwSWpvaWIyNWxMV0o1TFc5dVpTSXNJblJwYldVaU9qRXdMQ0p6YUhWbVpteGxJanAwY25WbExDSnphSFZtWm14bFEyaHZhV05sY3lJNlptRnNjMlVzSW01dlIyOXBibWRDWVdOcklqcDBjblZsTENKa2FYTmhZbXhsUTJobFlYUnBibWNpT25SeWRXVXNJbTF2Ym1sMGIzSlVZV0p6SWpwMGNuVmxMQ0ptYVc1cGMyaFBibE4zYVhSamFDSTZabUZzYzJVc0lteGxZWEp1YVc1blRXOWtaU0k2Wm1Gc2MyVXNJbk5wYm1kc1pWVnpaVTF2WkdVaU9tWmhiSE5sTENKemFHOTNVbVZ6ZFd4MGN5STZkSEoxWlN3aVpXNWhZbXhsVW1WMmFXVjNJanBtWVd4elpTd2laVzVoWW14bFEyVnlkR2xtYVdOaGRHVWlPblJ5ZFdVc0ltVnVZV0pzWlZSbGVIUlViMU53WldWamFDSTZabUZzYzJVc0ltVnVZV0pzWlVGSlZIVjBiM0lpT21aaGJITmxMQ0psYm1GaWJHVlRiV0Z5ZEZKbGRISjVJanBtWVd4elpTd2ljR1Z5VVhWbGMzUnBiMjVVYVcxbGNpSTZabUZzYzJVc0luQmxjbEYxWlhOMGFXOXVVMlZqYjI1a2N5STZNekFzSW5Sb1pXMWxJam9pY0hWeWNHeGxJaXdpYzNWalkyVnpjMUJsY21ObGJuUmhaMlVpT2pVd0xDSmliM1JVYjJ0bGJpSTZJbFV5Um5Oa1IxWnJXREV2VURabVduWnlVVTltYzJ0WlRrZFFhV1pYVm1oMlRWQmxTbFpaWlRsdldtcHBRVGh1YVRseFZGTTVSalJTU1VoTFNrcHdPRE51TUdaUk5FNUJjblpJVFdKaVMyOTRjVWRYVGxkQlBUMGlMQ0pqYUdGMFNXUWlPaUpWTWtaelpFZFdhMWd4T0dwbFkxVnFja3h5YzJsd1NIUnpWSEJwZWpCRlRGSnFWVVJSZG5KckwzVkpQU0lzSW1kcGRHaDFZbFJ2YTJWdUlqb2lWVEpHYzJSSFZtdFlNVGs0VVVGbGFFWnlZVGgyU0ZvNVJWaEpUMlUzTVhSSlZYbDZWM1ZQZG5sS2VFaG1abVZqUTAxdVZsZ3lLMVJQU0RsR1RITlBhbXhwVm01VU4zSkNlRTFOY1dsa09FcDFiR3hZZW1jOVBTSXNJbkpsYzNWc2RITkdhV3hsYm1GdFpTSTZJbVY0WVcxZk1qQXlOVEV4TWpaZk1UVTBNalE1TG1wemIyNGlMQ0poWTJObGMzTkRiMjUwY205c0lqcDdJbVZ1WVdKc1pXUWlPbVpoYkhObExDSnpkSFZrWlc1MGN5STZXMTE5ZlN3aWNYVmxjM1JwYjI1eklqcGJleUowZVhCbElqb2liV054SWl3aWRHVjRkQ0k2SXRtRjJLY2cyWWZaaUNEWXA5bUUyS1BZdGRtRUlOaW4yWVRaaE5pNjJZalppaURaaE5tRDJZVFpoZGlwSUZ3aTJLL1lzOWlxMllqWXNWd2lJTm1CMllvZzJLZlpoTm1FMkxyWXFTRFlwOW1FMllIWXA5aXgyTFBaaXRpcDJKOGlMQ0pqYUc5cFkyVnpJanBiSXRtRjJZTFl0OWk1SU5tSTJLZllyZGl2SU5pbzJZWFl1ZG1HMllrZzJLZlpoTmlxMlliWXVObUsyWVVpTENMWmhkbUMyTGZZdWRpbjJZWTZJRndpMksvWXM5aXFYQ0lnMktqWmhkaTUyWWJaaVNEWXA5bUUyTFBaaE5pMzJLa2cyWWhjSXRtSTJMRmNJaURZcU5tRjJMblpodG1KSU5pMTJLZllyZGlvSWl3aTJZWFpndGkzMkxuWXA5bUdPaUJjSXRpdjJMUFlxbHdpSU5pbzJZWFl1ZG1HMllrZzJLZlpoTm1DMktmWXVkaXYyS2tnMktQWmlDRFlwOW1FMktQWXM5aW4yTE1nMlloY0l0bUkyTEZjSWlEWXFObUYyTG5aaHRtSklOaTEyS2ZZcmRpb0lpd2kyWVBaaE5tRjJLa2cyWVRZcDlpcTJZclpodG1LMktrZzJLcll1ZG1HMllvZzJLZlpoTmlxMktQWXM5bUsyTE1pWFN3aVkyOXljbVZqZEVGdWMzZGxjaUk2TW4wc2V5SjBlWEJsSWpvaWJXTnhJaXdpZEdWNGRDSTZJdGlqMllvZzJZWFpoaURZcDltRTJLZlpodGlxMllMWXA5aXYyS2ZZcWlEWXA5bUUyS3JZcDltRTJZcllxU0RZcXRtSTJLelpoeURaaE5tRTJZWFlyOW1FMllqWmhDRFlwOW1FMllUWXV0bUkyWW9nS05pbjJZVFlwOWkwMktyWmd0aW4yWUxaaWlrZzJZVFpoTm1DMktmWmh0bUkyWVlnMktmWmhOaXYyTFBZcXRtSTJMSFppdGlmSWl3aVkyaHZhV05sY3lJNld5TFlwOWk1MktyWXNkaW4yWUhaaHlEWXFOaW4yWVRZcjlpejJLZllxdG1LMkxFZzJLZlpoTmk1MkxIWmdkbUsyS2tpTENMWXF0aXgyWVBaaXRpeTJZY2cyTG5aaE5tSklObUYyTGJaaGRtSTJZWWcyS2ZaaE5tQzJZallwOWk1Mks4ZzJLZlpoTml2MkxQWXF0bUkyTEhaaXRpcElpd2kyS3JZck5pbjJZZlpoTm1ISU5tRTJZVFlxdGkzMllqWXNTRFlwOW1FMktyWXA5aXgyWXJZcnRtS0lObUUyWVRZcjlpejJLZllxdG1LMkxFaUxDTFl0ZGk1MllqWXFOaXBJTmlxMkszWXI5bUsySzhnMlliWXQ5aW4yWUlnMktmWmhObUMyS2ZaaHRtSTJZWWcyS2ZaaE5pdjJMUFlxdG1JMkxIWmlpRFlxTml2MllMWXFTSmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3lmU3g3SW5SbGVIUWlPaUxaaGRtR0lObUYyTExZcDltSzJLY2cyS2ZaaE5tRjJLL1poTm1JMllRZzJLZlpoTmkwMllQWmhObUtJQ2pZcDltRTJZallxOWluMktiWmd0bUtLU0RaaE5tRTJZTFlwOW1HMllqWmhpRFlwOW1FMksvWXM5aXEyWWpZc2RtS09pSXNJbWx0WVdkbElqcHVkV3hzTENKMGVYQmxJam9pYldOeElpd2lZMmh2YVdObGN5STZXeUxZcDltRTJLZll1ZGlxMkxIWXA5bUJJTmlvMktmWmhOaXYyTFBZcDlpcTJZcllzU0RZcDltRTJMbllzZG1CMllyWXFTRFl1dG1LMkxFZzJLZlpoTm1GMllQWXF0bUkyS2pZcVNJc0l0aWwyWVhaZzlpbjJZYlppdGlwSU5pbDJLL1lzZGluMkt3ZzJZWFppTmkyMllqWXVkaW4yS29nMkxyWml0aXhJTml2MkxQWXF0bUkyTEhaaXRpcElObUIyWW9nMktmWmhObUkyS3ZaaXRtQzJLa2lMQ0xZcDltRTJZall0dG1JMkswZzJZallwOW1FMkxQWmg5bUkyWVRZcVNEWmdkbUtJTmlxMkszWXI5bUsySzhnMllYWXB5RFpoOW1JSU5pdjJMUFlxdG1JMkxIWmlpSXNJdGluMllUWmhkaXgyWWpaaHRpcElObUIyWW9nMllYWmlOaW4yWVBZcU5pcElOaW4yWVRZcXRpMzJZallzZGluMktvZzJLZlpoTml2MkxQWXF0bUkyTEhaaXRpcElsMHNJbU52Y25KbFkzUkJibk4zWlhJaU9qSjlMSHNpZEhsd1pTSTZJbTFqY1NJc0luUmxlSFFpT2lMWml0aXgyWWtnMktmWmhObUYySy9aaE5tSTJZUWcyS2ZaaE5tRjJZall0dG1JMkxuWmlpQW8yS2ZaaE5pczJZalpoOWl4MllvcElOaWoyWVlnMktmWmhObUMyS2ZaaHRtSTJZWWcyS2ZaaE5pdjJMUFlxdG1JMkxIWmlpRFpoOW1JSU5tRjJLelpoZG1JMkxuWXFTRFlwOW1FMllMWmlOaW4yTG5ZcnlEWXA5bUUyWUxZcDltRzJZalpodG1LMktrZzJLZlpoTmlxMllvZzJLclpodGk0MllVZzJMVFlwTm1JMllZZzJLZlpoTml0MllQWmhTRFpnZG1LSU5pbjJZVFlyOW1JMllUWXFkaU1JTm1JMktmWmhObUYyTG5aaXRpbjJMRWcyS2ZaaE5pajJMUFlwOWl6MllvZzJZSFppdG1ISU5tSDJZZzZJaXdpWTJodmFXTmxjeUk2V3lMWXA5bUUyWVhZdGRpdjJMRWcyS2ZaaE5pMDJZUFpoTm1LSU5tRTJZVFpndGluMkxuWXI5aXBJQ2pZcDltRTJZallxOW1LMllMWXFTRFlwOW1FMksvWXM5aXEyWWpZc2RtSzJLa3BJaXdpMktmWXM5bUZJTmluMllUWmlOaXIyWXJaZ3RpcElOaW4yWVRZcXRtS0lOaXEyS3JZdHRtRjJZWWcyS2ZaaE5tQzJZallwOWk1Mks4aUxDTFpoZGkyMllYWmlObUdJTmluMllUWmd0aW4yTG5ZcjlpcElObUkyWVhaaU5pMjJZall1ZG1IMktjZzJLall1dGkySU5pbjJZVFpodGk0MkxFZzJMblpoaURZdE5tRDJZVFpoOWluSU5pajJZZ2cyWVhZdGRpdjJMSFpoOWluSWl3aTJMbllyOWl2SU5pbjJZVFpoZG1JMktmWXJ5RFlwOW1FMllqWXA5aXgySy9ZcVNEWmdkbUtJTmluMllUWmlOaXIyWXJaZ3RpcElOaW4yWVRZcjlpejJLclppTml4MllyWXFTSmRMQ0pqYjNKeVpXTjBRVzV6ZDJWeUlqb3lmU3g3SW5SNWNHVWlPaUp0WTNFaUxDSjBaWGgwSWpvaTJZalpnZG1DMll2WXB5RFpoTm1FMkxIWW85bUtJTmluMllUWXNkaW4yS3pZclNEWXA5bUUyTERaaWlEWml0aWsyWVBZcnlEWXA5bUUyTGZZcU5tSzJMbllxU0RZcDltRTJLWFpoTml5MktmWmhkbUsyS2tnMllUWmhObUMyS2ZaaHRtSTJZWWcyS2ZaaE5pdjJMUFlxdG1JMkxIWml0aU1JTmlqMllvZzJZWFpoZGluSU5tSzJZVFppaURaaXRtUDJMbllyeURZck5peTJLZllvZG1MSU5pejJZcllwOWl6MllyWmk5aW5JTmk1MllUWmlTRFpoZGl1MktmWmhObUIyS2tnMktmWmhObUMyWWpZcDlpNTJLOGcyS2ZaaE5pdjJMUFlxdG1JMkxIWml0aXAySjhpTENKamFHOXBZMlZ6SWpwYkl0aWwyWVRZdXRpbjJLRWcyS1BaaUNEWmlObUMyWUVnMktyWmh0bUIyWXJZc0NEWXA5bUUyWUxaaU5pbjJZYlppdG1HSU5pbjJZVFpoZGl1MktmWmhObUIyS2tnMllUWmhOaXYyTFBZcXRtSTJMRWlMQ0xZdWRpeTJZUWcyS2ZaaE5tRjJMUFlwTm1JMllUWml0bUdJTmk1MllZZzJLZlpoTm1GMks3WXA5bUUyWUhZcDlpcUlOaW4yWVRZck5pejJZclpoZGlwSWl3aTJMUFlyZGlvSU5pbjJZVFlxTml4MllUWmhkaW4yWVlnMllUWmhOaXIyWUxZcVNEWmhkbUdJTmluMllUWXJkbUQyWWpaaGRpcElpd2kyWUhZc2RpMklOaTUyWUxaaU5pbzJLZllxaURZcDltQzJLcll0ZGluMksvWml0aXBJTml2MllqWmhObUsyS2tpWFN3aVkyOXljbVZqZEVGdWMzZGxjaUk2TW4wc2V5SjBlWEJsSWpvaWRHWWlMQ0owWlhoMElqb2kyWXJaajlpNTJLcllxTml4SU5pdjJMUFlxdG1JMkxFZzJLZlpoTm1JMllUWXA5bUsyS2ZZcWlEWXA5bUUyWVhZcXRpdDJLL1lxU0RZcDltRTJLUFpoZGl4MllyWmc5bUsyS25ZakNEWXA5bUUyTERaaWlEWW85bVAyWUxZc1NEWXVkaW4yWVVnTVRjNE45bUYySXdnMktQWmlObUVJTml2MkxQWXF0bUkyTEVnMllYWmc5aXEyWWpZcUNEWXJkaXYyWXJZcXlEWmhOaW5JTm1LMkxMWXA5bUVJTm1HMktmWmdkaXcyS2ZaaXlEWXJkaXEyWWtnMktmWmhObUsyWWpaaFM0aUxDSmpiM0p5WldOMFFXNXpkMlZ5SWpvd2ZTeDdJblI1Y0dVaU9pSjBaaUlzSW5SbGVIUWlPaUxaaXRpcTJMUFpoU0RZbzlpejJZVFppTmlvSU5pbjJZVFpoZG1HMkszWXFTRFpnZG1LSU5tRzJMVFlvOWlwSU5pbjJZVFlyOWl6MktmWXF0bUsyTEVnMktqWXROaXgyTG5aaXRpcElOaTAyTG5ZcU5tSzJLa2cyWUxaaU5tSzJLa2cyWWJZdU5peDJLZlppeURaaE5tRTJZWFl0TmluMkxIWmc5aXBJTmluMllUWmhkaW8yS2ZZdE5peDJLa2cyWVRaaE5tRjJZallwOWkzMlliWml0bUdJTm1CMllvZzJZall0dGk1MlljdUlpd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1YMHNleUowZVhCbElqb2lkR1lpTENKMFpYaDBJam9pMllyWXVkaXEyS2pZc1NEWW85aXoyWVRaaU5pb0lOaW4yWVRZck5tRjJMblppdGlwSU5pbjJZVFlxdGlqMkxQWml0aXoyWXJZcVNEWmdkbUtJTm1JMkxiWXVTRFlwOW1FMksvWXM5aW4yS3JaaXRpeElOaW4yWVRZbzltQzJZUWcySy9aaXRtRjJZTFlzZGluMkxmWml0aXBJTm1JMllIWmd0aW4yWXNnMllUWXBkaXMyWVhZcDlpNUlOaW4yWVRaZ2RtQzJZY2cyS2ZaaE5pdjJMUFlxdG1JMkxIWmlpRFlwOW1FMllYWXVkaW4yTFhZc1M0aUxDSmpiM0p5WldOMFFXNXpkMlZ5SWpveGZTeDdJblI1Y0dVaU9pSjBaaUlzSW5SbGVIUWlPaUxaaXRpMDJLcllzZGkzSU5tQjJZb2cyS2ZaaE5peDJZUFpoaURZcDltRTJZWFlwOWl2MllvZzJZVFpoTmk1MkxIWmdTRFlwOW1FMksvWXM5aXEyWWpZc2RtS0lOaWoyWVlnMllyWXF0bUQyTEhZc1NEWXA5bUUyTFBaaE5tSTJZTWcyWVhZc2RpcElObUkyS2ZZcmRpdjJLa2cyWUhaZ3RpM0lObUUyWXJZdGRpbzJLMGcyWUxZcDlpNTJLL1lxU0RZdWRpeDJZSFppdGlwSU5tRjJZVFlzdG1GMktrdUlpd2lZMjl5Y21WamRFRnVjM2RsY2lJNk1YMHNleUowZVhCbElqb2lkR1lpTENKMFpYaDBJam9pMllyWXNkbUIyTFlnMkxyWXA5bUUyS2paaXRpcElOaW4yWVRaZ2RtQzJZY2cyS2ZaaE5pdjJMUFlxdG1JMkxIWmlpRFlwOW1FMllYWXVkaW4yTFhZc1NEWXA5bUUyTG5Zc2RtQklOaW4yWVRaaGRpNTJLL1poQ0RaZ2RtS0lOaW4yWVRZcjlpejJLZllxdG1LMkxFZzJLZlpoTmlzMktmWmhkaXYyS2tnMllUWW85bUcyWWNnMllyWmo5bUIyTEhZdWlEWXA5bUUyWWJZdFNEWXA5bUUySy9ZczlpcTJZallzZG1LSU5tRjJZWWcyWVhZcmRpcTJZallwOW1ISU5tSTJZclpqOW1FMkxyWmlpRFlwZGlzMkxIWXA5aWgyS2ZZcWlEWXA5bUUyS3JZdWRpdjJZclpoQ0RZcDltRTJLL1lzOWlxMllqWXNkbUtJTmluMllUWXNkaXoyWVhaaXRpcExpSXNJbU52Y25KbFkzUkJibk4zWlhJaU9qQjlYWDA9';
+    const GEMINI_KEY = '';
+    const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
+    let fullExamData = JSON.parse(decodeURIComponent(escape(atob(atob(encodedData)))));
+
+    try {
+        if (fullExamData.config.botToken) fullExamData.config.botToken = CryptoJS.AES.decrypt(fullExamData.config.botToken, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+        if (fullExamData.config.chatId) fullExamData.config.chatId = CryptoJS.AES.decrypt(fullExamData.config.chatId, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+        if (fullExamData.config.githubToken) fullExamData.config.githubToken = CryptoJS.AES.decrypt(fullExamData.config.githubToken, SECRET_KEY).toString(CryptoJS.enc.Utf8);
+    } catch (e) { console.error("Decryption Error"); }
+
+    const CONFIG = {
+        tts: fullExamData.config.enableTextToSpeech,
+        ai: fullExamData.config.enableAITutor,
+        retry: fullExamData.config.enableSmartRetry,
+        layout: fullExamData.config.layout || 'one-by-one', // تمت إضافة الفاصلة هنا
+        qTimer: fullExamData.config.perQuestionTimer,
+        qSeconds: fullExamData.config.perQuestionSeconds
+    };
+
+    const GITHUB_OWNER = 'alshami2024';
+    const GITHUB_REPO = 'alshami';
+
+    let currentQuestions = JSON.parse(JSON.stringify(fullExamData.questions));
+    let studentAnswers = {};
+    let currentIndex = 0;
+    let studentName = "";
+    let isRetryMode = false;
+    let timerInterval;
+    let tabSwitchCount = 0;
+    let examFinished = false;
+    let examStartTime = null;
+    function validateAndStart() {
+const now = new Date();
+        if (fullExamData.config.startTime) {
+            const start = new Date(fullExamData.config.startTime);
+            if (now < start) {
+                alert("⛔ عذراً، الاختبار لم يبدأ بعد!\nموعد البدء: " + start.toLocaleString());
+                return;
+            }
+        }
+        if (fullExamData.config.endTime) {
+            const end = new Date(fullExamData.config.endTime);
+            if (now > end) {
+                alert("⛔ عذراً، انتهى وقت الاختبار!\nموعد الانتهاء: " + end.toLocaleString());
+                return;
+            }
+        }
+        const nameInput = document.getElementById('studentName').value.trim();
+        if(!nameInput) return alert("أدخل اسمك");
+        
+        if (fullExamData.config.accessControl && fullExamData.config.accessControl.enabled) {
+            const codeInput = document.getElementById('accessCode').value.trim();
+            const valid = fullExamData.config.accessControl.students.some(s => 
+                s.name.trim().toLowerCase() === nameInput.toLowerCase() && s.code === codeInput
+            );
+            if (!valid) return alert("البيانات غير صحيحة");
+        }
+
+        studentName = nameInput;
+        document.getElementById('studentNameDisplay').textContent = studentName;
+        
+        const uniqueId = `exam_${fullExamData.config.title}_${studentName}`;
+        if(fullExamData.config.singleUseMode && localStorage.getItem(uniqueId)){
+            return alert("لقد أديت هذا الاختبار مسبقاً.");
+        }
+        if(fullExamData.config.singleUseMode) localStorage.setItem(uniqueId, 'true');
+
+        sendTelegramNotification(`🔔 *بدء اختبار*\nالطالب: ${studentName}\nالاختبار: ${fullExamData.config.title}`);
+        
+        document.getElementById('startScreen').style.display = 'none';
+        document.getElementById('examArea').style.display = 'block';
+examStartTime = new Date();
+        if(fullExamData.config.shuffle && !isRetryMode) currentQuestions.sort(() => Math.random() - 0.5);
+// --- ميزة خلط الاختيارات (Shuffle Choices) ---
+        if(fullExamData.config.shuffleChoices && !isRetryMode) {
+            currentQuestions.forEach(q => {
+                // التأكد أن السؤال من نوع خيارات (mcq) وليس صح/خطأ (tf)
+                // والتأكد أن لديه خيارات للإجابة
+                if ((q.type === 'mcq' || q.type === 'MCQ') && q.choices && q.choices.length > 0) {
+                    
+                    // 1. ربط كل نص بالفهرس الأصلي له (عشان نعرف وين راحت الإجابة الصحيحة)
+                    let mappedChoices = q.choices.map((text, originalIndex) => {
+                        return { text: text, originalIndex: originalIndex };
+                    });
+
+                    // 2. خلط المصفوفة عشوائياً
+                    mappedChoices.sort(() => Math.random() - 0.5);
+
+                    // 3. تحديث نصوص الخيارات في السؤال بالترتيب الجديد
+                    q.choices = mappedChoices.map(item => item.text);
+
+                    // 4. تحديث رقم الإجابة الصحيحة ليشير للموقع الجديد
+                    // نبحث: وين صار العنصر اللي كان رقمه هو (correctAnswer)؟
+                    const newCorrectIndex = mappedChoices.findIndex(item => item.originalIndex == q.correctAnswer);
+                    
+                    if (newCorrectIndex !== -1) {
+                        q.correctAnswer = newCorrectIndex;
+                    }
+                }
+            });
+        }
+        
+        // ---------------------------------
+        if(fullExamData.config.time > 0) startTimer(fullExamData.config.time * 60);
+        else document.getElementById('timer').style.display = 'none';
+
+        setupSecurity();
+        renderExam();
+    }
+
+    function renderExam() {
+        const container = document.getElementById('questionsContainer');
+        container.innerHTML = '';
+
+        if(CONFIG.layout === 'one-by-one') {
+            renderSingleQuestion(currentIndex, container);
+        } else {
+            currentQuestions.forEach((q, idx) => {
+                const wrapper = document.createElement('div');
+                renderSingleQuestion(idx, wrapper);
+                container.appendChild(wrapper);
+            });
+        }
+        updateNav();
+        updateProgress();
+    }
+let questionInterval;
+let questionEndTime; // متغير جديد لتخزين وقت النهاية الحقيقي
+
+function startQTimer() {
+        if (!CONFIG.qTimer || CONFIG.layout !== 'one-by-one') return;
+        
+        clearInterval(questionInterval);
+        
+        const now = Date.now();
+        questionEndTime = now + (CONFIG.qSeconds * 1000);
+        
+        updateSmartTimerUI(CONFIG.qSeconds); // تحديث فوري
+        
+        questionInterval = setInterval(() => {
+            const currentTime = Date.now();
+            const secondsLeft = Math.ceil((questionEndTime - currentTime) / 1000);
+            
+            updateSmartTimerUI(secondsLeft);
+            
+            if (secondsLeft <= 0) {
+                clearInterval(questionInterval);
+                // وميض أخير قبل الانتقال
+                const ring = document.getElementById('smartTimerRing');
+                if(ring) { ring.style.background = '#e74c3c'; ring.style.color = '#fff'; }
+                
+                setTimeout(() => {
+                    if (currentIndex < currentQuestions.length - 1) {
+                        currentIndex++;
+                        renderExam();
+                    } else {
+                        finishExamWrapper();
+                    }
+                }, 500);
+            }
+        }, 200);
+    }
+
+    function updateSmartTimerUI(sec) {
+        const textEl = document.getElementById('qTimerDisplay');
+        const ringEl = document.getElementById('smartTimerRing');
+        
+        if(textEl && ringEl) {
+            textEl.innerText = sec;
+            
+            // المنطق الذكي للألوان
+            const total = CONFIG.qSeconds;
+            const ratio = sec / total;
+
+            // إعادة تعيين الكلاسات
+            ringEl.classList.remove('timer-warning', 'timer-danger');
+
+            if (sec <= 5) {
+                // آخر 5 ثواني: خطر + نبض
+                ringEl.classList.add('timer-danger');
+            } else if (ratio <= 0.5) {
+                // أقل من نصف الوقت: تحذير (برتقالي)
+                ringEl.classList.add('timer-warning');
+            }
+            // الوضع الطبيعي (أخضر) هو الستايل الافتراضي
+        }
+    }
+    function renderSingleQuestion(idx, container) {
+        const q = currentQuestions[idx];
+        const voiceBtn = CONFIG.tts ? `<button class="voice-btn" onclick="speak('${q.text.replace(/'/g, "\\'")}')" title="قراءة السؤال"><i class="fa-solid fa-volume-high"></i></button>` : '';
+        const imgHtml = q.image ? `<div style="text-align:center; margin-bottom:10px;"><img src="${q.image}" style="max-width:100%; border-radius:8px; max-height:200px;"></div>` : '';
+        
+        // --- كود المؤقت الذكي ---
+        let timerHtml = '';
+        if (CONFIG.qTimer && CONFIG.layout === 'one-by-one') {
+            timerHtml = `
+            <div class="smart-timer-container">
+                <div id="smartTimerRing" class="smart-timer">
+                    <span id="qTimerDisplay">${CONFIG.qSeconds}</span>
+                </div>
+            </div>`;
+            setTimeout(startQTimer, 100); 
+        }
+
+        let html = `
+            <div class="question-card" id="q-card-${idx}" style="margin-top: 30px;">
+                ${timerHtml}
+                ${voiceBtn}
+                ${imgHtml}
+                <h3 style="margin-top:15px; padding-right: ${CONFIG.tts?40:0}px;">${idx + 1}. ${q.text}</h3>
+        `;
+
+        if(q.type === 'mcq' || q.type === 'tf') {
+            const options = q.type === 'tf' ? ['صح', 'خطأ'] : q.choices;
+            html += '<ul class="choices">';
+            options.forEach((opt, optIdx) => {
+                const isSelected = studentAnswers[idx] === optIdx ? 'selected' : '';
+                html += `<li class="${isSelected}" onclick="selectOption(${idx}, ${optIdx}, this)">
+                    <div style="width:20px; height:20px; border:2px solid #ccc; border-radius:50%; display:flex; align-items:center; justify-content:center; margin-left:10px;">
+                        ${isSelected ? '<div style="width:10px; height:10px; background:var(--primary-color); border-radius:50%;"></div>' : ''}
+                    </div>
+                    ${opt}
+                </li>`;
+            });
+            html += '</ul>';
+        } else {
+            html += `<textarea style="width:100%; border:1px solid #ddd; padding:10px; border-radius:8px;" rows="4" placeholder="اكتب إجابتك هنا..." oninput="studentAnswers[${idx}]=this.value">${studentAnswers[idx]||''}</textarea>`;
+        }
+        
+        html += '</div>';
+        container.innerHTML += html;
+    } 
+
+    // الدالة التالية أصبحت منفصلة وتعمل بشكل صحيح الآن
+    function selectOption(qIdx, optIdx, el) {
+        studentAnswers[qIdx] = optIdx;
+        if(CONFIG.layout === 'one-by-one') {
+            const parent = el.parentElement;
+            parent.querySelectorAll('li').forEach(l => {
+                l.classList.remove('selected');
+                l.querySelector('div').innerHTML = '';
+            });
+            el.classList.add('selected');
+            el.querySelector('div').innerHTML = '<div style="width:10px; height:10px; background:var(--primary-color); border-radius:50%;"></div>';
+            
+            if(fullExamData.config.learningMode && !isRetryMode) {
+                 const isCorrect = optIdx === currentQuestions[qIdx].correctAnswer;
+                 el.style.background = isCorrect ? '#d4edda' : '#f8d7da';
+                 el.style.borderColor = isCorrect ? '#c3e6cb' : '#f5c6cb';
+            }
+        } else {
+            renderExam(); 
+        }
+        updateProgress();
+    }
+
+    function updateNav() {
+        const navDiv = document.getElementById('navButtons');
+        navDiv.innerHTML = '';
+        
+        if(CONFIG.layout === 'one-by-one') {
+            if(currentIndex > 0 && !fullExamData.config.noGoingBack) {
+                navDiv.innerHTML += `<button class="btn" style="background:#6c757d" onclick="currentIndex--; renderExam()">السابق</button>`;
+            }
+            if(currentIndex < currentQuestions.length - 1) {
+                navDiv.innerHTML += `<button class="btn" onclick="currentIndex++; renderExam()">التالي</button>`;
+            } else {
+                navDiv.innerHTML += `<button class="btn btn-danger" onclick="finishExamWrapper()">إنهاء وتسليم 🏁</button>`;
+            }
+        } else {
+            navDiv.innerHTML += `<button class="btn btn-danger" style="width:100%" onclick="finishExamWrapper()">إنهاء وتسليم الإجابات 🏁</button>`;
+        }
+    }
+
+    function updateProgress() {
+        const answered = Object.keys(studentAnswers).length;
+        const total = currentQuestions.length;
+        const pct = (answered / total) * 100;
+        document.getElementById('progressBar').style.width = pct + '%';
+    }
+
+    async function finishExamWrapper() {
+        if(!confirm("هل أنت متأكد من تسليم الإجابة؟")) return;
+        finishExam();
+    }
+
+   async function finishExam() {
+        if(examFinished) return;
+        examFinished = true;
+        clearInterval(timerInterval);
+        if(typeof questionInterval !== 'undefined') clearInterval(questionInterval);
+        
+        document.getElementById('examArea').style.display = 'none';
+        document.getElementById('savingScreen').style.display = 'block';
+
+        // حساب الوقت
+        const endTime = new Date();
+        const timeDiff = examStartTime ? Math.floor((endTime - examStartTime) / 1000) : 0;
+        const minutes = Math.floor(timeDiff / 60).toString().padStart(2, '0');
+        const seconds = (timeDiff % 60).toString().padStart(2, '0');
+        const timeFormatted = `${minutes}:${seconds}`;
+
+        let correct = 0;
+        let total = 0;
+        let wrongIndices = [];
+        let detailedAnswers = [];
+        let essayTotalMax = 0;
+
+        currentQuestions.forEach((q, i) => {
+            const studentAns = studentAnswers[i];
+            const qType = (q.type || 'mcq').toLowerCase();
+
+            let ansObj = {
+                question: q.text,
+                type: qType, 
+                isCorrect: false,
+                isGraded: true, 
+                maxScore: 1, 
+                answer: "لم تتم الإجابة"
+            };
+
+            if(qType === 'mcq' || qType === 'tf') {
+                total++;
+                let opts = q.choices;
+                if(qType === 'tf') opts = ['صح', 'خطأ'];
+
+                if(studentAns !== undefined && studentAns !== null && opts[studentAns] !== undefined) {
+                    ansObj.answer = opts[studentAns];
+                }
+                
+                if(parseInt(studentAns) === parseInt(q.correctAnswer)) {
+                    correct++;
+                    ansObj.isCorrect = true;
+                } else {
+                    wrongIndices.push(i);
+                    ansObj.isCorrect = false;
+                    if(opts && opts[q.correctAnswer]) {
+                        ansObj.correctAnswer = opts[q.correctAnswer];
+                    }
+                }
+            } else {
+                ansObj.answer = studentAns || "لا إجابة";
+                ansObj.isGraded = false; 
+                ansObj.essayScore = 0;
+                ansObj.maxScore = q.maxScore || 10;
+                essayTotalMax += ansObj.maxScore;
+            }
+            detailedAnswers.push(ansObj);
+        });
+
+        const percentage = total > 0 ? Math.round((correct/total)*100) : 0;
+        const passed = percentage >= fullExamData.config.successPercentage;
+
+        if(fullExamData.config.githubToken && fullExamData.config.resultsFilename) {
+            await saveToGithub(correct, total, wrongIndices, detailedAnswers, essayTotalMax);
+        }
+
+        await sendTelegramNotification(`📊 *نتيجة*\nالطالب: ${studentName}\nالنتيجة: ${correct}/${total} (${percentage}%)\nالوقت: ${timeFormatted}`);
+
+        document.getElementById('savingScreen').style.display = 'none';
+        document.getElementById('resultScreen').style.display = 'block';
+
+        // تحديث الواجهة الجديدة
+        document.getElementById('statCorrect').innerText = correct;
+        document.getElementById('statWrong').innerText = total - correct;
+        document.getElementById('statTime').innerText = timeFormatted;
+document.getElementById('resultStudentName').innerText = studentName;
+        // أنيميشن الدائرة
+        const circle = document.getElementById('scoreCircle');
+        const numberEl = document.getElementById('finalScoreNumber');
+        const color = passed ? '#2ecc71' : '#e74c3c';
+        
+        let currentPct = 0;
+        const timer = setInterval(() => {
+            if(percentage === 0) { clearInterval(timer); numberEl.innerText = "0%"; return; }
+            currentPct++;
+            numberEl.innerText = currentPct + "%";
+            numberEl.style.color = color;
+            circle.style.background = `conic-gradient(${color} ${currentPct * 3.6}deg, #eee ${currentPct * 3.6}deg)`;
+            if (currentPct >= percentage) clearInterval(timer);
+        }, 20);
+
+        // الرسالة الذكية
+        const msgEl = document.getElementById('gradeMessage');
+        const subEl = document.getElementById('gradeSubtext');
+        
+        if (percentage >= 95) {
+            msgEl.innerText = "أداء أسطوري! 🏆";
+            msgEl.style.color = "#f1c40f";
+            subEl.innerText = "أنت عبقري، استمر في هذا التألق.";
+            startConfetti();
+        } else if (percentage >= 85) {
+            msgEl.innerText = "ممتاز جداً! 🌟";
+            msgEl.style.color = "#2ecc71";
+            subEl.innerText = "أداء رائع، تتبقى خطوة صغيرة.";
+            startConfetti();
+        } else if (percentage >= 75) {
+            msgEl.innerText = "جيد جداً 👍";
+            msgEl.style.color = "#3498db";
+            subEl.innerText = "نتيجة طيبة.";
+        } else if (percentage >= 50) {
+            msgEl.innerText = "ناجح 🙂";
+            msgEl.style.color = "#e67e22";
+            subEl.innerText = "لقد عبرت الاختبار.";
+        } else {
+            msgEl.innerText = "حظاً أوفر 😔";
+            msgEl.style.color = "#e74c3c";
+            subEl.innerText = "حاول مرة أخرى.";
+        }
+
+        // الأزرار
+        const btnContainer = document.getElementById('modernActionButtons');
+        let btnsHtml = '';
+
+        if(CONFIG.retry && wrongIndices.length > 0) {
+            btnsHtml += `<button class="action-btn-modern btn-retry" onclick='startSmartRetry(${JSON.stringify(wrongIndices)})'><i class="fa-solid fa-rotate-left"></i> تصحيح أخطائي</button>`;
+        }
+        
+        if(fullExamData.config.enableReview) {
+            btnsHtml += `<button class="action-btn-modern btn-review" onclick="document.getElementById('reviewArea').scrollIntoView({behavior:'smooth'})"><i class="fa-solid fa-eye"></i> مراجعة الإجابات</button>`;
+            btnsHtml += `<button class="action-btn-modern btn-print" onclick="window.print()"><i class="fa-solid fa-print"></i> طباعة النتيجة</button>`;
+        }
+
+        if(fullExamData.config.enableCertificate && passed) {
+            btnsHtml += `<button class="action-btn-modern btn-cert" onclick="showCertificate()"><i class="fa-solid fa-certificate"></i> استلام الشهادة</button>`;
+            document.getElementById('certName').textContent = studentName;
+            document.getElementById('certScore').textContent = percentage + "%";
+            document.getElementById('certDate').textContent = new Date().toLocaleDateString('ar-EG');
+        }
+        
+        btnContainer.innerHTML = btnsHtml;
+
+        if(fullExamData.config.showResults && fullExamData.config.enableReview) {
+            renderDetailedReview(wrongIndices);
+        }
+    }
+
+    function showCertificate() {
+        document.getElementById('certificateArea').style.display = 'block';
+        document.getElementById('certificateArea').scrollIntoView({behavior:'smooth'});
+        startConfetti();
+    }
+
+    function startConfetti() {
+        const colors = ['#e74c3c', '#3498db', '#f1c40f', '#2ecc71', '#9b59b6'];
+        for (let i = 0; i < 100; i++) {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            confetti.style.animationDuration = (Math.random() * 2 + 3) + 's';
+            confetti.style.opacity = Math.random();
+            document.body.appendChild(confetti);
+            setTimeout(() => confetti.remove(), 5000);
+        }
+    }
+
+    function renderDetailedReview(wrongIndices) {
+        const div = document.getElementById('reviewArea');
+        div.innerHTML = '<h3 style="border-bottom:2px solid #eee; padding-bottom:10px;">مراجعة الإجابات</h3>';
+        
+        currentQuestions.forEach((q, i) => {
+            const userAnsIdx = studentAnswers[i];
+            const isCorrect = userAnsIdx === q.correctAnswer;
+            
+            let userAnsText = "لم تتم الإجابة";
+            let correctAnsText = "";
+            
+            if(q.type === 'mcq' || q.type === 'tf') {
+                const opts = q.type === 'tf' ? ['صح', 'خطأ'] : q.choices;
+                if(userAnsIdx !== undefined) userAnsText = opts[userAnsIdx];
+                correctAnsText = opts[q.correctAnswer];
+            } else {
+                userAnsText = studentAnswers[i] || "";
+                correctAnsText = "متروك للمصحح";
+            }
+
+            const bg = isCorrect ? '#d4edda' : '#f8d7da';
+            const icon = isCorrect ? '✔️' : '❌';
+
+            let aiBtn = '';
+            if(!isCorrect && CONFIG.ai && GEMINI_KEY && (q.type==='mcq'||q.type==='tf')) {
+                aiBtn = `<button class="btn" style="font-size:0.8rem; background:#673ab7; margin-top:10px;" onclick="askAI(this, ${i})"><i class="fa-solid fa-robot"></i> لماذا إجابتي خاطئة؟</button>
+                         <div id="ai-res-${i}" class="ai-explanation-box"></div>`;
+            }
+
+            div.innerHTML += `
+                <div class="question-card" style="background:${bg}; border-color:${isCorrect?'#c3e6cb':'#f5c6cb'}">
+                    <p><strong>${i+1}. ${q.text}</strong></p>
+                    <p>إجابتك: <b>${userAnsText}</b> ${icon}</p>
+                    ${!isCorrect ? `<p style="color:#155724;">الإجابة الصحيحة: <b>${correctAnsText}</b></p>` : ''}
+                    ${aiBtn}
+                </div>
+            `;
+        });
+    }
+
+    async function askAI(btn, idx) {
+        const q = currentQuestions[idx];
+        const opts = q.type === 'tf' ? ['صح', 'خطأ'] : q.choices;
+        const userTxt = opts[studentAnswers[idx]] || "لا يوجد";
+        const corrTxt = opts[q.correctAnswer];
+        
+        const resBox = document.getElementById(`ai-res-${idx}`);
+        resBox.style.display = 'block';
+        resBox.innerHTML = '<span class="spinner"></span> جاري سؤال المعلم الذكي...';
+        btn.disabled = true;
+
+        const prompt = `اشرح لطالب لماذا إجابته خاطئة في هذا السؤال باختصار. السؤال: "${q.text}". إجابة الطالب الخاطئة: "${userTxt}". الإجابة الصحيحة: "${corrTxt}".`;
+        
+        try {
+            const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${GEMINI_KEY}`, {
+                method: 'POST', headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ contents: [{ role: "user", parts: [{ text: prompt }] }] })
+            });
+            const data = await response.json();
+            resBox.innerHTML = `<strong>🤖 المعلم الذكي:</strong><br>${data.candidates[0].content.parts[0].text}`;
+        } catch(e) {
+            resBox.innerHTML = 'حدث خطأ في الاتصال بالذكاء الاصطناعي.';
+            btn.disabled = false;
+        }
+    }
+
+    function speak(text) {
+        if('speechSynthesis' in window) {
+            window.speechSynthesis.cancel();
+            const u = new SpeechSynthesisUtterance(text);
+            u.lang = 'ar-SA';
+            window.speechSynthesis.speak(u);
+        }
+    }
+
+    function startSmartRetry(indices) {
+        const wrongQs = indices.map(i => currentQuestions[i]);
+        currentQuestions = wrongQs;
+        studentAnswers = {};
+        currentIndex = 0;
+        isRetryMode = true;
+        
+        document.getElementById('resultScreen').style.display = 'none';
+        document.getElementById('examArea').style.display = 'block';
+        renderExam();
+        alert("بدأت جولة المراجعة! ركز جيداً هذه المرة 💪");
+    }
+
+    async function saveToGithub(correct, total, wrongIndices, detailedAnswers, essayTotalMax) {
+        const { githubToken, resultsFilename } = fullExamData.config;
+        if(!githubToken || !resultsFilename) return;
+        
+        const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/exam/${resultsFilename}`;
+        
+        // --- هيكلة البيانات الصحيحة للوحة التحكم ---
+        const resultPayload = {
+            studentName: studentName,
+            submissionDate: new Date().toISOString(),
+            mcqScore: { correct, total }, // تم تعديل الاسم ليتطابق
+            essayScore: { totalScore: 0, totalMax: essayTotalMax }, // إضافة المقالي
+            answers: detailedAnswers, // إضافة التفاصيل كاملة
+            tabSwitchCount: tabSwitchCount
+        };
 
         try {
-            if (examData.config.botToken) {
-                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.botToken, SECRET_KEY);
-                examData.config.botToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
-            }
-            if (examData.config.chatId) {
-                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.chatId, SECRET_KEY);
-                examData.config.chatId = decryptedBytes.toString(CryptoJS.enc.Utf8);
-            }
-            if (examData.config.githubToken) {
-                const decryptedBytes = CryptoJS.AES.decrypt(examData.config.githubToken, SECRET_KEY);
-                examData.config.githubToken = decryptedBytes.toString(CryptoJS.enc.Utf8);
-            }
-        } catch (e) { console.error("Decryption failed!", e); }
+            let currentData = [];
+            let sha = null;
+            try {
+                const getRes = await fetch(url, { headers: { 'Authorization': `token ${githubToken}` } });
+                if(getRes.ok) {
+                    const json = await getRes.json();
+                    sha = json.sha;
+                    currentData = JSON.parse(decodeURIComponent(escape(atob(json.content))));
+                }
+            } catch(e){}
 
-        const GITHUB_OWNER = 'alshami2024';
-        const GITHUB_REPO = 'alshami';
+            currentData.push(resultPayload);
+            // ترميز UTF-8 آمن
+            const contentEncoded = btoa(unescape(encodeURIComponent(JSON.stringify(currentData, null, 2))));
+            
+            await fetch(url, {
+                method: 'PUT',
+                headers: { 'Authorization': `token ${githubToken}`, 'Content-Type': 'application/json' },
+                body: JSON.stringify({ message: 'New Result', content: contentEncoded, sha: sha })
+            });
+        } catch(e) { console.error("Github Save Failed", e); }
+    }
 
-        let studentName = '', studentAnswers = new Array(examData.questions.length).fill(null), timerInterval, currentQuestionIndex = 0, tabSwitchCount = 0, examFinished = false;
-        const startScreen = document.getElementById('startScreen'), examArea = document.getElementById('examArea'), resultContainer = document.getElementById('resultContainer'), savingResultsScreen = document.getElementById('savingResultsScreen');
-        const accessControl = examData.config.accessControl || { enabled: false, students: [] };
+    async function sendTelegramNotification(text) {
+        const { botToken, chatId } = fullExamData.config;
+        if(!botToken || !chatId) return;
+        try {
+            await fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+                method: 'POST', headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({ chat_id: chatId, text: text, parse_mode: 'Markdown' })
+            });
+        } catch(e){}
+    }
+
+    function startTimer(seconds) {
+        const display = document.getElementById('timer');
+        let remaining = seconds;
+        timerInterval = setInterval(() => {
+            remaining--;
+            const m = Math.floor(remaining / 60).toString().padStart(2, '0');
+            const s = (remaining % 60).toString().padStart(2, '0');
+            display.textContent = `${m}:${s}`;
+            if(remaining <= 0) {
+                clearInterval(timerInterval);
+                alert("انتهى الوقت!");
+                finishExam();
+            }
+        }, 1000);
+    }
+
+    function setupSecurity() {
+        if(fullExamData.config.disableCheating) {
+            document.addEventListener('contextmenu', e => e.preventDefault());
+            document.addEventListener('copy', e => e.preventDefault());
+        }
+        if(fullExamData.config.monitorTabs) {
+            document.addEventListener('visibilitychange', () => {
+                if(document.hidden && !examFinished) {
+                    tabSwitchCount++;
+                    if(fullExamData.config.finishOnSwitch) {
+                        finishExam();
+                        alert("تم إنهاء الاختبار بسبب الخروج من الصفحة!");
+                    }
+                }
+            });
+        }
+    }
+// --- Smart Timing System (نظام التوقيت الذكي) ---
+    (function checkExamStatus() {
+        const waitingRoom = document.getElementById('waitingRoom');
+        const expiredRoom = document.getElementById('expiredRoom');
+        const startDisplay = document.getElementById('startDateDisplay');
+        const endDisplay = document.getElementById('endDateDisplay');
         
-        window.onload = function() {
-            const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
-            if (examData.config.singleUseMode && localStorage.getItem(uniqueExamId)) {
-                document.body.innerHTML = `<div class="container" style="text-align:center;"><h1>تم قفل الاختبار</h1><p>لقد قمت ببدء هذا الاختبار بالفعل من هذا المتصفح. لا يمكنك إجراؤه مرة أخرى.</p></div>`;
-                return;
-            }
+        // 1. جلب التواريخ
+        const startTimeStr = fullExamData.config.startTime;
+        const endTimeStr = fullExamData.config.endTime;
+        
+        if (!startTimeStr && !endTimeStr) return; // الاختبار مفتوح دائماً
+        
+        const startDate = startTimeStr ? new Date(startTimeStr) : null;
+        const endDate = endTimeStr ? new Date(endTimeStr) : null;
+        
+        if(startDisplay && startDate) startDisplay.innerText = startDate.toLocaleString('ar-EG');
+        if(endDisplay && endDate) endDisplay.innerText = endDate.toLocaleString('ar-EG');
+
+        // دالة التحديث المستمر
+        const timer = setInterval(() => {
             const now = new Date();
-            const startTime = examData.config.startTime ? new Date(examData.config.startTime) : null;
-            const endTime = examData.config.endTime ? new Date(examData.config.endTime) : null;
-            if (startTime && now < startTime) {
-                document.getElementById('startScreen').innerHTML = `<h1>الاختبار غير متاح بعد</h1><p>سيكون الاختبار متاحًا في: ${startTime.toLocaleString('ar-EG')}</p>`;
+
+            // أ) حالة الاختبار المنتهي
+            if (endDate && now > endDate) {
+                clearInterval(timer);
+                waitingRoom.style.display = 'none';
+                expiredRoom.style.display = 'flex'; // إظهار شاشة الانتهاء
+                document.querySelector('.container').style.display = 'none'; // إخفاء المحتوى الأصلي
                 return;
             }
-            if (endTime && now > endTime) {
-                document.getElementById('startScreen').innerHTML = `<h1>انتهت فترة الاختبار</h1><p>لقد انتهت الفترة المحددة لإجراء هذا الاختبار.</p>`;
-                return;
-            }
-            document.getElementById('examTitleStudent').textContent = examData.config.title;
-            document.getElementById('examDescriptionStudent').textContent = examData.config.description;
-            document.getElementById('startExamBtn').addEventListener('click', validateStudentAndStart);
-        };
-        
-        async function validateStudentAndStart() {
-            const nameInput = document.getElementById('studentName').value.trim();
-            if (!nameInput) { alert('الرجاء إدخال اسمك.'); return; }
-            if (accessControl.enabled) {
-                const codeInput = document.getElementById('accessCode').value.trim();
-                if (!codeInput) { alert('الرجاء إدخال رمز الدخول.'); return; }
-                const isValidStudent = accessControl.students.some(student => 
-                    student.name.trim().toLowerCase() === nameInput.toLowerCase() && student.code === codeInput
-                );
-                if (!isValidStudent) { alert('الاسم أو رمز الدخول غير صحيح.'); return; }
-                if (examData.config.singleUseMode && examData.config.githubToken && examData.config.resultsFilename) {
-                    try {
-                        const hasTakenExam = await checkIfStudentHasTakenExam(nameInput, examData.config.githubToken, `exam/${examData.config.resultsFilename}`);
-                        if (hasTakenExam) { alert('لقد قمت بإجراء هذا الاختبار مسبقًا.'); return; }
-                    } catch (error) { console.error(error); return; }
-                }
-                studentName = nameInput; startTheExam();
-            } else { studentName = nameInput; startTheExam(); }
-        }
-        
-        async function checkIfStudentHasTakenExam(studentName, githubToken, fullFilenamePath) {
-            const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/${fullFilenamePath}`;
-            try {
-                const response = await fetch(url, { headers: { 'Authorization': `token ${githubToken}` } });
-                if (response.status === 404) return false;
-                if (!response.ok) throw new Error('GitHub Error');
-                const data = await response.json();
-                const content = JSON.parse(decodeURIComponent(escape(atob(data.content))));
-                return content.some(result => result.studentName.trim().toLowerCase() === studentName.toLowerCase());
-            } catch (error) { return false; }
-        }
-        
-        function startTheExam() {
-            if (examData.config.singleUseMode) {
-                const uniqueExamId = `examStarted_${btoa(unescape(encodeURIComponent(examData.config.title)))}`;
-                localStorage.setItem(uniqueExamId, 'true');
-            }
-            sendStartNotificationToTelegram();
-            startScreen.style.display = 'none'; examArea.style.display = 'block';
-            document.getElementById('welcomeStudent').textContent = `بالتوفيق، ${studentName}!`;
-            if (examData.config.time > 0) startTimer(examData.config.time * 60); else document.getElementById('timer').style.display = 'none';
-            if (examData.config.shuffle) { examData.questions.sort(() => Math.random() - 0.5); }
-            setupSmartFeatures(); renderQuestionsForStudent();
-            document.getElementById('finishExamBtn').addEventListener('click', () => { if(confirm("هل أنت متأكد من رغبتك في إنهاء الاختبار؟")) finishTheExam(); });
-        }
-        
-        function renderQuestionsForStudent(){const container=document.getElementById("questionsContainer");container.innerHTML="",examData.config.layout==="one-by-one"?(renderSingleQuestion(currentQuestionIndex),updateNavigationButtons()):examData.questions.forEach((e,t)=>container.appendChild(createQuestionElement(e,t))),updateProgressBar()}
-        
-        function createQuestionElement(e,t){
-            const n=document.createElement("div");n.className="question-card",n.id=`question-${t}`;
-            let imgHtml = e.image ? `<div class="q-image-container"><img src="${e.image}" class="q-image"></div>` : '';
-            let o=`${imgHtml}<h3>السؤال ${t+1}: ${e.text}</h3>`;
-            if("mcq"===e.type || "tf"===e.type){
-                const choicesList = e.type === "tf" ? ["صح", "خطأ"] : e.choices;
-                const i=choicesList.map((lbl,idx)=>`<li onclick="handleChoiceClick(${t}, ${idx}, this)"><input type="radio" name="q${t}" id="q${t}c${idx}" value="${idx}" ${studentAnswers[t]===idx?"checked":""}><label for="q${t}c${idx}">${lbl}</label></li>`).join("");o+=`<ul class="choices">${i}</ul>`
-            }else{
-                const s=studentAnswers[t]||"";o+=`<textarea class="essay-answer" oninput="handleEssayInput(${t}, this.value)" placeholder="اكتب إجابتك هنا...">${s}</textarea>`
-            }
-            return n.innerHTML=o,n;
-        }
-        
-        function handleChoiceClick(e,t,n){
-            studentAnswers[e]=t;
-            n.querySelector("input").checked=!0;
-            const qType = examData.questions[e].type;
-            if(examData.config.layout==="one-by-one" && examData.config.learningMode && (qType==="mcq" || qType==="tf")){
-                const isCorrect = t === examData.questions[e].correctAnswer;
-                n.classList.add(isCorrect ? "correct" : "incorrect");
-                n.parentElement.querySelectorAll("li").forEach(li=>{li.style.pointerEvents="none"});
-            }
-            updateProgressBar();
-        }
 
-        function handleEssayInput(e,t){studentAnswers[e]=t.trim(),updateProgressBar()}
-        function renderSingleQuestion(e){document.getElementById("questionsContainer").appendChild(createQuestionElement(examData.questions[e],e))}
-        function updateNavigationButtons(){const e=document.getElementById("navigation-buttons");if("one-by-one"!==examData.config.layout)return void(e.style.display="none");let t="";examData.config.noGoingBack||(t='<button id="prevBtn" class="btn">السابق</button>'),e.innerHTML=`${t}<button id="nextBtn" class="btn">التالي</button>`;const n=document.getElementById("nextBtn");n.disabled=currentQuestionIndex===examData.questions.length-1,n.addEventListener("click",()=>{currentQuestionIndex<examData.questions.length-1&&(currentQuestionIndex++,renderQuestionsForStudent())}),examData.config.noGoingBack||(document.getElementById("prevBtn").disabled=0===currentQuestionIndex,document.getElementById("prevBtn").addEventListener("click",()=>{currentQuestionIndex>0&&(currentQuestionIndex--,renderQuestionsForStudent())}))}
-        function updateProgressBar(){const e=studentAnswers.filter(e=>null!==e&&""!==e).length,t=e/examData.questions.length*100,n=document.getElementById("progressBar");n.style.width=`${t}%`,n.textContent=`${Math.round(t)}%`}
-        function setupSmartFeatures(){if(examData.config.disableCheating){["contextmenu","copy","paste"].forEach(evt=>document.body.addEventListener(evt,e=>e.preventDefault()))}if(examData.config.monitorTabs){document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="hidden"&&!examFinished){tabSwitchCount++;if(examData.config.finishOnSwitch){alert("لقد خرجت من نافذة الاختبار، سيتم إنهاء الاختبار.");finishTheExam()}}})}}
-        
-        async function finishTheExam(){
-            if(examFinished) return;
-            examFinished = true;
-            clearInterval(timerInterval);
-            examArea.style.display = "none";
-            if (examData.config.githubToken && examData.config.resultsFilename) {
-                savingResultsScreen.style.display = 'block';
-                await saveResultsToGithub(); 
-                savingResultsScreen.style.display = 'none';
-            }
-            resultContainer.style.display = "block";
-            let correctMcq = 0, totalMcq = 0;
-            examData.questions.forEach((q, index) => {
-                if ("mcq" === q.type || "tf" === q.type) {
-                    totalMcq++;
-                    if (studentAnswers[index] === q.correctAnswer) correctMcq++;
-                }
-            });
-            document.getElementById("resultTitle").textContent = "تم الانتهاء من الامتحان!";
-            if(examData.config.showResults){
-                let summaryHtml = `مرحباً ${studentName}، نتيجتك في الأسئلة الآلية هي: <strong>${correctMcq} / ${totalMcq}</strong>`;
-                if (examData.questions.some(q => "essay" === q.type)) {
-                    summaryHtml += '<br><small>الأسئلة المقالية تتطلب تصحيحًا يدوياً/آلياً وستظهر نتيجتها النهائية لاحقاً.</small>';
-                }
-                if (examData.config.monitorTabs && tabSwitchCount > 0) {
-                    summaryHtml += `<br><small style="color:var(--danger-color);">تم تسجيل خروجك من الصفحة ${tabSwitchCount} مرات.</small>`;
-                }
-                document.getElementById("resultSummary").innerHTML = summaryHtml;
-            } else {
-                document.getElementById("resultSummary").textContent = "شكراً لك، تم تسليم إجاباتك بنجاح.";
-            }
-            if (examData.config.showResults && examData.config.enableReview) renderReview();
-            if (examData.config.enableCertificate && totalMcq > 0 && (correctMcq / totalMcq * 100) >= examData.config.successPercentage) {
-                renderCertificate(correctMcq, totalMcq);
-            }
-            if (examData.config.botToken && examData.config.chatId) await sendResultsToTelegram(correctMcq, totalMcq);
-        }
-    
-        function renderReview(){
-            const e=document.getElementById("reviewContainer");
-            e.innerHTML="<h3>مراجعة الإجابات:</h3>";
-            examData.questions.forEach((t,n)=>{
-                let o="";
-                if(t.type === "mcq" || t.type === "tf") {
-                    const choicesList = t.type === "tf" ? ["صح", "خطأ"] : t.choices;
-                    const userAns = choicesList[studentAnswers[n]] || "لم تتم الإجابة";
-                    const correctAns = choicesList[t.correctAnswer];
-                    const isCorrect = studentAnswers[n] === t.correctAnswer;
-                    
-                    o=`<div class="question-card" style="background:${isCorrect?"#d4edda":"#f8d7da"};"><p><strong>${t.text}</strong></p><p>إجابتك: ${userAns} ${isCorrect?"✔️":"❌"}</p>${!isCorrect?`<p style="color:var(--primary-color);">الإجابة الصحيحة: ${correctAns}</p>`:""}</div>`;
-                } else {
-                    o=`<div class="question-card" style="background: #e9ecef;"><p><strong>(سؤال مقالي) ${t.text}</strong></p><p style="font-weight:bold;">إجابتك:</p><p style="white-space: pre-wrap; background: #fff; padding:10px; border-radius:5px;">${studentAnswers[n]?studentAnswers[n].replace(/</g,"&lt;").replace(/>/g,"&gt;"):"لم تتم الإجابة"}</p></div>`;
-                }
-                e.innerHTML+=o;
-            });
-        }
+            // ب) حالة الاختبار الذي لم يبدأ (الانتظار)
+            if (startDate && now < startDate) {
+                waitingRoom.style.display = 'flex'; // إظهار شاشة الانتظار
+                document.querySelector('.container').style.display = 'none'; // إخفاء المحتوى الأصلي
+                
+                // حساب الوقت المتبقي
+                const diff = startDate - now;
+                const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-        function renderCertificate(e,t){const n=document.getElementById("certificate");n.style.display="block",document.getElementById("certName").textContent=studentName,document.getElementById("certScore").textContent=`${e} / ${t}`,document.getElementById("certDate").textContent=(new Date).toLocaleDateString("ar-EG")}
-        function startTimer(e){let t=e;const n=document.getElementById("timer");timerInterval=setInterval(()=>{let e=parseInt(t/60,10),o=parseInt(t%60,10);e=e<10?"0"+e:e,o=o<10?"0"+o:o,n.textContent=`${e}:${o}`,--t<0&&(clearInterval(timerInterval),alert("انتهى الوقت!"),finishTheExam())},1e3)}
-        
-        async function sendResultsToTelegram(e,t){
-            const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;
-            function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}
-            let a=`*📊 نتيجة اختبار جديدة*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}\n*النتيجة الآلية:* ${e} من ${t}\n*مرات الخروج:* ${tabSwitchCount}`;
-            let d="\n\n*الإجابات المقالية*",r=!1;
-            examData.questions.forEach((e,t)=>{("essay"===e.type&&(r=!0,d+=`\n\n*❓ السؤال: ${i(e.text)}*\n*📝 إجابة الطالب:*\n${i(studentAnswers[t]||"لم تتم الإجابة")}`))});
-            r&&(a+=d);
-            const c=`https://api.telegram.org/bot${n}/sendMessage`;
-            try{
-                a.length>4096&&(a=a.substring(0,4e3)+"\n\n... (تم اقتطاع الرسالة لأنها طويلة جداً)");
-                const l=await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});
-            }catch(p){console.error("Fetch error or issue sending to Telegram:",p)}
-        }
-
-        async function sendStartNotificationToTelegram(){
-            const{botToken:n,chatId:o,title:s}=examData.config;if(!n||!o)return;
-            function i(e){return"string"!=typeof e?"":e.replace(/([_*[\]()~>#+\-=|{}.!])/g,"\\$1")}
-            const a=`*🔔 بدء اختبار جديد*\n\n*الاختبار:* ${i(s)}\n*الطالب:* ${i(studentName)}`,c=`https://api.telegram.org/bot${n}/sendMessage`;
-            try{await fetch(c,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({chat_id:o,text:a,parse_mode:"MarkdownV2"})});}catch(p){}
-        }
-        
-        async function saveResultsToGithub() {
-            const token = examData.config.githubToken;
-            const filename = examData.config.resultsFilename;
-            if (!token || !filename) { return; } 
-            const url = `https://api.github.com/repos/${GITHUB_OWNER}/${GITHUB_REPO}/contents/exam/${filename}`;
-            let correctMcq = 0, totalMcq = 0;
-            examData.questions.forEach((q, index) => {
-                if ("mcq" === q.type || "tf" === q.type) {
-                    totalMcq++;
-                    if (studentAnswers[index] === q.correctAnswer) correctMcq++;
+                // تحديث العدادات
+                document.getElementById('cd-days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('cd-hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('cd-minutes').innerText = minutes.toString().padStart(2, '0');
+                document.getElementById('cd-seconds').innerText = seconds.toString().padStart(2, '0');
+            } 
+            // ج) حالة الاختبار المفتوح (حان الوقت!)
+            else {
+                // إذا كنا في شاشة الانتظار، نخفيها ونظهر الاختبار
+                if (waitingRoom.style.display !== 'none') {
+                    waitingRoom.style.opacity = '0';
+                    setTimeout(() => {
+                        waitingRoom.style.display = 'none';
+                        document.querySelector('.container').style.display = 'block';
+                        // تشغيل صوت تنبيه بسيط (اختياري)
+                        // new Audio('notification.mp3').play().catch(e=>{});
+                    }, 500);
                 }
-            });
-            const resultData = {
-                studentName: studentName,
-                submissionDate: new Date().toISOString(),
-                mcqScore: { correct: correctMcq, total: totalMcq },
-                tabSwitchCount: tabSwitchCount,
-                examTitle: examData.config.title,
-                answers: examData.questions.map((q, index) => {
-                    const studentAnswerRaw = studentAnswers[index];
-                    let studentAnswerText = studentAnswerRaw;
-                    let isCorrect = null;
-                    let correctAnswerText = null;
-                    if (q.type === 'mcq' || q.type === 'tf') {
-                        const choicesList = q.type === "tf" ? ["صح", "خطأ"] : q.choices;
-                        isCorrect = (studentAnswerRaw === q.correctAnswer);
-                        studentAnswerText = (studentAnswerRaw !== null) ? choicesList[studentAnswerRaw] : "لم تتم الإجابة";
-                        if (!isCorrect) correctAnswerText = choicesList[q.correctAnswer];
-                    } else if (q.type === 'essay') {
-                        studentAnswerText = studentAnswerRaw;
-                        isCorrect = null;
-                        correctAnswerText = null;
-                        return { type: 'essay', question: q.text, answer: studentAnswerText, isGraded: false, maxScore: q.maxScore || 0 };
-                    }
-                    return { type: q.type, question: q.text, answer: studentAnswerText, isCorrect: isCorrect, correctAnswer: correctAnswerText };
-                })
-            };
-            try {
-                let currentContent = [];
-                let sha;
-                try {
-                    const res = await fetch(url, { headers: { 'Authorization': `token ${token}` } });
-                    if (res.ok) {
-                        const data = await res.json();
-                        sha = data.sha;
-                        currentContent = JSON.parse(decodeURIComponent(escape(atob(data.content))));
-                    }
-                } catch (fetchError) { }
-                currentContent.push(resultData);
-                const updatedContent = btoa(unescape(encodeURIComponent(JSON.stringify(currentContent, null, 2))));
-                const response = await fetch(url, {
-                    method: 'PUT',
-                    headers: { 'Authorization': `token ${token}`, 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ message: `إضافة نتيجة الطالب: ${studentName}`, content: updatedContent, sha: sha })
-                });
-            } catch (error) { document.getElementById("resultSummary").innerHTML += '<br><small style="color:red;">حدث خطأ أثناء محاولة حفظ نتيجتك.</small>'; }
-        }
-    </script>
-    </body>
-    </html>
+            }
+        }, 1000); // تحديث كل ثانية
+    })();
+</script>
+</body>
+</html>
     
