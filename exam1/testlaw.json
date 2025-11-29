@@ -9436,5 +9436,22 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "محمد عبدالمعز اليماني",
+    "submissionDate": "2025-11-29T17:50:29.082Z",
+    "score": {
+      "correct": 9,
+      "total": 15
+    },
+    "wrongAnswers": [
+      5,
+      7,
+      8,
+      9,
+      12,
+      14
+    ],
+    "tabSwitchCount": 12
   }
 ]
