@@ -10342,5 +10342,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "عيون نتعي مناع محمد",
+    "submissionDate": "2025-11-30T09:33:26.752Z",
+    "mcqScore": {
+      "correct": 11,
+      "total": 11
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كل العلامات التالية فرعية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السكون"
+      },
+      {
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{كِلْتَا الْجَنَّتَيْنِ آتَتْ أُكُلَهَا}. </span>الإعراب الصحيح لكلمة (كلتا):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبتدأ مرفوع وعلامة رفعه الضمة المقدرة"
+      },
+      {
+        "question": "\n              فإذا رحمت فأنت أمٌ أو <span style=\"text-decoration-line: underline;\">أب</span> ... هذان في الدنيا هما الرحماء.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; الكلمة التي تحتها خط:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعرب بعلامة أصلية"
+      },
+      {
+        "question": "\n              الآية التي تشتمل على ملحق بجمع المؤنث السالم هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{فَإِذَا أَفَضْتُم مِّنْ عَرَفَاتٍ فَاذْكُرُواْ اللَّهَ}"
+      },
+      {
+        "question": "الاسم الذي يصح جمعه جمع مذكر سالماً هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صابر"
+      },
+      {
+        "question": "الآية التي اشتملت على ملحق بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{قَالُوا إِنْ هَذَانِ لَسَاحِرَانِ}"
+      },
+      {
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{وَشَرَوْهُ بِثَمَنٍ بَخْسٍ دَرَاهِمَ مَعْدُودَةٍ }.</span>&nbsp;كلمة (دراهم) ممنوع من الصرف بسبب العلمية والتأنيث.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{وَأَنزَلْنَا مِنَ السَّمَاءِ مَاءً طَهُوراً}. كلمة (ماء) ممنوعة من الصرف كونها منتهية بألف التأنيث الممدودة.&nbsp;</span>",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "توافد المهنئون على أحمد لتهنئته بالفوز بالجائزة. إعراب كلمة (أحمد) اسم مجرور وعلامة جره الكسرة.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قال تعالى: {وَإِذَا حُيِّيْتُم بِتَحِيَّةٍ فَحَيُّواْ بِأَحْسَنَ مِنْهَا}. كلمة (أحسن) ممنوعة من الصرف للوصفية ووزن الفعل.",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "قال تعالى: {يَعْمَلُونَ لَهُ مَا يَشَاءُ مِن مَّحَارِيبَ وَتَمَاثِيل}. اشتملت الآية على ممنوع من الصرف لعلة واحدة وهي صيغة منتهى الجموع.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
