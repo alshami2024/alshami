@@ -10012,5 +10012,122 @@
     },
     "wrongAnswers": [],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "علاء ممدوح",
+    "submissionDate": "2025-11-30T07:08:38.338Z",
+    "mcqScore": {
+      "correct": 15,
+      "total": 15
+    },
+    "tabSwitchCount": 0,
+    "examTitle": "تدريبات السابع مطور رقم (3) ",
+    "answers": [
+      {
+        "type": "mcq",
+        "question": "كل ما يأتي من أدوات الشرط أسماء عدا:",
+        "answer": "إذما",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَمَن يَفْعَلْ ذَلِكَ عُدْوَاناً وَظُلْماً فَسَوْفَ نُصْلِيهِ نَاراً<span style=\"font-family: ATRADBDO, sans-serif;\">}</span> . حكم اقتران جواب الشرط بالفاء في الآية السابقة.",
+        "answer": "الوجوب",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "كيفما تعامل الناس يعاملوك. إعراب اسم الشرط (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">كيفما</span>):",
+        "answer": "اسم شرط مبني في محل نصب حال",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "لا تهمل الرياضة تمرض. الضبط الصحيح لكلمة (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">تمرض</span>):",
+        "answer": "تمرضُ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "أي بلد تسافر أسافر معك. إعراب (أي): اسم شرط مبني في محل نصب ظرف مكان.&nbsp;",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "كل أسماء الشرط مبنية عدا:",
+        "answer": "أي",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "الجملة التي اشتملت على فعل مضارع مجزوم بجواب الطلب، هي:",
+        "answer": "هلاّ أطعت والديك تفلح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "مهما&nbsp; تطع والديك يرض الله عنك. إعراب اسم الشرط (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">مهما</span>):",
+        "answer": "اسم شرط مبني في محل رفع مبتدأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{</span>أَيْنَمَا تَكُونُواْ يُدْرِكُّمُ الْمَوْتُ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span> . إعراب اسم الشرط (<span style=\"font-family: &quot;mohammad bold art 1&quot;, sans-serif;\">أينما</span>):",
+        "answer": "اسم شرط مبني في محل نصب ظرف مكان",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "الآية التي اشتملت على اسم شرط معرب هي:",
+        "answer": "{أَيَّمَا الْأَجَلَيْنِ قَضَيْتُ فَلَا عُدْوَانَ عَلَيَّ}",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "لولا تزورنا نكرمك. الفعل (نكرم) مجزوم بجواب الطلب.&nbsp;",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "لا تقترب من النار تحرقك. الفعل (تحرق) مجزوم بجواب الطلب.&nbsp;",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{</span>مَن يَهْدِ اللَّهُ فَهُوَ الْمُهْتَدِي<span style=\"font-family: ATRADBDO, sans-serif;\">}</span> . سبب اقتران جواب الشرط بالفاء في الآية السابقة:",
+        "answer": "جملة الشرط اسمية",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "من يهمل دروسه فلن يتفوق. يجب اقتران جواب الشرط بالفاء في الجملة السابقة.&nbsp;",
+        "answer": "صحيح",
+        "isCorrect": true,
+        "correctAnswer": null
+      },
+      {
+        "type": "mcq",
+        "question": "(إن كنت تحب الخير إليه افعله). الجملةالسابقة صحيحة.&nbsp;",
+        "answer": "خطأ",
+        "isCorrect": true,
+        "correctAnswer": null
+      }
+    ]
   }
 ]
