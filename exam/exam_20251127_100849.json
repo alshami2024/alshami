@@ -11,5 +11,105 @@
       9
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "نبيل عبدالله علي الشامي",
+    "submissionDate": "2025-12-03T12:59:32.744Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الحديث الموضوع هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما كان فيه علة خفية",
+        "correctAnswer": "ما اختُلِق ونُسِبَ زوراً إلى النبي صلى الله عليه وسلم"
+      },
+      {
+        "question": "ما هي أعلى درجات الحديث من حيث القبول والصحة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصحيح"
+      },
+      {
+        "question": "ما هو التعريف الصحيح للحديث المتواتر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما رواه جمع كثير يستحيل تواطؤهم على الكذب"
+      },
+      {
+        "question": "أي من الكتب التالية يُعد من أهم وأشهر مؤلفات علم مصطلح الحديث؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأربعون النووية",
+        "correctAnswer": "مقدمة ابن الصلاح"
+      },
+      {
+        "question": "ما هو التعريف الشامل للحديث الشريف في الاصطلاح النبوي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قول النبي صلى الله عليه وسلم",
+        "correctAnswer": "كل ما سبق"
+      },
+      {
+        "question": "في مصطلح الحديث، ماذا يُقصد بـ 'الإسناد'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سلسلة الرواة الموصلة إلى المتن"
+      },
+      {
+        "question": "في علم مصطلح الحديث، ما معنى وصف الراوي بأنه 'ثقة'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه عدل ضابط"
+      },
+      {
+        "question": "أي من الشروط التالية ليس من شروط الحديث الصحيح؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اتصال السند",
+        "correctAnswer": "الشذوذ"
+      },
+      {
+        "question": "ما المصطلح الذي يُطلق على الحديث الذي يرويه التابعي عن النبي صلى الله عليه وسلم مباشرة دون ذكر الصحابي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرسل"
+      },
+      {
+        "question": "ماذا يُعبر عن الحديث 'الضعيف'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما رواه راوٍ واحد",
+        "correctAnswer": "ما فقد شرطًا أو أكثر من شروط القبول"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
