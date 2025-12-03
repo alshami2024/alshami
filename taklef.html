@@ -121,14 +121,14 @@
 
         <div class="form-group">
             <h3>التكليف الأول:</h3>
-            <p>أي أساليب وضع الدساتير يحقق أعلى درجات الشرعية الديمقراطية؟ ولماذا؟</p>
+            <p>ما الفرق بين النصوص الدستورية ذاتية التنفيذ وغير ذاتية التنفيذ؟ أعط أمثلة من دستور اليمن أو أي دستور عربي.</p>
             <textarea id="answer1" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file1">
         </div>
 
         <div class="form-group">
             <h3>التكليف الثاني:</h3>
-            <p>ما الفرق الجوهري بين أسلوب المنحة وأسلوب العقد في وضع الدساتير؟</p>
+            <p>هل الإصدار من رئيس الدولة شرط أساسي لنفاذ الدستور أم مجرد إجراء شكلي؟ ناقش الآراء الفقهية مع الترجيح.</p>
             <textarea id="answer2" placeholder="أدخل إجابتك هنا..."></textarea>
             <input type="file" accept="image/*" id="file2">
         </div>
@@ -151,8 +151,8 @@
 
 <script>
     const SECRET_KEY = 'my-super-secret-key-12345';
-    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX19l52uotvbunMCeGtzCiFEsTOOWKWLRKHRlsZB/Lhn+hM66rqNJBgewob+NcdJt4fAAg3bLx6Q7Zw==';
-    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX19U7FvR3ASX8PG+2TmFxMSeJWwaZKRnfJM=';
+    const ENCRYPTED_BOT_TOKEN = 'U2FsdGVkX19+mAd7eLj2Fq0BHBQS1lAnRY13bdfsSmmKsTQf2bFQNX/picNTd0BB6/sta9BY480w6RDDAYhylQ==';
+    const ENCRYPTED_CHAT_ID = 'U2FsdGVkX1+vyCc5eMFYiFi57sAXhsLhiTdW7Kk0qvY=';
 
     const token = CryptoJS.AES.decrypt(ENCRYPTED_BOT_TOKEN, SECRET_KEY).toString(CryptoJS.enc.Utf8);
     const chatId = CryptoJS.AES.decrypt(ENCRYPTED_CHAT_ID, SECRET_KEY).toString(CryptoJS.enc.Utf8);
