@@ -11324,5 +11324,238 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "studentName": "أحلام",
+    "submissionDate": "2025-12-04T21:08:11.943Z",
+    "mcqScore": {
+      "correct": 25,
+      "total": 27
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n              عدد الكبائر التي ذكرها وجزم بها الإمام الذهبي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "76 كبيرة"
+      },
+      {
+        "question": "\n              المراد بـ (طينة الخبال) في الحديث....&nbsp; ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عصارة أهل جهنم"
+      },
+      {
+        "question": "\n              من فاتته صلاة............... حبط عمله\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العصر"
+      },
+      {
+        "question": "\n              حكم الكذب على النبي صلى الله عليه وسلم في تحليل حرام أو تحريم حلال: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كفر"
+      },
+      {
+        "question": "\n              \n              خرج شخص ليلا يشتري خمرا، وفي الطريق تذكر الله تعالى، وخاف من عقابه ورجع إلى بيته من دون شرائها، فحكمه عند الله:\n                 ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تكتب عليه حسنة"
+      },
+      {
+        "question": "\n              عقوبة الزنا بذات محرم:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القتل"
+      },
+      {
+        "question": "\n              المراد بقول النبي صلى الله عليه وسلم في الحديث (كفاراً)&nbsp;\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكفر الأصغر غير المخرج من الملة"
+      },
+      {
+        "question": "\n              قال ابن عباس رضي الله عنه: لما نزل تحريم الخمر مشى الصحابة بعضهم إلى بعض، وقالوا: حرمت الخمر، وجُعلت عِدْلاً ..........&nbsp;\n                ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للقتل",
+        "correctAnswer": "للشرك"
+      },
+      {
+        "question": "\n              حكم تعلُّم السحر:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محرم"
+      },
+      {
+        "question": "\n              حكم من أفطر شهر رمضان عامدا مستحلاً: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ردة عن الإسلام"
+      },
+      {
+        "question": "\n              اعتدى شخص على آخر بحديدة فقتله ولم يكن يقصد قتله، يسمى:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قتل شبه عمد"
+      },
+      {
+        "question": "\n              الذين يرون بأنه لا يضر مع الإيمان معصية هم:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرجئة"
+      },
+      {
+        "question": "\n              حكم التولي يوم الزحف عند لقاء الكفار: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كبيرة من الكبائر"
+      },
+      {
+        "question": "\n              نوع من السحر، وهو تحبيب المرأة إلى الزوج: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التِّوَلَة"
+      },
+      {
+        "question": "\n              \n              (بطر الحق وغمط الناس) يُعرّف به:\n                 ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكِبْر"
+      },
+      {
+        "question": "\n              حكم من أفطر يوما من رمضان بلا عذر وغير مستحل الفطر: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التوبة والقضاء"
+      },
+      {
+        "question": "\n              قال بعض السلف: أول ذنب عُصي الله به هو............&nbsp;\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكِبْر"
+      },
+      {
+        "question": "\n              الذين يرون أن مرتكب الكبيرة مؤمن بإيمانه، فاسق بمعصيته، وأمره في الآخرة تحت مشيئة الله تعالى إن شاء عذبه وإن شاء غفر له، هم:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أهل السنة والجماعة"
+      },
+      {
+        "question": "\n              المعصية التي تسمى يُطلق عليها (أم الخبائث) هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخمر"
+      },
+      {
+        "question": "\n              حد الزنا لغير المحصن:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجلد مائة جلدة"
+      },
+      {
+        "question": "\n              تارك الصلاة عمدًا مع الإقرار بوجوبها يُعتبر فاسقًا عند جمهور أهل العلم، وليس بكافر يخرج من الملة.\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "\n              فعل المحظورات أعظم عند الله من ترك المأمورات.&nbsp; ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n              قتل النفس هو أول كبيرة ذكرها المؤلف في كتابه الكبائر.&nbsp; ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "\n              يعذر بالجهل في ارتكاب الكبائر من كان حديث عهد بإسلام.&nbsp; ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "\n              السحر الذي فيه استعانة بالشياطين كبيرة وليس كفرا.&nbsp; ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n              كل ما جاء فيه حد في الدنيا أو وعيد في الآخرة فهو كبيرة.&nbsp;\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "\n              الشرك الذي لا يغفره الله تعالى على مذهب جمهور العلماء هو الشرك الأكبر فقط.&nbsp; ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
