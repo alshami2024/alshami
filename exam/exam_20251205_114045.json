@@ -1,0 +1,58 @@
+[
+  {
+    "examTitle": "نظرية الكشف العكسي",
+    "studentName": "فوزي",
+    "submissionDate": "2025-12-05T08:45:52.309Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الشرط الضروري لإدراك الحقيقة، والسبيل المنهجي لكشف الحق وفقًا للمقدمة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوعي بالنقيض ونفي الباطل."
+      },
+      {
+        "question": "بأي منهج فلسفي عالمي يتقاطع التراث الإسلامي في هذا السياق، مما يجعله مساهمًا أصيلًا؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنهج النقدي-السلبي (كالسقراطية والكانطية)."
+      },
+      {
+        "question": "ماذا يتطلب التمييز بين الهدى والضلالة في منهج الإمام زيد بن علي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قدرة تحليلية مقارنة."
+      },
+      {
+        "question": "أي الأئمة طور المنهج المعرفي في سياق القراءة النقدية للنصوص الدينية، وتحدث عن \"إبستمولوجيا التلاوة\"؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإمام زيد بن علي."
+      },
+      {
+        "question": "ما هي القاعدة الإبستمولوجية الصريحة التي يفيدها نص الإمام علي عليه السلام؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعرفة التمايزية شرط للمعرفة الإيجابية."
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
