@@ -110,5 +110,61 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "نظرية الكشف العكسي",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-05T10:33:53.668Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "وفقًا للإمام زيد بن علي، ما هي \"التلاوة الحقيقية\"؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فهم معرفي-نقدي يميز بين الأصيل والدخيل."
+      },
+      {
+        "question": "ما هو الادعاء الرئيسي الذي يقدمه النص بخصوص نظرية الكشف العكسي للحق في التراث الفلسفي الإسلامي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن جذورها تمتد إلى منظومة فكرية أصيلة في خطاب أئمة أهل البيت."
+      },
+      {
+        "question": "كيف يرى كارل بوبر (Popper) تقدم العلم، وما علاقة ذلك بالنصوص التراثية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلم يتقدم بالتفنيد، والنصوص ترى أن المعرفة تتقدم بنفي الخطأ."
+      },
+      {
+        "question": "ما هو الشرط الضروري لإدراك الحقيقة، والسبيل المنهجي لكشف الحق وفقًا للمقدمة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوعي بالنقيض ونفي الباطل."
+      },
+      {
+        "question": "ما هو المبدأ الإبستمولوجي المشترك الذي تشترك فيه النصوص الثلاثة للأئمة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعرفة التقابلية شرط ضروري للمعرفة الصحيحة."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
