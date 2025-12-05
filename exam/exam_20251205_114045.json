@@ -54,5 +54,61 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "نظرية الكشف العكسي",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-05T08:46:53.883Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الشرط لإدراك الأصل الصحيح، وفقًا للبعد المعياري-المعرفي في هرمنيوطيقا الإمام زيد؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "معرفة البدعة والفرية والتحريف."
+      },
+      {
+        "question": "مع أي جدلية فلسفية عالمية تشبه بنية الإمام القاسم بن إبراهيم الجدلية، مع الإشارة إلى سبقها الزمني؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجدلية الهيغلية."
+      },
+      {
+        "question": "ما هو الكتاب الذي ورد فيه نص الإمام علي بن أبي طالب التأسيسي المذكور في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نهج البلاغة."
+      },
+      {
+        "question": "ما هو المبدأ الإبستمولوجي المشترك الذي تشترك فيه النصوص الثلاثة للأئمة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعرفة التقابلية شرط ضروري للمعرفة الصحيحة."
+      },
+      {
+        "question": "تتوافق فلسفة المخالفة مع أي نظرية معاصرة في الإبستمولوجيا؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نظرية التمايز."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
