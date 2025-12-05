@@ -281,5 +281,61 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "نظرية الكشف العكسي",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-05T11:02:45.624Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تتوافق فلسفة المخالفة مع أي نظرية معاصرة في الإبستمولوجيا؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نظرية التمايز."
+      },
+      {
+        "question": "ما هي القاعدة الإبستمولوجية الصريحة التي يفيدها نص الإمام علي عليه السلام؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعرفة التمايزية شرط للمعرفة الإيجابية."
+      },
+      {
+        "question": "وفقًا للإمام زيد بن علي، ما هي \"التلاوة الحقيقية\"؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فهم معرفي-نقدي يميز بين الأصيل والدخيل."
+      },
+      {
+        "question": "ما هو التشابه بين اللاهوت السلبي (Apophatic Theology) والنهج الإبستمولوجي في النصوص التراثية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلاهما ينفي الباطل لإثبات الحق أو ينفي الصفات غير اللائقة."
+      },
+      {
+        "question": "مع أي منهج فلسفي حديث يتطابق \"المنهج الفينومينولوجي\" الذي يدعو إليه النص في سياق إضافات الإمام زيد المعرفية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنهج الفينومينولوجي (Phenomenological Method)."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
