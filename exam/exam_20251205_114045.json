@@ -337,5 +337,61 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "نظرية الكشف العكسي",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-05T18:13:02.055Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "وفقًا للإمام زيد بن علي، ما هي \"التلاوة الحقيقية\"؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فهم معرفي-نقدي يميز بين الأصيل والدخيل."
+      },
+      {
+        "question": "يُعدّ قول الإمام علي بن أبي طالب عليه السلام: \"واعلموا أنكم لن تعرفوا الرشد حتى تعرفوا الذي تركه...\" نصًا تأسيسيًا في أي مجال؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإبستمولوجيا الإسلامية."
+      },
+      {
+        "question": "ماذا تتطلب \"هرمنيوطيقا نقدية\" الإمام زيد بن علي لفهم النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عملية ثلاثية الأبعاد تشمل أبعادًا تاريخية ومقارنة ومعيارية."
+      },
+      {
+        "question": "بأي منهج فلسفي عالمي يتقاطع التراث الإسلامي في هذا السياق، مما يجعله مساهمًا أصيلًا؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنهج النقدي-السلبي (كالسقراطية والكانطية)."
+      },
+      {
+        "question": "ما هو الادعاء الرئيسي الذي يقدمه النص بخصوص نظرية الكشف العكسي للحق في التراث الفلسفي الإسلامي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن جذورها تمتد إلى منظومة فكرية أصيلة في خطاب أئمة أهل البيت."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
