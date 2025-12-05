@@ -166,5 +166,64 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "نظرية الكشف العكسي",
+    "studentName": "هاجر عقيل عبده مسعد عازب",
+    "submissionDate": "2025-12-05T10:34:17.387Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هي الخلاصة النهائية التي يقدمها النص حول دور التراث الإسلامي في البناء الإبستمولوجي العالمي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يركز على الجانب اللاهوتي فقط.",
+        "correctAnswer": "أنه مساهم أصيل لا يقل أهمية عن الفلسفات الأخرى."
+      },
+      {
+        "question": "ما هو الكتاب الذي ورد فيه نص الإمام علي بن أبي طالب التأسيسي المذكور في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخصال.",
+        "correctAnswer": "نهج البلاغة."
+      },
+      {
+        "question": "كيف يرى كارل بوبر (Popper) تقدم العلم، وما علاقة ذلك بالنصوص التراثية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلم يتقدم باليقين المطلق، والنصوص تنفي ذلك.",
+        "correctAnswer": "العلم يتقدم بالتفنيد، والنصوص ترى أن المعرفة تتقدم بنفي الخطأ."
+      },
+      {
+        "question": "ما الذي تُظهره أداة الشرط \"لن... حتى\" في نص الإمام علي من الناحية الإبستمولوجية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أسبقية منطقية لمعرفة الباطل على معرفة الحق."
+      },
+      {
+        "question": "ما هي العناصر الثلاثة للجدلية المعرفية التي يؤسس لها نص الإمام القاسم بن إبراهيم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأطروحة، النقيض، التركيب."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
