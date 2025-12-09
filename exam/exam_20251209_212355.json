@@ -1,0 +1,104 @@
+[
+  {
+    "examTitle": "علم وظائف الأعضاء",
+    "studentName": "عدوله",
+    "submissionDate": "2025-12-09T18:35:36.181Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي بنية دماغية تعمل كمحطة ترحيل رئيسية لمعظم المعلومات الحسية قبل وصولها إلى القشرة المخية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المهاد (Thalamus)"
+      },
+      {
+        "question": "ما هو الجزء من الخلية العصبية الذي يستقبل الإشارات عادةً من الخلايا العصبية الأخرى؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التغصنات الشجرية (Dendrites)"
+      },
+      {
+        "question": "أثناء مرحلة إزالة الاستقطاب في جهد الفعل، أي أيون يتدفق بشكل أساسي إلى داخل الخلية العصبية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "البوتاسيوم (Potassium - K+)",
+        "correctAnswer": "الصوديوم (Sodium - Na+)"
+      },
+      {
+        "question": "ما هو الناقل العصبي المثبط الرئيسي في الدماغ؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أستيل كولين (Acetylcholine)",
+        "correctAnswer": "جاما أمينو بيوتيريك أسيد (GABA)"
+      },
+      {
+        "question": "ما هي الوظيفة الأساسية للمخيخ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تنسيق الحركة والتوازن"
+      },
+      {
+        "question": "أي نوع من الخلايا الدبقية مسؤول عن إنتاج الميالين في الجهاز العصبي المركزي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخلايا النجمية (Astrocytes)",
+        "correctAnswer": "الخلايا قليلة التغصنات (Oligodendrocytes)"
+      },
+      {
+        "question": "أي قسم من الجهاز العصبي الذاتي مسؤول عن استجابة 'الكر والفر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجهاز العصبي الودي (Sympathetic nervous system)"
+      },
+      {
+        "question": "ماذا يحدث مباشرة بعد ارتباط الناقل العصبي بمستقبل على الغشاء بعد التشابكي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتم إطلاق جهد الفعل من الخلية قبل التشابكية",
+        "correctAnswer": "تفتح القنوات الأيونية على الغشاء بعد التشابكي"
+      },
+      {
+        "question": "أي جزء من جذع الدماغ ينظم الوظائف الحيوية مثل التنفس ومعدل ضربات القلب؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المخيخ (Cerebellum)",
+        "correctAnswer": "النخاع المستطيل (Medulla Oblongata)"
+      },
+      {
+        "question": "ما هو الدور الأساسي لغمد الميالين حول المحور العصبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توفير الدعم الهيكلي للخلية العصبية",
+        "correctAnswer": "تسريع نقل الإشارات العصبية"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
