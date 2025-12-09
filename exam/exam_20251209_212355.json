@@ -295,5 +295,38 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "علم وظائف الأعضاء",
+    "studentName": "عدوله",
+    "submissionDate": "2025-12-09T18:39:50.967Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 2
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الناقل العصبي المثبط الرئيسي في الدماغ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جاما أمينو بيوتيريك أسيد (GABA)"
+      },
+      {
+        "question": "أي جزء من جذع الدماغ ينظم الوظائف الحيوية مثل التنفس ومعدل ضربات القلب؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القشرة المخية (Cerebral Cortex)",
+        "correctAnswer": "النخاع المستطيل (Medulla Oblongata)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
