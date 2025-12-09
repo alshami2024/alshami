@@ -100,5 +100,73 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "علم وظائف الأعضاء",
+    "studentName": "عدوله",
+    "submissionDate": "2025-12-09T18:37:20.000Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 6
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أثناء مرحلة إزالة الاستقطاب في جهد الفعل، أي أيون يتدفق بشكل أساسي إلى داخل الخلية العصبية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصوديوم (Sodium - Na+)"
+      },
+      {
+        "question": "ما هو الناقل العصبي المثبط الرئيسي في الدماغ؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أستيل كولين (Acetylcholine)",
+        "correctAnswer": "جاما أمينو بيوتيريك أسيد (GABA)"
+      },
+      {
+        "question": "أي نوع من الخلايا الدبقية مسؤول عن إنتاج الميالين في الجهاز العصبي المركزي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخلايا الدبقية الصغيرة (Microglia)",
+        "correctAnswer": "الخلايا قليلة التغصنات (Oligodendrocytes)"
+      },
+      {
+        "question": "ماذا يحدث مباشرة بعد ارتباط الناقل العصبي بمستقبل على الغشاء بعد التشابكي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتم إطلاق جهد الفعل من الخلية قبل التشابكية",
+        "correctAnswer": "تفتح القنوات الأيونية على الغشاء بعد التشابكي"
+      },
+      {
+        "question": "أي جزء من جذع الدماغ ينظم الوظائف الحيوية مثل التنفس ومعدل ضربات القلب؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المهاد (Thalamus)",
+        "correctAnswer": "النخاع المستطيل (Medulla Oblongata)"
+      },
+      {
+        "question": "ما هو الدور الأساسي لغمد الميالين حول المحور العصبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تسريع نقل الإشارات العصبية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
