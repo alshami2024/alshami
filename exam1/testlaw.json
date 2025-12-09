@@ -11773,5 +11773,221 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار النهائي - لكتاب أصول الإيمان",
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-12-09T17:11:21.358Z",
+    "mcqScore": {
+      "correct": 25,
+      "total": 25
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n              المقصود بهذه الآية: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>عَلَّمَهُ شَدِيدُ الْقُوَى (5) ذُو مِرَّةٍ فَاسْتَوَى<span style=\"font-family: ATRADBDO, sans-serif;\">}</span> [النجم: 5-6]، هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جبريل عليه السلام"
+      },
+      {
+        "question": "المقصود بهذه الآية:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الملائكة"
+      },
+      {
+        "question": "\n              قال الوليد بن عبادة بن الصامت: دَخَلتُ على عُبادةَ، وهو مَريضٌ أتخايَلُ فيه المَوتَ، فقُلْتُ: يا أبتاه، أَوصِني واجتهِدْ لي، فقال: أجلِسوني، فلمَّا أجلَسوه قال: يا بُنَيَّ، إنَّكَ لنْ تَطعَمَ طَعمَ الإيمانِ، ولنْ تَبلُغَ حَقَّ حَقيقةِ العِلمِ باللهِ حتى........&nbsp;\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تؤمن بالقدر خيره وشره"
+      },
+      {
+        "question": "مؤلف كتاب أصول الإيمان:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإمام محمد بن عبدالوهاب"
+      },
+      {
+        "question": "عدد نفخات الصور على الصحيح:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نفختان"
+      },
+      {
+        "question": "\n              كتابة الملك في مراحل تكون الجنين: أجله، وعمله ورزقه وشقي أو سعيد. تسمى هذه الكتابة:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكتابة العمرية"
+      },
+      {
+        "question": "\n              تفسير قوله تعالى: (رقيب عتيد) في الآية التالية:\n                ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مراقب لأعمال الإنسان، حاضر في جميع أحواله"
+      },
+      {
+        "question": "رأى النبي صلى الله عليه وسلم جبريل عليه السلام على صورته الحقيقية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مرتين: واحدة في الأرض والأخرى في السماء"
+      },
+      {
+        "question": "المراد بالخافقين في الحديث التالي:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما بين المشرق والمغرب"
+      },
+      {
+        "question": "الملَك الموكل بالقطر والنبات هو:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ميكال عليه السلام"
+      },
+      {
+        "question": "الملَك الذي لم يضحك مذ خلقت النار هو:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ميكال عليه السلام"
+      },
+      {
+        "question": "كفر الكافر يدخل تحت:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإرادة الكونية"
+      },
+      {
+        "question": "الأصل فيما سكت عنه الشرع أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مباح"
+      },
+      {
+        "question": "أكمل الفراغ في نص الحديث التالي:قال النبي صلى الله عليه وسلم: (يتعاقبون فيكم ملائكةٌ باللَّيلِ وملائكةٌ بالنَّهارِ ويجتمعون في .......................، ثمَّ يعرُجُ الَّذين باتوا فيكم فيسألُهم وهو أعلمُ بهم : كيف تركتم عبادي؟ فيقولون تركناهم وهم يُصلُّون وأتيناهم وهم يُصلُّون)&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صلاة الفجر وصلاة العصر"
+      },
+      {
+        "question": "اسم خازن النار:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مالك عليه السلام"
+      },
+      {
+        "question": "مراتب القدر عند أهل السنة والجماعة:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أربع"
+      },
+      {
+        "question": "كل المسائل التالية من أركان الإيمان عدا:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإيمان بوجوب الصلاة"
+      },
+      {
+        "question": "\n              تتضمن الآية الكريمة التالية من أقدار الله تعالى: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التقدير السنوي"
+      },
+      {
+        "question": "ما لا يحتاج إلى تفسير من النصوص لوضوحه يسمى:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المُحكم"
+      },
+      {
+        "question": "يجوز وصف الأيام التي يصاب فيها المرء بسوء بأنها أيام نحس وأيام سوء.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "الدهر ليس من أسماء الله تعالى حسب ما اختاره الإمام ابن حزم.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "أطفال المسلمين الذين يموتون في هذه المرحلة في الجنة.&nbsp;\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "من المواطن التي تفارق الملائكة بني آدم عند الوضوء.&nbsp;\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قال تعالى: {لَهُ مُعَقِّبَاتٌ مِّن بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِ يَحْفَظُونَهُ مِنْ أَمْرِ اللَّهِ} المراد بالآية: ملائكة يحفظونه من بين يديه ومن خلفه، فإذا جاء أمر الله خلوا عنه.&nbsp;\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "القدر السابق لا يمنع العمل ولا يوجب الاتكال عليه، بل يوجب الجد والاجتهاد.&nbsp;\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
