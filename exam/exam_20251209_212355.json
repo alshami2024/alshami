@@ -328,5 +328,29 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "علم وظائف الأعضاء",
+    "studentName": "عدوله",
+    "submissionDate": "2025-12-09T18:40:01.734Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 1
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي جزء من جذع الدماغ ينظم الوظائف الحيوية مثل التنفس ومعدل ضربات القلب؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النخاع المستطيل (Medulla Oblongata)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
