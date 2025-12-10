@@ -1,0 +1,909 @@
+[
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-10T18:42:42.794Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 99
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "القواعد التي تطبق مباشرة على العلاقة القانونية وتحدد الحقوق والالتزامات دون إحالة لقانون آخر تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "القواعد المباشرة"
+      },
+      {
+        "question": "الإحالة البسيطة تعني أن القانون الأجنبي يعيد الاختصاص إلى قانون القاضي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ضابط الجنسية يعتبر أكثر تغيراً وأقل استقراراً من ضابط الموطن.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "جزاء الغش نحو القانون هو عدم الاعتداد بالتغيير الاحتيالي وتطبيق القانون الأصلي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تخضع المسؤولية التقصيرية (الفعل الضار) غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "مكان وقوع الفعل الضار"
+      },
+      {
+        "question": "ضابط الإرادة (سلطان الإرادة) هو المعيار الأساسي لتحديد القانون المطبق في مجال:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الالتزامات التعاقدية (العقود الدولية)"
+      },
+      {
+        "question": "الفقه القانوني يُعد من المصادر الرسمية الأساسية للقانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "نظرية التكييف في ضوء القانون المقارن تهدف إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الوصول لتكييف محايد ومشترك بين الأنظمة"
+      },
+      {
+        "question": "القاعدة العامة في الحقوق العينية العقارية هي خضوعها لقانون موقع العقار.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "التنازع المتغير يحدث فقط عند تغير القانون الداخلي للدولة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أي مما يلي يُعد وظيفة من وظائف القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تحديد القانون الواجب التطبيق على العلاقات ذات العنصر الأجنبي"
+      },
+      {
+        "question": "العنصر الأجنبي في العلاقة القانونية هو ما يربط هذه العلاقة بنظام قانوني أجنبي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "في مشكلة تعدد الشرائع (الإسناد الداخلي)، إذا أحال القانون الدولي الخاص النزاع لدولة تتعدد فيها القوانين، فالأصل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الرجوع لقواعد التوزيع الداخلي في تلك الدولة"
+      },
+      {
+        "question": "يجوز تطبيق قانون أجنبي يبيح الزواج المثلي في دولة إسلامية لأن قاعدة الإسناد أشارت إليه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد وطنية يضعها المشرع الداخلي لكل دولة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "الموطن المختار هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "المكان الذي يختاره الشخص لتنفيذ عمل قانوني معين"
+      },
+      {
+        "question": "قواعد الإسناد تتسم بالحيادية، أي أنها لا تنحاز مسبقاً لقانون وطني أو أجنبي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "الوصية تخضع غالباً لقانون جنسية الموصي وقت وفاته أو قانون موطنه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يعتبر 'التبني' مخالفاً للنظام العام في:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الدول التي تطبق الشريعة الإسلامية"
+      },
+      {
+        "question": "من الأمثلة على مخالفة النظام العام في الدول الإسلامية:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون يجيز التبني الكامل"
+      },
+      {
+        "question": "الفرق بين الاختصاص القضائي والاختصاص التشريعي هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الأول يحدد المحكمة المختصة، والثاني يحدد القانون المطبق"
+      },
+      {
+        "question": "القضاء في الدول العربية يميل غالباً إلى قبول الإحالة بشكل مطلق وفي كل المجالات.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يخضع شكل التصرفات القانونية (مثل شكل العقد) عادة لقاعدة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون مكان الإبرام (Locus regit actum)"
+      },
+      {
+        "question": "المقصود بـ 'حيادية' قاعدة الإسناد:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "أنها لا تهتم بمضمون الحل بل بتعيين القانون"
+      },
+      {
+        "question": "الموطن هو المكان الذي يقيم فيه الشخص عادة بنية:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الاستقرار"
+      },
+      {
+        "question": "قاعدة 'المكان يحكم الشكل' تعني خضوع شكل الزواج لقانون مكان إبرامه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "النسب في التشريعات الإسلامية يمكن إثباته عن طريق التبني الكامل.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الإرث في العقارات يخضع غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "موقع العقار"
+      },
+      {
+        "question": "القانون الواجب التطبيق على الوصية يراعي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "النظام العام (مثل حماية الورثة في الشريعة)"
+      },
+      {
+        "question": "يتم إثبات القانون الأجنبي عادة عن طريق:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تقديم نصوص التشريع أو شهادات خبراء"
+      },
+      {
+        "question": "اختصاص محكمة الدولة بنظر النزاع يعني بالضرورة تطبيق قانونها الوطني على الموضوع.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الأحوال الشخصية تشمل مسائل الحالة المدنية والأسرة والإرث.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يُعرف القانون الدولي الخاص بأنه فرع من فروع:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "القانون الداخلي"
+      },
+      {
+        "question": "تعتبر 'قواعد مركز الأجانب' من موضوعات القانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يشترط للاعتراف بحكم الطلاق الأجنبي ألا يتعارض مع النظام العام في دولة القاضي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تعتبر الجنسية رابطة قانونية وسياسية بين الفرد والدولة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "في العقود التي يكون التنفيذ أهم عناصرها، يمكن الاستناد لضابط:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "مكان التنفيذ"
+      },
+      {
+        "question": "يخضع الإرث في المنقولات (الأموال المنقولة) في كثير من الأنظمة لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون جنسية المتوفى أو موطنه الأخير"
+      },
+      {
+        "question": "الغش نحو القانون يترتب عليه صحة التصرف إذا كان الشكل قانونياً.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "في مسألة الطلاق، إذا اختلفت جنسية الزوجين، قد يطبق قانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الدولة التي رفعت أمامها الدعوى (حماية للنظام العام)"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد تقدم الحل الموضوعي للنزاع مباشرة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من حجج مؤيدي الإحالة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تحقيق الانسجام بين النظم القانونية"
+      },
+      {
+        "question": "قد تكون المحكمة مختصة قضائياً، لكنها تطبق قانوناً أجنبياً على موضوع النزاع.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "عادة ما يُسند النسب إلى قانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "جنسية الأب وقت الميلاد"
+      },
+      {
+        "question": "في الدول ذات المرجعية اللاتينية والعربية، غالباً ما تخضع مسائل الأحوال الشخصية لضابط:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الجنسية"
+      },
+      {
+        "question": "القاضي الوطني غير ملزم بتطبيق القانون الأجنبي حتى لو أشارت إليه قاعدة الإسناد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المشكلة التي تثور عندما تتغير عناصر الإسناد (كالجنسية أو الموطن) عبر الزمن تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "التنازع المتغير (المتحرك)"
+      },
+      {
+        "question": "توصف قواعد الإسناد بأنها 'مزدوجة الجانب' لأنها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قد تسند العلاقة لقانون وطني أو أجنبي"
+      },
+      {
+        "question": "تحديد متى يكون لقضاء دولة ما سلطة نظر النزاعات ذات العنصر الأجنبي هو تعريف لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الاختصاص القضائي الدولي"
+      },
+      {
+        "question": "التطور التاريخي لمفهوم الجنسية انتقل من:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الولاء الشخصي/الديني إلى الرابطة القانونية"
+      },
+      {
+        "question": "أي من الخصائص التالية تميز قواعد الإسناد؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "إرشادية وغير مباشرة"
+      },
+      {
+        "question": "وفقاً لنظرية \"تكييف القانون للقاضي\" (Lex Fori)، يتم التكييف بناءً على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "مفاهيم القانون الوطني لقاضي النزاع"
+      },
+      {
+        "question": "الإحالة المتعددة تعني أن يحيل القانون الأجنبي الاختصاص لقانون دولة ثالثة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يسبق التكييف دائماً عملية تطبيق قاعدة الإسناد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تنازع القوانين يعني تعارض محتمل بين قوانين دول مختلفة تحاول حكم نفس العلاقة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "من صور التنازع المتغير انتقال المنقولات من دولة لأخرى.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "أي من الحالات التالية تُظهر أهمية الكشف عن العنصر الأجنبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "إعمال قواعد القانون الدولي الخاص"
+      },
+      {
+        "question": "في حالة تعدد الجنسيات للشخص، يُفضل عادة تطبيق:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون جنسية القاضي (الجنسية الوطنية) إن وجدت"
+      },
+      {
+        "question": "إذا اختلف موطن الأطراف أو جنسياتهم في علاقة قانونية، فإن العنصر الأجنبي هنا هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "العنصر الشخصي"
+      },
+      {
+        "question": "أي مما يلي يُعد مثالاً على 'العنصر المكاني' كعنصر أجنبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "إبرام العقد في دولة غير دولة الأطراف"
+      },
+      {
+        "question": "إذا تزوج يمني بفرنسية، فإن أهلية كل منهما للزواج تخضع لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون جنسية كل منهما"
+      },
+      {
+        "question": "الأساس الذي تقوم عليه نظرية 'إخضاع التكييف لقانون القاضي' هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "سيادة الدولة على نظامها القانوني"
+      },
+      {
+        "question": "نظام الكفالة في الإسلام يرتب نفس آثار التبني في القوانين الغربية من حيث النسب والميراث.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "التشريع الوطني هو المصدر الوحيد لقواعد القانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ضابط 'موقع المال' يطبق بصرامة على المنقولات أكثر من العقارات.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "مبرر خضوع العقار لقانون موقعه هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تعلق العقار بسيادة الدولة ونظامها العام"
+      },
+      {
+        "question": "يمكن للأطراف اختيار قانون أجنبي ليحكم عقداً داخلياً بحتاً لا يتضمن أي عنصر أجنبي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الشروط الشكلية للزواج تخضع عادة لقانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "مكان إبرام الزواج"
+      },
+      {
+        "question": "في حال انعدام الجنسية، يتم الرجوع غالباً لقانون الموطن أو الإقامة المعتادة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "المعيار الذي يحدد القانون الواجب التطبيق في قاعدة الإسناد (مثل الجنسية أو الموطن) يسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "ضابط الإسناد"
+      },
+      {
+        "question": "من عيوب التكييف وفق القانون المقارن أنه صعب التطبيق ويحتاج لجهد علمي كبير.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تعتبر المعاهدات الدولية من المصادر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الرسمية للقانون الدولي الخاص"
+      },
+      {
+        "question": "ينشئ القانون الدولي الخاص حقوقاً موضوعية جديدة للأطراف بشكل مباشر.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الحل المقترح لمشكلة التنازع المتغير هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تثبيت القانون بوقت نشوء الحق (أو الآثار السابقة)"
+      },
+      {
+        "question": "في حال اختلاف جنسية الزوجين، يميل القضاء في الدول الإسلامية لإسناد آثار الزواج إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون الزوج (أو قانون القاضي)"
+      },
+      {
+        "question": "اختلاف التكييف القانوني للمسألة لا يؤثر على القانون الواجب التطبيق.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تعتبر الأحوال الشخصية من الموضوعات الحساسة في القانون الدولي الخاص لأنها تمس:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الدين والأخلاق والهوية"
+      },
+      {
+        "question": "ظاهرة الإحالة (Renvoi) تنشأ عندما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تشير قاعدة الإسناد الوطنية لقانون أجنبي، ويحيل الأخير لقانون آخر"
+      },
+      {
+        "question": "تفسير القانون الأجنبي يجب أن يتم بمعزل عن بيئته القانونية الأصلية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يتم تطبيق قانون الجنسية على مسائل الأحوال الشخصية في الدول الأنجلوسكسونية بشكل أساسي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تميل الأنظمة الأنجلوسكسونية في مسائل الأحوال الشخصية إلى تطبيق قانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الموطن"
+      },
+      {
+        "question": "الإرادة الضمنية في اختيار القانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تستنتج من ظروف العقد كلغته أو المحكمة المختصة"
+      },
+      {
+        "question": "التحايل على القانون الواجب التطبيق بتغيير ضابط الإسناد (كالجنسية) عمداً يسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الغش نحو القانون"
+      },
+      {
+        "question": "الشروط الموضوعية للزواج (كالأهلية والموانع) تخضع في أغلب التشريعات العربية لقانون مكان الإبرام.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "النظام العام (Ordre Public) يعمل كأداة لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "منع تطبيق قانون أجنبي يتعارض مع المبادئ الأساسية للدولة"
+      },
+      {
+        "question": "المقصود بـ \"التكييف\" في القانون الدولي الخاص هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تحديد الطبيعة القانونية للمسألة المعروضة وتصنيفها"
+      },
+      {
+        "question": "في العصور القديمة، كان الأجنبي يتمتع بكامل الحقوق المدنية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "إذا تعذر إثبات مضمون القانون الأجنبي، يلجأ القاضي كحل احتياطي إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تطبيق قانونه الوطني"
+      },
+      {
+        "question": "من أهداف القانون الدولي الخاص تحقيق العدالة الدولية وتوفير الاستقرار للمعاملات عبر الحدود.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "القاعدة المباشرة تحتاج دائماً إلى قاعدة إسناد لتطبيقها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تخضع السفن والطائرات غالباً لقانون الدولة التي ترفع علمها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يجوز للأطراف اختيار قانون يخالف القواعد الآمرة في دولة القاضي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تعتبر قواعد القانون الدولي الخاص جزءاً من القانون العام وليس الخاص.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "قاعدة 'تخضع أهلية الشخص لقانون جنسيته' هي مثال لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قاعدة إسناد"
+      },
+      {
+        "question": "حرية الأطراف في اختيار القانون المطبق على العقد مطلقة ولا تحدها أي قيود.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من مبررات الأخذ بضابط الجنسية:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "أنه يعكس الانتماء السياسي والثقافي وأكثر ثباتاً"
+      },
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      },
+      {
+        "question": "من عيوب نظرية إخضاع التكييف لقانون القاضي أنها قد تؤدي لتكييف يخالف قصد القانون الأجنبي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "قاعدة الإسناد تتكون من عنصرين رئيسيين هما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الفكرة المسندة وضابط الإسناد"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
