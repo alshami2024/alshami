@@ -1,0 +1,98 @@
+[
+  {
+    "examTitle": "العقيدة (2) - في الحُسْن والقُبْح العقليين",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-12T09:21:47.903Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "هل يقدر الله على فعل القبيح؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم"
+      },
+      {
+        "question": "ما هي الأدلة على أن الأفعال تحسن وتقبح لذاتها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدوران"
+      },
+      {
+        "question": "الحسن والقبح العقليين مرتبطان بالأفعال تبعًا لوصف معين.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "جمهور المعتزلة يرون أن الله لا يقدر على خلاف ما علمه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الأفعال تنقسم عقليًا إلى واجب، ومندوب، ومباح، وقبيح.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ماذا يرى جمهور المعتزلة والأشاعرة بشأن قدرة الله على خلاف معلومه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يستطيع لكن لا يقع"
+      },
+      {
+        "question": "القدرة على الفعل القبيح مستحيلة عند المعتزلة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما هو الرأي المختار بشأن قدرة الله على القبيح؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الله قادر على القبيح لكنه لا يفعله"
+      },
+      {
+        "question": "ما هو مفهوم الحسن والقبح العقليين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أحكام إضافية مرتبطة بالأفعال"
+      },
+      {
+        "question": "الأشاعرة يرون أن الحكم بالحسن أو القبح يكون وفقًا لخطاب العقل فقط.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
