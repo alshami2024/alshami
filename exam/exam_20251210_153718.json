@@ -1208,5 +1208,111 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "فوزي",
+    "submissionDate": "2025-12-13T17:45:53.221Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في العصور القديمة، كان الأجنبي يتمتع بكامل الحقوق المدنية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "القواعد التي تطبق مباشرة على العلاقة القانونية وتحدد الحقوق والالتزامات دون إحالة لقانون آخر تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قواعد الإحالة",
+        "correctAnswer": "القواعد المباشرة"
+      },
+      {
+        "question": "الأساس الذي تقوم عليه نظرية 'إخضاع التكييف لقانون القاضي' هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احترام القانون الأجنبي",
+        "correctAnswer": "سيادة الدولة على نظامها القانوني"
+      },
+      {
+        "question": "القانون الواجب التطبيق على الوصية يراعي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قواعد المرور",
+        "correctAnswer": "النظام العام (مثل حماية الورثة في الشريعة)"
+      },
+      {
+        "question": "الحل المقترح لمشكلة التنازع المتغير هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تطبيق القانون الأجنبي دائماً",
+        "correctAnswer": "تثبيت القانون بوقت نشوء الحق (أو الآثار السابقة)"
+      },
+      {
+        "question": "المعيار الذي يحدد القانون الواجب التطبيق في قاعدة الإسناد (مثل الجنسية أو الموطن) يسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "ضابط الإسناد"
+      },
+      {
+        "question": "أي من الحالات التالية تُظهر أهمية الكشف عن العنصر الأجنبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "إعمال قواعد القانون الدولي الخاص"
+      },
+      {
+        "question": "القاضي الوطني غير ملزم بتطبيق القانون الأجنبي حتى لو أشارت إليه قاعدة الإسناد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "في الدول ذات المرجعية اللاتينية والعربية، غالباً ما تخضع مسائل الأحوال الشخصية لضابط:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الجنسية"
+      },
+      {
+        "question": "في حالة تعدد الجنسيات للشخص، يُفضل عادة تطبيق:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون جنسية القاضي (الجنسية الوطنية) إن وجدت"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
