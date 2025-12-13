@@ -1103,5 +1103,110 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "فوزي",
+    "submissionDate": "2025-12-13T17:19:00.089Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يُعرف القانون الدولي الخاص بأنه فرع من فروع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الداخلي"
+      },
+      {
+        "question": "يتم تطبيق قانون الجنسية على مسائل الأحوال الشخصية في الدول الأنجلوسكسونية بشكل أساسي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد تقدم الحل الموضوعي للنزاع مباشرة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أي مما يلي يُعد مثالاً على 'العنصر المكاني' كعنصر أجنبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "إبرام العقد في دولة غير دولة الأطراف"
+      },
+      {
+        "question": "ضابط 'موقع المال' يطبق بصرامة على المنقولات أكثر من العقارات.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "في حال اختلاف جنسية الزوجين، يميل القضاء في الدول الإسلامية لإسناد آثار الزواج إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون الزوج (أو قانون القاضي)"
+      },
+      {
+        "question": "حرية الأطراف في اختيار القانون المطبق على العقد مطلقة ولا تحدها أي قيود.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يجوز للأطراف اختيار قانون يخالف القواعد الآمرة في دولة القاضي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "اختصاص محكمة الدولة بنظر النزاع يعني بالضرورة تطبيق قانونها الوطني على الموضوع.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تعتبر الأحوال الشخصية من الموضوعات الحساسة في القانون الدولي الخاص لأنها تمس:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الدين والأخلاق والهوية"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
