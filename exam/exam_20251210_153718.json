@@ -1007,5 +1007,101 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-13T16:00:36.705Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي مما يلي يُعد وظيفة من وظائف القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد القانون الواجب التطبيق على العلاقات ذات العنصر الأجنبي"
+      },
+      {
+        "question": "يخضع شكل التصرفات القانونية (مثل شكل العقد) عادة لقاعدة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون مكان الإبرام (Locus regit actum)"
+      },
+      {
+        "question": "ينشئ القانون الدولي الخاص حقوقاً موضوعية جديدة للأطراف بشكل مباشر.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يتم إثبات القانون الأجنبي عادة عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تقديم نصوص التشريع أو شهادات خبراء"
+      },
+      {
+        "question": "الموطن هو المكان الذي يقيم فيه الشخص عادة بنية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستقرار"
+      },
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      },
+      {
+        "question": "المقصود بـ \"التكييف\" في القانون الدولي الخاص هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد الطبيعة القانونية للمسألة المعروضة وتصنيفها"
+      },
+      {
+        "question": "وفقاً لنظرية \"تكييف القانون للقاضي\" (Lex Fori)، يتم التكييف بناءً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفاهيم القانون الوطني لقاضي النزاع"
+      },
+      {
+        "question": "في حال اختلاف جنسية الزوجين، يميل القضاء في الدول الإسلامية لإسناد آثار الزواج إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون الزوج (أو قانون القاضي)"
+      },
+      {
+        "question": "الإحالة البسيطة تعني أن القانون الأجنبي يعيد الاختصاص إلى قانون القاضي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
