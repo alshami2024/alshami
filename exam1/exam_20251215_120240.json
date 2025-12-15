@@ -1,0 +1,234 @@
+[
+  {
+    "examTitle": "الاختبار النهائي - لكتاب دليل الطالب3",
+    "studentName": "عبدالرقيب الشامي",
+    "submissionDate": "2025-12-15T09:43:58.850Z",
+    "mcqScore": {
+      "correct": 27,
+      "total": 27
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "اشترطت الزوجة على الزوج عند العقد (ألا يتزوج عليها)، فحكم هذا الشرط:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "كل ما يأتي من النساء يحرم على الرجل أن يتزوج بها بمجرد العقد عليها عدا:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بنت الزوجة"
+      },
+      {
+        "question": "الصورة الصحيحة الشرعية من الصور التالية هي:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "زواج الكتابية من رجل مسلم"
+      },
+      {
+        "question": "كل ما يأتي من صور زواج المتعة عدا:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن يتزوجها ليحللها لزوجها"
+      },
+      {
+        "question": "رجل تقدم لامرأة وعقد عليها ولم يدخل بها، ثم غير رأيه وطلب أن يتزوج ابنتها بعد طلاق الأم، فحكم زواجه من البنت:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "كل العيوب التالية تعطي الزوج أو الزوجة حق الفسخ، عدا:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخرس"
+      },
+      {
+        "question": "حكم تسمية الصداق في العقد:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سنة"
+      },
+      {
+        "question": "رجل طلب الزواج من امرأة وجعل صداقها أن يعلمها الفقه وأصول الفقه فقبلت، فحكم هذا الصداق:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "عقد رجل على امرأة، وسمى لها صداقا (6000) دينار، ثم طلقها قبل أن يدخل بها، فالحكم بالنسبة للصداق المسمى في هذه الحال:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تملك الزوجة نصف الصداق (3000) دينار. "
+      },
+      {
+        "question": "إذا اختلف الزوج والزوجة في قدر الصداق الذي فرضه لها، الزوج يقول فرضت لك: 5000 دينار، والزوجة تقول: لا. أنت فرضت لي: 7000دينار، فالذي يعتبر قوله هنا هو:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الزوج"
+      },
+      {
+        "question": "حكم إجابة الدعوة للوليمة في المرة الأولى، إذا لم يوجد عذر مانع:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "واجب"
+      },
+      {
+        "question": "حكم الأكل باليمين:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سنة"
+      },
+      {
+        "question": "حكم خروج المرأة من دون إذن زوجها:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محرم"
+      },
+      {
+        "question": "إذا تزوج الرجل امرأة ثانية وكانت ثيباً فالواجب أن يقيم عندها بداية الزواج:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلاث ليال"
+      },
+      {
+        "question": "حكم الطلاق أثناء الحيض:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محرم"
+      },
+      {
+        "question": "حكم توكيل الزوجة بطلاق نفسها:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "وكَّل عمرو قريبه زيداً أن يطلق زوجته ولم يحدد له عدد الطلقات، فطلقها الوكيل زيد ثلاث طلقات، فالذي يقع على الزوجة:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طلقة"
+      },
+      {
+        "question": "طلق الزوج زوجته وهي حامل، فحكم هذا الطلاق:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مباح ويقع"
+      },
+      {
+        "question": "طلق الزوج زوجته في طهر جامعها خلاله، فحكم هذا الطلاق:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محرم ويقع"
+      },
+      {
+        "question": "قال الزوج لزوجته: (الحقي بأهلك). نوع هذا الطلاق.:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كناية"
+      },
+      {
+        "question": "مؤلف كتاب دليل الطالب لنيل المطالب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مرعي بن يوسف الكرمي"
+      },
+      {
+        "question": "كتاب دليل الطالب لنيل المطالب من الكتب التي تقرر الفقه وفق المذهب:\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحنبلي"
+      },
+      {
+        "question": "إذا طلق الرجل زوجته قبل الدخول، فهو طلاق رجعي.&nbsp;\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "طلاق الكناية يقع ولو من غير نية مطلقاً.&nbsp;\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "لا يقع الطلاق بالإشارة إلا من الأخرس فقط\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "لا يجوز للزوجة أن تتطوع بصوم وزوجها حاضر من دون إذنه\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "يستحب للزوج التسوية بين زوجاته في المبيت.&nbsp;\n               ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
