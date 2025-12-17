@@ -1074,5 +1074,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "محمود علاو",
+    "submissionDate": "2025-12-17T06:48:53.531Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي مما يلي يُعد مثالاً على 'العنصر المكاني' كعنصر أجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إبرام العقد في دولة غير دولة الأطراف"
+      },
+      {
+        "question": "ضابط الجنسية يعتبر أكثر تغيراً وأقل استقراراً من ضابط الموطن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "المشكلة التي تثور عندما تتغير عناصر الإسناد (كالجنسية أو الموطن) عبر الزمن تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التنازع المتغير (المتحرك)"
+      },
+      {
+        "question": "الفقه القانوني يُعد من المصادر الرسمية الأساسية للقانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي مما يلي يُعد وظيفة من وظائف القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد القانون الواجب التطبيق على العلاقات ذات العنصر الأجنبي"
+      },
+      {
+        "question": "الأحوال الشخصية تشمل مسائل الحالة المدنية والأسرة والإرث.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في الدول ذات المرجعية اللاتينية والعربية، غالباً ما تخضع مسائل الأحوال الشخصية لضابط:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجنسية"
+      },
+      {
+        "question": "تميل الأنظمة الأنجلوسكسونية في مسائل الأحوال الشخصية إلى تطبيق قانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الموطن"
+      },
+      {
+        "question": "ينشئ القانون الدولي الخاص حقوقاً موضوعية جديدة للأطراف بشكل مباشر.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "المقصود بـ \"التكييف\" في القانون الدولي الخاص هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد الطبيعة القانونية للمسألة المعروضة وتصنيفها"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
