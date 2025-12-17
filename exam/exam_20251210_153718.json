@@ -1170,5 +1170,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "بكر المنتصر",
+    "submissionDate": "2025-12-17T06:49:06.168Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الأساس الذي تقوم عليه نظرية 'إخضاع التكييف لقانون القاضي' هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سيادة الدولة على نظامها القانوني"
+      },
+      {
+        "question": "أي مما يلي يُعد وظيفة من وظائف القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد القانون الواجب التطبيق على العلاقات ذات العنصر الأجنبي"
+      },
+      {
+        "question": "يشترط للاعتراف بحكم الطلاق الأجنبي ألا يتعارض مع النظام العام في دولة القاضي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في حال اختلاف جنسية الزوجين، يميل القضاء في الدول الإسلامية لإسناد آثار الزواج إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون الزوج (أو قانون القاضي)"
+      },
+      {
+        "question": "تعتبر المعاهدات الدولية من المصادر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرسمية للقانون الدولي الخاص"
+      },
+      {
+        "question": "في حال انعدام الجنسية، يتم الرجوع غالباً لقانون الموطن أو الإقامة المعتادة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "القاضي الوطني غير ملزم بتطبيق القانون الأجنبي حتى لو أشارت إليه قاعدة الإسناد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تعتبر الجنسية رابطة قانونية وسياسية بين الفرد والدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الشروط الشكلية للزواج تخضع عادة لقانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان إبرام الزواج"
+      },
+      {
+        "question": "الشروط الموضوعية للزواج (كالأهلية والموانع) تخضع في أغلب التشريعات العربية لقانون مكان الإبرام.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
