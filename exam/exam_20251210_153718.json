@@ -388,5 +388,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "محسن عامر",
+    "submissionDate": "2025-12-17T06:42:09.460Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تحديد متى يكون لقضاء دولة ما سلطة نظر النزاعات ذات العنصر الأجنبي هو تعريف لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاختصاص القضائي الدولي"
+      },
+      {
+        "question": "النظام العام (Ordre Public) يعمل كأداة لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "منع تطبيق قانون أجنبي يتعارض مع المبادئ الأساسية للدولة"
+      },
+      {
+        "question": "الفقه القانوني يُعد من المصادر الرسمية الأساسية للقانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الموطن هو المكان الذي يقيم فيه الشخص عادة بنية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستقرار"
+      },
+      {
+        "question": "في حالة تعدد الجنسيات للشخص، يُفضل عادة تطبيق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون جنسية القاضي (الجنسية الوطنية) إن وجدت"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد تقدم الحل الموضوعي للنزاع مباشرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "نظرية التكييف في ضوء القانون المقارن تهدف إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوصول لتكييف محايد ومشترك بين الأنظمة"
+      },
+      {
+        "question": "يُعرف القانون الدولي الخاص بأنه فرع من فروع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الداخلي"
+      },
+      {
+        "question": "ينشئ القانون الدولي الخاص حقوقاً موضوعية جديدة للأطراف بشكل مباشر.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
