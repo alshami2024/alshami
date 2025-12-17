@@ -1459,5 +1459,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "عبدالحسين المرقب",
+    "submissionDate": "2025-12-17T06:50:51.510Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يخضع الإرث في المنقولات (الأموال المنقولة) في كثير من الأنظمة لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون الورثة",
+        "correctAnswer": "قانون جنسية المتوفى أو موطنه الأخير"
+      },
+      {
+        "question": "قاعدة الإسناد تتكون من عنصرين رئيسيين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفكرة المسندة وضابط الإسناد"
+      },
+      {
+        "question": "الفرق بين الاختصاص القضائي والاختصاص التشريعي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأول يحدد المحكمة المختصة، والثاني يحدد القانون المطبق"
+      },
+      {
+        "question": "وفقاً لنظرية \"تكييف القانون للقاضي\" (Lex Fori)، يتم التكييف بناءً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفاهيم القانون الوطني لقاضي النزاع"
+      },
+      {
+        "question": "في مشكلة تعدد الشرائع (الإسناد الداخلي)، إذا أحال القانون الدولي الخاص النزاع لدولة تتعدد فيها القوانين، فالأصل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرجوع لقواعد التوزيع الداخلي في تلك الدولة"
+      },
+      {
+        "question": "قواعد الإسناد تتسم بالحيادية، أي أنها لا تنحاز مسبقاً لقانون وطني أو أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعرف القانون الدولي الخاص بأنه فرع من فروع:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "القانون الداخلي"
+      },
+      {
+        "question": "تخضع المسؤولية التقصيرية (الفعل الضار) غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "مكان وقوع الفعل الضار"
+      },
+      {
+        "question": "الأحوال الشخصية تشمل مسائل الحالة المدنية والأسرة والإرث.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تعتبر الأحوال الشخصية من الموضوعات الحساسة في القانون الدولي الخاص لأنها تمس:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الدين والأخلاق والهوية"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
