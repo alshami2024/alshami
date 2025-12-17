@@ -1,0 +1,99 @@
+[
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "حاتم المام",
+    "submissionDate": "2025-12-17T06:51:07.149Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الموطن هو المكان الذي يقيم فيه الشخص عادة بنية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستقرار"
+      },
+      {
+        "question": "في مسألة الطلاق، إذا اختلفت جنسية الزوجين، قد يطبق قانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدولة التي رفعت أمامها الدعوى (حماية للنظام العام)"
+      },
+      {
+        "question": "تعتبر قواعد القانون الدولي الخاص جزءاً من القانون العام وليس الخاص.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المقصود بـ 'حيادية' قاعدة الإسناد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها لا تهتم بمضمون الحل بل بتعيين القانون"
+      },
+      {
+        "question": "تخضع السفن والطائرات غالباً لقانون الدولة التي ترفع علمها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يخضع الإرث في المنقولات (الأموال المنقولة) في كثير من الأنظمة لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون جنسية المتوفى أو موطنه الأخير"
+      },
+      {
+        "question": "ضابط الإرادة (سلطان الإرادة) هو المعيار الأساسي لتحديد القانون المطبق في مجال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الالتزامات التعاقدية (العقود الدولية)"
+      },
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      },
+      {
+        "question": "نظام الكفالة في الإسلام يرتب نفس آثار التبني في القوانين الغربية من حيث النسب والميراث.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "جزاء الغش نحو القانون هو عدم الاعتداد بالتغيير الاحتيالي وتطبيق القانون الأصلي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
