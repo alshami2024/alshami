@@ -94,5 +94,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "عواطف العبسي",
+    "submissionDate": "2025-12-17T06:31:42.525Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "النسب في التشريعات الإسلامية يمكن إثباته عن طريق التبني الكامل.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المشكلة التي تثور عندما تتغير عناصر الإسناد (كالجنسية أو الموطن) عبر الزمن تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التنازع المتغير (المتحرك)"
+      },
+      {
+        "question": "إذا اختلف موطن الأطراف أو جنسياتهم في علاقة قانونية، فإن العنصر الأجنبي هنا هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العنصر الشخصي"
+      },
+      {
+        "question": "ضابط الإرادة (سلطان الإرادة) هو المعيار الأساسي لتحديد القانون المطبق في مجال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الالتزامات التعاقدية (العقود الدولية)"
+      },
+      {
+        "question": "قواعد الإسناد تتسم بالحيادية، أي أنها لا تنحاز مسبقاً لقانون وطني أو أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي مما يلي يُعد مثالاً على 'العنصر المكاني' كعنصر أجنبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كون أحد الأطراف شركة متعددة الجنسيات",
+        "correctAnswer": "إبرام العقد في دولة غير دولة الأطراف"
+      },
+      {
+        "question": "القاعدة المباشرة تحتاج دائماً إلى قاعدة إسناد لتطبيقها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قد تكون المحكمة مختصة قضائياً، لكنها تطبق قانوناً أجنبياً على موضوع النزاع.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ظاهرة الإحالة (Renvoi) تنشأ عندما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تشير قاعدة الإسناد الوطنية لقانون أجنبي، ويحيل الأخير لقانون آخر"
+      },
+      {
+        "question": "يتم إثبات القانون الأجنبي عادة عن طريق:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم القاضي الشخصي فقط",
+        "correctAnswer": "تقديم نصوص التشريع أو شهادات خبراء"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
