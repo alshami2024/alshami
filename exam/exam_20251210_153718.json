@@ -782,5 +782,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "اسامه السقندراني",
+    "submissionDate": "2025-12-17T06:47:35.098Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي مما يلي يُعد مثالاً على 'العنصر المكاني' كعنصر أجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إبرام العقد في دولة غير دولة الأطراف"
+      },
+      {
+        "question": "أي من الحالات التالية تُظهر أهمية الكشف عن العنصر الأجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إعمال قواعد القانون الدولي الخاص"
+      },
+      {
+        "question": "من عيوب التكييف وفق القانون المقارن أنه صعب التطبيق ويحتاج لجهد علمي كبير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الوصية تخضع غالباً لقانون جنسية الموصي وقت وفاته أو قانون موطنه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تفسير القانون الأجنبي يجب أن يتم بمعزل عن بيئته القانونية الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "توصف قواعد الإسناد بأنها 'مزدوجة الجانب' لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قد تسند العلاقة لقانون وطني أو أجنبي"
+      },
+      {
+        "question": "النسب في التشريعات الإسلامية يمكن إثباته عن طريق التبني الكامل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يعتبر 'التبني' مخالفاً للنظام العام في:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدول التي تطبق الشريعة الإسلامية"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد وطنية يضعها المشرع الداخلي لكل دولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من مبررات الأخذ بضابط الجنسية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعكس الانتماء السياسي والثقافي وأكثر ثباتاً"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
