@@ -1753,5 +1753,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "صادق قايد",
+    "submissionDate": "2025-12-17T06:52:04.832Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      },
+      {
+        "question": "وفقاً لنظرية \"تكييف القانون للقاضي\" (Lex Fori)، يتم التكييف بناءً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفاهيم القانون الوطني لقاضي النزاع"
+      },
+      {
+        "question": "في حال انعدام الجنسية، يتم الرجوع غالباً لقانون الموطن أو الإقامة المعتادة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تعتبر قواعد القانون الدولي الخاص جزءاً من القانون العام وليس الخاص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "القاضي الوطني غير ملزم بتطبيق القانون الأجنبي حتى لو أشارت إليه قاعدة الإسناد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من عيوب نظرية إخضاع التكييف لقانون القاضي أنها قد تؤدي لتكييف يخالف قصد القانون الأجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الشروط الموضوعية للزواج (كالأهلية والموانع) تخضع في أغلب التشريعات العربية لقانون مكان الإبرام.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "جزاء الغش نحو القانون هو عدم الاعتداد بالتغيير الاحتيالي وتطبيق القانون الأصلي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ضابط 'موقع المال' يطبق بصرامة على المنقولات أكثر من العقارات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "إذا تعذر إثبات مضمون القانون الأجنبي، يلجأ القاضي كحل احتياطي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تطبيق قانونه الوطني"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
