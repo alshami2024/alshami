@@ -2151,5 +2151,101 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "عبدالملك العجي",
+    "submissionDate": "2025-12-17T06:53:49.073Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الموطن المختار هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المكان الذي يختاره الشخص لتنفيذ عمل قانوني معين"
+      },
+      {
+        "question": "نظام الكفالة في الإسلام يرتب نفس آثار التبني في القوانين الغربية من حيث النسب والميراث.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تنازع القوانين يعني تعارض محتمل بين قوانين دول مختلفة تحاول حكم نفس العلاقة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تعتبر قواعد القانون الدولي الخاص جزءاً من القانون العام وليس الخاص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تخضع المسؤولية التقصيرية (الفعل الضار) غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان وقوع الفعل الضار"
+      },
+      {
+        "question": "تفسير القانون الأجنبي يجب أن يتم بمعزل عن بيئته القانونية الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الإرث في العقارات يخضع غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موقع العقار"
+      },
+      {
+        "question": "من أهداف القانون الدولي الخاص تحقيق العدالة الدولية وتوفير الاستقرار للمعاملات عبر الحدود.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      },
+      {
+        "question": "قاعدة الإسناد تتكون من عنصرين رئيسيين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفكرة المسندة وضابط الإسناد"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
