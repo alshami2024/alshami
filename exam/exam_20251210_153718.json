@@ -2048,5 +2048,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "محمد غالب",
+    "submissionDate": "2025-12-17T06:53:02.141Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "وفقاً لنظرية \"تكييف القانون للقاضي\" (Lex Fori)، يتم التكييف بناءً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفاهيم القانون الوطني لقاضي النزاع"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد وطنية يضعها المشرع الداخلي لكل دولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يسبق التكييف دائماً عملية تطبيق قاعدة الإسناد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الشروط الموضوعية للزواج (كالأهلية والموانع) تخضع في أغلب التشريعات العربية لقانون مكان الإبرام.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يخضع الإرث في المنقولات (الأموال المنقولة) في كثير من الأنظمة لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "قانون جنسية المتوفى أو موطنه الأخير"
+      },
+      {
+        "question": "العنصر الأجنبي في العلاقة القانونية هو ما يربط هذه العلاقة بنظام قانوني أجنبي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "من حجج مؤيدي الإحالة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تحقيق الانسجام بين النظم القانونية"
+      },
+      {
+        "question": "الفرق بين الاختصاص القضائي والاختصاص التشريعي هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الأول يحدد المحكمة المختصة، والثاني يحدد القانون المطبق"
+      },
+      {
+        "question": "المقصود بـ \"التكييف\" في القانون الدولي الخاص هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تحديد الطبيعة القانونية للمسألة المعروضة وتصنيفها"
+      },
+      {
+        "question": "في الدول ذات المرجعية اللاتينية والعربية، غالباً ما تخضع مسائل الأحوال الشخصية لضابط:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الجنسية"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
