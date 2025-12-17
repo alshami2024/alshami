@@ -2730,5 +2730,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "محمد العكاد",
+    "submissionDate": "2025-12-17T17:07:29.187Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المعيار الذي يحدد القانون الواجب التطبيق في قاعدة الإسناد (مثل الجنسية أو الموطن) يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ضابط الإسناد"
+      },
+      {
+        "question": "نظرية التكييف في ضوء القانون المقارن تهدف إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوصول لتكييف محايد ومشترك بين الأنظمة"
+      },
+      {
+        "question": "أي من الخصائص التالية تميز قواعد الإسناد؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تتعلق دائماً بالنظام العام",
+        "correctAnswer": "إرشادية وغير مباشرة"
+      },
+      {
+        "question": "الأحوال الشخصية تشمل مسائل الحالة المدنية والأسرة والإرث.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "اختصاص محكمة الدولة بنظر النزاع يعني بالضرورة تطبيق قانونها الوطني على الموضوع.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يُعرف القانون الدولي الخاص بأنه فرع من فروع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الداخلي"
+      },
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النزاع بين الأفراد حول الجنسية",
+        "correctAnswer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      },
+      {
+        "question": "القاعدة العامة في الحقوق العينية العقارية هي خضوعها لقانون موقع العقار.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المقصود بـ \"التكييف\" في القانون الدولي الخاص هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد الطبيعة القانونية للمسألة المعروضة وتصنيفها"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد تقدم الحل الموضوعي للنزاع مباشرة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
