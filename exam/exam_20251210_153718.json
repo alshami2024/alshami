@@ -1266,5 +1266,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "فايز الصيادي",
+    "submissionDate": "2025-12-17T06:49:33.640Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يُعرف القانون الدولي الخاص بأنه فرع من فروع:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الدولي العام",
+        "correctAnswer": "القانون الداخلي"
+      },
+      {
+        "question": "من عيوب التكييف وفق القانون المقارن أنه صعب التطبيق ويحتاج لجهد علمي كبير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تفسير القانون الأجنبي يجب أن يتم بمعزل عن بيئته القانونية الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "القانون الواجب التطبيق على الوصية يراعي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النظام العام (مثل حماية الورثة في الشريعة)"
+      },
+      {
+        "question": "قواعد الإسناد تتسم بالحيادية، أي أنها لا تنحاز مسبقاً لقانون وطني أو أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "عادة ما يُسند النسب إلى قانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جنسية الأب وقت الميلاد"
+      },
+      {
+        "question": "المقصود بـ \"التكييف\" في القانون الدولي الخاص هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد الطبيعة القانونية للمسألة المعروضة وتصنيفها"
+      },
+      {
+        "question": "إذا تزوج يمني بفرنسية، فإن أهلية كل منهما للزواج تخضع لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون جنسية كل منهما"
+      },
+      {
+        "question": "تخضع السفن والطائرات غالباً لقانون الدولة التي ترفع علمها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "إذا تعذر إثبات مضمون القانون الأجنبي، يلجأ القاضي كحل احتياطي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تطبيق قانونه الوطني"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
