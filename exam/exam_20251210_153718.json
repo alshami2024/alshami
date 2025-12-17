@@ -2247,5 +2247,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "بشار الهادي",
+    "submissionDate": "2025-12-17T06:54:11.764Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "نظرية التكييف في ضوء القانون المقارن تهدف إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوصول لتكييف محايد ومشترك بين الأنظمة"
+      },
+      {
+        "question": "تفسير القانون الأجنبي يجب أن يتم بمعزل عن بيئته القانونية الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "النسب في التشريعات الإسلامية يمكن إثباته عن طريق التبني الكامل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تخضع السفن والطائرات غالباً لقانون الدولة التي ترفع علمها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ضابط 'موقع المال' يطبق بصرامة على المنقولات أكثر من العقارات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الإرادة الضمنية في اختيار القانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تستنتج من ظروف العقد كلغته أو المحكمة المختصة"
+      },
+      {
+        "question": "في العصور القديمة، كان الأجنبي يتمتع بكامل الحقوق المدنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يمكن للأطراف اختيار قانون أجنبي ليحكم عقداً داخلياً بحتاً لا يتضمن أي عنصر أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "جزاء الغش نحو القانون هو عدم الاعتداد بالتغيير الاحتيالي وتطبيق القانون الأصلي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في حال اختلاف جنسية الزوجين، يميل القضاء في الدول الإسلامية لإسناد آثار الزواج إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون الزوج (أو قانون القاضي)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
