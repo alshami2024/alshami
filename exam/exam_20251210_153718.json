@@ -2729,5 +2729,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "ناصر الحيدري",
+    "submissionDate": "2025-12-17T07:00:37.866Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الشروط الشكلية للزواج تخضع عادة لقانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان إبرام الزواج"
+      },
+      {
+        "question": "من الأمثلة على مخالفة النظام العام في الدول الإسلامية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون يجيز التبني الكامل"
+      },
+      {
+        "question": "القواعد التي تطبق مباشرة على العلاقة القانونية وتحدد الحقوق والالتزامات دون إحالة لقانون آخر تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد المباشرة"
+      },
+      {
+        "question": "العنصر الأجنبي في العلاقة القانونية هو ما يربط هذه العلاقة بنظام قانوني أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في حالة تعدد الجنسيات للشخص، يُفضل عادة تطبيق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون جنسية القاضي (الجنسية الوطنية) إن وجدت"
+      },
+      {
+        "question": "الإرث في العقارات يخضع غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جنسية المتوفى",
+        "correctAnswer": "موقع العقار"
+      },
+      {
+        "question": "تخضع المسؤولية التقصيرية (الفعل الضار) غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان وقوع الفعل الضار"
+      },
+      {
+        "question": "الأحوال الشخصية تشمل مسائل الحالة المدنية والأسرة والإرث.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد تقدم الحل الموضوعي للنزاع مباشرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "من عيوب التكييف وفق القانون المقارن أنه صعب التطبيق ويحتاج لجهد علمي كبير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
