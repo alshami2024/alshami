@@ -686,5 +686,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "بشار الجدس",
+    "submissionDate": "2025-12-17T06:47:25.871Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يتم تطبيق قانون الجنسية على مسائل الأحوال الشخصية في الدول الأنجلوسكسونية بشكل أساسي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "نظرية التكييف في ضوء القانون المقارن تهدف إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوصول لتكييف محايد ومشترك بين الأنظمة"
+      },
+      {
+        "question": "تعتبر 'قواعد مركز الأجانب' من موضوعات القانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "توصف قواعد الإسناد بأنها 'مزدوجة الجانب' لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قد تسند العلاقة لقانون وطني أو أجنبي"
+      },
+      {
+        "question": "قد تكون المحكمة مختصة قضائياً، لكنها تطبق قانوناً أجنبياً على موضوع النزاع.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "اختلاف التكييف القانوني للمسألة لا يؤثر على القانون الواجب التطبيق.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الموطن المختار هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المكان الذي يختاره الشخص لتنفيذ عمل قانوني معين"
+      },
+      {
+        "question": "الغش نحو القانون يترتب عليه صحة التصرف إذا كان الشكل قانونياً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "نظام الكفالة في الإسلام يرتب نفس آثار التبني في القوانين الغربية من حيث النسب والميراث.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تعتبر الأحوال الشخصية من الموضوعات الحساسة في القانون الدولي الخاص لأنها تمس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدين والأخلاق والهوية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
