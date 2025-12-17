@@ -2631,5 +2631,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "عبدالاله المسعدي",
+    "submissionDate": "2025-12-17T06:57:30.045Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تحديد متى يكون لقضاء دولة ما سلطة نظر النزاعات ذات العنصر الأجنبي هو تعريف لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاختصاص القضائي الدولي"
+      },
+      {
+        "question": "نظرية التكييف في ضوء القانون المقارن تهدف إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوصول لتكييف محايد ومشترك بين الأنظمة"
+      },
+      {
+        "question": "عادة ما يُسند النسب إلى قانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان الولادة",
+        "correctAnswer": "جنسية الأب وقت الميلاد"
+      },
+      {
+        "question": "تعتبر 'قواعد مركز الأجانب' من موضوعات القانون الدولي الخاص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تنازع القوانين يعني تعارض محتمل بين قوانين دول مختلفة تحاول حكم نفس العلاقة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من حجج مؤيدي الإحالة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحقيق الانسجام بين النظم القانونية"
+      },
+      {
+        "question": "الغش نحو القانون يترتب عليه صحة التصرف إذا كان الشكل قانونياً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قاعدة 'تخضع أهلية الشخص لقانون جنسيته' هي مثال لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة موضوعية",
+        "correctAnswer": "قاعدة إسناد"
+      },
+      {
+        "question": "ضابط 'موقع المال' يطبق بصرامة على المنقولات أكثر من العقارات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "نظام الكفالة في الإسلام يرتب نفس آثار التبني في القوانين الغربية من حيث النسب والميراث.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
