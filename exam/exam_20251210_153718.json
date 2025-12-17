@@ -1560,5 +1560,102 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "صلاح ناصر",
+    "submissionDate": "2025-12-17T06:51:19.768Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المشكلة التي تثور عندما تتغير عناصر الإسناد (كالجنسية أو الموطن) عبر الزمن تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التنازع المتغير (المتحرك)"
+      },
+      {
+        "question": "من الأمثلة على مخالفة النظام العام في الدول الإسلامية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون يجيز التبني الكامل"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد تقدم الحل الموضوعي للنزاع مباشرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ضابط 'موقع المال' يطبق بصرامة على المنقولات أكثر من العقارات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "في حال انعدام الجنسية، يتم الرجوع غالباً لقانون الموطن أو الإقامة المعتادة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من عيوب التكييف وفق القانون المقارن أنه صعب التطبيق ويحتاج لجهد علمي كبير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "قاعدة الإسناد تتكون من عنصرين رئيسيين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفكرة المسندة وضابط الإسناد"
+      },
+      {
+        "question": "يتم إثبات القانون الأجنبي عادة عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تقديم نصوص التشريع أو شهادات خبراء"
+      },
+      {
+        "question": "قاعدة 'تخضع أهلية الشخص لقانون جنسيته' هي مثال لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة مباشرة",
+        "correctAnswer": "قاعدة إسناد"
+      },
+      {
+        "question": "أي من الحالات التالية تُظهر أهمية الكشف عن العنصر الأجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إعمال قواعد القانون الدولي الخاص"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
