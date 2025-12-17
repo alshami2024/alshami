@@ -2535,5 +2535,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "هيثم الغرباني",
+    "submissionDate": "2025-12-17T06:56:47.689Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ينشئ القانون الدولي الخاص حقوقاً موضوعية جديدة للأطراف بشكل مباشر.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يتم إثبات القانون الأجنبي عادة عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تقديم نصوص التشريع أو شهادات خبراء"
+      },
+      {
+        "question": "ظاهرة الإحالة (Renvoi) تنشأ عندما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تشير قاعدة الإسناد الوطنية لقانون أجنبي، ويحيل الأخير لقانون آخر"
+      },
+      {
+        "question": "العنصر الأجنبي في العلاقة القانونية هو ما يربط هذه العلاقة بنظام قانوني أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ضابط الجنسية يعتبر أكثر تغيراً وأقل استقراراً من ضابط الموطن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "التنازع المتغير يحدث فقط عند تغير القانون الداخلي للدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "في مشكلة تعدد الشرائع (الإسناد الداخلي)، إذا أحال القانون الدولي الخاص النزاع لدولة تتعدد فيها القوانين، فالأصل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرجوع لقواعد التوزيع الداخلي في تلك الدولة"
+      },
+      {
+        "question": "النظام العام (Ordre Public) يعمل كأداة لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "منع تطبيق قانون أجنبي يتعارض مع المبادئ الأساسية للدولة"
+      },
+      {
+        "question": "في حال انعدام الجنسية، يتم الرجوع غالباً لقانون الموطن أو الإقامة المعتادة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "حرية الأطراف في اختيار القانون المطبق على العقد مطلقة ولا تحدها أي قيود.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
