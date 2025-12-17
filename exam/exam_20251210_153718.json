@@ -1951,5 +1951,102 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "حارث شطيف",
+    "submissionDate": "2025-12-17T06:52:51.495Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "وفقاً لنظرية \"تكييف القانون للقاضي\" (Lex Fori)، يتم التكييف بناءً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفاهيم القانون الوطني لقاضي النزاع"
+      },
+      {
+        "question": "تنازع الاختصاص القضائي الدولي يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعارض القوانين الداخلية في دولة واحدة",
+        "correctAnswer": "تعارض محتمل بين محاكم عدة دول تدعي صلاحية نظر النزاع"
+      },
+      {
+        "question": "أي مما يلي يُعد مثالاً على 'العنصر المكاني' كعنصر أجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إبرام العقد في دولة غير دولة الأطراف"
+      },
+      {
+        "question": "الشروط الشكلية للزواج تخضع عادة لقانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان إبرام الزواج"
+      },
+      {
+        "question": "القاضي الوطني غير ملزم بتطبيق القانون الأجنبي حتى لو أشارت إليه قاعدة الإسناد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "في مشكلة تعدد الشرائع (الإسناد الداخلي)، إذا أحال القانون الدولي الخاص النزاع لدولة تتعدد فيها القوانين، فالأصل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرجوع لقواعد التوزيع الداخلي في تلك الدولة"
+      },
+      {
+        "question": "القاعدة العامة في الحقوق العينية العقارية هي خضوعها لقانون موقع العقار.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "القضاء في الدول العربية يميل غالباً إلى قبول الإحالة بشكل مطلق وفي كل المجالات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد وطنية يضعها المشرع الداخلي لكل دولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "قاعدة 'المكان يحكم الشكل' تعني خضوع شكل الزواج لقانون مكان إبرامه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
