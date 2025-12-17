@@ -292,5 +292,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "شروق الحيدري",
+    "submissionDate": "2025-12-17T06:33:36.410Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "قواعد الإسناد تتسم بالحيادية، أي أنها لا تنحاز مسبقاً لقانون وطني أو أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تعتبر المعاهدات الدولية من المصادر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرسمية للقانون الدولي الخاص"
+      },
+      {
+        "question": "تنازع القوانين يعني تعارض محتمل بين قوانين دول مختلفة تحاول حكم نفس العلاقة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "القاعدة العامة في الحقوق العينية العقارية هي خضوعها لقانون موقع العقار.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي مما يلي يُعد وظيفة من وظائف القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد القانون الواجب التطبيق على العلاقات ذات العنصر الأجنبي"
+      },
+      {
+        "question": "التنازع المتغير يحدث فقط عند تغير القانون الداخلي للدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يشترط للاعتراف بحكم الطلاق الأجنبي ألا يتعارض مع النظام العام في دولة القاضي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تخضع المسؤولية التقصيرية (الفعل الضار) غالباً لقانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان وقوع الفعل الضار"
+      },
+      {
+        "question": "يُعرف القانون الدولي الخاص بأنه فرع من فروع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الداخلي"
+      },
+      {
+        "question": "يخضع شكل التصرفات القانونية (مثل شكل العقد) عادة لقاعدة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون مكان الإبرام (Locus regit actum)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
