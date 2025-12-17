@@ -3023,5 +3023,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "موسى القعر",
+    "submissionDate": "2025-12-17T17:21:57.688Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من الأمثلة على مخالفة النظام العام في الدول الإسلامية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون يجيز التبني الكامل"
+      },
+      {
+        "question": "يتم تطبيق قانون الجنسية على مسائل الأحوال الشخصية في الدول الأنجلوسكسونية بشكل أساسي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "إذا تعذر إثبات مضمون القانون الأجنبي، يلجأ القاضي كحل احتياطي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تطبيق قانونه الوطني"
+      },
+      {
+        "question": "نظرية التكييف في ضوء القانون المقارن تهدف إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوصول لتكييف محايد ومشترك بين الأنظمة"
+      },
+      {
+        "question": "الإحالة المتعددة تعني أن يحيل القانون الأجنبي الاختصاص لقانون دولة ثالثة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تعتبر الأحوال الشخصية من الموضوعات الحساسة في القانون الدولي الخاص لأنها تمس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدين والأخلاق والهوية"
+      },
+      {
+        "question": "قواعد الإسناد هي قواعد وطنية يضعها المشرع الداخلي لكل دولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يمكن للأطراف اختيار قانون أجنبي ليحكم عقداً داخلياً بحتاً لا يتضمن أي عنصر أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي مما يلي يُعد وظيفة من وظائف القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد القانون الواجب التطبيق على العلاقات ذات العنصر الأجنبي"
+      },
+      {
+        "question": "عادة ما يُسند النسب إلى قانون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جنسية الأب وقت الميلاد"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
