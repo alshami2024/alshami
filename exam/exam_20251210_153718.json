@@ -2343,5 +2343,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "حميد الكنديش",
+    "submissionDate": "2025-12-17T06:55:16.471Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في مشكلة تعدد الشرائع (الإسناد الداخلي)، إذا أحال القانون الدولي الخاص النزاع لدولة تتعدد فيها القوانين، فالأصل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرجوع لقواعد التوزيع الداخلي في تلك الدولة"
+      },
+      {
+        "question": "التحايل على القانون الواجب التطبيق بتغيير ضابط الإسناد (كالجنسية) عمداً يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الغش نحو القانون"
+      },
+      {
+        "question": "الإحالة المتعددة تعني أن يحيل القانون الأجنبي الاختصاص لقانون دولة ثالثة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "حرية الأطراف في اختيار القانون المطبق على العقد مطلقة ولا تحدها أي قيود.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "النظام العام (Ordre Public) يعمل كأداة لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "منع تطبيق قانون أجنبي يتعارض مع المبادئ الأساسية للدولة"
+      },
+      {
+        "question": "القواعد التي تطبق مباشرة على العلاقة القانونية وتحدد الحقوق والالتزامات دون إحالة لقانون آخر تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد المباشرة"
+      },
+      {
+        "question": "في حالة تعدد الجنسيات للشخص، يُفضل عادة تطبيق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون جنسية القاضي (الجنسية الوطنية) إن وجدت"
+      },
+      {
+        "question": "في الدول ذات المرجعية اللاتينية والعربية، غالباً ما تخضع مسائل الأحوال الشخصية لضابط:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجنسية"
+      },
+      {
+        "question": "في العصور القديمة، كان الأجنبي يتمتع بكامل الحقوق المدنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ينشئ القانون الدولي الخاص حقوقاً موضوعية جديدة للأطراف بشكل مباشر.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
