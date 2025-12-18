@@ -400,5 +400,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "ماجد صالح منصر هادي المنتصر",
+    "submissionDate": "2025-12-18T14:01:35.159Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما الدليل العقلي على حُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن بعثة الأنبياء فعل من أفعال الله وكل أفعاله حكمة"
+      },
+      {
+        "question": "ما موقف جمهور الأمة من ارتكاب الأنبياء للكبائر؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يجوز قبل البعثة فقط",
+        "correctAnswer": "لا يجوز صدورها عنهم"
+      },
+      {
+        "question": "من القائلين بأن العصمة من وقت المولد؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشيعة الإثنا عشرية وأهل النظر"
+      },
+      {
+        "question": "المختار في وقت العصمة هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من وقت النبوة",
+        "correctAnswer": "من وقت الولادة"
+      },
+      {
+        "question": "العصمة تعني الإكراه على الطاعة دون اختيار.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "اتفق المسلمون على عدم جواز الشرك على الأنبياء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من هو الفاعل المختار للعصمة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الله تعالى"
+      },
+      {
+        "question": "استدلال وقوع الكبائر على بطلان النبوة هو دليل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تاريخي",
+        "correctAnswer": "جدلي"
+      },
+      {
+        "question": "العصمة شرط أساسي لتحقيق غرض النبوة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
