@@ -1500,5 +1500,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "أماني قايد صالح النجار",
+    "submissionDate": "2025-12-18T17:40:38.243Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما الصفة التي يجب توافرها في النبي عند التبليغ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والأمانة"
+      },
+      {
+        "question": "ما موقف جمهور الأمة من ارتكاب الأنبياء للكبائر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز صدورها عنهم"
+      },
+      {
+        "question": "تفسير معصية آدم عليه السلام عند أهل النظر هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صغيرة لا تتعلق بالرسالة"
+      },
+      {
+        "question": "تنزيه النبي عن الكبائر سببه الأساسي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن الشرع لم يذكرها",
+        "correctAnswer": "لأنها تؤدي إلى التنفير وسقوط المنزلة"
+      },
+      {
+        "question": "يجوز على النبي كتمان شيء من الوحي إذا رأى فيه مصلحة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "العصمة تعني الإكراه على الطاعة دون اختيار.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "العصمة في الاصطلاح تعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حفظ الله للنبي من الخطأ في التبليغ والسلوك"
+      },
+      {
+        "question": "من هو الفاعل المختار للعصمة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النبي وحده",
+        "correctAnswer": "الله تعالى"
+      },
+      {
+        "question": "اتفق المسلمون على عدم جواز الشرك على الأنبياء.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
