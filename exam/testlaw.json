@@ -1,0 +1,100 @@
+[
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-19T12:49:38.752Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العنصر الأجنبي الموضوعي قد يكون موقع المال.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "القانون الأجنبي أمام القاضي الوطني يُنظر إليه غالبًا على أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون واجب التطبيق"
+      },
+      {
+        "question": "الموطن أكثر مرونة من الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "الشروط الموضوعية للزواج تتعلق بالأهلية والموانع.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الوظيفة الأساسية للقانون الدولي الخاص هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تنسيق القوانين"
+      },
+      {
+        "question": "قانون مكان الإبرام فقد أهميته المطلقة في التشريعات الحديثة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "قواعد الإسناد لا تهتم بمضمون الحل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من خصائص قواعد الإسناد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحياد"
+      },
+      {
+        "question": "القضاء العربي يميل عمليًا إلى التكييف وفق قانون القاضي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الإحالة البسيطة تُسمى الإحالة الراجعة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
