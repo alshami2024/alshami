@@ -3465,5 +3465,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "الورد الجوري",
+    "submissionDate": "2025-12-19T17:59:17.049Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من هو الفاعل المختار للعصمة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النبي وحده",
+        "correctAnswer": "الله تعالى"
+      },
+      {
+        "question": "استدلال وقوع الكبائر على بطلان النبوة هو دليل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نقلي",
+        "correctAnswer": "جدلي"
+      },
+      {
+        "question": "اتفق المسلمون على عدم جواز الشرك على الأنبياء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من القائل بعدم جواز الذنوب الصغيرة والكبيرة على الأنبياء؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعتزلة",
+        "correctAnswer": "الشيعة الإمامية"
+      },
+      {
+        "question": "العصمة في الاصطلاح تعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حفظ الله للنبي من الخطأ في التبليغ والسلوك"
+      },
+      {
+        "question": "العصمة تعني الإكراه على الطاعة دون اختيار.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما الصفة التي يجب توافرها في النبي عند التبليغ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والأمانة"
+      },
+      {
+        "question": "طلب إبراهيم عليه السلام رؤية كيفية إحياء الموتى كان شكًا في قدرة الله.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تفسير معصية آدم عليه السلام عند أهل النظر هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ارتكاب كبيرة",
+        "correctAnswer": "صغيرة لا تتعلق بالرسالة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
