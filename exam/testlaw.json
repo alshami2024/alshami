@@ -96,5 +96,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-20T07:15:28.645Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من هو العالم المسلم الذي يُعتبر مؤسس علم الجبر؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جابر بن حيان",
+        "correctAnswer": "محمد بن موسى الخوارزمي"
+      },
+      {
+        "question": "مجموع زوايا المثلث الداخلية يساوي 180 درجة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو الجذر التربيعي للعدد 81؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "8",
+        "correctAnswer": "9"
+      },
+      {
+        "question": "العدد 1 يعتبر عدداً أولياً.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أي من الأشكال التالية يعتبر شكلًا رباعي الأضلاع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السداسي",
+        "correctAnswer": "المعين"
+      },
+      {
+        "question": "ناتج ضرب أي عدد في صفر هو نفس العدد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما هي القيمة التقريبية للثابت الرياضي باي (π)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "3.14"
+      },
+      {
+        "question": "المربع هو مستطيل تساوت أطوال أضلاعه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "إذا كان 5س = 20، فما هي قيمة س؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "10",
+        "correctAnswer": "4"
+      },
+      {
+        "question": "كم عدد الثواني في الدقيقة الواحدة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "60 ثانية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
