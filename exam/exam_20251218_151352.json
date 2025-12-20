@@ -9118,5 +9118,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "الباسم",
+    "submissionDate": "2025-12-20T19:08:53.538Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما المقصود بحُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن النبوة تقرب العباد من الطاعة وتبعدهم عن المعصية"
+      },
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما الدليل العقلي على حُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن بعثة الأنبياء فعل من أفعال الله وكل أفعاله حكمة"
+      },
+      {
+        "question": "ما الصفة التي يجب توافرها في النبي عند التبليغ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والأمانة"
+      },
+      {
+        "question": "العصمة توفيق إلهي يحفظ الاختيار ويمنع الوقوع في الخطأ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز على النبي كتمان شيء من الوحي إذا رأى فيه مصلحة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من القائلين بأن العصمة من وقت المولد؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشيعة الإثنا عشرية وأهل النظر"
+      },
+      {
+        "question": "تنزيه النبي عن الكبائر سببه الأساسي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنها تؤدي إلى التنفير وسقوط المنزلة"
+      },
+      {
+        "question": "من هو الفاعل المختار للعصمة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الله تعالى"
+      },
+      {
+        "question": "استدلال وقوع الكبائر على بطلان النبوة هو دليل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نقلي",
+        "correctAnswer": "جدلي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
