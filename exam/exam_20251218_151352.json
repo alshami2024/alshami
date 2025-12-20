@@ -7920,5 +7920,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "تماني",
+    "submissionDate": "2025-12-20T16:55:01.349Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما الدليل العقلي على حُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن بعثة الأنبياء فعل من أفعال الله وكل أفعاله حكمة"
+      },
+      {
+        "question": "العصمة في الاصطلاح تعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قدرة النبي على فعل المعجزات",
+        "correctAnswer": "حفظ الله للنبي من الخطأ في التبليغ والسلوك"
+      },
+      {
+        "question": "ما المقصود بحُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن النبوة تقرب العباد من الطاعة وتبعدهم عن المعصية"
+      },
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "استدلال وقوع الكبائر على بطلان النبوة هو دليل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جدلي"
+      },
+      {
+        "question": "تفسير معصية آدم عليه السلام عند أهل النظر هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صغيرة لا تتعلق بالرسالة"
+      },
+      {
+        "question": "المختار في وقت العصمة هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من وقت النبوة",
+        "correctAnswer": "من وقت الولادة"
+      },
+      {
+        "question": "ما الصفة التي يجب توافرها في النبي عند التبليغ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والأمانة"
+      },
+      {
+        "question": "اتفق المسلمون على عدم جواز الشرك على الأنبياء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما موقف جمهور الأمة من ارتكاب الأنبياء للكبائر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز صدورها عنهم"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
