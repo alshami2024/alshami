@@ -9018,5 +9018,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "ا",
+    "submissionDate": "2025-12-20T18:56:34.534Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العصمة شرط أساسي لتحقيق غرض النبوة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما الدليل العقلي على حُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن بعثة الأنبياء فعل من أفعال الله وكل أفعاله حكمة"
+      },
+      {
+        "question": "ما الصفة التي يجب توافرها في النبي عند التبليغ؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكتمان",
+        "correctAnswer": "الصدق والأمانة"
+      },
+      {
+        "question": "العصمة تعني الإكراه على الطاعة دون اختيار.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "العصمة توفيق إلهي يحفظ الاختيار ويمنع الوقوع في الخطأ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تفسير معصية آدم عليه السلام عند أهل النظر هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ارتكاب كبيرة",
+        "correctAnswer": "صغيرة لا تتعلق بالرسالة"
+      },
+      {
+        "question": "المختار في وقت العصمة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من وقت الولادة"
+      },
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "من هو الفاعل المختار للعصمة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النبي وحده",
+        "correctAnswer": "الله تعالى"
+      },
+      {
+        "question": "العصمة في الاصطلاح تعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حفظ الله للنبي من الخطأ في التبليغ والسلوك"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
