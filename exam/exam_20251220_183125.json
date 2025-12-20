@@ -1,0 +1,139 @@
+[
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-20T15:36:36.358Z",
+    "mcqScore": {
+      "correct": 14,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n              أي مثال للتمييز بين الفعل الإرادي وغير الإرادي؟: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المشي (إرادي) مقابل ارتعاش الجسم (غير إرادي)"
+      },
+      {
+        "question": "موقف المعتزلة من فعل الله للقبيح يقوم على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إمكان القدرة واستحالة الوقوع"
+      },
+      {
+        "question": "\n              في العرف، أُخذ معنى العدل من أي صورة تمثيلية؟: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعادل الشيئين وتساويهما كما في كفتي الميزان"
+      },
+      {
+        "question": "\n              مثال الحُسن أو القُبح العقلي عند المعتزلة هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والكذب"
+      },
+      {
+        "question": "\n              في اصطلاح المتكلمين، «العدل كفاعل» يُقصد به:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الله الذي لا يفعل القبيح ولا يخل بالواجب"
+      },
+      {
+        "question": "\n              الهدى في قوله تعالى: {إِنَّ عَلَيْنَا لَلْهُدَى} معناه: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدلالة والإرشاد"
+      },
+      {
+        "question": "الرد على استدلال المجبرة بآيات الخلق يعتمد على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تخصيص العموم"
+      },
+      {
+        "question": "\n              أي شرط من شروط اللطف يمنع تحوله إلى قهر وإلجاء؟: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ألا يزيل الاختيار، فلا يكون ملجئاً"
+      },
+      {
+        "question": "\n              القول بإطلاق الحُسن والقُبح نُسب إلى: ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أبي الهذيل",
+        "correctAnswer": "البلخي"
+      },
+      {
+        "question": "من الصفات التي يجب توفرها في النبي ليحسن أداؤه للتبليغ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأمانة والصدق"
+      },
+      {
+        "question": "الختم والطبع في القرآن يدل على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وصف حال القلب بعد الإعراض"
+      },
+      {
+        "question": "\n              وجه استدلال المجبرة بقوله تعالى: {اللَّهُ خَالِقُ كُلِّ شَيْءٍ} يقوم على: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إثبات عموم الخلق دون استثناء"
+      },
+      {
+        "question": "\n              الآية: {لَهَا مَا كَسَبَتْ وَعَلَيْهَا مَا اكْتَسَبَتْ} استُخدمت لإثبات الفعل من جهة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكسب"
+      },
+      {
+        "question": "\n              معنى الضلال في قوله تعالى: {وَوَجَدَكَ ضَالّاً فَهَدَى}: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الغفلة عن النبوة"
+      },
+      {
+        "question": "الدليل الجدلي على نفي الكبائر عن الأنبياء يقوم على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بطلان شهادة الفاسق"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
