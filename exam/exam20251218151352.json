@@ -2451,5 +2451,101 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "..",
+    "submissionDate": "2025-12-23T18:44:43.290Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما موقف جمهور الأمة من ارتكاب الأنبياء للكبائر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز صدورها عنهم"
+      },
+      {
+        "question": "استدلال وقوع الكبائر على بطلان النبوة هو دليل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جدلي"
+      },
+      {
+        "question": "من هو الفاعل المختار للعصمة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الله تعالى"
+      },
+      {
+        "question": "العصمة في الاصطلاح تعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حفظ الله للنبي من الخطأ في التبليغ والسلوك"
+      },
+      {
+        "question": "من القائل بعدم جواز الذنوب الصغيرة والكبيرة على الأنبياء؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشيعة الإمامية"
+      },
+      {
+        "question": "من القائلين بأن العصمة من وقت المولد؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشيعة الإثنا عشرية وأهل النظر"
+      },
+      {
+        "question": "ما المقصود بحُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن النبوة تقرب العباد من الطاعة وتبعدهم عن المعصية"
+      },
+      {
+        "question": "طلب إبراهيم عليه السلام رؤية كيفية إحياء الموتى كان شكًا في قدرة الله.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما الصفة التي يجب توافرها في النبي عند التبليغ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والأمانة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
