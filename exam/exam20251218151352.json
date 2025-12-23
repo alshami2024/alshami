@@ -2157,5 +2157,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "زينب أحمد الموتي",
+    "submissionDate": "2025-12-23T17:33:41.019Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "نسب الحشوية إلى داود عليه السلام ارتكاب كبيرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما الصفة التي يجب توافرها في النبي عند التبليغ؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والأمانة"
+      },
+      {
+        "question": "تفسير معصية آدم عليه السلام عند أهل النظر هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صغيرة لا تتعلق بالرسالة"
+      },
+      {
+        "question": "ما المقصود بحُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن النبوة تقرب العباد من الطاعة وتبعدهم عن المعصية"
+      },
+      {
+        "question": "المختار في وقت العصمة هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من وقت المعجزة",
+        "correctAnswer": "من وقت الولادة"
+      },
+      {
+        "question": "طلب إبراهيم عليه السلام رؤية كيفية إحياء الموتى كان شكًا في قدرة الله.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "العصمة في الاصطلاح تعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حفظ الله للنبي من الخطأ في التبليغ والسلوك"
+      },
+      {
+        "question": "تنزيه النبي عن الكبائر سببه الأساسي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنها تؤدي إلى التنفير وسقوط المنزلة"
+      },
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما الدليل العقلي على حُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن بعثة الأنبياء فعل من أفعال الله وكل أفعاله حكمة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
