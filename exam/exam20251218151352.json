@@ -7331,5 +7331,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) النبوة والعصمة ",
+    "studentName": "حنان التام",
+    "submissionDate": "2025-12-24T20:23:45.115Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما المقصود بحُسن البعثة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن النبوة تقرب العباد من الطاعة وتبعدهم عن المعصية"
+      },
+      {
+        "question": "نسب الحشوية إلى داود عليه السلام ارتكاب كبيرة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "العصمة تعني الإكراه على الطاعة دون اختيار.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يجوز على النبي كتمان شيء من الوحي إذا رأى فيه مصلحة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "العصمة توفيق إلهي يحفظ الاختيار ويمنع الوقوع في الخطأ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من القائل بعدم جواز الذنوب الصغيرة والكبيرة على الأنبياء؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الزيدية",
+        "correctAnswer": "الشيعة الإمامية"
+      },
+      {
+        "question": "اتفق المسلمون على عدم جواز الشرك على الأنبياء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما موقف جمهور الأمة من ارتكاب الأنبياء للكبائر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز صدورها عنهم"
+      },
+      {
+        "question": "يرى البراهمة أن العقل يغني عن بعثة الأنبياء مطلقًا.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تنزيه النبي عن الكبائر سببه الأساسي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنها تؤدي إلى التنفير وسقوط المنزلة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
