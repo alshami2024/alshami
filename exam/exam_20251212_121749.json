@@ -3984,5 +3984,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2) في الحُسْن والقُبْح العقليين",
+    "studentName": "ام ملاك",
+    "submissionDate": "2025-12-24T19:35:18.415Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما الذي يُعتبر استدلالاً على قدرة الله على خلاف معلومه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا كان العلم موجبًا للفعل",
+        "correctAnswer": "إذا كان الله مختارًا في أفعاله"
+      },
+      {
+        "question": "ما هو الموقف من الأشاعرة في مسألة الحسن والقبح؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يرون معنى للحكم بالحسن والقبح إلا بحسب خطاب الشرع"
+      },
+      {
+        "question": "القدرة على فعل القبيح مستحيلة في حق الله بسبب حكمته، وليس لعدم القدرة عليه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "القدرة على خلاف المعلوم تعني أن الله لا يمكن أن يفعل ما علم أنه لن يفعله.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "جميع المعتزلة يقولون بإطلاق الحسن والقبح دون تقييد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما هو الرأي المختار حول قدرة الله على القبيح؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الله قادر على القبيح من حيث القدرة ولكنه لا يقع منه"
+      },
+      {
+        "question": "أي من الآتي يُعتبر دليلاً على أن الأفعال تحسن وتقبح لذاتها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأفعال تنقسم إلى واجب ومندوب وقبيح"
+      },
+      {
+        "question": "كيف يفسر المعتزلة قدرة الله على فعل القبيح؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يقدر الله على فعل القبيح ولكنه لا يقع منه"
+      },
+      {
+        "question": "الحسن والقبح العقليين مرتبطان بالأفعال تبعًا لوصف معين ولا يمكن اعتباره مستقلًا عن الشرع.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الأشاعرة يرون أن الحكم بالحسن والقبح يعتمد على العقل ولا يتوقف على الشرع.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
