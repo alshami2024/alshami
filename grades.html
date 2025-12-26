@@ -1022,7 +1022,21 @@ function renderStudentsList(studentsToRender) {
         });
     }
 }
+function getGradeCategory(totalGrade) {
+    if (isNaN(totalGrade)) return 'لم تُصنف بعد';
 
+    if (totalGrade >= 36) return 'ممتاز';
+    if (totalGrade >= 32) return 'جيد جداً';
+    if (totalGrade >= 28) return 'جيد';
+    if (totalGrade >= 20) return 'مقبول'; 
+    
+    // التعديل هنا: إذا لم يتم العثور على درجة حضور كاملة لأي طالب، لا تظهر "راسب"
+    if (!isAttendanceFinalized()) {
+        return 'بانتظار الحضور';
+    }
+
+    return 'راسب'; 
+}
 function showStudentDetails(student) {
     document.getElementById('modal-student-name').textContent = student.name;
     document.getElementById('modal-student-id').textContent = student.id;
@@ -1127,21 +1141,34 @@ function filterAndSortStudents() {
 
 function getGradeClass(totalGrade) {
     if (isNaN(totalGrade)) return '';
-    if (totalGrade >= 36) return 'grade-high'; // ممتاز
-    if (totalGrade >= 28) return 'grade-medium'; // جيد
-    return 'grade-low'; // راسب أو مقبول
+    if (totalGrade >= 36) return 'grade-high'; // أخضر
+    if (totalGrade >= 28) return 'grade-medium'; // برتقالي
+    
+    // إذا كان الطالب ناجحاً (أكبر من 20) لكن أقل من جيد، نعطيه لوناً عادياً (يمكنك استخدام grade-medium أو إنشاء كلاس جديد)
+    if (totalGrade >= 20) return 'grade-medium'; 
+
+    // إذا كانت الدرجة أقل من 20
+    if (!isAttendanceFinalized()) {
+        return 'grade-medium'; // نعرضه باللون البرتقالي بدلاً من الأحمر لأنه لم يرسب رسمياً بعد
+    }
+
+    return 'grade-low'; // أحمر (راسب مؤكد)
 }
 
-function getGradeCategory(totalGrade) {
-    if (isNaN(totalGrade)) return 'لم تُصنف بعد';
+// دالة للتحقق مما إذا تم رصد درجة حضور كاملة (10) لأي طالب في الدفعة
+function isAttendanceFinalized() {
+    // الحصول على العام والفصل المحددين في الواجهة الرئيسية
+    const currentYear = document.getElementById('academicYear').value;
+    const currentSemester = document.getElementById('semester').value;
 
-    if (totalGrade >= 36) return 'ممتاز';
-    if (totalGrade >= 32) return 'جيد جداً';
-    if (totalGrade >= 28) return 'جيد';
-    if (totalGrade >= 20) return 'مقبول'; 
-    return 'راسب'; 
+    // التحقق فقط من الطلاب في نفس العام والفصل المحددين
+    // هذا يمنع التأثر ببيانات السنوات السابقة
+    return allStudentsData.some(student => 
+        student.year === currentYear && 
+        student.semester === currentSemester &&
+        parseInt(student.attendance || 0) === 10
+    );
 }
-
 
 function closeModal() {
     gradedListModal.style.display = 'none';
@@ -1228,9 +1255,16 @@ function showAlertMessage(totalGrade) {
         icon = 'fas fa-check-circle';
         className = 'success';
     } else {
-        message = '⚠️ لم تنجح في المقرر. يمكنك التواصل مع الأستاذ لمعرفة فرص التحسين.';
-        icon = 'fas fa-exclamation-triangle';
-        className = 'warning';
+        // التحقق من الحضور قبل إظهار رسالة الرسوب
+        if (isAttendanceFinalized()) {
+            message = '⚠️ لم تنجح في المقرر. يمكنك التواصل مع الأستاذ لمعرفة فرص التحسين.';
+            icon = 'fas fa-exclamation-triangle';
+            className = 'warning'; // يمكنك جعلها danger عبر CSS إذا أردت لوناً أحمر
+        } else {
+            message = '⏳ مجموع الدرجات الحالي أقل من 20، ولكن لم يتم اعتماد درجات الحضور النهائية بعد (قد تتغير النتيجة).';
+            icon = 'fas fa-hourglass-half';
+            className = 'warning'; // لون أصفر تحذيري وليس أحمر
+        }
     }
     
     alertBox.innerHTML = `
@@ -1242,11 +1276,19 @@ function showAlertMessage(totalGrade) {
 }
 
 function updateGradeDistributionChart(grades) {
+    // 1. حساب الأعداد لكل فئة
     const excellent = grades.filter(g => g >= 36).length;
     const veryGood = grades.filter(g => g >= 32 && g < 36).length;
     const good = grades.filter(g => g >= 28 && g < 32).length;
     const acceptable = grades.filter(g => g >= 20 && g < 28).length; 
-    const failed = grades.filter(g => g < 20).length;
+    
+    // الطلاب الذين حصلوا على أقل من 20 (قد يكونون راسبين أو بانتظار الحضور)
+    const belowThreshold = grades.filter(g => g < 20).length;
+
+    // 2. تحديد حالة العمود الأخير (هل هو راسب أم بانتظار الحضور؟)
+    const finalized = isAttendanceFinalized();
+    const lastCategoryLabel = finalized ? 'راسب' : 'بانتظار الحضور';
+    const lastCategoryColor = finalized ? '#dc3545' : '#ffc107'; // أحمر إذا تم الرصد، برتقالي إذا لم يتم
 
     const ctx = document.getElementById('gradeDistributionChart').getContext('2d');
     if (gradeDistributionChart) {
@@ -1257,23 +1299,23 @@ function updateGradeDistributionChart(grades) {
     gradeDistributionChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['ممتاز', 'جيد جداً', 'جيد', 'مقبول', 'راسب'],
+            labels: ['ممتاز', 'جيد جداً', 'جيد', 'مقبول', lastCategoryLabel],
             datasets: [{
                 label: 'عدد الطلاب',
-                data: [excellent, veryGood, good, acceptable, failed],
+                data: [excellent, veryGood, good, acceptable, belowThreshold],
                 backgroundColor: [
                     '#28a745',
                     '#17a2b8',
                     '#0a9396',
                     '#ffc107',
-                    '#dc3545'
+                    lastCategoryColor // اللون الديناميكي
                 ],
                 borderColor: [
                     '#28a745',
                     '#17a2b8',
                     '#0a9396',
                     '#ffc107',
-                    '#dc3545'
+                    lastCategoryColor // الحدود الديناميكية
                 ],
                 borderWidth: 1
             }]
