@@ -1488,5 +1488,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد عبده محسن الرقيمي",
+    "submissionDate": "2025-12-27T19:08:59.544Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العنصر النفسي (المعنوي) للعرف الدستوري يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشعور بالإلزام وضرورة الاحترام"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "المبادئ التي يحظر الدستور تعديلها (الحظر الموضوعي) تشمل غالباً:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "شكل الدولة (كالنظام الجمهوري) وحقوق الإنسان"
+      },
+      {
+        "question": "تعتبر 'الماجنا كارتا' (1215م) من المصادر التاريخية للدستور في:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الولايات المتحدة",
+        "correctAnswer": "بريطانيا"
+      },
+      {
+        "question": "ما هو مصير القوانين التي تخالف تعديلاً دستورياً جديداً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعتبر باطلة ويجب تعديلها أو إلغاؤها"
+      },
+      {
+        "question": "من عيوب الرقابة السياسية على الدستور:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها بطيئة جداً",
+        "correctAnswer": "تأثرها بالاعتبارات الحزبية والسياسية"
+      },
+      {
+        "question": "الرقابة على دستورية القوانين تحمي مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المشروعية والسمو الدستوري"
+      },
+      {
+        "question": "ما هو الأثر القانوني لتعارض قانون عادي مع نص دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتبر القانون العادي باطلاً لوجوب سمو الدستور"
+      },
+      {
+        "question": "ما معنى أن تكون نصوص الدستور 'ذاتية التنفيذ'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها تطبق مباشرة دون حاجة لتشريع فرعي (مثل نصوص الحقوق)"
+      },
+      {
+        "question": "نشر الدستور في 'الجريدة الرسمية' يحقق مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلانية وقرينة العلم"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
