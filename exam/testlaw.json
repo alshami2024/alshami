@@ -433,5 +433,894 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار شامل في القانون الدستوري",
+    "studentName": "جمال",
+    "submissionDate": "2025-12-27T18:36:47.165Z",
+    "mcqScore": {
+      "correct": 63,
+      "total": 104
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "العرف الدستوري يتطلب توافر ركنين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي والركن المعنوي"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تمارسها جميع المحاكم",
+        "correctAnswer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "الدستور المصري لعام 2014 تم إقراره عن طريق:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمعية تأسيسية فقط",
+        "correctAnswer": "استفتاء شعبي"
+      },
+      {
+        "question": "الانقلاب العسكري يختلف عن الثورة في أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عمل عسكري نخبوي غير شرعي يهدف للاستيلاء على السلطة"
+      },
+      {
+        "question": "دستور دولة الإمارات العربية المتحدة يعتبر دستوراً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "غير مدون",
+        "correctAnswer": "مكتوباً وجامداً"
+      },
+      {
+        "question": "أسلوب 'المنحة' في نشأة الدساتير يعني أن الدستور يصدر عن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إرادة الحاكم المنفردة"
+      },
+      {
+        "question": "الطعن في نتائج الاستفتاء الدستوري في اليمن يكون أمام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة العليا (الدائرة الدستورية)"
+      },
+      {
+        "question": "الجهة التي تملك حق تفسير النصوص الدستورية في اليمن هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وزارة الشؤون القانونية",
+        "correctAnswer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "القوانين التي تنظم السلطات العامة وتصدر بإجراءات عادية تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قوانين دستورية (بالمعنى الموضوعي) أو أساسية"
+      },
+      {
+        "question": "تعد 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "دستور 1971 في مصر انتهى العمل به نتيجة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثورة شعبية (25 يناير 2011)"
+      },
+      {
+        "question": "يعرّف المدلول الشكلي القانون الدستوري بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الواردة في الوثيقة الدستورية المكتوبة فقط"
+      },
+      {
+        "question": "العرف الذي يمنع إعادة انتخاب الرئيس الأمريكي لأكثر من فترتين (قبل تعديل 1951) كان مثالاً على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المفسر",
+        "correctAnswer": "الركن المادي للعرف (الذي تحول لقانون لاحقاً)"
+      },
+      {
+        "question": "نفاذ الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بدء سريان أحكامه وإلزاميتها للكافة"
+      },
+      {
+        "question": "ما هي الوسيلة التي تتبعها الولايات المتحدة لتعديل دستورها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موافقة الكونغرس (الثلثين) + تصديق ثلاثة أرباع الولايات"
+      },
+      {
+        "question": "أي من الدول التالية تأخذ بنظام 'الرقابة السابقة' (السياسية) على دستورية القوانين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليمن",
+        "correctAnswer": "فرنسا"
+      },
+      {
+        "question": "نشر الدستور في 'الجريدة الرسمية' يحقق مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلانية وقرينة العلم"
+      },
+      {
+        "question": "ما المقصود بـ 'الجمود النسبي' للدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يقبل التعديل ولكن بإجراءات أصعب من القانون العادي"
+      },
+      {
+        "question": "في سويسرا، يمكن للشعب اقتراح تعديل الدستور إذا جمع توقيعات عددها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "50,000 مواطن",
+        "correctAnswer": "100,000 مواطن"
+      },
+      {
+        "question": "إنهاء العمل بالدستور بطريقة 'الثورة' يعتبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نهاية غير عادية (أسلوب العنف)"
+      },
+      {
+        "question": "وظيفة 'العرف المفسر' هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توضيح وإزالة الغموض عن نص دستوري قائم"
+      },
+      {
+        "question": "تعديل الدستور اليمني يتطلب موافقة الشعب في استفتاء إذا وافق عليه:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نصف أعضاء البرلمان",
+        "correctAnswer": "ثلثا أعضاء البرلمان"
+      },
+      {
+        "question": "مصطلح 'Constitutio' هو مصطلح:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إغريقي",
+        "correctAnswer": "لاتيني"
+      },
+      {
+        "question": "الرقابة على دستورية القوانين تحمي مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المشروعية والسمو الدستوري"
+      },
+      {
+        "question": "الأسلوب الذي نشأ به الدستور اليمني الحالي (دستور الوحدة 1991):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي (بعد إقراره من المجلسين)"
+      },
+      {
+        "question": "النظام الدستوري البريطاني هو المثال الأبرز لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير العرفية"
+      },
+      {
+        "question": "ما هو العيب الرئيسي للدساتير العرفية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم الوضوح واحتمالية الغموض"
+      },
+      {
+        "question": "في الدستور اليمني، هل الاستفتاء الشعبي ملزم لإقرار التعديلات الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، إلزامي في جميع التعديلات"
+      },
+      {
+        "question": "أي من الأساليب التالية لنشأة الدساتير يعتبر 'غير ديمقراطي'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      },
+      {
+        "question": "قانون الانتخابات في اليمن يُعتبر مثالاً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القوانين العادية ذات الطبيعة الدستورية"
+      },
+      {
+        "question": "أي من المعايير التالية يعتمد عليه المدلول الموضوعي للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مضمون القاعدة وموضوعها"
+      },
+      {
+        "question": "الرقابة القضائية التي تمارسها محكمة واحدة متخصصة تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرقابة اللامركزية (الأمريكية)",
+        "correctAnswer": "الرقابة المركزية (الأوروبية)"
+      },
+      {
+        "question": "العرف المخالف لنص دستوري صريح يعتبر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيحاً وملزماً",
+        "correctAnswer": "باطلاً ولا قيمة له"
+      },
+      {
+        "question": "النظرية التي ترى أن الدستور 'عقد اجتماعي' بين الأفراد هي نظرية:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أفلاطون",
+        "correctAnswer": "جان جاك روسو"
+      },
+      {
+        "question": "عند حدوث 'حرب أهلية'، ما هو الأثر الغالب على الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التعطيل الجزئي أو الكلي والانهيار"
+      },
+      {
+        "question": "في دستور اليمن 1991م، ما هي الطريقة المعتمدة لإقرار الدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة",
+        "correctAnswer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "الركن المادي للعرف الدستوري يقصد به:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كتابة القاعدة في وثيقة",
+        "correctAnswer": "تكرار السلوك واطراده بانتظام"
+      },
+      {
+        "question": "هل القانون الدستوري فرع من القانون العام أم الخاص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الخاص",
+        "correctAnswer": "القانون العام"
+      },
+      {
+        "question": "أي من الخصائص التالية تميز الدستور الصادر عن جمعية تأسيسية منتخبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التمثيل الشعبي والديمقراطية"
+      },
+      {
+        "question": "الحكم بعدم دستورية قانون في ظل 'الرقابة المركزية' (مثل مصر واليمن) يؤدي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إلغاء القانون بأثر عام ومطلق (كأنه لم يكن)"
+      },
+      {
+        "question": "ما المقصود بـ 'الكتلة الدستورية' في النظام الفرنسي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجموعة النصوص التي لها قيمة دستورية (الدستور، الإعلانات، المقدمات)"
+      },
+      {
+        "question": "العنصر النفسي (المعنوي) للعرف الدستوري يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تكرار الفعل",
+        "correctAnswer": "الشعور بالإلزام وضرورة الاحترام"
+      },
+      {
+        "question": "هل تعتبر 'ديباجة' (مقدمة) الدستور جزءاً ملزماً منه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، في النظام الفرنسي والمصري والعديد من الأنظمة (ضمن الكتلة الدستورية)"
+      },
+      {
+        "question": "الدساتير التي توضع لفترة انتقالية محددة تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير المؤقتة"
+      },
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "الدستور الإيطالي يحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحدود الجغرافية",
+        "correctAnswer": "النظام الجمهوري"
+      },
+      {
+        "question": "الدستور المرن هو الدستور الذي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتطلب إجراءات معقدة وأغلبية خاصة لتعديله",
+        "correctAnswer": "يتم تعديله بنفس إجراءات القوانين العادية"
+      },
+      {
+        "question": "هل يجوز لرئيس الدولة الامتناع عن إصدار التعديل الدستوري بعد موافقة الشعب عليه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، إصداره عمل ملزم وتوثيقي"
+      },
+      {
+        "question": "في الرقابة الأمريكية (اللامركزية)، حكم المحكمة بعدم الدستورية يسري:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "على أطراف القضية فقط (حجية نسبية) مع الالتزام بالسوابق"
+      },
+      {
+        "question": "الجمعية التأسيسية التونسية لعام 2011 تم اختيارها عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الانتخاب الحر المباشر من الشعب"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليون دوجي"
+      },
+      {
+        "question": "يحظر الدستور الجزائري (2020) تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دين الدولة (الإسلام) والطابع الجمهوري"
+      },
+      {
+        "question": "ما هو مصير القوانين التي تخالف تعديلاً دستورياً جديداً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعتبر باطلة ويجب تعديلها أو إلغاؤها"
+      },
+      {
+        "question": "المجلس الدستوري الفرنسي يتكون من:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "100 عضو منتخب",
+        "correctAnswer": "9 أعضاء معينين + الرؤساء السابقين"
+      },
+      {
+        "question": "المبادئ التي يحظر الدستور تعديلها (الحظر الموضوعي) تشمل غالباً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مكان انعقاد البرلمان",
+        "correctAnswer": "شكل الدولة (كالنظام الجمهوري) وحقوق الإنسان"
+      },
+      {
+        "question": "مثال على 'العرف المعدل' الذي يغير توزيع السلطات (المثال البريطاني):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تغيير موعد الانتخابات",
+        "correctAnswer": "انتقال السلطة الفعلية من الملك إلى رئيس الوزراء والبرلمان"
+      },
+      {
+        "question": "يتميز الدستور الجزائري لعام 1976 بأن حق اقتراح التعديل كان محصوراً في:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رئيس الجمهورية"
+      },
+      {
+        "question": "الدستور الجامد يتميز بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اشتراط إجراءات خاصة ومشددة للتعديل"
+      },
+      {
+        "question": "ما هو الحد الأدنى لعدد القضاة في الدائرة الدستورية بالمحكمة العليا اليمنية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "7 قضاة (عادة ما بين 5-7)"
+      },
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "30 يوماً"
+      },
+      {
+        "question": "العرف الذي يملأ الفراغات التي تركها الدستور المكتوب يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المكمل"
+      },
+      {
+        "question": "ما هو الأثر القانوني لتعارض قانون عادي مع نص دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتبر القانون العادي باطلاً لوجوب سمو الدستور"
+      },
+      {
+        "question": "صاحب نظرية 'تدرج القواعد القانونية' (الهرم القانوني) هو الفقيه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هانز كلسن"
+      },
+      {
+        "question": "هل يجوز تعديل النصوص الدستورية المحظور تعديلها (مثل دين الدولة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز تعديلها دستورياً، بل يتطلب الأمر دستوراً جديداً"
+      },
+      {
+        "question": "أي من الدول التالية دستورها مرن (قبل التعديلات الحديثة التي أدخلت بعض الجمود)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الولايات المتحدة",
+        "correctAnswer": "نيوزيلندا"
+      },
+      {
+        "question": "أي من الطرق التالية لرفع الدعوى الدستورية في اليمن تسمى 'رقابة الامتناع' أو الدفع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدفع الفرعي بعدم الدستورية أثناء نظر قضية أخرى"
+      },
+      {
+        "question": "الميثاق الفرنسي لعام 1814م مثال على أسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      },
+      {
+        "question": "في اليمن، الجهة المختصة بالرقابة على دستورية القوانين هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة الإدارية العليا",
+        "correctAnswer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "الفقيه 'هانز كلسن' هو مؤسس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة الدستورية النمساوية (الرقابة المركزية)"
+      },
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1787م"
+      },
+      {
+        "question": "تعديل الدستور الذي يغير النظام السياسي والاجتماعي للدولة بالكامل يعتبر بمثابة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إصدار دستور جديد"
+      },
+      {
+        "question": "في الدساتير الجامدة، هل يستطيع البرلمان تعديل الدستور بقانون عادي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، لا بد من اتباع إجراءات التعديل المشددة"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إجماع الأعضاء",
+        "correctAnswer": "أغلبية الثلثين من أعضاء المجلس"
+      },
+      {
+        "question": "مدة الرئاسة في الدستور اليمني (بعد تعديل 2001) أصبحت:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "4 سنوات",
+        "correctAnswer": "7 سنوات"
+      },
+      {
+        "question": "أي من الجزاءات التالية يعتبر جزاءً شعبياً لمخالفة الدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حجب الثقة عن الحكومة",
+        "correctAnswer": "المظاهرات والاحتجاجات السلمية"
+      },
+      {
+        "question": "في ظل 'الرقابة السياسية' (المجلس الدستوري الفرنسي)، متى تتم الرقابة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قبل إصدار القانون (رقابة وقائية)"
+      },
+      {
+        "question": "ما هو الأثر الرجعي للتعديل الدستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يطبق أبداً حتى في المستقبل",
+        "correctAnswer": "الأصل عدم الرجعية، إلا إذا نص على ذلك أو كان أصلح"
+      },
+      {
+        "question": "في حالة 'الاحتلال الأجنبي'، تنص اتفاقيات جنيف على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احترام القوانين المحلية السارية ما أمكن"
+      },
+      {
+        "question": "ما هو الجزاء السياسي الذي قد يوقع على الحكومة عند مخالفتها للدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحكم بعدم دستورية القوانين",
+        "correctAnswer": "سحب الثقة منها من قبل البرلمان"
+      },
+      {
+        "question": "دستور دولة الكويت لعام 1962م نشأ بأسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة",
+        "correctAnswer": "العقد (الاتفاق)"
+      },
+      {
+        "question": "تعتبر 'القوانين الأساسية' أو التنظيمية (مثل قانون الأحزاب) جزءاً من:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الجنائي",
+        "correctAnswer": "القانون الدستوري بمعناه الموضوعي"
+      },
+      {
+        "question": "من شروط صحة 'الركن المادي' للعرف:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن يكون مكتوباً",
+        "correctAnswer": "التكرار والعمومية والقدم والثبات"
+      },
+      {
+        "question": "أي من الدول التالية دستورها يحظر تعديل 'النظام الجمهوري'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا",
+        "correctAnswer": "فرنسا واليمن (ضمناً)"
+      },
+      {
+        "question": "أعلى درجات الديمقراطية في وضع الدساتير تتمثل في أسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد",
+        "correctAnswer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "يشترط الدستور اليمني لتقديم طلب تعديل من قبل مجلس النواب توقيع:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نصف الأعضاء",
+        "correctAnswer": "ثلث الأعضاء (110 عضواً)"
+      },
+      {
+        "question": "من عيوب الرقابة السياسية على الدستور:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها بطيئة جداً",
+        "correctAnswer": "تأثرها بالاعتبارات الحزبية والسياسية"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مدة الرئاسة",
+        "correctAnswer": "الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "أول دستور مكتوب في العالم العربي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور التونسي 1861"
+      },
+      {
+        "question": "يتميز الدستور الذي يوضع عن طريق 'العقد' بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ينشأ باتفاق بين الحاكم وممثلي الشعب"
+      },
+      {
+        "question": "تعديلات عام 2011 في المغرب تم إقرارها عبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي"
+      },
+      {
+        "question": "المعيار الأساسي للتمييز بين الدستور المرن والدستور الجامد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إجراءات التعديل"
+      },
+      {
+        "question": "ما معنى أن تكون نصوص الدستور 'ذاتية التنفيذ'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها تطبق مباشرة دون حاجة لتشريع فرعي (مثل نصوص الحقوق)"
+      },
+      {
+        "question": "من عيوب أسلوب 'المنحة' في وضع الدستور:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يسلب الحاكم سلطاته",
+        "correctAnswer": "افتقاره للشرعية الشعبية وقابليته للسحب من الحاكم"
+      },
+      {
+        "question": "مبدأ سمو الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الدستور يعلو على جميع القوانين والقرارات في الدولة"
+      },
+      {
+        "question": "تعتبر 'اتفاقية جنيف الرابعة' مرجعية في حالة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاحتلال الأجنبي وتأثيره على دستور الدولة"
+      },
+      {
+        "question": "نشأت الرقابة القضائية في الولايات المتحدة الأمريكية من خلال قضية شهيرة عام 1803م تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قضية ماربيري ضد ماديسون"
+      },
+      {
+        "question": "الإجراء الذي يتم به إعلان نص الدستور للجمهور وافتراض علمهم به هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإصدار",
+        "correctAnswer": "النشر في الجريدة الرسمية"
+      },
+      {
+        "question": "من يملك حق طلب تعديل الدستور في الجمهورية اليمنية وفقاً للمادة (158)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رئيس الوزراء فقط",
+        "correctAnswer": "رئيس الجمهورية أو ثلث أعضاء مجلس النواب"
+      },
+      {
+        "question": "ما هو 'الدفع الفرعي' بعدم الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن يدفع أحد الخصوم أثناء قضية بأن القانون المراد تطبيقه غير دستوري"
+      },
+      {
+        "question": "أول دستور في العالم العربي صدر في تونس عام:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1956م",
+        "correctAnswer": "1861م"
+      },
+      {
+        "question": "تعتبر 'الماجنا كارتا' (1215م) من المصادر التاريخية للدستور في:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الولايات المتحدة",
+        "correctAnswer": "بريطانيا"
+      },
+      {
+        "question": "هل يوجد في الدساتير العربية (مثل اليمن ومصر) نظام 'الاقتراح الشعبي' لتعديل الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، غير موجود"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
