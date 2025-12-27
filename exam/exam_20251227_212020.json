@@ -1586,5 +1586,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "طارق عزيز عبدالله علي الحيدري",
+    "submissionDate": "2025-12-27T19:10:06.209Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العنصر النفسي (المعنوي) للعرف الدستوري يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشعور بالإلزام وضرورة الاحترام"
+      },
+      {
+        "question": "الرقابة القضائية التي تمارسها محكمة واحدة متخصصة تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرقابة السياسية",
+        "correctAnswer": "الرقابة المركزية (الأوروبية)"
+      },
+      {
+        "question": "أسلوب 'المنحة' في نشأة الدساتير يعني أن الدستور يصدر عن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إرادة الحاكم المنفردة"
+      },
+      {
+        "question": "من يملك حق طلب تعديل الدستور في الجمهورية اليمنية وفقاً للمادة (158)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة العليا",
+        "correctAnswer": "رئيس الجمهورية أو ثلث أعضاء مجلس النواب"
+      },
+      {
+        "question": "دستور دولة الكويت لعام 1962م نشأ بأسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستفتاء الشعبي",
+        "correctAnswer": "العقد (الاتفاق)"
+      },
+      {
+        "question": "نفاذ الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بدء سريان أحكامه وإلزاميتها للكافة"
+      },
+      {
+        "question": "ما هو الجزاء السياسي الذي قد يوقع على الحكومة عند مخالفتها للدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقوبات الاقتصادية الدولية",
+        "correctAnswer": "سحب الثقة منها من قبل البرلمان"
+      },
+      {
+        "question": "هل القانون الدستوري فرع من القانون العام أم الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون العام"
+      },
+      {
+        "question": "الطعن في نتائج الاستفتاء الدستوري في اليمن يكون أمام:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اللجنة العليا للانتخابات",
+        "correctAnswer": "المحكمة العليا (الدائرة الدستورية)"
+      },
+      {
+        "question": "المعيار الأساسي للتمييز بين الدستور المرن والدستور الجامد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إجراءات التعديل"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
