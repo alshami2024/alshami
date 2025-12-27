@@ -7510,5 +7510,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد احمد صالح",
+    "submissionDate": "2025-12-27T22:49:05.771Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1787م"
+      },
+      {
+        "question": "في سويسرا، يمكن للشعب اقتراح تعديل الدستور إذا جمع توقيعات عددها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "50,000 مواطن",
+        "correctAnswer": "100,000 مواطن"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      },
+      {
+        "question": "أي من الخصائص التالية تميز الدستور الصادر عن جمعية تأسيسية منتخبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التمثيل الشعبي والديمقراطية"
+      },
+      {
+        "question": "النظرية التي ترى أن الدستور 'عقد اجتماعي' بين الأفراد هي نظرية:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أفلاطون",
+        "correctAnswer": "جان جاك روسو"
+      },
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "15 يوماً",
+        "correctAnswer": "30 يوماً"
+      },
+      {
+        "question": "يعرّف المدلول الشكلي القانون الدستوري بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الواردة في الوثيقة الدستورية المكتوبة فقط"
+      },
+      {
+        "question": "الفقيه 'هانز كلسن' هو مؤسس:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نظام الرقابة السياسية",
+        "correctAnswer": "المحكمة الدستورية النمساوية (الرقابة المركزية)"
+      },
+      {
+        "question": "العرف الدستوري يتطلب توافر ركنين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي والركن المعنوي"
+      },
+      {
+        "question": "مدة الرئاسة في الدستور اليمني (بعد تعديل 2001) أصبحت:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "4 سنوات",
+        "correctAnswer": "7 سنوات"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
