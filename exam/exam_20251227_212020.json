@@ -96,5 +96,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مرام عبد الرقيب",
+    "submissionDate": "2025-12-27T18:53:41.704Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الجزاءات التالية يعتبر جزاءً شعبياً لمخالفة الدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إلغاء القانون",
+        "correctAnswer": "المظاهرات والاحتجاجات السلمية"
+      },
+      {
+        "question": "مدة الرئاسة في الدستور اليمني (بعد تعديل 2001) أصبحت:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "4 سنوات",
+        "correctAnswer": "7 سنوات"
+      },
+      {
+        "question": "ما هو الأثر القانوني لتعارض قانون عادي مع نص دستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتم تطبيق الاثنين معاً",
+        "correctAnswer": "يعتبر القانون العادي باطلاً لوجوب سمو الدستور"
+      },
+      {
+        "question": "الدستور المرن هو الدستور الذي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتم تعديله بنفس إجراءات القوانين العادية"
+      },
+      {
+        "question": "تعتبر 'اتفاقية جنيف الرابعة' مرجعية في حالة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الثورات الداخلية",
+        "correctAnswer": "الاحتلال الأجنبي وتأثيره على دستور الدولة"
+      },
+      {
+        "question": "ما هو 'الدفع الفرعي' بعدم الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن يدفع أحد الخصوم أثناء قضية بأن القانون المراد تطبيقه غير دستوري"
+      },
+      {
+        "question": "الجمعية التأسيسية التونسية لعام 2011 تم اختيارها عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الانتخاب الحر المباشر من الشعب"
+      },
+      {
+        "question": "العرف الدستوري يتطلب توافر ركنين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي والركن المعنوي"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرنسا",
+        "correctAnswer": "بريطانيا"
+      },
+      {
+        "question": "الركن المادي للعرف الدستوري يقصد به:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كتابة القاعدة في وثيقة",
+        "correctAnswer": "تكرار السلوك واطراده بانتظام"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
