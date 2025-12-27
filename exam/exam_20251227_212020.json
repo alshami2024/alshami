@@ -7811,5 +7811,104 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مجادمحمداسماعيل الفقيه",
+    "submissionDate": "2025-12-27T23:17:19.423Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الخصائص التالية تميز الدستور الصادر عن جمعية تأسيسية منتخبة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سرعة الإصدار",
+        "correctAnswer": "التمثيل الشعبي والديمقراطية"
+      },
+      {
+        "question": "هل يجوز تعديل النصوص الدستورية المحظور تعديلها (مثل دين الدولة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز تعديلها دستورياً، بل يتطلب الأمر دستوراً جديداً"
+      },
+      {
+        "question": "مدة الرئاسة في الدستور اليمني (بعد تعديل 2001) أصبحت:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "7 سنوات"
+      },
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1787م"
+      },
+      {
+        "question": "مصطلح 'Constitutio' هو مصطلح:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لاتيني"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "أي من الطرق التالية لرفع الدعوى الدستورية في اليمن تسمى 'رقابة الامتناع' أو الدفع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدعوى الأصلية المباشرة",
+        "correctAnswer": "الدفع الفرعي بعدم الدستورية أثناء نظر قضية أخرى"
+      },
+      {
+        "question": "من يملك حق طلب تعديل الدستور في الجمهورية اليمنية وفقاً للمادة (158)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رئيس الجمهورية أو ثلث أعضاء مجلس النواب"
+      },
+      {
+        "question": "المعيار الأساسي للتمييز بين الدستور المرن والدستور الجامد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إجراءات التعديل"
+      },
+      {
+        "question": "القوانين التي تنظم السلطات العامة وتصدر بإجراءات عادية تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لوائح ضبط",
+        "correctAnswer": "قوانين دستورية (بالمعنى الموضوعي) أو أساسية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
