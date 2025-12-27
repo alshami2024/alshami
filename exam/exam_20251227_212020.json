@@ -4950,5 +4950,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد احمد صالح",
+    "submissionDate": "2025-12-27T21:50:10.668Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "مبدأ سمو الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الدستور يعلو على جميع القوانين والقرارات في الدولة"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هانز كلسن",
+        "correctAnswer": "ليون دوجي"
+      },
+      {
+        "question": "وظيفة 'العرف المفسر' هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توضيح وإزالة الغموض عن نص دستوري قائم"
+      },
+      {
+        "question": "أي من الطرق التالية لرفع الدعوى الدستورية في اليمن تسمى 'رقابة الامتناع' أو الدفع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدفع الفرعي بعدم الدستورية أثناء نظر قضية أخرى"
+      },
+      {
+        "question": "ما هو العيب الرئيسي للدساتير العرفية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صعوبة التطور",
+        "correctAnswer": "عدم الوضوح واحتمالية الغموض"
+      },
+      {
+        "question": "الجهة التي تملك حق تفسير النصوص الدستورية في اليمن هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "أول دستور في العالم العربي صدر في تونس عام:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1956م",
+        "correctAnswer": "1861م"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأغلبية المطلقة (نصف + 1)",
+        "correctAnswer": "أغلبية الثلثين من أعضاء المجلس"
+      },
+      {
+        "question": "ما هو الأثر القانوني لتعارض قانون عادي مع نص دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتبر القانون العادي باطلاً لوجوب سمو الدستور"
+      },
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1787م"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
