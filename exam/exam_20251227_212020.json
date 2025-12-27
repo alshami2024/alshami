@@ -6437,5 +6437,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "عادل صالح",
+    "submissionDate": "2025-12-27T22:22:18.432Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعد 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "أول دستور مكتوب في العالم العربي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور التونسي 1861"
+      },
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "تعتبر 'الماجنا كارتا' (1215م) من المصادر التاريخية للدستور في:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      },
+      {
+        "question": "ما هو العيب الرئيسي للدساتير العرفية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم الوضوح واحتمالية الغموض"
+      },
+      {
+        "question": "أي من الجزاءات التالية يعتبر جزاءً شعبياً لمخالفة الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المظاهرات والاحتجاجات السلمية"
+      },
+      {
+        "question": "الرقابة على دستورية القوانين تحمي مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المشروعية والسمو الدستوري"
+      },
+      {
+        "question": "أول دستور في العالم العربي صدر في تونس عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1861م"
+      },
+      {
+        "question": "المبادئ التي يحظر الدستور تعديلها (الحظر الموضوعي) تشمل غالباً:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "شكل الدولة (كالنظام الجمهوري) وحقوق الإنسان"
+      },
+      {
+        "question": "في الدساتير الجامدة، هل يستطيع البرلمان تعديل الدستور بقانون عادي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، لا بد من اتباع إجراءات التعديل المشددة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
