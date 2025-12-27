@@ -7910,5 +7910,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مجادمحمداسماعيل الفقيه",
+    "submissionDate": "2025-12-27T23:23:24.713Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العنصر النفسي (المعنوي) للعرف الدستوري يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشعور بالإلزام وضرورة الاحترام"
+      },
+      {
+        "question": "في سويسرا، يمكن للشعب اقتراح تعديل الدستور إذا جمع توقيعات عددها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "100,000 مواطن"
+      },
+      {
+        "question": "إنهاء العمل بالدستور بطريقة 'الثورة' يعتبر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعديلاً جزئياً للدستور",
+        "correctAnswer": "نهاية غير عادية (أسلوب العنف)"
+      },
+      {
+        "question": "ما هو الحد الأدنى لعدد القضاة في الدائرة الدستورية بالمحكمة العليا اليمنية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "7 قضاة (عادة ما بين 5-7)"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليون دوجي"
+      },
+      {
+        "question": "أي من الدول التالية دستورها مرن (قبل التعديلات الحديثة التي أدخلت بعض الجمود)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نيوزيلندا"
+      },
+      {
+        "question": "الدستور الجامد يتميز بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اشتراط إجراءات خاصة ومشددة للتعديل"
+      },
+      {
+        "question": "الجهة التي تملك حق تفسير النصوص الدستورية في اليمن هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وزارة الشؤون القانونية",
+        "correctAnswer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "60 يوماً",
+        "correctAnswer": "30 يوماً"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
