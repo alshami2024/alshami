@@ -897,5 +897,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "....................",
+    "submissionDate": "2025-12-27T18:59:49.859Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما معنى أن تكون نصوص الدستور 'ذاتية التنفيذ'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها تطبق مباشرة دون حاجة لتشريع فرعي (مثل نصوص الحقوق)"
+      },
+      {
+        "question": "يشترط الدستور اليمني لتقديم طلب تعديل من قبل مجلس النواب توقيع:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نصف الأعضاء",
+        "correctAnswer": "ثلث الأعضاء (110 عضواً)"
+      },
+      {
+        "question": "الفقيه 'هانز كلسن' هو مؤسس:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور الأمريكي",
+        "correctAnswer": "المحكمة الدستورية النمساوية (الرقابة المركزية)"
+      },
+      {
+        "question": "هل القانون الدستوري فرع من القانون العام أم الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون العام"
+      },
+      {
+        "question": "الدساتير التي توضع لفترة انتقالية محددة تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير المؤقتة"
+      },
+      {
+        "question": "العنصر النفسي (المعنوي) للعرف الدستوري يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشعور بالإلزام وضرورة الاحترام"
+      },
+      {
+        "question": "هل يجوز لرئيس الدولة الامتناع عن إصدار التعديل الدستوري بعد موافقة الشعب عليه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، إصداره عمل ملزم وتوثيقي"
+      },
+      {
+        "question": "هل تعتبر 'ديباجة' (مقدمة) الدستور جزءاً ملزماً منه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، في النظام الفرنسي والمصري والعديد من الأنظمة (ضمن الكتلة الدستورية)"
+      },
+      {
+        "question": "يحظر الدستور الجزائري (2020) تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دين الدولة (الإسلام) والطابع الجمهوري"
+      },
+      {
+        "question": "ما هو الحد الأدنى لعدد القضاة في الدائرة الدستورية بالمحكمة العليا اليمنية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "7 قضاة (عادة ما بين 5-7)"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
