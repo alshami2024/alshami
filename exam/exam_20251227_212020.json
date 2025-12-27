@@ -1,0 +1,100 @@
+[
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "علي",
+    "submissionDate": "2025-12-27T18:46:48.949Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "دستور دولة الكويت لعام 1962م نشأ بأسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمعية التأسيسية",
+        "correctAnswer": "العقد (الاتفاق)"
+      },
+      {
+        "question": "العرف الذي يملأ الفراغات التي تركها الدستور المكتوب يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المكمل"
+      },
+      {
+        "question": "مبدأ سمو الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الدستور يعلو على جميع القوانين والقرارات في الدولة"
+      },
+      {
+        "question": "ما هو الحد الأدنى لعدد القضاة في الدائرة الدستورية بالمحكمة العليا اليمنية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "7 قضاة (عادة ما بين 5-7)"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "هل تعتبر 'ديباجة' (مقدمة) الدستور جزءاً ملزماً منه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، في النظام الفرنسي والمصري والعديد من الأنظمة (ضمن الكتلة الدستورية)"
+      },
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "90 يوماً",
+        "correctAnswer": "30 يوماً"
+      },
+      {
+        "question": "ما هو الأثر الرجعي للتعديل الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأصل عدم الرجعية، إلا إذا نص على ذلك أو كان أصلح"
+      },
+      {
+        "question": "من شروط صحة 'الركن المادي' للعرف:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التكرار والعمومية والقدم والثبات"
+      },
+      {
+        "question": "يشترط الدستور اليمني لتقديم طلب تعديل من قبل مجلس النواب توقيع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلث الأعضاء (110 عضواً)"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
