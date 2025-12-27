@@ -1291,5 +1291,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد عبده محسن الرقيمي",
+    "submissionDate": "2025-12-27T19:06:46.705Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في سويسرا، يمكن للشعب اقتراح تعديل الدستور إذا جمع توقيعات عددها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "10,000 مواطن",
+        "correctAnswer": "100,000 مواطن"
+      },
+      {
+        "question": "المبادئ التي يحظر الدستور تعديلها (الحظر الموضوعي) تشمل غالباً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدد الوزارات",
+        "correctAnswer": "شكل الدولة (كالنظام الجمهوري) وحقوق الإنسان"
+      },
+      {
+        "question": "ما هو مصير القوانين التي تخالف تعديلاً دستورياً جديداً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعتبر باطلة ويجب تعديلها أو إلغاؤها"
+      },
+      {
+        "question": "تعتبر 'الماجنا كارتا' (1215م) من المصادر التاريخية للدستور في:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الولايات المتحدة",
+        "correctAnswer": "بريطانيا"
+      },
+      {
+        "question": "ما هو 'الدفع الفرعي' بعدم الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن يدفع أحد الخصوم أثناء قضية بأن القانون المراد تطبيقه غير دستوري"
+      },
+      {
+        "question": "تعتبر 'القوانين الأساسية' أو التنظيمية (مثل قانون الأحزاب) جزءاً من:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الدستوري بمعناه الموضوعي"
+      },
+      {
+        "question": "قانون الانتخابات في اليمن يُعتبر مثالاً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القوانين العادية ذات الطبيعة الدستورية"
+      },
+      {
+        "question": "يعرّف المدلول الشكلي القانون الدستوري بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الواردة في الوثيقة الدستورية المكتوبة فقط"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      },
+      {
+        "question": "العرف الذي يمنع إعادة انتخاب الرئيس الأمريكي لأكثر من فترتين (قبل تعديل 1951) كان مثالاً على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المفسر",
+        "correctAnswer": "الركن المادي للعرف (الذي تحول لقانون لاحقاً)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
