@@ -4651,5 +4651,105 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد احمد صالح",
+    "submissionDate": "2025-12-27T21:36:14.006Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "15 يوماً",
+        "correctAnswer": "30 يوماً"
+      },
+      {
+        "question": "هل تعتبر 'ديباجة' (مقدمة) الدستور جزءاً ملزماً منه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، في النظام الفرنسي والمصري والعديد من الأنظمة (ضمن الكتلة الدستورية)"
+      },
+      {
+        "question": "الرقابة على دستورية القوانين تحمي مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المشروعية والسمو الدستوري"
+      },
+      {
+        "question": "يشترط الدستور اليمني لتقديم طلب تعديل من قبل مجلس النواب توقيع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلث الأعضاء (110 عضواً)"
+      },
+      {
+        "question": "في حالة 'الاحتلال الأجنبي'، تنص اتفاقيات جنيف على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرض دستور الدولة المحتلة",
+        "correctAnswer": "احترام القوانين المحلية السارية ما أمكن"
+      },
+      {
+        "question": "ما هو الأثر الرجعي للتعديل الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأصل عدم الرجعية، إلا إذا نص على ذلك أو كان أصلح"
+      },
+      {
+        "question": "الأسلوب الذي نشأ به الدستور اليمني الحالي (دستور الوحدة 1991):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي (بعد إقراره من المجلسين)"
+      },
+      {
+        "question": "مدة الرئاسة في الدستور اليمني (بعد تعديل 2001) أصبحت:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "4 سنوات",
+        "correctAnswer": "7 سنوات"
+      },
+      {
+        "question": "أي من الدول التالية دستورها يحظر تعديل 'النظام الجمهوري'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرنسا واليمن (ضمناً)"
+      },
+      {
+        "question": "أي من الدول التالية دستورها مرن (قبل التعديلات الحديثة التي أدخلت بعض الجمود)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصر",
+        "correctAnswer": "نيوزيلندا"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
