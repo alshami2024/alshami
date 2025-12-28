@@ -14827,5 +14827,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مصطفى",
+    "submissionDate": "2025-12-28T19:47:36.053Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أسلوب 'المنحة' في نشأة الدساتير يعني أن الدستور يصدر عن:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اتفاق بين الحاكم والمجلس المنتخب",
+        "correctAnswer": "إرادة الحاكم المنفردة"
+      },
+      {
+        "question": "يشترط الدستور اليمني لتقديم طلب تعديل من قبل مجلس النواب توقيع:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رئيس المجلس فقط",
+        "correctAnswer": "ثلث الأعضاء (110 عضواً)"
+      },
+      {
+        "question": "عند حدوث 'حرب أهلية'، ما هو الأثر الغالب على الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التعطيل الجزئي أو الكلي والانهيار"
+      },
+      {
+        "question": "الدستور الإيطالي يحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحدود الجغرافية",
+        "correctAnswer": "النظام الجمهوري"
+      },
+      {
+        "question": "أي من الدول التالية دستورها مرن (قبل التعديلات الحديثة التي أدخلت بعض الجمود)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصر",
+        "correctAnswer": "نيوزيلندا"
+      },
+      {
+        "question": "أول دستور مكتوب في العالم العربي هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور الكويتي 1962",
+        "correctAnswer": "الدستور التونسي 1861"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة لاحقة لصدور القانون",
+        "correctAnswer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "تعديل الدستور الذي يغير النظام السياسي والاجتماعي للدولة بالكامل يعتبر بمثابة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إصدار دستور جديد"
+      },
+      {
+        "question": "من عيوب الرقابة السياسية على الدستور:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها متاحة لجميع الأفراد",
+        "correctAnswer": "تأثرها بالاعتبارات الحزبية والسياسية"
+      },
+      {
+        "question": "أي من الجزاءات التالية يعتبر جزاءً شعبياً لمخالفة الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المظاهرات والاحتجاجات السلمية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
