@@ -13127,5 +13127,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "سليمان عباد حسن احمد",
+    "submissionDate": "2025-12-28T15:22:57.755Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الدساتير التي توضع لفترة انتقالية محددة تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير المؤقتة"
+      },
+      {
+        "question": "في ظل 'الرقابة السياسية' (المجلس الدستوري الفرنسي)، متى تتم الرقابة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بعد نشر القانون وتطبيقه",
+        "correctAnswer": "قبل إصدار القانون (رقابة وقائية)"
+      },
+      {
+        "question": "أسلوب 'المنحة' في نشأة الدساتير يعني أن الدستور يصدر عن:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اتفاق بين الحاكم والمجلس المنتخب",
+        "correctAnswer": "إرادة الحاكم المنفردة"
+      },
+      {
+        "question": "نشر الدستور في 'الجريدة الرسمية' يحقق مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلانية وقرينة العلم"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أغلبية الثلثين من أعضاء المجلس"
+      },
+      {
+        "question": "الانقلاب العسكري يختلف عن الثورة في أنه:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يؤدي دائماً إلى ديمقراطية مباشرة",
+        "correctAnswer": "عمل عسكري نخبوي غير شرعي يهدف للاستيلاء على السلطة"
+      },
+      {
+        "question": "ما هو الجزاء السياسي الذي قد يوقع على الحكومة عند مخالفتها للدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحكم بعدم دستورية القوانين",
+        "correctAnswer": "سحب الثقة منها من قبل البرلمان"
+      },
+      {
+        "question": "تعتبر 'اتفاقية جنيف الرابعة' مرجعية في حالة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الانتخابات البرلمانية",
+        "correctAnswer": "الاحتلال الأجنبي وتأثيره على دستور الدولة"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "أي من الخصائص التالية تميز الدستور الصادر عن جمعية تأسيسية منتخبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التمثيل الشعبي والديمقراطية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
