@@ -12929,5 +12929,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "سليمان عباد حسن احمد",
+    "submissionDate": "2025-12-28T15:18:30.517Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من المعايير التالية يعتمد عليه المدلول الموضوعي للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مضمون القاعدة وموضوعها"
+      },
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1920م",
+        "correctAnswer": "1787م"
+      },
+      {
+        "question": "ما هو الحد الأدنى لعدد القضاة في الدائرة الدستورية بالمحكمة العليا اليمنية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "3 قضاة",
+        "correctAnswer": "7 قضاة (عادة ما بين 5-7)"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة لاحقة لصدور القانون",
+        "correctAnswer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "أول دستور مكتوب في العالم العربي هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور العراقي 1925",
+        "correctAnswer": "الدستور التونسي 1861"
+      },
+      {
+        "question": "العرف الدستوري يتطلب توافر ركنين هما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن الكتابي والركن العرفي",
+        "correctAnswer": "الركن المادي والركن المعنوي"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة لاتينية تعني التنظيم",
+        "correctAnswer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "نشر الدستور في 'الجريدة الرسمية' يحقق مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلانية وقرينة العلم"
+      },
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "تعتبر 'الماجنا كارتا' (1215م) من المصادر التاريخية للدستور في:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
