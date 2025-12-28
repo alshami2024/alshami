@@ -14626,5 +14626,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "ميثاق",
+    "submissionDate": "2025-12-28T19:42:53.079Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الرقابة القضائية التي تمارسها محكمة واحدة متخصصة تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرقابة اللامركزية (الأمريكية)",
+        "correctAnswer": "الرقابة المركزية (الأوروبية)"
+      },
+      {
+        "question": "هل يجوز لرئيس الدولة الامتناع عن إصدار التعديل الدستوري بعد موافقة الشعب عليه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، له سلطة تقديرية",
+        "correctAnswer": "لا، إصداره عمل ملزم وتوثيقي"
+      },
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "30 يوماً"
+      },
+      {
+        "question": "عند حدوث 'حرب أهلية'، ما هو الأثر الغالب على الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التعطيل الجزئي أو الكلي والانهيار"
+      },
+      {
+        "question": "نشأت الرقابة القضائية في الولايات المتحدة الأمريكية من خلال قضية شهيرة عام 1803م تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قضية ماربيري ضد ماديسون"
+      },
+      {
+        "question": "الرقابة على دستورية القوانين تحمي مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المشروعية والسمو الدستوري"
+      },
+      {
+        "question": "أي من الدول التالية دستورها مرن (قبل التعديلات الحديثة التي أدخلت بعض الجمود)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليابان",
+        "correctAnswer": "نيوزيلندا"
+      },
+      {
+        "question": "الأسلوب الذي نشأ به الدستور اليمني الحالي (دستور الوحدة 1991):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي (بعد إقراره من المجلسين)"
+      },
+      {
+        "question": "ما هو العيب الرئيسي للدساتير العرفية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صعوبة التطور",
+        "correctAnswer": "عدم الوضوح واحتمالية الغموض"
+      },
+      {
+        "question": "الجمعية التأسيسية التونسية لعام 2011 تم اختيارها عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الانتخاب الحر المباشر من الشعب"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
