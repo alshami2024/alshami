@@ -8898,5 +8898,111 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مرام جبر صالح الحلقبي",
+    "submissionDate": "2025-12-28T05:27:35.237Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "نشر الدستور في 'الجريدة الرسمية' يحقق مبدأ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحصانة",
+        "correctAnswer": "العلانية وقرينة العلم"
+      },
+      {
+        "question": "أي من الأساليب التالية لنشأة الدساتير يعتبر 'غير ديمقراطي'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد (بتحفظ)",
+        "correctAnswer": "المنحة"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هانز كلسن",
+        "correctAnswer": "ليون دوجي"
+      },
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1789م",
+        "correctAnswer": "1787م"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدد أعضاء البرلمان",
+        "correctAnswer": "الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "الرقابة القضائية التي تمارسها محكمة واحدة متخصصة تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرقابة السياسية",
+        "correctAnswer": "الرقابة المركزية (الأوروبية)"
+      },
+      {
+        "question": "دستور دولة الإمارات العربية المتحدة يعتبر دستوراً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "غير مدون",
+        "correctAnswer": "مكتوباً وجامداً"
+      },
+      {
+        "question": "الدستور الجامد يتميز بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم كتابته في وثيقة رسمية",
+        "correctAnswer": "اشتراط إجراءات خاصة ومشددة للتعديل"
+      },
+      {
+        "question": "ما هو الأثر الرجعي للتعديل الدستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يطبق أبداً حتى في المستقبل",
+        "correctAnswer": "الأصل عدم الرجعية، إلا إذا نص على ذلك أو كان أصلح"
+      },
+      {
+        "question": "دستور 1971 في مصر انتهى العمل به نتيجة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "انتهاء مدته القانونية",
+        "correctAnswer": "ثورة شعبية (25 يناير 2011)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
