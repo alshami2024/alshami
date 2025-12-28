@@ -9495,5 +9495,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "خالدعلى محسن أحمد",
+    "submissionDate": "2025-12-28T07:09:54.077Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الركن المادي للعرف الدستوري يقصد به:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تكرار السلوك واطراده بانتظام"
+      },
+      {
+        "question": "الدستور المرن هو الدستور الذي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتطلب إجراءات معقدة وأغلبية خاصة لتعديله",
+        "correctAnswer": "يتم تعديله بنفس إجراءات القوانين العادية"
+      },
+      {
+        "question": "أعلى درجات الديمقراطية في وضع الدساتير تتمثل في أسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "نفاذ الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الموافقة عليه من الجمعية التأسيسية",
+        "correctAnswer": "بدء سريان أحكامه وإلزاميتها للكافة"
+      },
+      {
+        "question": "دستور دولة الإمارات العربية المتحدة يعتبر دستوراً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "غير مدون",
+        "correctAnswer": "مكتوباً وجامداً"
+      },
+      {
+        "question": "أول دستور في العالم العربي صدر في تونس عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1861م"
+      },
+      {
+        "question": "الجهة التي تملك حق تفسير النصوص الدستورية في اليمن هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجلس النواب",
+        "correctAnswer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "ما هو الأثر القانوني لتعارض قانون عادي مع نص دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتبر القانون العادي باطلاً لوجوب سمو الدستور"
+      },
+      {
+        "question": "تعديلات عام 2011 في المغرب تم إقرارها عبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
