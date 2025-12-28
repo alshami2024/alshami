@@ -14223,5 +14223,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "جمال الشامي",
+    "submissionDate": "2025-12-28T19:35:10.973Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يركز فقط على الدساتير العرفية",
+        "correctAnswer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "ما معنى أن تكون نصوص الدستور 'ذاتية التنفيذ'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها تطبق مباشرة دون حاجة لتشريع فرعي (مثل نصوص الحقوق)"
+      },
+      {
+        "question": "الطعن في نتائج الاستفتاء الدستوري في اليمن يكون أمام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة العليا (الدائرة الدستورية)"
+      },
+      {
+        "question": "مدة الرئاسة في الدستور اليمني (بعد تعديل 2001) أصبحت:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "7 سنوات"
+      },
+      {
+        "question": "الجهة التي تملك حق تفسير النصوص الدستورية في اليمن هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجلس النواب",
+        "correctAnswer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "في ظل 'الرقابة السياسية' (المجلس الدستوري الفرنسي)، متى تتم الرقابة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بعد نشر القانون وتطبيقه",
+        "correctAnswer": "قبل إصدار القانون (رقابة وقائية)"
+      },
+      {
+        "question": "أي من الدول التالية دستورها مرن (قبل التعديلات الحديثة التي أدخلت بعض الجمود)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليابان",
+        "correctAnswer": "نيوزيلندا"
+      },
+      {
+        "question": "الدساتير التي توضع لفترة انتقالية محددة تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير المؤقتة"
+      },
+      {
+        "question": "مثال على 'العرف المعدل' الذي يغير توزيع السلطات (المثال البريطاني):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تغيير موعد الانتخابات",
+        "correctAnswer": "انتقال السلطة الفعلية من الملك إلى رئيس الوزراء والبرلمان"
+      },
+      {
+        "question": "ما هو الحد الأدنى لعدد القضاة في الدائرة الدستورية بالمحكمة العليا اليمنية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاضٍ واحد",
+        "correctAnswer": "7 قضاة (عادة ما بين 5-7)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
