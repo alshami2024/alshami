@@ -17459,5 +17459,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "المعطري",
+    "submissionDate": "2025-12-28T22:43:10.472Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "هل يجوز لرئيس الدولة الامتناع عن إصدار التعديل الدستوري بعد موافقة الشعب عليه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، إصداره عمل ملزم وتوثيقي"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أغلبية الثلثين من أعضاء المجلس"
+      },
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1787م"
+      },
+      {
+        "question": "في دستور اليمن 1991م، ما هي الطريقة المعتمدة لإقرار الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "تعتبر 'اتفاقية جنيف الرابعة' مرجعية في حالة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاحتلال الأجنبي وتأثيره على دستور الدولة"
+      },
+      {
+        "question": "الانقلاب العسكري يختلف عن الثورة في أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عمل عسكري نخبوي غير شرعي يهدف للاستيلاء على السلطة"
+      },
+      {
+        "question": "أي من الدول التالية تأخذ بنظام 'الرقابة السابقة' (السياسية) على دستورية القوانين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرنسا"
+      },
+      {
+        "question": "دستور دولة الكويت لعام 1962م نشأ بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد (الاتفاق)"
+      },
+      {
+        "question": "عند حدوث 'حرب أهلية'، ما هو الأثر الغالب على الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التعطيل الجزئي أو الكلي والانهيار"
+      },
+      {
+        "question": "الإجراء الذي يتم به إعلان نص الدستور للجمهور وافتراض علمهم به هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النشر في الجريدة الرسمية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
