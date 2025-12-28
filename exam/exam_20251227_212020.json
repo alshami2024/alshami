@@ -9695,5 +9695,104 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "ارزاق محمدمسعد القحيزه",
+    "submissionDate": "2025-12-28T09:28:56.617Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يعرّف المدلول الشكلي القانون الدستوري بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الواردة في الوثيقة الدستورية المكتوبة فقط"
+      },
+      {
+        "question": "تعد 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "يحظر الدستور الجزائري (2020) تعديل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مقر العاصمة",
+        "correctAnswer": "دين الدولة (الإسلام) والطابع الجمهوري"
+      },
+      {
+        "question": "الرقابة القضائية التي تمارسها محكمة واحدة متخصصة تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرقابة المركزية (الأوروبية)"
+      },
+      {
+        "question": "دستور دولة الإمارات العربية المتحدة يعتبر دستوراً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مرناً جداً",
+        "correctAnswer": "مكتوباً وجامداً"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      },
+      {
+        "question": "ما هي الوسيلة التي تتبعها الولايات المتحدة لتعديل دستورها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موافقة الكونغرس (الثلثين) + تصديق ثلاثة أرباع الولايات"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تمارسها جميع المحاكم",
+        "correctAnswer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "دستور دولة الكويت لعام 1962م نشأ بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد (الاتفاق)"
+      },
+      {
+        "question": "تعديل الدستور الذي يغير النظام السياسي والاجتماعي للدولة بالكامل يعتبر بمثابة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إصدار دستور جديد"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
