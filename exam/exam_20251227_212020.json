@@ -16199,5 +16199,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمود سليم حسين الحمري",
+    "submissionDate": "2025-12-28T21:45:08.089Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في ظل 'الرقابة السياسية' (المجلس الدستوري الفرنسي)، متى تتم الرقابة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قبل إصدار القانون (رقابة وقائية)"
+      },
+      {
+        "question": "المعيار الأساسي للتمييز بين الدستور المرن والدستور الجامد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إجراءات التعديل"
+      },
+      {
+        "question": "أول دستور مكتوب في العالم العربي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور التونسي 1861"
+      },
+      {
+        "question": "من شروط صحة 'الركن المادي' للعرف:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التكرار والعمومية والقدم والثبات"
+      },
+      {
+        "question": "الجمعية التأسيسية التونسية لعام 2011 تم اختيارها عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الانتخاب الحر المباشر من الشعب"
+      },
+      {
+        "question": "الجهة التي تملك حق تفسير النصوص الدستورية في اليمن هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "العرف الدستوري يتطلب توافر ركنين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي والركن المعنوي"
+      },
+      {
+        "question": "هل القانون الدستوري فرع من القانون العام أم الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون العام"
+      },
+      {
+        "question": "يحظر الدستور الجزائري (2020) تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دين الدولة (الإسلام) والطابع الجمهوري"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليون دوجي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
