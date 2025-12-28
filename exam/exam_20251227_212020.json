@@ -9794,5 +9794,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "ارزاق محمدمسعد القحيزه",
+    "submissionDate": "2025-12-28T09:33:49.534Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعديلات عام 2011 في المغرب تم إقرارها عبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي"
+      },
+      {
+        "question": "في الدستور اليمني، هل الاستفتاء الشعبي ملزم لإقرار التعديلات الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، إلزامي في جميع التعديلات"
+      },
+      {
+        "question": "أسلوب 'المنحة' في نشأة الدساتير يعني أن الدستور يصدر عن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إرادة الحاكم المنفردة"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليون دوجي"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "دستور دولة الإمارات العربية المتحدة يعتبر دستوراً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عرفياً",
+        "correctAnswer": "مكتوباً وجامداً"
+      },
+      {
+        "question": "الحكم بعدم دستورية قانون في ظل 'الرقابة المركزية' (مثل مصر واليمن) يؤدي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إلغاء القانون بأثر عام ومطلق (كأنه لم يكن)"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أغلبية الثلثين من أعضاء المجلس"
+      },
+      {
+        "question": "من يملك حق طلب تعديل الدستور في الجمهورية اليمنية وفقاً للمادة (158)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رئيس الجمهورية أو ثلث أعضاء مجلس النواب"
+      },
+      {
+        "question": "أي من الدول التالية تأخذ بنظام 'الرقابة السابقة' (السياسية) على دستورية القوانين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الولايات المتحدة الأمريكية",
+        "correctAnswer": "فرنسا"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
