@@ -11510,5 +11510,109 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الأنثروبولوجيا",
+    "studentName": "أماني قايد صالح النجار",
+    "submissionDate": "2025-12-28T12:36:50.607Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو موضوع 'الأنثروبولوجيا المعرفية'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاهتمام بالقيم الاقتصادية كالعمل والاستثمار.",
+        "correctAnswer": "الاهتمام بالملكات العقلية، التمثلات، وصيرورة اكتساب المعارف وتثبيتها في الذاكرة."
+      },
+      {
+        "question": "وفقاً لتقسيم 'روث بنديكت' للمجتمعات، بماذا يمتاز المجتمع 'الديونوزيوسي'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بالعقلانية والدقة والصرامة.",
+        "correctAnswer": "باللهو واللعب والكسل واللامبالاة."
+      },
+      {
+        "question": "تعتمد الأنثروبولوجيا البيولوجية في البحث عن أصل البشرية على الطريقة المباشرة فقط (دراسة المستحثات) وتهمل الطرق غير المباشرة.",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "بدأ الاستعمال الفعلي لمصطلح الأنثروبولوجيا مع نهاية القرن التاسع عشر وبداية القرن العشرين، وازداد الاهتمام به في الأوساط الأنكلوساكسونية.",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "يرى الفيلسوف ميشال فوكو أن الأركيولوجيا هي 'العودة إلى سر الأصل' وليست وصفاً منظماً للخطاب.",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أكد كل من 'همبولت' و'سبير' في الأنثروبولوجيا اللغوية أن كل لغة تعبر عن نظرة مجتمع ما وتعكس ذهنيته وتحدد ثقافته.",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "في القرن السابع عشر، كانت كلمة أنثروبولوجيا تطلق في مقابل علمين، هما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "البيولوجيا والجيولوجيا.",
+        "correctAnswer": "الكسمولوجيا (علم الكون) والثيولوجيا (علم الإلهيات)."
+      },
+      {
+        "question": "من هو العالم الذي يعتبر المؤسس للأنثروبولوجيا التربوية بين عامي 1922 و 1925؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تشارلز داروين.",
+        "correctAnswer": "إميل دوركايم."
+      },
+      {
+        "question": "كيف عرف 'كلود ليفي ستراوس' الأنثروبولوجيا؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هي الفعل الذي نمارسه على الآخر لتنمية قدراته العقلية.",
+        "correctAnswer": "تهدف إلى معرفة كلية وشمولية للإنسان في علاقته بامتداداته التاريخية ومحيطه الجغرافي."
+      },
+      {
+        "question": "ما هو الأصل الاشتقاقي لكلمة 'أنثروبولوجيا' (Anthropologie)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مشتقة من (Anthropos) وتعني إنسان و (Logos) وتعني علم أو خطاب."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
