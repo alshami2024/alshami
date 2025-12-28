@@ -17651,5 +17651,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "اشيد",
+    "submissionDate": "2025-12-28T22:58:06.953Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعد 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "أسلوب 'المنحة' في نشأة الدساتير يعني أن الدستور يصدر عن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إرادة الحاكم المنفردة"
+      },
+      {
+        "question": "العرف الذي يمنع إعادة انتخاب الرئيس الأمريكي لأكثر من فترتين (قبل تعديل 1951) كان مثالاً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي للعرف (الذي تحول لقانون لاحقاً)"
+      },
+      {
+        "question": "الانقلاب العسكري يختلف عن الثورة في أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عمل عسكري نخبوي غير شرعي يهدف للاستيلاء على السلطة"
+      },
+      {
+        "question": "أي من الطرق التالية لرفع الدعوى الدستورية في اليمن تسمى 'رقابة الامتناع' أو الدفع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدفع الفرعي بعدم الدستورية أثناء نظر قضية أخرى"
+      },
+      {
+        "question": "يعرّف المدلول الشكلي القانون الدستوري بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الواردة في الوثيقة الدستورية المكتوبة فقط"
+      },
+      {
+        "question": "الإجراء الذي يتم به إعلان نص الدستور للجمهور وافتراض علمهم به هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النشر في الجريدة الرسمية"
+      },
+      {
+        "question": "دستور دولة الكويت لعام 1962م نشأ بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد (الاتفاق)"
+      },
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1787م"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشكل الجمهوري للحكومة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
