@@ -21431,5 +21431,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مممماااا",
+    "submissionDate": "2025-12-29T18:14:24.132Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعتبر 'اتفاقية جنيف الرابعة' مرجعية في حالة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاحتلال الأجنبي وتأثيره على دستور الدولة"
+      },
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "30 يوماً"
+      },
+      {
+        "question": "تعديل الدستور اليمني يتطلب موافقة الشعب في استفتاء إذا وافق عليه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلثا أعضاء البرلمان"
+      },
+      {
+        "question": "الميثاق الفرنسي لعام 1814م مثال على أسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      },
+      {
+        "question": "في ظل 'الرقابة السياسية' (المجلس الدستوري الفرنسي)، متى تتم الرقابة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قبل إصدار القانون (رقابة وقائية)"
+      },
+      {
+        "question": "ما هو الحد الأدنى لعدد القضاة في الدائرة الدستورية بالمحكمة العليا اليمنية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "7 قضاة (عادة ما بين 5-7)"
+      },
+      {
+        "question": "الفقيه 'هانز كلسن' هو مؤسس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة الدستورية النمساوية (الرقابة المركزية)"
+      },
+      {
+        "question": "القوانين التي تنظم السلطات العامة وتصدر بإجراءات عادية تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قوانين دستورية (بالمعنى الموضوعي) أو أساسية"
+      },
+      {
+        "question": "يتميز الدستور الجزائري لعام 1976 بأن حق اقتراح التعديل كان محصوراً في:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المجلس الدستوري",
+        "correctAnswer": "رئيس الجمهورية"
+      },
+      {
+        "question": "من عيوب الرقابة السياسية على الدستور:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تأثرها بالاعتبارات الحزبية والسياسية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
