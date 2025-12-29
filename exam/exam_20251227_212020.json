@@ -21918,5 +21918,105 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "احمد ناصر احمدعلي الذرحاني",
+    "submissionDate": "2025-12-29T19:47:19.249Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الجزاءات التالية يعتبر جزاءً شعبياً لمخالفة الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المظاهرات والاحتجاجات السلمية"
+      },
+      {
+        "question": "أعلى درجات الديمقراطية في وضع الدساتير تتمثل في أسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة",
+        "correctAnswer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "من عيوب الرقابة السياسية على الدستور:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تأثرها بالاعتبارات الحزبية والسياسية"
+      },
+      {
+        "question": "أول دستور مكتوب في العالم العربي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور التونسي 1861"
+      },
+      {
+        "question": "دستور 1971 في مصر انتهى العمل به نتيجة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثورة شعبية (25 يناير 2011)"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدد أعضاء البرلمان",
+        "correctAnswer": "الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "إنهاء العمل بالدستور بطريقة 'الثورة' يعتبر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعديلاً جزئياً للدستور",
+        "correctAnswer": "نهاية غير عادية (أسلوب العنف)"
+      },
+      {
+        "question": "في الدستور اليمني، هل الاستفتاء الشعبي ملزم لإقرار التعديلات الدستورية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، لكن فقط للتعديلات المتعلقة بالرئاسة",
+        "correctAnswer": "نعم، إلزامي في جميع التعديلات"
+      },
+      {
+        "question": "ما هو العيب الرئيسي للدساتير العرفية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم الوضوح واحتمالية الغموض"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
