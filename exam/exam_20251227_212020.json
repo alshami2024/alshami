@@ -22210,5 +22210,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مجادمحمداسماعيل الفقيه",
+    "submissionDate": "2025-12-29T20:59:01.919Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أسلوب 'المنحة' في نشأة الدساتير يعني أن الدستور يصدر عن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إرادة الحاكم المنفردة"
+      },
+      {
+        "question": "نفاذ الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بدء سريان أحكامه وإلزاميتها للكافة"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "النظام الدستوري البريطاني هو المثال الأبرز لـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير المكتوبة الجامدة",
+        "correctAnswer": "الدساتير العرفية"
+      },
+      {
+        "question": "الانقلاب العسكري يختلف عن الثورة في أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عمل عسكري نخبوي غير شرعي يهدف للاستيلاء على السلطة"
+      },
+      {
+        "question": "نشأت الرقابة القضائية في الولايات المتحدة الأمريكية من خلال قضية شهيرة عام 1803م تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قضية ماربيري ضد ماديسون"
+      },
+      {
+        "question": "أول دستور مكتوب في العالم العربي هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور المصري 1923",
+        "correctAnswer": "الدستور التونسي 1861"
+      },
+      {
+        "question": "يحظر الدستور الجزائري (2020) تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دين الدولة (الإسلام) والطابع الجمهوري"
+      },
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "الحكم بعدم دستورية قانون في ظل 'الرقابة المركزية' (مثل مصر واليمن) يؤدي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إلغاء القانون بأثر عام ومطلق (كأنه لم يكن)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
