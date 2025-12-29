@@ -17940,5 +17940,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "حسين",
+    "submissionDate": "2025-12-29T06:25:01.986Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "إنهاء العمل بالدستور بطريقة 'الثورة' يعتبر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نهاية عادية وقانونية",
+        "correctAnswer": "نهاية غير عادية (أسلوب العنف)"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "يعرّف المدلول الشكلي القانون الدستوري بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الواردة في الوثيقة الدستورية المكتوبة فقط"
+      },
+      {
+        "question": "الدستور المرن هو الدستور الذي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتم تعديله بنفس إجراءات القوانين العادية"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أغلبية الثلثين من أعضاء المجلس"
+      },
+      {
+        "question": "النظام الدستوري البريطاني هو المثال الأبرز لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير العرفية"
+      },
+      {
+        "question": "المعيار الأساسي للتمييز بين الدستور المرن والدستور الجامد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إجراءات التعديل"
+      },
+      {
+        "question": "أعلى درجات الديمقراطية في وضع الدساتير تتمثل في أسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "هل يوجد في الدساتير العربية (مثل اليمن ومصر) نظام 'الاقتراح الشعبي' لتعديل الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، غير موجود"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
