@@ -22114,5 +22114,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مجادمحمداسماعيل الفقيه",
+    "submissionDate": "2025-12-29T20:49:20.358Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعتبر 'اتفاقية جنيف الرابعة' مرجعية في حالة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاحتلال الأجنبي وتأثيره على دستور الدولة"
+      },
+      {
+        "question": "المبادئ التي يحظر الدستور تعديلها (الحظر الموضوعي) تشمل غالباً:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "شكل الدولة (كالنظام الجمهوري) وحقوق الإنسان"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "الإجراء الذي يتم به إعلان نص الدستور للجمهور وافتراض علمهم به هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النشر في الجريدة الرسمية"
+      },
+      {
+        "question": "تعديل الدستور الذي يغير النظام السياسي والاجتماعي للدولة بالكامل يعتبر بمثابة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إصدار دستور جديد"
+      },
+      {
+        "question": "الحكم بعدم دستورية قانون في ظل 'الرقابة المركزية' (مثل مصر واليمن) يؤدي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إلغاء القانون بأثر عام ومطلق (كأنه لم يكن)"
+      },
+      {
+        "question": "من عيوب أسلوب 'المنحة' في وضع الدستور:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "افتقاره للشرعية الشعبية وقابليته للسحب من الحاكم"
+      },
+      {
+        "question": "مبدأ سمو الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الدستور يعلو على جميع القوانين والقرارات في الدولة"
+      },
+      {
+        "question": "ما هي الوسيلة التي تتبعها الولايات المتحدة لتعديل دستورها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موافقة الكونغرس (الثلثين) + تصديق ثلاثة أرباع الولايات"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
