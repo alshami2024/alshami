@@ -18815,5 +18815,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مجادمحمداسماعيل الفقيه",
+    "submissionDate": "2025-12-29T11:52:05.099Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العرف الذي يملأ الفراغات التي تركها الدستور المكتوب يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المكمل"
+      },
+      {
+        "question": "الدستور الجامد يتميز بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اشتراط إجراءات خاصة ومشددة للتعديل"
+      },
+      {
+        "question": "هل يجوز تعديل النصوص الدستورية المحظور تعديلها (مثل دين الدولة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز تعديلها دستورياً، بل يتطلب الأمر دستوراً جديداً"
+      },
+      {
+        "question": "الدستور المصري لعام 2014 تم إقراره عن طريق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "المجلس الدستوري الفرنسي يتكون من:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "9 أعضاء معينين + الرؤساء السابقين"
+      },
+      {
+        "question": "الانقلاب العسكري يختلف عن الثورة في أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عمل عسكري نخبوي غير شرعي يهدف للاستيلاء على السلطة"
+      },
+      {
+        "question": "ما هو الجزاء السياسي الذي قد يوقع على الحكومة عند مخالفتها للدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سحب الثقة منها من قبل البرلمان"
+      },
+      {
+        "question": "ما المقصود بـ 'الكتلة الدستورية' في النظام الفرنسي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجموعة النصوص التي لها قيمة دستورية (الدستور، الإعلانات، المقدمات)"
+      },
+      {
+        "question": "ما هو العيب الرئيسي للدساتير العرفية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم الوضوح واحتمالية الغموض"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
