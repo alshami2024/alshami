@@ -26511,5 +26511,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "حسين",
+    "submissionDate": "2025-12-30T21:08:49.664Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يضيق نطاق القانون الدستوري",
+        "correctAnswer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليون دوجي"
+      },
+      {
+        "question": "تعتبر 'اتفاقية جنيف الرابعة' مرجعية في حالة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاحتلال الأجنبي وتأثيره على دستور الدولة"
+      },
+      {
+        "question": "في سويسرا، يمكن للشعب اقتراح تعديل الدستور إذا جمع توقيعات عددها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "100,000 مواطن"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بريطانيا"
+      },
+      {
+        "question": "تعديل الدستور الذي يغير النظام السياسي والاجتماعي للدولة بالكامل يعتبر بمثابة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إصدار دستور جديد"
+      },
+      {
+        "question": "الطعن في نتائج الاستفتاء الدستوري في اليمن يكون أمام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة العليا (الدائرة الدستورية)"
+      },
+      {
+        "question": "هل يوجد في الدساتير العربية (مثل اليمن ومصر) نظام 'الاقتراح الشعبي' لتعديل الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، غير موجود"
+      },
+      {
+        "question": "في حالة 'الاحتلال الأجنبي'، تنص اتفاقيات جنيف على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احترام القوانين المحلية السارية ما أمكن"
+      },
+      {
+        "question": "في الدستور اليمني، هل الاستفتاء الشعبي ملزم لإقرار التعديلات الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، إلزامي في جميع التعديلات"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
