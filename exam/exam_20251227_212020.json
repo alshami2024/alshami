@@ -26126,5 +26126,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "حسين",
+    "submissionDate": "2025-12-30T20:31:44.226Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في الدستور اليمني، هل الاستفتاء الشعبي ملزم لإقرار التعديلات الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، إلزامي في جميع التعديلات"
+      },
+      {
+        "question": "أول دستور في العالم العربي صدر في تونس عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1861م"
+      },
+      {
+        "question": "هل يجوز لرئيس الدولة الامتناع عن إصدار التعديل الدستوري بعد موافقة الشعب عليه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، إصداره عمل ملزم وتوثيقي"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أغلبية الثلثين من أعضاء المجلس"
+      },
+      {
+        "question": "من عيوب الرقابة السياسية على الدستور:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تأثرها بالاعتبارات الحزبية والسياسية"
+      },
+      {
+        "question": "يشترط الدستور اليمني لتقديم طلب تعديل من قبل مجلس النواب توقيع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلث الأعضاء (110 عضواً)"
+      },
+      {
+        "question": "تعتبر 'القوانين الأساسية' أو التنظيمية (مثل قانون الأحزاب) جزءاً من:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القانون الدستوري بمعناه الموضوعي"
+      },
+      {
+        "question": "الفقيه 'هانز كلسن' هو مؤسس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة الدستورية النمساوية (الرقابة المركزية)"
+      },
+      {
+        "question": "المبادئ التي يحظر الدستور تعديلها (الحظر الموضوعي) تشمل غالباً:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "شكل الدولة (كالنظام الجمهوري) وحقوق الإنسان"
+      },
+      {
+        "question": "الميثاق الفرنسي لعام 1814م مثال على أسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
