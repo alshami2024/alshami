@@ -23274,5 +23274,101 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمود سليم حسين الحمري",
+    "submissionDate": "2025-12-30T07:33:35.323Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العرف المخالف لنص دستوري صريح يعتبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "باطلاً ولا قيمة له"
+      },
+      {
+        "question": "العرف الذي يمنع إعادة انتخاب الرئيس الأمريكي لأكثر من فترتين (قبل تعديل 1951) كان مثالاً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي للعرف (الذي تحول لقانون لاحقاً)"
+      },
+      {
+        "question": "العنصر النفسي (المعنوي) للعرف الدستوري يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشعور بالإلزام وضرورة الاحترام"
+      },
+      {
+        "question": "من هو الفقيه الفرنسي الذي تزعم الرأي المنكر للطبيعة الإلزامية للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليون دوجي"
+      },
+      {
+        "question": "أول دستور في العالم العربي صدر في تونس عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1861م"
+      },
+      {
+        "question": "في دستور اليمن 1991م، ما هي الطريقة المعتمدة لإقرار الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "أي من الدول التالية تأخذ بنظام 'الرقابة السابقة' (السياسية) على دستورية القوانين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرنسا"
+      },
+      {
+        "question": "ما المقصود بـ 'الكتلة الدستورية' في النظام الفرنسي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجموعة النصوص التي لها قيمة دستورية (الدستور، الإعلانات، المقدمات)"
+      },
+      {
+        "question": "الإجراء الذي يتم به إعلان نص الدستور للجمهور وافتراض علمهم به هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النشر في الجريدة الرسمية"
+      },
+      {
+        "question": "أي من المعايير التالية يعتمد عليه المدلول الموضوعي للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مضمون القاعدة وموضوعها"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
