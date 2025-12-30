@@ -26897,5 +26897,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد الرائد حسين",
+    "submissionDate": "2025-12-30T22:53:17.719Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في الدستور اليمني، هل الاستفتاء الشعبي ملزم لإقرار التعديلات الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، إلزامي في جميع التعديلات"
+      },
+      {
+        "question": "ما هو مصير القوانين التي تخالف تعديلاً دستورياً جديداً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعتبر باطلة ويجب تعديلها أو إلغاؤها"
+      },
+      {
+        "question": "يشترط الدستور اليمني لتقديم طلب تعديل من قبل مجلس النواب توقيع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلث الأعضاء (110 عضواً)"
+      },
+      {
+        "question": "هل يجوز لرئيس الدولة الامتناع عن إصدار التعديل الدستوري بعد موافقة الشعب عليه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، إصداره عمل ملزم وتوثيقي"
+      },
+      {
+        "question": "الحكم بعدم دستورية قانون في ظل 'الرقابة المركزية' (مثل مصر واليمن) يؤدي إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إلغاء القانون بأثر عام ومطلق (كأنه لم يكن)"
+      },
+      {
+        "question": "في حالة 'الاحتلال الأجنبي'، تنص اتفاقيات جنيف على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احترام القوانين المحلية السارية ما أمكن"
+      },
+      {
+        "question": "أي من الجزاءات التالية يعتبر جزاءً شعبياً لمخالفة الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المظاهرات والاحتجاجات السلمية"
+      },
+      {
+        "question": "ما هو الأثر الرجعي للتعديل الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأصل عدم الرجعية، إلا إذا نص على ذلك أو كان أصلح"
+      },
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "في اليمن، الجهة المختصة بالرقابة على دستورية القوانين هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدائرة الدستورية بالمحكمة العليا"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
