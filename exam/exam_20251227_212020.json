@@ -25037,5 +25037,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "ريما",
+    "submissionDate": "2025-12-30T17:28:16.865Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الانقلاب العسكري يختلف عن الثورة في أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عمل عسكري نخبوي غير شرعي يهدف للاستيلاء على السلطة"
+      },
+      {
+        "question": "المادة (89) من الدستور الفرنسي تحظر تعديل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "ما هو الأثر القانوني لتعارض قانون عادي مع نص دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتبر القانون العادي باطلاً لوجوب سمو الدستور"
+      },
+      {
+        "question": "أي من الجزاءات التالية يعتبر جزاءً شعبياً لمخالفة الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المظاهرات والاحتجاجات السلمية"
+      },
+      {
+        "question": "العرف الذي يملأ الفراغات التي تركها الدستور المكتوب يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المكمل"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة لاتينية تعني التنظيم",
+        "correctAnswer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "إنهاء العمل بالدستور بطريقة 'الثورة' يعتبر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعديلاً جزئياً للدستور",
+        "correctAnswer": "نهاية غير عادية (أسلوب العنف)"
+      },
+      {
+        "question": "أعلى درجات الديمقراطية في وضع الدساتير تتمثل في أسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستفتاء الشعبي"
+      },
+      {
+        "question": "ما المقصود بـ 'الجمود النسبي' للدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يقبل التعديل ولكن بإجراءات أصعب من القانون العادي"
+      },
+      {
+        "question": "ما هي الأغلبية المطلوبة في مجلس النواب اليمني لإقرار تعديل دستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أغلبية الثلثين من أعضاء المجلس"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
