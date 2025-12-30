@@ -24548,5 +24548,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمود سليم حسين الحمري",
+    "submissionDate": "2025-12-30T13:46:52.502Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الرقابة السياسية على دستورية القوانين (النموذج الفرنسي) تتميز بأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة وقائية سابقة على إصدار القانون"
+      },
+      {
+        "question": "هل يجوز لرئيس الدولة الامتناع عن إصدار التعديل الدستوري بعد موافقة الشعب عليه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، إصداره عمل ملزم وتوثيقي"
+      },
+      {
+        "question": "إنهاء العمل بالدستور بطريقة 'الثورة' يعتبر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نهاية عادية وقانونية",
+        "correctAnswer": "نهاية غير عادية (أسلوب العنف)"
+      },
+      {
+        "question": "في حالة 'الاحتلال الأجنبي'، تنص اتفاقيات جنيف على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احترام القوانين المحلية السارية ما أمكن"
+      },
+      {
+        "question": "ما هو مصير القوانين التي تخالف تعديلاً دستورياً جديداً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعتبر باطلة ويجب تعديلها أو إلغاؤها"
+      },
+      {
+        "question": "العرف الدستوري يتطلب توافر ركنين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي والركن المعنوي"
+      },
+      {
+        "question": "أي من المعايير التالية يعتمد عليه المدلول الموضوعي للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مضمون القاعدة وموضوعها"
+      },
+      {
+        "question": "أول دستور في العالم العربي صدر في تونس عام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1861م"
+      },
+      {
+        "question": "العرف الذي يمنع إعادة انتخاب الرئيس الأمريكي لأكثر من فترتين (قبل تعديل 1951) كان مثالاً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المادي للعرف (الذي تحول لقانون لاحقاً)"
+      },
+      {
+        "question": "يعرّف المدلول الشكلي القانون الدستوري بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الواردة في الوثيقة الدستورية المكتوبة فقط"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
