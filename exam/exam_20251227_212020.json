@@ -22886,5 +22886,101 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد الرائد حسين",
+    "submissionDate": "2025-12-30T00:17:14.273Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الركن المادي للعرف الدستوري يقصد به:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تكرار السلوك واطراده بانتظام"
+      },
+      {
+        "question": "المدة التي حددها الدستور المصري (2014) لعرض التعديل على الاستفتاء بعد موافقة البرلمان هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "30 يوماً"
+      },
+      {
+        "question": "الأسلوب الذي نشأ به الدستور اليمني الحالي (دستور الوحدة 1991):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استفتاء شعبي (بعد إقراره من المجلسين)"
+      },
+      {
+        "question": "قانون الانتخابات في اليمن يُعتبر مثالاً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القوانين العادية ذات الطبيعة الدستورية"
+      },
+      {
+        "question": "ما هو الجزاء السياسي الذي قد يوقع على الحكومة عند مخالفتها للدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سحب الثقة منها من قبل البرلمان"
+      },
+      {
+        "question": "من يملك حق طلب تعديل الدستور في الجمهورية اليمنية وفقاً للمادة (158)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رئيس الجمهورية أو ثلث أعضاء مجلس النواب"
+      },
+      {
+        "question": "يتميز الدستور الذي يوضع عن طريق 'العقد' بأنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ينشأ باتفاق بين الحاكم وممثلي الشعب"
+      },
+      {
+        "question": "نشأت الرقابة القضائية في الولايات المتحدة الأمريكية من خلال قضية شهيرة عام 1803م تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قضية ماربيري ضد ماديسون"
+      },
+      {
+        "question": "نشر الدستور في 'الجريدة الرسمية' يحقق مبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلانية وقرينة العلم"
+      },
+      {
+        "question": "هل يجوز تعديل النصوص الدستورية المحظور تعديلها (مثل دين الدولة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز تعديلها دستورياً، بل يتطلب الأمر دستوراً جديداً"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
