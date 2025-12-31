@@ -28173,5 +28173,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "أرزاق محمد مسعد القحيزه",
+    "submissionDate": "2025-12-31T15:20:43.363Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "صاحب نظرية 'تدرج القواعد القانونية' (الهرم القانوني) هو الفقيه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هانز كلسن"
+      },
+      {
+        "question": "دستور دولة الإمارات العربية المتحدة يعتبر دستوراً:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مرناً جداً",
+        "correctAnswer": "مكتوباً وجامداً"
+      },
+      {
+        "question": "المجلس الدستوري الفرنسي يتكون من:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "9 أعضاء معينين + الرؤساء السابقين"
+      },
+      {
+        "question": "في الدساتير الجامدة، هل يستطيع البرلمان تعديل الدستور بقانون عادي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا، لا بد من اتباع إجراءات التعديل المشددة"
+      },
+      {
+        "question": "النظرية التي ترى أن الدستور 'عقد اجتماعي' بين الأفراد هي نظرية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جان جاك روسو"
+      },
+      {
+        "question": "من أبرز الانتقادات الموجهة للمدلول اللغوي للقانون الدستوري:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على التسمية دون النظر إلى المضمون"
+      },
+      {
+        "question": "ما هو الأثر الرجعي للتعديل الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأصل عدم الرجعية، إلا إذا نص على ذلك أو كان أصلح"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة فارسية مركبة تعني صاحب القاعدة أو الأساس"
+      },
+      {
+        "question": "إنهاء العمل بالدستور بطريقة 'الثورة' يعتبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نهاية غير عادية (أسلوب العنف)"
+      },
+      {
+        "question": "مبدأ سمو الدستور يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الدستور يعلو على جميع القوانين والقرارات في الدولة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
