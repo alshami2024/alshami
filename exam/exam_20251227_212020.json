@@ -27874,5 +27874,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مرام الحلقبي",
+    "submissionDate": "2025-12-31T11:19:03.107Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعتبر الولايات المتحدة الأمريكية صاحبة أول دستور مكتوب حديث نافذ، وقد صدر عام:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "1776م",
+        "correctAnswer": "1787م"
+      },
+      {
+        "question": "ما المقصود بـ 'الكتلة الدستورية' في النظام الفرنسي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجموعة النصوص التي لها قيمة دستورية (الدستور، الإعلانات، المقدمات)"
+      },
+      {
+        "question": "الدستور الجامد يتميز بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اشتراط إجراءات خاصة ومشددة للتعديل"
+      },
+      {
+        "question": "صاحب نظرية 'تدرج القواعد القانونية' (الهرم القانوني) هو الفقيه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هانز كلسن"
+      },
+      {
+        "question": "أي من المعايير التالية يعتمد عليه المدلول الموضوعي للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مضمون القاعدة وموضوعها"
+      },
+      {
+        "question": "النظام الدستوري البريطاني هو المثال الأبرز لـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدساتير العرفية"
+      },
+      {
+        "question": "تعد 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعتمد على الاتفاق بين الأحزاب فقط",
+        "correctAnswer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "دستور دولة الكويت لعام 1962م نشأ بأسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمعية التأسيسية",
+        "correctAnswer": "العقد (الاتفاق)"
+      },
+      {
+        "question": "أي من الدول التالية دستورها 'غير مكتوب' (عرفي)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الولايات المتحدة",
+        "correctAnswer": "بريطانيا"
+      },
+      {
+        "question": "أعلى درجات الديمقراطية في وضع الدساتير تتمثل في أسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد",
+        "correctAnswer": "الاستفتاء الشعبي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
