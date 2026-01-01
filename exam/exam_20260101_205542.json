@@ -1,0 +1,100 @@
+[
+  {
+    "examTitle": "الرياضيات",
+    "studentName": "حنان الكامل",
+    "submissionDate": "2026-01-01T18:03:45.300Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المثلث يحتوي على أربع زوايا.",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ناتج العملية 20 − 9 يساوي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "11"
+      },
+      {
+        "question": "العدد 12 أكبر من العدد 15.",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ناتج القسمة 18 ÷ 3 يساوي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "6"
+      },
+      {
+        "question": "ناتج جمع العددين 8 و 7 يساوي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "15"
+      },
+      {
+        "question": "العدد 1 يُعد عدداً أولياً.",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ناتج ضرب أي عدد في 1 يساوي العدد نفسه.",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحيح"
+      },
+      {
+        "question": "العدد 0 عنصر محايد في عملية الجمع.",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صحيح"
+      },
+      {
+        "question": "أي الأعداد التالية عدد أولي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "17"
+      },
+      {
+        "question": "كم عدد أضلاع المستطيل؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أربعة"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
