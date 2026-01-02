@@ -1082,5 +1082,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الأنثروبولوجيا",
+    "studentName": "بلقيس قليد الظاهري",
+    "submissionDate": "2026-01-02T12:52:26.751Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما الفكرة المحورية للأنثروبولوجيا التربوية كما عرضها دوركايم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التربية وسيلة لإعادة تنظيم المجتمع"
+      },
+      {
+        "question": "ما الذي أكدته دراسات مرغريت ميد حول الطفولة والأدوار الاجتماعية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها نتاج تنشئة ثقافية تختلف من مجتمع لآخر"
+      },
+      {
+        "question": "ما الذي يفقده علم النفس إذا تجاهل الثقافة والتاريخ والمجتمع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موضوعيته العلمية",
+        "correctAnswer": "عمقه التفسيري"
+      },
+      {
+        "question": "لماذا ظل علم النفس الاجتماعي محتاجاً إلى الأنثروبولوجيا؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لدراسة الفروق الفردية",
+        "correctAnswer": "لفهم المعاني الرمزية للعلاقات الاجتماعية"
+      },
+      {
+        "question": "ما موقف مالينوفسكي من تعميم عقدة أوديب؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رأى أنها تختلف باختلاف أنظمة القرابة والثقافات"
+      },
+      {
+        "question": "كيف تُوصَف العلاقة بين الأنثروبولوجيا وعلم النفس؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علاقة حاجة متبادلة"
+      },
+      {
+        "question": "ما الفكرة الأساسية التي تؤكدها الأنثروبولوجيا تجاه السلوك الفردي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه مرتبط بالثقافة والتاريخ الاجتماعي"
+      },
+      {
+        "question": "ما المجال الذي نشأ نتيجة التفاعل بين الأنثروبولوجيا وعلم النفس؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأنثروبولوجيا النفسية"
+      },
+      {
+        "question": "بماذا يهتم علم النفس في تعريفه الحديث؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بدراسة الروح بمعناها الفلسفي",
+        "correctAnswer": "بدراسة الظواهر النفسية والسلوك وقوانينه"
+      },
+      {
+        "question": "كيف نظر فرويد إلى الأساطير والطقوس؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نتاج خيال جماعي ساذج",
+        "correctAnswer": "تعبيرات رمزية عن صراعات نفسية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
