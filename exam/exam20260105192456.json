@@ -103,5 +103,109 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "أبو علي بن أبي طالب الحيدري",
+    "deviceId": "DEV-TSHEYJLNB-mk00qk7t",
+    "submissionDate": "2026-01-05T18:24:29.514Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هي الأحرف الأربعة التي لا تأتي 'الظاء' (ظ) ثانيةً لها إذا ابتدأت الكلمة بها؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السين، الصاد، الطاء، العين",
+        "correctAnswer": "القاف، النون، الواو، الياء"
+      },
+      {
+        "question": "في رسم المصحف، لماذا كُتبت كلمات مثل (الصلوة، الزكوة، الحيوة) بالواو؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن أصلها واو",
+        "correctAnswer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "ما هو تعريف 'المبني' (مبني الشبه) عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما شابه الحرف شبهاً قوياً يدنيه منه"
+      },
+      {
+        "question": "ما هو أصل كلمة (عِتِيّاً) في قوله تعالى: {بَلَغْتُ مِنَ الْكِبَرِ عِتِيًّا}؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِتِيّاً (من الياء)",
+        "correctAnswer": "عُتُوّاً (من الواو)"
+      },
+      {
+        "question": "ما هو تعريف 'المعرب' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما دل على حدث وزمان",
+        "correctAnswer": "ما سلم من مشابهة الحرف"
+      },
+      {
+        "question": "ما معنى (الصَّلِّيَان)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صوت الحديد",
+        "correctAnswer": "نبت (خبزة الإبل)"
+      },
+      {
+        "question": "في قوله تعالى: {وَكَذَلِكَ نُنْجِي الْمُؤْمِنِينَ}، لماذا كُتبت (ننجي) بنون واحدة في المصحف؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن الفعل ماضٍ",
+        "correctAnswer": "لاجتماع المثلين (نونين) وتخفيفاً للفظ، أو إخفاءً للنون الثانية"
+      },
+      {
+        "question": "في علم العروض، من أي بحر شعري تم اقتطاع (اقتضاب) 'البحر المقتضب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من البحر البسيط",
+        "correctAnswer": "من البحر المنسرح"
+      },
+      {
+        "question": "ما هي الدلالة 'الطبيعية اللفظية'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة الأنين على الوجع"
+      },
+      {
+        "question": "ما هي الحروف التي تُعجم (تُنقط) في حال، ولا تُعجم في حال آخر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الياءات (ي) والألفات التي تكتب بصورة الياء (ى)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
