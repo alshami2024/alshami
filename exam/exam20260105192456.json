@@ -822,5 +822,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "محمد على حسن المرتضى",
+    "deviceId": "DEV-O9LM1C75N-mk1tdfdx",
+    "submissionDate": "2026-01-05T23:50:58.623Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هي العلاقة المنطقية بين 'الكلام' و 'الكلم' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عموم وخصوص وجهي"
+      },
+      {
+        "question": "ما هي الحروف التي تُعجم (تُنقط) في حال، ولا تُعجم في حال آخر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الياءات (ي) والألفات التي تكتب بصورة الياء (ى)"
+      },
+      {
+        "question": "ما هو حكم كتابة (الهمزة) إذا كانت في أول الكلمة (مثل: أحد، إيمان)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تكتب ألفاً دائماً (سواء كانت قطعاً أو وصلاً)"
+      },
+      {
+        "question": "ما حكم حذف التنوين من كلمة (ذهل) في قول الشاعر: 'بنو اللقيطة من ذهل بن شيبانا'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لمنع الصرف للعلمية والعدل",
+        "correctAnswer": "لكثرة الاستعمال وطلب التخفيف"
+      },
+      {
+        "question": "في قول العرب: 'هو مني مَناط الثريا'، ما المقصود بهذا التعبير؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العداوة",
+        "correctAnswer": "البعد (تعيين المنزلة من بعد)"
+      },
+      {
+        "question": "في باب النسب، كيف تنسب إلى (أُخْت) عند سيبويه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أُخَوِي",
+        "correctAnswer": "أَخَوِي (بحذف التاء ورد اللام)"
+      },
+      {
+        "question": "كم عدد أجناس الثياب التي ذكرها الفقهاء في مسائل الربا؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سبعة"
+      },
+      {
+        "question": "ما هو حد (تعريف) الكلام عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اللفظ المفيد فائدة يحسن السكوت عليها",
+        "correctAnswer": "قول مفيد مقصود لذاته"
+      },
+      {
+        "question": "ما الفرق في المعنى بين قراءة (بِضَنِينٍ) بالضاد، وقراءة (بِظَنِينٍ) بالظاء في سورة التكوير؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الضنين: المتهم، والظنين: البخيل",
+        "correctAnswer": "الضنين: البخيل، والظنين: المتهم"
+      },
+      {
+        "question": "لماذا حُذف التنوين من (ذاكرِ) في قول الشاعر: 'ولا ذاكرِ الله إلا قليلاً'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للضرورة الشعرية (أو لالتقاء الساكنين)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
