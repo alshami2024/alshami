@@ -511,5 +511,110 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "محمد علي محمد احسن الجرادي",
+    "deviceId": "DEV-LWTUQXYLK-mk1q2u8w",
+    "submissionDate": "2026-01-05T22:18:45.994Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "لماذا حُذف التنوين من (ذاكرِ) في قول الشاعر: 'ولا ذاكرِ الله إلا قليلاً'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنه اسم فاعل عامل",
+        "correctAnswer": "للضرورة الشعرية (أو لالتقاء الساكنين)"
+      },
+      {
+        "question": "ما هو تعريف 'المبني' (مبني الشبه) عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما شابه الحرف شبهاً قوياً يدنيه منه"
+      },
+      {
+        "question": "في رسم المصحف، لماذا كُتبت كلمات مثل (الصلوة، الزكوة، الحيوة) بالواو؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ من الناسخ",
+        "correctAnswer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "ما معنى (قَصَعَ) في قول الشاعر: 'لم تَقْصَع صرائرها'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرق وشتت",
+        "correctAnswer": "سكن وأذهب (العطش)"
+      },
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يقال فقط بائع اللؤلؤ",
+        "correctAnswer": "القياس: لؤلئي، والمسموع: لآل"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا كانت منقلبة عن واو",
+        "correctAnswer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      },
+      {
+        "question": "ما هي الأحرف الأربعة التي لا تأتي 'الظاء' (ظ) ثانيةً لها إذا ابتدأت الكلمة بها؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجيم، الحاء، الخاء، الهاء",
+        "correctAnswer": "القاف، النون، الواو، الياء"
+      },
+      {
+        "question": "كيف يُجمع (قَسّ) وهو رئيس النصارى في العلم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قِسِّيسُون",
+        "correctAnswer": "قُسُوس وقَسَاوِسَة"
+      },
+      {
+        "question": "كم عدد أحرف الظاء (ظ) في القرآن الكريم بحسب ما ذُكر في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "842"
+      },
+      {
+        "question": "ما معنى (الصَّلِّيَان)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حجارة صلبة",
+        "correctAnswer": "نبت (خبزة الإبل)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
