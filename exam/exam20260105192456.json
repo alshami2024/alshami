@@ -408,5 +408,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "محمد ناصر سعيد محمد",
+    "deviceId": "DEV-3PSMZJD4J-mk1iot0r",
+    "submissionDate": "2026-01-05T18:51:54.115Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في قوله تعالى: {تَنْبُتُ بِالدُّهْنِ}، بماذا تعلقت الباء في قراءة (تَنْبُتُ) بفتح التاء (من الثلاثي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "متعلقة بمحذوف حال (أي ملابسة للدهن أو كائنة فيه)"
+      },
+      {
+        "question": "ما هما المصدران الوحيدان اللذان وردا على وزن (فِعَلَة) بكسر الفاء وفتح العين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِنَبَة، حِدَأَة",
+        "correctAnswer": "الطِّيَرَة، الخِيَرَة"
+      },
+      {
+        "question": "لماذا حُذف التنوين من (ذاكرِ) في قول الشاعر: 'ولا ذاكرِ الله إلا قليلاً'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للضرورة الشعرية (أو لالتقاء الساكنين)"
+      },
+      {
+        "question": "ما معنى كلمة 'الصيدان' في قول أبي ذؤيب: 'وسود من الصيدان فيها مذانب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفضة الخالصة",
+        "correctAnswer": "النحاس والذهب"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      },
+      {
+        "question": "ما هي العلاقة المنطقية بين 'الكلام' و 'الكلم' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عموم وخصوص مطلق",
+        "correctAnswer": "عموم وخصوص وجهي"
+      },
+      {
+        "question": "ما هو الوزن الصرفي الصحيح لكلمة 'عُنْوَان'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فُعْلال",
+        "correctAnswer": "فِعْوال (وأصله فِعَّال)"
+      },
+      {
+        "question": "كم عدد أحرف الظاء (ظ) في القرآن الكريم بحسب ما ذُكر في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "323671",
+        "correctAnswer": "842"
+      },
+      {
+        "question": "ما هو تصغير كلمة (أَلَاءَة) (شجر دائم الخضرة)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أُلَيَّا",
+        "correctAnswer": "أُلَيْئَة"
+      },
+      {
+        "question": "ما هو تعريف 'الاسم' عند المحققين كما ورد في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة مستقلة لا تدل بهيئتها على أحد الأزمنة الثلاثة وضعاً"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
