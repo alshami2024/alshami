@@ -1,0 +1,107 @@
+[
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "واحد من الناس",
+    "deviceId": "DEV-WATRW608K-mk1ggi5y",
+    "submissionDate": "2026-01-05T17:49:27.091Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما معنى (قَصَعَ) في قول الشاعر: 'لم تَقْصَع صرائرها'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمع وحفظ",
+        "correctAnswer": "سكن وأذهب (العطش)"
+      },
+      {
+        "question": "ما تصغير كلمة (وَاصِل)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وُصَيْل",
+        "correctAnswer": "أُوَيْصِل (لأن أصلها 'ووَيْصل' فقلبت الواو الأولى همزة)"
+      },
+      {
+        "question": "ما هي الأحرف الأربعة التي لا تأتي 'الظاء' (ظ) ثانيةً لها إذا ابتدأت الكلمة بها؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السين، الصاد، الطاء، العين",
+        "correctAnswer": "القاف، النون، الواو، الياء"
+      },
+      {
+        "question": "في قول العرب: 'هو مني مَناط الثريا'، ما المقصود بهذا التعبير؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "البعد (تعيين المنزلة من بعد)"
+      },
+      {
+        "question": "ما هو الوزن الصرفي الصحيح لكلمة 'عُنْوَان'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فِعْلان",
+        "correctAnswer": "فِعْوال (وأصله فِعَّال)"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا كانت منقلبة عن واو",
+        "correctAnswer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      },
+      {
+        "question": "لماذا حُذف التنوين من (ذاكرِ) في قول الشاعر: 'ولا ذاكرِ الله إلا قليلاً'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنه اسم فاعل عامل",
+        "correctAnswer": "للضرورة الشعرية (أو لالتقاء الساكنين)"
+      },
+      {
+        "question": "في باب النسب، كيف تنسب إلى (أُخْت) عند سيبويه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أُخْتِي",
+        "correctAnswer": "أَخَوِي (بحذف التاء ورد اللام)"
+      },
+      {
+        "question": "ما هو حد (تعريف) الكلام عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قول مفيد مقصود لذاته"
+      },
+      {
+        "question": "هل يجوز جمع (نَدَى) على (أَنْدِيَة)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يجمع فقط على (أَنْدَاء)",
+        "correctAnswer": "نعم، رغم أنه شاذ (لأن 'أفعلة' لغير المقصور)، وقيل جمع نَدِيّ"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
