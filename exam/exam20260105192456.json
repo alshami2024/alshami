@@ -207,5 +207,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "بدر",
+    "deviceId": "DEV-4YTONWHU8-mk1huiqn",
+    "submissionDate": "2026-01-05T18:28:20.909Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هي الحروف التي تُعجم (تُنقط) في حال، ولا تُعجم في حال آخر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الياءات (ي) والألفات التي تكتب بصورة الياء (ى)"
+      },
+      {
+        "question": "ما هي الدلالة 'الطبيعية اللفظية'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة الإشارة باليد",
+        "correctAnswer": "دلالة الأنين على الوجع"
+      },
+      {
+        "question": "أي نوع من الدلالات تمثله دلالة 'الدخان على النار'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة طبيعية لفظية",
+        "correctAnswer": "دلالة عقلية غير لفظية"
+      },
+      {
+        "question": "ما هو تصغير كلمة (أَلَاءَة) (شجر دائم الخضرة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أُلَيْئَة"
+      },
+      {
+        "question": "هل يجوز جمع (نَدَى) على (أَنْدِيَة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، رغم أنه شاذ (لأن 'أفعلة' لغير المقصور)، وقيل جمع نَدِيّ"
+      },
+      {
+        "question": "لماذا كُسرت الفاء في كلمة (ضِيزَى) في قوله تعالى: {قِسْمَةٌ ضِيزَى}، مع أن أصل فُعْلى الضم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لتسلم الياء من الانقلاب واواً"
+      },
+      {
+        "question": "كم عدد أنواع الدلالات المذكورة في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ستة (وضعية، عقلية، طبيعية - وكل منها لفظية وغير لفظية)"
+      },
+      {
+        "question": "ما هو الوزن الصرفي الصحيح لكلمة 'عُنْوَان'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فِعْوال (وأصله فِعَّال)"
+      },
+      {
+        "question": "ما هو تعريف 'المعرب' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما كان مبنياً على الفتح",
+        "correctAnswer": "ما سلم من مشابهة الحرف"
+      },
+      {
+        "question": "متى تُحذف النون من كلمة (يكن) المجزومة (مثل: لم يكُ)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز حذفها إلا في الشعر",
+        "correctAnswer": "لكثرة الاستعمال وتشبيه نونها بحرف العلة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
