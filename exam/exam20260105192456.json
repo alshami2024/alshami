@@ -616,5 +616,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "محمد علي محمد احسن الجرادي",
+    "deviceId": "DEV-LWTUQXYLK-mk1q2u8w",
+    "submissionDate": "2026-01-05T22:27:22.134Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في علم العروض، من أي بحر شعري تم اقتطاع (اقتضاب) 'البحر المقتضب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من البحر الكامل",
+        "correctAnswer": "من البحر المنسرح"
+      },
+      {
+        "question": "لماذا كُسرت الفاء في كلمة (ضِيزَى) في قوله تعالى: {قِسْمَةٌ ضِيزَى}، مع أن أصل فُعْلى الضم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لمجانسة الكسرة في 'قسمة'",
+        "correctAnswer": "لتسلم الياء من الانقلاب واواً"
+      },
+      {
+        "question": "كيف يُجمع (قَسّ) وهو رئيس النصارى في العلم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قُسُوس وقَسَاوِسَة"
+      },
+      {
+        "question": "أي نوع من الدلالات تمثله دلالة 'الدخان على النار'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة عقلية غير لفظية"
+      },
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القياس: لؤلئي، والمسموع: لآل"
+      },
+      {
+        "question": "في النسب، كيف تنسب إلى كلمة (أخ)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أخيّ",
+        "correctAnswer": "أخويّ"
+      },
+      {
+        "question": "ما هي العلاقة المنطقية بين 'الكلام' و 'الكلم' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عموم وخصوص وجهي"
+      },
+      {
+        "question": "ما هو الحكم الإعرابي لكلمة (مَوْثِق) في قول الشاعر: 'أسيرٌ... ومُوثَقٍ في عقال الأسر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجر على المجاورة، أو النصب (مفعول معه)، أو الرفع (عطف)"
+      },
+      {
+        "question": "كم عدد أجناس الثياب التي ذكرها الفقهاء في مسائل الربا؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلاثة",
+        "correctAnswer": "سبعة"
+      },
+      {
+        "question": "ما وزن كلمة (عُنْوَان) الصرفي وفقاً لأصلها (عُنَّان)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فُعْلَال",
+        "correctAnswer": "فِعْوَال"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
