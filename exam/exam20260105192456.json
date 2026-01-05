@@ -718,5 +718,109 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "محمد علي محمد احسن الجرادي",
+    "deviceId": "DEV-LWTUQXYLK-mk1q2u8w",
+    "submissionDate": "2026-01-05T22:39:11.081Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الحكم الإعرابي لكلمة (مَوْثِق) في قول الشاعر: 'أسيرٌ... ومُوثَقٍ في عقال الأسر'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجر بالإضافة فقط",
+        "correctAnswer": "الجر على المجاورة، أو النصب (مفعول معه)، أو الرفع (عطف)"
+      },
+      {
+        "question": "ما معنى (قَصَعَ) في قول الشاعر: 'لم تَقْصَع صرائرها'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سكن وأذهب (العطش)"
+      },
+      {
+        "question": "ما هي الحروف التي تُعجم (تُنقط) في حال، ولا تُعجم في حال آخر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الياءات (ي) والألفات التي تكتب بصورة الياء (ى)"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا كانت منقلبة عن واو",
+        "correctAnswer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      },
+      {
+        "question": "ما معنى كلمة 'الصيدان' في قول أبي ذؤيب: 'وسود من الصيدان فيها مذانب'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النحاس والذهب"
+      },
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القياس: لآل، والمسموع: لؤلؤي",
+        "correctAnswer": "القياس: لؤلئي، والمسموع: لآل"
+      },
+      {
+        "question": "ما إعراب جملة (أنت أنا) في البيت اللغز: 'أنا أنت الضاربي أنت أنا'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خبر للمبتدأ (الضاربي)",
+        "correctAnswer": "خبر عن (أنت) الثانية"
+      },
+      {
+        "question": "لماذا كُتبت كلمة (الربوا) بالواو في المصحف؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للتمييز بينها وبين (الربى) بمعنى التربية",
+        "correctAnswer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "ما هو أصل كلمة (عِتِيّاً) في قوله تعالى: {بَلَغْتُ مِنَ الْكِبَرِ عِتِيًّا}؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِتِيّاً (من الياء)",
+        "correctAnswer": "عُتُوّاً (من الواو)"
+      },
+      {
+        "question": "ما هي الدلالة 'الطبيعية اللفظية'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة الدخان على النار",
+        "correctAnswer": "دلالة الأنين على الوجع"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
