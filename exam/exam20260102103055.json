@@ -1506,5 +1506,62 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "أشيد الصيادي",
+    "deviceId": "DEV-MERN17LWV-mk2v1hp2",
+    "submissionDate": "2026-01-06T17:25:27.115Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو العيب الرئيسي الذي يوجه لأسلوب 'الاستفتاء الشعبي' رغم ديمقراطيته العالية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احتمال تضليل الرأي العام وتبسيط القضايا المعقدة"
+      },
+      {
+        "question": "أي من الآتي يُعد من خصائص الدساتير العرفية مقارنة بالمكتوبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرونة والقدرة العالية على التطور"
+      },
+      {
+        "question": "القوانين العادية المنظمة للانتخابات تُعتبر مصدراً تكميلياً للقواعد الدستورية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الجمعية التأسيسية هي هيئة تُنتخب من الشعب لوضع الدستور وتنحل عادة بعد إنجاز مهمتها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعتبر أول دستور مكتوب حديث لا يزال نافذاً حتى اليوم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الولايات المتحدة الأمريكية 1787م"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
