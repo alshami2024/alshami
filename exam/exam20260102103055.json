@@ -1917,5 +1917,62 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مازن التركي",
+    "deviceId": "DEV-X9P3JJW9G-mk2vamql",
+    "submissionDate": "2026-01-06T17:32:33.649Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يُصنف 'الميثاق الفرنسي لعام 1814م' ضمن الدساتير التي نشأت بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      },
+      {
+        "question": "أي من العناصر التالية يُشكل 'الركن المعنوي' للعرف الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاعتقاد بإلزامية السلوك وضرورة احترامه"
+      },
+      {
+        "question": "ما هو العيب الرئيسي الذي يوجه لأسلوب 'الاستفتاء الشعبي' رغم ديمقراطيته العالية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احتمال تضليل الرأي العام وتبسيط القضايا المعقدة"
+      },
+      {
+        "question": "الاتجاه المعاصر في وضع الدساتير يفضل الجمع بين أسلوبين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمعية التأسيسية والاستفتاء الشعبي"
+      },
+      {
+        "question": "الجمعية التأسيسية هي هيئة تُنتخب من الشعب لوضع الدستور وتنحل عادة بعد إنجاز مهمتها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
