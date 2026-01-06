@@ -522,5 +522,64 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "سيف الإسلام حيدرة",
+    "deviceId": "DEV-0FLDCRY8A-mk2ui7qx",
+    "submissionDate": "2026-01-06T17:10:28.483Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في الفقه الدستوري، القوانين الأساسية (مثل قانون الأحزاب) تعتبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قواعد دستورية موضوعية"
+      },
+      {
+        "question": "أي من الآتي يُعد من خصائص الدساتير العرفية مقارنة بالمكتوبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرونة والقدرة العالية على التطور"
+      },
+      {
+        "question": "الدستور العرفي يعني عدم وجود أي وثائق مكتوبة على الإطلاق في النظام السياسي للدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الدستور الأمريكي الحالي (1787م) يُعد دستوراً مرناً يمكن تعديله بمجرد العرف والممارسة بسهولة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الاتجاه المعاصر في وضع الدساتير يفضل الجمع بين أسلوبين هما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد والجمعية التأسيسية",
+        "correctAnswer": "الجمعية التأسيسية والاستفتاء الشعبي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
