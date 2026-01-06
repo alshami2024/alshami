@@ -171,5 +171,64 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمود الحمري",
+    "deviceId": "DEV-Q5NO4MWTD-mk00ti0q",
+    "submissionDate": "2026-01-06T17:05:39.291Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "نظام الحكم في بريطانيا يعتمد على دستور مكتوب واحد تم إقراره في القرن الثالث عشر.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يُعتبر الدستور التونسي لعام 1861م أول دستور عربي مكتوب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو الدور الأساسي للعرف 'المفسر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توضيح الغموض في نص دستوري موجود"
+      },
+      {
+        "question": "يُصنف 'الميثاق الفرنسي لعام 1814م' ضمن الدساتير التي نشأت بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      },
+      {
+        "question": "تحول العرف الأمريكي بمنع انتخاب الرئيس لأكثر من فترتين إلى نص مكتوب في عام 1951م بعد:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "انتخاب جورج واشنطن",
+        "correctAnswer": "انتخاب فرانكلين روزفلت 4 مرات"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
