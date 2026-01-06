@@ -814,5 +814,62 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "موفق عميان",
+    "deviceId": "DEV-2KB8KH9DZ-mk2um2k5",
+    "submissionDate": "2026-01-06T17:13:27.743Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في الفقه الدستوري، القوانين الأساسية (مثل قانون الأحزاب) تعتبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قواعد دستورية موضوعية"
+      },
+      {
+        "question": "أي من العناصر التالية يُشكل 'الركن المعنوي' للعرف الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاعتقاد بإلزامية السلوك وضرورة احترامه"
+      },
+      {
+        "question": "يستمد أسلوب 'العقد' في نشأة الدساتير أساسه الفلسفي من نظريات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد الاجتماعي لفلاسفة التنوير"
+      },
+      {
+        "question": "ما هو العيب الرئيسي الذي يوجه لأسلوب 'الاستفتاء الشعبي' رغم ديمقراطيته العالية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احتمال تضليل الرأي العام وتبسيط القضايا المعقدة"
+      },
+      {
+        "question": "الدساتير المكتوبة تتميز بالوضوح واليقين القانوني مقارنة بالدساتير العرفية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
