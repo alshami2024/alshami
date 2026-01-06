@@ -1230,5 +1230,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "عبدالحميد عبد الله عاطف",
+    "deviceId": "DEV-GCPPUQ60Q-mk2nq1p8",
+    "submissionDate": "2026-01-06T14:00:36.113Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي نوع من الدلالات تمثله دلالة 'الدخان على النار'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة عقلية غير لفظية"
+      },
+      {
+        "question": "هل يجوز جمع (نَدَى) على (أَنْدِيَة)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يجمع فقط على (أَنْدَاء)",
+        "correctAnswer": "نعم، رغم أنه شاذ (لأن 'أفعلة' لغير المقصور)، وقيل جمع نَدِيّ"
+      },
+      {
+        "question": "ما حكم حذف التنوين من كلمة (ذهل) في قول الشاعر: 'بنو اللقيطة من ذهل بن شيبانا'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للضرورة الشعرية فقط",
+        "correctAnswer": "لكثرة الاستعمال وطلب التخفيف"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      },
+      {
+        "question": "ما هي العلاقة المنطقية بين 'الكلام' و 'الكلم' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تباين",
+        "correctAnswer": "عموم وخصوص وجهي"
+      },
+      {
+        "question": "ما معنى 'الإضمار' في البحر الكامل في العروض؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حذف الحرف الثاني الساكن",
+        "correctAnswer": "إسكان الحرف الثاني المتحرك (التاء من متفاعلن)"
+      },
+      {
+        "question": "ما معنى المثل: 'أَرِقّ على ظَلْعِك'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ارفق بنفسك وتكلف ما تطيق (أصل الظلع: العرج أو الضعف)"
+      },
+      {
+        "question": "في قوله تعالى: {تَنْبُتُ بِالدُّهْنِ}، بماذا تعلقت الباء في قراءة (تَنْبُتُ) بفتح التاء (من الثلاثي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "متعلقة بمحذوف حال (أي ملابسة للدهن أو كائنة فيه)"
+      },
+      {
+        "question": "في علم العروض، من أي بحر شعري تم اقتطاع (اقتضاب) 'البحر المقتضب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من البحر البسيط",
+        "correctAnswer": "من البحر المنسرح"
+      },
+      {
+        "question": "ما هي الدلالة 'الطبيعية اللفظية'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة الإنسان على ذاته",
+        "correctAnswer": "دلالة الأنين على الوجع"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
