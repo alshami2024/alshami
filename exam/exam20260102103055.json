@@ -1159,5 +1159,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمود الحمري",
+    "deviceId": "DEV-Q5NO4MWTD-mk00ti0q",
+    "submissionDate": "2026-01-06T17:20:37.650Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الدساتير المكتوبة تتميز بالوضوح واليقين القانوني مقارنة بالدساتير العرفية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "العرف الذي يضيف قواعد جديدة لم يتناولها الدستور المكتوب يُسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المخالف",
+        "correctAnswer": "العرف المكمل"
+      },
+      {
+        "question": "أي من الآتي يُعد من خصائص الدساتير العرفية مقارنة بالمكتوبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرونة والقدرة العالية على التطور"
+      },
+      {
+        "question": "ما هو الدور الأساسي للعرف 'المفسر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توضيح الغموض في نص دستوري موجود"
+      },
+      {
+        "question": "تعتبر 'الرقابة القضائية على دستورية القوانين' من خصائص أي تجربة دستورية تاريخية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التجربة الأمريكية (1787)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
