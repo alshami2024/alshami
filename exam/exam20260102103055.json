@@ -697,5 +697,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "مرام الزقري",
+    "deviceId": "DEV-MHSOIUODB-mk2uiutx",
+    "submissionDate": "2026-01-06T17:10:57.792Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الآتي يُعد من خصائص الدساتير العرفية مقارنة بالمكتوبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرونة والقدرة العالية على التطور"
+      },
+      {
+        "question": "أي من العناصر التالية يُشكل 'الركن المعنوي' للعرف الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاعتقاد بإلزامية السلوك وضرورة احترامه"
+      },
+      {
+        "question": "أي من الدساتير العربية التالية نشأ بأسلوب 'العقد' (الاتفاق بين الحاكم ومجلس منتخب)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور التونسي 1861م",
+        "correctAnswer": "دستور الكويت 1962م"
+      },
+      {
+        "question": "تعتبر 'الرقابة القضائية على دستورية القوانين' من خصائص أي تجربة دستورية تاريخية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التجربة الأمريكية (1787)"
+      },
+      {
+        "question": "العرف المخالف هو الذي يتعارض صراحة مع نص دستوري ويؤدي نظرياً إلى إلغائه، وهو مرفوض قانوناً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
