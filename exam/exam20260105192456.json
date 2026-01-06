@@ -1027,5 +1027,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "خالد",
+    "deviceId": "DEV-0PU5CNV78-mk22yb8y",
+    "submissionDate": "2026-01-06T04:19:09.733Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القياس: لؤلئي، والمسموع: لآل"
+      },
+      {
+        "question": "كيف يُجمع (قَسّ) وهو رئيس النصارى في العلم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قُسُوس وقَسَاوِسَة"
+      },
+      {
+        "question": "ما هو حد (تعريف) الكلام عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اللفظ المفيد فائدة يحسن السكوت عليها",
+        "correctAnswer": "قول مفيد مقصود لذاته"
+      },
+      {
+        "question": "كلمة (عَرَفَات) هل هي مفرد أم جمع من حيث المعنى؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفرد (علم لمكان) بصيغة الجمع"
+      },
+      {
+        "question": "ما هو الحكم الإعرابي لكلمة (مَوْثِق) في قول الشاعر: 'أسيرٌ... ومُوثَقٍ في عقال الأسر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجر على المجاورة، أو النصب (مفعول معه)، أو الرفع (عطف)"
+      },
+      {
+        "question": "في علم العروض، من أي بحر شعري تم اقتطاع (اقتضاب) 'البحر المقتضب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من البحر الطويل",
+        "correctAnswer": "من البحر المنسرح"
+      },
+      {
+        "question": "في قوله تعالى: {وَكَذَلِكَ نُنْجِي الْمُؤْمِنِينَ}، لماذا كُتبت (ننجي) بنون واحدة في المصحف؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لاجتماع المثلين (نونين) وتخفيفاً للفظ، أو إخفاءً للنون الثانية"
+      },
+      {
+        "question": "في رسم المصحف، لماذا كُتبت كلمات مثل (الصلوة، الزكوة، الحيوة) بالواو؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن أصلها واو",
+        "correctAnswer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "ما الفرق في المعنى بين قراءة (بِضَنِينٍ) بالضاد، وقراءة (بِظَنِينٍ) بالظاء في سورة التكوير؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الضنين: المتهم، والظنين: البخيل",
+        "correctAnswer": "الضنين: البخيل، والظنين: المتهم"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا سبقتها ياء (مثل: يحيا)",
+        "correctAnswer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
