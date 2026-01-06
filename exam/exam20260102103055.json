@@ -1044,5 +1044,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "فرحان الضحياني",
+    "deviceId": "DEV-JV8P6C7QQ-mk2ut8tv",
+    "submissionDate": "2026-01-06T17:19:02.511Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الدستور العرفي يعني عدم وجود أي وثائق مكتوبة على الإطلاق في النظام السياسي للدولة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يستمد أسلوب 'العقد' في نشأة الدساتير أساسه الفلسفي من نظريات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد الاجتماعي لفلاسفة التنوير"
+      },
+      {
+        "question": "أي دستور عربي تم وضعه بأسلوب المنحة من قبل الحاكم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور المصري 1923م"
+      },
+      {
+        "question": "القوانين العادية المنظمة للانتخابات تُعتبر مصدراً تكميلياً للقواعد الدستورية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "العرف المخالف هو الذي يتعارض صراحة مع نص دستوري ويؤدي نظرياً إلى إلغائه، وهو مرفوض قانوناً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
