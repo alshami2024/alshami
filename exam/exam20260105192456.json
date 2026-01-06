@@ -924,5 +924,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "محمد كمال",
+    "deviceId": "DEV-TO31I7RU1-mk1zogqi",
+    "submissionDate": "2026-01-06T02:47:31.171Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كم عدد أحرف الظاء (ظ) في القرآن الكريم بحسب ما ذُكر في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "114",
+        "correctAnswer": "842"
+      },
+      {
+        "question": "في النسب، كيف تنسب إلى كلمة (أخ)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أخيّ",
+        "correctAnswer": "أخويّ"
+      },
+      {
+        "question": "في قول العرب: 'هو مني مَناط الثريا'، ما المقصود بهذا التعبير؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحب والمودة",
+        "correctAnswer": "البعد (تعيين المنزلة من بعد)"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا سبقتها ياء (مثل: يحيا)",
+        "correctAnswer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      },
+      {
+        "question": "في قوله تعالى: {فَمَالِ الَّذِينَ كَفَرُوا}، لماذا كُتبت اللام مفصولة عن 'الذين' في رسم المصحف؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اتباعاً لسنة خط المصحف وإن خالف القياس"
+      },
+      {
+        "question": "ما الفرق في المعنى بين قراءة (بِضَنِينٍ) بالضاد، وقراءة (بِظَنِينٍ) بالظاء في سورة التكوير؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلاهما بمعنى واحد وهو الشك",
+        "correctAnswer": "الضنين: البخيل، والظنين: المتهم"
+      },
+      {
+        "question": "في قوله تعالى: {وَتِلْكَ نِعْمَةٌ تَمُنُّهَا عَلَيَّ}، هل يجوز حذف ألف الاستفهام؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، يجوز عند أمن اللبس"
+      },
+      {
+        "question": "ما هو تعريف 'الاسم' عند المحققين كما ورد في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة مستقلة لا تدل بهيئتها على أحد الأزمنة الثلاثة وضعاً"
+      },
+      {
+        "question": "كم عدد أجناس الثياب التي ذكرها الفقهاء في مسائل الربا؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عشرة",
+        "correctAnswer": "سبعة"
+      },
+      {
+        "question": "ما هو حكم كتابة (الهمزة) إذا كانت في أول الكلمة (مثل: أحد، إيمان)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تكتب ألفاً دائماً (سواء كانت قطعاً أو وصلاً)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
