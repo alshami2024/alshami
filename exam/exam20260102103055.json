@@ -230,5 +230,62 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "نجم الدين الجرموزي",
+    "deviceId": "DEV-LOLKGX1YX-mk2udjqo",
+    "submissionDate": "2026-01-06T17:06:50.111Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العرف المعدل الذي يحول النظام من رئاسي إلى برلماني (مثل التجربة الفرنسية الثالثة) محل إجماع بقبوله في الدساتير الجامدة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يستمد أسلوب 'العقد' في نشأة الدساتير أساسه الفلسفي من نظريات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد الاجتماعي لفلاسفة التنوير"
+      },
+      {
+        "question": "أول دستور فرنسي مكتوب عام 1791م أسس لنظام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ملكي دستوري"
+      },
+      {
+        "question": "تحول العرف الأمريكي بمنع انتخاب الرئيس لأكثر من فترتين إلى نص مكتوب في عام 1951م بعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "انتخاب فرانكلين روزفلت 4 مرات"
+      },
+      {
+        "question": "أسلوب 'المنحة' في وضع الدساتير يعبر عن ديمقراطية كاملة لأنه يصدر من الحاكم الذي يمثل رمز الدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
