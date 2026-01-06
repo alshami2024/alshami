@@ -1332,5 +1332,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "عادل عتيق",
+    "deviceId": "DEV-6UOWORVAO-mk2uy51b",
+    "submissionDate": "2026-01-06T17:22:51.554Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الجمعية التأسيسية هي هيئة تُنتخب من الشعب لوضع الدستور وتنحل عادة بعد إنجاز مهمتها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الممارسة البريطانية التي جعلت الملك 'يملك ولا يحكم' تعتبر مثالاً تاريخياً على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المفسر",
+        "correctAnswer": "العرف المعدل"
+      },
+      {
+        "question": "أي دستور عربي تم وضعه بأسلوب المنحة من قبل الحاكم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور المصري 1923م"
+      },
+      {
+        "question": "أول دستور فرنسي مكتوب عام 1791م أسس لنظام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ملكي دستوري"
+      },
+      {
+        "question": "أي من الآتي يُعد من خصائص الدساتير العرفية مقارنة بالمكتوبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرونة والقدرة العالية على التطور"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
