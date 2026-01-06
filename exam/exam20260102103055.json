@@ -1738,5 +1738,62 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "عادل عتيق",
+    "deviceId": "DEV-6UOWORVAO-mk2uy51b",
+    "submissionDate": "2026-01-06T17:30:46.736Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الدستور الأمريكي الحالي (1787م) يُعد دستوراً مرناً يمكن تعديله بمجرد العرف والممارسة بسهولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعتبر أول دستور مكتوب حديث لا يزال نافذاً حتى اليوم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الولايات المتحدة الأمريكية 1787م"
+      },
+      {
+        "question": "أسلوب 'المنحة' في وضع الدساتير يعبر عن ديمقراطية كاملة لأنه يصدر من الحاكم الذي يمثل رمز الدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي من الآتي يُعد من خصائص الدساتير العرفية مقارنة بالمكتوبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرونة والقدرة العالية على التطور"
+      },
+      {
+        "question": "أي من الخصائص التالية تُميز أسلوب 'الجمعية التأسيسية'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التخصص والتمثيل الواسع"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
