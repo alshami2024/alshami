@@ -2262,5 +2262,65 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "ريم الصلاحي",
+    "deviceId": "DEV-E30QB59UL-mk2vlndr",
+    "submissionDate": "2026-01-06T17:41:07.683Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يستمد أسلوب 'العقد' في نشأة الدساتير أساسه الفلسفي من نظريات:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحق الإلهي للملوك",
+        "correctAnswer": "العقد الاجتماعي لفلاسفة التنوير"
+      },
+      {
+        "question": "ما هو الدور الأساسي للعرف 'المفسر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توضيح الغموض في نص دستوري موجود"
+      },
+      {
+        "question": "أي من الدساتير العربية التالية نشأ بأسلوب 'العقد' (الاتفاق بين الحاكم ومجلس منتخب)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور المصري 1923م",
+        "correctAnswer": "دستور الكويت 1962م"
+      },
+      {
+        "question": "ما هو الفرق الجوهري بين 'العادة الدستورية' و 'العرف الدستوري'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العادة ليس لها ركن مادي",
+        "correctAnswer": "العادة تفتقر للركن المعنوي (الإلزام)"
+      },
+      {
+        "question": "العرف المخالف هو الذي يتعارض صراحة مع نص دستوري ويؤدي نظرياً إلى إلغائه، وهو مرفوض قانوناً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
