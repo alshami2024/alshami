@@ -2146,5 +2146,64 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "سليمان الذرحاني",
+    "deviceId": "DEV-E5M61YWU5-mk2vgxxq",
+    "submissionDate": "2026-01-06T17:37:28.696Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الخصائص التالية تُميز أسلوب 'الجمعية التأسيسية'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "انفراد الحاكم بالقرار",
+        "correctAnswer": "التخصص والتمثيل الواسع"
+      },
+      {
+        "question": "أي من العناصر التالية يُشكل 'الركن المعنوي' للعرف الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاعتقاد بإلزامية السلوك وضرورة احترامه"
+      },
+      {
+        "question": "ما هو العيب الرئيسي الذي يوجه لأسلوب 'الاستفتاء الشعبي' رغم ديمقراطيته العالية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احتمال تضليل الرأي العام وتبسيط القضايا المعقدة"
+      },
+      {
+        "question": "الاتجاه المعاصر في وضع الدساتير يفضل الجمع بين أسلوبين هما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد والجمعية التأسيسية",
+        "correctAnswer": "الجمعية التأسيسية والاستفتاء الشعبي"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعتبر أول دستور مكتوب حديث لا يزال نافذاً حتى اليوم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الولايات المتحدة الأمريكية 1787م"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
