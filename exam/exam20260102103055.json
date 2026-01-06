@@ -1278,65 +1278,6 @@
   },
   {
     "examTitle": "القانون الدستوري",
-    "studentName": "مرام الحلقبي",
-    "deviceId": "DEV-8G7SUJ11G-mk2v0hpu",
-    "submissionDate": "2026-01-06T17:24:40.505Z",
-    "mcqScore": {
-      "correct": 3,
-      "total": 5
-    },
-    "essayScore": {
-      "totalScore": 0,
-      "totalMax": 0
-    },
-    "answers": [
-      {
-        "question": "يستمد أسلوب 'العقد' في نشأة الدساتير أساسه الفلسفي من نظريات:",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "العقد الاجتماعي لفلاسفة التنوير"
-      },
-      {
-        "question": "أول دستور فرنسي مكتوب عام 1791م أسس لنظام:",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "ملكي دستوري"
-      },
-      {
-        "question": "أي دستور عربي تم وضعه بأسلوب المنحة من قبل الحاكم؟",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "الدستور المصري 1923م"
-      },
-      {
-        "question": "المخالفات الاستثنائية للسلوك المتكرر تنفي وجود العرف الدستوري وتلغيه تماماً.",
-        "type": "tf",
-        "isCorrect": false,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "صح",
-        "correctAnswer": "خطأ"
-      },
-      {
-        "question": "الدستور العرفي يعني عدم وجود أي وثائق مكتوبة على الإطلاق في النظام السياسي للدولة.",
-        "type": "tf",
-        "isCorrect": false,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "صح",
-        "correctAnswer": "خطأ"
-      }
-    ],
-    "tabSwitchCount": 0
-  },
-  {
-    "examTitle": "القانون الدستوري",
     "studentName": "سمير المحقني",
     "deviceId": "DEV-WS2NCDNX8-mk2v0mjt",
     "submissionDate": "2026-01-06T17:24:46.770Z",
