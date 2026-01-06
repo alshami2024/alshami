@@ -114,5 +114,62 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "رغد ناجي",
+    "deviceId": "DEV-77EQL46BB-mk2ubbi1",
+    "submissionDate": "2026-01-06T17:05:06.082Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الدستور الأمريكي الحالي (1787م) يُعد دستوراً مرناً يمكن تعديله بمجرد العرف والممارسة بسهولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يُصنف 'الميثاق الفرنسي لعام 1814م' ضمن الدساتير التي نشأت بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعتبر أول دستور مكتوب حديث لا يزال نافذاً حتى اليوم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الولايات المتحدة الأمريكية 1787م"
+      },
+      {
+        "question": "تعتبر 'الرقابة القضائية على دستورية القوانين' من خصائص أي تجربة دستورية تاريخية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التجربة الأمريكية (1787)"
+      },
+      {
+        "question": "نظام الحكم في بريطانيا يعتمد على دستور مكتوب واحد تم إقراره في القرن الثالث عشر.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
