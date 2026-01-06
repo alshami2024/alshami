@@ -987,5 +987,62 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "أحمد الهادي",
+    "deviceId": "DEV-LR3SKN21F-mk2ui1w9",
+    "submissionDate": "2026-01-06T17:17:19.492Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الاتجاه المعاصر في وضع الدساتير يفضل الجمع بين أسلوبين هما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمعية التأسيسية والاستفتاء الشعبي"
+      },
+      {
+        "question": "تحول العرف الأمريكي بمنع انتخاب الرئيس لأكثر من فترتين إلى نص مكتوب في عام 1951م بعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "انتخاب فرانكلين روزفلت 4 مرات"
+      },
+      {
+        "question": "ما هو الدور الأساسي للعرف 'المفسر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توضيح الغموض في نص دستوري موجود"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعتبر أول دستور مكتوب حديث لا يزال نافذاً حتى اليوم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الولايات المتحدة الأمريكية 1787م"
+      },
+      {
+        "question": "أسلوب 'المنحة' في وضع الدساتير يعبر عن ديمقراطية كاملة لأنه يصدر من الحاكم الذي يمثل رمز الدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
