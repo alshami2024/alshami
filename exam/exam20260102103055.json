@@ -1105,63 +1105,6 @@
   },
   {
     "examTitle": "القانون الدستوري",
-    "studentName": "سليمان الضاحي",
-    "deviceId": "DEV-W0H20Z7XZ-mk2ui2dl",
-    "submissionDate": "2026-01-06T17:19:22.732Z",
-    "mcqScore": {
-      "correct": 5,
-      "total": 5
-    },
-    "essayScore": {
-      "totalScore": 0,
-      "totalMax": 0
-    },
-    "answers": [
-      {
-        "question": "أي من الخصائص التالية تُميز أسلوب 'الجمعية التأسيسية'؟",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "التخصص والتمثيل الواسع"
-      },
-      {
-        "question": "يُعتبر الدستور التونسي لعام 1861م أول دستور عربي مكتوب.",
-        "type": "tf",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "صح"
-      },
-      {
-        "question": "نظام الحكم في بريطانيا يعتمد على دستور مكتوب واحد تم إقراره في القرن الثالث عشر.",
-        "type": "tf",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "خطأ"
-      },
-      {
-        "question": "أول دستور فرنسي مكتوب عام 1791م أسس لنظام:",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "ملكي دستوري"
-      },
-      {
-        "question": "الدستور الأمريكي الحالي (1787م) يُعد دستوراً مرناً يمكن تعديله بمجرد العرف والممارسة بسهولة.",
-        "type": "tf",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "خطأ"
-      }
-    ],
-    "tabSwitchCount": 0
-  },
-  {
-    "examTitle": "القانون الدستوري",
     "studentName": "أبوبكر المصرف",
     "deviceId": "DEV-YBDRF051H-mk2uclvq",
     "submissionDate": "2026-01-06T17:20:57.086Z",
