@@ -287,5 +287,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "محمد الصوفي",
+    "deviceId": "DEV-VSB9S8F4E-mk2udlis",
+    "submissionDate": "2026-01-06T17:06:52.400Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي دستور عربي تم وضعه بأسلوب المنحة من قبل الحاكم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور المصري 1923م"
+      },
+      {
+        "question": "أي من الدساتير العربية التالية نشأ بأسلوب 'العقد' (الاتفاق بين الحاكم ومجلس منتخب)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الكويت 1962م"
+      },
+      {
+        "question": "الجمعية التأسيسية هي هيئة تُنتخب من الشعب لوضع الدستور وتنحل عادة بعد إنجاز مهمتها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُصنف 'الميثاق الفرنسي لعام 1814م' ضمن الدساتير التي نشأت بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      },
+      {
+        "question": "الدستور العرفي يعني عدم وجود أي وثائق مكتوبة على الإطلاق في النظام السياسي للدولة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
