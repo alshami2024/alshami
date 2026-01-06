@@ -1622,5 +1622,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "أرزاق القحيزة",
+    "deviceId": "DEV-ZEY6WTXBK-mk2v5fof",
+    "submissionDate": "2026-01-06T17:28:31.159Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أسلوب 'المنحة' في وضع الدساتير يعبر عن ديمقراطية كاملة لأنه يصدر من الحاكم الذي يمثل رمز الدولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعتبر أول دستور مكتوب حديث لا يزال نافذاً حتى اليوم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الولايات المتحدة الأمريكية 1787م"
+      },
+      {
+        "question": "يستمد أسلوب 'العقد' في نشأة الدساتير أساسه الفلسفي من نظريات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد الاجتماعي لفلاسفة التنوير"
+      },
+      {
+        "question": "أي من الدساتير العربية التالية نشأ بأسلوب 'العقد' (الاتفاق بين الحاكم ومجلس منتخب)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور المصري 1923م",
+        "correctAnswer": "دستور الكويت 1962م"
+      },
+      {
+        "question": "يُصنف 'الميثاق الفرنسي لعام 1814م' ضمن الدساتير التي نشأت بأسلوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنحة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
