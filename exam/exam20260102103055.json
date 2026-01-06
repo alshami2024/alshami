@@ -1974,5 +1974,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "بدر القاضي",
+    "deviceId": "DEV-PRPVCXLPO-mk2w4rl9",
+    "submissionDate": "2026-01-06T17:55:59.570Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في الفقه الدستوري، القوانين الأساسية (مثل قانون الأحزاب) تعتبر:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصدراً شكلياً للدستور (جزء من الوثيقة)",
+        "correctAnswer": "قواعد دستورية موضوعية"
+      },
+      {
+        "question": "الجمعية التأسيسية هي هيئة تُنتخب من الشعب لوضع الدستور وتنحل عادة بعد إنجاز مهمتها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو الفرق الجوهري بين 'العادة الدستورية' و 'العرف الدستوري'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العادة تفتقر للركن المعنوي (الإلزام)"
+      },
+      {
+        "question": "الدستور الأمريكي الحالي (1787م) يُعد دستوراً مرناً يمكن تعديله بمجرد العرف والممارسة بسهولة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يستمد أسلوب 'العقد' في نشأة الدساتير أساسه الفلسفي من نظريات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العقد الاجتماعي لفلاسفة التنوير"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
