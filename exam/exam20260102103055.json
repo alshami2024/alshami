@@ -1,0 +1,60 @@
+[
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "ناصر الجماعي",
+    "deviceId": "DEV-Z0L834P3K-mk2ud8xu",
+    "submissionDate": "2026-01-06T17:06:36.059Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العرف المعدل الذي يحول النظام من رئاسي إلى برلماني (مثل التجربة الفرنسية الثالثة) محل إجماع بقبوله في الدساتير الجامدة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تعتبر 'الرقابة القضائية على دستورية القوانين' من خصائص أي تجربة دستورية تاريخية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التجربة الأمريكية (1787)"
+      },
+      {
+        "question": "العرف الذي يضيف قواعد جديدة لم يتناولها الدستور المكتوب يُسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المكمل"
+      },
+      {
+        "question": "أي من الخصائص التالية تُميز أسلوب 'الجمعية التأسيسية'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التخصص والتمثيل الواسع"
+      },
+      {
+        "question": "أول دستور فرنسي مكتوب عام 1791م أسس لنظام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ملكي دستوري"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
