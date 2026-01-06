@@ -345,5 +345,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "سترالله الغرباني",
+    "deviceId": "DEV-NCPRD640T-mk2ue0tf",
+    "submissionDate": "2026-01-06T17:07:12.162Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو العيب الرئيسي الذي يوجه لأسلوب 'الاستفتاء الشعبي' رغم ديمقراطيته العالية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احتمال تضليل الرأي العام وتبسيط القضايا المعقدة"
+      },
+      {
+        "question": "أي من الدساتير العربية التالية نشأ بأسلوب 'العقد' (الاتفاق بين الحاكم ومجلس منتخب)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور الكويت 1962م"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعتبر أول دستور مكتوب حديث لا يزال نافذاً حتى اليوم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الميثاق الفرنسي 1814م",
+        "correctAnswer": "دستور الولايات المتحدة الأمريكية 1787م"
+      },
+      {
+        "question": "القوانين العادية المنظمة للانتخابات تُعتبر مصدراً تكميلياً للقواعد الدستورية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الجمعية التأسيسية هي هيئة تُنتخب من الشعب لوضع الدستور وتنحل عادة بعد إنجاز مهمتها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
