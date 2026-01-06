@@ -1802,66 +1802,6 @@
   },
   {
     "examTitle": "القانون الدستوري",
-    "studentName": "سترالله الغرباني",
-    "deviceId": "DEV-NCPRD640T-mk2ue0tf",
-    "submissionDate": "2026-01-06T17:31:46.416Z",
-    "mcqScore": {
-      "correct": 2,
-      "total": 5
-    },
-    "essayScore": {
-      "totalScore": 0,
-      "totalMax": 0
-    },
-    "answers": [
-      {
-        "question": "يُصنف 'الميثاق الفرنسي لعام 1814م' ضمن الدساتير التي نشأت بأسلوب:",
-        "type": "mcq",
-        "isCorrect": false,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "الجمعية التأسيسية",
-        "correctAnswer": "المنحة"
-      },
-      {
-        "question": "العرف المخالف هو الذي يتعارض صراحة مع نص دستوري ويؤدي نظرياً إلى إلغائه، وهو مرفوض قانوناً.",
-        "type": "tf",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "صح"
-      },
-      {
-        "question": "ما هو الدور الأساسي للعرف 'المفسر'؟",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "توضيح الغموض في نص دستوري موجود"
-      },
-      {
-        "question": "الدستور العرفي يعني عدم وجود أي وثائق مكتوبة على الإطلاق في النظام السياسي للدولة.",
-        "type": "tf",
-        "isCorrect": false,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "صح",
-        "correctAnswer": "خطأ"
-      },
-      {
-        "question": "الدستور الأمريكي الحالي (1787م) يُعد دستوراً مرناً يمكن تعديله بمجرد العرف والممارسة بسهولة.",
-        "type": "tf",
-        "isCorrect": false,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "صح",
-        "correctAnswer": "خطأ"
-      }
-    ],
-    "tabSwitchCount": 0
-  },
-  {
-    "examTitle": "القانون الدستوري",
     "studentName": "مازن التركي",
     "deviceId": "DEV-X9P3JJW9G-mk2vamql",
     "submissionDate": "2026-01-06T17:32:33.649Z",
