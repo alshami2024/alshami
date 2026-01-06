@@ -1976,63 +1976,6 @@
   },
   {
     "examTitle": "القانون الدستوري",
-    "studentName": "محمد الأزرقي",
-    "deviceId": "DEV-OC6090TQ2-mk2vetm4",
-    "submissionDate": "2026-01-06T17:39:04.783Z",
-    "mcqScore": {
-      "correct": 5,
-      "total": 5
-    },
-    "essayScore": {
-      "totalScore": 0,
-      "totalMax": 0
-    },
-    "answers": [
-      {
-        "question": "ما هو العيب الرئيسي الذي يوجه لأسلوب 'الاستفتاء الشعبي' رغم ديمقراطيته العالية؟",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "احتمال تضليل الرأي العام وتبسيط القضايا المعقدة"
-      },
-      {
-        "question": "أسلوب 'المنحة' في وضع الدساتير يعبر عن ديمقراطية كاملة لأنه يصدر من الحاكم الذي يمثل رمز الدولة.",
-        "type": "tf",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "خطأ"
-      },
-      {
-        "question": "أي دستور عربي تم وضعه بأسلوب المنحة من قبل الحاكم؟",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "الدستور المصري 1923م"
-      },
-      {
-        "question": "يُعتبر الدستور التونسي لعام 1861م أول دستور عربي مكتوب.",
-        "type": "tf",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "صح"
-      },
-      {
-        "question": "أي من الدساتير العربية التالية نشأ بأسلوب 'العقد' (الاتفاق بين الحاكم ومجلس منتخب)؟",
-        "type": "mcq",
-        "isCorrect": true,
-        "isGraded": true,
-        "maxScore": 1,
-        "answer": "دستور الكويت 1962م"
-      }
-    ],
-    "tabSwitchCount": 0
-  },
-  {
-    "examTitle": "القانون الدستوري",
     "studentName": "ريم الصلاحي",
     "deviceId": "DEV-E30QB59UL-mk2vlndr",
     "submissionDate": "2026-01-06T17:41:07.683Z",
