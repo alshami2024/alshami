@@ -1333,5 +1333,110 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "ع",
+    "deviceId": "DEV-1TZXZ9UOM-mk3dr5jv",
+    "submissionDate": "2026-01-07T02:09:17.442Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو تعريف 'المبني' (مبني الشبه) عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما لزم حركة واحدة لغير علة",
+        "correctAnswer": "ما شابه الحرف شبهاً قوياً يدنيه منه"
+      },
+      {
+        "question": "هل يجوز جمع (نَدَى) على (أَنْدِيَة)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هو القياس الوحيد",
+        "correctAnswer": "نعم، رغم أنه شاذ (لأن 'أفعلة' لغير المقصور)، وقيل جمع نَدِيّ"
+      },
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القياس: لآل، والمسموع: لؤلؤي",
+        "correctAnswer": "القياس: لؤلئي، والمسموع: لآل"
+      },
+      {
+        "question": "في قول العرب: 'هو مني مَناط الثريا'، ما المقصود بهذا التعبير؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العداوة",
+        "correctAnswer": "البعد (تعيين المنزلة من بعد)"
+      },
+      {
+        "question": "كم عدد أنواع الدلالات المذكورة في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ستة (وضعية، عقلية، طبيعية - وكل منها لفظية وغير لفظية)"
+      },
+      {
+        "question": "ما معنى (الصَّلِّيَان)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حجارة صلبة",
+        "correctAnswer": "نبت (خبزة الإبل)"
+      },
+      {
+        "question": "ما إعراب جملة (أنت أنا) في البيت اللغز: 'أنا أنت الضاربي أنت أنا'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جملة اعتراضية لا محل لها من الإعراب",
+        "correctAnswer": "خبر عن (أنت) الثانية"
+      },
+      {
+        "question": "ما هو الوزن الصرفي الصحيح لكلمة 'عُنْوَان'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فِعْلان",
+        "correctAnswer": "فِعْوال (وأصله فِعَّال)"
+      },
+      {
+        "question": "ما تصغير كلمة (وَاصِل)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أُوَيْصِل (لأن أصلها 'ووَيْصل' فقلبت الواو الأولى همزة)"
+      },
+      {
+        "question": "ما معنى كلمة 'الصيدان' في قول أبي ذؤيب: 'وسود من الصيدان فيها مذانب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحجارة السوداء",
+        "correctAnswer": "النحاس والذهب"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
