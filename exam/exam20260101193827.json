@@ -178,5 +178,66 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "رفاد حجر",
+    "deviceId": "DEV-1XO15RGC0-mk4a0hnr",
+    "submissionDate": "2026-01-07T17:12:21.156Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التناقض لا يدركه العقل",
+        "correctAnswer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      },
+      {
+        "question": "لو كان العجز عن المعارضة للقرآن ناتجًا عن الصرفة لكان ذلك محسوسًا عند العرب ومشهورًا بينهم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي وجه من وجوه إبطال مذهب الصرفة يعتمد على تحليل الوعي الذاتي للمكلفين بحال قدرتهم أو عجزهم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعجبهم من فصاحة القرآن",
+        "correctAnswer": "عدم إحساسهم بسلب القدرة وتمييز أوقات المنع"
+      },
+      {
+        "question": "في الرد على شبهة البراهمة حول التمييز بين النبي والساحر، ما الفارق الجوهري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الشعوذة أسبق تاريخيًا من المعجزة",
+        "correctAnswer": "أن المعجزة لا تُنال بآلة ولا تُكتسب بتعلم"
+      },
+      {
+        "question": "وجود أخبار غيبية في الحديث النبوي ينفي أن يكون الإخبار بالغيب وجه إعجاز خاص بالقرآن.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
