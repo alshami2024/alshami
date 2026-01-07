@@ -530,5 +530,64 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "jdkdjrjffj idkdnd",
+    "deviceId": "DEV-OR5AER0VY-mk4edwwe",
+    "submissionDate": "2026-01-07T19:14:45.622Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "إعجاز القرآن من جهة امتناع المعارضة مع توافر الدواعي وانتفاء الموانع. أي قاعدة عقلية لتقرير هذا الاستدلال؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من توفرت دواعيه إلى الفعل دون مانع فهو عاجز"
+      },
+      {
+        "question": "لجوء العرب إلى الحرب بدل المعارضة الكلامية يُعد قرينة عقلية على عجزهم عن معارضة القرآن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "استمرار التحدي بالقرآن عبر العصور يستلزم استحالة وقوع المعجزة على مدّعٍ كاذب.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "أي وجه من وجوه إبطال مذهب الصرفة يعتمد على تحليل الوعي الذاتي للمكلفين بحال قدرتهم أو عجزهم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعجبهم من فصاحة القرآن",
+        "correctAnswer": "عدم إحساسهم بسلب القدرة وتمييز أوقات المنع"
+      },
+      {
+        "question": "لو كان العجز عن المعارضة للقرآن ناتجًا عن الصرفة لكان ذلك محسوسًا عند العرب ومشهورًا بينهم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
