@@ -1438,5 +1438,109 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "عبدالملك العجي",
+    "deviceId": "DEV-TSHEYJLNB-mk00qk7t",
+    "submissionDate": "2026-01-07T04:59:50.833Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "هل يجوز جمع (نَدَى) على (أَنْدِيَة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نعم، رغم أنه شاذ (لأن 'أفعلة' لغير المقصور)، وقيل جمع نَدِيّ"
+      },
+      {
+        "question": "متى يجب كتابة الألف اللينة ياءً (ى) في الكلمة الرباعية فصاعداً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا سبقتها ياء (مثل: يحيا)",
+        "correctAnswer": "إذا لم تسبقها ياء (مثل: استعلى، أعطى)"
+      },
+      {
+        "question": "في النسب، كيف تنسب إلى كلمة (أخ)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أخيّ",
+        "correctAnswer": "أخويّ"
+      },
+      {
+        "question": "ما هما المصدران الوحيدان اللذان وردا على وزن (فِعَلَة) بكسر الفاء وفتح العين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِنَبَة، حِدَأَة",
+        "correctAnswer": "الطِّيَرَة، الخِيَرَة"
+      },
+      {
+        "question": "في رسم المصحف، لماذا كُتبت كلمات مثل (الصلوة، الزكوة، الحيوة) بالواو؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن أصلها واو",
+        "correctAnswer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "ما هو أصل كلمة (عِتِيّاً) في قوله تعالى: {بَلَغْتُ مِنَ الْكِبَرِ عِتِيًّا}؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِتِيّاً (من الياء)",
+        "correctAnswer": "عُتُوّاً (من الواو)"
+      },
+      {
+        "question": "ما هي الدلالة 'الطبيعية اللفظية'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة الأنين على الوجع"
+      },
+      {
+        "question": "في قوله تعالى: {فَمَالِ الَّذِينَ كَفَرُوا}، لماذا كُتبت اللام مفصولة عن 'الذين' في رسم المصحف؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اتباعاً لسنة خط المصحف وإن خالف القياس"
+      },
+      {
+        "question": "كم عدد أحرف الظاء (ظ) في القرآن الكريم بحسب ما ذُكر في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "114",
+        "correctAnswer": "842"
+      },
+      {
+        "question": "ما هي العلاقة المنطقية بين 'الكلام' و 'الكلم' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ترادف",
+        "correctAnswer": "عموم وخصوص وجهي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
