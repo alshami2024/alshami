@@ -1,0 +1,63 @@
+[
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "سمية الورد",
+    "deviceId": "DEV-COM6KWUCB-mk49u5i5",
+    "submissionDate": "2026-01-07T17:07:25.542Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي اعتراض على القول بأن إعجاز القرآن في المعاني الدقيقة والحقائق العجيبة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن هذه المعاني لا توجد في كل القرآن",
+        "correctAnswer": "أن استحالة الإتيان بمثلها غير معلومة ضرورة"
+      },
+      {
+        "question": "لجوء العرب إلى الحرب بدل المعارضة الكلامية يُعد قرينة عقلية على عجزهم عن معارضة القرآن.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "أي وجه من وجوه إبطال مذهب الصرفة يعتمد على تحليل الوعي الذاتي للمكلفين بحال قدرتهم أو عجزهم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستدلال بكلام العرب قبل نزول القرآن",
+        "correctAnswer": "عدم إحساسهم بسلب القدرة وتمييز أوقات المنع"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      },
+      {
+        "question": "يُبطل القول بأن إعجاز القرآن راجع إلى الأسلوب وحده من خلال أي قياس ضمني؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قياس البلاغة على البيان الفطري",
+        "correctAnswer": "قياس التفوق في الأسلوب على التفوق في الصناعات البشرية"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
