@@ -472,5 +472,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "محافظه ريمه",
+    "deviceId": "DEV-A69U7VTY3-mk4dk27c",
+    "submissionDate": "2026-01-07T18:51:32.864Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي اعتراض على القول بأن إعجاز القرآن في المعاني الدقيقة والحقائق العجيبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن استحالة الإتيان بمثلها غير معلومة ضرورة"
+      },
+      {
+        "question": "إعجاز القرآن من جهة امتناع المعارضة مع توافر الدواعي وانتفاء الموانع. أي قاعدة عقلية لتقرير هذا الاستدلال؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من توفرت دواعيه إلى الفعل دون مانع فهو عاجز"
+      },
+      {
+        "question": "لجوء العرب إلى الحرب بدل المعارضة الكلامية يُعد قرينة عقلية على عجزهم عن معارضة القرآن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "استمرار التحدي بالقرآن عبر العصور يستلزم استحالة وقوع المعجزة على مدّعٍ كاذب.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
