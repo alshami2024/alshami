@@ -1643,5 +1643,108 @@
       }
     ],
     "tabSwitchCount": 6
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "احمد محمد صالح خضاره",
+    "deviceId": "DEV-ABKO9RAKO-mk4dwox5",
+    "submissionDate": "2026-01-07T19:01:22.516Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما أصل كلمة (طَيّان) التي تُطلق على الجائع، ولماذا لم تُقل (طَوْيان)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هي كلمة أعجمية لا أصل لها في العربية",
+        "correctAnswer": "أصلها واوي، قُلبت الواو ياءً لاجتماعها مع الياء وسبق إحداهما بالسكون"
+      },
+      {
+        "question": "ما هو حد (تعريف) الكلام عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قول مفيد مقصود لذاته"
+      },
+      {
+        "question": "في قول العرب: 'هو مني مَناط الثريا'، ما المقصود بهذا التعبير؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "البعد (تعيين المنزلة من بعد)"
+      },
+      {
+        "question": "في رسم المصحف، لماذا كُتبت كلمات مثل (الصلوة، الزكوة، الحيوة) بالواو؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "لماذا كُتبت كلمة (الربوا) بالواو في المصحف؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للتمييز بينها وبين (الربى) بمعنى التربية",
+        "correctAnswer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "ما تصغير كلمة (وَاصِل)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مُوَصِّل",
+        "correctAnswer": "أُوَيْصِل (لأن أصلها 'ووَيْصل' فقلبت الواو الأولى همزة)"
+      },
+      {
+        "question": "ما إعراب جملة (أنت أنا) في البيت اللغز: 'أنا أنت الضاربي أنت أنا'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خبر للمبتدأ (الضاربي)",
+        "correctAnswer": "خبر عن (أنت) الثانية"
+      },
+      {
+        "question": "ما معنى (قَصَعَ) في قول الشاعر: 'لم تَقْصَع صرائرها'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمع وحفظ",
+        "correctAnswer": "سكن وأذهب (العطش)"
+      },
+      {
+        "question": "كم عدد أنواع الدلالات المذكورة في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ستة (وضعية، عقلية، طبيعية - وكل منها لفظية وغير لفظية)"
+      },
+      {
+        "question": "ما هو أصل كلمة (عِتِيّاً) في قوله تعالى: {بَلَغْتُ مِنَ الْكِبَرِ عِتِيًّا}؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِتِيّاً (من الياء)",
+        "correctAnswer": "عُتُوّاً (من الواو)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
