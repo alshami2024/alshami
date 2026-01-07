@@ -413,5 +413,64 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "لوزة العرقبان",
+    "deviceId": "DEV-SEPN9J0FP-mk4a7tld",
+    "submissionDate": "2026-01-07T17:18:04.121Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي اعتراض على القول بأن إعجاز القرآن في المعاني الدقيقة والحقائق العجيبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن استحالة الإتيان بمثلها غير معلومة ضرورة"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التناقض من خصائص الأخبار الغيبية",
+        "correctAnswer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      },
+      {
+        "question": "أي وجه من وجوه إبطال مذهب الصرفة يعتمد على تحليل الوعي الذاتي للمكلفين بحال قدرتهم أو عجزهم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم إحساسهم بسلب القدرة وتمييز أوقات المنع"
+      },
+      {
+        "question": "استمرار التحدي بالقرآن عبر العصور يستلزم استحالة وقوع المعجزة على مدّعٍ كاذب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في الرد على شبهة البراهمة حول التمييز بين النبي والساحر، ما الفارق الجوهري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الساحر يعتمد على الخيال والنبي على العقل",
+        "correctAnswer": "أن المعجزة لا تُنال بآلة ولا تُكتسب بتعلم"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
