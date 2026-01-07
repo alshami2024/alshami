@@ -766,5 +766,66 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "ماجد صالح منصر هادي المنتصر",
+    "deviceId": "DEV-LCVZ1S6WV-mk1ktofl",
+    "submissionDate": "2026-01-07T23:03:43.602Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "وجود أخبار غيبية في الحديث النبوي ينفي أن يكون الإخبار بالغيب وجه إعجاز خاص بالقرآن.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التناقض لا يدركه العقل",
+        "correctAnswer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      },
+      {
+        "question": "أي اعتراض على القول بأن إعجاز القرآن في المعاني الدقيقة والحقائق العجيبة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن هذه المعاني لا توجد في كل القرآن",
+        "correctAnswer": "أن استحالة الإتيان بمثلها غير معلومة ضرورة"
+      },
+      {
+        "question": "يُبطل القول بأن إعجاز القرآن راجع إلى الأسلوب وحده من خلال أي قياس ضمني؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قياس القرآن على الشعر الجاهلي",
+        "correctAnswer": "قياس التفوق في الأسلوب على التفوق في الصناعات البشرية"
+      },
+      {
+        "question": "لو كان العجز عن المعارضة للقرآن ناتجًا عن الصرفة لكان ذلك محسوسًا عند العرب ومشهورًا بينهم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
