@@ -119,5 +119,64 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "شوق الورد",
+    "deviceId": "DEV-4XDNKN4CC-mk49z4ue",
+    "submissionDate": "2026-01-07T17:11:17.735Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي اعتراض على القول بأن إعجاز القرآن في المعاني الدقيقة والحقائق العجيبة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن هذه المعاني لا تُفهم إلا بالوحي",
+        "correctAnswer": "أن استحالة الإتيان بمثلها غير معلومة ضرورة"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      },
+      {
+        "question": "في الرد على شبهة البراهمة حول التمييز بين النبي والساحر، ما الفارق الجوهري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن السحر يُبهر العامة فقط",
+        "correctAnswer": "أن المعجزة لا تُنال بآلة ولا تُكتسب بتعلم"
+      },
+      {
+        "question": "إعجاز القرآن من جهة امتناع المعارضة مع توافر الدواعي وانتفاء الموانع. أي قاعدة عقلية لتقرير هذا الاستدلال؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من توفرت دواعيه إلى الفعل دون مانع فهو عاجز"
+      },
+      {
+        "question": "لجوء العرب إلى الحرب بدل المعارضة الكلامية يُعد قرينة عقلية على عجزهم عن معارضة القرآن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
