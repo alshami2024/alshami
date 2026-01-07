@@ -59,5 +59,65 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "حنان التام",
+    "deviceId": "DEV-UV8J4WGOL-mk49ubxs",
+    "submissionDate": "2026-01-07T17:07:33.500Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي اعتراض على القول بأن إعجاز القرآن في المعاني الدقيقة والحقائق العجيبة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن هذه المعاني لا تُفهم إلا بالوحي",
+        "correctAnswer": "أن استحالة الإتيان بمثلها غير معلومة ضرورة"
+      },
+      {
+        "question": "إعجاز القرآن من جهة امتناع المعارضة مع توافر الدواعي وانتفاء الموانع. أي قاعدة عقلية لتقرير هذا الاستدلال؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الامتناع يدل على الكراهة لا على العجز",
+        "correctAnswer": "من توفرت دواعيه إلى الفعل دون مانع فهو عاجز"
+      },
+      {
+        "question": "لو كان العجز عن المعارضة للقرآن ناتجًا عن الصرفة لكان ذلك محسوسًا عند العرب ومشهورًا بينهم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في الرد على شبهة البراهمة حول التمييز بين النبي والساحر، ما الفارق الجوهري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الساحر يعتمد على الخيال والنبي على العقل",
+        "correctAnswer": "أن المعجزة لا تُنال بآلة ولا تُكتسب بتعلم"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
