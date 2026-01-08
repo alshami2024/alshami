@@ -1062,5 +1062,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "جمال",
+    "submissionDate": "2026-01-08T16:39:44.460Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "إعجاز القرآن من جهة امتناع المعارضة مع توافر الدواعي وانتفاء الموانع. أي قاعدة عقلية لتقرير هذا الاستدلال؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من توفرت دواعيه إلى الفعل دون مانع فهو عاجز"
+      },
+      {
+        "question": "لجوء العرب إلى الحرب بدل المعارضة الكلامية يُعد قرينة عقلية على عجزهم عن معارضة القرآن.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "أي اعتراض على القول بأن إعجاز القرآن في المعاني الدقيقة والحقائق العجيبة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن استحالة الإتيان بمثلها غير معلومة ضرورة"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التناقض لا يوجد في أي كلام عربي",
+        "correctAnswer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      },
+      {
+        "question": "يُبطل القول بأن إعجاز القرآن راجع إلى الأسلوب وحده من خلال أي قياس ضمني؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قياس التفوق في الأسلوب على التفوق في الصناعات البشرية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
