@@ -886,5 +886,64 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "حماس",
+    "deviceId": "DEV-YEY9DKO8V-mk59pr20",
+    "submissionDate": "2026-01-08T09:51:46.050Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يُبطل القول بأن إعجاز القرآن راجع إلى الأسلوب وحده من خلال أي قياس ضمني؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قياس البلاغة على البيان الفطري",
+        "correctAnswer": "قياس التفوق في الأسلوب على التفوق في الصناعات البشرية"
+      },
+      {
+        "question": "لو كان العجز عن المعارضة للقرآن ناتجًا عن الصرفة لكان ذلك محسوسًا عند العرب ومشهورًا بينهم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "استمرار التحدي بالقرآن عبر العصور يستلزم استحالة وقوع المعجزة على مدّعٍ كاذب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وجود أخبار غيبية في الحديث النبوي ينفي أن يكون الإخبار بالغيب وجه إعجاز خاص بالقرآن.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "في الرد على شبهة البراهمة حول التمييز بين النبي والساحر، ما الفارق الجوهري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن المعجزة لا تُنال بآلة ولا تُكتسب بتعلم"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
