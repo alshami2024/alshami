@@ -1180,5 +1180,63 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "سليمان احمد الحجاجي",
+    "deviceId": "DEV-2JKCAK7US-mk5rbl0j",
+    "submissionDate": "2026-01-08T18:04:38.394Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "استمرار التحدي بالقرآن عبر العصور يستلزم استحالة وقوع المعجزة على مدّعٍ كاذب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي وجه من وجوه إبطال مذهب الصرفة يعتمد على تحليل الوعي الذاتي للمكلفين بحال قدرتهم أو عجزهم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعجبهم من فصاحة القرآن",
+        "correctAnswer": "عدم إحساسهم بسلب القدرة وتمييز أوقات المنع"
+      },
+      {
+        "question": "لو كان العجز عن المعارضة للقرآن ناتجًا عن الصرفة لكان ذلك محسوسًا عند العرب ومشهورًا بينهم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في الرد على شبهة البراهمة حول التمييز بين النبي والساحر، ما الفارق الجوهري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن المعجزة لا تُنال بآلة ولا تُكتسب بتعلم"
+      },
+      {
+        "question": "ما العلة الرئيسة لرفض كون خلو القرآن من التناقض وجهًا مستقلًا لإعجازه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التحدي وقع بكل القرآن وبكل سورة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
