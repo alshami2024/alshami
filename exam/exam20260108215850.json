@@ -892,5 +892,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الأنثروبولوجيا",
+    "studentName": "حنان الكامل",
+    "deviceId": "DEV-P6C73M4Y8-mk5qwn1t",
+    "submissionDate": "2026-01-09T15:23:50.254Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هي الفكرة الجوهرية التي قامت عليها النظرية الوظيفية (مثل نظرية مالينوفيسكي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ظاهرة اجتماعية تؤدي وظيفة لضمان استمرار النسق الاجتماعي"
+      },
+      {
+        "question": "اعتبر إدوارد تيلور أن 'النزعة الحيوية' (الإيمان بالأرواح) هي المرحلة الأولى في تطور الفكر الديني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "النظرية الانتشارية جاءت لتؤكد صحة النظرية التطورية وأن المجتمعات تتطور بشكل منعزل عن بعضها البعض.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "وفقاً لنظرية لويس هنري مورغان، ما هو التسلسل التطوري الذي تمر به المجتمعات البشرية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القرية -> المدينة -> الدولة",
+        "correctAnswer": "التوحش -> البربرية -> الحضارة"
+      },
+      {
+        "question": "واجهت النظرية التطورية انتقادات واسعة بسبب دقتها الشديدة وتركيزها على الخصوصية الثقافية لكل مجتمع.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من هو العالم الذي ربط السحر والدين والعلم في مسار تطوري واحد؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إميل دوركايم",
+        "correctAnswer": "جيمس فريزر"
+      },
+      {
+        "question": "نظر ابن خلدون إلى التاريخ كدورة تنمو فيها الحضارات وتسقط، محكوماً بمفهوم العصبية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي من العلماء التالية أسماؤهم دافع عن 'النسبية الثقافية' ورفض الحتمية البيولوجية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلود ليفي-ستراوس",
+        "correctAnswer": "فرانس بواس"
+      },
+      {
+        "question": "اهتم رادكليف براون بالبنية الاجتماعية والعلاقات بين الأفراد والمؤسسات، متأثراً بأفكار دوركايم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في النظرية البنيوية لكلود ليفي-ستراوس، على ماذا ينصب التركيز الأساسي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "على الوظيفة البيولوجية للمؤسسات الاجتماعية",
+        "correctAnswer": "على البنى العميقة الثابتة التي تحكم الظواهر"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
