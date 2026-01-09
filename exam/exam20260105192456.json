@@ -1746,5 +1746,111 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "حزام عبادي",
+    "deviceId": "DEV-O9V1GP1A7-mk1qbwwy",
+    "submissionDate": "2026-01-09T15:50:47.612Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في علم العروض، من أي بحر شعري تم اقتطاع (اقتضاب) 'البحر المقتضب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من البحر الطويل",
+        "correctAnswer": "من البحر المنسرح"
+      },
+      {
+        "question": "ما هي العلاقة المنطقية بين 'الكلام' و 'الكلم' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عموم وخصوص مطلق",
+        "correctAnswer": "عموم وخصوص وجهي"
+      },
+      {
+        "question": "ما هو تعريف 'الاسم' عند المحققين كما ورد في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة مستقلة لا تدل بهيئتها على أحد الأزمنة الثلاثة وضعاً"
+      },
+      {
+        "question": "كلمة (عَرَفَات) هل هي مفرد أم جمع من حيث المعنى؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمع حقيقي",
+        "correctAnswer": "مفرد (علم لمكان) بصيغة الجمع"
+      },
+      {
+        "question": "هل يتعدى الفعل (نَشَزَ) بنفسه أم بحرف الجر؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتعدى بالباء",
+        "correctAnswer": "لا يتعدى إلا بـ (على)"
+      },
+      {
+        "question": "ما هو تعريف 'المبني' (مبني الشبه) عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما تغير آخره بتغير العوامل",
+        "correctAnswer": "ما شابه الحرف شبهاً قوياً يدنيه منه"
+      },
+      {
+        "question": "في قوله تعالى: {وَكَذَلِكَ نُنْجِي الْمُؤْمِنِينَ}، لماذا كُتبت (ننجي) بنون واحدة في المصحف؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن النون الثانية زائدة",
+        "correctAnswer": "لاجتماع المثلين (نونين) وتخفيفاً للفظ، أو إخفاءً للنون الثانية"
+      },
+      {
+        "question": "ما هو أصل كلمة (عِتِيّاً) في قوله تعالى: {بَلَغْتُ مِنَ الْكِبَرِ عِتِيًّا}؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِتِيّاً (من الياء)",
+        "correctAnswer": "عُتُوّاً (من الواو)"
+      },
+      {
+        "question": "ما هما المصدران الوحيدان اللذان وردا على وزن (فِعَلَة) بكسر الفاء وفتح العين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عِنَبَة، حِدَأَة",
+        "correctAnswer": "الطِّيَرَة، الخِيَرَة"
+      },
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلاهما لؤلؤي",
+        "correctAnswer": "القياس: لؤلئي، والمسموع: لآل"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
