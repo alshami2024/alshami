@@ -1852,5 +1852,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "ياسين",
+    "deviceId": "DEV-68HZQ73HA-mk1iapwz",
+    "submissionDate": "2026-01-12T17:00:53.861Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الحكم الإعرابي لكلمة (مَوْثِق) في قول الشاعر: 'أسيرٌ... ومُوثَقٍ في عقال الأسر'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجر على المجاورة، أو النصب (مفعول معه)، أو الرفع (عطف)"
+      },
+      {
+        "question": "ما معنى كلمة 'الصيدان' في قول أبي ذؤيب: 'وسود من الصيدان فيها مذانب'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النحاس والذهب"
+      },
+      {
+        "question": "في رسم المصحف، لماذا كُتبت كلمات مثل (الصلوة، الزكوة، الحيوة) بالواو؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "لماذا كُتبت كلمة (الربوا) بالواو في المصحف؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "هل يتعدى الفعل (نَشَزَ) بنفسه أم بحرف الجر؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يتعدى إلا بـ (على)"
+      },
+      {
+        "question": "ما هو الوزن الصرفي الصحيح لكلمة 'عُنْوَان'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فُعْلال",
+        "correctAnswer": "فِعْوال (وأصله فِعَّال)"
+      },
+      {
+        "question": "ما معنى 'الإضمار' في البحر الكامل في العروض؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حذف الحرف الثاني الساكن",
+        "correctAnswer": "إسكان الحرف الثاني المتحرك (التاء من متفاعلن)"
+      },
+      {
+        "question": "لماذا حُذف التنوين من (ذاكرِ) في قول الشاعر: 'ولا ذاكرِ الله إلا قليلاً'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنه اسم فاعل عامل",
+        "correctAnswer": "للضرورة الشعرية (أو لالتقاء الساكنين)"
+      },
+      {
+        "question": "ما هو تعريف 'الاسم' عند المحققين كما ورد في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة مستقلة لا تدل بهيئتها على أحد الأزمنة الثلاثة وضعاً"
+      },
+      {
+        "question": "في قوله تعالى: {وَتِلْكَ نِعْمَةٌ تَمُنُّهَا عَلَيَّ}، هل يجوز حذف ألف الاستفهام؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يوجد استفهام في الآية أصلاً",
+        "correctAnswer": "نعم، يجوز عند أمن اللبس"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
