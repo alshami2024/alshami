@@ -1953,5 +1953,109 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "هيثم عبدالعزيز الهلالي",
+    "deviceId": "DEV-H66GGBOF2-mkfpkqf0",
+    "submissionDate": "2026-01-15T17:13:28.227Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما وزن كلمة (عُنْوَان) الصرفي وفقاً لأصلها (عُنَّان)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فُعْلَال",
+        "correctAnswer": "فِعْوَال"
+      },
+      {
+        "question": "في علم العروض، من أي بحر شعري تم اقتطاع (اقتضاب) 'البحر المقتضب'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من البحر الكامل",
+        "correctAnswer": "من البحر المنسرح"
+      },
+      {
+        "question": "ما هما المصدران الوحيدان اللذان وردا على وزن (فِعَلَة) بكسر الفاء وفتح العين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السِّعَايَة، الوِلَايَة",
+        "correctAnswer": "الطِّيَرَة، الخِيَرَة"
+      },
+      {
+        "question": "في قوله تعالى: {تَنْبُتُ بِالدُّهْنِ}، بماذا تعلقت الباء في قراءة (تَنْبُتُ) بفتح التاء (من الثلاثي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "متعلقة بمحذوف حال (أي ملابسة للدهن أو كائنة فيه)"
+      },
+      {
+        "question": "كم عدد أحرف الظاء (ظ) في القرآن الكريم بحسب ما ذُكر في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "500",
+        "correctAnswer": "842"
+      },
+      {
+        "question": "كم عدد أجناس الثياب التي ذكرها الفقهاء في مسائل الربا؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلاثة",
+        "correctAnswer": "سبعة"
+      },
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القياس: لآل، والمسموع: لؤلؤي",
+        "correctAnswer": "القياس: لؤلئي، والمسموع: لآل"
+      },
+      {
+        "question": "ما هو تصغير كلمة (أَلَاءَة) (شجر دائم الخضرة)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أُلَيْئَة"
+      },
+      {
+        "question": "ما إعراب جملة (أنت أنا) في البيت اللغز: 'أنا أنت الضاربي أنت أنا'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خبر عن (أنت) الثانية"
+      },
+      {
+        "question": "كلمة (أنصار) في الأصل، هل هي مفرد أم جمع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفرد علم",
+        "correctAnswer": "جمع (نصير) أو (ناصر)"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
