@@ -1,0 +1,64 @@
+[
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "نوال الجحدري",
+    "deviceId": "DEV-Y0N39KI4E-mk2v8fp7",
+    "submissionDate": "2026-01-15T17:13:31.079Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تحول العرف الأمريكي بمنع انتخاب الرئيس لأكثر من فترتين إلى نص مكتوب في عام 1951م بعد:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استقالة الرئيس نيكسون",
+        "correctAnswer": "انتخاب فرانكلين روزفلت 4 مرات"
+      },
+      {
+        "question": "أي من العناصر التالية يُشكل 'الركن المعنوي' للعرف الدستوري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عمومية السلوك واعتراف الجميع به",
+        "correctAnswer": "الاعتقاد بإلزامية السلوك وضرورة احترامه"
+      },
+      {
+        "question": "أول دستور فرنسي مكتوب عام 1791م أسس لنظام:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمهوري ديمقراطي",
+        "correctAnswer": "ملكي دستوري"
+      },
+      {
+        "question": "تعتبر 'الرقابة القضائية على دستورية القوانين' من خصائص أي تجربة دستورية تاريخية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التجربة العثمانية (1876)",
+        "correctAnswer": "التجربة الأمريكية (1787)"
+      },
+      {
+        "question": "أي من الدساتير العربية التالية نشأ بأسلوب 'العقد' (الاتفاق بين الحاكم ومجلس منتخب)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور التونسي 1861م",
+        "correctAnswer": "دستور الكويت 1962م"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
