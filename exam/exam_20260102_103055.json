@@ -60,5 +60,65 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري (2)",
+    "studentName": "نوال الجحدري",
+    "deviceId": "DEV-Y0N39KI4E-mk2v8fp7",
+    "submissionDate": "2026-01-15T17:20:33.848Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يُصنف 'الميثاق الفرنسي لعام 1814م' ضمن الدساتير التي نشأت بأسلوب:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمعية التأسيسية",
+        "correctAnswer": "المنحة"
+      },
+      {
+        "question": "الدستور العرفي يعني عدم وجود أي وثائق مكتوبة على الإطلاق في النظام السياسي للدولة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تحول العرف الأمريكي بمنع انتخاب الرئيس لأكثر من فترتين إلى نص مكتوب في عام 1951م بعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "انتخاب فرانكلين روزفلت 4 مرات"
+      },
+      {
+        "question": "أي من الخصائص التالية تُميز أسلوب 'الجمعية التأسيسية'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ضعف الشرعية الديمقراطية",
+        "correctAnswer": "التخصص والتمثيل الواسع"
+      },
+      {
+        "question": "ما هو العيب الرئيسي الذي يوجه لأسلوب 'الاستفتاء الشعبي' رغم ديمقراطيته العالية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "احتمال تضليل الرأي العام وتبسيط القضايا المعقدة"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
