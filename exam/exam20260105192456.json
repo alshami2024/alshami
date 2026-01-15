@@ -2057,5 +2057,105 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "هيثم جابر",
+    "deviceId": "DEV-H66GGBOF2-mkfpkqf0",
+    "submissionDate": "2026-01-15T17:19:41.990Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في قوله تعالى: {فَمَالِ الَّذِينَ كَفَرُوا}، لماذا كُتبت اللام مفصولة عن 'الذين' في رسم المصحف؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اتباعاً لسنة خط المصحف وإن خالف القياس"
+      },
+      {
+        "question": "ما هو حد (تعريف) الكلام عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اللفظ المفيد فائدة يحسن السكوت عليها",
+        "correctAnswer": "قول مفيد مقصود لذاته"
+      },
+      {
+        "question": "كم عدد أنواع الدلالات المذكورة في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أربعة",
+        "correctAnswer": "ستة (وضعية، عقلية، طبيعية - وكل منها لفظية وغير لفظية)"
+      },
+      {
+        "question": "ما هي الدلالة 'الطبيعية اللفظية'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة الأنين على الوجع"
+      },
+      {
+        "question": "ما هي 'مبنيات الأصل' (أي المبنية أصالةً لا شبهاً) في النحو؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحرف، والماضي، والأمر"
+      },
+      {
+        "question": "ما معنى (قَصَعَ) في قول الشاعر: 'لم تَقْصَع صرائرها'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سكن وأذهب (العطش)"
+      },
+      {
+        "question": "أي نوع من الدلالات تمثله دلالة 'الدخان على النار'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دلالة عقلية غير لفظية"
+      },
+      {
+        "question": "في النسبة إلى بائع 'اللؤلؤ'، ما هو اللفظ القياسي واللفظ المسموع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القياس: لؤلئي، والمسموع: لآل"
+      },
+      {
+        "question": "لماذا حُذف التنوين من (ذاكرِ) في قول الشاعر: 'ولا ذاكرِ الله إلا قليلاً'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للإضافة المعنوية",
+        "correctAnswer": "للضرورة الشعرية (أو لالتقاء الساكنين)"
+      },
+      {
+        "question": "ما هو تعريف 'المعرب' عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما سلم من مشابهة الحرف"
+      }
+    ],
+    "tabSwitchCount": 4
   }
 ]
