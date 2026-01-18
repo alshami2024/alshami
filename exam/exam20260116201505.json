@@ -272,5 +272,142 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري (النصفي)",
+    "studentName": "علي يحيى",
+    "deviceId": "DEV-HEE5R4LOJ-mkk0huk6",
+    "submissionDate": "2026-01-18T17:39:05.774Z",
+    "mcqScore": {
+      "correct": 15,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور' كما ورد في التحليل اللغوي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أصل فارسي مركب يعني صاحب القاعدة"
+      },
+      {
+        "question": "أي من الخصائص التالية تُميز الدساتير المرنة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُعدل بنفس إجراءات القوانين العادية"
+      },
+      {
+        "question": "أي جهة في النظام اليمني تختص بالفصل في الدعاوى المتعلقة بعدم دستورية القوانين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "ما هو دور 'المجلس الدستوري' في النموذج الفرنسي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة سابقة إلزامية على القوانين التنظيمية واختيارية على العادية"
+      },
+      {
+        "question": "ماذا يعني مبدأ 'عدم رجعية التعديل الدستوري'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن التعديل يسري من تاريخ نفاذه ولا يمس الحقوق المكتسبة قبله إلا بنص صريح"
+      },
+      {
+        "question": "أي من الدول التالية تأخذ بنظام 'الجمع بين الأسلوبين' (المختلط) في الرقابة الدستورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليمن (الدعوى والدفع)"
+      },
+      {
+        "question": "ما هو الأثر المباشر لنجاح الثورة الشعبية على الدستور القائم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يسقط الدستور وتنشأ شرعية ثورية جديدة"
+      },
+      {
+        "question": "أي المعايير التالية يعتمد عليه 'المدلول الشكلي' في تعريف القانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ورود القاعدة في الوثيقة الدستورية المكتوبة"
+      },
+      {
+        "question": "ما هو المعيار الأساسي للتمييز بين 'العرف الدستوري' و 'العادة الدستورية'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشعور بالإلزام (الركن المعنوي)"
+      },
+      {
+        "question": "فيما يتعلق بـ 'الحظر الزمني' لتعديل الدستور، ما هو المثال الذي يمنع التعديل أثناء الظروف الاستثنائية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور الفرنسي (المادة 16)"
+      },
+      {
+        "question": "عندما يضيف العرف قواعد جديدة لتنظيم موضوعات لم يتناولها النص الدستوري المكتوب، يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عرفاً مكملاً"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعد جزءاً من الدستور البريطاني العرفي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الماجنا كارتا (العهد الأعظم)"
+      },
+      {
+        "question": "تعتبر 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "ما هو النقد المنهجي الرئيسي الموجه للمدلول اللغوي للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يركز على الاسم ويهمل المضمون مما قد يشمل قواعد غير دستورية"
+      },
+      {
+        "question": "تعتبر 'اللوائح البرلمانية' الداخلية جزءاً من القانون الدستوري في المدلول:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الموضوعي (لتنظيمها عمل سلطة عامة)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
