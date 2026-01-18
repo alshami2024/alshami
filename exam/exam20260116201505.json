@@ -135,5 +135,142 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري (النصفي)",
+    "studentName": "فتح جحيش",
+    "deviceId": "DEV-G5VBUWKKV-mkk057et",
+    "submissionDate": "2026-01-18T17:28:42.397Z",
+    "mcqScore": {
+      "correct": 15,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو دور 'المجلس الدستوري' في النموذج الفرنسي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة سابقة إلزامية على القوانين التنظيمية واختيارية على العادية"
+      },
+      {
+        "question": "ما هي القضية التي أسست للرقابة القضائية اللامركزية في الولايات المتحدة عام 1803؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قضية ماربيري ضد ماديسون"
+      },
+      {
+        "question": "ما هو الأساس الذي يجعل 'الانقلاب العسكري' طريقاً غير عادي لإنهاء الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على القوة والخرق للشرعية الدستورية القائمة"
+      },
+      {
+        "question": "ما هو النقد المنهجي الرئيسي الموجه للمدلول اللغوي للقانون الدستوري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يركز على الاسم ويهمل المضمون مما قد يشمل قواعد غير دستورية"
+      },
+      {
+        "question": "ما هو الأصل اللغوي لكلمة 'دستور' كما ورد في التحليل اللغوي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أصل فارسي مركب يعني صاحب القاعدة"
+      },
+      {
+        "question": "ما هو المقصود بـ 'الشرعية الثورية' عند سقوط الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استمداد السلطة من الأمر الواقع وإرادة الثورة وليس من الدستور الساقط"
+      },
+      {
+        "question": "في الرقابة عن طريق 'الدعوى الأصلية'، من يحق له عادة تحريك الدعوى؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أصحاب الصفة والمصلحة المباشرة أو جهات محددة قانوناً"
+      },
+      {
+        "question": "تعتبر 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "أي جهة في النظام اليمني تختص بالفصل في الدعاوى المتعلقة بعدم دستورية القوانين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدائرة الدستورية بالمحكمة العليا"
+      },
+      {
+        "question": "في التجربة الدستورية الفرنسية، ما هو المفهوم الذي يشمل الدستور وإعلان الحقوق والمقدمة كمرجعية للرقابة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكتلة الدستورية (Bloc de constitutionnalité)"
+      },
+      {
+        "question": "ما هو الحكم القانوني لتعديل النصوص التي تحظر تعديل نفسها (الحظر المطلق)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرأي الراجح يرى عدم جواز تعديلها إلا بوضع دستور جديد بالكامل"
+      },
+      {
+        "question": "ما هو موقف الفقه الراجح من 'العرف المخالف' لنص دستوري صريح؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتبره باطلاً ولا قيمة قانونية له"
+      },
+      {
+        "question": "تُعتبر 'المسؤولية الوزارية وسحب الثقة' من البرلمان نوعاً من أنواع الجزاءات الدستورية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجزاءات السياسية"
+      },
+      {
+        "question": "في حالة التعارض بين 'العرف المفسر' والنص الدستوري، أيهما يغلب؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النص الدستوري هو الأصل والعرف مجرد مفسر لا يجوز له الخروج عن النص"
+      },
+      {
+        "question": "في إجراءات تعديل الدستور اليمني، من يملك حق اقتراح التعديل بجانب رئيس الجمهورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلث أعضاء مجلس النواب"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
