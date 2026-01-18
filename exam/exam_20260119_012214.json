@@ -1,0 +1,59 @@
+[
+  {
+    "examTitle": "القانون",
+    "studentName": "جمال",
+    "deviceId": "DEV-K1RJOI730-mkkb2jh4",
+    "submissionDate": "2026-01-18T22:27:15.413Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هي أهمية القانون في المجتمع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "ما هو مصدر القوانين في معظم الدول؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور"
+      },
+      {
+        "question": "من هو الشخص الذي يطبق القانون؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "ما هي أنواع القوانين الرئيسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جميع ما سبق"
+      },
+      {
+        "question": "ما هو تعريف القانون؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجموعة من القواعد"
+      }
+    ],
+    "tabSwitchCount": 1
+  }
+]
