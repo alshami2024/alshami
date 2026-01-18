@@ -288,5 +288,151 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تنازع القوانين في القانون الدولي الخاص",
+    "studentName": "محمد",
+    "deviceId": "DEV-71858WQFJ-mkjri61e",
+    "submissionDate": "2026-01-18T13:20:37.284Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تختص محاكم الدولة بنظر الدعاوى التي ترفع على الأجنبي الذي ليس له موطن أو محل إقامة في الدولة إذا كانت الدعوى متعلقة بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جريمة وقعت في الخارج",
+        "correctAnswer": "التزام نشأ أو نفذ أو كان واجب التنفيذ في الدولة"
+      },
+      {
+        "question": "يقصد بـ (النسب الاصطناعي/التبني) في القانون الدولي الخاص أنه:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عملية طبية للحمل",
+        "correctAnswer": "علاقة قانونية تنشئ حقوقاً تشبه البنوة دون رابطة دم"
+      },
+      {
+        "question": "تخضع الحقوق العينية العقارية في القانون الدولي الخاص لقانون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون القاضي المرفوع أمامه النزاع",
+        "correctAnswer": "موقع العقار (Lex rei sitae)"
+      },
+      {
+        "question": "يقصد بـ (التكييف) في القانون الدولي الخاص:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعديل القانون الوطني ليوافق القانون الدولي",
+        "correctAnswer": "تحديد الطبيعة القانونية للمسألة لإدراجها تحت قاعدة إسناد معينة"
+      },
+      {
+        "question": "تعتبر (اتفاقية فيينا للبيع الدولي للبضائع 1980) مثالاً على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القواعد الموضوعية الموحدة التي تطبق مباشرة"
+      },
+      {
+        "question": "ما هو مفهوم (الحصانة القضائية) في القانون الدولي الخاص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم خضوع الدول الأجنبية ورؤسائها وممثليها لقضاء دولة أخرى"
+      },
+      {
+        "question": "تتكون قاعدة الإسناد (تنازع القوانين) من عنصرين رئيسيين هما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحكم والتنفيذ",
+        "correctAnswer": "الفكرة المسندة وضابط الإسناد"
+      },
+      {
+        "question": "في ظل مشكلة (تعدد الشرائع) داخل الدولة الواحدة (كالشرائع الدينية)، يتم تحديد الشريعة المطبقة عبر:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قواعد التوزيع الداخلي في تلك الدولة الأجنبية"
+      },
+      {
+        "question": "الأثر المترتب على ثبوت (الغش نحو القانون) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم نفاذ التغيير الاحتيالي في ضابط الإسناد وتطبيق القانون الأصلي"
+      },
+      {
+        "question": "القاعدة العامة في الاختصاص القضائي الدولي المبنية على فكرة (Actor sequitur forum rei) تعني أن الاختصاص ينعقد لمحكمة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موطن المدعي",
+        "correctAnswer": "موطن المدعى عليه"
+      },
+      {
+        "question": "القاعدة العامة في حل \"تنازع القوانين من حيث الزمان\" هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تطبيق القانون القديم على الماضي والجديد على المستقبل (عدم الرجعية)"
+      },
+      {
+        "question": "القانون الواجب التطبيق على \"أهلية الشخص\" في غالبية التشريعات اللاتينية هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون موطنه",
+        "correctAnswer": "قانون جنسيته"
+      },
+      {
+        "question": "القواعد التي تحسم النزاع فوراً دون الحاجة للمرور بقاعدة الإسناد تسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قواعد المجاملات الدولية",
+        "correctAnswer": "قواعد التطبيق المباشر (القواعد المادية)"
+      },
+      {
+        "question": "العبرة في تحديد \"مكان إبرام العقد\" في العقود المبرمة بين غائبين في القانون الدولي الخاص هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دولة جنسية المتعاقدين",
+        "correctAnswer": "مكان إبرام العقد مادياً (حيث تم القبول)"
+      },
+      {
+        "question": "أي من الموضوعات التالية يخرج عن نطاق القانون الدولي الخاص ويندرج تحت القانون الدولي العام؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحدود السياسية بين الدول"
+      }
+    ],
+    "tabSwitchCount": 4
   }
 ]
