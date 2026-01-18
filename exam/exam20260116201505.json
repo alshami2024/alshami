@@ -546,5 +546,150 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري (النصفي)",
+    "studentName": "عبدالكريم حنيبر",
+    "deviceId": "DEV-RE8YZ7NHG-mkk0skr1",
+    "submissionDate": "2026-01-18T17:48:37.598Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الخصائص التالية تُميز الدساتير المرنة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تتطلب موافقة دولية للتعديل",
+        "correctAnswer": "تُعدل بنفس إجراءات القوانين العادية"
+      },
+      {
+        "question": "ما الأثر القانوني للحكم بعدم دستورية قانون في ظل 'الرقابة المركزية' (مثل المحكمة الدستورية)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أثر نسبي يقتصر على أطراف الدعوى",
+        "correctAnswer": "أثر مطلق يؤدي لإلغاء القانون للكافة"
+      },
+      {
+        "question": "ما المقصود بـ 'الاستفتاء التأسيسي'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستفتاء لإقرار دستور جديد لأول مرة"
+      },
+      {
+        "question": "ما الفرق بين 'النصوص ذاتية التنفيذ' والنصوص 'غير ذاتية التنفيذ' في الدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأولى تتعلق بالدولة، والثانية بالأفراد",
+        "correctAnswer": "الأولى تطبق مباشرة دون حاجة لتشريع، والثانية تحتاج لقوانين تفصلها"
+      },
+      {
+        "question": "في حالة التعارض بين 'العرف المفسر' والنص الدستوري، أيهما يغلب؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النص الدستوري هو الأصل والعرف مجرد مفسر لا يجوز له الخروج عن النص"
+      },
+      {
+        "question": "أي الأساليب التالية لنشأة الدساتير يُعتبر عقداً بين الحاكم والمحكومين؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أسلوب الجمعية التأسيسية",
+        "correctAnswer": "أسلوب العقد (التعاقد)"
+      },
+      {
+        "question": "فيما يتعلق بـ 'الحظر الزمني' لتعديل الدستور، ما هو المثال الذي يمنع التعديل أثناء الظروف الاستثنائية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدستور الفرنسي (المادة 16)"
+      },
+      {
+        "question": "في الرقابة عن طريق 'الدعوى الأصلية'، من يحق له عادة تحريك الدعوى؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أصحاب الصفة والمصلحة المباشرة أو جهات محددة قانوناً"
+      },
+      {
+        "question": "ما هو الحظر الموضوعي (الجمود المطلق) الذي نصت عليه المادة 89 من الدستور الفرنسي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حظر تعديل الشكل الجمهوري للحكومة"
+      },
+      {
+        "question": "أي دستور عربي ذُكر في النص كمثال لدستور نشأ عن طريق 'جمعية تأسيسية منتخبة' بعد ثورة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور تونس 2014"
+      },
+      {
+        "question": "ماذا يعني مبدأ 'عدم رجعية التعديل الدستوري'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن التعديل لا يحتاج لنشر",
+        "correctAnswer": "أن التعديل يسري من تاريخ نفاذه ولا يمس الحقوق المكتسبة قبله إلا بنص صريح"
+      },
+      {
+        "question": "أي من الوثائق التالية تُعد جزءاً من الدستور البريطاني العرفي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إعلان الاستقلال الأمريكي",
+        "correctAnswer": "الماجنا كارتا (العهد الأعظم)"
+      },
+      {
+        "question": "يستند مبدأ 'سمو الدستور' الموضوعي إلى فكرة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خضوع جميع القوانين والأنشطة في الدولة لمضمون القواعد الدستورية"
+      },
+      {
+        "question": "ما المقصود بـ 'الجمود النسبي' للدستور؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "إمكانية تعديله ولكن بإجراءات أشد من القوانين العادية"
+      },
+      {
+        "question": "ما هي الوظيفة الأساسية لـ 'نشر الدستور' في الجريدة الرسمية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "لتحقيق العلانية وإعمال قرينة العلم بالكافة"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
