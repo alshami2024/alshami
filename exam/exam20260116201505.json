@@ -409,5 +409,142 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري (النصفي)",
+    "studentName": "عبدالله الحوثي",
+    "deviceId": "DEV-YZUTKI8CJ-mkk0vgma",
+    "submissionDate": "2026-01-18T17:48:09.842Z",
+    "mcqScore": {
+      "correct": 15,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي الأساليب التالية لنشأة الدساتير يُعتبر عقداً بين الحاكم والمحكومين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أسلوب العقد (التعاقد)"
+      },
+      {
+        "question": "ما هو الأساس الذي يجعل 'الانقلاب العسكري' طريقاً غير عادي لإنهاء الدستور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنه يعتمد على القوة والخرق للشرعية الدستورية القائمة"
+      },
+      {
+        "question": "ما الذي يميز 'أسلوب المنحة' في نشأة الدساتير من الناحية القانونية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يصدر بإرادة الحاكم المنفردة دون مشاركة شعبية"
+      },
+      {
+        "question": "ما هو الشرط اللازم لنفاذ التعديل الدستوري في اليمن بعد موافقة مجلس النواب؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موافقة الشعب في استفتاء عام"
+      },
+      {
+        "question": "ما هي الفلسفة التي استند إليها 'هانز كلسن' في تأسيس الرقابة المركزية على دستورية القوانين؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تدرج القواعد القانونية"
+      },
+      {
+        "question": "تعتبر 'الجمعية التأسيسية' من الأساليب الديمقراطية لنشأة الدساتير لأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُنتخب من الشعب خصيصاً لوضع الدستور"
+      },
+      {
+        "question": "أي من الخصائص التالية تُميز الدساتير المرنة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُعدل بنفس إجراءات القوانين العادية"
+      },
+      {
+        "question": "أي الطرق التالية لإنهاء الدستور تُصنف ضمن 'النهاية العادية'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وضع دستور جديد بإجراءات قانونية منظمة"
+      },
+      {
+        "question": "يُعتبر 'إصدار الدستور' من قبل رئيس الدولة عملاً:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كاشفاً وتوثيقياً لإرادة المشرع الدستوري"
+      },
+      {
+        "question": "أي نوع من الرقابة يُوصف بأنه 'دفع فرعي' يثار أثناء نظر دعوى عادية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رقابة الامتناع (الدفع)"
+      },
+      {
+        "question": "ما هو الحكم القانوني لتعديل النصوص التي تحظر تعديل نفسها (الحظر المطلق)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرأي الراجح يرى عدم جواز تعديلها إلا بوضع دستور جديد بالكامل"
+      },
+      {
+        "question": "تعتبر 'اللوائح البرلمانية' الداخلية جزءاً من القانون الدستوري في المدلول:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الموضوعي (لتنظيمها عمل سلطة عامة)"
+      },
+      {
+        "question": "في حالة التعارض بين 'العرف المفسر' والنص الدستوري، أيهما يغلب؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النص الدستوري هو الأصل والعرف مجرد مفسر لا يجوز له الخروج عن النص"
+      },
+      {
+        "question": "أي دستور عربي ذُكر في النص كمثال لدستور نشأ عن طريق 'جمعية تأسيسية منتخبة' بعد ثورة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دستور تونس 2014"
+      },
+      {
+        "question": "في إجراءات تعديل الدستور اليمني، من يملك حق اقتراح التعديل بجانب رئيس الجمهورية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلث أعضاء مجلس النواب"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
