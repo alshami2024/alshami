@@ -26,10 +26,9 @@
             align-items: center;
             color: var(--text-light);
             overflow: hidden;
-            position: relative; /* ضروري لتثبيت الحقوق في الأسفل */
+            position: relative;
         }
 
-        /* حاوية الصفحة */
         .container {
             width: 90%;
             max-width: 400px;
@@ -39,7 +38,6 @@
             z-index: 10;
         }
 
-        /* حلقات النبض الخلفية */
         .pulse-ring {
             position: absolute;
             top: 50%; left: 50%;
@@ -59,7 +57,6 @@
             100% { width: 400px; height: 400px; opacity: 0; border-width: 0px; }
         }
 
-        /* حالة الانتظار */
         .status-container {
             background: rgba(30, 41, 59, 0.8);
             backdrop-filter: blur(12px);
@@ -93,7 +90,6 @@
         h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
         p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; margin-bottom: 2rem; }
 
-        /* الزر */
         .check-btn {
             background: linear-gradient(135deg, var(--primary), var(--accent));
             color: white;
@@ -113,11 +109,9 @@
 
         .check-btn:active { transform: scale(0.96); }
 
-        /* أيقونة التحديث تدور عند الضغط */
         .spin { animation: spin 1s linear infinite; }
         @keyframes spin { 100% { transform: rotate(360deg); } }
 
-        /* كلاس لتغيير الحالة عند توفر الاختبار */
         .exam-ready .status-container {
             border-color: var(--success);
             background: rgba(16, 185, 129, 0.1);
@@ -128,7 +122,6 @@
         }
         .exam-ready h2 { color: var(--success); }
 
-        /* === تنسيق الحقوق (الفوتر) === */
         .copyright {
             position: absolute;
             bottom: 20px;
@@ -136,12 +129,11 @@
             width: 100%;
             text-align: center;
             font-size: 0.8rem;
-            color: rgba(255, 255, 255, 0.3); /* لون شفاف هادئ */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط انجليزي نظيف */
+            color: rgba(255, 255, 255, 0.3);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             letter-spacing: 1px;
-            pointer-events: none; /* لمنع تداخل النقر */
+            pointer-events: none;
         }
-
     </style>
 </head>
 <body>
@@ -157,7 +149,7 @@
             </div>
             
             <h2 id="statusTitle">بانتظار رفع الاختبار</h2>
-            <p id="statusDesc">لم يتم إتاحة الاختبار بعد. يرجى البقاء في هذه الصفحة، سيظهر زر الدخول فور توفره.</p>
+            <p id="statusDesc">لم يتم إتاحة الاختبار بعد. اضغط تحديث للتحقق من توفر الرابط.</p>
 
             <button class="check-btn" id="actionBtn" onclick="checkExamStatus()">
                 <span id="btnIcon">↻</span>
@@ -169,8 +161,11 @@
     <div class="copyright">Jamal-Alshmi ©2026</div>
 
     <script>
-        // محاكاة حالة الاختبار (للمطور)
-        let isExamPublished = false; 
+        // ==========================================================
+        // هام جداً: ضع رابط الاختبار الخاص بك هنا بدلاً من exam.html
+        // ==========================================================
+        const EXAM_URL = "exam.html"; 
+        // ==========================================================
 
         const els = {
             container: document.getElementById('mainContainer'),
@@ -182,41 +177,66 @@
             iconBox: document.getElementById('iconBox')
         };
 
-        function checkExamStatus() {
+        async function checkExamStatus() {
+            // 1. تفعيل وضع التحميل
             els.btnIcon.classList.add('spin');
-            els.btnText.innerText = "جاري التحقق...";
+            els.btnText.innerText = "جاري الاتصال...";
             els.btn.style.opacity = "0.7";
+            els.btn.disabled = true; // منع التكرار السريع
 
-            setTimeout(() => {
+            try {
+                // محاولة جلب الرابط للتأكد من وجوده
+                const response = await fetch(EXAM_URL, { 
+                    method: 'HEAD', // نطلب الرأس فقط ليكون الفحص سريعاً
+                    cache: 'no-cache' // لضمان عدم قراءة نسخة قديمة
+                });
+
+                // إزالة أيقونة التحميل
                 els.btnIcon.classList.remove('spin');
                 els.btn.style.opacity = "1";
+                els.btn.disabled = false;
 
-                if (isExamPublished) {
+                if (response.ok) {
+                    // (200 OK) إذا وجد الرابط واستجاب السيرفر بنجاح
                     showExamReadyState();
                 } else {
-                    els.btnText.innerText = "تحديث الحالة";
-                    els.btn.style.animation = "shake 0.4s ease";
-                    setTimeout(() => els.btn.style.animation = "", 400);
+                    // (404 Not Found) إذا لم يجد الملف
+                    stayWaitingState();
                 }
-            }, 1500);
+
+            } catch (error) {
+                // في حال وجود خطأ في الشبكة أو الرابط
+                console.error("لم يتم العثور على الاختبار بعد", error);
+                els.btnIcon.classList.remove('spin');
+                els.btn.style.opacity = "1";
+                els.btn.disabled = false;
+                stayWaitingState();
+            }
+        }
+
+        function stayWaitingState() {
+            els.btnText.innerText = "تحديث الحالة";
+            // هزة بسيطة تدل على الفشل
+            els.btn.style.animation = "shake 0.4s ease";
+            setTimeout(() => els.btn.style.animation = "", 400);
         }
 
         function showExamReadyState() {
             els.container.classList.add('exam-ready');
             els.iconBox.innerHTML = "🚀";
             els.iconBox.classList.remove('waiting-dots');
+            
             els.title.innerText = "الاختبار متاح الآن!";
-            els.desc.innerText = "تم رفع الاختبار بنجاح، يمكنك البدء فوراً. تمنياتنا لك بالتوفيق.";
+            els.desc.innerText = "تم التحقق من الرابط بنجاح. اضغط في الأسفل للدخول.";
+            
             els.btnText.innerText = "دخول الاختبار";
             els.btnIcon.innerText = "➜";
             
+            // تغيير وظيفة الزر لفتح الرابط
             els.btn.onclick = function() {
-                window.location.href = "exam.html";
+                window.location.href = EXAM_URL;
             };
         }
-
-        // محاكاة توفر الاختبار تلقائياً بعد 5 ثواني (احذف هذا السطر عند الرفع الفعلي)
-        setTimeout(() => { isExamPublished = true; }, 5000);
     </script>
 </body>
 </html>
