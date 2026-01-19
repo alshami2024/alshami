@@ -162,9 +162,9 @@
 
     <script>
         // ==========================================================
-        // هام جداً: ضع رابط الاختبار الخاص بك هنا بدلاً من exam.html
+        // تم وضع الرابط الخاص بك هنا
         // ==========================================================
-        const EXAM_URL = "exam.html"; 
+        const EXAM_URL = "https://alshami2024.github.io/alshami/exam/exam20260101193827.html"; 
         // ==========================================================
 
         const els = {
@@ -182,31 +182,46 @@
             els.btnIcon.classList.add('spin');
             els.btnText.innerText = "جاري الاتصال...";
             els.btn.style.opacity = "0.7";
-            els.btn.disabled = true; // منع التكرار السريع
+            els.btn.disabled = true;
 
             try {
-                // محاولة جلب الرابط للتأكد من وجوده
+                // محاولة جلب الرابط (HEAD ليكون الفحص سريعاً وخفيفاً)
                 const response = await fetch(EXAM_URL, { 
-                    method: 'HEAD', // نطلب الرأس فقط ليكون الفحص سريعاً
-                    cache: 'no-cache' // لضمان عدم قراءة نسخة قديمة
+                    method: 'HEAD', 
+                    mode: 'cors', // ضروري للتعامل مع GitHub Pages
+                    cache: 'no-cache'
                 });
 
-                // إزالة أيقونة التحميل
                 els.btnIcon.classList.remove('spin');
                 els.btn.style.opacity = "1";
                 els.btn.disabled = false;
 
                 if (response.ok) {
-                    // (200 OK) إذا وجد الرابط واستجاب السيرفر بنجاح
+                    // إذا كان الرد 200 OK (الرابط موجود)
                     showExamReadyState();
                 } else {
-                    // (404 Not Found) إذا لم يجد الملف
+                    // إذا كان 404 أو غيره
                     stayWaitingState();
                 }
 
             } catch (error) {
-                // في حال وجود خطأ في الشبكة أو الرابط
-                console.error("لم يتم العثور على الاختبار بعد", error);
+                console.error("لم يتم العثور على الاختبار أو خطأ في الاتصال", error);
+                
+                // في بعض الأحيان إذا كان ملف HTML موجوداً ولكن لا يسمح بـ HEAD
+                // نحاول مرة أخرى بـ GET للتأكد تماماً
+                if (error.message.includes('Failed to fetch') || error.name === 'TypeError') {
+                     // محاولة احتياطية أخيرة
+                     try {
+                        const responseFallback = await fetch(EXAM_URL, { method: 'GET', mode: 'no-cors' });
+                        // في وضع no-cors لا يمكننا معرفة الحالة 200 بدقة، 
+                        // ولكن عدم حدوث خطأ يعني أن السيرفر استجاب
+                        showExamReadyState();
+                        return;
+                     } catch (e) {
+                         // فشل نهائي
+                     }
+                }
+
                 els.btnIcon.classList.remove('spin');
                 els.btn.style.opacity = "1";
                 els.btn.disabled = false;
@@ -216,7 +231,6 @@
 
         function stayWaitingState() {
             els.btnText.innerText = "تحديث الحالة";
-            // هزة بسيطة تدل على الفشل
             els.btn.style.animation = "shake 0.4s ease";
             setTimeout(() => els.btn.style.animation = "", 400);
         }
@@ -232,7 +246,7 @@
             els.btnText.innerText = "دخول الاختبار";
             els.btnIcon.innerText = "➜";
             
-            // تغيير وظيفة الزر لفتح الرابط
+            // عند الضغط مرة أخرى يتم فتح الرابط
             els.btn.onclick = function() {
                 window.location.href = EXAM_URL;
             };
