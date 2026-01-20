@@ -206,5 +206,112 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "الفلسفة",
+    "studentName": "g",
+    "deviceId": "DEV-BUYFHQ5D9-mjzz3cva",
+    "submissionDate": "2026-01-20T08:55:02.365Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أفلاطون كان من الفلاسفة الأوائل في التاريخ الغربي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "الفلسفة تهتم بدراسة الأسئلة الأساسية عن الوجود والمعرفة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تعتبر الفلسفة من المجالات التي تعزز التفكير النقدي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يمكن اعتبار الفلسفة فرعاً من العلوم الطبيعية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الفلاسفة لا يطرحون أسئلة حول الأخلاق.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما هو الهدف الرئيسي من الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تحليل الواقع"
+      },
+      {
+        "question": "أي من الفلاسفة يعتبر رائداً في فلسفة الأخلاق؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "كانط"
+      },
+      {
+        "question": "ما هي الفلسفة التي تركز على التجربة الحسية كوسيلة للمعرفة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "التجريبية"
+      },
+      {
+        "question": "من هو الفيلسوف المعروف بأنه أبو الفلسفة الغربية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "سقراط"
+      },
+      {
+        "question": "ما هو مفهوم 'الوجود' في الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الوعي والإدراك"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
