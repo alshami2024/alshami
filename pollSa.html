@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>استبيان بحثي: تأثير المحتوى الرقمي المجتزأ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-color: #005f73; /* لون أزرق وقور */
+            --sec-color: #0a9396;
+            --bg-color: #e9edc9;
+            --light-bg: #fdfdfd;
+            --border-color: #e0e0e0;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: var(--light-bg);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            border-top: 6px solid var(--main-color);
+        }
+
+        h1 {
+            text-align: center;
+            color: var(--main-color);
+            font-size: 1.6rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .section-title {
+            background-color: #eef4f6;
+            color: var(--main-color);
+            padding: 10px 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-right: 4px solid var(--sec-color);
+        }
+
+        .instruction-box {
+            background: #fff3cd;
+            border: 1px solid #ffeeba;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            margin-top: 15px;
+        }
+
+        /* تنسيق الخيارات الراديو والقوائم */
+        .options-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .option-card {
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .option-card:hover {
+            border-color: var(--sec-color);
+            background-color: #f9feff;
+        }
+
+        select, input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: 'Tajawal';
+            box-sizing: border-box;
+        }
+
+        /* تصميم جدول ليكرت المتجاوب */
+        .likert-header {
+            display: flex;
+            background: var(--main-color);
+            color: white;
+            padding: 10px;
+            border-radius: 6px 6px 0 0;
+            font-size: 0.9rem;
+            margin-top: 15px;
+        }
+
+        .likert-header .stm { width: 50%; }
+        .likert-header .scl { width: 50%; text-align: center; }
+
+        .likert-row {
+            display: flex;
+            padding: 15px 10px;
+            border-bottom: 1px solid #eee;
+            align-items: center;
+        }
+
+        .likert-row:nth-child(even) { background-color: #fcfcfc; }
+        .likert-row:hover { background-color: #f0f7fa; }
+
+        .statement-text {
+            width: 50%;
+            font-size: 0.95rem;
+            padding-left: 10px;
+        }
+
+        .scale-options {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .scale-point {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 0.8rem;
+            color: #555;
+            cursor: pointer;
+        }
+        
+        .scale-point input { margin-bottom: 5px; cursor: pointer; }
+
+        /* تعديلات الموبايل */
+        @media (max-width: 600px) {
+            .container { padding: 15px; }
+            .likert-header { display: none; } /* إخفاء الترويسة في الموبايل */
+            
+            .likert-row {
+                flex-direction: column;
+                align-items: flex-start;
+                background: white;
+                margin-bottom: 15px;
+                border: 1px solid #eee;
+                border-radius: 8px;
+                padding: 15px;
+                box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+            }
+
+            .statement-text {
+                width: 100%;
+                margin-bottom: 15px;
+                font-weight: 600;
+                padding-left: 0;
+            }
+
+            .scale-options {
+                width: 100%;
+                justify-content: space-between;
+                background: #f9f9f9;
+                padding: 10px 5px;
+                border-radius: 5px;
+            }
+        }
+
+        .submit-btn {
+            background-color: var(--main-color);
+            color: white;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 30px;
+            font-family: 'Tajawal';
+        }
+        .submit-btn:hover { background-color: #004554; }
+
+        .note {
+            font-size: 0.8rem;
+            color: #888;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>تأثير الاستهلاك المفرط للمحتوى الرقمي المجتزأ على التحصيل الدراسي</h1>
+        <div class="subtitle">دراسة سوسيو ميدانية على طلبة جامعة صنعاء</div>
+    </header>
+
+    <div class="instruction-box">
+        <strong>عزيزي الطالب/ة:</strong><br>
+        إجاباتك ستستخدم لأغراض البحث العلمي فقط وتتمتع بسرية تامة. نرجو الإجابة بدقة لضمان مصداقية النتائج.
+    </div>
+
+    <form>
+        <h2 class="section-title">أولاً: البيانات العامة وعادات الاستخدام</h2>
+        
+        <label>الجنس:</label>
+        <div class="options-grid">
+            <label class="option-card"><input type="radio" name="gender" value="male"> ذكر</label>
+            <label class="option-card"><input type="radio" name="gender" value="female"> أنثى</label>
+        </div>
+
+        <label>المعدل التراكمي الحالي:</label>
+        <select name="gpa">
+            <option value="" selected disabled>اختر التقدير...</option>
+            <option value="exc">ممتاز (90% فأكثر)</option>
+            <option value="vgood">جيد جداً (80% - 89%)</option>
+            <option value="good">جيد (65% - 79%)</option>
+            <option value="pass">مقبول (50% - 64%)</option>
+        </select>
+
+        <label>كم عدد الساعات التقريبي التي تقضيها يومياً في مشاهدة المقاطع القصيرة (Reels/Shorts/TikTok)؟</label>
+        <div class="options-grid" style="grid-template-columns: 1fr;">
+            <label class="option-card"><input type="radio" name="hours" value="low"> أقل من ساعة</label>
+            <label class="option-card"><input type="radio" name="hours" value="med"> من ساعة إلى 3 ساعات</label>
+            <label class="option-card"><input type="radio" name="hours" value="high"> من 3 إلى 5 ساعات</label>
+            <label class="option-card"><input type="radio" name="hours" value="extreme"> أكثر من 5 ساعات</label>
+        </div>
+
+        <label>ما هو الوقت الذي تستخدم فيه هذه المقاطع غالباً؟ (وقت الذروة)</label>
+        <select name="peak_time">
+            <option value="morning">في الصباح فور الاستيقاظ</option>
+            <option value="lectures">أثناء الدوام الجامعي/المحاضرات</option>
+            <option value="evening">في المساء ووقت الفراغ</option>
+            <option value="bedtime">قبل النوم مباشرة</option>
+        </select>
+
+        <h2 class="section-title">ثانياً: محاور الدراسة</h2>
+        <div class="instruction-box" style="background-color: #e3f2fd; border-color: #bbdefb;">
+            مفتاح الإجابة: (1) أعارض بشدة — (2) أعارض — (3) محايد — (4) أوافق — (5) أوافق بشدة
+        </div>
+
+        <div class="likert-header">
+            <div class="stm">العبارة</div>
+            <div class="scl">التقييم</div>
+        </div>
+
+        <h3 style="margin-top:20px; color:#444;">المحور الأول: كثافة وطبيعة الاستهلاك</h3>
+        
+        <div class="likert-row">
+            <div class="statement-text">أجد صعوبة في التوقف عن مشاهدة المقاطع القصيرة بمجرد البدء فيها.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a1_q1" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a1_q1" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a1_q1" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a1_q1" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a1_q1" value="5">5</label>
+            </div>
+        </div>
+
+        <div class="likert-row">
+            <div class="statement-text">أفضل المقاطع القصيرة لأنها لا تستهلك رصيد إنترنت كبير مقارنة بالفيديوهات الطويلة.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a1_q2" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a1_q2" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a1_q2" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a1_q2" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a1_q2" value="5">5</label>
+            </div>
+        </div>
+
+        <div class="likert-row">
+            <div class="statement-text">أشاهد المقاطع القصيرة كوسيلة أساسية للهروب من الضغط أو الملل.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a1_q3" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a1_q3" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a1_q3" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a1_q3" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a1_q3" value="5">5</label>
+            </div>
+        </div>
+
+        <h3 style="margin-top:20px; color:#444;">المحور الثاني: الانتباه والتركيز المعرفي</h3>
+
+        <div class="likert-row">
+            <div class="statement-text">أشعر بتشتت ذهني (تشوش) بعد قضاء وقت طويل في التقليب السريع بين المقاطع.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a2_q1" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a2_q1" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a2_q1" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a2_q1" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a2_q1" value="5">5</label>
+            </div>
+        </div>
+
+        <div class="likert-row">
+            <div class="statement-text"><strong>*</strong> أستطيع العودة للتركيز في المذاكرة بكامل طاقتي فور إغلاق الهاتف مباشرة.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a2_q2" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a2_q2" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a2_q2" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a2_q2" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a2_q2" value="5">5</label>
+            </div>
+        </div>
+
+        <div class="likert-row">
+            <div class="statement-text">أواجه صعوبة في قراءة النصوص العلمية الطويلة دون الشعور بالملل السريع.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a2_q3" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a2_q3" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a2_q3" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a2_q3" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a2_q3" value="5">5</label>
+            </div>
+        </div>
+
+        <h3 style="margin-top:20px; color:#444;">المحور الثالث: السلوك الدراسي والأداء</h3>
+
+        <div class="likert-row">
+            <div class="statement-text">أستخدم الهاتف خلسة لمشاهدة المقاطع القصيرة أثناء المحاضرات الجامعية.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a3_q1" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a3_q1" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a3_q1" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a3_q1" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a3_q1" value="5">5</label>
+            </div>
+        </div>
+
+        <div class="likert-row">
+            <div class="statement-text">أكتفي أحياناً بمشاهدة مقاطع شرح مختصرة جداً بدلاً من الرجوع للكتاب أو المراجع.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a3_q2" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a3_q2" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a3_q2" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a3_q2" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a3_q2" value="5">5</label>
+            </div>
+        </div>
+
+         <div class="likert-row">
+            <div class="statement-text">تأخرت في تسليم واجبات أو مشاريع بسبب "التسويف" الناتج عن مشاهدة المقاطع.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a3_q3" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a3_q3" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a3_q3" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a3_q3" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a3_q3" value="5">5</label>
+            </div>
+        </div>
+
+        <h3 style="margin-top:20px; color:#444;">المحور الرابع: الأثر النفسي وجودة النوم</h3>
+
+        <div class="likert-row">
+            <div class="statement-text">أسهر لساعات متأخرة لمتابعة المقاطع القصيرة مما يؤثر على حضوري للمحاضرات صباحاً.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a4_q1" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a4_q1" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a4_q1" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a4_q1" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a4_q1" value="5">5</label>
+            </div>
+        </div>
+
+        <div class="likert-row">
+            <div class="statement-text">أشعر بالقلق أو التوتر إذا مر وقت طويل دون تفحص منصات المقاطع القصيرة.</div>
+            <div class="scale-options">
+                <label class="scale-point"><input type="radio" name="a4_q2" value="1">1</label>
+                <label class="scale-point"><input type="radio" name="a4_q2" value="2">2</label>
+                <label class="scale-point"><input type="radio" name="a4_q2" value="3">3</label>
+                <label class="scale-point"><input type="radio" name="a4_q2" value="4">4</label>
+                <label class="scale-point"><input type="radio" name="a4_q2" value="5">5</label>
+            </div>
+        </div>
+
+        <h2 class="section-title">ثالثاً: رأيك يهمنا</h2>
+        
+        <label>برأيك، ما هو الأثر السلبي "الأخطر" للمقاطع القصيرة على طالب الجامعة؟</label>
+        <textarea rows="3" placeholder="اكتب إجابتك هنا..."></textarea>
+
+        <button type="submit" class="submit-btn">إرسال الاستبيان</button>
+        <p class="note" style="text-align: center;">شكراً لوقتكم ومشاركتكم الفاعلة في البحث العلمي</p>
+    </form>
+</div>
+
+</body>
+</html>
