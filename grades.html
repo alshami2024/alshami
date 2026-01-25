@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بوابة الطالب - عرض الدرجات</title>
+  <title>بوابة الطالب - عرض الدرجات والتقارير</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
@@ -45,7 +45,7 @@
       transition: background-color 0.3s, color 0.3s;
     }
 
-    .container { max-width: 500px; width: 100%; text-align: center; }
+    .container { max-width: 600px; width: 100%; text-align: center; }
     h1 { color: var(--accent-color); margin-bottom: 20px; font-size: 28px; }
 
     /* --- تنسيق لوحة الإحصاءات --- */
@@ -163,7 +163,7 @@
     .alert-card.warning { background-color: #fff3cd; color: #856404; border-color: #ffc107; }
     .alert-card i { font-size: 1.5em; margin-left: 15px; }
 
-    #darkModeToggle { position: fixed; top: 20px; right: 20px; background: var(--card-bg); color: var(--text-color); border: 1px solid var(--text-color); border-radius: 50%; width: 40px; height: 40px; font-size: 1.2em; cursor: pointer; box-shadow: var(--shadow); transition: all 0.3s; }
+    #darkModeToggle { position: fixed; top: 20px; right: 20px; background: var(--card-bg); color: var(--text-color); border: 1px solid var(--text-color); border-radius: 50%; width: 40px; height: 40px; font-size: 1.2em; cursor: pointer; box-shadow: var(--shadow); transition: all 0.3s; z-index: 1001; }
     #darkModeToggle:hover { transform: scale(1.1); }
     
     #student-details-modal .info-item { background-color: var(--bg-color); border-right: 4px solid var(--main-color); }
@@ -172,6 +172,36 @@
     
     .select-group { display: flex; gap: 10px; margin-bottom: 15px; }
     .select-group select { flex: 1; }
+
+    /* ========================================= */
+    /* --- أنماط جديدة للتقرير (تمت إضافتها) --- */
+    /* ========================================= */
+    .report-btn { background-color: #6c757d; margin-top: 15px; }
+    .report-btn:hover { background-color: #5a6268; }
+
+    .report-table-container { overflow-x: auto; margin-top: 15px; border-top: 2px solid var(--main-color); padding-top: 15px; }
+    .report-table { width: 100%; border-collapse: collapse; font-size: 0.9em; min-width: 400px; }
+    .report-table th, .report-table td { border-bottom: 1px solid #ddd; padding: 10px; text-align: center; }
+    body.dark-mode .report-table th, body.dark-mode .report-table td { border-bottom-color: #444; }
+    
+    .report-table th { background-color: var(--bg-color); color: var(--accent-color); }
+    body.dark-mode .report-table th { background-color: #2a2a2a; }
+
+    .report-year-header { background-color: var(--secondary-accent-color); color: white; text-align: right; padding: 8px 15px; font-weight: bold; border-radius: 5px; margin-top: 15px; margin-bottom: 5px; }
+    
+    .report-summary { display: flex; justify-content: space-around; margin-top: 20px; padding: 15px; background-color: rgba(10, 147, 150, 0.1); border-radius: 8px; }
+    .report-summary-item { text-align: center; }
+    .report-summary-val { display: block; font-size: 1.4em; font-weight: bold; color: var(--accent-color); }
+
+    @media print {
+        body * { visibility: hidden; }
+        #report-modal, #report-modal * { visibility: visible; }
+        #report-modal { position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: white; color: black; z-index: 9999; overflow: visible; }
+        .close-button, .search-modal-input, button { display: none !important; }
+        .modal-content { box-shadow: none; border: none; width: 100%; max-width: 100%; margin: 0; padding: 10px; }
+        .report-table th { background-color: #eee !important; color: black !important; -webkit-print-color-adjust: exact; }
+        .report-year-header { background-color: #ccc !important; color: black !important; -webkit-print-color-adjust: exact; }
+    }
   </style>
 </head>
 <body>
@@ -211,6 +241,14 @@
       <input type="text" id="studentId" placeholder="الرقم الجامعي">
       <button onclick="findMyGrades()">🔍 بحــــث</button>
       <button id="showGradedBtn" onclick="showGradedStudentsList()" style="display: none;">🏆 عرض القائمة</button>
+    </div>
+    
+    <div class="search-box" style="border-top: 4px solid var(--secondary-accent-color);">
+        <label style="display:block; margin-bottom:10px; font-weight:bold; color:var(--secondary-accent-color);">
+            <i class="fas fa-file-alt"></i> استخراج تقرير طالب (كشف درجات)
+        </label>
+        <input type="text" id="reportSearchInput" placeholder="ابحث بالاسم أو الرقم الجامعي...">
+        <button class="report-btn" onclick="openReportModal()">📄 عرض التقرير الشامل</button>
     </div>
     <div id="loader"><div class="loader"></div></div>
     <div id="error-message" style="color:red; font-weight:bold;"></div>
@@ -298,12 +336,25 @@
         </div>
     </div>
   </div>
-  
+
+  <div id="report-modal" class="modal">
+    <div class="modal-content" style="max-width: 700px;">
+        <span class="close-button" onclick="closeReportModal()">×</span>
+        <h2 id="report-title"><i class="fas fa-file-invoice"></i> كشف درجات الطالب</h2>
+        <div id="report-content"></div>
+        <div style="text-align: center; margin-top: 20px;">
+            <button onclick="window.print()" style="width: auto; padding: 10px 30px;"><i class="fas fa-print"></i> طباعة التقرير</button>
+        </div>
+    </div>
+  </div>
   <div class="footer"><p><span>Jamal-Alshami © 2025</span></p></div>
 
 <script>
 const gradedListModal = document.getElementById('graded-list-modal');
 const studentDetailsModal = document.getElementById('student-details-modal');
+// إضافة متغير للمودال الجديد
+const reportModal = document.getElementById('report-modal');
+
 let allStudentsData = [];
 let gradeChart = null;
 let gradeDistributionChart = null;
@@ -661,6 +712,12 @@ function closeDetailsModal() {
     studentDetailsModal.style.display = 'none';
 }
 
+// === دالة إغلاق مودال التقرير ===
+function closeReportModal() {
+    reportModal.style.display = 'none';
+}
+// =============================
+
 function populateCourseSelect(studentsList) {
     const courseSelect = document.getElementById('course-select');
     const courses = [...new Set(studentsList.map(student => student.course))].filter(Boolean).sort();
@@ -753,6 +810,8 @@ function closeModal() {
 window.onclick = function(event) {
     if (event.target == gradedListModal) closeModal();
     if (event.target == studentDetailsModal) closeDetailsModal();
+    // إغلاق مودال التقرير عند النقر خارجه
+    if (event.target == reportModal) closeReportModal();
 }
 
 // (إضافة 4) تحديث المخطط ليشمل التكاليف
@@ -919,6 +978,134 @@ function toggleDarkMode() {
         filterDashboardStats();
     }
 }
+
+// ============================================
+// === دوال منطق التقرير الجديد (تمت إضافتها) ===
+// ============================================
+
+async function openReportModal() {
+    const searchTerm = document.getElementById('reportSearchInput').value.toLowerCase().trim();
+    if(!searchTerm) {
+        alert("الرجاء إدخال الاسم أو الرقم الجامعي أولاً");
+        return;
+    }
+    
+    if (allStudentsData.length === 0) {
+        try {
+            allStudentsData = await fetchAllData();
+        } catch(e) { alert("خطأ في تحميل البيانات"); return; }
+    }
+    
+    // البحث في البيانات
+    const matchedStudents = allStudentsData.filter(s => 
+        (s.name && s.name.toLowerCase().includes(searchTerm)) || 
+        (s.id && normalizeId(s.id).includes(normalizeId(searchTerm)))
+    );
+
+    if(matchedStudents.length === 0) {
+        alert("لم يتم العثور على طالب بهذا الاسم أو الرقم");
+        return;
+    }
+
+    // تجميع البيانات للطالب (نأخذ أول طالب مطابق إذا كان البحث دقيقاً)
+    // إذا كان البحث بالاسم ووجدنا عدة طلاب، سنعرض نتائجهم جميعاً مجمعة حسب الرقم الجامعي
+    // للتبسيط: سنقوم بتجميع بيانات الطالب صاحب أول نتيجة مطابقة
+    const targetStudentId = matchedStudents[0].id;
+    const targetStudentName = matchedStudents[0].name;
+    const targetStudentDept = matchedStudents[0].department || 'غير محدد';
+
+    // نفلتر جميع سجلات هذا الطالب المحدد
+    const studentRecords = allStudentsData.filter(s => s.id === targetStudentId);
+
+    // تجميع حسب السنة والفصل
+    const groupedData = {};
+    studentRecords.forEach(rec => {
+        const key = rec.year + ' - ' + rec.semester;
+        if(!groupedData[key]) groupedData[key] = [];
+        groupedData[key].push(rec);
+    });
+
+    // بناء محتوى التقرير
+    let contentHTML = `
+        <div style="margin-bottom:20px; border-bottom:1px solid #ccc; padding-bottom:10px;">
+            <p><strong>الاسم:</strong> ${targetStudentName}</p>
+            <p><strong>الرقم الجامعي:</strong> ${targetStudentId}</p>
+            <p><strong>القسم:</strong> ${targetStudentDept}</p>
+        </div>
+    `;
+
+    // ترتيب المفاتيح (السنوات)
+    const sortedKeys = Object.keys(groupedData).sort().reverse();
+    
+    let totalCourses = 0;
+    let totalScoreSum = 0;
+
+    sortedKeys.forEach(key => {
+        const records = groupedData[key];
+        contentHTML += `<div class="report-year-header">${key}</div>`;
+        contentHTML += `
+            <div class="report-table-container">
+            <table class="report-table">
+                <thead>
+                    <tr>
+                        <th style="text-align:right">المقرر</th>
+                        <th>أعمال</th>
+                        <th>حضور</th>
+                        <th>نصفي/نهائي</th>
+                        <th>المجموع</th>
+                        <th>التقدير</th>
+                    </tr>
+                </thead>
+                <tbody>
+        `;
+        
+        records.forEach(rec => {
+            const grade = safeInt(rec.grade);
+            const attendance = safeInt(rec.attendance);
+            const cw = getCourseworkScore(rec);
+            const total = grade + attendance + cw;
+            const category = getGradeCategory(total);
+            
+            // للحسابات
+            if(rec.grade) {
+                totalCourses++;
+                totalScoreSum += total;
+            }
+
+            contentHTML += `
+                <tr>
+                    <td style="text-align:right; font-weight:bold;">${rec.course}</td>
+                    <td>${cw || '-'}</td>
+                    <td>${attendance || '-'}</td>
+                    <td>${grade || '-'}</td>
+                    <td style="font-weight:bold; color:var(--accent-color)">${total}</td>
+                    <td>${category}</td>
+                </tr>
+            `;
+        });
+        
+        contentHTML += `</tbody></table></div>`;
+    });
+
+    const average = totalCourses > 0 ? (totalScoreSum / totalCourses).toFixed(2) : 0;
+
+    contentHTML += `
+        <div class="report-summary">
+            <div class="report-summary-item">
+                <span class="report-summary-val">${totalCourses}</span>
+                <span>إجمالي المواد</span>
+            </div>
+            <div class="report-summary-item">
+                <span class="report-summary-val">${average}</span>
+                <span>المعدل التقريبي</span>
+            </div>
+        </div>
+    `;
+
+    document.getElementById('report-content').innerHTML = contentHTML;
+    reportModal.style.display = 'block';
+}
+
 </script>
 
 </body>
