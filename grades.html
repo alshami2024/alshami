@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>بوابة الطالب - عرض الدرجات والتقارير</title>
+  <title>بوابة الطالب - السجل الأكاديمي الموحد</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
@@ -78,7 +78,6 @@
     .stat-item .stat-value { font-size: 1.5em; color: var(--accent-color); font-weight: 900; margin-top: 5px; }
     .stat-item .stat-label { font-size: 0.8em; color: var(--text-color); margin-top: 2px; }
     
-    /* تنسيق خاص لرقم إجمالي الطلاب ليكون مميزاً */
     #total-students-count { color: var(--main-color); }
 
     .search-box { background-color: var(--card-bg); padding: 30px; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 20px; }
@@ -174,7 +173,7 @@
     .select-group select { flex: 1; }
 
     /* ========================================= */
-    /* --- أنماط جديدة للتقرير (تمت إضافتها) --- */
+    /* --- أنماط جديدة للتقرير --- */
     /* ========================================= */
     .report-btn { background-color: #6c757d; margin-top: 15px; }
     .report-btn:hover { background-color: #5a6268; }
@@ -192,6 +191,8 @@
     .report-summary { display: flex; justify-content: space-around; margin-top: 20px; padding: 15px; background-color: rgba(10, 147, 150, 0.1); border-radius: 8px; }
     .report-summary-item { text-align: center; }
     .report-summary-val { display: block; font-size: 1.4em; font-weight: bold; color: var(--accent-color); }
+    
+    .id-badge { display: inline-block; background-color: #eee; padding: 2px 6px; border-radius: 4px; font-size: 0.85em; margin: 2px; color: #333; }
 
     @media print {
         body * { visibility: hidden; }
@@ -245,10 +246,11 @@
     
     <div class="search-box" style="border-top: 4px solid var(--secondary-accent-color);">
         <label style="display:block; margin-bottom:10px; font-weight:bold; color:var(--secondary-accent-color);">
-            <i class="fas fa-file-alt"></i> استخراج تقرير طالب (كشف درجات)
+            <i class="fas fa-file-alt"></i> استخراج تقرير شامل  
         </label>
+        <p style="font-size: 0.85em; color: #777; margin-bottom: 10px;"></p>
         <input type="text" id="reportSearchInput" placeholder="ابحث بالاسم أو الرقم الجامعي...">
-        <button class="report-btn" onclick="openReportModal()">📄 عرض التقرير الشامل</button>
+        <button class="report-btn" onclick="openReportModal()">📄 عرض السجل الأكاديمي الموحد</button>
     </div>
     <div id="loader"><div class="loader"></div></div>
     <div id="error-message" style="color:red; font-weight:bold;"></div>
@@ -338,12 +340,12 @@
   </div>
 
   <div id="report-modal" class="modal">
-    <div class="modal-content" style="max-width: 700px;">
+    <div class="modal-content" style="max-width: 750px;">
         <span class="close-button" onclick="closeReportModal()">×</span>
-        <h2 id="report-title"><i class="fas fa-file-invoice"></i> كشف درجات الطالب</h2>
+        <h2 id="report-title"><i class="fas fa-file-invoice"></i> السجل الأكاديمي الموحد</h2>
         <div id="report-content"></div>
         <div style="text-align: center; margin-top: 20px;">
-            <button onclick="window.print()" style="width: auto; padding: 10px 30px;"><i class="fas fa-print"></i> طباعة التقرير</button>
+            <button onclick="window.print()" style="width: auto; padding: 10px 30px;"><i class="fas fa-print"></i> طباعة السجل</button>
         </div>
     </div>
   </div>
@@ -370,6 +372,12 @@ function safeInt(val) {
 // دالة تنظيف الرقم الجامعي (لحل مشكلة الشرطات التي تمنع ظهور النتائج)
 function normalizeId(id) {
     return String(id).replace(/[_\-]/g, '').trim();
+}
+
+// === دالة جديدة لتجاهل همزات الألف في النصوص العربية ===
+function normalizeArabicText(text) {
+    if (!text) return "";
+    return String(text).replace(/[أإآ]/g, 'ا'); // تحويل كل الأشكال إلى ألف مجردة
 }
 
 // دالة ذكية لقراءة التكاليف سواء كانت assignment أو coursework
@@ -546,7 +554,7 @@ async function findMyGrades() {
         const cwRow = document.getElementById('studentCourseworkRow');
         if (coursework > 0) {
             cwRow.style.display = 'flex';
-            document.getElementById('studentCoursework').textContent = `${coursework} (من 10)`;
+            document.getElementById('studentCoursework').textContent = `${cw} (من 10)`;
         } else {
             cwRow.style.display = 'none';
         }
@@ -980,26 +988,31 @@ function toggleDarkMode() {
 }
 
 // ============================================
-// === دوال منطق التقرير الجديد (تمت إضافتها) ===
+// === دوال منطق التقرير الجديد (تم التعديل للبحث بالاسم وتجاهل الهمزات) ===
 // ============================================
 
 async function openReportModal() {
-    const searchTerm = document.getElementById('reportSearchInput').value.toLowerCase().trim();
-    if(!searchTerm) {
+    const rawSearchTerm = document.getElementById('reportSearchInput').value.trim();
+    if(!rawSearchTerm) {
         alert("الرجاء إدخال الاسم أو الرقم الجامعي أولاً");
         return;
     }
     
+    // توحيد نص البحث (حذف الهمزات)
+    const searchTerm = normalizeArabicText(rawSearchTerm.toLowerCase());
+    const searchIdTerm = normalizeId(rawSearchTerm);
+
     if (allStudentsData.length === 0) {
         try {
             allStudentsData = await fetchAllData();
         } catch(e) { alert("خطأ في تحميل البيانات"); return; }
     }
     
-    // البحث في البيانات
+    // 1. العثور على أي طالب يطابق البحث (بالاسم الموحد أو الرقم)
+    // نستخدم normalizeArabicText على أسماء الطلاب أيضاً أثناء المقارنة
     const matchedStudents = allStudentsData.filter(s => 
-        (s.name && s.name.toLowerCase().includes(searchTerm)) || 
-        (s.id && normalizeId(s.id).includes(normalizeId(searchTerm)))
+        (s.name && normalizeArabicText(s.name.toLowerCase()).includes(searchTerm)) || 
+        (s.id && normalizeId(s.id).includes(searchIdTerm))
     );
 
     if(matchedStudents.length === 0) {
@@ -1007,15 +1020,22 @@ async function openReportModal() {
         return;
     }
 
-    // تجميع البيانات للطالب (نأخذ أول طالب مطابق إذا كان البحث دقيقاً)
-    // إذا كان البحث بالاسم ووجدنا عدة طلاب، سنعرض نتائجهم جميعاً مجمعة حسب الرقم الجامعي
-    // للتبسيط: سنقوم بتجميع بيانات الطالب صاحب أول نتيجة مطابقة
-    const targetStudentId = matchedStudents[0].id;
-    const targetStudentName = matchedStudents[0].name;
-    const targetStudentDept = matchedStudents[0].department || 'غير محدد';
+    // 2. استخراج الاسم الموحد من أول نتيجة مطابقة
+    // هذا هو الأساس: سنجمع كل السجلات التي لها نفس "الاسم الموحد" (بدون همزات)
+    // حتى لو كانت الأسماء الأصلية مختلفة (أحمد vs احمد)
+    const targetStudentName = matchedStudents[0].name; // الاسم كما هو للعرض
+    const targetStudentNameNormalized = normalizeArabicText(targetStudentName.trim()); // الاسم الموحد للمقارنة
+    
+    const displayDept = matchedStudents[0].department || 'غير محدد';
 
-    // نفلتر جميع سجلات هذا الطالب المحدد
-    const studentRecords = allStudentsData.filter(s => s.id === targetStudentId);
+    // 3. البحث عن *جميع* السجلات التي يتطابق اسمها الموحد مع الاسم الموحد للنتيجة الأولى
+    // هذا يحل مشكلة اختلاف الهمزات واختلاف الأرقام الجامعية لنفس الشخص
+    const studentRecords = allStudentsData.filter(s => 
+        s.name && normalizeArabicText(s.name.trim()) === targetStudentNameNormalized
+    );
+
+    // تجميع الأرقام الجامعية المختلفة التي وجدت لهذا الاسم
+    const uniqueIds = [...new Set(studentRecords.map(s => s.id))];
 
     // تجميع حسب السنة والفصل
     const groupedData = {};
@@ -1029,8 +1049,8 @@ async function openReportModal() {
     let contentHTML = `
         <div style="margin-bottom:20px; border-bottom:1px solid #ccc; padding-bottom:10px;">
             <p><strong>الاسم:</strong> ${targetStudentName}</p>
-            <p><strong>الرقم الجامعي:</strong> ${targetStudentId}</p>
-            <p><strong>القسم:</strong> ${targetStudentDept}</p>
+            <p><strong>الأرقام الجامعية المرتبطة:</strong> ${uniqueIds.map(id => `<span class="id-badge">${id}</span>`).join(' ')}</p>
+            <p><strong>القسم:</strong> ${displayDept}</p>
         </div>
     `;
 
@@ -1105,7 +1125,6 @@ async function openReportModal() {
     document.getElementById('report-content').innerHTML = contentHTML;
     reportModal.style.display = 'block';
 }
-
 </script>
 
 </body>
