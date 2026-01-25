@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <style>
-    /* --- نفس التنسيقات الأصلية تماماً --- */
+    /* --- التنسيقات العامة --- */
     :root {
       --main-color: #0a9396;
       --accent-color: #005f73;
@@ -48,6 +48,7 @@
     .container { max-width: 500px; width: 100%; text-align: center; }
     h1 { color: var(--accent-color); margin-bottom: 20px; font-size: 28px; }
 
+    /* --- تنسيق لوحة الإحصاءات --- */
     #dashboard-stats {
       background: linear-gradient(135deg, var(--bg-color), var(--card-bg));
       border-right: 5px solid var(--success-color);
@@ -57,11 +58,28 @@
       display: none; text-align: right;
     }
     #dashboard-stats h3 { margin-top: 0; color: var(--main-color); }
-    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 15px; margin-top: 15px; }
-    .stat-item { background-color: rgba(255,255,255,0.7); padding: 10px; border-radius: 8px; text-align: center; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+    
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 10px; margin-top: 15px; }
+    
+    .stat-item { 
+        background-color: rgba(255,255,255,0.7); 
+        padding: 10px; 
+        border-radius: 8px; 
+        text-align: center; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
     body.dark-mode .stat-item { background-color: rgba(255,255,255,0.05); }
+    
     .stat-item .stat-value { font-size: 1.5em; color: var(--accent-color); font-weight: 900; margin-top: 5px; }
-    .stat-item .stat-label { font-size: 0.8em; color: var(--text-color); }
+    .stat-item .stat-label { font-size: 0.8em; color: var(--text-color); margin-top: 2px; }
+    
+    /* تنسيق خاص لرقم إجمالي الطلاب ليكون مميزاً */
+    #total-students-count { color: var(--main-color); }
 
     .search-box { background-color: var(--card-bg); padding: 30px; border-radius: 12px; box-shadow: var(--shadow); margin-bottom: 20px; }
     input[type="text"], .search-box select { width: 100%; padding: 14px; font-size: 18px; border-radius: 8px; border: 1px solid #ccc; margin-bottom: 15px; box-sizing: border-box; text-align: center; transition: border-color 0.3s; }
@@ -163,9 +181,15 @@
 
   <div class="container">
     <h1>🎓 بوابة الطالب</h1>
+    
     <div id="dashboard-stats">
         <h3>📊 إحصاءات العام الدراسي المحدد</h3>
         <div class="stats-grid">
+            <div class="stat-item">
+                <div id="total-students-count" class="stat-value">--</div>
+                <div class="stat-label"><i class="fas fa-users" style="margin-left: 5px;"></i>إجمالي الطلاب</div>
+            </div>
+            
             <div class="stat-item"><div id="average-grade" class="stat-value">--</div><div class="stat-label">متوسط الدرجات</div></div>
             <div class="stat-item"><div id="highest-grade" class="stat-value">--</div><div class="stat-label">أعلى درجة</div></div>
             <div class="stat-item"><div id="passed-students" class="stat-value">--</div><div class="stat-label">الطلاب الناجحون</div></div>
@@ -376,6 +400,9 @@ async function filterDashboardStats() {
 
     if (gradedStudents.length > 0) {
         dashboardStats.style.display = 'block';
+        
+        // --- تحديث إجمالي عدد الطلاب ---
+        document.getElementById('total-students-count').textContent = gradedStudents.length;
         
         // حساب المجموع ليشمل التكاليف
         const totalGrades = gradedStudents.map(s => safeInt(s.grade) + safeInt(s.attendance) + getCourseworkScore(s));
