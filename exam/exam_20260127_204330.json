@@ -877,7 +877,7 @@
       "total": 14
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 18,
       "totalMax": 40
     },
     "answers": [
@@ -998,33 +998,41 @@
         "question": "صدر دستور 1970م رسمياً في نهاية عام (………) ليكون أول دستور دائم للجمهورية العربية اليمنية",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "1990"
+        "answer": "1990",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/10"
       },
       {
         "question": "يُشترط لاكتساب العرف الدستوري قوة الإلزام توافر ركنين أساسيين هما الركن .................... والركن .....................",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "مادي ومعنوي"
+        "answer": "مادي ومعنوي",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 10/10"
       },
       {
         "question": "وضّح الخصائص العامة لدستور 1970م من حيث الهوية السياسية والنظام الدستوري",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "الجنسيه\nحريةالتعبير والمشاركه السياسيه"
+        "answer": "الجنسيه\nحريةالتعبير والمشاركه السياسيه",
+        "essayScore": 2,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 2/10"
       },
       {
         "question": "قارن بين أسلوبي المنحة والعقد من حيث المصدر والشرعية والمشاركة الشعبية",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "المنحه مصدره الملك والشرعيه معدومه ولا توجد مشاركه شعبيه\nالعقد اتفاق بين الملك اوالرئيس والمجلس المنتخب من الشعب متوسط الشرعيه والمشاركه الشعبيه قليله تتمثل في المجلس المنتخب من الشعب"
+        "answer": "المنحه مصدره الملك والشرعيه معدومه ولا توجد مشاركه شعبيه\nالعقد اتفاق بين الملك اوالرئيس والمجلس المنتخب من الشعب متوسط الشرعيه والمشاركه الشعبيه قليله تتمثل في المجلس المنتخب من الشعب",
+        "essayScore": 6,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 6/10"
       }
     ],
     "tabSwitchCount": 0
