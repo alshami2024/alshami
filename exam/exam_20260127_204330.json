@@ -4143,7 +4143,7 @@
       "total": 14
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 28,
       "totalMax": 40
     },
     "answers": [
@@ -4263,33 +4263,41 @@
         "question": "صدر دستور 1970م رسمياً في نهاية عام (………) ليكون أول دستور دائم للجمهورية العربية اليمنية",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "1970"
+        "answer": "1970",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 10/10"
       },
       {
         "question": "يُشترط لاكتساب العرف الدستوري قوة الإلزام توافر ركنين أساسيين هما الركن .................... والركن .....................",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "الركن المادي \nالركن المعنوي"
+        "answer": "الركن المادي \nالركن المعنوي",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 10/10"
       },
       {
         "question": "وضّح الخصائص العامة لدستور 1970م من حيث الهوية السياسية والنظام الدستوري",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "يعقد الشريعة الإسلامية نظام جمهوري يمني"
+        "answer": "يعقد الشريعة الإسلامية نظام جمهوري يمني",
+        "essayScore": 3,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 3/10"
       },
       {
         "question": "قارن بين أسلوبي المنحة والعقد من حيث المصدر والشرعية والمشاركة الشعبية",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "المنحة \nالمصدر الحاكم\nالشريعة إسلامية \nالمشاركة الشعبية. قليلة او شبه معدومه \nالعقد\nالمصدر الحاكم +الشعب \nالشريعة إسلامية \nالمشاركة الشعبية كثيره "
+        "answer": "المنحة \nالمصدر الحاكم\nالشريعة إسلامية \nالمشاركة الشعبية. قليلة او شبه معدومه \nالعقد\nالمصدر الحاكم +الشعب \nالشريعة إسلامية \nالمشاركة الشعبية كثيره ",
+        "essayScore": 5,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 5/10"
       }
     ],
     "tabSwitchCount": 0
