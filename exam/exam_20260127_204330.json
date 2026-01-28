@@ -842,5 +842,167 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدستوري",
+    "studentName": "احمدعلي",
+    "deviceId": "DEV-2KB8KH9DZ-mk2um2k5",
+    "submissionDate": "2026-01-28T08:59:26.030Z",
+    "mcqScore": {
+      "correct": 13,
+      "total": 14
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 40
+    },
+    "answers": [
+      {
+        "question": "ما هو الأصل اللغوي لكلمة (دستور)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أصل فارسي مركب بمعنى (صاحب القاعدة)"
+      },
+      {
+        "question": "أي المناهج التالية يركز على (مضمون) القاعدة القانونية بغض النظر عن وعائها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المدلول الموضوعي"
+      },
+      {
+        "question": "من الانتقادات الموجهة للمدلول الشكلي أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يستبعد الدساتير العرفية كالدستور البريطاني"
+      },
+      {
+        "question": "يعتبر قانون الانتخابات في اليمن مثالاً على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة دستورية شكلاً وموضوعاً",
+        "correctAnswer": "قاعدة دستورية موضوعاً وعادية شكلاً"
+      },
+      {
+        "question": "ما هو الركن الذي يميز (العرف الدستوري) عن (العادة الدستورية)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الركن المعنوي"
+      },
+      {
+        "question": "\n              \n              العرف الذي يملأ فراغاً تركه المشرع الدستوري يُسمى:  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العرف المكمل"
+      },
+      {
+        "question": "لماذا يرفض غالبية الفقه (العرف المعدل) في الدساتير الجامدة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنه يهدر سمو الدستور ويخلق ازدواجية مع الواقع"
+      },
+      {
+        "question": "يُعد <strong data-start=\"244\" data-end=\"313\">النظام الأساسي للحكم في المملكة العربية السعودية الصادر عام 1992م</strong> مثالاً على الدساتير التي نشأت بأسلوب <strong data-start=\"351\" data-end=\"361\">المنحة</strong>",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعد <strong data-start=\"374\" data-end=\"387\">هانز كلسن</strong> من الفقهاء الذين أنكروا <strong data-start=\"412\" data-end=\"450\">الطبيعة القانونية للقانون الدستوري</strong>",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يرى المنكرون لإلزامية القانون الدستوري أن قواعده لا تعدو أن تكون <strong data-start=\"523\" data-end=\"568\">قواعد أخلاقية أو توجيهات سياسية غير ملزمة</strong>",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعد <strong data-start=\"581\" data-end=\"610\">إلغاء قانون مخالف للدستور</strong> نوعًا من أنواع <strong data-start=\"626\" data-end=\"644\">الجزاء السياسي</strong>",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n              تُعد <strong data-start=\"657\" data-end=\"687\">الجمعية التأسيسية المنتخبة</strong> أعلى أساليب وضع الدستور من حيث <strong data-start=\"719\" data-end=\"742\">الشرعية الديمقراطية</strong> ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُقصد بـ <strong data-start=\"759\" data-end=\"770\">الاطراد</strong> في الركن المادي للعرف الدستوري <strong data-start=\"802\" data-end=\"823\">السرية في التطبيق</strong>",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يرى الفقه الدستوري المعاصر أن <strong data-start=\"861\" data-end=\"898\">المدلول الموضوعي للقانون الدستوري</strong> هو الأكثر دقةً وشمولاً",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "صدر دستور 1970م رسمياً في نهاية عام (………) ليكون أول دستور دائم للجمهورية العربية اليمنية",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "1990"
+      },
+      {
+        "question": "يُشترط لاكتساب العرف الدستوري قوة الإلزام توافر ركنين أساسيين هما الركن .................... والركن .....................",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "مادي ومعنوي"
+      },
+      {
+        "question": "وضّح الخصائص العامة لدستور 1970م من حيث الهوية السياسية والنظام الدستوري",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "الجنسيه\nحريةالتعبير والمشاركه السياسيه"
+      },
+      {
+        "question": "قارن بين أسلوبي المنحة والعقد من حيث المصدر والشرعية والمشاركة الشعبية",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "المنحه مصدره الملك والشرعيه معدومه ولا توجد مشاركه شعبيه\nالعقد اتفاق بين الملك اوالرئيس والمجلس المنتخب من الشعب متوسط الشرعيه والمشاركه الشعبيه قليله تتمثل في المجلس المنتخب من الشعب"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
