@@ -2212,33 +2212,41 @@
         "question": "صدر دستور 1970م رسمياً في نهاية عام (………) ليكون أول دستور دائم للجمهورية العربية اليمنية",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/10"
       },
       {
         "question": "يُشترط لاكتساب العرف الدستوري قوة الإلزام توافر ركنين أساسيين هما الركن .................... والركن .....................",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/10"
       },
       {
         "question": "وضّح الخصائص العامة لدستور 1970م من حيث الهوية السياسية والنظام الدستوري",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/10"
       },
       {
         "question": "قارن بين أسلوبي المنحة والعقد من حيث المصدر والشرعية والمشاركة الشعبية",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/10"
       }
     ],
     "tabSwitchCount": 0
