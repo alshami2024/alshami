@@ -2472,7 +2472,7 @@
       "total": 14
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 11,
       "totalMax": 18
     },
     "answers": [
@@ -2598,33 +2598,41 @@
         "question": "الاختصاص القضائي الدولي هو مجموعة من القواعد التي تُحدد متى يكون لقضاء دولة معيّنة سلطة نظر المنازعات ذات العنصر ...............",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "الاجنبي"
+        "answer": "الاجنبي",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/4"
       },
       {
         "question": "المحكمة المختصة بنظر النزاع وفق ضوابط الاختصاص قد ترفض نظر الدعوى إذا رأت أن هناك قضاء ................ هو الأقرب والأصلح لنظرها.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "الاجنبي "
+        "answer": "الاجنبي ",
+        "essayScore": 3,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 3/4"
       },
       {
         "question": "ناقش مفهوم الاختصاص القضائي الدولي وأهميته في تحديد السلطة القضائية للدول في المنازعات ذات العنصر الأجنبي.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "هو مجموعه القواعد القانونيه التي تنظم التضارب بين القوانين الدولية "
+        "answer": "هو مجموعه القواعد القانونيه التي تنظم التضارب بين القوانين الدولية ",
+        "essayScore": 2,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 2/5"
       },
       {
         "question": "أشرح الفرق بين الاختصاص القضائي والاختصاص التشريعي مع تقديم أمثلة توضيحية لكل منهما.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "القظائي اي المحكمة تختصر في فصل النزاع\nالتشريعي. اي قانون يفصل في النزاع"
+        "answer": "القظائي اي المحكمة تختصر في فصل النزاع\nالتشريعي. اي قانون يفصل في النزاع",
+        "essayScore": 2,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 2/5"
       }
     ],
     "tabSwitchCount": 0
