@@ -505,7 +505,7 @@
       "total": 14
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 7,
       "totalMax": 18
     },
     "answers": [
@@ -626,33 +626,41 @@
         "question": "الاختصاص القضائي الدولي هو مجموعة من القواعد التي تُحدد متى يكون لقضاء دولة معيّنة سلطة نظر المنازعات ذات العنصر ...............",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "الأجنبي "
+        "answer": "الأجنبي ",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/4"
       },
       {
         "question": "المحكمة المختصة بنظر النزاع وفق ضوابط الاختصاص قد ترفض نظر الدعوى إذا رأت أن هناك قضاء ................ هو الأقرب والأصلح لنظرها.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "اجنبياً"
+        "answer": "اجنبياً",
+        "essayScore": 3,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 3/4"
       },
       {
         "question": "ناقش مفهوم الاختصاص القضائي الدولي وأهميته في تحديد السلطة القضائية للدول في المنازعات ذات العنصر الأجنبي.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/5"
       },
       {
         "question": "أشرح الفرق بين الاختصاص القضائي والاختصاص التشريعي مع تقديم أمثلة توضيحية لكل منهما.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/5"
       }
     ],
     "tabSwitchCount": 0
