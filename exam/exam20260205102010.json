@@ -1,0 +1,168 @@
+[
+  {
+    "examTitle": "العقيدة (2)",
+    "studentName": "افراح علي الجبلي",
+    "deviceId": "DEV-M3K6EJTH1-ml97vz4f",
+    "submissionDate": "2026-02-05T08:51:24.593Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 14
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 18
+    },
+    "answers": [
+      {
+        "question": "\n              \n              القول بعدم جواز الذنب صغيره وكبيره على الأنبياء هو مذهب:  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشيعة الإمامية"
+      },
+      {
+        "question": "\n              \n              إضلال الله في القرآن يفهم على أنه:  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ترك العبد لاختياره"
+      },
+      {
+        "question": "\n              \n              الدليل الجدلي على نفي الكبائر عن الأنبياء يقوم على:  ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "امتناع الوقوع عادة",
+        "correctAnswer": "بطلان شهادة الفاسق"
+      },
+      {
+        "question": "\n              \n              \n              مثال الحُسن أو القُبح العقلي عند المعتزلة هو:   ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الصدق والكذب"
+      },
+      {
+        "question": "\n              \n              \n              أي مثال للتمييز بين الفعل الإرادي وغير الإرادي؟:   ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طول الإنسان (إرادي) مقابل لونه (غير إرادي)",
+        "correctAnswer": "المشي (إرادي) مقابل ارتعاش الجسم (غير إرادي)"
+      },
+      {
+        "question": "\n              \n              \n              \n              \n              في تقسيم أفعال الإنسان: أي تعريف يوافق «الواجب»؟:     ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما استحق بفعله المدح وبتركه الذم"
+      },
+      {
+        "question": "\n              \n              \n              \n              الهدى المنفي عن القوم الفاسقين هو:    ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التوفيق والفوز"
+      },
+      {
+        "question": "\n              اختلاف حكم السجدة الواحدة بحسب القصد يدل على أن النية تؤثر في تكييف الفعل ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n              قال أمير المؤمنين علي عليه السلام في تعريف العدل: «أن لا تتهمه»، وهذا نهاية التنزيه",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n              الاستدلال بآيات: {وَلَوْ شَاء اللَّهُ} يدل على ثبوت القدرة على ما لم يقع ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "\n              من جهة الوقوع: اللطف بالنسبة إلى الفعل الاختياري للمكلف يوجب الفعل حتماً، وإلا لم يكن لطفاً ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n              طلب إبراهيم رؤية إحياء الموتى كان لأجل ازدياد اليقين ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "\n              تنزيه النبي عن الكتمان في التبليغ سببه كثرة المعجزات ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "\n              الحُسن من جهة ملاءمة الطبع يظهر في اللذائذ والآلام ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "&nbsp;يعتمد تقرير نبوة محمد صلى الله عليه وآله وسلم على أمرين أساسيين: الأول أنه ادعى النبوة، والثاني أنه ظهرت عليه ..............",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 4,
+        "answer": "المعجزات"
+      },
+      {
+        "question": "الرأي المختار في إعجاز القرآن الكريم هو أنه واقع بأمرين هما: البلاغة و......................",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 4,
+        "answer": "الاعجاز"
+      },
+      {
+        "question": "بيّن أقسام الأسماء من حيث <strong data-start=\"282\" data-end=\"291\">وضعها</strong>، موضحًا الفرق بين الاسم اللغوي، والعرفي، والشرعي، مع ذكر مثال يوضّح انتقال الاسم من معناه اللغوي إلى معناه الشرعي.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 5,
+        "answer": "اللغوي الشرعي. العرفي"
+      },
+      {
+        "question": "اعرض آراء الفرق الإسلامية في <strong data-start=\"642\" data-end=\"662\">حكم فاعل الكبيرة</strong>، ثم بيّن الرأي الراجح، مع ذكر دليل واحد على الأقل.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 5,
+        "answer": "لا إجابة"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
