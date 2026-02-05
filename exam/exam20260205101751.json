@@ -1683,7 +1683,7 @@
       "total": 14
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 13,
       "totalMax": 18
     },
     "answers": [
@@ -1803,33 +1803,41 @@
         "question": "منذ أن أدركت الأنثروبولوجيا أن الإنسان لا يُفهم من خلف المكاتب، أصبح البحث ................... هو قلبها النابض وشرط علميتها",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "الميداني"
+        "answer": "الميداني",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/4"
       },
       {
         "question": "التحول الحقيقي في منهجية البحث الأنثروبولوجي ارتبط باسم..................... الذي نزل إلى الميدان، وعاش مع الناس، وتعلّم لغتهم",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "مالينوفيسكي"
+        "answer": "مالينوفيسكي",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/4"
       },
       {
         "question": "لماذا ترفض الأنثروبولوجيا دراسة الفرد معزولًا عن السياق الذي شكّله؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "لانها تتميز عن علم النفس بدراسة الفرد في سياقه المجتمعي ولانه يرى ان الفرد يكتسب سلوكه من خلال مجتمعه الذي يسكن فيه"
+        "answer": "لانها تتميز عن علم النفس بدراسة الفرد في سياقه المجتمعي ولانه يرى ان الفرد يكتسب سلوكه من خلال مجتمعه الذي يسكن فيه",
+        "essayScore": 3,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 3/5"
       },
       {
         "question": "كيف تغيّر مفهوم الأنثروبولوجيا تاريخيًا؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "كان يعتمد تفسير الكون والالهيات ومن ثم تطور ليشمل القيم والعادات والاساطير والمجتمع وثقافته"
+        "answer": "كان يعتمد تفسير الكون والالهيات ومن ثم تطور ليشمل القيم والعادات والاساطير والمجتمع وثقافته",
+        "essayScore": 2,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 2/5"
       }
     ],
     "tabSwitchCount": 0
