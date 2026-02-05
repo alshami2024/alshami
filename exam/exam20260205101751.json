@@ -336,5 +336,174 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": " الأنثروبولوجيا",
+    "studentName": "جيهان عدنان احمد ناجي الغرباني",
+    "deviceId": "DEV-5Y1G8SRWY-mkppkb4w",
+    "submissionDate": "2026-02-05T09:44:07.062Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 14
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 18
+    },
+    "answers": [
+      {
+        "question": "ما هو المعنى اللغوي لكلمة 'الأنثروبولوجيا'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم النفس",
+        "correctAnswer": "علم الإنسان"
+      },
+      {
+        "question": "على ماذا ركزت الأنثروبولوجيا في بداياتها (نهاية القرن التاسع عشر) قبل أن ينتقل اهتمامها إلى الثقافة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجسد والأعراق والاختلافات البيولوجية"
+      },
+      {
+        "question": "ما الذي يميز الأنثروبولوجيا عن علم النفس؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تركز حصرياً على الجوانب البيولوجية",
+        "correctAnswer": "ترفض دراسة الفرد معزولاً عن سياقه المجتمعي"
+      },
+      {
+        "question": "كيف يرى 'كلود ليفي-ستراوس' أنه يمكن فهم الإنسان؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من خلال التفسيرات البيولوجية الصرفة",
+        "correctAnswer": "من خلال البنى الرمزية مثل اللغة والأسطورة"
+      },
+      {
+        "question": "ما هو موضوع دراسة 'الأنثروبولوجيا المعرفية'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تطور الهيكل العظمي للإنسان",
+        "correctAnswer": "الفكر والتمثلات الذهنية وكيفية اكتساب المعرفة"
+      },
+      {
+        "question": "كيف تُوصَف العلاقة بين الأنثروبولوجيا وعلم النفس؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علاقة تنافس علمي",
+        "correctAnswer": "علاقة حاجة متبادلة"
+      },
+      {
+        "question": "بماذا يهتم علم النفس في تعريفه الحديث؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بدراسة الروح بمعناها الفلسفي",
+        "correctAnswer": "بدراسة الظواهر النفسية والسلوك وقوانينه"
+      },
+      {
+        "question": "ترى الأنثروبولوجيا أن السلوك الإنساني لا يمكن فهمه بمعزل عن السياق الثقافي والتاريخي للمجتمع",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يذهب فرويد إلى أن الأساطير والطقوس ظواهر اجتماعية بلا دلالات نفسية عميقة",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "وفق نظرية لويس هنري مورغان تمر المجتمعات البشرية بمراحل تطورية تبدأ بالتوحش وتنتهي بالحضارة",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تقوم النظرية الوظيفية في الأنثروبولوجيا على دراسة أصول الظواهر الاجتماعية دون الاهتمام بوظيفتها",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يرى جيمس فريزر أن السحر والدين والعلم أنساق منفصلة لا يجمعها مسار تطوري واحد",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "دافع فرانس بواس عن مبدأ النسبية الثقافية ورفض تفسير الاختلافات الإنسانية بالحتمية البيولوجية",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تركز البنيوية عند كلود ليفي-ستراوس على البنى العميقة الثابتة التي تنظم الفكر والرموز الإنسانية",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "منذ أن أدركت الأنثروبولوجيا أن الإنسان لا يُفهم من خلف المكاتب، أصبح البحث ................... هو قلبها النابض وشرط علميتها",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 4,
+        "answer": "الميداني"
+      },
+      {
+        "question": "التحول الحقيقي في منهجية البحث الأنثروبولوجي ارتبط باسم..................... الذي نزل إلى الميدان، وعاش مع الناس، وتعلّم لغتهم",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 4,
+        "answer": "روكولوس"
+      },
+      {
+        "question": "لماذا ترفض الأنثروبولوجيا دراسة الفرد معزولًا عن السياق الذي شكّله؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 5,
+        "answer": "لانها تنقسم بدراسه الثقافه"
+      },
+      {
+        "question": "كيف تغيّر مفهوم الأنثروبولوجيا تاريخيًا؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 5,
+        "answer": "لا احله\n"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
