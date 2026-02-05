@@ -2261,5 +2261,106 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "مسائل دقيقة في اللغة العربية",
+    "studentName": "زيد علي عبده المنتصر",
+    "deviceId": "DEV-261Y0IOCQ-ml9f709f",
+    "submissionDate": "2026-02-05T12:15:56.184Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو تعريف 'الاسم' عند المحققين كما ورد في النص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلمة مستقلة لا تدل بهيئتها على أحد الأزمنة الثلاثة وضعاً"
+      },
+      {
+        "question": "في قوله تعالى: {تَنْبُتُ بِالدُّهْنِ}، بماذا تعلقت الباء في قراءة (تَنْبُتُ) بفتح التاء (من الثلاثي)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "متعلقة بمحذوف حال (أي ملابسة للدهن أو كائنة فيه)"
+      },
+      {
+        "question": "لماذا كُتبت كلمة (الربوا) بالواو في المصحف؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "للتمييز بينها وبين (الربى) بمعنى التربية",
+        "correctAnswer": "للدلالة على ألف التفخيم (لغة أهل الحجاز)"
+      },
+      {
+        "question": "كلمة (عَرَفَات) هل هي مفرد أم جمع من حيث المعنى؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفرد (علم لمكان) بصيغة الجمع"
+      },
+      {
+        "question": "في علم العروض، من أي بحر شعري تم اقتطاع (اقتضاب) 'البحر المقتضب'؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من البحر المنسرح"
+      },
+      {
+        "question": "ما تصغير كلمة (وَاصِل)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مُوَصِّل",
+        "correctAnswer": "أُوَيْصِل (لأن أصلها 'ووَيْصل' فقلبت الواو الأولى همزة)"
+      },
+      {
+        "question": "ما هي 'مبنيات الأصل' (أي المبنية أصالةً لا شبهاً) في النحو؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنادى المفرد العلم",
+        "correctAnswer": "الحرف، والماضي، والأمر"
+      },
+      {
+        "question": "ما هو الوزن الصرفي الصحيح لكلمة 'عُنْوَان'؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فُعْلال",
+        "correctAnswer": "فِعْوال (وأصله فِعَّال)"
+      },
+      {
+        "question": "ما هو تعريف 'المبني' (مبني الشبه) عند النحاة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما شابه الحرف شبهاً قوياً يدنيه منه"
+      },
+      {
+        "question": "كلمة (أنصار) في الأصل، هل هي مفرد أم جمع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمع (نصير) أو (ناصر)"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
