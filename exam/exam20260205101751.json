@@ -347,7 +347,7 @@
       "total": 14
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 5,
       "totalMax": 18
     },
     "answers": [
@@ -475,33 +475,41 @@
         "question": "منذ أن أدركت الأنثروبولوجيا أن الإنسان لا يُفهم من خلف المكاتب، أصبح البحث ................... هو قلبها النابض وشرط علميتها",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "الميداني"
+        "answer": "الميداني",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/4"
       },
       {
         "question": "التحول الحقيقي في منهجية البحث الأنثروبولوجي ارتبط باسم..................... الذي نزل إلى الميدان، وعاش مع الناس، وتعلّم لغتهم",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "روكولوس"
+        "answer": "روكولوس",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/4"
       },
       {
         "question": "لماذا ترفض الأنثروبولوجيا دراسة الفرد معزولًا عن السياق الذي شكّله؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "لانها تنقسم بدراسه الثقافه"
+        "answer": "لانها تنقسم بدراسه الثقافه",
+        "essayScore": 1,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 1/5"
       },
       {
         "question": "كيف تغيّر مفهوم الأنثروبولوجيا تاريخيًا؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "لا احله\n"
+        "answer": "لا احله\n",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/5"
       }
     ],
     "tabSwitchCount": 0
