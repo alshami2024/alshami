@@ -1325,7 +1325,7 @@
       "total": 14
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 8,
       "totalMax": 18
     },
     "answers": [
@@ -1445,33 +1445,41 @@
         "question": "&nbsp;يعتمد تقرير نبوة محمد صلى الله عليه وآله وسلم على أمرين أساسيين: الأول أنه ادعى النبوة، والثاني أنه ظهرت عليه ..............",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "المعجزة"
+        "answer": "المعجزة",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/4"
       },
       {
         "question": "الرأي المختار في إعجاز القرآن الكريم هو أنه واقع بأمرين هما: البلاغة و......................",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 4,
-        "answer": "الفصاحة"
+        "answer": "الفصاحة",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/4"
       },
       {
         "question": "بيّن أقسام الأسماء من حيث <strong data-start=\"282\" data-end=\"291\">وضعها</strong>، موضحًا الفرق بين الاسم اللغوي، والعرفي، والشرعي، مع ذكر مثال يوضّح انتقال الاسم من معناه اللغوي إلى معناه الشرعي.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/5"
       },
       {
         "question": "اعرض آراء الفرق الإسلامية في <strong data-start=\"642\" data-end=\"662\">حكم فاعل الكبيرة</strong>، ثم بيّن الرأي الراجح، مع ذكر دليل واحد على الأقل.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 5,
-        "answer": "لا إجابة"
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 0/5"
       }
     ],
     "tabSwitchCount": 0
