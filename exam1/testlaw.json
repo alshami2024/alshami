@@ -12909,5 +12909,192 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تدريبات نحو الثاني (مطور)1",
+    "studentName": "دانييل هيسم الحلبي",
+    "deviceId": "DEV-KSR5V8AXI-mlpgupri",
+    "submissionDate": "2026-02-16T17:46:40.694Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n         وقف المؤمن رافعاً يديه يدعو ربه. \n\nالاسم الذي علامته الإسناد في الجملة السابقة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المؤمن"
+      },
+      {
+        "question": "\n         الجر علامة خاصة بالأسماء.&nbsp;",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n         الفعل الماضي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبني دائما"
+      },
+      {
+        "question": "\n         الكلمة التي تدل على معنى في ذاتها غير مقترنة بزمن هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاسم"
+      },
+      {
+        "question": "\n         الجملة التي اشتملت على فعل مضارع مبني هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الطالب يجتهدنّ في دراسته"
+      },
+      {
+        "question": "\n         حروف الاستفهام:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "غير مختصة"
+      },
+      {
+        "question": "\n         (السين وسوف)\nمن علامات الفعل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المشتركة بين الماضي والمضارع",
+        "correctAnswer": "المختصة بالمضارع"
+      },
+      {
+        "question": "إن الله غفور رحيم. اشتملت الآية على حرف مختص بالأسماء.&nbsp;",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n         الأصل في الأسماء البناء.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ياء المخاطبة علامة مشتركة بين الفعل المضارع وفعل الأمر. ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "\n         العلامة الخاصة بالفعل الماضي مما يلي هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تاء التأنيث الساكنة"
+      },
+      {
+        "question": "\n         كل الأسماء التالية مبنية عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كيف",
+        "correctAnswer": "سهام"
+      },
+      {
+        "question": "\n         الجملة التي اشتملت على اسم مبني هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "شارك الطلاب في مسابقة الدار",
+        "correctAnswer": "ما أعظم هؤلاء الطلاب! "
+      },
+      {
+        "question": "\n         المسلمات يطعن الله ورسوله. \n\nاشتملت الجملة على فعل معرب.&nbsp;",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "\n         الكلمة التي تدل على الطلب ولا تقبل علامات الفعل نحو (صه) تسمى فعل أمر.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الذي تتغير حركة آخره تبعا لتغير العوامل الداخلة عليه يسمى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبني",
+        "correctAnswer": "معرب"
+      },
+      {
+        "question": "\n         \n         الجملة التي اشتملت على حرف غير مختص هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم يشارك الطالب في مسابقة الشعر",
+        "correctAnswer": "شاركَ الطالبُ في مسابقة حفظ القرآن وفاز"
+      },
+      {
+        "question": "\n         الفعل المضارع معرب إلا إذا اتصلت به:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نون التوكيد",
+        "correctAnswer": "كل ما سبق"
+      },
+      {
+        "question": "كل ما يأتي مبني دائما عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفعل المضارع"
+      },
+      {
+        "question": "\n         إذا قالت حذام فصدقوها... فإن القول ما قالت حذام. \n\nتعرب كلمة (حذام) فاعل مرفوع وعلامة رفعه الضمة الظاهرة.  ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
