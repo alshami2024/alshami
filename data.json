@@ -45,5 +45,14 @@
       "link": "https://www.ktobati.com/node/2968379",
       "date": "2026-03-17"
     }
+  ],
+  "notifications": [
+    {
+      "id": "notif_1773760935174",
+      "title": "إضافة كتاب",
+      "message": "تم إضافة كتاب أسس الفلسفة",
+      "type": "info",
+      "date": "١٧‏/٣‏/٢٠٢٦"
+    }
   ]
 }
