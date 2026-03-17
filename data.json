@@ -1,7 +1,22 @@
 {
-  "departments": [
-    "عام",
-    "المقررات الدراسية"
+  "structure": [
+    {
+      "name": "عام",
+      "branches": []
+    },
+    {
+      "name": "المقررات الدراسية",
+      "branches": [
+        {
+          "name": "الحقوق",
+          "subBranches": []
+        },
+        {
+          "name": "علم النفس",
+          "subBranches": []
+        }
+      ]
+    }
   ],
   "categories": [
     "books",
