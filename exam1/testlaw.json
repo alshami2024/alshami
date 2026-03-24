@@ -13273,5 +13273,134 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تدريبات الثالث (مطور) 2",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-03-24T21:22:32.372Z",
+    "mcqScore": {
+      "correct": 14,
+      "total": 14
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n         الضمة علامة أصلية للرفع في المعربات التالية عدا ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمع المذكر السالم"
+      },
+      {
+        "question": "\n         كل الجمل التالية صحيحة عدا ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فاز أخاك في مسابقة حفظ القرآن الكريم"
+      },
+      {
+        "question": "\n         الجملة الصحيحة مما يلي هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا تثاءبت فأغلق فاك"
+      },
+      {
+        "question": "\n         كل الأسماء التالية يصح تثنيتها عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مدارس"
+      },
+      {
+        "question": "\n         المركب الذي يصح تثنيته مما يلي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صلاح الدين"
+      },
+      {
+        "question": "\n         الجملة التي وردت فيها كلمة (كلا) ملحقة بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كرم المدير المتسابقين كليهما"
+      },
+      {
+        "question": "\n         الآية التي اشتملت على ملحق بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ}"
+      },
+      {
+        "question": "\n         الآية التي لا تشتمل على اسم من الأسماء الستة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{قَالَ رَبِّ إِنِّي لا أَمْلِكُ إِلاَّ نَفْسِي وَأَخِي} "
+      },
+      {
+        "question": "\n         {وَأَمَّا الْغُلَامُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ فَخَشِينَا أَن يُرْهِقَهُمَا طُغْيَاناً وَكُفْراً} [الكهف:80]\n\nإعراب كلمة (أبواه)  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم كان مرفوع وعلامة رفعه الألف لأنه ملحق بالمثنى"
+      },
+      {
+        "question": "\n         سافر الأخوان لزيارة أقاربهما. كلمة (الأخوان) من الأسماء الستة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         التفاحتان (كلتاهما) ناضجتان. ما بين القوسين ملحق بالمثنى.  ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "\n         لا يصح تثنية كلمة (معدي كرب)؛ لأنه مركب  إسنادي.  ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         لا تستقيم حياة البشر على كوكب (زحل). ما بين القوسين تصح تثنيته ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         نال المجرمان عقوبتهما. كلمة المجرمان ترفع بالألف لأنها مثنى ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
