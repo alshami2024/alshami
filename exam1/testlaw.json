@@ -14024,5 +14024,185 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "تدريبات الخامس (مطور) 1",
+    "studentName": "سعد عبدربه حسن التعمري",
+    "deviceId": "DEV-8EA3UX6BC-mnoaeztk",
+    "submissionDate": "2026-04-07T07:18:08.079Z",
+    "mcqScore": {
+      "correct": 17,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n         المؤمنون في عباداتهم مخلصون. عندما تدخل (ما زال) على الجملة، تصبح الجملة الصحيحة هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما زال المؤمنون في عباداتهم خاشعين"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل ناسخ يشترط لعمله أن تتقدمه (ما) المصدرية، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لن أصحب زيداً ما دام كاذباً"
+      },
+      {
+        "question": "كل الجمل التالية صحيحة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "غزيراً ما زال المطر. "
+      },
+      {
+        "question": "\n         قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَكَانَ فِي الْمَدِينَةِ تِسْعَةُ رَهْطٍ يُفْسِدُونَ فِي الْأَرْضِ وَلَا يُصْلِحُونَ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. نوع الخبر في الآية.&nbsp; ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جملة",
+        "correctAnswer": "شبه جملة"
+      },
+      {
+        "question": "ما انفك العامل مخلصاً في عمله. حكم تقديم خبر (ما انفك) على الفعل الناسخ في هذه الجملة.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ممتنع"
+      },
+      {
+        "question": "أبو بكر الصديق ذو خلق حسن. بعد دخول الفعل (كان) على الجملة تصبح الجملة الصحيحة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كان أبو بكر الصديق ذا خلق حسن"
+      },
+      {
+        "question": "الفعل الناسخ الذي يعمل بلا شرط مما يلي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليس"
+      },
+      {
+        "question": "الجملة التي تشتمل على فعل من أفعال الرجاء هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حرى المريض أن يشفى"
+      },
+      {
+        "question": "ولو سئل الناس التراب لأوشكوا... إذا قيل هاتوا أن يملوا وبمنعوا.&nbsp; &nbsp; &nbsp; اشتمل البيت على فعل من أفعال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المقاربة"
+      },
+      {
+        "question": "خبر الفعل الناسخ في البيت السابق هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هاتوا",
+        "correctAnswer": "أن يملوا"
+      },
+      {
+        "question": "كل الجمل التالية صحيحة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اخلولق الظلام ينجلي"
+      },
+      {
+        "question": "الجملة الصحيحة مما يلي هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عسى الله أن يرفع البلاء عن الكويت"
+      },
+      {
+        "question": "مجتهداً ما برح الطالب. يجوز تقديم الخبر في الجملة السابقة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "شرع الله تعالى الأحكام لتنظيم حياة الناس. اشتملت الجملة السابقة على فعل من أفعال الشروع.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كرب الجو أن يعتدل. يجوز اقتران خبر (كرب) بأن في هذه الجملة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "إني عسيت صائماً. يجوز أن يكون خبر عسى مفردا.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أصبحت الحديقة أشجارها مثمرة. نوع خبر (أصبح) مفرد.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما زال مجتهداً الطالب. يجوز تقديم خبر (ما زال) على اسمها في الجملة السابقة",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "<span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَأَصْبَحَ فُؤَادُ أُمِّ مُوسَى فَارِغاً <span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. خبر (أصبح) هو: أم موسى.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تعمل كاد وأخواتها نفس عمل كان وأخواتها.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 21
   }
 ]
