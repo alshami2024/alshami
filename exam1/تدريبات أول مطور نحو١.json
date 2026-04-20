@@ -1,0 +1,155 @@
+[
+  {
+    "examTitle": "تدريبات الأول (مطور) 1",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-04-20T18:45:01.824Z",
+    "mcqScore": {
+      "correct": 17,
+      "total": 17
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "استمع زيدٌ إلى تلاوة آيات من الذكر الحكيم. كلمة (آيات):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم"
+      },
+      {
+        "question": "الجملة التي تشتمل على اسم يدل على (معنى) هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أوثق عرى الإيمان الحب في الله والبغض في الله"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. اشتملت الآية على فعل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ماض"
+      },
+      {
+        "question": "لا تؤجل عمل اليوم إلى الغد. نوع الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فعلية"
+      },
+      {
+        "question": "كل الجمل التالية مفيدة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المطر الذي نزل البارحة وارتوت منه الأرض"
+      },
+      {
+        "question": "ذكّر الخطيب في خطبته الناس بأهمية الصلاة. إعراب كلمة (الناس) :",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مفعول به منصوب وعلامة نصبه الفتحة الظاهرة على آخره"
+      },
+      {
+        "question": "الجملة التي اشتملت على فاعل مرفوع هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حفظ الولد القرآن عن ظهر قلب"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>لَا أُقْسِمُ بِهَذَا الْبَلَدِ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. الفعل المضارع (أقسم) في هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مرفوع"
+      },
+      {
+        "question": "كل الأدوات التالية تنصب الفعل المضارع عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم"
+      },
+      {
+        "question": "(سأحفظ القرآن... إذن أنت تفلح). الضبط الصحيح لآخر كلمة (تفلح) في الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الضمة"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل مضارع مجزوم هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لنحافظ على سلامة عقيدتنا"
+      },
+      {
+        "question": "كل الأسماء التالية تأتي مرفوعة دائما عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المفعول به"
+      },
+      {
+        "question": "الكلمة التي لا تدل على معنى في ذاتها ولكن مع غيرها، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحرف"
+      },
+      {
+        "question": "الصحابة الذي صحبوا النبي صلى الله عليه وسلم ونصروه. الجملة السابقة مفيدة",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "سقط الإناء على الأرض. كلمة (الإناء) تعرب مفعولا به.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "لا تظهر الشماتة لأخيك فيعافيه الله ويبتليك. الفعل (تظهر) مضارع مجزوم.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ندرس العلوم الشرعية كي نتعلم أمور ديننا. الحرف (كي) من أدوات نصب الفعل المضارع.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
