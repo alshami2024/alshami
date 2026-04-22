@@ -360,5 +360,184 @@
       }
     ],
     "tabSwitchCount": 26
+  },
+  {
+    "examTitle": "تدريبات نحو الثاني المطور شامل المنهج",
+    "studentName": "سعيد محمد حامد على",
+    "deviceId": "DEV-P892BDPCZ-moakm7j1",
+    "submissionDate": "2026-04-22T21:34:36.666Z",
+    "mcqScore": {
+      "correct": 18,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما دل على معنى في نفسه غير مقترن بزمن هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاسم"
+      },
+      {
+        "question": "الرفع علامة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مشتركة بين الأفعال والأسماء"
+      },
+      {
+        "question": "الجملة التي تشتمل على علامة مختصة بالفعل المضارع هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أدى الطلاب الامتحان ولم يتخلف طالبٌ"
+      },
+      {
+        "question": "حروف النسخ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مختصة بالأسماء"
+      },
+      {
+        "question": "كل الجمل التالية مفيدة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكتاب الذي اشتريته من المكتبة بسعر غالٍ"
+      },
+      {
+        "question": "كل ما يأتي مبني دائماً عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفعل المضارع"
+      },
+      {
+        "question": "إذا قالت حذامِ فصدقوها ... فإن القول ما قالت حذامِ. كلمة (حذام):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم مبني"
+      },
+      {
+        "question": "متى يبنى الفعل المضارع؟&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا اتصلت به نون التوكيد أو نون النسوة"
+      },
+      {
+        "question": "الاسم المعرب الذي يعرب بحركة مقدرة منع من ظهورها التعذر هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المقصور"
+      },
+      {
+        "question": "كل الأسماء التالية منقوصة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النبيّ"
+      },
+      {
+        "question": "متى يعرب الاسم المنقوص بحركة مقدرة؟&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "في الرفع والجر"
+      },
+      {
+        "question": "كل الجمل التالية صحيحة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تذكرت السنوات الخالية وما فيها من ماضي جميل"
+      },
+      {
+        "question": "الجملة التي تشتمل على فعل يعرب بحركة مقدرة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أطع الله تعالى حتى يرضى عنك"
+      },
+      {
+        "question": "الجملة التي اشتملت على كلمة تعرب بحركة مقدرة منع من ظهورها اشتغال المحل بحركة المناسبة، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صلاتي سر سعادتي"
+      },
+      {
+        "question": "أنا الذي نظر الأعمى إلى أدبي ... وأسمَعَتْ كلماتي من به صمم. حكم حركة الياء في كلمة (كلماتي):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وجوب التسكين",
+        "correctAnswer": "جواز الفتح والتسكين"
+      },
+      {
+        "question": "فاز الطالب بالجائزة.&nbsp; (الطالب)&nbsp; اسم علامته الإسناد.&nbsp;",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "قال تعالى: {وَالْوَالِدَاتُ يُرْضِعْنَ أَوْلاَدَهُنَّ}. الفعل (يرضعن) مضارع معرب.&nbsp;\n          ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أكرمت الداعي إلى الخير. الداعي اسم منقوص يعرب بحركة مقدرة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أسماء الاستفهام كلها مبنية.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تاء الفاعل علامة مختصة بالفعل الماضي.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
