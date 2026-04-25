@@ -1095,5 +1095,159 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تدريبات الثامن (مطور) 1",
+    "studentName": "أحمد أمين كمال فهمي",
+    "deviceId": "DEV-GF1OI9QE2-moeq2ebz",
+    "submissionDate": "2026-04-25T19:18:14.740Z",
+    "mcqScore": {
+      "correct": 16,
+      "total": 17
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "النص الذي يشتمل على فاعل مجرور بحرف جر زائد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{وَتَوَكَّلْ عَلَى اللَّهِ وَكَفَى بِاللَّهِ وَكِيلاً}"
+      },
+      {
+        "question": "الجملة التي تشتمل على فاعل (مصدر مؤول). هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يسرني أن تفهموا كتاب النحو"
+      },
+      {
+        "question": "النساء يصنعن الرجال. نوع الفاعل في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ضمير بارز"
+      },
+      {
+        "question": "قال تعالى: {وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ الله}. حكم حذف الفعل العامل في لفظ الجلالة (الله) :",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جائز"
+      },
+      {
+        "question": "<span style=\"background-color: rgba(0, 0, 0, 0.01);\">إِذا المَرءُ لَم يُدنَس مِنَ اللُؤمِ عِرضُهُ</span>&nbsp;..&nbsp;<span style=\"background-color: rgba(0, 0, 0, 0.01);\">فَكُلُّ رِداءٍ يَرتَديهِ جَميلُ. حكم حذف الفاعل العامل في كلمة (المرء):</span>",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "واجب"
+      },
+      {
+        "question": "الطالبة تفوقت في دراستها. حكم تأنيث الفعل في الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "واجب"
+      },
+      {
+        "question": "\n         الجملة الصحيحة مما يلي، هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "قال تعالى: {إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا (1) وَأَخْرَجَتِ الْأَرْضُ أَثْقَالَهَا} . إعراب كلمة (الأرض) في الآيتين:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأولى نائب فاعل والثانية فاعل"
+      },
+      {
+        "question": "قال تعالى: {فَإِذَا نُفِخَ فِي الصُّورِ نَفْخَةٌ وَاحِدَةٌ} . صورة نائب الفاعل في هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصدر"
+      },
+      {
+        "question": "قال تعالى: {إِنَّا لَمَّا طَغَى الْمَاء حَمَلْنَاكُمْ فِي الْجَارِيَةِ}. نوع الفعل (طغى):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لازم"
+      },
+      {
+        "question": "قال تعالى: {إِنَّهُمْ أَلْفَوْا آبَاءهُمْ ضَالِّينَ}. اشتملت الآية على فعل من الأفعال&nbsp; التي تنصب مفعولين، ويفيد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليقين"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل ينصب مفعولين ليس أصلهما المبتدأ والخبر، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ألبست الأم الولد ثوباً"
+      },
+      {
+        "question": "الفعل الذي ينصب ثلاثة مفاعيل هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أخبر"
+      },
+      {
+        "question": "لا يصح اتصال الفعل بتاء التأنيث في قولنا: ما جاء إلا فاطمة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز حذف العامل الذي رفع الفاعل في قوله تعالى: {إِذَا الشَّمْسُ كُوِّرَتْ}.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يزعجني إهمال الطالبِ دروسه. تعرب كلمة (الطالب) فاعل مجرور لفظاً مرفوع محلاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "لا يجوز أن نقول: نجحوا الطلاب. على أي لغة من لغات العرب.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
