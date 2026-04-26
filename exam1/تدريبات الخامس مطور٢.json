@@ -1,0 +1,179 @@
+[
+  {
+    "examTitle": "تدريبات نحو الخامس مطور شامل المنهج",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-04-26T20:35:44.249Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كل ما يأتي يرفع المبتدأ ويسمى اسمه وينصب الخبر ويسمى خبره عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إن وأخواتها"
+      },
+      {
+        "question": "الفعل الناسخ الذي يعمل بلا شرط مما يلي، هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليس"
+      },
+      {
+        "question": "الفعل الناسخ الذي يعمل بشرط أن تتقدمه (ما) المصدرية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ما دام"
+      },
+      {
+        "question": "كل الجمل التالية صحيحة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجتهدا ما زال الطالب"
+      },
+      {
+        "question": "ممطراً ظل الجوُ. حكم تقديم الخبر في الجملة الماضية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جائز"
+      },
+      {
+        "question": "أصبحت الشوارع طرقها جميلة. نوع الخبر في الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جملة اسمية"
+      },
+      {
+        "question": "الجملة التي خبر الفعل الناسخ فيها محذوف تقديره (كائن) أو (استقر) هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليس الكتاب في الحقيبة"
+      },
+      {
+        "question": "الفعل (اخلولق)، من أفعال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرجاء"
+      },
+      {
+        "question": "كل الجمل التالية صحيحة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طفق الطفل أن يمشي"
+      },
+      {
+        "question": "كرب الهم أن يزول. حكم اقتران خبر كرب بـ (أن):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جائز"
+      },
+      {
+        "question": "كَرَبَ الْقَلْبُ مِنْ جَوَاهُ يَذُوبُ *** حِينَ قَالَ الْوُشَاةُ: هِنْدٌ غَضُوبُ. نوع خبر (كرب):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جملة فعلية"
+      },
+      {
+        "question": "الصورة التي يجوز أن يتقدم فيها خبر كاد وأخواتها، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كاد ينقضي الوقت"
+      },
+      {
+        "question": "ليت فناؤها واسعٌ الحديقةَ. حكم تقديم خبر (ليت) في الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ممتنع"
+      },
+      {
+        "question": "اعلمْ أن النصر مع الصبر. نوع خبر (أنّ) في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محذوف"
+      },
+      {
+        "question": "إن في الصدقة لبركة. حكم تقديم خبر (إن) على اسمها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "واجب"
+      },
+      {
+        "question": "إن لمحمداً في المسجد. يصح دخول لام الابتداء على اسم إنّ في الجملة السابقة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "لعل الفرج قريبٌ. اشتملت الجملة على حرف يفيد التمني.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "شرعت الدولة قوانين لحفظ المال العام. اشتملت الجملة على فعل يفيد الشروع.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "(حرى المسافر أن يعود). يجب اقتران خبر (حرى) بأن.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز أن يتعدد خبر كان.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
