@@ -533,5 +533,186 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "تدريبات نحو الثالث مطور شامل المنهج",
+    "studentName": "محمد عبد السلام علي قابيل",
+    "deviceId": "DEV-3IFHAB0V6-moftjrkz",
+    "submissionDate": "2026-04-26T13:43:30.213Z",
+    "mcqScore": {
+      "correct": 16,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كل ما يأتي يعرب بعلامات فرعية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمع التكسير"
+      },
+      {
+        "question": "الاسم الذي علامة نصبه الكسرة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جمع المؤنث السالم"
+      },
+      {
+        "question": "علامات إعراب الأفعال الخمسة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ترفع بثبوت النون وتنصب وتجزم بحذفها"
+      },
+      {
+        "question": "الآية التي لا تشتمل على اسم من الأسماء الستة هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{وَجَاؤُواْ أَبَاهُمْ عِشَاء يَبْكُونَ}",
+        "correctAnswer": "{فَلَنْ أَبْرَحَ الأَرْضَ حَتَّىَ يَأْذَنَ لِي أَبِي}"
+      },
+      {
+        "question": "الجملة الصحيحة مما يلي هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كان أبو بكر الصديق ذا خلق نبيل"
+      },
+      {
+        "question": "\n         طالب العلم محبوب. عند تثنية كلمة (طالب) تكون الجملة الصحيحة هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طالبا العلم محبوبان"
+      },
+      {
+        "question": "كل الجمل التالية يصح تثنيتها عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جاد الحق"
+      },
+      {
+        "question": "الآية التي تشتمل على ملحق بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{كِلْتَا الْجَنَّتَيْنِ آتَتْ أُكُلَهَا}",
+        "correctAnswer": "{قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ}"
+      },
+      {
+        "question": "\n         الاسم الذي لا يصح جمعه جمع مذكر سالم مما يلي هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جريح"
+      },
+      {
+        "question": "\n         كل الكلمات التالية ملحقة بجمع المذكر السالم عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مؤمنون"
+      },
+      {
+        "question": "قال تعالى: {فَرَجَعَ مُوسَى إِلَى قَوْمِهِ غَضْبَانَ أَسِفاً}. كلمة (غضبان) ممنوعة من الصرف، والعلة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوصفية وزيادة الألف والنون"
+      },
+      {
+        "question": "الآية التي اشتملت على اسم ممنوع من الصرف هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "{وَإِذَا حُيِّيْتُم بِتَحِيَّةٍ فَحَيُّواْ بِأَحْسَن مِنْهَا}"
+      },
+      {
+        "question": "كل الأسماء التالية ممنوعة من الصرف عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أتقياء",
+        "correctAnswer": "سماء"
+      },
+      {
+        "question": "مررت بمساجد الكويت الكبيرة. إعراب كلمة (مساجد):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم مجرور وعلامة جره الكسرة الظاهرة"
+      },
+      {
+        "question": "رأيت شجرات كبيرة في أماكن كثيرة. الضبط الصحيح لهذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رأيت شجراتٍ كبيرةً في أماكنَ كثيرةٍ"
+      },
+      {
+        "question": "الألف علامة للنصب في الأسماء الستة، وعلامة للرفع في المثنى.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَأَمَّا الْغُلَامُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. اشتملت الآية على اسم من الأسماء الستة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>إِنَّ الْمُتَّقِينَ فِي ظِلَالٍ وَعُيُونٍ (41) وَفَوَاكِهَ مِمَّا يَشْتَهُونَ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. اشتملت الآيات السابقة على اسم ممنوع من الصرف.&nbsp;",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "الرفع والنصب مشترك بين الأسماء والأفعال.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>كَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. إعراب كلمة (عليين) : اسم مجرور وعلامة جره الياء لأنه جمع مذكر سالم.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
