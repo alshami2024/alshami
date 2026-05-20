@@ -1,0 +1,62 @@
+[
+  {
+    "examTitle": "تجريبي",
+    "studentName": "جمال",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-05-20T17:25:25.639Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 8
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو تعريف المنطق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "ب. دراسة التفكير الصحيح والاستنتاج"
+      },
+      {
+        "question": "ما هو الهدف الرئيسي من دراسة المنطق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ب. تعزيز التفكير النقدي والتحليلي"
+      },
+      {
+        "question": "من هو الفيلسوف المعروف بكتبه عن المنطق؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أ. أفلاطون",
+        "correctAnswer": "ب. أرسطو"
+      },
+      {
+        "question": "ما هي أنواع الاستدلال في المنطق؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ب. الاستدلال اللفظي فقط",
+        "correctAnswer": "أ. الاستدلال الاستنتاجي والاستقرائي"
+      },
+      {
+        "question": "ما هو أحد الأدوات الأساسية في المنطق؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أ. الجداول الزمنية",
+        "correctAnswer": "ب. الجداول المنطقية"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
