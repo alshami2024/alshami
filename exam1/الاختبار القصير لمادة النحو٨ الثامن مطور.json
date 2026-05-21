@@ -177,5 +177,183 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "الاختبار القصير لمادة النحو الثامن مطور",
+    "studentName": "عبدالله فيصل فالح",
+    "deviceId": "DEV-GTOGO4S1Q-mogj8m2w",
+    "submissionDate": "2026-05-21T20:59:00.726Z",
+    "mcqScore": {
+      "correct": 38,
+      "total": 40
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الآية التي اشتملت على فاعل مجرور بحرف جر زائد هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "{وَكَفَى بِاللَّهِ شَهِيداً}"
+      },
+      {
+        "question": "\n         الجملة التي تشتمل على مفعول به (مصدر مؤول). هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يريد المعلم أن تتفوقوا"
+      },
+      {
+        "question": "قال تعالى: {وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَهُمْ لَيَقُولُنَّ الله}. حكم حذف الفعل العامل في لفظ الجلالة (الله) :",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جائز"
+      },
+      {
+        "question": "المسلمون يعبدون الله وحده. نوع الفاعل في هذه الجملة: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ضمير بارز"
+      },
+      {
+        "question": "\n         \n         الجملة الصحيحة مما يلي، هي:  ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "قدم العلماء للبشرية معروفاً كبيراً",
+        "correctAnswer": "كل ما سبق"
+      },
+      {
+        "question": "<span style=\"background-color: rgba(0, 0, 0, 0.01);\">قال تعالى: {إِذَا السَّمَاء انشَقَّتْ} . حكم حذف العامل الذي رفع الفاعل في الآية:</span>",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "واجب"
+      },
+      {
+        "question": "\n         قال تعالى: {إِذَا زُلْزِلَتِ الْأَرْضُ زِلْزَالَهَا}. إعراب كلمة (الأرض) في الآية: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "نائب فاعل مرفوع وعلامة رفعه الضمة"
+      },
+      {
+        "question": "تفوقت عائشة في دراستها. حكم تأنيث الفعل في الجملة السابقة: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "واجب"
+      },
+      {
+        "question": "\n         قال تعالى: {وَأَنَّهُ لَمَّا قَامَ عَبْدُ اللَّهِ يَدْعُوهُ كَادُوا يَكُونُونَ عَلَيْهِ لِبَداً}. نوع الفعل (قام): ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لازم"
+      },
+      {
+        "question": "\n         قال تعالى: {وَنُفِخَ فِي الصُّورِ ذَلِكَ يَوْمُ الْوَعِيدِ} . صورة نائب الفاعل في هذه الآية: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جار ومجرور"
+      },
+      {
+        "question": "\n         قال تعالى: {قَالُوا وَجَدْنَا آبَاءنَا لَهَا عَابِدِينَ}. الفعل (وجدنا) متعد إلى: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مفعولين"
+      },
+      {
+        "question": "\n         الجملة التي اشتملت على فعل ينصب مفعولين ليس أصلهما المبتدأ والخبر، هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "سأل المؤمن ربه المغفرة"
+      },
+      {
+        "question": "ما رسب في مادة النحو من طالب. كلمة (طالب) مجرورة لفظاً مرفوعة محلاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز اتصال الفعل بتاء التأنيث في قولنا: ما جاء إلا فاطمة.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         الفعل الذي ينصب ثلاثة مفاعيل هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أنبأ"
+      },
+      {
+        "question": "\n         يجب حذف العامل الذي رفع الفاعل في قوله تعالى: {إِذَا السماء انفطرت}. ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "قال تعالى: {إِيَّاكَ نَعْبُدُ وإِيَّاكَ نَسْتَعِينُ}. يجب تقديم المفعول به على الفعل في الآية.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "&nbsp;يجوز أن نقول: نجحوا الطلاب. على لغة من لغات العرب.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "أكرم يحيى الفتى. يجوز تقديم المفعول به في هذه الصورة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قال تعالى عن يعقوب عليه السلام: {وَأَخَافُ أَن يَأْكُلَهُ الذِّئْبُ}. صورة المفعول به للفعل (أخاف) مصدر مؤول.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
