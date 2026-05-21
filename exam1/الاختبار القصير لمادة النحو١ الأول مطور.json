@@ -179,5 +179,182 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار القصير لمادة النحو الأول مطور",
+    "studentName": "جلال زاهر صمصام",
+    "deviceId": "DEV-Y7UV1U7MD-mpg2wxpr",
+    "submissionDate": "2026-05-21T22:45:23.579Z",
+    "mcqScore": {
+      "correct": 40,
+      "total": 40
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كل لفظ يدل على حصول حدث في زمن خاص هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعل"
+      },
+      {
+        "question": "(لتحافظ على نظافة مدينتك). الفعل (تحافظ) :",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعل مضارع مجزوم"
+      },
+      {
+        "question": "كأنّ خالداً أسدٌ. اشتملت الجملة على حرف ناسخ يفيد التشبيه.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>لَا أُقْسِمُ بِهَذَا الْبَلَدِ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. اشتملت الآية الكريمة على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعل مضارع"
+      },
+      {
+        "question": "(زار زيد حديقة المدينة). المفعول به في هذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حديقة"
+      },
+      {
+        "question": "تعمل كان وأخواتها في الجملة الاسمية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ترفع المبتدأ ويسمى اسمها وتنصب الخبر ويسمى خبرها"
+      },
+      {
+        "question": "(يعبد المؤمن ربه كي ينال رضاه) . الفعل (ينال):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعل مضارع منصوب"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل مضارع مرفوع هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "البنت تقطف الوردة"
+      },
+      {
+        "question": "قطف الفلاح الثمر ولمّا ينضج. كلمة (ينضج) فعل مضارع منصوب.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تناولت طعام العشاء. كلمة (العشاء) مفعول به منصوب",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "(المؤمن القوي خير وأحب إلى الله من المؤمن الضعيف).&nbsp; نوع هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جملة اسمية"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَأَصْبَحَ فُؤَادُ أُمِّ مُوسَى فَارِغاً<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. خبر الفعل الناسخ (أصبح) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فارغاً"
+      },
+      {
+        "question": "(اعلم أن الاجتهاد طريق النجاح) . الحركة الصحيحة لكلمة (طريق) هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الضمة"
+      },
+      {
+        "question": "إن الله على كل شيء قدير. كلمة (قدير) خبر الحرف الناسخ.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "كل ما يأتي أفعال ناسخة، عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ليت"
+      },
+      {
+        "question": "(فاز المتسابق بالجائزة). إعراب كلمة (المتسابق) :",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فاعل مرفوع وعلامة رفعه الضمة الظاهرة"
+      },
+      {
+        "question": "كل الجمل التالية مفيدة، عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالب الذي فهم درس النحو بصورة جيدة"
+      },
+      {
+        "question": "كل الأدوات التالية تجزم الفعل المضارع عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لن"
+      },
+      {
+        "question": "أصبح الهواء عليلٌ. الجملة مضبوطة بالتشكيل الصحيح.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "(رميت السهم عن القوس) . إعراب كلمة (القوس):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مجرور وعلامة جره الكسرة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
