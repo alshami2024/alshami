@@ -353,5 +353,182 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار القصير لمادة النحو الخامس مطور",
+    "studentName": "سعد عبدربه حسن التعمري",
+    "deviceId": "DEV-8EA3UX6BC-mnoaeztk",
+    "submissionDate": "2026-05-21T20:45:56.132Z",
+    "mcqScore": {
+      "correct": 40,
+      "total": 40
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يجب اقتران خبر أفعال الرجاء كلها بـ (أن).&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         إن لمحمداً في المسجد. يصح دخول لام الابتداء على اسم إنّ في الجملة السابقة.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         الجملة التي خبر الفعل الناسخ فيها محذوف، هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ليس الكتاب في الحقيبة"
+      },
+      {
+        "question": "أصبحت الحديقة أشجارها مثمرة. نوع الخبر للفعل (أصبح) في الجملة السابقة: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جملة اسمية"
+      },
+      {
+        "question": "الصورة التي يجوز أن يتقدم فيها خبر كاد وأخواتها، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كاد ينقضي الوقت"
+      },
+      {
+        "question": "الفعل الناسخ الذي يعمل بشرط أن تتقدمه (ما) المصدرية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ما دام"
+      },
+      {
+        "question": "ساجداً بات المتهجدُ. حكم تقديم الخبر في الجملة الماضية: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جائز"
+      },
+      {
+        "question": "&nbsp;شرع البناء يكتمل. حكم اقتران خبر (شرع) بـ (أن): ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ممتنع"
+      },
+      {
+        "question": "\n         لعل الفرج قريبٌ. اشتملت الجملة على حرف يفيد التمني.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         شرعت الدولة قوانين لحفظ المال العام. اشتملت الجملة على فعل يفيد الشروع.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كَرَبَ الْقَلْبُ مِنْ جَوَاهُ يَذُوبُ *** حِينَ قَالَ الْوُشَاةُ: هِنْدٌ غَضُوبُ. نوع خبر (كرب):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جملة فعلية"
+      },
+      {
+        "question": "\n         كل الجمل التالية صحيحة عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "غزيراً ما زال المطر"
+      },
+      {
+        "question": "\n         الفعل الناسخ الذي يفيد النفي، هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ليس"
+      },
+      {
+        "question": "إن في الصدقة لبركة. حكم تقديم خبر (إن) على اسمها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "واجب"
+      },
+      {
+        "question": "\n         ليت قائماً زيدٌ. حكم تقديم خبر (ليت) في الجملة السابقة: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ممتنع"
+      },
+      {
+        "question": "ما ينصب المبتدأ ويسمى اسمه ويرفع الخبر ويسمى خبره مما يلي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "إن وأخواتها"
+      },
+      {
+        "question": "\n         كل الجمل التالية صحيحة عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اخلولق المريض يشفى"
+      },
+      {
+        "question": "اعلمْ أن النصر مع الصبر. نوع خبر (أنّ) في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "محذوف"
+      },
+      {
+        "question": "إنما الاجتهاد طريق النجاح. بطل عمل (إن) في الجملة السابقة.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "\n         الفعل (أوشك)، من أفعال: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المقاربة"
+      }
+    ],
+    "tabSwitchCount": 17
   }
 ]
