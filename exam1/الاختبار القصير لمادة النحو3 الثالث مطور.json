@@ -720,5 +720,182 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "الاختبار القصير لمادة النحو الثالث مطور",
+    "studentName": "محمد عبد السلام علي قابيل",
+    "deviceId": "DEV-UXPUBGVL6-mpfvud79",
+    "submissionDate": "2026-05-21T19:27:26.344Z",
+    "mcqScore": {
+      "correct": 40,
+      "total": 40
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n         قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>كَلَّا إِنَّ كِتَابَ الْأَبْرَارِ لَفِي عِلِّيِّينَ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. إعراب كلمة (عليين) : اسم مجرور وعلامة جره الياء لأنه جمع مذكر سالم.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كتاب النحو ممتع. عند تثنية كلمة (كتاب) تكون الجملة الصحيحة هي:  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كتابا النحو ممتعان"
+      },
+      {
+        "question": "\n         كل الجمل التالية يصح تثنيتها عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "زحل"
+      },
+      {
+        "question": "الجملة الصحيحة مما يلي هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كان أبو بكر الصديق ذا خلق نبيل"
+      },
+      {
+        "question": "\n         \n         كل الكلمات التالية ملحقة بجمع المذكر السالم عدا:  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مصطفون"
+      },
+      {
+        "question": "\n         كل الأسماء التالية ممنوعة من الصرف عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ماء"
+      },
+      {
+        "question": "الآية التي لا تشتمل على اسم من الأسماء الستة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "{فَلَنْ أَبْرَحَ الأَرْضَ حَتَّىَ يَأْذَنَ لِي أَبِي}"
+      },
+      {
+        "question": "الآية التي اشتملت على اسم ممنوع من الصرف هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "{وَإِذَا حُيِّيْتُم بِتَحِيَّةٍ فَحَيُّواْ بِأَحْسَن مِنْهَا}"
+      },
+      {
+        "question": "\n         \n         الاسم الذي لا يصح جمعه جمع مذكر سالم مما يلي هو:  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حمزة"
+      },
+      {
+        "question": "\n         قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>إِنَّ الْمُتَّقِينَ فِي ظِلَالٍ وَعُيُونٍ (41) وَفَوَاكِهَ مِمَّا يَشْتَهُونَ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. اشتملت الآيات السابقة على اسم ممنوع من الصرف.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "الاسم الذي يعرب بعلامات فرعية في الرفع والنصب والجر، هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الأسماء الستة"
+      },
+      {
+        "question": "\n         الألف علامة للنصب في الأسماء الستة، والمثنى.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الآية التي تشتمل على ملحق بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "{قُلْنَا احْمِلْ فِيهَا مِن كُلٍّ زَوْجَيْنِ اثْنَيْنِ}"
+      },
+      {
+        "question": "مررت بمساجد الكويت الكبيرة. إعراب كلمة (مساجد):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مجرور وعلامة جره الكسرة الظاهرة"
+      },
+      {
+        "question": "\n         الاسم الذي علامة جره الفتحة، هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الممنوع من الصرف"
+      },
+      {
+        "question": "قال تعالى: {فَرَجَعَ مُوسَى إِلَى قَوْمِهِ غَضْبَانَ أَسِفاً}. كلمة (غضبان) ممنوعة من الصرف، والعلة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الوصفية وزيادة الألف والنون"
+      },
+      {
+        "question": "الواو علامة فرعية للرفع فيما يلي عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المثنى"
+      },
+      {
+        "question": "\n         الرفع والنصب مشترك بين الأسماء والأفعال.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "\n         قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَأَمَّا الْغُلَامُ فَكَانَ أَبَوَاهُ مُؤْمِنَيْنِ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. اشتملت الآية على اسم من الأسماء الستة.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         عمر بن الخطاب رضي الله عنه ثاني الخلفاء الراشدين. الاسم الممنوع من الصرف في هذه الجملة هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "عمر"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
