@@ -2331,5 +2331,184 @@
       }
     ],
     "tabSwitchCount": 21
+  },
+  {
+    "examTitle": "الاختبار القصير لمادة النحو الثاني مطور",
+    "studentName": "أحمد عمر العطار",
+    "deviceId": "DEV-FN40GVRWJ-mpgua624",
+    "submissionDate": "2026-05-22T11:31:30.409Z",
+    "mcqScore": {
+      "correct": 36,
+      "total": 40
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "\n         الجملة التي فيها اسم يعرب بحركة مقدرة منع من ظهورها التعذر هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فازت سلوى بمسابقة حفظ القرآن"
+      },
+      {
+        "question": "كل الجمل التالية مفيدة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الكتاب الذي اشتريته من المكتبة بسعر غالٍ"
+      },
+      {
+        "question": "\n         فاز الطالب بالجائزة.&nbsp; (الطالب)&nbsp; اسم علامته الإسناد.&nbsp; ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n         كل الجمل التالية صحيحة عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ما حضر الجلسة من محامي"
+      },
+      {
+        "question": "\n         ما دل على معنى في نفسه واقترن بزمن هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الفعل"
+      },
+      {
+        "question": "\n         حروف العطف: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مشتركة بين الأسماء والأفعال"
+      },
+      {
+        "question": "إذا قالت حذامِ فصدقوها ... فإن القول ما قالت حذامِ. كلمة (حذام):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مبني"
+      },
+      {
+        "question": "\n         \n         قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>وَالْوَالِدَاتُ يُرْضِعْنَ أَوْلاَدَهُنَّ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. الفعل (يرضعن) مضارع مبني.&nbsp;\n            ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "\n         كل الأسماء التالية منقوصة عدا: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "رأْي"
+      },
+      {
+        "question": "الحروف كلها مبنية.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "الكلمات التالية مبنية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "سيارة"
+      },
+      {
+        "question": "\n         أكرمت الداعيَ إلى الخير. الداعي اسم منقوص يعرب بحركة مقدرة.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         \n         تاء التأنيث الساكنة علامة مختصة بالفعل الماضي.&nbsp;  ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "\n         الاسم المعرب الذي يعرب بحركة مقدرة منع من ظهورها الثقل هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المنقوص"
+      },
+      {
+        "question": "\n         الجر علامة: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مختصة بالأسماء"
+      },
+      {
+        "question": "\n         الجملة التي تشتمل على علامة مختصة بالفعل المضارع هي: ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يطوف الحجاج حول الكعبة سبعة أشواط",
+        "correctAnswer": "لا تصاحب رفقاء السوء"
+      },
+      {
+        "question": "أنا الذي نظر الأعمى إلى أدبي ... وأسمَعَتْ كلماتي من به صمم. حكم حركة الياء في كلمة (كلماتي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جواز الفتح والتسكين"
+      },
+      {
+        "question": "\n         الجملة التي تشتمل على فعل يعرب بحركة مقدرة هي: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أطع الله تعالى حتى يرضى عنك"
+      },
+      {
+        "question": "\n         \n         الجملة التي اشتملت على كلمة تعرب بحركة مقدرة منع من ظهورها اشتغال المحل بحركة المناسبة، هي:  ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لا ينطق فمي إلا بالخير"
+      },
+      {
+        "question": "الفعل الذي يبنى إذا اتصلت به نون التوكيد أو نون النسوة فقط هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الفعل المضارع"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
