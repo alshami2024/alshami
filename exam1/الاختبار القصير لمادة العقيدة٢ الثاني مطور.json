@@ -1782,5 +1782,182 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "الاختبار القصير لمادة العقيدة - الثاني مطور",
+    "studentName": "دانييل هيسم الحلبي",
+    "deviceId": "DEV-RHW6G6ER1-mpj8d42o",
+    "submissionDate": "2026-05-24T03:41:14.874Z",
+    "mcqScore": {
+      "correct": 40,
+      "total": 40
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "نواقض الإيمان، هي التي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تزيل الإيمان بالكلية"
+      },
+      {
+        "question": "قتال المسلم لأخيه صورة من صور:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الكفر الأصغر العملي"
+      },
+      {
+        "question": "اعتقاد ما حرمه الله تعالى حلالاً، وما أحله حراماً من الأحكام القطعية ردة عن الإسلام.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "إظهار العبادة لقصد رؤية الناس لها فيحمدوا صاحبها. هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الرياء"
+      },
+      {
+        "question": "النفاق الأصغر يخرج صاحبه من الملة ويخلده في النار.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "حكم: الإخبار عن أماكن سقوط المطر ووقته والرياح وسرعتها بناء على العلم والدراسة.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ليس من التنجيم. "
+      },
+      {
+        "question": "حكم ادعاء علم الغيب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كفر أكبر"
+      },
+      {
+        "question": "(عزائم ورقى شركية وعقد شيطانية تؤثر في الأبدان والعقول والقلوب فتُمرِض أو تقتل). هذا المصطلح يعرف به:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "السحر"
+      },
+      {
+        "question": "ما يفرق به بين المرء وزوجه من السحر يسمى.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "سحر الصرف"
+      },
+      {
+        "question": "إذا قال المسلم: مُطرنا في نوء كذا - ويقصد بيان الوقت أو الموسم- فحكمه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لا بأس به"
+      },
+      {
+        "question": "حكم من يسأل المنجم ولم يصدقه.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لا تقبل له صلاة أربعين ليلة"
+      },
+      {
+        "question": "أول من جلب الأصنام إلى مكة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "عمرو بن لحي"
+      },
+      {
+        "question": "قال ابن مسعود رضي الله عنه: (اللهم زدنا إيماناً ويقيناً وفقهاً). في هذا النص دليل على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "زيادة الإيمان ونقصه"
+      },
+      {
+        "question": "الكفر بعد الإسلام طوعاً. مصطلح يطلق على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الردة"
+      },
+      {
+        "question": "يعتقد أهل السنة أن أهل الإيمان لا يتفاضلون في الإيمان وأنهم على مستوى واحد فيه.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "التـوَلَة: هي ما يفرق أو يجمع بين المرء وزوجه.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "الذي يظهر الإسلام ويبطن الكفر يعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "منافقاً النفاق الأكبر"
+      },
+      {
+        "question": "إذا قتل المرتد بحكم الردة فلا يغسل ولا يكفن ولا يصلى عليه ولا يدفن في مقابر المسلمين.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      },
+      {
+        "question": "حكم حل السحر بمثله.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "محرم"
+      },
+      {
+        "question": "كفر إبليس، تحت أي صورة من صور وأنواع الكفر يندرج؟&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كفر الاستكبار"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
