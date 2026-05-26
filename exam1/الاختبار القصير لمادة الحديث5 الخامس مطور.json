@@ -892,5 +892,182 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار القصير لمادة الحديث 5 - الخامس مطور",
+    "studentName": "علي حسن الناصر",
+    "deviceId": "DEV-FG3X8JY1W-mpmk3jg4",
+    "submissionDate": "2026-05-26T11:33:02.082Z",
+    "mcqScore": {
+      "correct": 40,
+      "total": 40
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "قوله صلى الله عليه وسلم في الحديث: (فاصنع ما شئت).&nbsp; أمر بمعنى الخبر. على تفسير .....&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أبي عبيد القاسم بن سلام"
+      },
+      {
+        "question": "قال النبي صلى الله عليه وسلم: (الطهور شطر الإيمان) الصحيح الذي عليه الأكثرون واختاره المؤلف في تفسير (الطهور) في هذا الحديث، هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطهارة من الحدث"
+      },
+      {
+        "question": "&nbsp;إلام ترمز عبارة «رُفعت الأقلام وجفت الصحف» في الحديث النبوي؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "إلى تقدم كتابة المقادير كلها والفراغ منها من أمد بعيد."
+      },
+      {
+        "question": "قال تعالى: {اتَّقُواْ اللَّهَ حَقَّ تُقَاتِهِ} أي: (أن يطاع الله فلا يعصى، ويُذكر فلا يُنسى، ويشكر فلا يُكفر).&nbsp;<div>تعريف التقوى السابق، قول:</div>",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "عبدالله بن مسعود"
+      },
+      {
+        "question": "ما الدلالة العقدية لقوله تعالى في الحديث القدسي: «لو أن أولكم وآخركم... كانوا على أتقى قلب رجل واحد... ما زاد ذلك في ملكي شيئا»؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أن الله غني بذاته، وله الكمال المطلق، فلا تنفعه طاعة ولا تضره معصية."
+      },
+      {
+        "question": "أكمل الفراغ التالي:<div>الحديث نص في ............ الإحسان.&nbsp;</div>",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "وجوب"
+      },
+      {
+        "question": "قال الله في الحديث القدسي: (يا عبادي إني حرمت الظلم على نفسي وجعلته بينكم محرماً فلا تظالموا). المراد بظلم العباد هنا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ظلم العباد بعضهم لبعض"
+      },
+      {
+        "question": "في حديث الأعرابي الذي سأل: (أرأيت إذا صليت المكتوبات ... أأدخل الجنة؟)، لماذا لم يُذكر اجتناب المحرمات صراحة في سؤاله؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لأن السائل إنما سأله عن الأعمال (الأفعال) التي يدخل بها الجنة."
+      },
+      {
+        "question": "لماذا وُصف الصبر بأنه (ضياء) ولم يوصف بأنه (نور)؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لأن الصبر يحتاج إلى مجاهدة وفيه نوع حرارة وإحراق كضياء الشمس."
+      },
+      {
+        "question": "في تفسير قوله تعالى: ﴿إِلَّا اللَّمَمَ﴾، ما هو المعنى الذي يجمع أقوال السلف كما رجحه ابن رجب؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اللمم يشمل مقدمات الفواحش والإلمام بالكبيرة مرة واحدة ثم التوبة منها."
+      },
+      {
+        "question": "قال له النبي صلى الله عليه وسلم: (يا غلام إني أعلمك كلمات: احفظ الله يحفظك، احفظ الله تجده تجاهك...) الحديث. فمن هذا الغلام؟&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "عبدالله بن عباس"
+      },
+      {
+        "question": "الحياء الناشئ عن معرفة الله تعالى ومعرفة عظمته وقربه من عباده واطلاعه عليهم. هو...&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حياء مكتسب"
+      },
+      {
+        "question": "أكمل الفراغ التالي: الصحيح الذي اختاره المؤلف (ابن رجب) وعليه الجمهور أن الكبائر....&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لا تكفر بدون التوبة"
+      },
+      {
+        "question": "حكم التوبة من الذنوب:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فرض"
+      },
+      {
+        "question": "\n         حكم قتل البهائم صبراً:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "محرم"
+      },
+      {
+        "question": "اسم الصحابي الجليل (أبي ذر) رضي الله عنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جندب بن جنادة"
+      },
+      {
+        "question": "أعظم ما يراعى استقامته من الجوارح بعد استقامة القلب هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اللسان"
+      },
+      {
+        "question": ". ما هو أشرف نوعي حفظ الله لعبده؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حفظه في دينه وإيمانه من الشبهات والشهوات"
+      },
+      {
+        "question": "كيف فسر أبو بكر الصديق رضي الله عنه الاستقامة في قوله تعالى: ﴿ثُمَّ اسْتَقَامُوا﴾؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لم يلتفتوا إلى غيره ولم يشركوا بالله شيئاً"
+      },
+      {
+        "question": "ما هو أعظم أنواع ظلم النفس كما نص عليه القرآن وحدده النص؟\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الشرك بالله"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
