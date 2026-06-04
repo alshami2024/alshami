@@ -15985,5 +15985,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة التفسير الثامن مطور",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-06-04T03:02:42.194Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "قال تعالى: {وَآيَةٌ لَّهُمْ الَّيْلُ نَسْلَخُ مِنْهُ النَّهَارَ فَإِذَا هُم مُّظْلِمُونَ}. معنى كلمة (نسلخ):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "نزيل"
+      },
+      {
+        "question": "قال تعالى: {وَلَوْ نَشَاء لَطَمَسْنَا عَلَى أَعْيُنِهِمْ فَاسْتَبَقُوا الصِّرَاطَ فَأَنَّى يُبْصِرُونَ}. المراد بكلمة (الصراط) في هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطريق الذي يسيرون عليه في الدنيا"
+      },
+      {
+        "question": "سورة الصافات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مكية"
+      },
+      {
+        "question": "قال تعالى: {فَاسْتَفْتِهِمْ أَهُمْ أَشَدُّ خَلْقاً أَم مَّنْ خَلَقْنَا إِنَّا خَلَقْنَاهُم مِّن طِينٍ لَّازِبٍ} . تفسير كلمة (لازب):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يلصق باليد"
+      },
+      {
+        "question": "قال تعالى: {فَإِنَّمَا هِيَ زَجْرَةٌ وَاحِدَةٌ فَإِذَا هُمْ يَنظُرُونَ}. المراد بالزجرة في هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صيحة إسرافيل عليه السلام للبعث "
+      },
+      {
+        "question": "قال تعالى:&nbsp;{مَا لَكُمْ لَا تَنَاصَرُونَ}. نوع الاستفهام في هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التقريع والتوبيخ"
+      },
+      {
+        "question": "قال تعالى: {وَفَدَيْنَاهُ بِذِبْحٍ عَظِيمٍ}. الضمير في هذه الآية عائد على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "إسماعيل عليه السلام"
+      },
+      {
+        "question": "قال تعالى: {وَهَلْ أَتَاكَ نَبَأُ الْخَصْمِ إِذْ تَسَوَّرُوا الْمِحْرَابَ}. نوع الاستفهام في الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "للتعجب"
+      },
+      {
+        "question": "قال تعالى: {رُدُّوهَا عَلَيَّ فَطَفِقَ مَسْحاً بِالسُّوقِ وَالْأَعْنَاقِ}. الصحيح في تفسير هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يمسح بيده بسوق تلك الخيل وأعناقها حتى أكمل استعراضها"
+      },
+      {
+        "question": "قال تعالى: {قَالَ فَاخْرُجْ مِنْهَا فَإِنَّكَ رَجِيمٌ}. تفسير كلمة (رجيم) في الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مطرود مبعد من رحمة الله"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
