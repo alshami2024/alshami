@@ -16276,5 +16276,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثاني مطور",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-06-05T01:49:32.236Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "(قام الرجل من مجلسه يصافح الضيوف ويقدم لهم الشراب، ولم ينصرفوا حتى شكروه). استخرج من هذه العبارة حرفاً مختصاً بالاسم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "من"
+      },
+      {
+        "question": "(أكرمت هؤلاء الطلاب). كلمة (هؤلاء):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مبني"
+      },
+      {
+        "question": "كل الأفعال التالية مبنية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يفهم"
+      },
+      {
+        "question": "الأصل في الأسماء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الإعراب"
+      },
+      {
+        "question": "الحروف من حيث الإعراب والبناء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كلها مبنية"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل يعرب بحركة مقدرة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالب المجتهد يسعى لنيل أعلى الدرجات"
+      },
+      {
+        "question": "كلمة (الفتى):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مقصور"
+      },
+      {
+        "question": "كلمة (أخي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مضاف إلى ياء النفس"
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم يعرب بحركة مقدرة منع من ظهورها الثقل هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حكم القاضي بالعدل"
+      },
+      {
+        "question": "(أحببت الداعيَ إلى الخير). كلمة (الداعي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تعرب بحركة ظاهرة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
