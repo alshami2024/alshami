@@ -16470,5 +16470,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الخامس مطور",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-06-05T02:07:42.889Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كل النواسخ التالية أفعالاً عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لعل"
+      },
+      {
+        "question": "تعمل كاد وأخواتها عمل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كان وأخواتها"
+      },
+      {
+        "question": "(وكان الله غفوراً رحيماً). نوع خبر كان في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مفرد"
+      },
+      {
+        "question": "ألا ليت الشباب يعود يوماً ... فأخبر بما فعل المشيب. الحرف (ليت) يفيد معنى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التمني"
+      },
+      {
+        "question": "(أوشك الفصل الدراسي أن ينقضي). الفعل (أوشك) من أفعال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المقاربة"
+      },
+      {
+        "question": "عسى الكرب الذي أمسيت فيه... يكون وراءه فرج قريب. خبر الفعل (عسى) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يكون"
+      },
+      {
+        "question": "(حرى الغائب أن يعود). حكم اقتران خبر (حرى) بـ (أن):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "واجب"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل من أفعال الشروع هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أخذ البناء يكتمل"
+      },
+      {
+        "question": "الأفعال التي يمتنع اقتران خبرها بـ (أن) هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أفعال الشروع"
+      },
+      {
+        "question": "(إنما السيل اجتماع النقط). حكم (إنّ) في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مكفوفة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
