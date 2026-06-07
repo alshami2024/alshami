@@ -292,5 +292,102 @@
       }
     ],
     "tabSwitchCount": 5
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثالث مطور",
+    "studentName": "علاء عامر فقوسه",
+    "deviceId": "DEV-W91407N2J-mn7a08z5",
+    "submissionDate": "2026-06-07T15:20:54.241Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "(احتفل ......... العالم بعيد الأضحى المبارك). المكمل الصحيح للفراغ السابق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مسلمو"
+      },
+      {
+        "question": "(أسعدني كرمُ.........). المكمل الصحيح لهذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أخيك"
+      },
+      {
+        "question": "قال تعالى: (وكان أبوهما صالحاً). كلمة (أبوهما):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "من الأسماء الستة"
+      },
+      {
+        "question": "الجملة التي تشتمل على ملحق بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالبان ناجحان كلاهما"
+      },
+      {
+        "question": "كل الكلمات التالية يصح تثنيتها عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جاد المولى"
+      },
+      {
+        "question": "(زرت ....... الكويت السياحية). أكمل الفراغ السابق بكلمة ممنوعة من الصرف:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "معالم"
+      },
+      {
+        "question": "الاسم المعرب الذي جميع علاماته فرعية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جمع المذكر السالم"
+      },
+      {
+        "question": "(ابن آوى). يجمع هذا الاسم جمع مؤنث سالم على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "بنات آوى"
+      },
+      {
+        "question": "الضمة في جمع المؤنث السالم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "علامة أصلية"
+      },
+      {
+        "question": "(أثنى الله تعالى في كتابه على ........ الألباب). أكمل الفراغ السابق بملحق بجمع المذكر السالم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أُوْلِي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
