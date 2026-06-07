@@ -293,5 +293,102 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الخامس مطور",
+    "studentName": "اشرف عبد العظيم اسماعيل اسماعيل",
+    "deviceId": "DEV-C1QSU3KIM-mq3x387z",
+    "submissionDate": "2026-06-07T15:08:47.818Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "(أوشك الفصل الدراسي أن ينقضي). الفعل (أوشك) من أفعال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المقاربة"
+      },
+      {
+        "question": "(إنما السيل اجتماع النقط). حكم (إنّ) في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مكفوفة"
+      },
+      {
+        "question": "(حرى الغائب أن يعود). حكم اقتران خبر (حرى) بـ (أن):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "واجب"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل من أفعال الشروع هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أخذ البناء يكتمل"
+      },
+      {
+        "question": "ألا ليت الشباب يعود يوماً ... فأخبر بما فعل المشيب. الحرف (ليت) يفيد معنى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التمني"
+      },
+      {
+        "question": "الأفعال التي يمتنع اقتران خبرها بـ (أن) هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أفعال الشروع"
+      },
+      {
+        "question": "كل النواسخ التالية أفعالاً عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "لعل"
+      },
+      {
+        "question": "(وكان الله غفوراً رحيماً). نوع خبر كان في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مفرد"
+      },
+      {
+        "question": "تعمل كاد وأخواتها عمل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كان وأخواتها"
+      },
+      {
+        "question": "عسى الكرب الذي أمسيت فيه... يكون وراءه فرج قريب. خبر الفعل (عسى) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يكون"
+      }
+    ],
+    "tabSwitchCount": 18
   }
 ]
