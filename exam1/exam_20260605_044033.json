@@ -194,5 +194,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الأول مطور",
+    "studentName": "يوسف كليب عبد الحميد",
+    "deviceId": "DEV-HD7KKRYUI-mpfqe1jk",
+    "submissionDate": "2026-06-07T19:00:00.645Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "(الله على كل شيء قدير). الخبر في هذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "قدير"
+      },
+      {
+        "question": "(الجوُ حارٌ). بعد دخول الفعل (أصبح) على الجملة يكون الاختيار الصحيح هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أصبح الجوُ حاراً"
+      },
+      {
+        "question": "(فهم الطالب كتاب النحو). المفعول به في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كتاب"
+      },
+      {
+        "question": "(يعود المهاجر ........ بلده). الحرف المناسب للفراغ في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "إلى"
+      },
+      {
+        "question": "ألا ليت الشباب يعود يوماً ... فأخبره بما فعل المشيب. الحرف (ليت) يفيد معنى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التمني"
+      },
+      {
+        "question": "(ألقى الخطيب خطبة مؤثرة). إعراب كلمة (الخطيب):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فاعل مرفوع وعلامة رفعه الضمة الظاهرة"
+      },
+      {
+        "question": "(الله نور السماوات والأرض). نوع الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جملة اسمية"
+      },
+      {
+        "question": "قال تعالى: {إِذَا جَاء نَصْرُ اللَّهِ وَالْفَتْحُ}. نوع الفعل الذي اشتملت عليه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعل ماض"
+      },
+      {
+        "question": "(حفظ المسلم كتاب الله تعالى). إعراب لفظ الجلالة (الله) في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مضاف إليه وعلامة جره الكسرة"
+      },
+      {
+        "question": "(....... المنتخب الوطني إلى نهائيات كأس العالم). المكمل الصحيح لهذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تأهل"
+      }
+    ],
+    "tabSwitchCount": 4
   }
 ]
