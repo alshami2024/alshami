@@ -96,5 +96,102 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثامن مطور",
+    "studentName": "Ebrahim aziz",
+    "deviceId": "DEV-VY2N5ZFGV-mpzkwacr",
+    "submissionDate": "2026-06-07T14:07:40.541Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "قال تعالى: {وَخُذْ بِيَدِكَ ضِغْثاً فَاضْرِب بِّهِ وَلَا تَحْنَثْ إِنَّا وَجَدْنَاهُ صَابِراً نِعْمَ الْعَبْدُ إِنَّهُ أَوَّابٌ}. استخرج من الآية فعلا متعدياً إلى مفعولين:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "وجد"
+      },
+      {
+        "question": "(نعمت المرأة أسماء). حكم اتصال الفعل بتاء التأنيث في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الجواز"
+      },
+      {
+        "question": "قال النبي صلى الله عليه وسلم: (معشر قريشٍ، ما ترون أني فاعلٌ بكم ؟ قالوا : خيرًا). حكم حذف الفعل العامل في كلمة (خيراً):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الجواز"
+      },
+      {
+        "question": "\n         (منحت إدارة المسابقة الفائز جائزة ثمينة). المفعول به الثاني في هذه الجملة هو: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جائزة"
+      },
+      {
+        "question": "(شاهد الوالد ابنه يفعل أمراً منكرا فلما واجهه بفعله احمرَّ وجهه ووعده بعدم العودة للخطأ). استخرج من الفقرة السابقة فعلاً لازماً.\n          ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "احمرَّ"
+      },
+      {
+        "question": "\n         إذا المرءُ لم يكفف عن الناس شرَّه... فليس له ما عاش منهم مصالح. حكم حذف الفعل العامل في كلمة (المرء): ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الوجوب"
+      },
+      {
+        "question": "(دُعِي .......... إلى حفل تكريم الفائزين). المكمل الصحيح للجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أخوك"
+      },
+      {
+        "question": "قال تعالى: {إِيَّاكَ نَعْبُدُ وإِيَّاكَ نَسْتَعِينُ}. حكم تقديم المفعول به على الفعل في هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الوجوب"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>فَأَقِمْ وَجْهَكَ لِلدِّينِ حَنِيفاً<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. صورة الفاعل للفعل (أقم):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ضمير مستتر"
+      },
+      {
+        "question": "قال تعالى: {فَإِذَا نُفِخَ فِي الصُّورِ نَفْخَةٌ وَاحِدَةٌ}. استخرج من الآية نائب الفاعل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "نفخة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
