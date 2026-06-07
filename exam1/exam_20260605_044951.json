@@ -392,5 +392,102 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثاني مطور",
+    "studentName": "شريف عبد المنعم محمد",
+    "deviceId": "DEV-PPM6PMKU9-mpguaamb",
+    "submissionDate": "2026-06-07T14:25:39.728Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الجملة التي اشتملت على فعل يعرب بحركة مقدرة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالب المجتهد يسعى لنيل أعلى الدرجات"
+      },
+      {
+        "question": "(قام الرجل من مجلسه يصافح الضيوف ويقدم لهم الشراب، ولم ينصرفوا حتى شكروه). استخرج من هذه العبارة حرفاً مختصاً بالاسم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "من"
+      },
+      {
+        "question": "الحروف من حيث الإعراب والبناء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كلها مبنية"
+      },
+      {
+        "question": "(أحببت الداعيَ إلى الخير). كلمة (الداعي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تعرب بحركة ظاهرة"
+      },
+      {
+        "question": "كل الأفعال التالية مبنية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يفهم"
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم يعرب بحركة مقدرة منع من ظهورها الثقل هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حكم القاضي بالعدل"
+      },
+      {
+        "question": "الأصل في الأسماء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الإعراب"
+      },
+      {
+        "question": "كلمة (أخي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مضاف إلى ياء النفس"
+      },
+      {
+        "question": "(أكرمت هؤلاء الطلاب). كلمة (هؤلاء):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مبني"
+      },
+      {
+        "question": "كلمة (الفتى):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مقصور"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
