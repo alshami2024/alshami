@@ -289,5 +289,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثالث مطور",
+    "studentName": "رضا امين يونس عبيد",
+    "deviceId": "DEV-186YWR53G-mn7xuvyp",
+    "submissionDate": "2026-06-07T20:06:18.229Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كل الكلمات التالية يصح تثنيتها عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جاد المولى"
+      },
+      {
+        "question": "الاسم المعرب الذي جميع علاماته فرعية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جمع المذكر السالم"
+      },
+      {
+        "question": "(احتفل ......... العالم بعيد الأضحى المبارك). المكمل الصحيح للفراغ السابق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مسلمو"
+      },
+      {
+        "question": "(أسعدني كرمُ.........). المكمل الصحيح لهذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أخيك"
+      },
+      {
+        "question": "(أثنى الله تعالى في كتابه على ........ الألباب). أكمل الفراغ السابق بملحق بجمع المذكر السالم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أُوْلِي"
+      },
+      {
+        "question": "الضمة في جمع المؤنث السالم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "علامة أصلية"
+      },
+      {
+        "question": "(ابن آوى). يجمع هذا الاسم جمع مؤنث سالم على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "بنات آوى"
+      },
+      {
+        "question": "(زرت ....... الكويت السياحية). أكمل الفراغ السابق بكلمة ممنوعة من الصرف:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "معالم"
+      },
+      {
+        "question": "الجملة التي تشتمل على ملحق بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالبان ناجحان كلاهما"
+      },
+      {
+        "question": "قال تعالى: (وكان أبوهما صالحاً). كلمة (أبوهما):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "من الأسماء الستة"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
