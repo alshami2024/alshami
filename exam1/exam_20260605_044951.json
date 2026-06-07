@@ -688,5 +688,103 @@
       }
     ],
     "tabSwitchCount": 9
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثاني مطور",
+    "studentName": "أحمد هانى محمد عبدالحكيم",
+    "deviceId": "DEV-ACHU89KPC-mog29155",
+    "submissionDate": "2026-06-07T17:07:43.895Z",
+    "mcqScore": {
+      "correct": 18,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الجملة التي اشتملت على فعل يعرب بحركة مقدرة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالب المجتهد يسعى لنيل أعلى الدرجات"
+      },
+      {
+        "question": "(أحببت الداعيَ إلى الخير). كلمة (الداعي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تعرب بحركة ظاهرة"
+      },
+      {
+        "question": "الحروف من حيث الإعراب والبناء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كلها مبنية"
+      },
+      {
+        "question": "الأصل في الأسماء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الإعراب"
+      },
+      {
+        "question": "كل الأفعال التالية مبنية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يفهم"
+      },
+      {
+        "question": "كلمة (الفتى):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مقصور"
+      },
+      {
+        "question": "(أكرمت هؤلاء الطلاب). كلمة (هؤلاء):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم معرب",
+        "correctAnswer": "اسم مبني"
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم يعرب بحركة مقدرة منع من ظهورها الثقل هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حكم القاضي بالعدل"
+      },
+      {
+        "question": "كلمة (أخي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مضاف إلى ياء النفس"
+      },
+      {
+        "question": "(قام الرجل من مجلسه يصافح الضيوف ويقدم لهم الشراب، ولم ينصرفوا حتى شكروه). استخرج من هذه العبارة حرفاً مختصاً بالاسم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "من"
+      }
+    ],
+    "tabSwitchCount": 8
   }
 ]
