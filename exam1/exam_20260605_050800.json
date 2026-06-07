@@ -95,5 +95,106 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الخامس مطور",
+    "studentName": "محمد انس احمد",
+    "deviceId": "DEV-CTEKB0OD7-mq3tl1l7",
+    "submissionDate": "2026-06-07T13:30:40.324Z",
+    "mcqScore": {
+      "correct": 12,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ألا ليت الشباب يعود يوماً ... فأخبر بما فعل المشيب. الحرف (ليت) يفيد معنى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التمني"
+      },
+      {
+        "question": "الأفعال التي يمتنع اقتران خبرها بـ (أن) هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أفعال الرجاء",
+        "correctAnswer": "أفعال الشروع"
+      },
+      {
+        "question": "(إنما السيل اجتماع النقط). حكم (إنّ) في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "عاملة",
+        "correctAnswer": "مكفوفة"
+      },
+      {
+        "question": "(وكان الله غفوراً رحيماً). نوع خبر كان في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مفرد"
+      },
+      {
+        "question": "عسى الكرب الذي أمسيت فيه... يكون وراءه فرج قريب. خبر الفعل (عسى) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يكون"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل من أفعال الشروع هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أخذ البناء يكتمل"
+      },
+      {
+        "question": "تعمل كاد وأخواتها عمل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "إن وأخواتها",
+        "correctAnswer": "كان وأخواتها"
+      },
+      {
+        "question": "كل النواسخ التالية أفعالاً عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كاد",
+        "correctAnswer": "لعل"
+      },
+      {
+        "question": "(حرى الغائب أن يعود). حكم اقتران خبر (حرى) بـ (أن):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "واجب"
+      },
+      {
+        "question": "(أوشك الفصل الدراسي أن ينقضي). الفعل (أوشك) من أفعال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المقاربة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
