@@ -1,0 +1,99 @@
+[
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثالث مطور",
+    "studentName": "احمد ياسر عادل محمد الفقي",
+    "deviceId": "DEV-LOSW6X96V-mpfklx7c",
+    "submissionDate": "2026-06-07T13:22:07.665Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "(أسعدني كرمُ.........). المكمل الصحيح لهذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أخيك"
+      },
+      {
+        "question": "(أثنى الله تعالى في كتابه على ........ الألباب). أكمل الفراغ السابق بملحق بجمع المذكر السالم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أُوْلِي"
+      },
+      {
+        "question": "(ابن آوى). يجمع هذا الاسم جمع مؤنث سالم على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "بنات آوى"
+      },
+      {
+        "question": "قال تعالى: (وكان أبوهما صالحاً). كلمة (أبوهما):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "من الأسماء الستة"
+      },
+      {
+        "question": "الضمة في جمع المؤنث السالم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "علامة أصلية"
+      },
+      {
+        "question": "الجملة التي تشتمل على ملحق بالمثنى هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالبان ناجحان كلاهما"
+      },
+      {
+        "question": "(زرت ....... الكويت السياحية). أكمل الفراغ السابق بكلمة ممنوعة من الصرف:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "معالم"
+      },
+      {
+        "question": "(احتفل ......... العالم بعيد الأضحى المبارك). المكمل الصحيح للفراغ السابق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مسلمو"
+      },
+      {
+        "question": "الاسم المعرب الذي جميع علاماته فرعية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جمع المذكر السالم"
+      },
+      {
+        "question": "كل الكلمات التالية يصح تثنيتها عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جاد المولى"
+      }
+    ],
+    "tabSwitchCount": 11
+  }
+]
