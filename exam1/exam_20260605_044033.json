@@ -582,5 +582,102 @@
       }
     ],
     "tabSwitchCount": 6
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الأول مطور",
+    "studentName": "عمر أحمد معروف",
+    "deviceId": "DEV-LLIDYH32B-mo898ddz",
+    "submissionDate": "2026-06-08T17:25:15.508Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "(الجوُ حارٌ). بعد دخول الفعل (أصبح) على الجملة يكون الاختيار الصحيح هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أصبح الجوُ حاراً"
+      },
+      {
+        "question": "(الله على كل شيء قدير). الخبر في هذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "قدير"
+      },
+      {
+        "question": "قال تعالى: {إِذَا جَاء نَصْرُ اللَّهِ وَالْفَتْحُ}. نوع الفعل الذي اشتملت عليه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعل ماض"
+      },
+      {
+        "question": "(الله نور السماوات والأرض). نوع الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جملة اسمية"
+      },
+      {
+        "question": "(....... المنتخب الوطني إلى نهائيات كأس العالم). المكمل الصحيح لهذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تأهل"
+      },
+      {
+        "question": "(فهم الطالب كتاب النحو). المفعول به في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كتاب"
+      },
+      {
+        "question": "ألا ليت الشباب يعود يوماً ... فأخبره بما فعل المشيب. الحرف (ليت) يفيد معنى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التمني"
+      },
+      {
+        "question": "(حفظ المسلم كتاب الله تعالى). إعراب لفظ الجلالة (الله) في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مضاف إليه وعلامة جره الكسرة"
+      },
+      {
+        "question": "(ألقى الخطيب خطبة مؤثرة). إعراب كلمة (الخطيب):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فاعل مرفوع وعلامة رفعه الضمة الظاهرة"
+      },
+      {
+        "question": "(يعود المهاجر ........ بلده). الحرف المناسب للفراغ في هذه الجملة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "إلى"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
