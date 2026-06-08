@@ -192,5 +192,102 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة العقيدة الثاني مطور",
+    "studentName": "مشاري سعيد المطيري",
+    "deviceId": "DEV-YRGLZ1GR6-mog0jdre",
+    "submissionDate": "2026-06-08T13:20:04.922Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "التشاؤم بمرئي أو مسموع أو معلوم. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطيرة"
+      },
+      {
+        "question": "إظهار الإسلام وإبطان الكفر. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كفر النفاق"
+      },
+      {
+        "question": "حكم زيارة القبور وشد الرحال إليها في الأعياد والمواسم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "زيارة بدعية"
+      },
+      {
+        "question": "حكم حل السحر بمثله:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "محرم"
+      },
+      {
+        "question": "حكم الرقية التي يعتقد المرقي أنها تؤثر بنفسها.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "شركية"
+      },
+      {
+        "question": "(كان بين نوح وآدم عليهما السلام ........ كلهم على شريعة من الحق فاختلفوا فبعث الله النبيين مبشرين ومنذرين). أكمل الفراغ السابق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "عشرة قرون"
+      },
+      {
+        "question": "عقيدة أهل السنة والجماعة في الإيمان، أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يزيد وينقص"
+      },
+      {
+        "question": "التقرب إلى الله تعالى بالعمل بما يرضيه. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التوسل"
+      },
+      {
+        "question": "بركة الأنبياء والرسل ثابتة في:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "الخوف من عدو أو من حيوان مفترس إذا وجدت أسبابه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مباح"
+      }
+    ],
+    "tabSwitchCount": 4
   }
 ]
