@@ -1273,5 +1273,103 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة النحو الثاني مطور",
+    "studentName": "محمود حامد العبدالرزاق",
+    "deviceId": "DEV-KINBPIVPU-mpfln74w",
+    "submissionDate": "2026-06-08T04:47:53.642Z",
+    "mcqScore": {
+      "correct": 18,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "(قام الرجل من مجلسه يصافح الضيوف ويقدم لهم الشراب، ولم ينصرفوا حتى شكروه). استخرج من هذه العبارة حرفاً مختصاً بالاسم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "من"
+      },
+      {
+        "question": "كلمة (الفتى):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مقصور"
+      },
+      {
+        "question": "(أكرمت هؤلاء الطلاب). كلمة (هؤلاء):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مبني"
+      },
+      {
+        "question": "(أحببت الداعيَ إلى الخير). كلمة (الداعي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تعرب بحركة ظاهرة"
+      },
+      {
+        "question": "كلمة (أخي):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم مضاف إلى ياء النفس"
+      },
+      {
+        "question": "كل الأفعال التالية مبنية عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يفهم"
+      },
+      {
+        "question": "الجملة التي اشتملت على اسم يعرب بحركة مقدرة منع من ظهورها الثقل هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حكم القاضي بالعدل"
+      },
+      {
+        "question": "الجملة التي اشتملت على فعل يعرب بحركة مقدرة هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تزداد الرطوبة في شهر أغسطس",
+        "correctAnswer": "الطالب المجتهد يسعى لنيل أعلى الدرجات"
+      },
+      {
+        "question": "الحروف من حيث الإعراب والبناء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كلها مبنية"
+      },
+      {
+        "question": "الأصل في الأسماء:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الإعراب"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
