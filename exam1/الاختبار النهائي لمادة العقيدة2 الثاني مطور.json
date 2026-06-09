@@ -1648,5 +1648,103 @@
       }
     ],
     "tabSwitchCount": 17
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة العقيدة الثاني مطور",
+    "studentName": "إسماعيل جونايد كالاندهاركاث",
+    "deviceId": "DEV-IDLV7KKA4-mpgvqewi",
+    "submissionDate": "2026-06-09T10:57:05.976Z",
+    "mcqScore": {
+      "correct": 18,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "حكم الرقية التي يعتقد المرقي أنها تؤثر بنفسها.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "شركية"
+      },
+      {
+        "question": "حكم زيارة القبور وشد الرحال إليها في الأعياد والمواسم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "زيارة بدعية"
+      },
+      {
+        "question": "عقيدة أهل السنة والجماعة في الإيمان، أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يزيد وينقص"
+      },
+      {
+        "question": "التشاؤم بمرئي أو مسموع أو معلوم. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطيرة"
+      },
+      {
+        "question": "الخوف من عدو أو من حيوان مفترس إذا وجدت أسبابه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مباح"
+      },
+      {
+        "question": "إظهار الإسلام وإبطان الكفر. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كفر النفاق"
+      },
+      {
+        "question": "التقرب إلى الله تعالى بالعمل بما يرضيه. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التوسل"
+      },
+      {
+        "question": "(كان بين نوح وآدم عليهما السلام ........ كلهم على شريعة من الحق فاختلفوا فبعث الله النبيين مبشرين ومنذرين). أكمل الفراغ السابق:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خمسة قرون",
+        "correctAnswer": "عشرة قرون"
+      },
+      {
+        "question": "بركة الأنبياء والرسل ثابتة في:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "حكم حل السحر بمثله:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "محرم"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
