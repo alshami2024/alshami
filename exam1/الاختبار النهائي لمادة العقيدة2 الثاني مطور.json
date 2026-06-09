@@ -1162,5 +1162,102 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة العقيدة الثاني مطور",
+    "studentName": "محمود حامد العبدالرزاق",
+    "deviceId": "DEV-KINBPIVPU-mpfln74w",
+    "submissionDate": "2026-06-09T04:32:18.021Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الخوف من عدو أو من حيوان مفترس إذا وجدت أسبابه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مباح"
+      },
+      {
+        "question": "التشاؤم بمرئي أو مسموع أو معلوم. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطيرة"
+      },
+      {
+        "question": "بركة الأنبياء والرسل ثابتة في:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "عقيدة أهل السنة والجماعة في الإيمان، أنه:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "يزيد وينقص"
+      },
+      {
+        "question": "إظهار الإسلام وإبطان الكفر. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كفر النفاق"
+      },
+      {
+        "question": "حكم حل السحر بمثله:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "محرم"
+      },
+      {
+        "question": "(كان بين نوح وآدم عليهما السلام ........ كلهم على شريعة من الحق فاختلفوا فبعث الله النبيين مبشرين ومنذرين). أكمل الفراغ السابق:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "عشرة قرون"
+      },
+      {
+        "question": "التقرب إلى الله تعالى بالعمل بما يرضيه. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التوسل"
+      },
+      {
+        "question": "حكم الرقية التي يعتقد المرقي أنها تؤثر بنفسها.&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "شركية"
+      },
+      {
+        "question": "حكم زيارة القبور وشد الرحال إليها في الأعياد والمواسم:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "زيارة بدعية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
