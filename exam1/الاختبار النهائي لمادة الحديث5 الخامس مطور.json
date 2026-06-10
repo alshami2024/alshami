@@ -95,5 +95,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الاختبار النهائي لمادة الحديث الخامس مطور",
+    "studentName": "محمد محمد عابد المسري",
+    "deviceId": "DEV-F3489A4NZ-mq3xas31",
+    "submissionDate": "2026-06-10T13:39:39.448Z",
+    "mcqScore": {
+      "correct": 20,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أعظم ظلم للنفس يكون بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الشرك بالله تعالى"
+      },
+      {
+        "question": "أمر الله تعالى عباده أن يقرأوا في صلاتهم في كل ركعة بقوله: {اهدِنَا الصِّرَاطَ المُستَقِيمَ}. نوع الهداية في هذه الآية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الهدية المفصلة"
+      },
+      {
+        "question": "قال الله تعالى لموسى وهارون عليهما السلام: {قَالَ لَا تَخَافَا إِنَّنِي مَعَكُمَا أَسْمَعُ وَأَرَى}. تضمنت هذه الآية من صور معية الله تعالى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المعية الخاصة"
+      },
+      {
+        "question": "فسر ابن عباس رضي الله عنهما الاستقامة بأنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الاستقامة على أداء الفرائض"
+      },
+      {
+        "question": "المقصود من قوله صلى الله عليه وسلم: (رفعت الأقلام وجفت الصحف).&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "كناية عن تقدم كتابة المقادير كلها والفراغ منها من أمد بعيد"
+      },
+      {
+        "question": "حكى ابن حزم الإجماع على ....... الإحسان في الذبحة [أي: ذبح الحيوان]. أكمل الفراغ السابق بالخيار التالي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "وجوب"
+      },
+      {
+        "question": "تنزيه الله عن النقائص والعيوب والآفات. يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "التسبيح"
+      },
+      {
+        "question": "قال النبي صلى الله عليه وسلم: (والصلاة...... والصدقة ........ والصبر .........). أكمل الحديث حسب الاختيار المرتب المناسب لكل فراغ مما يلي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "نور - برهان - ضياء"
+      },
+      {
+        "question": "المعية التي تقتضي علم الله تعالى بعباده واطلاعه ومراقبته لأعمالهم، تسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المعية العامة"
+      },
+      {
+        "question": "قال النبي صلى الله عليه وسلم: (كل الناس يغدو فبائع نفسه فمعتقها أو موبقها). الاختيار الذي لا يتفق مع معنى هذا الحديث هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "{قُلْ إِن تُخْفُواْ مَا فِي صُدُورِكُمْ أَوْ تُبْدُوهُ يَعْلَمْهُ اللَّهُ}"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
