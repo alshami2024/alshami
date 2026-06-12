@@ -1221,7 +1221,8 @@
       "schedule": "الخميس | 08:00 - 12:00",
       "room": "قاعة المهرس",
       "status": "مكتمل",
-      "lecturesCount": 0
+      "lecturesCount": 0,
+      "year": "الثاني"
     }
   ],
   "appointments": [],
