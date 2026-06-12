@@ -1218,7 +1218,8 @@
       "end": "2026-06-12",
       "schedule": "الخميس | 08:00 - 12:00",
       "room": "قاعة المهرس",
-      "status": "مجدول"
+      "status": "مكتمل",
+      "lecturesCount": 0
     }
   ],
   "appointments": [],
