@@ -262,7 +262,9 @@
       "year": "المستوى الرابع",
       "doctor": "د/ علي الصباري",
       "room": "القاعة ٦",
-      "attendance": {}
+      "attendance": {
+        "2": true
+      }
     }
   ],
   "visitingProfessors": [
