@@ -673,7 +673,7 @@
     {
       "id": 164,
       "name": "ق. جياب الحدي",
-      "degree": "أستاذ",
+      "degree": "مدرس",
       "dept": "الحقوق",
       "spec": "شريعة وقانون",
       "phone": "770111010",
@@ -804,6 +804,11 @@
   },
   "activity": [
     {
+      "text": "تم رفع نسخة احتياطية آمنة إلى سحابة GitHub",
+      "time": "الآن",
+      "color": "var(--gold)"
+    },
+    {
       "text": "تم حفظ مسودة التقرير السنوي في النظام",
       "time": "الآن",
       "color": "var(--gold)"
@@ -851,7 +856,7 @@
   },
   "theme": "default",
   "_id": 175,
-  "printCounter": 1083,
+  "printCounter": 1092,
   "academicYear": "٢٠٢٦ / ٢٠٢٧",
   "tasks": {
     "daily": [
