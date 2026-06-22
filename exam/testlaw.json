@@ -4466,5 +4466,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-2EMC416IF-mqpnc65s",
+    "submissionDate": "2026-06-22T21:49:31.232Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المادة (4) تتعلق حصراً بالمولودين في الخارج فقط.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي من الآتي يُعد من شروط الحالات الخاصة لمنح الجنسية (م4)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإقامة المتصلة في بعض الحالات"
+      },
+      {
+        "question": "ما هو التفصيل الخاص بشرط \"الوضع المادي\" للأجنبي المقيم (م5)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توافر وسيلة عيش مشروعة"
+      },
+      {
+        "question": "تثبت الجنسية بحكم القانون تلقائياً بمجرد استيفاء الأجنبي المقيم لكافة الشروط الجوهرية (م5).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تكمن أهمية المادة (12) في حماية الجنسية الأصلية للمرأة من الزوال التلقائي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يُشترط لمنح الجنسية للأجنبي المقيم في اليمن (م5) أن يكون قد بلغ 21 سنة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تشترط المادة (4) الإقامة المتصلة في جميع حالاتها الاستثنائية دون استثناء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "بماذا يُعبّر فقهاً عن بقاء الجنسية منوطة بالقرار الإداري للوزير المختص رغم استيفاء الشروط؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السلطة التقديرية"
+      },
+      {
+        "question": "الأنظمة القانونية القديمة كانت تُسقط جنسية المرأة تلقائياً بزواجها من أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو الطريق الذي يمنح الزوجة الأجنبية الحق في التجنس بجنسية زوجها اليمني (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بطريق التبعية"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
