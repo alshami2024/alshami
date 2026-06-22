@@ -4366,5 +4366,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "صدام مسعد حسن جابر",
+    "deviceId": "DEV-MB0F6K8KY-mqpnuau0",
+    "submissionDate": "2026-06-22T20:27:31.242Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الآتي يمثل شرط \"السلوك\" للأجنبي المقيم في اليمن (م5) نصاً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حسن السيرة، عدم الإدانة بجرائم محددة"
+      },
+      {
+        "question": "يُشترط لمنح الجنسية للأجنبي المقيم في اليمن (م5) أن يكون قد بلغ 21 سنة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما هو شرط الإقامة الجوهري للأجنبي المقيم في اليمن بحسب المادة (5)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإقامة منذ بلوغ سن الرشد",
+        "correctAnswer": "10 سنوات متتالية مشروعة"
+      },
+      {
+        "question": "ما هو الطريق الذي يمنح الزوجة الأجنبية الحق في التجنس بجنسية زوجها اليمني (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بطريق التبعية"
+      },
+      {
+        "question": "وفقاً للتفسير، يُعتبر الإلمام باللغة العربية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قرينة على اندماج طالب الجنسية في المجتمع"
+      },
+      {
+        "question": "تكمن أهمية المادة (12) في حماية الجنسية الأصلية للمرأة من الزوال التلقائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تُمنح الجنسية اليمنية في الحالات الاستثنائية (م4) بقرار جمهوري.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هي القاعدة العامة في المادة (10) بشأن المرأة اليمنية والزواج من أجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحتفظ بجنسيتها بعد زواجها من أجنبي"
+      },
+      {
+        "question": "من الشروط اللازمة لحق الزوجة الأجنبية في التجنس (م11) تقديم طلب رسمي للوزير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
