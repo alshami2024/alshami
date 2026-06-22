@@ -153,7 +153,8 @@
       "doctor": "د. محمد الذيب",
       "room": "قاعة المهرس",
       "attendance": {
-        "1": true
+        "1": true,
+        "3": true
       }
     },
     {
