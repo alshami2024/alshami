@@ -4166,5 +4166,102 @@
       }
     ],
     "tabSwitchCount": 11
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "ابوبكر عفيف ناجي الذرحاني",
+    "deviceId": "DEV-LG6CE3RZR-mqplzdfq",
+    "submissionDate": "2026-06-22T19:34:53.524Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الآتي يمثل شرط \"السلوك\" للأجنبي المقيم في اليمن (م5) نصاً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حسن السيرة، عدم الإدانة بجرائم محددة"
+      },
+      {
+        "question": "تُمنح الجنسية اليمنية في الحالات الاستثنائية (م4) بقرار جمهوري.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الحالات الاستثنائية لمنح الجنسية (م4) تشمل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المولودين في الخارج أو الداخل بشروط معينة"
+      },
+      {
+        "question": "المنطق القانوني في تفسير الفقرتين (5) و (6) من المادة (5) يوصف بأنه منطق قانوني فردي ومطلق.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تشترط المادة (4) الإقامة المتصلة في جميع حالاتها الاستثنائية دون استثناء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما هو الطريق الذي يمنح الزوجة الأجنبية الحق في التجنس بجنسية زوجها اليمني (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بطريق التبعية"
+      },
+      {
+        "question": "وفقاً للمادة (4) المتعلقة بالحالات الخاصة لمنح الجنسية، متى يجب تقديم طلب اختيار الجنسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خلال سنة من بلوغ سن الرشد"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما هو التفصيل الخاص بشرط \"الوضع المادي\" للأجنبي المقيم (م5)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توافر وسيلة عيش مشروعة"
+      },
+      {
+        "question": "من يملك حق الاعتراض على تجنس الزوجة الأجنبية خلال المدة المحددة (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير (بقرار مسبب) والزوج"
+      }
+    ],
+    "tabSwitchCount": 10
   }
 ]
