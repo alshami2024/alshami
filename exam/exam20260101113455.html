@@ -7,7 +7,7 @@
     <title>القانون الدولي الخاص - الجنسية والموطن </title>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/crypto-js@4.2.0/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
@@ -433,146 +433,115 @@
     // -------------------------------------------------------------
     // ✅ دالة التحقق المعدلة (دمج التشفير الجديد مع المنطق القديم)
     // -------------------------------------------------------------
-   window.validateAndStart = function() {
-    // --- التعديل الجديد: الحماية الاحتياطية لمكتبة التشفير ---
-    if (typeof CryptoJS === 'undefined') {
-        var btn = document.getElementById('startBtn');
-        var originalText = btn ? btn.innerHTML : "بدء الاختبار 🚀";
-        if(btn) {
-            btn.innerHTML = "جاري جلب ملفات الأمان... ⏳";
-            btn.disabled = true;
+    window.validateAndStart = function() {
+        var nameInput = document.getElementById('studentName');
+        if (!nameInput) return;
+        var val = nameInput.value.trim();
+        if (!val) { alert("أدخل اسمك"); return; }
+
+        // 1. محاولة فك التشفير أولاً (للحصول على fullExamData)
+        let code = "";
+        if (!IS_PUBLIC) {
+            const codeInput = document.getElementById('accessCode');
+            code = codeInput ? codeInput.value.trim() : '';
+            if (!code) { alert("أدخل رمز الدخول لفك التشفير."); return; }
         }
-        
-        var script = document.createElement('script');
-        // استخدام خادم unpkg كبديل موثوق
-        script.src = "https://unpkg.com/crypto-js@4.2.0/crypto-js.js";
-        script.onload = function() {
-            if(btn) {
-                btn.innerHTML = originalText;
-                btn.disabled = false;
+
+        const success = decryptExamData(code, val);
+        if (!success) return; 
+
+        // 2. التحقق من الوقت بعد فك التشفير
+        if (!checkTimeConstraints()) return;
+
+        studentName = val;
+
+        // إعداد الجلسة (نفس الكود الأصلي)
+        var uniqueId = 'exam_' + fullExamData.config.title + '_' + studentName;
+        var savedStateStr = localStorage.getItem(uniqueId);
+        var isResuming = false;
+
+        if (fullExamData.config.singleUseMode && savedStateStr) {
+            if (savedStateStr === 'done') {
+                alert("لقد أديت هذا الاختبار مسبقاً ولا يسمح بالتكرار.");
+                return;
             }
-            window.validateAndStart(); // إعادة التشغيل فوراً بعد اكتمال التحميل
-        };
-        script.onerror = function() {
-            alert("حدث خطأ في الشبكة يمنع تحميل مكتبة التشفير. يرجى إيقاف مانع الإعلانات (Adblock) أو تجربة متصفح آخر.");
-            if(btn) {
-                btn.innerHTML = originalText;
-                btn.disabled = false;
-            }
-        };
-        document.head.appendChild(script);
-        return; // إيقاف التنفيذ حتى يتم تحميل المكتبة بنجاح
-    }
-    // --------------------------------------------------------
-
-    var nameInput = document.getElementById('studentName');
-    if (!nameInput) return;
-    var val = nameInput.value.trim();
-    if (!val) { alert("أدخل اسمك"); return; }
-
-    // 1. محاولة فك التشفير أولاً (للحصول على fullExamData)
-    let code = "";
-    if (!IS_PUBLIC) {
-        const codeInput = document.getElementById('accessCode');
-        code = codeInput ? codeInput.value.trim() : '';
-        if (!code) { alert("أدخل رمز الدخول لفك التشفير."); return; }
-    }
-
-    const success = decryptExamData(code, val);
-    if (!success) return; 
-
-    // 2. التحقق من الوقت بعد فك التشفير
-    if (!checkTimeConstraints()) return;
-
-    studentName = val;
-
-    // إعداد الجلسة (نفس الكود الأصلي)
-    var uniqueId = 'exam_' + fullExamData.config.title + '_' + studentName;
-    var savedStateStr = localStorage.getItem(uniqueId);
-    var isResuming = false;
-
-    if (fullExamData.config.singleUseMode && savedStateStr) {
-        if (savedStateStr === 'done') {
-            alert("لقد أديت هذا الاختبار مسبقاً ولا يسمح بالتكرار.");
-            return;
-        }
-        try {
-            var savedState = JSON.parse(savedStateStr);
-            if (savedState && savedState.answers) {
-                studentAnswers = savedState.answers || {};
-                examStartTime = new Date(savedState.startTime);
-                if(savedState.qOrder) currentQuestions = savedState.qOrder;
-                if(savedState.currentIndex) currentIndex = savedState.currentIndex;
-                isResuming = true;
-                
-                if (fullExamData.config.time > 0) {
-                    var now = new Date();
-                    var elapsedSeconds = Math.floor((now - examStartTime) / 1000);
-                    var totalExamSeconds = fullExamData.config.time * 60;
-                    if (elapsedSeconds >= totalExamSeconds) {
-                        alert("انتهى وقت الاختبار الأصلي!");
-                        finishExam(true);
-                        return;
+            try {
+                var savedState = JSON.parse(savedStateStr);
+                if (savedState && savedState.answers) {
+                    studentAnswers = savedState.answers || {};
+                    examStartTime = new Date(savedState.startTime);
+                    if(savedState.qOrder) currentQuestions = savedState.qOrder;
+                    if(savedState.currentIndex) currentIndex = savedState.currentIndex;
+                    isResuming = true;
+                    
+                    if (fullExamData.config.time > 0) {
+                        var now = new Date();
+                        var elapsedSeconds = Math.floor((now - examStartTime) / 1000);
+                        var totalExamSeconds = fullExamData.config.time * 60;
+                        if (elapsedSeconds >= totalExamSeconds) {
+                            alert("انتهى وقت الاختبار الأصلي!");
+                            finishExam(true);
+                            return;
+                        }
                     }
+                    alert("تم استعادة جلستك السابقة.");
                 }
-                alert("تم استعادة جلستك السابقة.");
+            } catch (e) { }
+        }
+
+        if (!isResuming) {
+            var pool = JSON.parse(JSON.stringify(fullExamData.questions));
+            if (fullExamData.config.shuffle) pool.sort(function() { return 0.5 - Math.random() });
+            
+            if (fullExamData.config.questionBankMode && fullExamData.config.questionsToShow > 0) {
+                currentQuestions = pool.slice(0, Math.min(fullExamData.config.questionsToShow, pool.length));
+            } else {
+                currentQuestions = pool;
             }
-        } catch (e) { }
-    }
 
-    if (!isResuming) {
-        var pool = JSON.parse(JSON.stringify(fullExamData.questions));
-        if (fullExamData.config.shuffle) pool.sort(function() { return 0.5 - Math.random() });
-        
-        if (fullExamData.config.questionBankMode && fullExamData.config.questionsToShow > 0) {
-            currentQuestions = pool.slice(0, Math.min(fullExamData.config.questionsToShow, pool.length));
+            if (fullExamData.config.shuffleChoices) {
+                currentQuestions.forEach(function(q) {
+                    if (q.type === 'mcq' && q.choices) {
+                        var indices = q.choices.map(function(_, i) { return i; });
+                        indices.sort(function() { return 0.5 - Math.random() });
+                        q.shuffledIndices = indices;
+                    }
+                });
+            }
+            examStartTime = new Date();
         } else {
-            currentQuestions = pool;
+             if(!currentQuestions || currentQuestions.length === 0) {
+                 currentQuestions = JSON.parse(JSON.stringify(fullExamData.questions));
+             }
         }
 
-        if (fullExamData.config.shuffleChoices) {
-            currentQuestions.forEach(function(q) {
-                if (q.type === 'mcq' && q.choices) {
-                    var indices = q.choices.map(function(_, i) { return i; });
-                    indices.sort(function() { return 0.5 - Math.random() });
-                    q.shuffledIndices = indices;
-                }
-            });
+        saveExamProgress();
+
+        document.getElementById('startScreen').style.display = 'none';
+        document.getElementById('examArea').style.display = 'block';
+        document.getElementById('studentNameDisplay').innerText = studentName;
+        
+        if(typeof initStudentFirebase === 'function') initStudentFirebase(); 
+        if(typeof updateLiveStatus === 'function') updateLiveStatus();
+
+        if (!isResuming && typeof sendTelegramNotification === 'function') {
+            sendTelegramNotification("🔔 *بدء اختبار جديد*\n👤 الطالب: " + studentName + "\n📝 الاختبار: " + fullExamData.config.title);
         }
-        examStartTime = new Date();
-    } else {
-         if(!currentQuestions || currentQuestions.length === 0) {
-             currentQuestions = JSON.parse(JSON.stringify(fullExamData.questions));
-         }
-    }
-
-    saveExamProgress();
-
-    document.getElementById('startScreen').style.display = 'none';
-    document.getElementById('examArea').style.display = 'block';
-    document.getElementById('studentNameDisplay').innerText = studentName;
-    
-    if(typeof initStudentFirebase === 'function') initStudentFirebase(); 
-    if(typeof updateLiveStatus === 'function') updateLiveStatus();
-
-    if (!isResuming && typeof sendTelegramNotification === 'function') {
-        sendTelegramNotification("🔔 *بدء اختبار جديد*\n👤 الطالب: " + studentName + "\n📝 الاختبار: " + fullExamData.config.title);
-    }
-    
-    if(fullExamData.config.time > 0) {
-        var now = new Date();
-        var secondsPassed = Math.floor((now - examStartTime) / 1000);
-        var secondsLeft = (fullExamData.config.time * 60) - secondsPassed;
-        startTimer(secondsLeft); 
-    } else {
-        var timerEl = document.getElementById('timer');
-        if(timerEl) timerEl.style.display = 'none';
-    }
-    
-    setupSecurity();
-    renderExam();
-    try { requestFullScreenMode(); } catch(e){}
-};
+        
+        if(fullExamData.config.time > 0) {
+            var now = new Date();
+            var secondsPassed = Math.floor((now - examStartTime) / 1000);
+            var secondsLeft = (fullExamData.config.time * 60) - secondsPassed;
+            startTimer(secondsLeft); 
+        } else {
+            var timerEl = document.getElementById('timer');
+            if(timerEl) timerEl.style.display = 'none';
+        }
+        
+        setupSecurity();
+        renderExam();
+        try { requestFullScreenMode(); } catch(e){}
+    };
 
     function requestFullScreenMode() {
         const docElm = document.documentElement;
