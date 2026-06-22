@@ -5065,5 +5065,109 @@
       }
     ],
     "tabSwitchCount": 4
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "قناه تدريN",
+    "deviceId": "DEV-X7XMLMJMS-mqpsbubn",
+    "submissionDate": "2026-06-22T22:37:54.181Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تُحسب مدة الأربع سنوات لاحتفاظ الزوجة الأجنبية بالجنسية بعد انتهاء الزوجية بدءاً من تاريخ الزواج وليس من تاريخ اكتساب الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الحالات الاستثنائية لمنح الجنسية (م4) تشمل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المولودين في الخارج أو الداخل بشروط معينة"
+      },
+      {
+        "question": "تثبت الجنسية بحكم القانون تلقائياً بمجرد استيفاء الأجنبي المقيم لكافة الشروط الجوهرية (م5).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يُشترط لمنح الجنسية للأجنبي المقيم في اليمن (م5) أن يكون قد بلغ 21 سنة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الاستثناء من شرط اللغة العربية يقوم على اعتبارات المصلحة العامة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي من الآتي يُعد من شروط الحالات الخاصة لمنح الجنسية (م4)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكفاءة العلمية المطلوبة",
+        "correctAnswer": "الإقامة المتصلة في بعض الحالات"
+      },
+      {
+        "question": "من الشروط اللازمة لحق الزوجة الأجنبية في التجنس (م11) تقديم طلب رسمي للوزير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المادة (5) فقرة (5) من قانون الجنسية تتعلق بشرط:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السلوك",
+        "correctAnswer": "اللغة"
+      },
+      {
+        "question": "قرار الوزير بالاعتراض على تجنس الزوجة الأجنبية لا يُشترط فيه أن يكون مُسبباً.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
