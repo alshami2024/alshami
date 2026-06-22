@@ -2450,5 +2450,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "المدور محمد المحمدي",
+    "deviceId": "DEV-O1VVTGZ6Z-mqp7kbga",
+    "submissionDate": "2026-06-22T12:59:09.722Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من شروط تجنس الزوجة الأجنبية (م11) مرور 4 سنوات من تاريخ الزواج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وفقاً للمادة (4) المتعلقة بالحالات الخاصة لمنح الجنسية، متى يجب تقديم طلب اختيار الجنسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خلال سنة من بلوغ سن الرشد"
+      },
+      {
+        "question": "أي من الآتي يُعد من شروط الحالات الخاصة لمنح الجنسية (م4)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكفاءة العلمية المطلوبة",
+        "correctAnswer": "الإقامة المتصلة في بعض الحالات"
+      },
+      {
+        "question": "ما هو الطريق الذي يمنح الزوجة الأجنبية الحق في التجنس بجنسية زوجها اليمني (م11)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بالقرار الجمهوري",
+        "correctAnswer": "بطريق التبعية"
+      },
+      {
+        "question": "قرار الوزير بالاعتراض على تجنس الزوجة الأجنبية لا يُشترط فيه أن يكون مُسبباً.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "متى لا تفقد الزوجة الأجنبية جنسيتها المكتسبة بمجرد انتهاء الزوجية (م13)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا مضى على قيام الزوجية 4 سنوات على الأقل منذ اكتسابها الجنسية"
+      },
+      {
+        "question": "تشترط المادة (4) الإقامة المتصلة في جميع حالاتها الاستثنائية دون استثناء.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يجوز إعفاء طالب الجنسية من شرط الإلمام باللغة العربية متى كان ذا كفاءة تحتاج إليها البلاد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من الشروط اللازمة لحق الزوجة الأجنبية في التجنس (م11) تقديم طلب رسمي للوزير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "بماذا يُعبّر فقهاً عن بقاء الجنسية منوطة بالقرار الإداري للوزير المختص رغم استيفاء الشروط؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السلطة التقديرية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
