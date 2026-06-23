@@ -5467,5 +5467,104 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "المدور محمد المحمدي",
+    "deviceId": "DEV-EESXV0714-mqqn1q5a",
+    "submissionDate": "2026-06-23T12:53:54.763Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المادة (5) فقرة (5) من قانون الجنسية تتعلق بشرط:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإقامة",
+        "correctAnswer": "اللغة"
+      },
+      {
+        "question": "تثبت الجنسية بحكم القانون تلقائياً بمجرد استيفاء الأجنبي المقيم لكافة الشروط الجوهرية (م5).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من شروط تجنس الزوجة الأجنبية (م11) مرور 4 سنوات من تاريخ الزواج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هي القاعدة العامة في المادة (10) بشأن المرأة اليمنية والزواج من أجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحتفظ بجنسيتها بعد زواجها من أجنبي"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الاستثناء من شرط اللغة العربية يقوم على اعتبارات المصلحة العامة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وفقاً للتفسير، يُعتبر الإلمام باللغة العربية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قرينة على اندماج طالب الجنسية في المجتمع"
+      },
+      {
+        "question": "أي من الآتي يمثل شرط \"السلوك\" للأجنبي المقيم في اليمن (م5) نصاً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حسن السيرة، عدم الإدانة بجرائم محددة"
+      },
+      {
+        "question": "ما هو أثر تجنس الزوج اليمني بجنسية أجنبية على جنسية زوجته اليمنية (م12)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يؤثر إلا برغبتها الصريحة"
+      },
+      {
+        "question": "المادة (4) تتعلق حصراً بالمولودين في الخارج فقط.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
