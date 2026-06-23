@@ -4020,5 +4020,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "المدور محمد المحمدي",
+    "deviceId": "DEV-EESXV0714-mqqn1q5a",
+    "submissionDate": "2026-06-23T14:08:38.742Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو الطريق الذي يمنح الزوجة الأجنبية الحق في التجنس بجنسية زوجها اليمني (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بطريق التبعية"
+      },
+      {
+        "question": "أي من الآتي يمثل شرط \"السلوك\" للأجنبي المقيم في اليمن (م5) نصاً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حسن السيرة، عدم الإدانة بجرائم محددة"
+      },
+      {
+        "question": "أي من الآتي يُعد من شروط الحالات الخاصة لمنح الجنسية (م4)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكفاءة العلمية المطلوبة",
+        "correctAnswer": "الإقامة المتصلة في بعض الحالات"
+      },
+      {
+        "question": "يجوز إعفاء طالب الجنسية من شرط الإلمام باللغة العربية متى كان ذا كفاءة تحتاج إليها البلاد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يُشترط لمنح الجنسية للأجنبي المقيم في اليمن (م5) أن يكون قد بلغ 21 سنة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "من شروط تجنس الزوجة الأجنبية (م11) مرور 4 سنوات من تاريخ الزواج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تثبت الجنسية بحكم القانون تلقائياً بمجرد استيفاء الأجنبي المقيم لكافة الشروط الجوهرية (م5).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من يملك حق الاعتراض على تجنس الزوجة الأجنبية خلال المدة المحددة (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير (بقرار مسبب) والزوج"
+      },
+      {
+        "question": "ما هو شرط الإقامة الجوهري للأجنبي المقيم في اليمن بحسب المادة (5)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإقامة منذ بلوغ سن الرشد",
+        "correctAnswer": "10 سنوات متتالية مشروعة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
