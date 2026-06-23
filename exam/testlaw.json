@@ -4517,5 +4517,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "المدور محمد المحمدي",
+    "deviceId": "DEV-EESXV0714-mqqn1q5a",
+    "submissionDate": "2026-06-23T14:29:27.727Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يُشترط لمنح الجنسية للأجنبي المقيم في اليمن (م5) أن يكون قد بلغ 21 سنة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تكمن أهمية المادة (12) في حماية الجنسية الأصلية للمرأة من الزوال التلقائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو شرط الإقامة الجوهري للأجنبي المقيم في اليمن بحسب المادة (5)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "10 سنوات متتالية مشروعة"
+      },
+      {
+        "question": "يُجيز القانون للمرأة اليمنية التخلي الصريح عن الجنسية عند زواجها من أجنبي شريطة ثبوت الرغبة الصريحة و:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ألا يُفضي التخلي إلى انعدام الجنسية"
+      },
+      {
+        "question": "تشترط المادة (4) الإقامة المتصلة في جميع حالاتها الاستثنائية دون استثناء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "من الشروط اللازمة لحق الزوجة الأجنبية في التجنس (م11) تقديم طلب رسمي للوزير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز إعفاء طالب الجنسية من شرط الإلمام باللغة العربية متى كان ذا كفاءة تحتاج إليها البلاد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وفقاً للتفسير، يُعتبر الإلمام باللغة العربية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قرينة على اندماج طالب الجنسية في المجتمع"
+      },
+      {
+        "question": "ما هي القاعدة العامة في المادة (10) بشأن المرأة اليمنية والزواج من أجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحتفظ بجنسيتها بعد زواجها من أجنبي"
+      },
+      {
+        "question": "تُحسب مدة الأربع سنوات لاحتفاظ الزوجة الأجنبية بالجنسية بعد انتهاء الزوجية بدءاً من تاريخ الزواج وليس من تاريخ اكتساب الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 7
   }
 ]
