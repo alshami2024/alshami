@@ -4718,5 +4718,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "عبداللطيف مهدي صالح الشامي",
+    "deviceId": "DEV-R653ZUH3Q-mqqrm25y",
+    "submissionDate": "2026-06-23T15:10:21.965Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هي القاعدة العامة في المادة (10) بشأن المرأة اليمنية والزواج من أجنبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تكتسب جنسية زوجها بطريق التبعية",
+        "correctAnswer": "تحتفظ بجنسيتها بعد زواجها من أجنبي"
+      },
+      {
+        "question": "يُجيز القانون للمرأة اليمنية التخلي الصريح عن الجنسية عند زواجها من أجنبي شريطة ثبوت الرغبة الصريحة و:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ألا يُفضي التخلي إلى انعدام الجنسية"
+      },
+      {
+        "question": "متى لا تفقد الزوجة الأجنبية جنسيتها المكتسبة بمجرد انتهاء الزوجية (م13)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا ثبتت رغبتها الصريحة في التخلي",
+        "correctAnswer": "إذا مضى على قيام الزوجية 4 سنوات على الأقل منذ اكتسابها الجنسية"
+      },
+      {
+        "question": "تشترط المادة (4) الإقامة المتصلة في جميع حالاتها الاستثنائية دون استثناء.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "المادة (4) تتعلق حصراً بالمولودين في الخارج فقط.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما هو شرط الإقامة الجوهري للأجنبي المقيم في اليمن بحسب المادة (5)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإقامة منذ بلوغ سن الرشد",
+        "correctAnswer": "10 سنوات متتالية مشروعة"
+      },
+      {
+        "question": "يجوز إعفاء طالب الجنسية من شرط الإلمام باللغة العربية متى كان ذا كفاءة تحتاج إليها البلاد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "المادة (5) فقرة (5) من قانون الجنسية تتعلق بشرط:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإقامة",
+        "correctAnswer": "اللغة"
+      },
+      {
+        "question": "من يملك حق الاعتراض على تجنس الزوجة الأجنبية خلال المدة المحددة (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير (بقرار مسبب) والزوج"
+      },
+      {
+        "question": "تكمن أهمية المادة (12) في حماية الجنسية الأصلية للمرأة من الزوال التلقائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
