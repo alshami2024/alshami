@@ -5421,5 +5421,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "مفيد صادق عبد الرب بابكر",
+    "deviceId": "DEV-BU45ZWLN8-mqqthpye",
+    "submissionDate": "2026-06-23T16:14:51.239Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من يملك حق الاعتراض على تجنس الزوجة الأجنبية خلال المدة المحددة (م11)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير (بقرار مسبب) والزوج"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما هو شرط الإقامة الجوهري للأجنبي المقيم في اليمن بحسب المادة (5)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "10 سنوات متتالية مشروعة"
+      },
+      {
+        "question": "من شروط تجنس الزوجة الأجنبية (م11) مرور 4 سنوات من تاريخ الزواج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تُمنح الجنسية اليمنية في الحالات الاستثنائية (م4) بقرار جمهوري.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تشترط المادة (4) الإقامة المتصلة في جميع حالاتها الاستثنائية دون استثناء.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يُجيز القانون للمرأة اليمنية التخلي الصريح عن الجنسية عند زواجها من أجنبي شريطة ثبوت الرغبة الصريحة و:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ألا يُفضي التخلي إلى انعدام الجنسية"
+      },
+      {
+        "question": "الأنظمة القانونية القديمة كانت تُسقط جنسية المرأة تلقائياً بزواجها من أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تُحسب مدة الأربع سنوات لاحتفاظ الزوجة الأجنبية بالجنسية بعد انتهاء الزوجية بدءاً من تاريخ الزواج وليس من تاريخ اكتساب الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "بماذا يُعبّر فقهاً عن بقاء الجنسية منوطة بالقرار الإداري للوزير المختص رغم استيفاء الشروط؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طريق التبعية",
+        "correctAnswer": "السلطة التقديرية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
