@@ -4221,5 +4221,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "المدور محمد المحمدي",
+    "deviceId": "DEV-EESXV0714-mqqn1q5a",
+    "submissionDate": "2026-06-23T14:18:25.248Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المادة (5) فقرة (5) من قانون الجنسية تتعلق بشرط:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اللغة"
+      },
+      {
+        "question": "قرار الوزير بالاعتراض على تجنس الزوجة الأجنبية لا يُشترط فيه أن يكون مُسبباً.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "تكمن أهمية المادة (12) في حماية الجنسية الأصلية للمرأة من الزوال التلقائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الاستثناء من شرط اللغة العربية يقوم على اعتبارات المصلحة العامة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي من الآتي يُعد من شروط الحالات الخاصة لمنح الجنسية (م4)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكفاءة العلمية المطلوبة",
+        "correctAnswer": "الإقامة المتصلة في بعض الحالات"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "من شروط تجنس الزوجة الأجنبية (م11) مرور 4 سنوات من تاريخ الزواج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وفقاً للمادة (4) المتعلقة بالحالات الخاصة لمنح الجنسية، متى يجب تقديم طلب اختيار الجنسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خلال سنة من بلوغ سن الرشد"
+      },
+      {
+        "question": "تُمنح الجنسية اليمنية في الحالات الاستثنائية (م4) بقرار جمهوري.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الحالات الاستثنائية لمنح الجنسية (م4) تشمل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المولودين في الخارج أو الداخل بشروط معينة"
+      }
+    ],
+    "tabSwitchCount": 5
   }
 ]
