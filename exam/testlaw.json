@@ -5664,5 +5664,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "محمد المهدي المنتظر",
+    "deviceId": "DEV-EESXV0714-mqqn1q5a",
+    "submissionDate": "2026-06-23T13:05:10.873Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من الآتي يُعد من شروط الحالات الخاصة لمنح الجنسية (م4)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "الإقامة المتصلة في بعض الحالات"
+      },
+      {
+        "question": "يجوز إعفاء طالب الجنسية من شرط الإلمام باللغة العربية متى كان ذا كفاءة تحتاج إليها البلاد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما هو أثر تجنس الزوج اليمني بجنسية أجنبية على جنسية زوجته اليمنية (م12)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "لا يؤثر إلا برغبتها الصريحة"
+      },
+      {
+        "question": "من شروط تجنس الزوجة الأجنبية (م11) مرور 4 سنوات من تاريخ الزواج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من يملك حق الاعتراض على تجنس الزوجة الأجنبية خلال المدة المحددة (م11)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الزوج فقط",
+        "correctAnswer": "الوزير (بقرار مسبب) والزوج"
+      },
+      {
+        "question": "المنطق القانوني في تفسير الفقرتين (5) و (6) من المادة (5) يوصف بأنه منطق قانوني فردي ومطلق.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "متى لا تفقد الزوجة الأجنبية جنسيتها المكتسبة بمجرد انتهاء الزوجية (م13)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا مضى على قيام الزوجية 4 سنوات على الأقل منذ اكتسابها الجنسية"
+      },
+      {
+        "question": "الحالات الاستثنائية لمنح الجنسية (م4) تشمل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المولودين في الخارج أو الداخل بشروط معينة"
+      },
+      {
+        "question": "تثبت الجنسية بحكم القانون تلقائياً بمجرد استيفاء الأجنبي المقيم لكافة الشروط الجوهرية (م5).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أي من الآتي يمثل شرط \"السلوك\" للأجنبي المقيم في اليمن (م5) نصاً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حسن السيرة، عدم الإدانة بجرائم محددة"
+      }
+    ],
+    "tabSwitchCount": 3
   }
 ]
