@@ -279,7 +279,8 @@
       "doctor": "د/ علي الصباري",
       "room": "القاعة ٦",
       "attendance": {
-        "2": true
+        "2": true,
+        "3": true
       }
     }
   ],
