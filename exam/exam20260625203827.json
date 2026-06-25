@@ -1,0 +1,99 @@
+[
+  {
+    "examTitle": "علم الأدوية",
+    "studentName": "جمال",
+    "deviceId": "DEV-9V66QWFAR-mqtt6w5i",
+    "submissionDate": "2026-06-25T18:01:40.709Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "علم الأدوية يشمل فهم كيفية عمل الأدوية وآلية تأثيرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو الهدف الرئيسي لعلم الأدوية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علاج الأمراض"
+      },
+      {
+        "question": "ما هو علم الأدوية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "دراسة تأثير الأدوية على الجسم"
+      },
+      {
+        "question": "تعتبر الأدوية الطبيعية جزءًا من علم الأدوية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هي الأدوية التي تستخدم لعلاج الألم؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مسكنات الألم"
+      },
+      {
+        "question": "ما هي الطريقة الرئيسية لاستخدام الأدوية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "كيف يتم تصنيف الأدوية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق"
+      },
+      {
+        "question": "الأدوية لا يمكن أن تتسبب في آثار جانبية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "علم الأدوية يتعامل مع دراسة الأدوية وتأثيرها على الجسم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "علم الأدوية لا يشمل دراسة الجرعات المناسبة للأدوية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
