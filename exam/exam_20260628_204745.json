@@ -301,5 +301,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "ضروري نشوف كيف صيغة الأسئلة",
+    "deviceId": "DEV-8MN7VUPRS-mqy3tqix",
+    "submissionDate": "2026-06-28T18:29:06.788Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يجيز الدستور سحب الجنسية المكتسبة وفقاً للقانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي نوع من الجنسية يتمتع بحماية دستورية تمنع إسقاطه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجنسية الأصلية."
+      },
+      {
+        "question": "رد الجنسية يختلف عن استردادها لأنه يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العودة التلقائية للجنسية.",
+        "correctAnswer": "منح الجنسية لمن سُحبت منه بقرار تقديري."
+      },
+      {
+        "question": "يفيد تفسير المادة (26) أن النشر هو الذي ينشئ الأثر القانوني لقرار الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يمكن أن يبقى أبناء من سُحبت جنسيته محتفظين بالجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تبدأ آثار قرارات الجنسية من تاريخ صدورها ما لم ينص القانون على خلاف ذلك.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "حدد القانون المحكمة المختصة بنظر جميع منازعات الجنسية تحديداً دقيقاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أثر سحب الجنسية يبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من تاريخ القرار الوزاري."
+      },
+      {
+        "question": "أي الآتي لا يُعد من الشروط التي تتحقق منها الجهات المختصة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفوز في انتخابات عامة"
+      },
+      {
+        "question": "أي الحالات الآتية تدخل ضمن المادة (18)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحصول على الجنسية بطريق الغش."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
