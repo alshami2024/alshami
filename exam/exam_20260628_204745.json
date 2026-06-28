@@ -400,5 +400,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "ضروري نشوف كيف صيغة الأسئلة",
+    "deviceId": "DEV-8MN7VUPRS-mqy3tqix",
+    "submissionDate": "2026-06-28T18:39:08.849Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "إذا ادعى شخص أنه يمني الجنسية، فإن عبء الإثبات يقع على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المدعي نفسه"
+      },
+      {
+        "question": "أي العبارات التالية صحيحة بشأن أفراد الأسرة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يمتد إليهم أثر السحب تلقائياً."
+      },
+      {
+        "question": "يعاقب القانون على تقديم وثائق مزورة مع العلم بتزويرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "لم يحدد القانون نوع المحكمة المختصة بمنازعات الجنسية، وإنما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أسندها للقضاء بصورة عامة"
+      },
+      {
+        "question": "يمكن أن يبقى أبناء من سُحبت جنسيته محتفظين بالجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجيز الدستور سحب الجنسية المكتسبة وفقاً للقانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "اللجنة المختصة هي التي تصدر قرار منح الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تقديم خدمات لدولة في حالة حرب مع اليمن يعد من حالات المادة (19).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "سحب الجنسية يرد على الجنسية المكتسبة دون الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "العقوبة المقررة لتقديم وثائق مزورة مع العلم بتزويرها هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحبس أو الغرامة التي لا تزيد عن عشرين ألف ريال"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
