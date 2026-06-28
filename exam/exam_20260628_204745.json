@@ -99,5 +99,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد الرائد حسين",
+    "deviceId": "DEV-Z9TO277Z0-mqy3jwjj",
+    "submissionDate": "2026-06-28T18:02:49.046Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي المفاهيم يختص بإزالة الجنسية المكتسبة وفق أسباب قانونية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سحب الجنسية"
+      },
+      {
+        "question": "أي المفاهيم الآتية يعني إنهاء الجنسية الأصلية بقرار سلطوي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إسقاط الجنسية"
+      },
+      {
+        "question": "يفيد تفسير المادة (26) أن النشر هو الذي ينشئ الأثر القانوني لقرار الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "إذا ألغيت شهادة الجنسية، فإن ذلك يكون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تلقائياً",
+        "correctAnswer": "بقرار مسبب"
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إنشاء الجنسية",
+        "correctAnswer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "الخدمة العسكرية لدولة أجنبية دون ترخيص من الحالات الخاصة التي لا تقيد بزمن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الحالات الآتية لا تخضع لقيد الخمس سنوات؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإخلال بشروط الإقامة.",
+        "correctAnswer": "الخدمة العسكرية لدولة أجنبية دون ترخيص."
+      },
+      {
+        "question": "لا يتحمل عبء الإثبات إلا من يدعي دخوله في الجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يعاقب القانون على تقديم وثائق مزورة مع العلم بتزويرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "إذا كان طالب التجنس خارج اليمن، فإنه يقدم طلبه إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحكمة العليا",
+        "correctAnswer": "الممثلين السياسيين أو القنصليين للجمهورية اليمنية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
