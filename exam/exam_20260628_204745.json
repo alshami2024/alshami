@@ -595,5 +595,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "صاحب الهيلوكس",
+    "deviceId": "DEV-PM2NABY6M-mqy5tw22",
+    "submissionDate": "2026-06-28T19:11:34.195Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي العبارات التالية صحيحة بشأن أفراد الأسرة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يمتد إليهم أثر السحب تلقائياً."
+      },
+      {
+        "question": "فترة الخمس سنوات الأولى بعد التجنس تُعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فترة اختبار ضمنية."
+      },
+      {
+        "question": "لا يتحمل عبء الإثبات إلا من يدعي دخوله في الجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يفيد تفسير المادة (26) أن النشر هو الذي ينشئ الأثر القانوني لقرار الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أثر سحب الجنسية يمتد تلقائياً إلى جميع أفراد الأسرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "الوصف النقدي للعقوبات الواردة في النص أنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خفيفة نسبياً مقارنة بخطورة الجريمة"
+      },
+      {
+        "question": "حدد القانون المحكمة المختصة بنظر جميع منازعات الجنسية تحديداً دقيقاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يعاقب القانون على تقديم وثائق مزورة مع العلم بتزويرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الجهة التي تشكل اللجنة المختصة بترشيح المجنسين هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
