@@ -6610,5 +6610,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "مقادير مصلح المعرشي",
+    "deviceId": "DEV-7N6PE2OBR-mqy4vgox",
+    "submissionDate": "2026-06-28T18:39:47.529Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الأنظمة القانونية القديمة كانت تُسقط جنسية المرأة تلقائياً بزواجها من أجنبي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي من الآتي يُعد من شروط الحالات الخاصة لمنح الجنسية (م4)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "عدم الإدانة بجرائم محددة",
+        "correctAnswer": "الإقامة المتصلة في بعض الحالات"
+      },
+      {
+        "question": "لا يجوز للمرأة اليمنية إثبات رغبتها الصريحة في التخلي عن الجنسية إلا عند إبرام الزواج، ولا يُقبل ذلك أثناءه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "متى لا تفقد الزوجة الأجنبية جنسيتها المكتسبة بمجرد انتهاء الزوجية (م13)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا مضى على قيام الزوجية 4 سنوات على الأقل منذ اكتسابها الجنسية"
+      },
+      {
+        "question": "ما هي القاعدة العامة في المادة (10) بشأن المرأة اليمنية والزواج من أجنبي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحتفظ بجنسيتها بعد زواجها من أجنبي"
+      },
+      {
+        "question": "الاستثناء من شرط اللغة العربية يقوم على اعتبارات المصلحة العامة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز إعفاء طالب الجنسية من شرط الإلمام باللغة العربية متى كان ذا كفاءة تحتاج إليها البلاد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو التفصيل الخاص بشرط \"الوضع المادي\" للأجنبي المقيم (م5)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "توافر وسيلة عيش مشروعة"
+      },
+      {
+        "question": "تُمنح الجنسية اليمنية في الحالات الاستثنائية (م4) بقرار جمهوري.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تكمن أهمية المادة (12) في حماية الجنسية الأصلية للمرأة من الزوال التلقائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 11
   }
 ]
