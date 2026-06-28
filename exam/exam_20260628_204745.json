@@ -202,5 +202,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "ضروري نشوف كيف صيغة الأسئلة",
+    "deviceId": "DEV-8MN7VUPRS-mqy3tqix",
+    "submissionDate": "2026-06-28T18:10:29.044Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يعاقب القانون على تقديم وثائق مزورة مع العلم بتزويرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الحالات الآتية لا تخضع لقيد الخمس سنوات؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخدمة العسكرية لدولة أجنبية دون ترخيص."
+      },
+      {
+        "question": "استرداد الجنسية يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العودة إلى الجنسية بعد زوالها."
+      },
+      {
+        "question": "لم يحدد القانون نوع المحكمة المختصة بمنازعات الجنسية، وإنما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جعلها من اختصاص الوزير",
+        "correctAnswer": "أسندها للقضاء بصورة عامة"
+      },
+      {
+        "question": "التمييز بين إسقاط الجنسية وسحبها يعد من المبادئ التي أكدها النص الدستوري والتفسير القانوني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي العبارات التالية صحيحة بشأن أفراد الأسرة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يمتد إليهم أثر السحب تلقائياً."
+      },
+      {
+        "question": "أثر سحب الجنسية يبدأ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من تاريخ الحكم القضائي.",
+        "correctAnswer": "من تاريخ القرار الوزاري."
+      },
+      {
+        "question": "شهادة الجنسية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يمنحها الوزير لمن اكتسب الجنسية"
+      },
+      {
+        "question": "أي نوع من الجنسية يتمتع بحماية دستورية تمنع إسقاطه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجنسية الأصلية."
+      },
+      {
+        "question": "تقديم خدمات لدولة في حالة حرب مع اليمن يعد من حالات المادة (19).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
