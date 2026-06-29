@@ -792,5 +792,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-06-29T12:50:22.967Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "رد الجنسية واستردادها مصطلحان مترادفان تماماً في النص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "العمل لصالح هيئات أجنبية معادية يدخل ضمن أسباب السحب خلال الخمس سنوات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تمنح شهادة الجنسية خلال مدة لا تتجاوز سنة من تاريخ تقديم الطلب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يمكن أن يبقى أبناء من سُحبت جنسيته محتفظين بالجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "العقوبة المقررة لتقديم وثائق مزورة مع العلم بتزويرها هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحبس أو الغرامة التي لا تزيد عن عشرين ألف ريال"
+      },
+      {
+        "question": "يعد الإيصال الرسمي دليلاً على اكتساب الجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يشترط نشر قرارات الجنسية في الجريدة الرسمية خلال خمسة عشر يوماً من تاريخ صدورها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يحظر الدستور اليمني إسقاط الجنسية الأصلية عن المواطن مهما كان السبب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أثر سحب الجنسية يمتد تلقائياً إلى جميع أفراد الأسرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي العبارات التالية أدق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القرار الجمهوري ينشئ الجنسية، والنشر يحقق الإعلان والحجية."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
