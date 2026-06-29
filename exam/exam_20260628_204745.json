@@ -1284,5 +1284,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-06-29T14:16:07.334Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المادة (44) تساوي بين الجنسية الأصلية والمكتسبة من حيث الحماية الدستورية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي الأفعال التالية يعاقب عليه القانون؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإدلاء بأقوال كاذبة لإثبات جنسية من لا يستحقها"
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "الجهة التي تشكل اللجنة المختصة بترشيح المجنسين هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير"
+      },
+      {
+        "question": "يمكن أن يبقى أبناء من سُحبت جنسيته محتفظين بالجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وفق المادة (44) من الدستور، أي العبارات أدق؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يجوز إسقاط الجنسية الأصلية في جرائم الخيانة.",
+        "correctAnswer": "لا يجوز إسقاط الجنسية الأصلية إطلاقاً."
+      },
+      {
+        "question": "أثر سحب الجنسية يمتد تلقائياً إلى جميع أفراد الأسرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تمنح شهادة الجنسية خلال مدة لا تتجاوز سنة من تاريخ تقديم الطلب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي نوع من الجنسية يتمتع بحماية دستورية تمنع إسقاطه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجنسية الأصلية."
+      },
+      {
+        "question": "لم يحدد القانون نوع المحكمة المختصة بمنازعات الجنسية، وإنما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أسندها للقضاء بصورة عامة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
