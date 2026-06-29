@@ -1679,5 +1679,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "شهد جيزان الزقري",
+    "deviceId": "DEV-95V2UVFYA-mqzdd0lx",
+    "submissionDate": "2026-06-29T15:31:25.427Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يمكن أن يبقى أبناء من سُحبت جنسيته محتفظين بالجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الوصف النقدي للعقوبات الواردة في النص أنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خفيفة نسبياً مقارنة بخطورة الجريمة"
+      },
+      {
+        "question": "أي المفاهيم الآتية يعني إنهاء الجنسية الأصلية بقرار سلطوي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إسقاط الجنسية"
+      },
+      {
+        "question": "الجهة التي تشكل اللجنة المختصة بترشيح المجنسين هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير"
+      },
+      {
+        "question": "ما الجهة التي يُقدم إليها طلب التجنس داخل اليمن؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصلحة الجوازات والجنسية في المحافظة محل الإقامة"
+      },
+      {
+        "question": "رد الجنسية يختلف عن استردادها لأنه يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "منح الجنسية لمن سُحبت منه بقرار تقديري."
+      },
+      {
+        "question": "أثر سحب الجنسية يمتد تلقائياً إلى جميع أفراد الأسرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي العبارات التالية أدق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القرار الجمهوري ينشئ الجنسية، والنشر يحقق الإعلان والحجية."
+      },
+      {
+        "question": "تقتصر مهمة اللجنة المختصة على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ترشيح من ترى منحهم الجنسية"
+      },
+      {
+        "question": "إذا ادعى شخص أنه يمني الجنسية، فإن عبء الإثبات يقع على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المدعي نفسه"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
