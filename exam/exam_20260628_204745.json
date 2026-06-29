@@ -1971,5 +1971,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "عامر عبدالعزيز الفاقوس",
+    "deviceId": "DEV-SZJNNIGQX-mqzigor9",
+    "submissionDate": "2026-06-29T17:47:58.946Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما الجهة التي يُقدم إليها طلب التجنس داخل اليمن؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رئاسة الوزراء",
+        "correctAnswer": "مصلحة الجوازات والجنسية في المحافظة محل الإقامة"
+      },
+      {
+        "question": "لم يحدد القانون نوع المحكمة المختصة بمنازعات الجنسية، وإنما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أسندها للقضاء بصورة عامة"
+      },
+      {
+        "question": "سحب الجنسية يرد على الجنسية المكتسبة دون الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يعاقب القانون على تقديم وثائق مزورة مع العلم بتزويرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "رد الجنسية يختلف عن استردادها لأنه يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "منح الجنسية لمن سُحبت منه بقرار تقديري."
+      },
+      {
+        "question": "أي المفاهيم الآتية يعني إنهاء الجنسية الأصلية بقرار سلطوي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رد الجنسية",
+        "correctAnswer": "إسقاط الجنسية"
+      },
+      {
+        "question": "ارتكاب جرائم الخيانة العظمى يندرج ضمن:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حالات المادة (18).",
+        "correctAnswer": "حالات المادة (19)."
+      },
+      {
+        "question": "أثر سحب الجنسية يبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من تاريخ القرار الوزاري."
+      },
+      {
+        "question": "العقوبة المقررة لتقديم وثائق مزورة مع العلم بتزويرها هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحبس أو الغرامة التي لا تزيد عن عشرين ألف ريال"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
