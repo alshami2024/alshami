@@ -2169,5 +2169,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-06-29T18:20:22.632Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تمنح شهادة الجنسية خلال مدة لا تتجاوز سنة من تاريخ تقديم الطلب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الحصول على الجنسية بطريق الغش يعد سبباً لسحب الجنسية خلال خمس سنوات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي القواعد الآتية تعبر عن مضمون المادة (27)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإثبات على من يدعي وعلى من ينفي الجنسية"
+      },
+      {
+        "question": "رد الجنسية واستردادها مصطلحان مترادفان تماماً في النص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "إذا دفع شخص بأنه غير داخل في الجنسية اليمنية، فإن عبء الإثبات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يقع على من دفع بذلك"
+      },
+      {
+        "question": "ما الجهة التي يُقدم إليها طلب التجنس داخل اليمن؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصلحة الجوازات والجنسية في المحافظة محل الإقامة"
+      },
+      {
+        "question": "يشترط نشر قرارات الجنسية في الجريدة الرسمية خلال خمسة عشر يوماً من تاريخ صدورها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "سحب الجنسية يرد على الجنسية المكتسبة دون الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أثر سحب الجنسية يمتد تلقائياً إلى جميع أفراد الأسرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يعاقب القانون على تقديم وثائق مزورة مع العلم بتزويرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
