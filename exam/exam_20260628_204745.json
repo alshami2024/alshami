@@ -1087,5 +1087,104 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "مقادير مصلح المعرشي",
+    "deviceId": "DEV-7PNF1H362-mqz9f0d9",
+    "submissionDate": "2026-06-29T13:34:44.107Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الخدمة العسكرية لدولة أجنبية دون ترخيص من الحالات الخاصة التي لا تقيد بزمن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي المفاهيم الآتية يعني إنهاء الجنسية الأصلية بقرار سلطوي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إسقاط الجنسية"
+      },
+      {
+        "question": "إذا ادعى شخص أنه يمني الجنسية، فإن عبء الإثبات يقع على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدولة",
+        "correctAnswer": "المدعي نفسه"
+      },
+      {
+        "question": "استرداد الجنسية يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العودة إلى الجنسية بعد زوالها."
+      },
+      {
+        "question": "أي الحالات الآتية تعد من أسباب السحب خلال خمس سنوات؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخدمة العسكرية لدولة أجنبية.",
+        "correctAnswer": "التجنس بجنسية أجنبية دون إذن."
+      },
+      {
+        "question": "أي نوع من الجنسية يتمتع بحماية دستورية تمنع إسقاطه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجنسية الأصلية."
+      },
+      {
+        "question": "اللجنة المختصة هي التي تصدر قرار منح الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "وفق المادة (44) من الدستور، أي العبارات أدق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز إسقاط الجنسية الأصلية إطلاقاً."
+      },
+      {
+        "question": "التمييز بين إسقاط الجنسية وسحبها يعد من المبادئ التي أكدها النص الدستوري والتفسير القانوني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يحظر الدستور اليمني إسقاط الجنسية الأصلية عن المواطن مهما كان السبب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
