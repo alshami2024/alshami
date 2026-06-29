@@ -2071,5 +2071,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "عامر الفاقوس",
+    "deviceId": "DEV-SZJNNIGQX-mqzigor9",
+    "submissionDate": "2026-06-29T17:56:09.405Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يشترط نشر قرارات الجنسية في الجريدة الرسمية خلال خمسة عشر يوماً من تاريخ صدورها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "إذا ادعى شخص أنه يمني الجنسية، فإن عبء الإثبات يقع على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المدعي نفسه"
+      },
+      {
+        "question": "الخدمة العسكرية لدولة أجنبية دون ترخيص من الحالات الخاصة التي لا تقيد بزمن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تعتبر أحكام الجنسية حجة على الكافة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بمجرد صدورها",
+        "correctAnswer": "بعد نشر منطوقها في الجريدة الرسمية"
+      },
+      {
+        "question": "أي المفاهيم يختص بإزالة الجنسية المكتسبة وفق أسباب قانونية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سحب الجنسية"
+      },
+      {
+        "question": "إيصال استلام طلب الجنسية يثبت:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجرد تقديم الطلب"
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "القرار الوزاري المسبب يمثل ضمانة إجرائية تسمح بالطعن القضائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الحالات الآتية تدخل ضمن المادة (18)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحصول على الجنسية بطريق الغش."
+      },
+      {
+        "question": "يجوز إسقاط الجنسية الأصلية إذا ارتكب الشخص جريمة الخيانة العظمى.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
