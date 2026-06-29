@@ -988,5 +988,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-06-29T13:03:47.804Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "إذا تعارض تاريخ النشر مع تاريخ صدور قرار التجنس، فإن الأصل في بدء الأثر القانوني هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "تاريخ صدور القرار"
+      },
+      {
+        "question": "تمنح شهادة الجنسية خلال مدة لا تتجاوز سنة من تاريخ تقديم الطلب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما الجهة التي يُقدم إليها طلب التجنس داخل اليمن؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصلحة الجوازات والجنسية في المحافظة محل الإقامة"
+      },
+      {
+        "question": "استرداد الجنسية يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العودة إلى الجنسية بعد زوالها."
+      },
+      {
+        "question": "تبدأ آثار قرارات الجنسية من تاريخ صدورها ما لم ينص القانون على خلاف ذلك.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الأفعال التالية يعاقب عليه القانون؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإدلاء بأقوال كاذبة لإثبات جنسية من لا يستحقها"
+      },
+      {
+        "question": "أي القواعد الآتية تعبر عن مضمون المادة (27)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإثبات على من يدعي وعلى من ينفي الجنسية"
+      },
+      {
+        "question": "يصدر قرار منح الجنسية اليمنية بالتجنس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بقرار جمهوري بناءً على عرض الوزير"
+      },
+      {
+        "question": "يجوز إسقاط الجنسية الأصلية إذا ارتكب الشخص جريمة الخيانة العظمى.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "إيصال استلام طلب الجنسية يثبت:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجرد تقديم الطلب"
+      }
+    ],
+    "tabSwitchCount": 3
   }
 ]
