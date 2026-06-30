@@ -3270,5 +3270,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد",
+    "deviceId": "DEV-6AKNKHCNB-mqzbx6je",
+    "submissionDate": "2026-06-30T09:02:36.284Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي القواعد الآتية تعبر عن مضمون المادة (27)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإثبات على من يدعي وعلى من ينفي الجنسية"
+      },
+      {
+        "question": "يجوز تحديد عدد سنوي للمجنسين بقرار جمهوري بناءً على عرض الوزير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يشترط نشر قرارات الجنسية في الجريدة الرسمية خلال خمسة عشر يوماً من تاريخ صدورها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الحالات الآتية تعد من أسباب السحب خلال خمس سنوات؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تقديم خدمات لدولة في حرب.",
+        "correctAnswer": "التجنس بجنسية أجنبية دون إذن."
+      },
+      {
+        "question": "يشترط لسحب الجنسية وفق المادة (19):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قرار وزاري مسبب."
+      },
+      {
+        "question": "إذا دفع شخص بأنه غير داخل في الجنسية اليمنية، فإن عبء الإثبات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يقع على من دفع بذلك"
+      },
+      {
+        "question": "العقوبة المقررة لتقديم وثائق مزورة مع العلم بتزويرها هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحبس أو الغرامة التي لا تزيد عن عشرين ألف ريال"
+      },
+      {
+        "question": "أي المفاهيم يختص بإزالة الجنسية المكتسبة وفق أسباب قانونية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إسقاط الجنسية",
+        "correctAnswer": "سحب الجنسية"
+      },
+      {
+        "question": "وفق المادة (44) من الدستور، أي العبارات أدق؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يجوز إسقاط الجنسية الأصلية في جرائم الخيانة.",
+        "correctAnswer": "لا يجوز إسقاط الجنسية الأصلية إطلاقاً."
+      },
+      {
+        "question": "أي الحالات الآتية تدخل ضمن المادة (18)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحصول على الجنسية بطريق الغش."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
