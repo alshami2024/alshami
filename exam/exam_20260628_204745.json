@@ -2769,5 +2769,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "ناجي خالد مسعد علي اليزيدي",
+    "deviceId": "DEV-AC0BU81ON-mqzxf936",
+    "submissionDate": "2026-06-30T01:01:32.966Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العمل لصالح هيئات أجنبية معادية يدخل ضمن أسباب السحب خلال الخمس سنوات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "حدد القانون المحكمة المختصة بنظر جميع منازعات الجنسية تحديداً دقيقاً.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يفيد تفسير المادة (26) أن النشر هو الذي ينشئ الأثر القانوني لقرار الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أي نوع من الجنسية يتمتع بحماية دستورية تمنع إسقاطه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجنسية الأصلية."
+      },
+      {
+        "question": "الجهة التي تشكل اللجنة المختصة بترشيح المجنسين هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجلس النواب",
+        "correctAnswer": "الوزير"
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إنشاء الجنسية",
+        "correctAnswer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "تقتصر مهمة اللجنة المختصة على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ترشيح من ترى منحهم الجنسية"
+      },
+      {
+        "question": "أثر سحب الجنسية يبدأ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من تاريخ الحكم القضائي.",
+        "correctAnswer": "من تاريخ القرار الوزاري."
+      },
+      {
+        "question": "يجوز تحديد عدد سنوي للمجنسين بقرار جمهوري بناءً على عرض الوزير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المادة (44) تساوي بين الجنسية الأصلية والمكتسبة من حيث الحماية الدستورية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
