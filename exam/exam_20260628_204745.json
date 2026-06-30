@@ -4152,5 +4152,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "عفراء الحاج",
+    "deviceId": "DEV-WI5W7V4V7-mr0wfscp",
+    "submissionDate": "2026-06-30T17:06:57.798Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العقوبة المقررة لتقديم وثائق مزورة مع العلم بتزويرها هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السجن المؤبد",
+        "correctAnswer": "الحبس أو الغرامة التي لا تزيد عن عشرين ألف ريال"
+      },
+      {
+        "question": "يشترط لسحب الجنسية وفق المادة (19):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حكم من المحكمة العليا.",
+        "correctAnswer": "قرار وزاري مسبب."
+      },
+      {
+        "question": "إذا دفع شخص بأنه غير داخل في الجنسية اليمنية، فإن عبء الإثبات:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يسقط نهائياً",
+        "correctAnswer": "يقع على من دفع بذلك"
+      },
+      {
+        "question": "القرار الوزاري المسبب يمثل ضمانة إجرائية تسمح بالطعن القضائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجيز الدستور سحب الجنسية المكتسبة وفقاً للقانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المادة (44) تساوي بين الجنسية الأصلية والمكتسبة من حيث الحماية الدستورية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "لا يتحمل عبء الإثبات إلا من يدعي دخوله في الجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "رد الجنسية واستردادها مصطلحان مترادفان تماماً في النص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الوصف النقدي للعقوبات الواردة في النص أنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خفيفة نسبياً مقارنة بخطورة الجريمة"
+      },
+      {
+        "question": "إذا ألغيت شهادة الجنسية، فإن ذلك يكون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بقرار مسبب"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
