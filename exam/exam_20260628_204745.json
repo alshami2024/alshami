@@ -3070,5 +3070,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد",
+    "deviceId": "DEV-6AKNKHCNB-mqzbx6je",
+    "submissionDate": "2026-06-30T08:55:09.359Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يشترط لسحب الجنسية وفق المادة (19):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قرار وزاري مسبب."
+      },
+      {
+        "question": "إيصال استلام طلب الجنسية يثبت:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مجرد تقديم الطلب"
+      },
+      {
+        "question": "أي الآتي لا يُعد من الشروط التي تتحقق منها الجهات المختصة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفوز في انتخابات عامة"
+      },
+      {
+        "question": "اللجنة المختصة هي التي تصدر قرار منح الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يجيز الدستور سحب الجنسية المكتسبة وفقاً للقانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "التمييز بين إسقاط الجنسية وسحبها يعد من المبادئ التي أكدها النص الدستوري والتفسير القانوني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تقتصر مهمة اللجنة المختصة على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ترشيح من ترى منحهم الجنسية"
+      },
+      {
+        "question": "فترة الخمس سنوات الأولى بعد التجنس تُعد:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مدة اكتساب الجنسية الأصلية.",
+        "correctAnswer": "فترة اختبار ضمنية."
+      },
+      {
+        "question": "تعتبر أحكام الجنسية حجة على الكافة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بعد إصدار شهادة الجنسية",
+        "correctAnswer": "بعد نشر منطوقها في الجريدة الرسمية"
+      },
+      {
+        "question": "يحظر الدستور اليمني إسقاط الجنسية الأصلية عن المواطن مهما كان السبب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
