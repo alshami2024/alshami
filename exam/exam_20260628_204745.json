@@ -3467,5 +3467,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد",
+    "deviceId": "DEV-6AKNKHCNB-mqzbx6je",
+    "submissionDate": "2026-06-30T09:04:52.790Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ارتكاب جرائم الخيانة العظمى يندرج ضمن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حالات المادة (19)."
+      },
+      {
+        "question": "أي الحالات الآتية لا تخضع لقيد الخمس سنوات؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الخدمة العسكرية لدولة أجنبية دون ترخيص."
+      },
+      {
+        "question": "يجوز تحديد عدد سنوي للمجنسين بقرار جمهوري بناءً على عرض الوزير.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "شهادة الجنسية:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تنشئ الجنسية بذاتها",
+        "correctAnswer": "يمنحها الوزير لمن اكتسب الجنسية"
+      },
+      {
+        "question": "فترة الخمس سنوات الأولى بعد التجنس تُعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فترة اختبار ضمنية."
+      },
+      {
+        "question": "أي القواعد الآتية تعبر عن مضمون المادة (27)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا حاجة للإثبات في مسائل الجنسية",
+        "correctAnswer": "الإثبات على من يدعي وعلى من ينفي الجنسية"
+      },
+      {
+        "question": "إذا ألغيت شهادة الجنسية، فإن ذلك يكون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بقرار مسبب"
+      },
+      {
+        "question": "ما الجهة التي يُقدم إليها طلب التجنس داخل اليمن؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "النيابة العامة",
+        "correctAnswer": "مصلحة الجوازات والجنسية في المحافظة محل الإقامة"
+      },
+      {
+        "question": "استرداد الجنسية يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إزالة الجنسية المكتسبة.",
+        "correctAnswer": "العودة إلى الجنسية بعد زوالها."
+      },
+      {
+        "question": "الحصول على الجنسية بطريق الغش يعد سبباً لسحب الجنسية خلال خمس سنوات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
