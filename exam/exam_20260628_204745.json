@@ -2871,5 +2871,105 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد",
+    "deviceId": "DEV-6AKNKHCNB-mqzbx6je",
+    "submissionDate": "2026-06-30T08:40:18.642Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "التمييز بين إسقاط الجنسية وسحبها يعد من المبادئ التي أكدها النص الدستوري والتفسير القانوني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "استرداد الجنسية يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العودة إلى الجنسية بعد زوالها."
+      },
+      {
+        "question": "أي الحالات الآتية لا تخضع لقيد الخمس سنوات؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الغش في التجنس.",
+        "correctAnswer": "الخدمة العسكرية لدولة أجنبية دون ترخيص."
+      },
+      {
+        "question": "المادة (44) تساوي بين الجنسية الأصلية والمكتسبة من حيث الحماية الدستورية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يجيز الدستور سحب الجنسية المكتسبة وفقاً للقانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أثر سحب الجنسية يبدأ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من تاريخ القرار الوزاري."
+      },
+      {
+        "question": "يعد الإيصال الرسمي دليلاً على اكتساب الجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يجوز تحديد عدد سنوي للمجنسين بقرار جمهوري بناءً على عرض الوزير.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "إذا كان طالب التجنس خارج اليمن، فإنه يقدم طلبه إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الممثلين السياسيين أو القنصليين للجمهورية اليمنية"
+      },
+      {
+        "question": "أي المفاهيم يختص بإزالة الجنسية المكتسبة وفق أسباب قانونية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سحب الجنسية"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
