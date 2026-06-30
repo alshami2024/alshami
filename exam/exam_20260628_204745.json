@@ -3861,5 +3861,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-06-30T14:40:44.522Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "رد الجنسية واستردادها مصطلحان مترادفان تماماً في النص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "شهادة الجنسية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يمنحها الوزير لمن اكتسب الجنسية"
+      },
+      {
+        "question": "أي المفاهيم يختص بإزالة الجنسية المكتسبة وفق أسباب قانونية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سحب الجنسية"
+      },
+      {
+        "question": "يجيز الدستور سحب الجنسية المكتسبة وفقاً للقانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الحصول على الجنسية بطريق الغش يعد سبباً لسحب الجنسية خلال خمس سنوات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يشترط نشر قرارات الجنسية في الجريدة الرسمية خلال خمسة عشر يوماً من تاريخ صدورها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يفيد تفسير المادة (26) أن النشر هو الذي ينشئ الأثر القانوني لقرار الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تمنح شهادة الجنسية خلال مدة لا تتجاوز سنة من تاريخ تقديم الطلب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ارتكاب جرائم الخيانة العظمى يندرج ضمن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حالات المادة (19)."
+      },
+      {
+        "question": "يعاقب القانون على تقديم وثائق مزورة مع العلم بتزويرها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
