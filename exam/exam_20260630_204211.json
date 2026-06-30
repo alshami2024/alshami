@@ -35,5 +35,58 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار",
+    "studentName": "هاجر عقيل عبده مسعد عازب",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-06-30T17:49:54.195Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 2
+    },
+    "essayScore": {
+      "totalScore": 19,
+      "totalMax": 20
+    },
+    "answers": [
+      {
+        "question": "ما هو أحد الأسئلة الرئيسية في نظرية المعرفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كيف يمكننا الوصول إلى المعرفة؟"
+      },
+      {
+        "question": "ما هي نظرية المعرفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نظرية تتعلق بكيفية معرفة الأشياء"
+      },
+      {
+        "question": "عرف المنطق",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "هو آلة تعصم الذهن من الوقوع في الخطأ",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 10/10"
+      },
+      {
+        "question": "عرف الأنثروبولوجيا",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "هو شامل لدراسة الإنسان من جميع الجوانب البيولوجية والثقافية والاجتماعية والتاريخية",
+        "essayScore": 9,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 9/10"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
