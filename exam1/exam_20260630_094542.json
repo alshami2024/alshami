@@ -31,5 +31,38 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-06-30T06:50:51.861Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 20
+    },
+    "answers": [
+      {
+        "question": "عرف الفقه.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "معرفة الأحكام الشرعية العملية بأدلتها التفصيلية"
+      },
+      {
+        "question": "قال تعالى:\nإن الله على كل شيء قدير. \nاستخرج خبر الفعل الناسخ من الآية.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "قدير"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
