@@ -88,5 +88,38 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار",
+    "studentName": "فوزي",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-06-30T17:52:59.284Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 2
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو أحد الأسئلة الرئيسية في نظرية المعرفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كيف يمكننا الوصول إلى المعرفة؟"
+      },
+      {
+        "question": "ما هي نظرية المعرفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نظرية تتعلق بكيفية معرفة الأشياء"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
