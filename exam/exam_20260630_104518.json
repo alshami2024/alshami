@@ -1,0 +1,59 @@
+[
+  {
+    "examTitle": "النحو",
+    "studentName": "تفاني الصيادي",
+    "deviceId": "DEV-FNSKJ4OM5-mr0bqryt",
+    "submissionDate": "2026-06-30T07:47:59.763Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 50
+    },
+    "answers": [
+      {
+        "question": "ما هي أبرز المراجع التي يمكن الاستفادة منها لدراسة النحو؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "سيباويه"
+      },
+      {
+        "question": "ما هو النحو؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "علم من علوم اللغة العربية يدرس القواعد التي تحكم تركيب الجمل"
+      },
+      {
+        "question": "لماذا يعتبر النحو مهمًا في اللغة العربية؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "لأنه يساعد على فهم المعاني بشكل صحيح ويجعل التواصل أكثر دقة."
+      },
+      {
+        "question": "اذكر بعض القواعد الأساسية في النحو العربي.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "الإعراب، والتعريف والتنكير، وأحكام النحو مثل الرفع والنصب والجر."
+      },
+      {
+        "question": "كيف يؤثر النحو على فهم النصوص؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "من خلال تحديد المعاني الدقيقة للكلمات وعلاقاتها ببعضها البعض في الجملة"
+      }
+    ],
+    "tabSwitchCount": 7
+  }
+]
