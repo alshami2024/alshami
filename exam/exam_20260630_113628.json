@@ -20,7 +20,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "أهميتها تمكنا من معرفة حقائق المعتقدات والمفاهيم",
-        "essayScore": 0,
+        "essayScore": 7,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       },
       {
@@ -30,7 +30,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "يأتي أهمية الفلسفة من خلال وضع المعايير والقيم للعلوم",
-        "essayScore": 0,
+        "essayScore": 8,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       },
       {
@@ -40,7 +40,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "المثالية تفترض أن الواقع يجب أن يستلهم من القيم الموضوعة والمادية ترى بأن المادة هي الممثل للواقع",
-        "essayScore": 0,
+        "essayScore": 7,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       },
       {
@@ -50,7 +50,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "من خلال طرحهم لأسئلة عن القيم والمعرفة والسياسة",
-        "essayScore": 0,
+        "essayScore": 7,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       },
       {
@@ -60,7 +60,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "من خلال وضع النظريات الاجتماعية والسياسية والقانونية",
-        "essayScore": 0,
+        "essayScore": 7,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       }
     ],
