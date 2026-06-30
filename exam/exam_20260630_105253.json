@@ -1,0 +1,59 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "محمود علاو",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-06-30T07:53:11.120Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 5
+    },
+    "answers": [
+      {
+        "question": "كيف ساهم الفلاسفة اليونانيون في تشكيل الفلسفة الغربية؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 1,
+        "answer": "سيسي"
+      },
+      {
+        "question": "ما هي الفلسفة وما أهميتها في حياتنا اليومية؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 1,
+        "answer": "سي"
+      },
+      {
+        "question": "ناقش دور الفلسفة في العلوم.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 1,
+        "answer": "سي"
+      },
+      {
+        "question": "كيف يمكن أن تؤثر الفلسفة في سياسة المجتمع؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 1,
+        "answer": "سي"
+      },
+      {
+        "question": "ما الفرق بين الفلسفة المثالية والفلسفة المادية؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 1,
+        "answer": "سي"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
