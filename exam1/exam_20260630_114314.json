@@ -1,0 +1,39 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-06-30T09:24:19.474Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 18,
+      "totalMax": 20
+    },
+    "answers": [
+      {
+        "question": "عرف الكلمة.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "قول مفرد",
+        "essayScore": 8,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 8/10"
+      },
+      {
+        "question": "ما هي أقسام الكلمة؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "اسم وفعل وحرف",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 10/10"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
