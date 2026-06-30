@@ -1,0 +1,69 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "جمال",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-06-30T08:40:25.325Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 5
+    },
+    "answers": [
+      {
+        "question": "ما هي الفلسفة وما أهميتها في حياتنا اليومية؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أهميتها تمكنا من معرفة حقائق المعتقدات والمفاهيم",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
+      },
+      {
+        "question": "ناقش دور الفلسفة في العلوم.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يأتي أهمية الفلسفة من خلال وضع المعايير والقيم للعلوم",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
+      },
+      {
+        "question": "ما الفرق بين الفلسفة المثالية والفلسفة المادية؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المثالية تفترض أن الواقع يجب أن يستلهم من القيم الموضوعة والمادية ترى بأن المادة هي الممثل للواقع",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
+      },
+      {
+        "question": "كيف ساهم الفلاسفة اليونانيون في تشكيل الفلسفة الغربية؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من خلال طرحهم لأسئلة عن القيم والمعرفة والسياسة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
+      },
+      {
+        "question": "كيف يمكن أن تؤثر الفلسفة في سياسة المجتمع؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "من خلال وضع النظريات الاجتماعية والسياسية والقانونية",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
