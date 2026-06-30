@@ -9,7 +9,7 @@
       "total": 0
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 27,
       "totalMax": 50
     },
     "answers": [
@@ -17,41 +17,51 @@
         "question": "ما هي الفلسفة وما أهميتها في حياتنا اليومية؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "تساعد على فهم المعتقدات والمفاهيم بشكل أعمق"
+        "answer": "تساعد على فهم المعتقدات والمفاهيم بشكل أعمق",
+        "essayScore": 3,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 3/10"
       },
       {
         "question": "ما الفرق بين الفلسفة المثالية والفلسفة المادية؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "الفلسفة المثالية تؤكد على أن الأفكار والمفاهيم هي الأساس للواقع، بينما الفلسفة المادية ترى أن المادة هي ما يشكل العالم الحقيقي"
+        "answer": "الفلسفة المثالية تؤكد على أن الأفكار والمفاهيم هي الأساس للواقع، بينما الفلسفة المادية ترى أن المادة هي ما يشكل العالم الحقيقي",
+        "essayScore": 8,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 8/10"
       },
       {
         "question": "كيف ساهم الفلاسفة اليونانيون في تشكيل الفلسفة الغربية؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "من خلال طرحهم لأسئلة حول الأخلاق والمعرفة والمجتمع"
+        "answer": "من خلال طرحهم لأسئلة حول الأخلاق والمعرفة والمجتمع",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 4/10"
       },
       {
         "question": "كيف يمكن أن تؤثر الفلسفة في سياسة المجتمع؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "من خلال توفير نظريات حول العدالة والحرية والمساواة"
+        "answer": "من خلال توفير نظريات حول العدالة والحرية والمساواة",
+        "essayScore": 5,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 5/10"
       },
       {
         "question": "ناقش دور الفلسفة في العلوم.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "تساهم في تحديد الأسئلة التي يجب أن يهتم بها العلماء وتشجع على التفكير النقدي حول القضايا الأخلاقية المرتبطة بالتقدم العلمي"
+        "answer": "تساهم في تحديد الأسئلة التي يجب أن يهتم بها العلماء وتشجع على التفكير النقدي حول القضايا الأخلاقية المرتبطة بالتقدم العلمي",
+        "essayScore": 7,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 7/10"
       }
     ],
     "tabSwitchCount": 6
