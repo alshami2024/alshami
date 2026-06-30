@@ -1,0 +1,39 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "فوزي",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-06-30T17:44:15.082Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 17,
+      "totalMax": 20
+    },
+    "answers": [
+      {
+        "question": "عرف الأنثروبولوجيا",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "هو علم دراسة الإنسان من جميع الجوانب",
+        "essayScore": 8,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 8/10"
+      },
+      {
+        "question": "عرف المنطق",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "هو أداة لمنع الذهن من الخطأ",
+        "essayScore": 9,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 9/10"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
