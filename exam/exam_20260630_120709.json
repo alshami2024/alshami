@@ -20,7 +20,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "نتلهلن",
-        "essayScore": 0,
+        "essayScore": 7,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       },
       {
@@ -30,7 +30,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "ققف",
-        "essayScore": 0,
+        "essayScore": 5,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       },
       {
@@ -50,7 +50,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "ققق",
-        "essayScore": 0,
+        "essayScore": 5,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       },
       {
@@ -60,7 +60,7 @@
         "isGraded": true,
         "maxScore": 1,
         "answer": "ققق",
-        "essayScore": 0,
+        "essayScore": 5,
         "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/1"
       }
     ],
