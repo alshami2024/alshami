@@ -35,5 +35,38 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-06-30T08:12:19.746Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 20
+    },
+    "answers": [
+      {
+        "question": "عرف أصول الفقه.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "أدلة الفقه الٱجمالية وكيف يمكن الاستفادة منها ومعرفة حال المستفيد"
+      },
+      {
+        "question": "ما العلة في تحريم الخمر؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "السكر"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
