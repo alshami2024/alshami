@@ -1,0 +1,49 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "جمال",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-06-30T08:03:18.318Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 30,
+      "totalMax": 30
+    },
+    "answers": [
+      {
+        "question": "من القائل أنا أفكر أنا موجود؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "ديكارت",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 10/10"
+      },
+      {
+        "question": "صاحب نظرية الوجوب العقلي؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "جمال الشامي",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 10/10"
+      },
+      {
+        "question": "من هو الحسن؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 10,
+        "answer": "بن جمال",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 10/10"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
