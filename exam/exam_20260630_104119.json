@@ -1,0 +1,60 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "محمود علاو",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-06-30T07:42:38.344Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 5
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من هذه الفلسفات تعتبر فلسفة معاصرة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوجودية"
+      },
+      {
+        "question": "من هو الفيلسوف الذي أسس المدرسة الأثينية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سقراط",
+        "correctAnswer": "أفلاطون"
+      },
+      {
+        "question": "ما هو الموضوع الرئيسي الذي تتعامل معه الفلسفة الأخلاقية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السلوك"
+      },
+      {
+        "question": "أي من الفلاسفة التاليين يعتبر مؤسس الفلسفة التجريبية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جون لوك"
+      },
+      {
+        "question": "ما هي الفلسفة التي تركز على دراسة الوجود والكينونة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوجودية"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
