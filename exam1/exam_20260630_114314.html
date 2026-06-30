@@ -7,7 +7,7 @@
     <title>اختبار</title>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
-    <script src="https://rawcdn.githack.com/alshami2024/alshami/main/exam1/crypto-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
     <style>
@@ -221,12 +221,12 @@
 
 <script>
     // 🔥 البيانات المشفرة (لا يمكن قراءتها إلا بالمفتاح الصحيح)
-    const ENCRYPTED_PAYLOAD = 'U2FsdGVkX1+xnO3ytJiTj6p8wz3U6K60dX0s8gqVwkG6mzPRLbVFdGaMzluBH++f7vn7vMiw2ZXaMGxMhtiQLvlW2IqarnhGFiwETDeCyt/Rf6qgIxcgoBFhm7PVtgh9uPcVOLhp3NxiWyiMWivtentbNKhKitmcCh5nNsSJi+tY8Zbuk4QfgPFu6bATWcO3zF7YmghEFWKId7eUAsWGV7xh6yOZDPzQRrb4R8qHBMaiIvS9jWtkdk2wPfoYx6gKE2O2c1e9f2p/BCxBP3Veil/JwDICfb0AYWt45RRw2e6SpOSNYmQNXUk22v5ZTJKvcvMHjiZRTbNJR/6sEO1QwqJPVXAYsqrgy0Nh31AFwOIsdXwPqXIJ7et73Jz+H+pPN0hD9Zfq5P367hMGVWLVUO+mKNkJf1IqRo6mutgP7KGmf5J1uBM1aHbZ3lwqcA4BNXFR1kgLTyigMBGu143wzKuxHOl+GwtlpEh8NE+UDlGFfnntlvPN6papIDPz1h/VJ2AnuLlKXPzn2F9qQy3yh7PzN3PCa3Es82RU0YGCKoD6HCBr5ERiZ7WltNAKPn5P8an1GzsqYYNie27rM6rN3o45p5muWdeCpCUZR145854cmsVg3fJSEBd7Xx7eFWNDmDQ+sO2UlIFq5f9ficZsb7FQO9gdPSM81WtXIVhEEOZenSYHpfqBoupSvX22gpR3NKBAPQbjp6ANqXYydCxliaTvcFG+Y0gL97/aQSa3RSow4Rmqqkr5CQBvNIM2MThYpJxeBGcRyuVQCRlfNOaEmJt1fagGku+Ele6IzP4W+x+02GxKbtMtTjHPzVS/kv9RevSMZZ8xyldSxTpFq+XLHP2g5g1WRgUqtIDFoL7k+ogtL+f9T98XpbWW32sGkNOaWuY4b4Yr6zfsSVePkeHmsJeD+mac9sjCptXQOScUgFqF0aYOz+E8OLm4/lYn1igge/7legfKiScNY6tmUb8Qfv3w3w6LLa6K23gETFOdOgm5gNch+hPar2ks5cK3b8ReHzuJ3ovSY9tq0/+6HUZSzviUBcbNxIJJMuAy9Wbh4/BFxO7+yYiPX89oYVjY/sBG1G6Ccq9cHaIavYnxYRpwTuPmZRW2pLK1dbldIdWbHF+H4WImmTCX+bqM4dHk7AsebzXk1eOf0shW+XLJ7hMvAwgYkmr9FvxDkNotfBRc9IgiDvQagwhb4R2OJPqGJiVOVUAeqtF7GmvY3BIYSRPR8xPbzMWdiK6to/vwwmkR6r7/dPct8YB372MlMeR7/N2F4paq0lRPuLSS51vF4ZVAUYJ9rMdJQr4uWdHYKt505cwJClgJJkxyjqIpbxjsfW/SciLMS0oAuecDwDpPQF1Io7fGGfc7zIVAdrinugens2laESD0T8Z/mcxP4+6Z5h6pwzVuuuUwohuLjEB42ILuPvVG57JILnAYC6KXahPtzvHps/sEIH5cavqlIIZxOOT+y8UF9rvjG+sy4tely6U/58EDcfflinUPpvo8VqeE5fb4AUdX0mHMtSHtkd3H+TprR/99u0NrLDgIIO6P/IRr0l6D7Dyy12Ny6XSViFSs03bp2fYgvDu+pvWcMB4Eh+jGJ6v2MIUK0dbybUxeFZn1F0H9ZTqAx4cvQmhzqXjKY6OBSY/7HydGbhcJTz7dEIyNDG5pX8s2M976HjFPnzajyw==';
+    const ENCRYPTED_PAYLOAD = 'U2FsdGVkX18pVHYHGQSYthEnPDUJDzPvKaeEvUIxr8sSicNumvcD/h+KDJ+8lhK7ipH+VvTXRjXzpABKR0CjyZ4EHtH9MfnXijAt4wRCvdrmSkX0mfTevs6Ojj4cLmwpDA6qxc1i3cj/rNJTLQaO3yj+BHJL3YilXQR/v8iFdogJVB+YfRW3W02o4SmjY8xg55og8wTj1zcrlBx/VvlzYl54qCysQfwcuGVktdTYUdFMZ1+rGOU7xi7Err7p6MAWEnHib+sDNN8Xgd8KI9b0Ty7mFGTDbcGWpPFd/RmztP9hAARiFJm4XVw98hZSH4f0bcB6GrsbGLXaY/MiS4qpoL2nVKoOERgT1FMghKvn9+VffSOoHyxaYUA6am1L7Z7uSTCNKykZhijOc1lkEWmOqWWEyr1ZxKB5fTxMj93KvLL+9r1DOY5s80rCp5tKznYSzrMTC790elvRxZuKvn/QlYjnAKQ9bNv/ag1t69fFXAVGF0JaUXFTjW8z6VMl6b/emvgnmetgJ+PhqBu7qKreeHlYLXq9OKbUyWand2OodjZZiPf52gdTKu0ICU7lN414Liy8bVsgMXTXoF8w4P7JKtbLbkjIqwVaesNbx7npk2lAFbRgm0e/5CK/FTJeQqks/lEIsbLEp3TA7SoYfPeXlTWN10G4TdB+Bpcewoh/AUp6NlU6JjQsP29lK+RwgaFaTs5PTFrss5svIJwa8aATMd9T32W9t3Q1cxd3alvqzkau+Cba1KFQTpDcQS1NDhWiUj2WFUxLrg4RfiKB/b67ThEs5wc4bx5ayzYVnMlRg8e6JZf6WLtzNUXy5evlxZrqRwTGRKl0hcgWCpAEmTTPHfqigcN8NmB6hdHAgAvevQq6+1TKBi1TfJNR6hJ044WTQzCsGa6Ke68OILRxbKFogQo/K+GRd/m3MOmRjrJs0krdBDmJZuiGYyfeObSjIaRdieJh6VhxYqC+c8hBjMWZTHIC/zTPXaSuYfuzjiSmPCN1Gq751/7o9KUJav5LEs/rYQet45rMqdC4TcO02hcFu5rCShps7RaMcdWd40argJU45tZfIdOmuc6bJUQNTC7nlgJm39CCEbWziz634YSijx63dsAzowzMd3qh7lu+CyyHZEsUsuuf1jEsMvaKlM7MKMGKWbGqNnDw1Tw/IxCsCMMOYE6CevPsJYCUVyRBfxVkb8QDhDaseB38qdgOiA+5fvy30yQCDPClsnfJNpZP3+6KuwUc5SkqsGvMnFLrN1ihCbXkLsWKQmiMZ156kZHIMfDhWd5N1BxHVLbzzD+C8c+sW1HNykk2x3rDGhny2/INr1UThNQucYT+LtSxROwzxsdzV58af96cr/FkcIz5mlpXM2wxnUcPvfcyFbZUdlhjwZM5WdAVQ+E2Sihf1Q0mcht8EfDWM3H69tlAsB8sV2xTgZMYLTX8qYD5iLB2M0RwknOzqvzE4aNsxcjXjlcbPb/cNoEWqCR/ez6walAfntWO6c6UBz8eisCHs7utezi+4Ypg1FY9/bqIuYb0ZYDjDiQ/Ny/u8R6Wm4zleA1hi4khNLB47Y/+jKk4OXVZ/3icHOLXnHsePNgo3f0U30LwcqQnA+FSo/MVJh7iwo+2nQVMcg2vf7NlMPBejPQ5lHEbnEALF5JMAdTVHjgX/6xjqrcXbDL91+eoF9uuFPOy4Do+Fy2zzJPoAnkczBkWR+Ror0O1R4cQBrQdjIgBBUrYXDycbHmdfQDLzgDWSvU5TZbl/QJx9j0oZCoKDxTl7zO9m33nJ91prYpni+jrNKzMfQc0UnDA0iahkN8rD1mxKmsLk2AfhskB0oAgmhBCb8n9hbrBG9WFU1ABM86bDioM';
     // 🔥 خريطة المفاتيح (تحتوي على المفتاح الرئيسي مشفراً برمز كل طالب)
     const SECURITY_VAULT = {};
     const IS_PUBLIC = true;
-    const OPEN_KEY = '2y23f1a4i45jnj9s28wmw'; 
-    const GEMINI_KEY = 'U2FsdGVkX19/sdKhOnFrOniF2W5pOpVtxHZi7SwbjSyeaju0H6KXPL4MiW+JueCeam5CDpqJQwtEPF03Me6YXlLtZhrTPzCQezUW5CSN6HE=';
+    const OPEN_KEY = 'pxn6loa1vau07oo41w2x8'; 
+    const GEMINI_KEY = 'U2FsdGVkX19DgEsuS5FKiAk+tawyvx2rkbotIhD8VW8lOX23UrJ5Ksp6k4ptjPN3Bee698yUamyBhkGxvuVfJ6+bL7mtT7rwuJoKn5/QiXY=';
     const SECRET_KEY = 'change-this-to-your-own-secret-phrase-12345';
     const EXAM_START_TIME = '';
     const EXAM_END_TIME = '';
@@ -931,7 +931,7 @@
         const corrTxt = opts[q.correctAnswer];
         const resBox = document.getElementById(`ai-res-${idx}`);
         
-        const encryptedKey = 'U2FsdGVkX19/sdKhOnFrOniF2W5pOpVtxHZi7SwbjSyeaju0H6KXPL4MiW+JueCeam5CDpqJQwtEPF03Me6YXlLtZhrTPzCQezUW5CSN6HE='; 
+        const encryptedKey = 'U2FsdGVkX19DgEsuS5FKiAk+tawyvx2rkbotIhD8VW8lOX23UrJ5Ksp6k4ptjPN3Bee698yUamyBhkGxvuVfJ6+bL7mtT7rwuJoKn5/QiXY='; 
         const passPhrase = 'Exam-Secret-Pass-2025'; 
         resBox.style.display = 'block';
         resBox.innerHTML = 'جاري تحليل الإجابة...';
