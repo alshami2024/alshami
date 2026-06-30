@@ -9,7 +9,7 @@
       "total": 0
     },
     "essayScore": {
-      "totalScore": 0,
+      "totalScore": 20,
       "totalMax": 20
     },
     "answers": [
@@ -17,17 +17,21 @@
         "question": "ما العلة في تحريم الخمر؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "الإسكار"
+        "answer": "الإسكار",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 10/10"
       },
       {
         "question": "عرف أصول الفقه.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "معرفة أدلة الفقه الإجمالية وكيفية الاستفادة منها وحال المستفيد"
+        "answer": "معرفة أدلة الفقه الإجمالية وكيفية الاستفادة منها وحال المستفيد",
+        "essayScore": 10,
+        "aiGradeSuggestion": "تم التصحيح آلياً: 10/10"
       }
     ],
     "tabSwitchCount": 0
