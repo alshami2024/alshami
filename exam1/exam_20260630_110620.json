@@ -1,0 +1,35 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "عبدالرقيب الشامي",
+    "deviceId": "DEV-NJPL9YU75-mk2fbq1g",
+    "submissionDate": "2026-06-30T08:09:37.569Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 20
+    },
+    "answers": [
+      {
+        "question": "ما العلة في تحريم الخمر؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "الإسكار"
+      },
+      {
+        "question": "عرف أصول الفقه.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": false,
+        "maxScore": 10,
+        "answer": "معرفة أدلة الفقه الإجمالية وكيفية الاستفادة منها وحال المستفيد"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
