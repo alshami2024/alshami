@@ -2462,5 +2462,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "ناجي خالد مسعد علي اليزيدي",
+    "deviceId": "DEV-AC0BU81ON-mqzxf936",
+    "submissionDate": "2026-06-30T00:46:46.283Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يشترط نشر قرارات الجنسية في الجريدة الرسمية خلال خمسة عشر يوماً من تاريخ صدورها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "أي الآتي لا يُعد من الشروط التي تتحقق منها الجهات المختصة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "حسن السيرة والسلوك",
+        "correctAnswer": "الفوز في انتخابات عامة"
+      },
+      {
+        "question": "الحصول على الجنسية بطريق الغش يعد سبباً لسحب الجنسية خلال خمس سنوات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يمكن أن يبقى أبناء من سُحبت جنسيته محتفظين بالجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يفيد تفسير المادة (26) أن النشر هو الذي ينشئ الأثر القانوني لقرار الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما الجهة التي يُقدم إليها طلب التجنس داخل اليمن؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مصلحة الجوازات والجنسية في المحافظة محل الإقامة"
+      },
+      {
+        "question": "إذا دفع شخص بأنه غير داخل في الجنسية اليمنية، فإن عبء الإثبات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يقع على من دفع بذلك"
+      },
+      {
+        "question": "لا يتحمل عبء الإثبات إلا من يدعي دخوله في الجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أثر سحب الجنسية يمتد تلقائياً إلى جميع أفراد الأسرة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "إذا ادعى شخص أنه يمني الجنسية، فإن عبء الإثبات يقع على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المدعي نفسه"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
