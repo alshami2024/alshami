@@ -84,41 +84,46 @@
         "question": "ما هي الفلسفة وما أهميتها في حياتنا اليومية؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "لها أهمية كبيرة في فهم المعتقدات والمفاهيم"
+        "answer": "لها أهمية كبيرة في فهم المعتقدات والمفاهيم",
+        "essayScore": 7
       },
       {
         "question": "كيف ساهم الفلاسفة اليونانيون في تشكيل الفلسفة الغربية؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "من خلال طرحهم لأسئلة عن القيم والأخلاق والوجود والسياسية"
+        "answer": "من خلال طرحهم لأسئلة عن القيم والأخلاق والوجود والسياسية",
+        "essayScore": 7
       },
       {
         "question": "ما الفرق بين الفلسفة المثالية والفلسفة المادية؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "المثالية تفترض أن الواقع يجب أن يستلهم من القيم المثالية المادية ترى بأن المادة هي المستلهم للواقع"
+        "answer": "المثالية تفترض أن الواقع يجب أن يستلهم من القيم المثالية المادية ترى بأن المادة هي المستلهم للواقع",
+        "essayScore": 7
       },
       {
         "question": "ناقش دور الفلسفة في العلوم.",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "يي"
+        "answer": "يي",
+        "essayScore": 7
       },
       {
         "question": "كيف يمكن أن تؤثر الفلسفة في سياسة المجتمع؟",
         "type": "essay",
         "isCorrect": false,
-        "isGraded": false,
+        "isGraded": true,
         "maxScore": 10,
-        "answer": "سي"
+        "answer": "سي",
+        "essayScore": 6
       }
     ],
     "tabSwitchCount": 0
