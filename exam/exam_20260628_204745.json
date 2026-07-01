@@ -4451,5 +4451,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "علي جبر الحجاجي",
+    "deviceId": "DEV-17FFE94HG-mr22vzmf",
+    "submissionDate": "2026-07-01T12:55:17.624Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تعتبر أحكام الجنسية حجة على الكافة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بعد نشر منطوقها في الجريدة الرسمية"
+      },
+      {
+        "question": "أي المفاهيم الآتية يعني إنهاء الجنسية الأصلية بقرار سلطوي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إسقاط الجنسية"
+      },
+      {
+        "question": "القرار الوزاري المسبب يمثل ضمانة إجرائية تسمح بالطعن القضائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "سحب الجنسية يرد على الجنسية المكتسبة دون الأصلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "رد الجنسية يختلف عن استردادها لأنه يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "منح الجنسية لمن سُحبت منه بقرار تقديري."
+      },
+      {
+        "question": "الوصف النقدي للعقوبات الواردة في النص أنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خفيفة نسبياً مقارنة بخطورة الجريمة"
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "إذا تعارض تاريخ النشر مع تاريخ صدور قرار التجنس، فإن الأصل في بدء الأثر القانوني هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تاريخ النشر",
+        "correctAnswer": "تاريخ صدور القرار"
+      },
+      {
+        "question": "شهادة الجنسية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يمنحها الوزير لمن اكتسب الجنسية"
+      },
+      {
+        "question": "الإخلال بشروط الإقامة من حالات السحب دون قيد زمني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
