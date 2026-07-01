@@ -5034,5 +5034,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-07-01T13:29:00.388Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يصدر قرار منح الجنسية اليمنية بالتجنس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بقرار جمهوري بناءً على عرض الوزير"
+      },
+      {
+        "question": "التمييز بين إسقاط الجنسية وسحبها يعد من المبادئ التي أكدها النص الدستوري والتفسير القانوني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "فترة الخمس سنوات الأولى بعد التجنس تُعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فترة اختبار ضمنية."
+      },
+      {
+        "question": "العمل لصالح هيئات أجنبية معادية يدخل ضمن أسباب السحب خلال الخمس سنوات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي العبارات التالية صحيحة بشأن أفراد الأسرة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يمتد إليهم أثر السحب تلقائياً."
+      },
+      {
+        "question": "إذا ألغيت شهادة الجنسية، فإن ذلك يكون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بقرار مسبب"
+      },
+      {
+        "question": "تقديم خدمات لدولة في حالة حرب مع اليمن يعد من حالات المادة (19).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "استرداد الجنسية يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العودة إلى الجنسية بعد زوالها."
+      },
+      {
+        "question": "الإخلال بشروط الإقامة من حالات السحب دون قيد زمني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الخدمة العسكرية لدولة أجنبية دون ترخيص من الحالات الخاصة التي لا تقيد بزمن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
