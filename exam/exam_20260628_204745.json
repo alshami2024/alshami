@@ -5520,5 +5520,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "سليمان طاهر الدبيلي",
+    "deviceId": "DEV-8MN7VUPRS-mqy3tqix",
+    "submissionDate": "2026-07-01T17:11:22.264Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "العقوبة المقررة لتقديم وثائق مزورة مع العلم بتزويرها هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحبس أو الغرامة التي لا تزيد عن عشرين ألف ريال"
+      },
+      {
+        "question": "إذا دفع شخص بأنه غير داخل في الجنسية اليمنية، فإن عبء الإثبات:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يقع على من دفع بذلك"
+      },
+      {
+        "question": "أي العبارات التالية أدق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القرار الجمهوري ينشئ الجنسية، والنشر يحقق الإعلان والحجية."
+      },
+      {
+        "question": "حدد القانون المحكمة المختصة بنظر جميع منازعات الجنسية تحديداً دقيقاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يجوز إسقاط الجنسية الأصلية إذا ارتكب الشخص جريمة الخيانة العظمى.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الوصف النقدي للعقوبات الواردة في النص أنها:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خفيفة نسبياً مقارنة بخطورة الجريمة"
+      },
+      {
+        "question": "القرار الوزاري المسبب يمثل ضمانة إجرائية تسمح بالطعن القضائي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "لم يحدد القانون نوع المحكمة المختصة بمنازعات الجنسية، وإنما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أسندها للقضاء بصورة عامة"
+      },
+      {
+        "question": "التمييز بين إسقاط الجنسية وسحبها يعد من المبادئ التي أكدها النص الدستوري والتفسير القانوني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الهدف من اشتراط القرار الوزاري المسبب هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إتاحة الطعن القضائي."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
