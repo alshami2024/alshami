@@ -4549,5 +4549,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار القانون الدولي الخاصة",
+    "studentName": "محمد احمد محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-07-01T13:14:41.559Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "وفق المادة (44) من الدستور، أي العبارات أدق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يجوز إسقاط الجنسية الأصلية إطلاقاً."
+      },
+      {
+        "question": "يجيز الدستور سحب الجنسية المكتسبة وفقاً للقانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المادة (44) تساوي بين الجنسية الأصلية والمكتسبة من حيث الحماية الدستورية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يمكن أن يبقى أبناء من سُحبت جنسيته محتفظين بالجنسية اليمنية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الحالات الآتية تدخل ضمن المادة (18)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحصول على الجنسية بطريق الغش."
+      },
+      {
+        "question": "الغرض الأساسي من نشر قرارات الجنسية في الجريدة الرسمية هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإعلان والحجية في مواجهة الكافة"
+      },
+      {
+        "question": "الجهة التي تشكل اللجنة المختصة بترشيح المجنسين هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوزير"
+      },
+      {
+        "question": "يفيد تفسير المادة (26) أن النشر هو الذي ينشئ الأثر القانوني لقرار الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يصدر قرار منح الجنسية اليمنية بالتجنس:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بقرار جمهوري بناءً على عرض الوزير"
+      },
+      {
+        "question": "تبدأ آثار قرارات الجنسية من تاريخ صدورها ما لم ينص القانون على خلاف ذلك.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
