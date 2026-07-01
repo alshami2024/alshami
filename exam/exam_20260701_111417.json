@@ -1,0 +1,39 @@
+[
+  {
+    "examTitle": "اختبار",
+    "studentName": "جمال",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-07-01T08:15:04.180Z",
+    "mcqScore": {
+      "correct": 0,
+      "total": 0
+    },
+    "essayScore": {
+      "totalScore": 2,
+      "totalMax": 2
+    },
+    "answers": [
+      {
+        "question": "عرف الكلمة.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قول مفرد",
+        "essayScore": 1,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 1/1"
+      },
+      {
+        "question": "ما أقسام الكلمة؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اسم وفعل وحرف",
+        "essayScore": 1,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 1/1"
+      }
+    ],
+    "tabSwitchCount": 0
+  }
+]
