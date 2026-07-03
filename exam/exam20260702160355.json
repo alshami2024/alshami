@@ -1796,5 +1796,105 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (1)",
+    "studentName": "هنادي قايد السدح",
+    "deviceId": "DEV-GCEVPHMQD-mr4xx3p0",
+    "submissionDate": "2026-07-03T12:59:29.900Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "التفلسف بوصفه نشاطاً إنسانياً لا يمكن تحديد نشأته الأولى بزمن أو مكان معين.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الموضوعات الآتية يعد من الموضوعات الرئيسة للفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوجود"
+      },
+      {
+        "question": "يعد المنطق والأخلاق والجمال من العلوم المعيارية الداخلة في فلسفة القيم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وفق الرأي السائد لدى مؤرخي الفلسفة الغربية، أين كانت نشأة الفلسفة بوصفها علماً مستقلاً؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليونان"
+      },
+      {
+        "question": "جميع الفلاسفة اتفقوا على تعريف واحد للفلسفة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما المعنى اللغوي لكلمة (فلسفة) في أصلها اليوناني؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "البحث عن الوجود",
+        "correctAnswer": "حب الحكمة"
+      },
+      {
+        "question": "أي القوانين الآتية ينص على أن الشيء لا يمكن أن يتصف بالصفة ونقيضها في الوقت نفسه؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبدأ عدم التناقض"
+      },
+      {
+        "question": "أيُّ العبارات الآتية تُعَدُّ من التصورات الخاطئة عن الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفلسفة هي الكلام الغامض الذي يصعب فهمه."
+      },
+      {
+        "question": "كيف عرّف أرسطو الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "البحث عن الوجود بما هو موجود"
+      },
+      {
+        "question": "أي الفروع الفلسفية يختص بدراسة المعرفة ومصادرها وحدودها؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فلسفة التاريخ",
+        "correctAnswer": "الإبستمولوجيا"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
