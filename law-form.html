@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تسجيل عناوين بحوث التخرج - كلية الحقوق</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: #fff;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 5px solid #004477;
+        }
+        .logo-container {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            max-width: 120px;
+            height: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #004477;
+            margin-bottom: 5px;
+        }
+        h3 {
+            text-align: center;
+            color: #555;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #444;
+        }
+        input[type="text"], input[type="tel"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-family: inherit;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input:focus, textarea:focus, select:focus {
+            border-color: #004477;
+            outline: none;
+        }
+        .note {
+            font-size: 13px;
+            color: #666;
+            margin-top: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #004477;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background-color: #002d52;
+        }
+        .success-msg {
+            display: none;
+            background-color: #d4edda;
+            color: #155724;
+            padding: 15px;
+            border-radius: 4px;
+            text-align: center;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- شعار الكلية -->
+    <div class="logo-container">
+        <img src="https://raw.githubusercontent.com/alshami2024/alshami/main/logo-law.png" alt="شعار كلية الحقوق">
+    </div>
+
+    <h2>جامعة الضالع - كلية الحقوق</h2>
+    <h3>نموذج اقتراح عناوين بحوث التخرج</h3>
+    
+    <form id="researchForm">
+        
+        <div class="form-group">
+            <label for="studentNames">أسماء الطلاب/الطالبات (المشاركين في البحث):</label>
+            <textarea id="studentNames" rows="4" required placeholder="أدخل أسماء جميع الطلاب أو الطالبات هنا..."></textarea>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;">
+
+        
+        <div class="form-group">
+            <label for="title1">العنوان المقترح الأول (أساسي):</label>
+            <input type="text" id="title1" required placeholder="مثال: المسؤولية المدنية عن أخطاء الذكاء الاصطناعي">
+        </div>
+
+        <div class="form-group">
+            <label for="title2">العنوان المقترح الثاني (اختياري):</label>
+            <input type="text" id="title2" placeholder="أدخل العنوان الثاني">
+        </div>
+
+        <div class="form-group">
+            <label for="title3">العنوان المقترح الثالث (اختياري):</label>
+            <input type="text" id="title3" placeholder="أدخل العنوان الثالث">
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid #eee; margin: 25px 0;">
+
+        
+        <div class="form-group">
+            <label for="whatsappNumber">رقم الواتساب (للتواصل):</label>
+            <input type="tel" id="whatsappNumber" required placeholder="أدخل رقم الواتساب الخاص بمندوب المجموعة" dir="rtl">
+        </div>
+
+        <button type="submit">إرسال المقترحات للمراجعة</button>
+    </form>
+
+    <div id="successMessage" class="success-msg">
+        تم إرسال عناوينك بنجاح ! سيقوم العميد بمراجعتها واختيار الأنسب لك.
+    </div>
+</div>
+
+<script>
+    document.getElementById('researchForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        
+        const ENCODED_TOKEN = 'ODgzMTg0NTYyODpBQUZqYVNhd2hwcVdpMkVfTVMxMHh5b0VzNDlpUkhPNTlLcw=='; 
+        const ENCODED_CHAT_ID = 'MTUyNDM1MzA0'; 
+
+   
+        const TELEGRAM_BOT_TOKEN = atob(ENCODED_TOKEN); 
+        const TELEGRAM_CHAT_ID = atob(ENCODED_CHAT_ID); 
+
+    
+        const names = document.getElementById('studentNames').value;
+        const whatsapp = document.getElementById('whatsappNumber').value;
+        const t1 = document.getElementById('title1').value;
+        const t2 = document.getElementById('title2').value || 'لم يتم إدخال عنوان ثانٍ';
+        const t3 = document.getElementById('title3').value || 'لم يتم إدخال عنوان ثالثٍ';
+
+       
+        const message = `🚨 *طلب اعتماد عنوان بحث جديد* 🚨\n\n` +
+                        `👥 *أسماء الطلاب/الطالبات:*\n${names}\n\n` +
+                        `📌 *العناوين المقترحة:*\n` +
+                        `1️⃣ *الأول:* ${t1}\n` +
+                        `2️⃣ *الثاني:* ${t2}\n` +
+                        `3️⃣ *الثالث:* ${t3}\n\n` +
+                        `📱 *رقم الواتساب:* ${whatsapp}\n\n` +
+                        `📥 _يرجى مراجعة العناوين واختيار الأنسب._`;
+
+       
+        const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+        
+        fetch(url, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                chat_id: TELEGRAM_CHAT_ID,
+                text: message,
+                parse_mode: 'Markdown'
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if(data.ok) {
+                // إخفاء النموذج وإظهار رسالة النجاح
+                document.getElementById('researchForm').style.display = 'none';
+                document.getElementById('successMessage').style.display = 'block';
+            } else {
+                alert('حدث خطأ أثناء الإرسال، يرجى المحاولة مرة أخرى.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('فشل الاتصال بالخادم.');
+        });
+    });
+</script>
+
+</body>
+</html>
