@@ -6710,5 +6710,102 @@
       }
     ],
     "tabSwitchCount": 11
+  },
+  {
+    "examTitle": "اختبار في: الموطن وأركانه وأحكامه في القانون اليمني",
+    "studentName": "جمال",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-07-05T07:54:29.316Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي عبارة تُعبّر بدقة عن حالة انعدام الموطن؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هي حالة نادرة يعجز فيها القانون عن تحديد موطن للشخص"
+      },
+      {
+        "question": "طالب يدرس في الخارج لمدة أربع سنوات مع احتفاظه بنيته العودة النهائية إلى وطنه الأصلي. الوصف القانوني الأدق هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موطنه يبقى في وطنه الأصلي مع وجود محل إقامة في الخارج"
+      },
+      {
+        "question": "محل الإقامة والسكن العارض يتمتعان بالأثر القانوني نفسه الذي يتمتع به الموطن.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "أي قرينة من الآتي تُعد أكثر دلالة على الركن المعنوي للموطن؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تسجيل الأبناء في مدارس المكان ونقل الوثائق الرسمية إليه"
+      },
+      {
+        "question": "أجاز القانون اليمني أن يكون للشخص أكثر من موطن في الوقت نفسه بحسب طبيعة نشاطه وارتباطاته.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي أثر من الآثار الآتية يُعد من أهم الآثار الداخلية للموطن؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تحديد المحكمة المختصة مكانياً بنظر الدعوى"
+      },
+      {
+        "question": "أي العناصر التالية يُعد المعيار الحاسم للتمييز بين الموطن ومحل الإقامة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نية البقاء والاستقرار الدائم"
+      },
+      {
+        "question": "شركة أجنبية مقرها الرئيسي في بيروت ولها فرع نشط في صنعاء تُدار منه جميع أعمالها في اليمن. وفقاً للمادة (33)، فإن فرع صنعاء يُعد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موطناً للشركة فيما يتعلق بإدارة أعمالها في اليمن"
+      },
+      {
+        "question": "وفقاً للمادة (33) من قانون المرافعات والتنفيذ المدني اليمني، يُعد مكان ممارسة التجارة أو المهنة موطناً للشخص:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فيما يتعلق بإدارة تلك الأعمال"
+      },
+      {
+        "question": "يشترط الركن المادي للموطن الحضور الفيزيائي الدائم والمتواصل للشخص في المكان دون انقطاع.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
