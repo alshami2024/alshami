@@ -170,7 +170,8 @@
       "doctor": "أ/ علي المضواحي",
       "room": "قاعة غزة",
       "attendance": {
-        "4": true
+        "4": true,
+        "5": true
       }
     },
     {
