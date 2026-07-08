@@ -209,5 +209,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "أماني قايد النجار",
+    "deviceId": "DEV-8YCWHXLNX-mr3mkorf",
+    "submissionDate": "2026-07-08T10:24:01.993Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "حسب النص، هناك تلازم حتمي بين خطأ الحس والعقل وبين التشكيك في وجود واقع متحقق.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يعتبر التسليم بصدق مذهب اللاواقعية متوقفاً على التسليم بواقعية قانون عقلي ضروري هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون الثالث المرفوع",
+        "correctAnswer": "قانون عدم التناقض"
+      },
+      {
+        "question": "المنهج الاستنباطي هو الذي يقوم على الاستنتاج من الخاص إلى العام (من الجزء إلى الكل).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الفيلسوف الذي رد على الغزالي وألّف (فصل المقال بين الحكمة والشريعة من الاتصال) هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن سينا",
+        "correctAnswer": "ابن رشد"
+      },
+      {
+        "question": "من خصائص مبدأ الواقعية إمكانية وسهولة الاستدلال البرهاني عليه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المذهب البراجماتي",
+        "correctAnswer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "الطريقة التي اعتمد عليها العالم الفرنسي (لوفيريي) لاكتشاف كوكب نبتون هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طريقة التغير النسبي",
+        "correctAnswer": "طريقة البواقي"
+      },
+      {
+        "question": "المنهج الفلسفي يعتمد على التصديق القلبي والعاطفة، بينما المنهج الديني يعتمد على الاستدلال العقلي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "مذهب اللاواقعية يؤمن بالتصديق بوجود واقع موضوعي متحقق وموجود مع قدرة الذهن على إدراكه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "طريقة الاختلاف عند \"مل\" تفيد بأن غياب العلة يستتبع اختفاء معلولها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
