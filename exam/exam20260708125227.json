@@ -310,5 +310,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "ندوى عبدالقادر النجار",
+    "deviceId": "DEV-JA4FD701O-mr4psada",
+    "submissionDate": "2026-07-08T14:53:06.457Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "مذهب اللاواقعية يؤمن بالتصديق بوجود واقع موضوعي متحقق وموجود مع قدرة الذهن على إدراكه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المذهب البراجماتي",
+        "correctAnswer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "في المنهج الاستقرائي، النتيجة مقارنة بالمقدمات تكون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا علاقة لها بالمقدمات",
+        "correctAnswer": "أعم وأكبر من المقدمات"
+      },
+      {
+        "question": "الفيلسوف الذي رد على الغزالي وألّف (فصل المقال بين الحكمة والشريعة من الاتصال) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن رشد"
+      },
+      {
+        "question": "أول من وجه الفلسفة الإسلامية لمحاولة التوفيق بين أفلاطون وأرسطو، وبين الدين والفلسفة هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن رشد",
+        "correctAnswer": "الكندي"
+      },
+      {
+        "question": "من الفلاسفة المسلمين الذين فصلوا فصلاً تاماً بين طبيعة الفلسفة وطبيعة الدين مؤكداً اختلاف غايتيهما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن رشد",
+        "correctAnswer": "أبو سليمان السجستاني"
+      },
+      {
+        "question": "بداية الاتصال الفلسفي بالدين اليهودي كان على يد (فيلون)، صاحب التأويل الرمزي لمسائل الدين.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المبدأ الذي يفيد الاستحالة العقلية أن يكون (أ) نقيض (أ) في آن واحد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبدأ عدم التناقض"
+      },
+      {
+        "question": "وفقاً لمنهج ديكارت، قاعدة اليقين تعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تجنب التهور وعدم قبول شيء على أنه حق حتى يُعرف يقيناً أنه كذلك"
+      },
+      {
+        "question": "يقيم ديكارت منهجه على أساس الحدس والاستنباط العقلي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
