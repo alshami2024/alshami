@@ -614,5 +614,110 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "فاطمه سفيان",
+    "deviceId": "DEV-EBWS9G51R-mrcgprkt",
+    "submissionDate": "2026-07-08T19:20:03.814Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في المنهج الاستقرائي، النتيجة مقارنة بالمقدمات تكون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "أعم وأكبر من المقدمات"
+      },
+      {
+        "question": "من خصائص مبدأ الواقعية إمكانية وسهولة الاستدلال البرهاني عليه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من الفلاسفة المسلمين الذين فصلوا فصلاً تاماً بين طبيعة الفلسفة وطبيعة الدين مؤكداً اختلاف غايتيهما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "أبو سليمان السجستاني"
+      },
+      {
+        "question": "المنهج التجريبي يفقد خاصية التعميم لأن التعميم يعتبر من فاعليات:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "القوة العاقلة"
+      },
+      {
+        "question": "أول من بدأ في توثيق منهج الاستنباط في القرن الرابع قبل الميلاد هو الفيلسوف:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "أرسطو"
+      },
+      {
+        "question": "حسب النص، هناك تلازم حتمي بين خطأ الحس والعقل وبين التشكيك في وجود واقع متحقق.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "مذهب اللاواقعية يؤمن بالتصديق بوجود واقع موضوعي متحقق وموجود مع قدرة الذهن على إدراكه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المرحلة الأولى من المنهج الاستنباطي هي تحديد النظرية أو المسلّمة العامة التي لا يشوبها أي خطأ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الفيلسوف الذي رد على الغزالي وألّف (فصل المقال بين الحكمة والشريعة من الاتصال) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن رشد"
+      },
+      {
+        "question": "وفقاً لمنهج ديكارت، قاعدة اليقين تعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشك المطلق الدائم دون الوصول لليقين",
+        "correctAnswer": "تجنب التهور وعدم قبول شيء على أنه حق حتى يُعرف يقيناً أنه كذلك"
+      }
+    ],
+    "tabSwitchCount": 3
   }
 ]
