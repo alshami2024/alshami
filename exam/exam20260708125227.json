@@ -412,5 +412,106 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "محمود سليم الحمري",
+    "deviceId": "DEV-OWBHK9NB7-mr3jn8vb",
+    "submissionDate": "2026-07-08T15:06:18.057Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أول من وجه الفلسفة الإسلامية لمحاولة التوفيق بين أفلاطون وأرسطو، وبين الدين والفلسفة هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن رشد",
+        "correctAnswer": "الكندي"
+      },
+      {
+        "question": "من خصائص مبدأ الواقعية إمكانية وسهولة الاستدلال البرهاني عليه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المبدأ الذي يفيد الاستحالة العقلية أن يكون (أ) نقيض (أ) في آن واحد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبدأ عدم التناقض"
+      },
+      {
+        "question": "القديس (توما) الأكويني أحل أرسطو محل أفلاطون في الفلسفة واللاهوت المسيحي في القرن الثالث عشر الميلادي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "من الفلاسفة الذين يمثلون مذهب أصالة الواقعية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو وابن سينا والفارابي"
+      },
+      {
+        "question": "المنهج الفلسفي يعتمد على التصديق القلبي والعاطفة، بينما المنهج الديني يعتمد على الاستدلال العقلي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "مبدأ \"الثالث المرفوع\" يعني أنه لا يوجد وسط بين القضية (أ) وبين القضية (لا أ).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الطريقة التي اعتمد عليها العالم الفرنسي (لوفيريي) لاكتشاف كوكب نبتون هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طريقة البواقي"
+      },
+      {
+        "question": "بداية الاتصال الفلسفي بالدين اليهودي كان على يد (فيلون)، صاحب التأويل الرمزي لمسائل الدين.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "انتهى كانط في (نقد العقل العملي) إلى قبول الله وخلود النفس كمسلمات ضرورية للإيمان والسلوك الأخلاقي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
