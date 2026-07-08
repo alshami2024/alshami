@@ -104,5 +104,110 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "صالح ناجي محمد",
+    "deviceId": "DEV-M4GRW4NQ2-mrbxhlpo",
+    "submissionDate": "2026-07-08T10:21:52.206Z",
+    "mcqScore": {
+      "correct": 2,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "القياس الصوري يتكون من مقدمتين يلزم عنهما نتيجة، ويشترط أن تكون إحدى المقدمتين على الأقل:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جزئية",
+        "correctAnswer": "كلية (كبرى)"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المذهب البراجماتي",
+        "correctAnswer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "الفارابي وفق إلى البرهان الوجودي في إثبات وجود الله عن طريق فكرة الضرورة والإمكان (الواجب والممكن).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "المرحلة الأولى من المنهج الاستنباطي هي تحديد النظرية أو المسلّمة العامة التي لا يشوبها أي خطأ.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "المنهج التجريبي يفقد خاصية التعميم لأن التعميم يعتبر من فاعليات:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الملاحظة الدقيقة",
+        "correctAnswer": "القوة العاقلة"
+      },
+      {
+        "question": "وفقاً لمنهج ديكارت، قاعدة اليقين تعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قبول آراء الأغلبية بلا نقاش",
+        "correctAnswer": "تجنب التهور وعدم قبول شيء على أنه حق حتى يُعرف يقيناً أنه كذلك"
+      },
+      {
+        "question": "انتهى كانط في (نقد العقل العملي) إلى قبول الله وخلود النفس كمسلمات ضرورية للإيمان والسلوك الأخلاقي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يقيم ديكارت منهجه على أساس الحدس والاستنباط العقلي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "الاستقراء الناقص هو الذي يتم فيه فحص جميع أعضاء فئة معينة للوصول إلى حكم عام.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يقول ديكارت: \"إن الفلسفة وحدها هي التي تميزنا عن...\"",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "رجال الدين واللاهوت",
+        "correctAnswer": "الأقوام المتوحشين والهمجيين"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
