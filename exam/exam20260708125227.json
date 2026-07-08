@@ -719,5 +719,105 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "صدام مسعد حسن",
+    "deviceId": "DEV-U962381YF-mr3s0ymd",
+    "submissionDate": "2026-07-08T19:28:49.891Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الغزالي هاجم الفلاسفة في كتابه (تهافت الفلاسفة) ورأى أن المعرفة الأكمل تأتي عن طريق الذوق والوحي وليس العقل المجرد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من عيوب المنهج التجريبي قصوره عن إثبات ما وراء الحس كالحالات الوجدانية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "من خصائص مبدأ الواقعية إمكانية وسهولة الاستدلال البرهاني عليه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "القديس (توما) الأكويني أحل أرسطو محل أفلاطون في الفلسفة واللاهوت المسيحي في القرن الثالث عشر الميلادي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "التصديق بخطأ الإدراك الحسي والعقلي هو فرع الإذعان بوجود حقائق خارجية تنطبق عليها الإدراكات أو لا تنطبق.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "حسب النص، الفلسفة تجيب بمنطق عاقل عن الأسئلة التي يطرحها العقل، والدين يمنح الروحانية في عصر الخواء الإنساني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "اللاواقعية المعرفية تؤمن بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وجود واقع في الخارج، لكن العقل غير قادر على إدراكه."
+      },
+      {
+        "question": "قيل إن هذه القاعدة هي أساس المنهج الديكارتي وأظهرها أثراً عند التطبيق، وهي التي تميز المعادلات الرياضية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة التأليف والتركيب"
+      },
+      {
+        "question": "المنهج الاستنباطي هو الذي يقوم على الاستنتاج من الخاص إلى العام (من الجزء إلى الكل).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
