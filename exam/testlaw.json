@@ -6807,5 +6807,107 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "جمال",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-07-08T09:55:23.107Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "القديس (توما) الأكويني أحل أرسطو محل أفلاطون في الفلسفة واللاهوت المسيحي في القرن الثالث عشر الميلادي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من الفلاسفة في العصر الحديث الذين حاولوا تخليص الفلسفة من التصور الغيبي وتأسيس فلسفة واقعية تنكر الميتافيزيقا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "باسكال وليبنتز",
+        "correctAnswer": "توماس هوبز وجون لوك وديفيد هيوم"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "من الفلاسفة الذين يمثلون مذهب أصالة الواقعية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو وابن سينا والفارابي"
+      },
+      {
+        "question": "الفيلسوف الذي قال \"البشر هم الذين خلقوا الآلهة؛ لأنهم يلتمسون فيها صورتهم...\" منتقداً التدين اليوناني هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بروتاجوراس",
+        "correctAnswer": "زينوفان"
+      },
+      {
+        "question": "ينطلق البحث الفلسفي من الإذعان بقضية وجدانية وهي التصديق بمبدأ الواقعية، والتي تعتبر قضية أولى الأوائل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "قاعدة التحليل عند ديكارت تهدف إلى رد البسيط إلى المركب، والسهل إلى المعقد.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "طريقة الاختلاف عند \"مل\" تفيد بأن غياب العلة يستتبع اختفاء معلولها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "دعا الفيلسوف كيركجارد إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمع المطلق بين الدين والفلسفة",
+        "correctAnswer": "الفصل التام بين الدائرتين الدينية والفلسفية"
+      },
+      {
+        "question": "المنهج الاستنباطي هو الذي يقوم على الاستنتاج من الخاص إلى العام (من الجزء إلى الكل).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
