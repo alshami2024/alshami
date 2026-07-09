@@ -1,0 +1,424 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مقياس بوصلة الاختيار العاطفي - حلل نمط تفكيرك</title>
+
+<meta property="og:title" content="اختبار بوصلة الاختيار العاطفي">
+<meta property="og:description" content="هل يمكن تخمين نمط تفكيرك من خلال معاييرك في اختيار شريك الحياة؟ خض التحدي واكتشف النمط السائد لديك الآن.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=600&auto=format&fit=crop">
+<meta property="og:type" content="website">
+
+<style>
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    background: #f4f7fa;
+    margin: 0;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #334155;
+}
+
+.card {
+    background: white;
+    padding: 24px 16px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    max-width: 500px;
+}
+
+
+.progress-container {
+    position: sticky;
+    top: 0;
+    background: white;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    z-index: 10;
+    border-bottom: 1px solid #f1f5f9;
+}
+.progress-text {
+    font-size: 13px;
+    color: #64748b;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.progress-bar-bg {
+    background: #e2e8f0;
+    height: 6px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress-bar-fill {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+h2 {
+    color: #0f172a;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.intro {
+    font-size: 14px;
+    color: #64748b;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.question-block {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    padding: 18px 14px;
+    border-radius: 18px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+}
+
+.question-block.answered {
+    border-color: #cbd5e1;
+    background: #fbfcfd;
+}
+
+.question-label {
+    font-weight: 700;
+    font-size: 15px;
+    color: #1e293b;
+    display: block;
+    margin-bottom: 14px;
+    line-height: 1.4;
+}
+
+.options-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.option-row {
+    position: relative;
+    width: 100%;
+}
+
+.option-row input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.option-row label {
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    border: 1.5px solid #e2e8f0;
+    padding: 12px 14px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #475569;
+    transition: all 0.2s ease;
+}
+
+.option-num {
+    background: #e2e8f0;
+    color: #475569;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+.option-row input[type="radio"]:checked + label {
+    background: #eff6ff;
+    border-color: #3b82f6;
+    color: #2563eb;
+    font-weight: 600;
+}
+
+.option-row input[type="radio"]:checked + label .option-num {
+    background: #3b82f6;
+    color: white;
+}
+
+.option-row label::after {
+    content: "✓";
+    margin-right: auto;
+    color: #3b82f6;
+    font-weight: bold;
+    opacity: 0;
+    transform: scale(0.5);
+    transition: all 0.2s ease;
+}
+
+.option-row input[type="radio"]:checked + label::after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: all 0.2s;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
+}
+
+.btn-submit:disabled {
+    background: #cbd5e1;
+    color: #94a3b8;
+    box-shadow: none;
+    cursor: not-allowed;
+}
+
+#result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.6;
+    display: none;
+    animation: fadeIn 0.4s ease-out forwards;
+}
+
+.result-male {
+    background: #eff6ff;
+    color: #1e40af;
+    border: 1px solid #bfdbfe;
+}
+
+.result-female {
+    background: #fdf2f8;
+    color: #9d174d;
+    border: 1px solid #fbcfe8;
+}
+
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #94a3b8;
+    letter-spacing: 1px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+    <h2>بوصلة الاختيار العاطفي</h2>
+    <p class="intro">اكتشف النمط السائد لتفكيرك من خلال معاييرك في اختيار شريك الحياة (يرجى الإجابة بواقعية)</p>
+
+    <div class="progress-container">
+        <div class="progress-text">
+            <span>مدى إكمال الاختبار</span>
+            <span id="progress-percentage">0%</span>
+        </div>
+        <div class="progress-bar-bg">
+            <div class="progress-bar-fill" id="progress-fill"></div>
+        </div>
+    </div>
+
+    <form id="test">
+        <div id="questions-container"></div>
+        
+        <button type="button" class="btn-submit" id="submit-btn" onclick="predict()" disabled>
+            يرجى الإجابة على جميع الأسئلة
+        </button>
+    </form>
+
+    <div id="result"></div>
+    
+    <div class="footer">Alshami 2026</div>
+
+</div>
+
+<script>
+// قائمة الأسئلة بالصياغة المبسطة والواضحة للجميع
+const questions = [
+    "المظهر الخارجي والجاذبية الجسدية للشريك",
+    "القدرة المادية والدخل المالي الجيد",
+    "الطموح والسعي الدائم للنجاح المهني",
+    "أن يكون عمر الشريك مناسباً لك تماماً",
+    "الصحة الجيدة واللياقة البدنية",
+    "النضج العاطفي والقدرة على التحكم في الانفعالات",
+    "اللطف، الطيبة، وحب مساعدة الآخرين",
+    "الإخلاص التام والوفاء في العلاقة",
+    "المستوى التعليمي والشهادة الدراسية",
+    "السمعة الطيبة والمكانة الاجتماعية لعائلته",
+    "الرغبة المشتركة والجادة في تكوين أسرة",
+    "المهارات المنزلية والقدرة على إدارة شؤون البيت",
+    "التدين والالتزام بالقيم الأخلاقية والدينية",
+    "تشابه العادات والتقاليد والنظرة للمجتمع",
+    "خفة الدم وامتلاك شخصية ممتعة ومرحة",
+    "تحمل الشريك للمسؤولية والقدرة على الاعتماد عليه",
+    "حب الاختلاط بالناس وامتلاك علاقات اجتماعية",
+    "التفاهم الفكري وقدرتكم على الانسجام والنقاش",
+    "الالتزام الجاد بالعلاقة والاستقرار طويل المدى"
+];
+
+const labelsText = {
+    0: "غير مهمة على الإطلاق",
+    1: "مهمة قليلًا",
+    2: "مهمة",
+    3: "ضرورية وأساسية"
+};
+
+const container = document.getElementById('questions-container');
+
+questions.forEach((question, index) => {
+    let optionsHtml = '';
+    for(let val = 0; val <= 3; val++) {
+        optionsHtml += `
+        <div class="option-row">
+            <input type="radio" name="q${index}" id="q${index}_${val}" value="${val}" onchange="updateProgress()">
+            <label for="q${index}_${val}">
+                <span class="option-num">${val}</span>
+                <span>${labelsText[val]}</span>
+            </label>
+        </div>
+        `;
+    }
+
+    let html = `
+    <div class="question-block" id="block_${index}">
+        <label class="question-label">${index + 1}. ${question}</label>
+        <div class="options-list">
+            ${optionsHtml}
+        </div>
+    </div>
+    `;
+    container.insertAdjacentHTML('beforeend', html);
+});
+
+
+function updateProgress() {
+    let answeredCount = 0;
+    for(let i = 0; i < questions.length; i++) {
+        let checkedOp = document.querySelector(`input[name="q${i}"]:checked`);
+        if(checkedOp) {
+            answeredCount++;
+            document.getElementById(`block_${i}`).classList.add('answered');
+        }
+    }
+    
+    let percentage = Math.round((answeredCount / questions.length) * 100);
+    document.getElementById('progress-fill').style.width = percentage + '%';
+    document.getElementById('progress-percentage').innerText = percentage + '%';
+    
+    let submitBtn = document.getElementById('submit-btn');
+    if(answeredCount === questions.length) {
+        submitBtn.disabled = false;
+        submitBtn.innerText = "تحليل النمط وعرض النتيجة الآن";
+    } else {
+        submitBtn.disabled = true;
+        submitBtn.innerText = `متبقي ${questions.length - answeredCount} أسئلة لم تُجب عليها`;
+    }
+}
+
+
+function predict(){
+    let scores = [];
+    for(let i = 0; i < questions.length; i++){
+        let selectedValue = document.querySelector(`input[name="q${i}"]:checked`).value;
+        scores.push(Number(selectedValue));
+    }
+
+    let malePoints = 0;
+    let femalePoints = 0;
+
+   
+    if (scores[0] > scores[1]) malePoints += 3;
+    if (scores[1] > scores[0]) femalePoints += 3;
+
+    if (scores[0] > scores[2]) malePoints += 2;
+    if (scores[2] > scores[0]) femalePoints += 2;
+
+  
+    let maleSub = scores[11] + scores[3];
+    let femaleSub = scores[5] + scores[18];
+    if (maleSub > femaleSub) malePoints += 2.5;
+    if (femaleSub > maleSub) femalePoints += 2.5;
+
+
+    let statusNeeds = scores[1] + scores[9];
+    let intellectNeeds = scores[14] + scores[17];
+    if (statusNeeds > intellectNeeds) femalePoints += 2;
+    if (intellectNeeds > statusNeeds) malePoints += 1;
+
+ 
+    if (scores[15] >= 2) femalePoints += 1.5;
+
+    let totalPoints = malePoints + femalePoints;
+    let probability = 50;
+
+    if (totalPoints > 0) {
+        probability = (malePoints / totalPoints) * 100;
+    }
+
+ 
+    if(probability > 88) probability = 88;
+    if(probability < 12) probability = 12;
+
+    let resultDiv = document.getElementById("result");
+    resultDiv.style.display = "block";
+
+    if(probability > 50){
+        resultDiv.className = "result-male";
+        resultDiv.innerHTML = "📊 تفضيلاتك تطابق إحصائياً <strong>تفضيلات الذكور</strong> بنسبة (" + Math.round(probability) + "%). <br><small>التحليل: يميل عقلك للتركيز على الجاذبية البصرية الفورية، الانسجام الفكري المرح، والمعايير العملية التوافقية كأولويات قيادية.</small>";
+    } else if(probability < 50) {
+        resultDiv.className = "result-female";
+        resultDiv.innerHTML = "📊 تفضيلاتك تطابق إحصائياً <strong>تفضيلات الإناث</strong> بنسبة (" + Math.round(100 - probability) + "%). <br><small>التحليل: يميل عقلك لإعطاء الأولوية لمعايير الأمان المادي المستقبلي، الاستقرار والنضج العاطفي، والالتزام وتحمل المسؤولية بعيد المدى.</small>";
+    } else {
+        resultDiv.className = "result-male"; 
+        resultDiv.innerHTML = "📊 النمط <strong>متوازن ومحايد تماماً</strong> (50%). <br><small>التحليل: لديك توازن دقيق ومثالي جداً يدمج بين المتطلبات البصرية المباشرة والمعايير الأمنية والمادية دون طغيان جانب على آخر.</small>";
+    }
+
+    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+</script>
+
+</body>
+</html>
