@@ -205,5 +205,107 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "علي محمد ناصر",
+    "deviceId": "DEV-3K3YG0M4L-mrdiw05k",
+    "submissionDate": "2026-07-09T13:08:40.198Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "في المنهج الاستقرائي، النتيجة مقارنة بالمقدمات تكون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مساوية تماماً للمقدمات",
+        "correctAnswer": "أعم وأكبر من المقدمات"
+      },
+      {
+        "question": "المرحلة الأولى من المنهج الاستنباطي هي تحديد النظرية أو المسلّمة العامة التي لا يشوبها أي خطأ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تتفق الفلسفة مع الدين في أن كليهما يبحث في موضوعات ألوهية والمبدأ الأول للوجود.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "المرتبة من مراتب الواقعية التي تؤمن بواقعية (أنا) فقط، وما عدا ذلك وهم وخيال، هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المرتبة الأولى (اللاواقعية الوجودية)",
+        "correctAnswer": "المرتبة الثانية"
+      },
+      {
+        "question": "المنهج الاستقرائي هو التدرج من جزئيات تجريبية غير يقينية للوصول إلى قضايا عامة كلية (قوانين).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "القديس (توما) الأكويني أحل أرسطو محل أفلاطون في الفلسفة واللاهوت المسيحي في القرن الثالث عشر الميلادي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وصل أرسطو إلى الحقيقة الدينية (الله) من الوجهة الفلسفية عبر فكرة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الواحد المطلق",
+        "correctAnswer": "المحرك الأول"
+      },
+      {
+        "question": "انتهى كانط في (نقد العقل العملي) إلى قبول الله وخلود النفس كمسلمات ضرورية للإيمان والسلوك الأخلاقي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المبدأ الذي يفيد الاستحالة العقلية أن يكون (أ) نقيض (أ) في آن واحد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبدأ عدم التناقض"
+      },
+      {
+        "question": "من الفلاسفة في العصر الحديث الذين حاولوا تخليص الفلسفة من التصور الغيبي وتأسيس فلسفة واقعية تنكر الميتافيزيقا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ديكارت ومالبرانش",
+        "correctAnswer": "توماس هوبز وجون لوك وديفيد هيوم"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
