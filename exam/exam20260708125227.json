@@ -410,5 +410,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "مها عبده سعيد",
+    "deviceId": "DEV-NP2E5FOTD-mr4u9cug",
+    "submissionDate": "2026-07-10T17:20:18.899Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الطريقة التي اعتمد عليها العالم الفرنسي (لوفيريي) لاكتشاف كوكب نبتون هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طريقة البواقي"
+      },
+      {
+        "question": "المنهج الاستنباطي هو الذي يقوم على الاستنتاج من الخاص إلى العام (من الجزء إلى الكل).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "صاحب الفضل الأكبر في كشف قواعد التثبت من صحة الفروض في المنهج الاستقرائي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جون ستيوارت مل"
+      },
+      {
+        "question": "من خصائص مبدأ الواقعية إمكانية وسهولة الاستدلال البرهاني عليه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "قاعدة التحليل عند ديكارت تهدف إلى رد البسيط إلى المركب، والسهل إلى المعقد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ينطلق البحث الفلسفي من الإذعان بقضية وجدانية وهي التصديق بمبدأ الواقعية، والتي تعتبر قضية أولى الأوائل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "حسب النص، الفلسفة تجيب بمنطق عاقل عن الأسئلة التي يطرحها العقل، والدين يمنح الروحانية في عصر الخواء الإنساني.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الاستقراء الناقص هو الذي يتم فيه فحص جميع أعضاء فئة معينة للوصول إلى حكم عام.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "من الفلاسفة الذين يمثلون مذهب أصالة الواقعية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو وابن سينا والفارابي"
+      },
+      {
+        "question": "يقول ديكارت: \"إن الفلسفة وحدها هي التي تميزنا عن...\"",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأقوام المتوحشين والهمجيين"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
