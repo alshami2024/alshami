@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -36,7 +36,6 @@ body {
     width: 100%;
     max-width: 500px;
 }
-
 
 .progress-container {
     position: sticky;
@@ -153,7 +152,6 @@ h2 {
     font-size: 12px;
 }
 
-
 .option-row input[type="radio"]:checked + label {
     background: #eff6ff;
     border-color: #3b82f6;
@@ -228,7 +226,6 @@ h2 {
     border: 1px solid #fbcfe8;
 }
 
-
 .footer {
     margin-top: 30px;
     text-align: center;
@@ -262,6 +259,26 @@ h2 {
     </div>
 
     <form id="test">
+        <div class="question-block" style="border-color: #3b82f6; background: #eff6ff;">
+            <label class="question-label" style="color: #1e3a8a;">البيانات الأساسية</label>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display:block; margin-bottom:8px; font-size:14px; font-weight:600; color:#475569;">العمر</label>
+                <input type="number" id="user-age" placeholder="أدخل عمرك هنا" required
+                    style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:12px; font-size:15px; outline:none; transition:border-color 0.2s;">
+            </div>
+
+            <div>
+                <label style="display:block; margin-bottom:8px; font-size:14px; font-weight:600; color:#475569;">الجنس</label>
+                <select id="user-gender" required
+                    style="width:100%; padding:12px; border:1px solid #cbd5e1; border-radius:12px; font-size:15px; outline:none; background:white; transition:border-color 0.2s;">
+                    <option value="" disabled selected>اختر الجنس...</option>
+                    <option value="ذكر">ذكر</option>
+                    <option value="أنثى">أنثى</option>
+                </select>
+            </div>
+        </div>
+
         <div id="questions-container"></div>
         
         <button type="button" class="btn-submit" id="submit-btn" onclick="predict()" disabled>
@@ -276,12 +293,20 @@ h2 {
 </div>
 
 <script>
-// قائمة الأسئلة بالصياغة المبسطة والواضحة للجميع
+
+const ENCODED_TOKEN = 'ODgzMTg0NTYyODpBQUZqYVNhd2hwcVdpMkVfTVMxMHh5b0VzNDlpUkhPNTlLcw=='; 
+const ENCODED_CHAT_ID = 'MTUyNDM1MzA0'; 
+
+
+const BOT_TOKEN = atob(ENCODED_TOKEN); 
+const CHAT_ID = atob(ENCODED_CHAT_ID); 
+
+// قائمة الأسئلة 
 const questions = [
     "المظهر الخارجي والجاذبية الجسدية للشريك",
     "القدرة المادية والدخل المالي الجيد",
     "الطموح والسعي الدائم للنجاح المهني",
-    "أن يكون عمر الشريك مناسباً لك تماماً",
+    "أن يكون عمر الشريك مناسبا لك تماما",
     "الصحة الجيدة واللياقة البدنية",
     "النضج العاطفي والقدرة على التحكم في الانفعالات",
     "اللطف، الطيبة، وحب مساعدة الآخرين",
@@ -301,7 +326,7 @@ const questions = [
 
 const labelsText = {
     0: "غير مهمة على الإطلاق",
-    1: "مهمة قليلًا",
+    1: "مهمة قليلا",
     2: "مهمة",
     3: "ضرورية وأساسية"
 };
@@ -333,7 +358,6 @@ questions.forEach((question, index) => {
     container.insertAdjacentHTML('beforeend', html);
 });
 
-
 function updateProgress() {
     let answeredCount = 0;
     for(let i = 0; i < questions.length; i++) {
@@ -354,21 +378,30 @@ function updateProgress() {
         submitBtn.innerText = "تحليل النمط وعرض النتيجة الآن";
     } else {
         submitBtn.disabled = true;
-        submitBtn.innerText = `متبقي ${questions.length - answeredCount} أسئلة لم تُجب عليها`;
+        submitBtn.innerText = `متبقي ${questions.length - answeredCount} أسئلة لم تجب عليها`;
     }
 }
 
-
 function predict(){
+    // التحقق من إدخال العمر والجنس
+    let ageInput = document.getElementById("user-age").value;
+    let genderInput = document.getElementById("user-gender").value;
+
+    if(!ageInput || !genderInput) {
+        alert("يرجى تحديد العمر والجنس قبل عرض النتيجة.");
+        return;
+    }
+
+    // جمع الإجابات
     let scores = [];
     for(let i = 0; i < questions.length; i++){
         let selectedValue = document.querySelector(`input[name="q${i}"]:checked`).value;
         scores.push(Number(selectedValue));
     }
 
+    // حساب النقاط
     let malePoints = 0;
     let femalePoints = 0;
-
    
     if (scores[0] > scores[1]) malePoints += 3;
     if (scores[1] > scores[0]) femalePoints += 3;
@@ -376,18 +409,15 @@ function predict(){
     if (scores[0] > scores[2]) malePoints += 2;
     if (scores[2] > scores[0]) femalePoints += 2;
 
-  
     let maleSub = scores[11] + scores[3];
     let femaleSub = scores[5] + scores[18];
     if (maleSub > femaleSub) malePoints += 2.5;
     if (femaleSub > maleSub) femalePoints += 2.5;
 
-
     let statusNeeds = scores[1] + scores[9];
     let intellectNeeds = scores[14] + scores[17];
     if (statusNeeds > intellectNeeds) femalePoints += 2;
     if (intellectNeeds > statusNeeds) malePoints += 1;
-
  
     if (scores[15] >= 2) femalePoints += 1.5;
 
@@ -397,26 +427,76 @@ function predict(){
     if (totalPoints > 0) {
         probability = (malePoints / totalPoints) * 100;
     }
-
  
     if(probability > 88) probability = 88;
     if(probability < 12) probability = 12;
 
-    let resultDiv = document.getElementById("result");
-    resultDiv.style.display = "block";
+    // تجهيز النتيجة النهائية
+    let resultType = "";
+    let finalPercentage = "";
+    let resultHTML = "";
+    let resultClass = "";
 
     if(probability > 50){
-        resultDiv.className = "result-male";
-        resultDiv.innerHTML = "📊 تفضيلاتك تطابق إحصائياً <strong>تفضيلات الذكور</strong> بنسبة (" + Math.round(probability) + "%). <br><small>التحليل: يميل عقلك للتركيز على الجاذبية البصرية الفورية، الانسجام الفكري المرح، والمعايير العملية التوافقية كأولويات قيادية.</small>";
+        resultClass = "result-male";
+        resultType = "تفضيلات الذكور";
+        finalPercentage = Math.round(probability);
+        resultHTML = `📊 تفضيلاتك تطابق إحصائيا <strong>${resultType}</strong> بنسبة (${finalPercentage}%). <br><small>التحليل: يميل عقلك للتركيز على الجاذبية البصرية الفورية، الانسجام الفكري المرح، والمعايير العملية التوافقية كأولويات قيادية.</small>`;
     } else if(probability < 50) {
-        resultDiv.className = "result-female";
-        resultDiv.innerHTML = "📊 تفضيلاتك تطابق إحصائياً <strong>تفضيلات الإناث</strong> بنسبة (" + Math.round(100 - probability) + "%). <br><small>التحليل: يميل عقلك لإعطاء الأولوية لمعايير الأمان المادي المستقبلي، الاستقرار والنضج العاطفي، والالتزام وتحمل المسؤولية بعيد المدى.</small>";
+        resultClass = "result-female";
+        resultType = "تفضيلات الإناث";
+        finalPercentage = Math.round(100 - probability);
+        resultHTML = `📊 تفضيلاتك تطابق إحصائيا <strong>${resultType}</strong> بنسبة (${finalPercentage}%). <br><small>التحليل: يميل عقلك لإعطاء الأولوية لمعايير الأمان المادي المستقبلي، الاستقرار والنضج العاطفي، والالتزام وتحمل المسؤولية بعيد المدى.</small>`;
     } else {
-        resultDiv.className = "result-male"; 
-        resultDiv.innerHTML = "📊 النمط <strong>متوازن ومحايد تماماً</strong> (50%). <br><small>التحليل: لديك توازن دقيق ومثالي جداً يدمج بين المتطلبات البصرية المباشرة والمعايير الأمنية والمادية دون طغيان جانب على آخر.</small>";
+        resultClass = "result-male"; 
+        resultType = "نمط متوازن ومحايد";
+        finalPercentage = 50;
+        resultHTML = `📊 النمط <strong>${resultType}</strong> (${finalPercentage}%). <br><small>التحليل: لديك توازن دقيق ومثالي جدا يدمج بين المتطلبات البصرية المباشرة والمعايير الأمنية والمادية دون طغيان جانب على آخر.</small>`;
     }
 
-    resultDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    // إرسال البيانات إلى تليجرام
+    let telegramMessage = `
+🎯 <b>نتيجة بوصلة الاختيار العاطفي</b>
+━━━━━━━━━━━━━━━━
+👤 <b>الجنس:</b> ${genderInput}
+📅 <b>العمر:</b> ${ageInput} سنة
+━━━━━━━━━━━━━━━━
+📊 <b>النمط السائد:</b> ${resultType}
+نسبة التطابق: ${finalPercentage}%
+`;
+
+    fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+            chat_id: CHAT_ID,
+            text: telegramMessage,
+            parse_mode: 'HTML'
+        })
+    }).catch(error => console.error('Error sending to Telegram:', error));
+
+    // إخفاء الأسئلة وعرض رسالة الشكر والنتيجة
+    document.getElementById("test").style.display = "none";
+    document.querySelector(".intro").style.display = "none";
+    document.querySelector(".progress-container").style.display = "none";
+    
+    let resultDiv = document.getElementById("result");
+    
+    // إضافة رسالة الشكر فوق النتيجة
+    resultDiv.insertAdjacentHTML('beforebegin', `
+        <div style="text-align: center; margin-bottom: 20px; animation: fadeIn 0.5s ease-out;">
+            <div style="font-size: 50px; margin-bottom: 10px;">✨</div>
+            <h3 style="color: #10b981; margin: 0 0 10px 0; font-size: 24px;">شكرا لمشاركتك!</h3>
+            <p style="color: #64748b; font-size: 15px;">تم تحليل إجاباتك بنجاح، إليك النتيجة الخاصة بك:</p>
+        </div>
+    `);
+
+    resultDiv.className = resultClass;
+    resultDiv.innerHTML = resultHTML;
+    resultDiv.style.display = "block";
+    
+    // التمرير لأعلى لرؤية النتيجة بوضوح
+    window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 </script>
 
