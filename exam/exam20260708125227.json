@@ -508,5 +508,104 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "جيهان عبده علي سعيد",
+    "deviceId": "DEV-HO53HI184-mr3th3te",
+    "submissionDate": "2026-07-10T17:33:39.560Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "من عيوب المنهج التجريبي قصوره عن إثبات ما وراء الحس كالحالات الوجدانية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يعتبر التسليم بصدق مذهب اللاواقعية متوقفاً على التسليم بواقعية قانون عقلي ضروري هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون عدم التناقض"
+      },
+      {
+        "question": "الغزالي هاجم الفلاسفة في كتابه (تهافت الفلاسفة) ورأى أن المعرفة الأكمل تأتي عن طريق الذوق والوحي وليس العقل المجرد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "وصل أرسطو إلى الحقيقة الدينية (الله) من الوجهة الفلسفية عبر فكرة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المحرك الأول"
+      },
+      {
+        "question": "حسب النص، هناك تلازم حتمي بين خطأ الحس والعقل وبين التشكيك في وجود واقع متحقق.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "اللاواقعية المعرفية تؤمن بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن الإدراكات هي الواقع الوحيد.",
+        "correctAnswer": "وجود واقع في الخارج، لكن العقل غير قادر على إدراكه."
+      },
+      {
+        "question": "يقيم ديكارت منهجه على أساس الحدس والاستنباط العقلي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يقول ديكارت: \"إن الفلسفة وحدها هي التي تميزنا عن...\"",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأقوام المتوحشين والهمجيين"
+      },
+      {
+        "question": "المرحلة الأولى من المنهج الاستنباطي هي تحديد النظرية أو المسلّمة العامة التي لا يشوبها أي خطأ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "دعا الفيلسوف كيركجارد إلى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفصل التام بين الدائرتين الدينية والفلسفية"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
