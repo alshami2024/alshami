@@ -607,5 +607,105 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "سليمان طاهر الدبيلي",
+    "deviceId": "DEV-8MN7VUPRS-mqy3tqix",
+    "submissionDate": "2026-07-11T16:31:27.542Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المنهج التجريبي يفقد خاصية التعميم لأن التعميم يعتبر من فاعليات:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الملاحظة الدقيقة",
+        "correctAnswer": "القوة العاقلة"
+      },
+      {
+        "question": "المبدأ الذي يفيد الاستحالة العقلية أن يكون (أ) نقيض (أ) في آن واحد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبدأ عدم التناقض"
+      },
+      {
+        "question": "المرحلة الثانية في المنهج الاستقرائي هي وضع الفروض، وهي محاولة لتفسير مؤقت للظاهرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "عصر النهضة في أوروبا تميز بتوافق تام وبلا صراعات بين الكنيسة والفلاسفة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "صاحب الفضل الأكبر في كشف قواعد التثبت من صحة الفروض في المنهج الاستقرائي هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرانسيس بيكون",
+        "correctAnswer": "جون ستيوارت مل"
+      },
+      {
+        "question": "الغزالي هاجم الفلاسفة في كتابه (تهافت الفلاسفة) ورأى أن المعرفة الأكمل تأتي عن طريق الذوق والوحي وليس العقل المجرد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الفارابي وفق إلى البرهان الوجودي في إثبات وجود الله عن طريق فكرة الضرورة والإمكان (الواجب والممكن).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ينطلق البحث الفلسفي من الإذعان بقضية وجدانية وهي التصديق بمبدأ الواقعية، والتي تعتبر قضية أولى الأوائل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "طريقة الاختلاف عند \"مل\" تفيد بأن غياب العلة يستتبع اختفاء معلولها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "المرحلة الأولى من المنهج الاستنباطي هي تحديد النظرية أو المسلّمة العامة التي لا يشوبها أي خطأ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
