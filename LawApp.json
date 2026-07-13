@@ -46,7 +46,8 @@
       "room": "قاعة عامر عبدالوهاب",
       "attendance": {
         "1": false,
-        "3": true
+        "3": true,
+        "6": true
       }
     },
     {
