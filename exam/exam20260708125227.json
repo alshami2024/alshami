@@ -707,5 +707,109 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "يسرى عباس محمد الملحاني",
+    "deviceId": "DEV-KZ7XIAHJX-mrry10p7",
+    "submissionDate": "2026-07-19T15:21:16.553Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "المذهب الفلسفي اليوناني الذي كان مفضلاً لدى المسيحيين الأوائل واعتبروه أقرب إلى الدين هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المذهب الأرسطي",
+        "correctAnswer": "المذهب الأفلاطوني"
+      },
+      {
+        "question": "حسب النص، هناك تلازم حتمي بين خطأ الحس والعقل وبين التشكيك في وجود واقع متحقق.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "مبدأ \"الثالث المرفوع\" يعني أنه لا يوجد وسط بين القضية (أ) وبين القضية (لا أ).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "القديس (توما) الأكويني أحل أرسطو محل أفلاطون في الفلسفة واللاهوت المسيحي في القرن الثالث عشر الميلادي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "حسب النص، الفلسفة تجيب بمنطق عاقل عن الأسئلة التي يطرحها العقل، والدين يمنح الروحانية في عصر الخواء الإنساني.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "أول من بدأ في توثيق منهج الاستنباط في القرن الرابع قبل الميلاد هو الفيلسوف:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو"
+      },
+      {
+        "question": "يعتبر التسليم بصدق مذهب اللاواقعية متوقفاً على التسليم بواقعية قانون عقلي ضروري هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قانون الثالث المرفوع",
+        "correctAnswer": "قانون عدم التناقض"
+      },
+      {
+        "question": "ينطلق البحث الفلسفي من الإذعان بقضية وجدانية وهي التصديق بمبدأ الواقعية، والتي تعتبر قضية أولى الأوائل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "صاحب الفضل الأكبر في كشف قواعد التثبت من صحة الفروض في المنهج الاستقرائي هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ديفيد هيوم",
+        "correctAnswer": "جون ستيوارت مل"
+      },
+      {
+        "question": "يقول ديكارت: \"إن الفلسفة وحدها هي التي تميزنا عن...\"",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علماء الطبيعة",
+        "correctAnswer": "الأقوام المتوحشين والهمجيين"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
