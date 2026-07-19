@@ -811,5 +811,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "محمد",
+    "deviceId": "DEV-SZJNNIGQX-mqzigor9",
+    "submissionDate": "2026-07-19T17:06:55.721Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "حسب النص، هناك تلازم حتمي بين خطأ الحس والعقل وبين التشكيك في وجود واقع متحقق.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من الفلاسفة في العصر الحديث الذين حاولوا تخليص الفلسفة من التصور الغيبي وتأسيس فلسفة واقعية تنكر الميتافيزيقا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توماس هوبز وجون لوك وديفيد هيوم"
+      },
+      {
+        "question": "أول من بدأ في توثيق منهج الاستنباط في القرن الرابع قبل الميلاد هو الفيلسوف:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "سقراط",
+        "correctAnswer": "أرسطو"
+      },
+      {
+        "question": "قيل إن هذه القاعدة هي أساس المنهج الديكارتي وأظهرها أثراً عند التطبيق، وهي التي تميز المعادلات الرياضية:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة البواقي",
+        "correctAnswer": "قاعدة التأليف والتركيب"
+      },
+      {
+        "question": "المبدأ الذي يفيد الاستحالة العقلية أن يكون (أ) نقيض (أ) في آن واحد هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبدأ عدم التناقض"
+      },
+      {
+        "question": "الفيلسوف الذي رد على الغزالي وألّف (فصل المقال بين الحكمة والشريعة من الاتصال) هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن سينا",
+        "correctAnswer": "ابن رشد"
+      },
+      {
+        "question": "في المنهج الاستقرائي، النتيجة مقارنة بالمقدمات تكون:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أعم وأكبر من المقدمات"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "المنهج الاستنباطي هو الذي يقوم على الاستنتاج من الخاص إلى العام (من الجزء إلى الكل).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "وصل أرسطو إلى الحقيقة الدينية (الله) من الوجهة الفلسفية عبر فكرة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الواحد المطلق",
+        "correctAnswer": "المحرك الأول"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
