@@ -98,5 +98,103 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تدريبات نحوية حقوق 1",
+    "studentName": "جبريل محمد احمد",
+    "deviceId": "DEV-MJD1TJ67F-mrtmbvp5",
+    "submissionDate": "2026-07-20T19:29:18.461Z",
+    "mcqScore": {
+      "correct": 18,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الجملة التي تشتمل على اسم معنوي، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حب الوطن من الإيمان"
+      },
+      {
+        "question": "الجملة التي لا تشتمل على فائدة يحسن السكوت عليها، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الطالب الذي لا يحضر أو يهتم بدروسه ولا مراجعتها"
+      },
+      {
+        "question": "اللفظ الدال على معنى مفرد، يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الكلمة"
+      },
+      {
+        "question": "قال تعالى: {وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ}. اشتملت الآية على فعل...&nbsp;",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أمر"
+      },
+      {
+        "question": "الصحة تاج على رؤوس الأصحاء لا يعرفة إلا المرضى. كلمة (تاج) في الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم"
+      },
+      {
+        "question": "الفعل الذي علامته المختصة به (تاء التأنيث الساكنة) هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الفعل الماضي"
+      },
+      {
+        "question": "الرأي المبني على تقدير الواقع وغير مبني على التعصب وجيهٌ. كلمة (الرأي) في هذه الجملة اسم، وعلامته المميزة له هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أل التعريف فقط",
+        "correctAnswer": "أل التعريف والإسناد"
+      },
+      {
+        "question": "الآية التي اشتملت على علامة خاصة بالفعل المضارع، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "{لَن تَنَالُواْ الْبِرَّ حَتَّى تُنفِقُواْ مِمَّا تُحِبُّونَ}"
+      },
+      {
+        "question": "(وقعت في الشبكة حمامة جميلة). الاسم الذي علامته الإسناد في هذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حمامة"
+      },
+      {
+        "question": "(قال المعلم للطالبة: مبارك لك، لقد نجحت في الاختبار بتفوق). التاء في كلمة (نجحت):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تاء الفاعل"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
