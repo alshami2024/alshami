@@ -135,5 +135,150 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "أسس الفلسفة",
+    "studentName": "حنان نصر محمد الدبيلي",
+    "deviceId": "DEV-DI92NVRN3-mrwh1dms",
+    "submissionDate": "2026-07-22T19:24:29.919Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "كيف تنظر الفلسفة إلى (السحر) بناءً على مناهجها العقلية والبرهانية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم تجريبي",
+        "correctAnswer": "خرافة لا أساس لها من الصحة"
+      },
+      {
+        "question": "أي من العلوم التالية لا ينتمي إلى مبحث القيم أو (الأكسيولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم الأخلاق",
+        "correctAnswer": "علم الطبيعة"
+      },
+      {
+        "question": "ما هي القاعدة الديكارتية التي توجب تقسيم المشكلة المعقدة إلى أجزاء بسيطة لتسهيل حلها؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة الاستقراء التام",
+        "correctAnswer": "قاعدة التحليل"
+      },
+      {
+        "question": "ما هو المنهج الذي ينتقل فيه الباحث من قاعدة عامة (الكل) للوصول إلى نتيجة خاصة (الجزء)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنهج الاستنباطي"
+      },
+      {
+        "question": "ما هو الموقف الأساسي للمذهب السفسطائي (اللاواقعية)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يشكك في قدرة الذهن على إدراك الواقع أو ينكر وجوده"
+      },
+      {
+        "question": "من هو واضع كتاب (الأصول) الذي بقي المثل الأعلى للتفكير الهندسي لأكثر من عشرين قرناً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أفلاطون",
+        "correctAnswer": "إقليدس"
+      },
+      {
+        "question": "الغاية من فلسفة القيم (الأكسيولوجيا) هي البحث في المُثل العليا كالحق والخير والجمال من حيث ذاتها وليس كوسائل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تبحث الفلسفة في العلل القريبة المباشرة للظواهر، بينما يبحث العلم التجريبي في العلل البعيدة والكلية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما هو المعنى اللفظي لكلمة (فلسفة) (philosophia) اليونانية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محبة الحكمة"
+      },
+      {
+        "question": "مبدأ استحالة اجتماع النقيضين يعني أن الشيء إما موجود أو معدوم ولا يمكن أن يتصف بالصفتين معاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من هو الفيلسوف الذي يرى أن (الدهشة) هي أول باعث على الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو"
+      },
+      {
+        "question": "أي مدرسة نفسية كشفت عن مجال (اللاشعور) واعتبرته مصدر الحياة النفسية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المدرسة السلوكية",
+        "correctAnswer": "مدرسة التحليل النفسي"
+      },
+      {
+        "question": "ما هو المبحث الفلسفي الذي يُطلق عليه اسم (الأنطولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبحث القيم",
+        "correctAnswer": "مبحث الوجود"
+      },
+      {
+        "question": "يأخذ العلم بجميع فروعه موضوعه على أنه مفروض الوجود والواقعية، ولذلك يحتاج الفلسفة لإثبات هذا الوجود أولاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في الاستقراء الناقص يتم فحص واختبار جميع الحالات الممكنة التي تتضمنها الظاهرة للوصول إلى التعميم.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
