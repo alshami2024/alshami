@@ -6909,5 +6909,268 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار في الفلسفة - المبادئ والفروع",
+    "studentName": "جمال",
+    "deviceId": "DEV-CDEBIEF6P-mpebo4uv",
+    "submissionDate": "2026-07-22T15:33:53.676Z",
+    "mcqScore": {
+      "correct": 24,
+      "total": 30
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "القياس الصوري الأرسطي يقوم على ثلاثة أسس هي الذاتية وعدم التناقض والثالث المرفوع",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو الاسم اليوناني المركب الذي اشتق منه لفظ الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فيلو وسوف"
+      },
+      {
+        "question": "ما هي الطريقة التي اهتدى بها لوفيرييه لاكتشاف كوكب نبتون؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "طريقة البواقي"
+      },
+      {
+        "question": "من الذي رد على الغزالي في كتابه تهافت التهافت؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن رشد"
+      },
+      {
+        "question": "من هو الفيلسوف الذي يرى برترند رسل أنه أول من تفلسف في الفلسفة اليونانية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو",
+        "correctAnswer": "طاليس"
+      },
+      {
+        "question": "المنهج الاستنباطي ينتقل من العام إلى الخاص",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الفلسفة الحديثة اهتمت بالوجود ونظرت إلى المعرفة من خلاله",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كم عدد الموضوعات الرئيسية التي يبحث فيها الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلاثة"
+      },
+      {
+        "question": "من هو أول من حاول التوفيق بين الفلسفة اليونانية والشريعة الإسلامية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الكندي"
+      },
+      {
+        "question": "ما هي العيوب التي ذكرت للمنهج التجريبي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قصوره عن إثبات ما وراء الحس",
+        "correctAnswer": "كل ما سبق"
+      },
+      {
+        "question": "ما المقصود بالاستقراء الناقص؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التعميم على عينة محدودة"
+      },
+      {
+        "question": "التفلسف قرين للوجود الإنساني من الناحية التاريخية",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من هو مؤسس علم النفس التجريبي الحديث؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بافلوف",
+        "correctAnswer": "فونت"
+      },
+      {
+        "question": "ماذا يقصد بالبرهان الرياضي في المنهج الاستنباطي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إصلاح للقياس الأرسطي"
+      },
+      {
+        "question": "ما هي قاعدة ديكارت التي تنص على تقسيم المشكلة إلى أجزاء بسيطة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة التحليل"
+      },
+      {
+        "question": "ما هي غاية الفلسفة العملية بحسب أفلاطون وأبيقور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السمو فوق الاهتمامات الفردية"
+      },
+      {
+        "question": "أين يرى جمهور المؤرخين الغربيين نشأة الفلسفة اليونانية الأصيلة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليونان"
+      },
+      {
+        "question": "العلاقة بين الفلسفة والدين علاقة تصادم وتعارض دائم في كل العصور",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "منهج ديكارت يقوم على الحدس والاستنباط العقلي",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "كم عدد قواعد منهج ديكارت التي لخصها في أربع؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ستة",
+        "correctAnswer": "أربعة"
+      },
+      {
+        "question": "ما هي أوجه الاتفاق بين الدين والفلسفة من حيث الموضوع؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كلاهما يبحث في الله وصفاته"
+      },
+      {
+        "question": "أين نشأ علم الفلك النظري بالمفهوم اليوناني؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اليونان"
+      },
+      {
+        "question": "عرف أرسطو الفلسفة بأنها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "البحث عن الوجود بما هو موجود"
+      },
+      {
+        "question": "من أين يستمد المنهج التجريبي معلوماته الأساسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الحواس والمشاهدة"
+      },
+      {
+        "question": "الرياضيات والعلوم عند قدماء المصريين نشأت بدافع عملي بحت كمسح الأرض وبناء الأهرامات",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما اسم مبحث الوجود في الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأنطولوجيا"
+      },
+      {
+        "question": "ما رأي كانط في نقد العقل النظري بخصوص وجود الله؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يرفض وجود الله",
+        "correctAnswer": "يقبله كضرورة عملية"
+      },
+      {
+        "question": "الاستقراء التام يتم فيه فحص واختبار كل الحالات التي تتضمنها القضية",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الفلاسفة اليونانيون الأقدمون هم أول من استخدم لفظ الفلسفة بمعنى البحث عن طبيعة الأشياء",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "علم النفس التجريبي استقل عن الفلسفة موضوعا ومنهجا",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
