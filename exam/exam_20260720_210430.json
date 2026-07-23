@@ -1385,5 +1385,108 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تدريبات نحوية حقوق 1",
+    "studentName": "ستر الله عبد الواحد الغرباني",
+    "deviceId": "DEV-LX8ZQVUZB-mrxtjyfe",
+    "submissionDate": "2026-07-23T19:28:52.688Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "اللفظ الدال على معنى مفرد، يسمى:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الكلمة"
+      },
+      {
+        "question": "(قال المعلم للطالبة: مبارك لك، لقد نجحت في الاختبار بتفوق). التاء في كلمة (نجحت):",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "تاء التأنيث الساكنة",
+        "correctAnswer": "تاء الفاعل"
+      },
+      {
+        "question": "الجملة التي تشتمل على اسم معنوي، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حب الوطن من الإيمان"
+      },
+      {
+        "question": "الآية التي اشتملت على علامة خاصة بالفعل المضارع، هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "{قَالُواْ أَتَعْجَبِينَ مِنْ أَمْرِ اللَّهِ}",
+        "correctAnswer": "{لَن تَنَالُواْ الْبِرَّ حَتَّى تُنفِقُواْ مِمَّا تُحِبُّونَ}"
+      },
+      {
+        "question": "الرأي المبني على تقدير الواقع وغير مبني على التعصب وجيهٌ. كلمة (الرأي) في هذه الجملة اسم، وعلامته المميزة له هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أل التعريف والإسناد"
+      },
+      {
+        "question": "(وقعت في الشبكة حمامة جميلة). الاسم الذي علامته الإسناد في هذه الجملة هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حمامة"
+      },
+      {
+        "question": "الصحة تاج على رؤوس الأصحاء لا يعرفة إلا المرضى. كلمة (تاج) في الجملة السابقة:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعل",
+        "correctAnswer": "اسم"
+      },
+      {
+        "question": "الجملة التي لا تشتمل على فائدة يحسن السكوت عليها، هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "إنما السيل اجتماع النقط",
+        "correctAnswer": "الطالب الذي لا يحضر أو يهتم بدروسه ولا مراجعتها"
+      },
+      {
+        "question": "قال تعالى: {وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ}. اشتملت الآية على فعل...&nbsp;",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مضارع",
+        "correctAnswer": "أمر"
+      },
+      {
+        "question": "الفعل الذي علامته المختصة به (تاء التأنيث الساكنة) هو:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الفعل المضارع",
+        "correctAnswer": "الفعل الماضي"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
