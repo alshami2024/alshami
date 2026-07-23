@@ -860,5 +860,149 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "أسس الفلسفة",
+    "studentName": "سليمان طاهر الدبيلي",
+    "deviceId": "DEV-8MN7VUPRS-mqy3tqix",
+    "submissionDate": "2026-07-23T18:43:37.943Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو المعنى اللفظي لكلمة (فلسفة) (philosophia) اليونانية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محبة الحكمة"
+      },
+      {
+        "question": "يأخذ العلم بجميع فروعه موضوعه على أنه مفروض الوجود والواقعية، ولذلك يحتاج الفلسفة لإثبات هذا الوجود أولاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو المنهج الذي ينتقل فيه الباحث من قاعدة عامة (الكل) للوصول إلى نتيجة خاصة (الجزء)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنهج الاستقرائي",
+        "correctAnswer": "المنهج الاستنباطي"
+      },
+      {
+        "question": "كيف تنظر الفلسفة إلى (السحر) بناءً على مناهجها العقلية والبرهانية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم تجريبي",
+        "correctAnswer": "خرافة لا أساس لها من الصحة"
+      },
+      {
+        "question": "الغاية من فلسفة القيم (الأكسيولوجيا) هي البحث في المُثل العليا كالحق والخير والجمال من حيث ذاتها وليس كوسائل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من هو الفيلسوف الذي يرى أن (الدهشة) هي أول باعث على الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ديكارت",
+        "correctAnswer": "أرسطو"
+      },
+      {
+        "question": "تبحث الفلسفة في العلل القريبة المباشرة للظواهر، بينما يبحث العلم التجريبي في العلل البعيدة والكلية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما هو المبحث الفلسفي الذي يُطلق عليه اسم (الأنطولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبحث الوجود"
+      },
+      {
+        "question": "أي من العلوم التالية لا ينتمي إلى مبحث القيم أو (الأكسيولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم الطبيعة"
+      },
+      {
+        "question": "ما هي القاعدة الديكارتية التي توجب تقسيم المشكلة المعقدة إلى أجزاء بسيطة لتسهيل حلها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة التحليل"
+      },
+      {
+        "question": "من هو واضع كتاب (الأصول) الذي بقي المثل الأعلى للتفكير الهندسي لأكثر من عشرين قرناً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أفلاطون",
+        "correctAnswer": "إقليدس"
+      },
+      {
+        "question": "أي مدرسة نفسية كشفت عن مجال (اللاشعور) واعتبرته مصدر الحياة النفسية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المدرسة السلوكية",
+        "correctAnswer": "مدرسة التحليل النفسي"
+      },
+      {
+        "question": "في الاستقراء الناقص يتم فحص واختبار جميع الحالات الممكنة التي تتضمنها الظاهرة للوصول إلى التعميم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "مبدأ استحالة اجتماع النقيضين يعني أن الشيء إما موجود أو معدوم ولا يمكن أن يتصف بالصفتين معاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو الموقف الأساسي للمذهب السفسطائي (اللاواقعية)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتمد على التجربة الحسية كمصدر وحيد للمعرفة",
+        "correctAnswer": "يشكك في قدرة الذهن على إدراك الواقع أو ينكر وجوده"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
