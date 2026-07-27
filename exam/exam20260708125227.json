@@ -1121,5 +1121,109 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "بسمله محمد حمود",
+    "deviceId": "DEV-EBWS9G51R-mrcgprkt",
+    "submissionDate": "2026-07-27T18:51:08.431Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "الاستقراء الناقص هو الذي يتم فيه فحص جميع أعضاء فئة معينة للوصول إلى حكم عام.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المرحلة الأولى من المنهج الاستنباطي هي تحديد النظرية أو المسلّمة العامة التي لا يشوبها أي خطأ.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "من الفلاسفة المسلمين الذين فصلوا فصلاً تاماً بين طبيعة الفلسفة وطبيعة الدين مؤكداً اختلاف غايتيهما:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ابن سينا",
+        "correctAnswer": "أبو سليمان السجستاني"
+      },
+      {
+        "question": "مذهب اللاواقعية يؤمن بالتصديق بوجود واقع موضوعي متحقق وموجود مع قدرة الذهن على إدراكه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المرحلة الثانية في المنهج الاستقرائي هي وضع الفروض، وهي محاولة لتفسير مؤقت للظاهرة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "دعا الفيلسوف كيركجارد إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمع المطلق بين الدين والفلسفة",
+        "correctAnswer": "الفصل التام بين الدائرتين الدينية والفلسفية"
+      },
+      {
+        "question": "عصر النهضة في أوروبا تميز بتوافق تام وبلا صراعات بين الكنيسة والفلاسفة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من الفلاسفة الذين يمثلون مذهب أصالة الواقعية:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو وابن سينا والفارابي"
+      },
+      {
+        "question": "القديس (توما) الأكويني أحل أرسطو محل أفلاطون في الفلسفة واللاهوت المسيحي في القرن الثالث عشر الميلادي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
