@@ -1873,5 +1873,150 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "أسس الفلسفة",
+    "studentName": "محمد علي عبد الحفيظ",
+    "deviceId": "DEV-4KU472U4J-ms69c2he",
+    "submissionDate": "2026-07-29T15:46:32.561Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي مدرسة نفسية كشفت عن مجال (اللاشعور) واعتبرته مصدر الحياة النفسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مدرسة التحليل النفسي"
+      },
+      {
+        "question": "أي من العلوم التالية لا ينتمي إلى مبحث القيم أو (الأكسيولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم الجمال",
+        "correctAnswer": "علم الطبيعة"
+      },
+      {
+        "question": "يأخذ العلم بجميع فروعه موضوعه على أنه مفروض الوجود والواقعية، ولذلك يحتاج الفلسفة لإثبات هذا الوجود أولاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "في الاستقراء الناقص يتم فحص واختبار جميع الحالات الممكنة التي تتضمنها الظاهرة للوصول إلى التعميم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تبحث الفلسفة في العلل القريبة المباشرة للظواهر، بينما يبحث العلم التجريبي في العلل البعيدة والكلية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "من هو الفيلسوف الذي يرى أن (الدهشة) هي أول باعث على الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ديكارت",
+        "correctAnswer": "أرسطو"
+      },
+      {
+        "question": "مبدأ استحالة اجتماع النقيضين يعني أن الشيء إما موجود أو معدوم ولا يمكن أن يتصف بالصفتين معاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من هو واضع كتاب (الأصول) الذي بقي المثل الأعلى للتفكير الهندسي لأكثر من عشرين قرناً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فيثاغورس",
+        "correctAnswer": "إقليدس"
+      },
+      {
+        "question": "ما هو المنهج الذي ينتقل فيه الباحث من قاعدة عامة (الكل) للوصول إلى نتيجة خاصة (الجزء)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنهج الاستقرائي",
+        "correctAnswer": "المنهج الاستنباطي"
+      },
+      {
+        "question": "ما هي القاعدة الديكارتية التي توجب تقسيم المشكلة المعقدة إلى أجزاء بسيطة لتسهيل حلها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة التحليل"
+      },
+      {
+        "question": "ما هو المعنى اللفظي لكلمة (فلسفة) (philosophia) اليونانية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم الوجود",
+        "correctAnswer": "محبة الحكمة"
+      },
+      {
+        "question": "الغاية من فلسفة القيم (الأكسيولوجيا) هي البحث في المُثل العليا كالحق والخير والجمال من حيث ذاتها وليس كوسائل.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما هو الموقف الأساسي للمذهب السفسطائي (اللاواقعية)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يؤمن بالتصديق الوجداني فقط",
+        "correctAnswer": "يشكك في قدرة الذهن على إدراك الواقع أو ينكر وجوده"
+      },
+      {
+        "question": "ما هو المبحث الفلسفي الذي يُطلق عليه اسم (الأنطولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبحث الوجود"
+      },
+      {
+        "question": "كيف تنظر الفلسفة إلى (السحر) بناءً على مناهجها العقلية والبرهانية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خرافة لا أساس لها من الصحة"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
