@@ -49,6 +49,7 @@
       "doctor": "د/ عمار المروسي",
       "room": "قاعة عامر عبدالوهاب",
       "attendance": {
+        "4": true,
         "7": true,
         "8": true,
         "9": true,
