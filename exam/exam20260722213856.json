@@ -2018,5 +2018,146 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "أسس الفلسفة",
+    "studentName": "علي علي ناجي الطيري",
+    "deviceId": "DEV-D91Y7GS8V-msf2si2o",
+    "submissionDate": "2026-08-04T19:53:17.728Z",
+    "mcqScore": {
+      "correct": 11,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي من العلوم التالية لا ينتمي إلى مبحث القيم أو (الأكسيولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم الأخلاق",
+        "correctAnswer": "علم الطبيعة"
+      },
+      {
+        "question": "تبحث الفلسفة في العلل القريبة المباشرة للظواهر، بينما يبحث العلم التجريبي في العلل البعيدة والكلية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما هو المبحث الفلسفي الذي يُطلق عليه اسم (الأنطولوجيا)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مبحث الوجود"
+      },
+      {
+        "question": "ما هو الموقف الأساسي للمذهب السفسطائي (اللاواقعية)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يعتمد على التجربة الحسية كمصدر وحيد للمعرفة",
+        "correctAnswer": "يشكك في قدرة الذهن على إدراك الواقع أو ينكر وجوده"
+      },
+      {
+        "question": "يأخذ العلم بجميع فروعه موضوعه على أنه مفروض الوجود والواقعية، ولذلك يحتاج الفلسفة لإثبات هذا الوجود أولاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هي القاعدة الديكارتية التي توجب تقسيم المشكلة المعقدة إلى أجزاء بسيطة لتسهيل حلها؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "قاعدة التحليل"
+      },
+      {
+        "question": "مبدأ استحالة اجتماع النقيضين يعني أن الشيء إما موجود أو معدوم ولا يمكن أن يتصف بالصفتين معاً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من هو واضع كتاب (الأصول) الذي بقي المثل الأعلى للتفكير الهندسي لأكثر من عشرين قرناً؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فيثاغورس",
+        "correctAnswer": "إقليدس"
+      },
+      {
+        "question": "الغاية من فلسفة القيم (الأكسيولوجيا) هي البحث في المُثل العليا كالحق والخير والجمال من حيث ذاتها وليس كوسائل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "من هو الفيلسوف الذي يرى أن (الدهشة) هي أول باعث على الفلسفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أرسطو"
+      },
+      {
+        "question": "كيف تنظر الفلسفة إلى (السحر) بناءً على مناهجها العقلية والبرهانية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خرافة لا أساس لها من الصحة"
+      },
+      {
+        "question": "ما هو المنهج الذي ينتقل فيه الباحث من قاعدة عامة (الكل) للوصول إلى نتيجة خاصة (الجزء)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المنهج الاستنباطي"
+      },
+      {
+        "question": "أي مدرسة نفسية كشفت عن مجال (اللاشعور) واعتبرته مصدر الحياة النفسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مدرسة التحليل النفسي"
+      },
+      {
+        "question": "ما هو المعنى اللفظي لكلمة (فلسفة) (philosophia) اليونانية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "محبة الحكمة"
+      },
+      {
+        "question": "في الاستقراء الناقص يتم فحص واختبار جميع الحالات الممكنة التي تتضمنها الظاهرة للوصول إلى التعميم.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
