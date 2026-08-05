@@ -7269,5 +7269,103 @@
       }
     ],
     "tabSwitchCount": 10
+  },
+  {
+    "examTitle": "القانون الدولي الخاص - الجنسية والموطن ",
+    "studentName": "مقادير مصلح المعرشي",
+    "deviceId": "DEV-7N6PE2OBR-mqy4vgox",
+    "submissionDate": "2026-08-05T15:53:41.155Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما هو التفصيل الخاص بشرط \"الوضع المادي\" للأجنبي المقيم (م5)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "توافر وسيلة عيش مشروعة"
+      },
+      {
+        "question": "من شروط تجنس الزوجة الأجنبية (م11) مرور 4 سنوات من تاريخ الزواج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُشترط لمنح الجنسية للأجنبي المقيم في اليمن (م5) أن يكون قد بلغ 21 سنة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تُحسب مدة الأربع سنوات لاحتفاظ الزوجة الأجنبية بالجنسية بعد انتهاء الزوجية بدءاً من تاريخ الزواج وليس من تاريخ اكتساب الجنسية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "قرار الوزير بالاعتراض على تجنس الزوجة الأجنبية لا يُشترط فيه أن يكون مُسبباً.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "المادة (4) تتعلق حصراً بالمولودين في الخارج فقط.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "تثبت الجنسية بحكم القانون تلقائياً بمجرد استيفاء الأجنبي المقيم لكافة الشروط الجوهرية (م5).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "متى لا تفقد الزوجة الأجنبية جنسيتها المكتسبة بمجرد انتهاء الزوجية (م13)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إذا مضى على قيام الزوجية 4 سنوات على الأقل منذ اكتسابها الجنسية"
+      },
+      {
+        "question": "بماذا يُعبّر فقهاً عن بقاء الجنسية منوطة بالقرار الإداري للوزير المختص رغم استيفاء الشروط؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "السلطة التقديرية"
+      },
+      {
+        "question": "وفقاً للمادة (4) المتعلقة بالحالات الخاصة لمنح الجنسية، متى يجب تقديم طلب اختيار الجنسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خلال سنة من بلوغ سن الرشد"
+      }
+    ],
+    "tabSwitchCount": 10
   }
 ]
