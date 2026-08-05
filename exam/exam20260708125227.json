@@ -1225,5 +1225,111 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "اختبار أسس الفلسفة (2)",
+    "studentName": "ثالث",
+    "deviceId": "DEV-6AKNKHCNB-mqzbx6je",
+    "submissionDate": "2026-08-05T16:22:48.325Z",
+    "mcqScore": {
+      "correct": 1,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "وفقاً لمنهج ديكارت، قاعدة اليقين تعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تجنب التهور وعدم قبول شيء على أنه حق حتى يُعرف يقيناً أنه كذلك"
+      },
+      {
+        "question": "يعرّف شيشرون الدين بأنه: الشعور بواجباتنا، من حيث كونها قائمة على أوامر إلهية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "دعا الفيلسوف كيركجارد إلى:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الجمع المطلق بين الدين والفلسفة",
+        "correctAnswer": "الفصل التام بين الدائرتين الدينية والفلسفية"
+      },
+      {
+        "question": "من الفلاسفة في العصر الحديث الذين حاولوا تخليص الفلسفة من التصور الغيبي وتأسيس فلسفة واقعية تنكر الميتافيزيقا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ديكارت ومالبرانش",
+        "correctAnswer": "توماس هوبز وجون لوك وديفيد هيوم"
+      },
+      {
+        "question": "المذهب الذي يتجه إلى التشكيك في وجود واقع موضوعي أو قدرة الذهن على إدراكه، عُرف أيضاً بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المذهب البراجماتي",
+        "correctAnswer": "السفسطة (الاتجاه المثالي)"
+      },
+      {
+        "question": "اللاواقعية المعرفية تؤمن بـ:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن كل ما في الكون هو مجرد انعكاسات مادية.",
+        "correctAnswer": "وجود واقع في الخارج، لكن العقل غير قادر على إدراكه."
+      },
+      {
+        "question": "الاستقراء الناقص هو الذي يتم فيه فحص جميع أعضاء فئة معينة للوصول إلى حكم عام.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "في المنهج الاستقرائي، النتيجة مقارنة بالمقدمات تكون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا علاقة لها بالمقدمات",
+        "correctAnswer": "أعم وأكبر من المقدمات"
+      },
+      {
+        "question": "طريقة الاختلاف عند \"مل\" تفيد بأن غياب العلة يستتبع اختفاء معلولها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ينطلق البحث الفلسفي من الإذعان بقضية وجدانية وهي التصديق بمبدأ الواقعية، والتي تعتبر قضية أولى الأوائل.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
