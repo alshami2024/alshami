@@ -278,7 +278,8 @@
       "room": "قاعة عامر عبدالوهاب",
       "attendance": {
         "1": false,
-        "2": false
+        "2": false,
+        "10": true
       }
     },
     {
