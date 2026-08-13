@@ -404,5 +404,109 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تاريخ وفلسفة القانون ",
+    "studentName": "مشعل عبود الجرموزي",
+    "deviceId": "DEV-SIUBR9MU1-msrhs77b",
+    "submissionDate": "2026-08-13T17:31:15.102Z",
+    "mcqScore": {
+      "correct": 3,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما الذي يميز علم الاجتماع عن علم القانون وفقاً لما ورد في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم الاجتماع يبحث في الموارد المتاحة، والقانون ينظمها",
+        "correctAnswer": "علم الاجتماع تقريري، بينما علم القانون تقريري وتوجيهي"
+      },
+      {
+        "question": "ما المقصود بوصف القاعدة القانونية بأنها (عامة ومجردة)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أنها تنظم سلوك الإنسان الداخلي ونياته فقط",
+        "correctAnswer": "أنها لا تخاطب شخصاً معيناً بل تتناول الأشخاص بصفاتهم والوقائع بشروطها"
+      },
+      {
+        "question": "ما هو مصطلح (الحيلة النفعية)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استخدام نصوص قانونية لغايات أخلاقية سامية تخدم الدولة",
+        "correctAnswer": "إبطال الغاية الظاهرة من القانون لغاية أنفع للقائم عليه كالحصول على عائد مالي"
+      },
+      {
+        "question": "يقتصر المنهج الأحادي في دراسة تاريخ القانون على دراسة نظم القانون ومصادره في كل حضارة ودولة على حدة دون الخروج بنتائج عالمية مقارنة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي من الشرائع التالية تعتمد في نشأتها وتطورها بشكل أساسي على العرف القضائي والسوابق القضائية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الشريعة اللاتينية",
+        "correctAnswer": "الشريعة الأنجلوسكسونية"
+      },
+      {
+        "question": "يختلف علم القانون عن علم التاريخ في أن الأول يهتم بالحاضر والمستقبل، بينما يهتم الثاني بالماضي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أثبتت الاكتشافات الأثرية أن القانون الروماني هو الحلقة الأولى والأقدم التي عرفتها البشرية في تاريخ الفكر القانوني.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ترى النظريات الوضعية وجوب الفصل التام بين القانون والأخلاق، وأن المعيار في سن القانون هو الرغبة والمحتوى المراد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما هو التعريف الأنسب لـ (تاريخ القانون)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استكمال النفس الإنسانية بتصور الأمور والتصديق بالحقائق",
+        "correctAnswer": "علم يعنى بدراسة القانون من حيث النشأة والتطور والتعديل والزوال"
+      },
+      {
+        "question": "يشترط لوجود القانون وجود الدولة بمعناها الحديث، فلا يمكن أن يوجد قانون بدون دولة ترعاه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
