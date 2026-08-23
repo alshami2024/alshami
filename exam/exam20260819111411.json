@@ -3826,5 +3826,108 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "تاريخ وفلسفة القانون",
+    "studentName": "ااا",
+    "deviceId": "DEV-TDB8O7T4N-mt06v63d",
+    "submissionDate": "2026-08-23T14:37:45.997Z",
+    "mcqScore": {
+      "correct": 4,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "حسب نظرية الطوطم لإميل دوركايم، تكونت الخلية الاجتماعية الأولى بناءً على رابطة الدم والقرابة بين أفرادها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما هو النظام أو الوسيلة التي يتم فيها معاقبة الجاني بمثل ما جنى لتحقيق إرضاء أهل المجني عليه وإطفاء نزعة الانتقام؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القصاص"
+      },
+      {
+        "question": "في مرحلة القوة والانتقام الفردي، كانت (الجرائم العامة) هي الجرائم التي تمس الفرد ذاته ويُترك له حق تقدير العقوبة المناسبة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "في العرف اليمني القديم، ما هي عقوبة جريمة قتل الضيف أو المرسل والتي تُعرف بـ (العيب الأسود)؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تسليم أربع ديات (المربوع)",
+        "correctAnswer": "تسليم إحدى عشرة دية (المهدعش) مع الحشم"
+      },
+      {
+        "question": "في ظل نظام الملكية في مرحلة القوة، عرف الإنسان البدائي ملكية العقارات بوضوح وفصل بين مفهومي الملكية والحيازة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "وفقاً للرؤية الوضعية، ما هي أول مرحلة من مراحل نشأة القانون استناداً إلى فرضية التطور؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مرحلة القوة أو الانتقام الفردي"
+      },
+      {
+        "question": "تعتبر (البَشْعة) وسيلة من وسائل الإثبات القديمة عند العرب، وتندرج تحت صورة الاحتكام إلى المحنة (الابتلاء بالنار).",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "أي من النظريات التالية تفسر نشأة (الأسرة الأمية) بأنها نتيجة لكثرة الحروب ووأد البنات مما أدى لقلة النساء وظهور الإباحية الجنسية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "نظرية الأسرة الأمية"
+      },
+      {
+        "question": "رغم تطور المجتمعات، لا تزال الشرائع الحديثة متأثرة بظاهرة (استخدام القوة) لحماية الحقوق في بعض الحالات، ومن أمثلة ذلك:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاحتكام إلى المبارزة لفض المنازعات التجارية",
+        "correctAnswer": "حق الدفاع الشرعي في القوانين الجنائية"
+      },
+      {
+        "question": "في ظاهرة (طرد الجاني) أو ما عرف عند العرب بـ (الخلع)، تقوم الجماعة بقطع صلتها بالجاني والبراءة منه لتجنب انتقام أهل المجني عليه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
