@@ -276,7 +276,8 @@
       "doctor": "د/ عبدالرقيب الشامي",
       "room": "zoom",
       "attendance": {
-        "11": true
+        "11": true,
+        "12": true
       }
     },
     {
