@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تسليم التكاليف</title>
+    <script src="https://alshami.vercel.app/exam/crypto-js.min.js"></script>
+    <style>
+        body { font-family: 'Arial', sans-serif; background-color: #f4f7fc; margin: 0; padding: 0; user-select: none; -webkit-user-select: none; }
+        .container { width: 85%; max-width: 700px; margin: 40px auto; background-color: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 20px; }
+        .instruction-box { background-color: #fff3cd; border-right: 5px solid #ffc107; padding: 15px; border-radius: 6px; margin-bottom: 25px; color: #856404; font-size: 15px; line-height: 1.6; }
+        .instruction-box strong { display: block; font-size: 16px; margin-bottom: 5px; }
+        .form-group { margin-bottom: 25px; text-align: right; border: 1px solid #edf2f7; padding: 20px; border-radius: 8px; background-color: #fafbfc; }
+        label { font-size: 15px; font-weight: bold; color: #333; display: block; margin-bottom: 8px; }
+        input[type="text"] { width: 100%; padding: 12px; border-radius: 6px; border: 1px solid #cbd5e0; font-size: 15px; box-sizing: border-box; background-color: #fff; }
+        .file-upload-box { border: 2px dashed #4CAF50; background-color: #e8f5e9; padding: 15px; border-radius: 8px; text-align: center; margin-top: 12px; }
+        .file-upload-box span { display: block; font-size: 13px; color: #2e7d32; font-weight: bold; margin-bottom: 8px; }
+        input[type="file"] { width: 100%; font-size: 14px; cursor: pointer; }
+        .question-title { color: #1976d2; margin-top: 0; font-size: 18px; }
+        .question-text { color: #4a5568; font-size: 14.5px; line-height: 1.6; margin-bottom: 12px; }
+        button { background-color: #2e7d32; color: white; border: none; padding: 14px 30px; font-size: 16px; border-radius: 6px; cursor: pointer; display: block; width: 100%; font-weight: bold; transition: 0.3s; }
+        button:hover { background-color: #1b5e20; }
+        .footer { margin-top: 40px; font-size: 13px; color: #777; text-align: center; }
+        .success-message { background-color: #4CAF50; color: white; padding: 12px; margin-top: 20px; border-radius: 6px; text-align: center; display: none; }
+        .error-message { background-color: #e53935; color: white; padding: 12px; margin-top: 20px; border-radius: 6px; text-align: center; display: none; }
+    </style>
+</head>
+<body oncontextmenu="return false;"> <div class="container">
+    <h1>تسليم التكاليف الدراسية</h1>
+
+    <div class="instruction-box">
+        <strong>⚠️ تنبيه وإرشادات هامة:</strong>
+        • يجب كتابة الإجابة <b>بخط اليد حصراً</b> على ورقة وتصويرها بوضوح.<br>
+        • لن يتم قبول أي تكليف مطبوع أو مرسل كنص عادي.<br>
+        • يرجى رفع صورة واضحة لكل تكليف أدناه.
+    </div>
+
+    <form id="assignmentForm">
+        <div class="form-group" style="background-color: #fff;">
+            <label for="studentName">اسم الطالب الثلاثي أو الرباعي:</label>
+            <input type="text" id="studentName" placeholder="أدخل اسمك كاملاً هنا...">
+        </div>
+
+        <div class="form-group">
+            <h3 class="question-title">السؤال الأول:</h3>
+            <p class="question-text">سي</p>
+            
+            <div class="file-upload-box">
+                <span>✍️ التقط صورة لورقة الإجابة (بخط يدك):</span>
+                <input type="file" accept="image/*" id="file1" capture="environment">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <h3 class="question-title">السؤال الثاني:</h3>
+            <p class="question-text">سي</p>
+            
+            <div class="file-upload-box">
+                <span>✍️ التقط صورة لورقة الإجابة (بخط يدك):</span>
+                <input type="file" accept="image/*" id="file2" capture="environment">
+            </div>
+        </div>
+
+        <button type="button" id="btnSubmit">إرسال التكاليف (صور)</button>
+    </form>
+
+    <div id="successMessage" class="success-message">
+        تم إرسال التكاليف بنجاح!
+    </div>
+
+    <div id="errorMessage" class="error-message">
+        يرجى إدخال اسم الطالب وإرفاق صورة الحل (بخط اليد) لكلا التكليفين!
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2026 جميع الحقوق محفوظة د. جمال الشامي.</p>
+</div>
+
+<script>
+    const _c = 'CmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2NvbnRleHRtZW51JywgZSA9PiBlLnByZXZlbnREZWZhdWx0KCkpOwpkb2N1bWVudC5vbmtleWRvd24gPSBmdW5jdGlvbihlKSB7CiAgICBpZiAoZS5rZXlDb2RlID09IDEyMyB8fCAoZS5jdHJsS2V5ICYmIGUuc2hpZnRLZXkgJiYgKGUua2V5Q29kZSA9PSA3MyB8fCBlLmtleUNvZGUgPT0gNzQpKSB8fCAoZS5jdHJsS2V5ICYmIGUua2V5Q29kZSA9PSA4NSkpIHsKICAgICAgICByZXR1cm4gZmFsc2U7CiAgICB9Cn07Cgpjb25zdCBfMHg5OSA9ICdteS1zdXBlci1zZWNyZXQta2V5LTEyMzQ1JzsKY29uc3QgXzB4ODggPSAnVTJGc2RHVmtYMTkrbUFkN2VMajJGcTBCSEJRUzFsQW5SWTEzYmRmc1NtbUtzVFFmMmJGUU5YL3BpY05UZDBCQjYvc3RhOUJZNDgwdzZSRERBWWh5bFE9PSc7CmNvbnN0IF8weDc3ID0gJ1UyRnNkR1ZrWDErdnlDYzVlTUZZaUZpNTdzQVhoc0xoaVRkVzdLazBxdlk9JzsKCmNvbnN0IF8weDExID0gQ3J5cHRvSlMuQUVTLmRlY3J5cHQoXzB4ODgsIF8weDk5KS50b1N0cmluZyhDcnlwdG9KUy5lbmMuVXRmOCk7CmNvbnN0IF8weDIyID0gQ3J5cHRvSlMuQUVTLmRlY3J5cHQoXzB4NzcsIF8weDk5KS50b1N0cmluZyhDcnlwdG9KUy5lbmMuVXRmOCk7Cgpkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYnRuU3VibWl0Jykub25jbGljayA9IGFzeW5jIGZ1bmN0aW9uKCkgewogICAgY29uc3QgX2IgPSB0aGlzOwogICAgY29uc3QgX2VyciA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdlcnJvck1lc3NhZ2UnKTsKICAgIF9lcnIuc3R5bGUuZGlzcGxheSA9ICdub25lJzsKCiAgICBjb25zdCBfc24gPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnc3R1ZGVudE5hbWUnKS52YWx1ZS50cmltKCk7CiAgICBjb25zdCBfZjEgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnZmlsZTEnKS5maWxlc1swXTsKICAgIGNvbnN0IF9mMiA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdmaWxlMicpLmZpbGVzWzBdOwoKICAgIGlmICghX3NuIHx8ICFfZjEgfHwgIV9mMikgewogICAgICAgIF9lcnIuc3R5bGUuZGlzcGxheSA9ICdibG9jayc7CiAgICAgICAgcmV0dXJuOwogICAgfQoKICAgIF9iLmRpc2FibGVkID0gdHJ1ZTsKICAgIF9iLnRleHRDb250ZW50ID0gItis2KfYsdmKINin2YTYpdix2LPYp9mELi4uIjsKCiAgICBjb25zdCBfbXNnID0gIvCfk4wg2KrZg9mE2YrZgSDYrNiv2YrYryDZhdiz2KrZhNmFOlxuXG7wn5GkINin2LPZhSDYp9mE2LfYp9mE2Kg6ICIgKyBfc24gKyAiXG7wn5OOINin2YTZhdix2YHZgtin2Ko6INi12YjYsSDYqNiu2Lcg2KfZhNmK2K8iOwoKICAgIHRyeSB7CiAgICAgICAgYXdhaXQgZmV0Y2goJ2h0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3QnICsgXzB4MTEgKyAnL3NlbmRNZXNzYWdlJywgewogICAgICAgICAgICBtZXRob2Q6ICdQT1NUJywKICAgICAgICAgICAgaGVhZGVyczogeyAnQ29udGVudC1UeXBlJzogJ2FwcGxpY2F0aW9uL2pzb24nIH0sCiAgICAgICAgICAgIGJvZHk6IEpTT04uc3RyaW5naWZ5KHsgY2hhdF9pZDogXzB4MjIsIHRleHQ6IF9tc2cgfSkKICAgICAgICB9KTsKCiAgICAgICAgY29uc3QgX3VwID0gYXN5bmMgKF9mLCBfYykgPT4gewogICAgICAgICAgICBjb25zdCBfZmQgPSBuZXcgRm9ybURhdGEoKTsKICAgICAgICAgICAgX2ZkLmFwcGVuZCgnY2hhdF9pZCcsIF8weDIyKTsKICAgICAgICAgICAgX2ZkLmFwcGVuZCgncGhvdG8nLCBfZik7CiAgICAgICAgICAgIGlmIChfYykgX2ZkLmFwcGVuZCgnY2FwdGlvbicsIF9jKTsKICAgICAgICAgICAgYXdhaXQgZmV0Y2goJ2h0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3QnICsgXzB4MTEgKyAnL3NlbmRQaG90bycsIHsgbWV0aG9kOiAnUE9TVCcsIGJvZHk6IF9mZCB9KTsKICAgICAgICB9OwoKICAgICAgICBhd2FpdCBfdXAoX2YxLCAn2KfZhNiq2YPZhNmK2YEg2KfZhNij2YjZhCAtINin2YTYt9in2YTYqDogJyArIF9zbik7CiAgICAgICAgYXdhaXQgX3VwKF9mMiwgJ9in2YTYqtmD2YTZitmBINin2YTYq9in2YbZiiAtINin2YTYt9in2YTYqDogJyArIF9zbik7CgogICAgICAgIGNvbnN0IF9zID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3N1Y2Nlc3NNZXNzYWdlJyk7CiAgICAgICAgX3Muc3R5bGUuZGlzcGxheSA9ICdibG9jayc7CiAgICAgICAgc2V0VGltZW91dCgoKSA9PiB7IF9zLnN0eWxlLmRpc3BsYXkgPSAnbm9uZSc7IH0sIDQwMDApOwogICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhc3NpZ25tZW50Rm9ybScpLnJlc2V0KCk7CiAgICB9IGNhdGNoIChlKSB7CiAgICAgICAgYWxlcnQoJ9it2K/YqyDYrti32KMg2KPYq9mG2KfYoSDYp9mE2KXYsdiz2KfZhNiMINmK2LHYrNmJINin2YTZhdit2KfZiNmE2Kkg2YXYsdipINij2K7YsdmJLicpOwogICAgfSBmaW5hbGx5IHsKICAgICAgICBfYi5kaXNhYmxlZCA9IGZhbHNlOwogICAgICAgIF9iLnRleHRDb250ZW50ID0gItil2LHYs9in2YQg2KfZhNiq2YPYp9mE2YrZgSAo2LXZiNixKSI7CiAgICB9Cn07Cg==';
+    eval(decodeURIComponent(escape(atob(_c))));
+</script>
+</body>
+</html>
