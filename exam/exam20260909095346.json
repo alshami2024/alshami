@@ -438,5 +438,149 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "مهارات الاتصال",
+    "studentName": "سميه",
+    "deviceId": "DEV-4SMV98K0M-mtu3kqbk",
+    "submissionDate": "2026-09-09T12:57:17.891Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "لا يشترط في الإعلام التعبير الموضوعي عن الواقع الفعلي، بينما الدعاية تعتمد أن تخاطب الواقع الفعلي.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يقوم بمراقبة البيئة عن طريق نشر الأخبار، وهذا يُعد من مهام الاتصال:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق صحيح",
+        "correctAnswer": "الإعلامي"
+      },
+      {
+        "question": "تتم عملية الاتصال ما لم يتم ترجمة رموز الرسالة المنقولة ترجمة سليمة يدركها المستقبل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "العملية التي تلجأ إلى تشويه الحقائق وتزييف الوعي والمعرفة هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأول والثاني معاً",
+        "correctAnswer": "الدعاية"
+      },
+      {
+        "question": "في الاتصال اللفظي لا يتم إتاحة الفرصة للعاملين للتعبير عن آرائهم بصراحة فيما لا يخص طبيعة العمل.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "صمت الأصدقاء والمحبين هو الصمت المهيب الذي يلجأ إليه الإنسان في حالة الشعور بالحزن والأسى.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "لا تتحقق الاستجابة المطلوبة عندما لا يتم إرسال البيانات بالطريقة المناسبة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "من وظائف الاتصال بأنه طبيعي وهادف بينما من خصائص الاتصال التسلية والامتاع.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كلما كانت العلاقة بين أطراف الاتصال تعاونية، فإن المادة الاتصالية تكون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موزعة ومشتركة بينهم",
+        "correctAnswer": "مشتركة وليست موزعة"
+      },
+      {
+        "question": "الاتصالات المصورة تتصف بتحديد المسؤوليات وتحديد نظم وطرق العمل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الاتصال الإعلامي يتم فيه إمداد العاملين بالمؤسسة بمعلومات الحوافز والرواتب.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الوسائل التحريرية تشمل المقابلة الشخصية، بينما الوسائل الشفهية تشمل التعليمات والبرقيات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يُعرف ويفر الاتصال بأنه عملية أخذ وعطاء للمعاني بين شخصين.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كلما تزايد عدد المشاركين في عملية الاتصال، فإن الوقت والموارد المطلوبة لتحقيق الإجماع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتزايد"
+      },
+      {
+        "question": "الاتصال الذي يتم فيه انسياب المعلومات من الرؤساء إلى المرؤوسين يُعرف بالاتصال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرسمي الهابط"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
