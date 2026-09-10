@@ -3303,5 +3303,148 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "مهارات الاتصال",
+    "studentName": "نبدا بحل مشاكلنا",
+    "deviceId": "DEV-L1SBHONWQ-mtvqx7hl",
+    "submissionDate": "2026-09-10T22:45:17.454Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "تتم عملية الاتصال ما لم يتم ترجمة رموز الرسالة المنقولة ترجمة سليمة يدركها المستقبل.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "الاتصال الإعلامي يتم فيه إمداد العاملين بالمؤسسة بمعلومات الحوافز والرواتب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "من وظائف الاتصال بأنه طبيعي وهادف بينما من خصائص الاتصال التسلية والامتاع.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "لا تتحقق الاستجابة المطلوبة عندما لا يتم إرسال البيانات بالطريقة المناسبة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "الوسائل التحريرية تشمل المقابلة الشخصية، بينما الوسائل الشفهية تشمل التعليمات والبرقيات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يقوم بمراقبة البيئة عن طريق نشر الأخبار، وهذا يُعد من مهام الاتصال:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الإعلاني",
+        "correctAnswer": "الإعلامي"
+      },
+      {
+        "question": "كلما كانت العلاقة بين أطراف الاتصال تعاونية، فإن المادة الاتصالية تكون:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "موزعة ومشتركة بينهم",
+        "correctAnswer": "مشتركة وليست موزعة"
+      },
+      {
+        "question": "الاتصال الذي يتم فيه انسياب المعلومات من الرؤساء إلى المرؤوسين يُعرف بالاتصال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الرسمي الهابط"
+      },
+      {
+        "question": "كلما تزايد عدد المشاركين في عملية الاتصال، فإن الوقت والموارد المطلوبة لتحقيق الإجماع:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يتزايد"
+      },
+      {
+        "question": "صمت الأصدقاء والمحبين هو الصمت المهيب الذي يلجأ إليه الإنسان في حالة الشعور بالحزن والأسى.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "في الاتصال اللفظي لا يتم إتاحة الفرصة للعاملين للتعبير عن آرائهم بصراحة فيما لا يخص طبيعة العمل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "العملية التي تلجأ إلى تشويه الحقائق وتزييف الوعي والمعرفة هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الدعاية"
+      },
+      {
+        "question": "يُعرف ويفر الاتصال بأنه عملية أخذ وعطاء للمعاني بين شخصين.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "لا يشترط في الإعلام التعبير الموضوعي عن الواقع الفعلي، بينما الدعاية تعتمد أن تخاطب الواقع الفعلي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الاتصالات المصورة تتصف بتحديد المسؤوليات وتحديد نظم وطرق العمل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 4
   }
 ]
