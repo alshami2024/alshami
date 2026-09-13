@@ -24,6 +24,7 @@
       "doctor": "د/ عمار النهام",
       "room": "قاعة المهرس",
       "attendance": {
+        "8": true,
         "9": true,
         "10": true,
         "11": true,
