@@ -1,0 +1,561 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>البوابة الأكاديمية - استعلام النتائج</title>
+    <style>
+       
+        :root {
+            --primary-dark: #0f172a;
+            --primary-main: #1e293b;
+            --accent-color: #2563eb;
+            --accent-hover: #1d4ed8;
+            --bg-color: #f1f5f9;
+            --card-bg: #ffffff;
+            --text-main: #334155;
+            --text-muted: #64748b;
+            --border-color: #e2e8f0;
+            --success: #10b981;
+            --danger: #ef4444;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+            background-image: radial-gradient(circle at top right, #e2e8f0 0%, transparent 20%), 
+                              radial-gradient(circle at bottom left, #e2e8f0 0%, transparent 20%);
+            background-attachment: fixed;
+            min-height: 100vh;
+        }
+
+        .app-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px 15px 50px 15px;
+        }
+
+      
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #dcfce7;
+            color: #166534;
+            padding: 6px 12px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            border: 1px solid #bbf7d0;
+            transition: all 0.3s;
+        }
+
+        .status-error {
+            background: #fee2e2;
+            color: #991b1b;
+            border-color: #fecaca;
+        }
+
+        
+        .header-section {
+            text-align: center;
+            padding: 40px 20px 60px 20px;
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-main) 100%);
+            border-radius: 20px;
+            color: white;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .header-section::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
+            transform: rotate(30deg);
+            pointer-events: none;
+        }
+
+        .header-section h1 {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 8px;
+            letter-spacing: -0.5px;
+        }
+
+        .header-section p {
+            color: #94a3b8;
+            font-size: 16px;
+        }
+
+      
+        .search-wrapper {
+            position: relative;
+            max-width: 700px;
+            margin: -35px auto 40px auto;
+            z-index: 10;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 20px 20px 20px 55px;
+            font-size: 16px;
+            border: 2px solid transparent;
+            border-radius: 16px;
+            background: var(--card-bg);
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.15);
+            outline: none;
+            transition: all 0.3s;
+            font-family: inherit;
+            color: var(--primary-dark);
+            font-weight: 600;
+        }
+
+        .search-input::placeholder {
+            color: #94a3b8;
+            font-weight: normal;
+        }
+
+        .search-input:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 15px 35px -5px rgba(37, 99, 235, 0.2);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            top: 22px;
+            font-size: 22px;
+            color: #94a3b8;
+            pointer-events: none;
+        }
+
+        .filters-container {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-select {
+            flex: 1;
+            min-width: 140px;
+            padding: 12px 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            background: var(--card-bg);
+            color: var(--text-main);
+            font-size: 14px;
+            font-family: inherit;
+            font-weight: 600;
+            outline: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: all 0.2s;
+        }
+
+        .filter-select:focus {
+            border-color: var(--accent-color);
+        }
+
+        
+        .empty-state {
+            text-align: center;
+            padding: 50px 20px;
+            color: var(--text-muted);
+            animation: fadeIn 0.5s ease-out;
+        }
+        
+        .empty-state-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+            opacity: 0.5;
+        }
+
+     
+        .student-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border-color);
+            margin-bottom: 25px;
+            animation: slideUp 0.4s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        .student-header {
+            background: linear-gradient(to left, var(--primary-main), var(--primary-dark));
+            color: white;
+            padding: 20px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            border-bottom: 4px solid var(--accent-color);
+        }
+
+        .student-name {
+            font-size: 20px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .student-name::before { content: '👤'; font-size: 18px; }
+
+        .student-id {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .grades-table-wrapper {
+            overflow-x: auto;
+            padding: 5px;
+        }
+
+        .grades-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            min-width: 800px;
+        }
+
+        .grades-table th, .grades-table td {
+            padding: 15px 20px;
+            text-align: right;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .grades-table th {
+            background-color: #f8fafc;
+            color: var(--text-muted);
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .subject-cell {
+            line-height: 1.4;
+        }
+        .subject-name {
+            font-weight: 700;
+            color: var(--primary-dark);
+            font-size: 15px;
+        }
+        .subject-meta {
+            font-size: 12px;
+            color: #64748b;
+            margin-top: 4px;
+        }
+
+        
+        .total-badge {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-weight: 800;
+        }
+
+        .notes-cell { color: var(--danger); font-size: 13px; font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .filters-container { flex-direction: column; }
+            .filter-select { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="app-container">
+    
+    <div style="text-align: center;">
+        <div id="dbStatus" class="status-badge" style="display: none;"></div>
+    </div>
+
+    <div class="header-section">
+        <h1>سجل النتائج الأكاديمية - جامعة الضالع</h1>
+        <p>البوابة الموحدة لاستعلام نتائج طلاب كلية الحقوق</p>
+    </div>
+
+    <div class="search-wrapper">
+        <input type="text" id="searchInput" class="search-input" placeholder="ابحث بالاسم أو الرقم الجامعي..." autocomplete="off">
+        <span class="search-icon">🔍</span>
+        
+        <!-- حقول العرض والفلاتر الجديدة -->
+        <div class="filters-container">
+            <select id="filterYear" class="filter-select">
+                <option value="all">كل الأعوام</option>
+            </select>
+            <select id="filterSemester" class="filter-select">
+                <option value="all">كل الفصول</option>
+            </select>
+            <select id="filterSubject" class="filter-select">
+                <option value="all">كل المواد</option>
+            </select>
+        </div>
+    </div>
+
+    <div id="resultsArea" class="results-area">
+        <div class="empty-state">
+            <div class="empty-state-icon">📄</div>
+            <h2>أهلاً بك في بوابة النتائج</h2>
+            <p>قم بالبحث أو استخدم الفلاتر أعلاه لعرض السجلات.</p>
+        </div>
+    </div>
+</div>
+
+<script src="database.js"></script>
+
+<script>
+    let db = typeof dbData !== 'undefined' ? dbData : {};
+    const dbStatus = document.getElementById('dbStatus');
+    const resultsArea = document.getElementById('resultsArea');
+    const searchInput = document.getElementById('searchInput');
+    
+    const filterYear = document.getElementById('filterYear');
+    const filterSemester = document.getElementById('filterSemester');
+    const filterSubject = document.getElementById('filterSubject');
+    
+    let totalStudentsCount = 0;
+    let subjectsCount = Object.keys(db).length;
+
+    const yearsSet = new Set();
+    const semestersSet = new Set();
+    const subjectsSet = new Set();
+
+    if (subjectsCount > 0) {
+        for (const sub in db) {
+            totalStudentsCount += db[sub].length;
+            
+            if(db[sub].length > 0) {
+                const sampleStudent = db[sub][0];
+                const y = flexExtract(sampleStudent, ['العام']);
+                const s = flexExtract(sampleStudent, ['الفصل']);
+                const subj = flexExtract(sampleStudent, ['المادة']);
+                
+                if (y !== '-' && y !== 'غير محدد') yearsSet.add(y);
+                if (s !== '-' && s !== 'غير محدد') semestersSet.add(s);
+                if (subj !== '-' && subj !== 'غير محدد') subjectsSet.add(subj);
+            }
+        }
+        
+    
+        yearsSet.forEach(y => filterYear.innerHTML += `<option value="${y}">${y}</option>`);
+        semestersSet.forEach(s => filterSemester.innerHTML += `<option value="${s}">${s}</option>`);
+        subjectsSet.forEach(subj => filterSubject.innerHTML += `<option value="${subj}">${subj}</option>`);
+
+        dbStatus.style.display = 'inline-flex';
+        dbStatus.innerHTML = `🟢 متصل بالبيانات: ${totalStudentsCount} سجل / ${subjectsCount} مقررات`;
+    } else {
+        dbStatus.style.display = 'inline-flex';
+        dbStatus.classList.add('status-error');
+        dbStatus.innerHTML = `🔴 خطأ: تعذر قراءة ملف database.js`;
+    }
+
+    function normalizeArabic(text) {
+        if (!text) return '';
+        return text.toString().trim()
+            .replace(/[\u064B-\u065F]/g, '') 
+            .replace(/[أإآ]/g, 'ا')
+            .replace(/ة/g, 'ه')
+            .replace(/ى/g, 'ي')
+            .replace(/\s+/g, ' '); 
+    }
+
+    function flexExtract(studentObj, keywords) {
+        for (const key of Object.keys(studentObj)) {
+            for (const kw of keywords) {
+                if (key.includes(kw) && studentObj[key] !== "" && studentObj[key] !== null) {
+                    return studentObj[key];
+                }
+            }
+        }
+        return '-';
+    }
+
+ 
+    function performSearch() {
+        const query = searchInput.value;
+        const normalizedQuery = normalizeArabic(query);
+        
+        const selYear = filterYear.value;
+        const selSemester = filterSemester.value;
+        const selSubject = filterSubject.value;
+
+        const isTextEmpty = normalizedQuery.length < 2;
+        const areFiltersEmpty = (selYear === 'all' && selSemester === 'all' && selSubject === 'all');
+
+      
+        if (isTextEmpty && areFiltersEmpty) {
+            resultsArea.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">📄</div>
+                    <h2>أهلاً بك في بوابة النتائج</h2>
+                    <p>قم بالبحث أو استخدم الفلاتر أعلاه لعرض السجلات.</p>
+                </div>
+            `;
+            return;
+        }
+
+        resultsArea.innerHTML = '';
+        if (subjectsCount === 0) return;
+
+        const studentsData = {};
+
+        for (const fullSubjectName in db) {
+            const students = db[fullSubjectName];
+            
+            const matches = students.filter(s => {
+                const sYear = flexExtract(s, ['العام']);
+                const sSemester = flexExtract(s, ['الفصل']);
+                const sSubject = flexExtract(s, ['المادة']);
+                
+                
+                if (selYear !== 'all' && sYear !== selYear) return false;
+                if (selSemester !== 'all' && sSemester !== selSemester) return false;
+                if (selSubject !== 'all' && sSubject !== selSubject) return false;
+
+                
+                if (!isTextEmpty) {
+                    const sName = normalizeArabic(flexExtract(s, ['اسم', 'الاسم']));
+                    const sId = normalizeArabic(flexExtract(s, ['رقم', 'جامعي']));
+                    return sName.includes(normalizedQuery) || sId.includes(normalizedQuery);
+                }
+                
+                return true; 
+            });
+
+            matches.forEach(student => {
+                const actualId = flexExtract(student, ['رقم', 'جامعي']);
+                const actualName = flexExtract(student, ['اسم', 'الاسم']);
+                const extractedSubject = flexExtract(student, ['المادة']);
+                const actualSubjectName = extractedSubject !== '-' ? extractedSubject : fullSubjectName;
+
+                if (actualId !== '-') {
+                    if (!studentsData[actualId]) {
+                        studentsData[actualId] = { name: actualName, id: actualId, subjects: [] };
+                    }
+                    
+                    studentsData[actualId].subjects.push({
+                        subjectName: actualSubjectName,
+                        level: flexExtract(student, ['المستوى']),
+                        semester: flexExtract(student, ['الفصل']),
+                        year: flexExtract(student, ['العام']),
+                        attendance: flexExtract(student, ['حضور', 'مشاركة']),
+                        assignments: flexExtract(student, ['تكاليف', 'أعمال']),
+                        midterm: flexExtract(student, ['نصفي']),
+                        finalExam: flexExtract(student, ['نهائي', 'نهائى']),
+                        total: flexExtract(student, ['اجمالي', 'إجمالي', 'مجموع']),
+                        notes: flexExtract(student, ['ملاحظات', 'ملاحظه'])
+                    });
+                }
+            });
+        }
+
+        renderResults(studentsData);
+    }
+
+   
+    function renderResults(studentsData) {
+        const studentIds = Object.keys(studentsData);
+
+        if (studentIds.length === 0) {
+            resultsArea.innerHTML = `
+                <div class="empty-state">
+                    <div class="empty-state-icon">🔍</div>
+                    <h2 style="color: var(--primary-main);">لا توجد نتائج</h2>
+                    <p>لم يتم العثور على سجلات تطابق الفلاتر أو البحث المدخل.</p>
+                </div>
+            `;
+            return;
+        }
+
+        studentIds.forEach((id, index) => {
+            const student = studentsData[id];
+            const card = document.createElement('div');
+            card.className = 'student-card';
+            card.style.animationDelay = `${index * 0.1}s`;
+            
+            let rowsHtml = '';
+            student.subjects.forEach(sub => {
+              
+                rowsHtml += `
+                    <tr>
+                        <td class="subject-cell">
+                            <div class="subject-name">${sub.subjectName}</div>
+                            <div class="subject-meta">مستوى: ${sub.level} | فصل: ${sub.semester} | عام: ${sub.year}</div>
+                        </td>
+                        <td>${sub.attendance}</td>
+                        <td>${sub.assignments}</td>
+                        <td>${sub.midterm}</td>
+                        <td>${sub.finalExam}</td>
+                        <td><span class="total-badge">${sub.total}</span></td>
+                        <td class="notes-cell">${sub.notes !== '-' ? sub.notes : ''}</td>
+                    </tr>
+                `;
+            });
+
+            card.innerHTML = `
+                <div class="student-header">
+                    <div class="student-name">${student.name !== '-' ? student.name : 'طالب غير معروف'}</div>
+                    <div class="student-id">رقم جامعي: ${student.id}</div>
+                </div>
+                <div class="grades-table-wrapper">
+                    <table class="grades-table">
+                        <thead>
+                            <tr>
+                                <th>المقرر الدراسي</th>
+                                <th>الحضور</th>
+                                <th>التكاليف</th>
+                                <th>اختبار نصفي</th>
+                                <th>اختبار نهائي</th>
+                                <th>الإجمالي</th>
+                                <th>ملاحظات</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${rowsHtml}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            
+            resultsArea.appendChild(card);
+        });
+    }
+
+  
+    searchInput.addEventListener('input', performSearch);
+    filterYear.addEventListener('change', performSearch);
+    filterSemester.addEventListener('change', performSearch);
+    filterSubject.addEventListener('change', performSearch);
+</script>
+
+</body>
+</html>
