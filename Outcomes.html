@@ -44,7 +44,7 @@
         .app-container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 15px 10px 40px 10px;
+            padding: 15px 10px 80px 10px; /* مساحة إضافية للأسفل لكي لا يغطي المحتوى زر الطباعة العائم */
             flex: 1;
             width: 100%;
         }
@@ -328,7 +328,33 @@
             border-radius: 6px;
         }
 
-        /* تصميم تذييل الصفحة (Footer) المخصص */
+        /* زر الطباعة العائم الذكي */
+        .floating-print-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: var(--accent-color);
+            color: white;
+            border: none;
+            width: 55px;
+            height: 55px;
+            border-radius: 50%;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .floating-print-btn:hover {
+            background: var(--accent-hover);
+            transform: scale(1.05);
+        }
+
+        /* تصميم تذييل الصفحة (Footer) */
         .app-footer {
             text-align: center;
             padding: 20px 10px;
@@ -352,6 +378,25 @@
             letter-spacing: 0.5px;
         }
 
+        /* تنسيق خاص عند الطباعة أو التصدير لـ PDF */
+        @media print {
+            .search-wrapper, .floating-print-btn, .status-container, .empty-state {
+                display: none !important;
+            }
+            body {
+                background: white !important;
+            }
+            .app-container {
+                padding: 0 !important;
+                max-width: 100% !important;
+            }
+            .student-card {
+                box-shadow: none !important;
+                border: 1px solid #cbd5e1 !important;
+                break-inside: avoid;
+            }
+        }
+
         @media (min-width: 640px) {
             .app-container { padding: 20px 15px 50px 15px; }
             .header-section { padding: 40px 20px 60px 20px; }
@@ -368,6 +413,11 @@
     </style>
 </head>
 <body>
+
+<!-- زر الطباعة العائم الذكي -->
+<button class="floating-print-btn" onclick="window.print()" title="طباعة النتائج أو حفظها PDF">
+    🖨️
+</button>
 
 <div class="app-container">
     
@@ -406,7 +456,6 @@
     </div>
 </div>
 
-<!-- تذييل الصفحة المضاف بطريقة أنيقة -->
 <footer class="app-footer">
     <div class="footer-signature">
         <span>Jamal-Alshami © 2026</span>
@@ -564,15 +613,12 @@
 
         if (studentIds.length === 0) {
             resultsArea.innerHTML = `
-                <div class="app-container">
-                    <div class="empty-state">
-                        <div class="empty-state-icon">🔍</div>
-                        <h2 style="color: var(--primary-main);">لا توجد نتائج</h2>
-                        <p>لم يتم العثور على سجلات تطابق الفلاتر أو البحث المدخل.</p>
-                    </div>
+                <div class="empty-state">
+                    <div class="empty-state-icon">🔍</div>
+                    <h2 style="color: var(--primary-main);">لا توجد نتائج</h2>
+                    <p>لم يتم العثور على سجلات تطابق الفلاتر أو البحث المدخل.</p>
                 </div>
             `;
-            // الحفاظ على التذييل في مكانه حتى لو لم تكن هناك نتائج
             return;
         }
 
@@ -628,7 +674,7 @@
                 </div>
             `;
             
-            resultsArea.appendChild(card);
+            resultsArea.innerHTML.appendChild ? resultsArea.appendChild(card) : resultsArea.appendChild(card);
         });
     }
 
