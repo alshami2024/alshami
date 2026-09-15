@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
@@ -42,10 +42,9 @@
         .app-container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 20px 15px 50px 15px;
+            padding: 15px 10px 40px 10px;
         }
 
-      
         .status-badge {
             display: inline-flex;
             align-items: center;
@@ -54,11 +53,11 @@
             color: #166534;
             padding: 6px 12px;
             border-radius: 30px;
-            font-size: 13px;
+            font-size: 12px;
             font-weight: 600;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
             border: 1px solid #bbf7d0;
-            transition: all 0.3s;
+            text-align: center;
         }
 
         .status-error {
@@ -66,13 +65,16 @@
             color: #991b1b;
             border-color: #fecaca;
         }
-
         
+        .status-container {
+            text-align: center;
+        }
+
         .header-section {
             text-align: center;
-            padding: 40px 20px 60px 20px;
+            padding: 30px 15px 50px 15px;
             background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-main) 100%);
-            border-radius: 20px;
+            border-radius: 16px;
             color: white;
             box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
             position: relative;
@@ -92,31 +94,31 @@
         }
 
         .header-section h1 {
-            font-size: 32px;
+            font-size: 22px;
             font-weight: 800;
-            margin-bottom: 8px;
+            margin-bottom: 6px;
             letter-spacing: -0.5px;
         }
 
         .header-section p {
             color: #94a3b8;
-            font-size: 16px;
+            font-size: 13px;
         }
 
-      
         .search-wrapper {
             position: relative;
             max-width: 700px;
-            margin: -35px auto 40px auto;
+            margin: -30px auto 30px auto;
             z-index: 10;
+            padding: 0 5px;
         }
 
         .search-input {
             width: 100%;
-            padding: 20px 20px 20px 55px;
-            font-size: 16px;
+            padding: 16px 16px 16px 45px;
+            font-size: 15px;
             border: 2px solid transparent;
-            border-radius: 16px;
+            border-radius: 14px;
             background: var(--card-bg);
             box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.15);
             outline: none;
@@ -138,29 +140,28 @@
 
         .search-icon {
             position: absolute;
-            left: 20px;
-            top: 22px;
-            font-size: 22px;
+            left: 18px;
+            top: 18px;
+            font-size: 18px;
             color: #94a3b8;
             pointer-events: none;
         }
 
         .filters-container {
             display: flex;
-            gap: 10px;
-            margin-top: 15px;
-            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+            flex-direction: column;
         }
 
         .filter-select {
-            flex: 1;
-            min-width: 140px;
-            padding: 12px 15px;
+            width: 100%;
+            padding: 12px 14px;
             border: 1px solid var(--border-color);
             border-radius: 12px;
             background: var(--card-bg);
             color: var(--text-main);
-            font-size: 14px;
+            font-size: 13px;
             font-family: inherit;
             font-weight: 600;
             outline: none;
@@ -173,31 +174,38 @@
             border-color: var(--accent-color);
         }
 
-        
         .empty-state {
             text-align: center;
-            padding: 50px 20px;
+            padding: 40px 15px;
             color: var(--text-muted);
             animation: fadeIn 0.5s ease-out;
         }
         
         .empty-state-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
+            font-size: 40px;
+            margin-bottom: 12px;
             opacity: 0.5;
         }
 
-     
+        .empty-state h2 {
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .empty-state p {
+            font-size: 13px;
+        }
+
         .student-card {
             background: var(--card-bg);
-            border-radius: 16px;
+            border-radius: 14px;
             overflow: hidden;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.05);
             border: 1px solid var(--border-color);
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             animation: slideUp 0.4s ease-out forwards;
             opacity: 0;
-            transform: translateY(20px);
+            transform: translateY(15px);
         }
 
         @keyframes slideUp { to { opacity: 1; transform: translateY(0); } }
@@ -206,87 +214,131 @@
         .student-header {
             background: linear-gradient(to left, var(--primary-main), var(--primary-dark));
             color: white;
-            padding: 20px 25px;
+            padding: 15px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            border-bottom: 4px solid var(--accent-color);
+            flex-direction: column;
+            gap: 8px;
+            border-bottom: 3px solid var(--accent-color);
         }
 
         .student-name {
-            font-size: 20px;
+            font-size: 17px;
             font-weight: 700;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 8px;
         }
 
-        .student-name::before { content: '👤'; font-size: 18px; }
+        .student-name::before { content: '👤'; font-size: 15px; }
 
         .student-id {
             background: rgba(255, 255, 255, 0.15);
-            padding: 6px 16px;
-            border-radius: 20px;
-            font-size: 14px;
+            padding: 4px 12px;
+            border-radius: 15px;
+            font-size: 12px;
             font-weight: 600;
+            align-self: flex-start;
         }
 
-        .grades-table-wrapper {
-            overflow-x: auto;
-            padding: 5px;
+        /* تصميم بطاقات المقررات للموبايل بدل الجداول العريضة */
+        .subjects-list {
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            background: #f8fafc;
         }
 
-        .grades-table {
-            width: 100%;
-            border-collapse: separate;
-            border-spacing: 0;
-            min-width: 800px;
+        .subject-item-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
         }
 
-        .grades-table th, .grades-table td {
-            padding: 15px 20px;
-            text-align: right;
+        .subject-item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
             border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-bottom: 8px;
+            gap: 10px;
         }
 
-        .grades-table th {
-            background-color: #f8fafc;
-            color: var(--text-muted);
-            font-weight: 700;
-            font-size: 13px;
-        }
-
-        .subject-cell {
-            line-height: 1.4;
-        }
         .subject-name {
             font-weight: 700;
             color: var(--primary-dark);
-            font-size: 15px;
-        }
-        .subject-meta {
-            font-size: 12px;
-            color: #64748b;
-            margin-top: 4px;
+            font-size: 14px;
         }
 
-        
+        .subject-meta {
+            font-size: 11px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .total-badge-container {
+            text-align: left;
+        }
+
         .total-badge {
             display: inline-block;
             background: #eff6ff;
             color: var(--accent-color);
-            padding: 6px 14px;
-            border-radius: 8px;
+            padding: 4px 10px;
+            border-radius: 6px;
             font-weight: 800;
+            font-size: 13px;
         }
 
-        .notes-cell { color: var(--danger); font-size: 13px; font-weight: 600; }
+        /* تفاصيل الدرجات الجزئية */
+        .grades-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 6px;
+            text-align: center;
+            background: #f8fafc;
+            padding: 8px;
+            border-radius: 8px;
+            font-size: 11px;
+        }
 
-        @media (max-width: 768px) {
-            .filters-container { flex-direction: column; }
-            .filter-select { width: 100%; }
+        .grade-box-title {
+            color: var(--text-muted);
+            font-size: 10px;
+            margin-bottom: 2px;
+        }
+
+        .grade-box-value {
+            font-weight: 700;
+            color: var(--text-main);
+        }
+
+        .notes-box {
+            margin-top: 8px;
+            font-size: 12px;
+            color: var(--danger);
+            font-weight: 600;
+            background: #fee2e2;
+            padding: 4px 8px;
+            border-radius: 6px;
+        }
+
+        /* للشاشات المتوسطة والأكبر (التابلت والكمبيوتر) */
+        @media (min-width: 640px) {
+            .app-container { padding: 20px 15px 50px 15px; }
+            .header-section { padding: 40px 20px 60px 20px; }
+            .header-section h1 { font-size: 28px; }
+            .filters-container { flex-direction: row; }
+            .filter-select { flex: 1; width: auto; }
+            .student-header { flex-direction: row; justify-content: space-between; align-items: center; padding: 20px 25px; }
+            .student-id { align-self: auto; }
+            .subjects-list { padding: 15px; gap: 15px; }
+            .subject-item-card { padding: 15px; }
+            .grades-grid { font-size: 12px; }
+            .grade-box-title { font-size: 11px; }
         }
     </style>
 </head>
@@ -294,12 +346,12 @@
 
 <div class="app-container">
     
-    <div style="text-align: center;">
+    <div class="status-container">
         <div id="dbStatus" class="status-badge" style="display: none;"></div>
     </div>
 
     <div class="header-section">
-        <h1>سجل النتائج الأكاديمية - جامعة الضالع</h1>
+        <h1>سجل المحصلات الأكاديمية - جامعة الضالع</h1>
         <p>البوابة الموحدة لاستعلام نتائج طلاب كلية الحقوق</p>
     </div>
 
@@ -307,7 +359,6 @@
         <input type="text" id="searchInput" class="search-input" placeholder="ابحث بالاسم أو الرقم الجامعي..." autocomplete="off">
         <span class="search-icon">🔍</span>
         
-        <!-- حقول العرض والفلاتر الجديدة -->
         <div class="filters-container">
             <select id="filterYear" class="filter-select">
                 <option value="all">كل الأعوام</option>
@@ -365,7 +416,6 @@
             }
         }
         
-    
         yearsSet.forEach(y => filterYear.innerHTML += `<option value="${y}">${y}</option>`);
         semestersSet.forEach(s => filterSemester.innerHTML += `<option value="${s}">${s}</option>`);
         subjectsSet.forEach(subj => filterSubject.innerHTML += `<option value="${subj}">${subj}</option>`);
@@ -399,7 +449,6 @@
         return '-';
     }
 
- 
     function performSearch() {
         const query = searchInput.value;
         const normalizedQuery = normalizeArabic(query);
@@ -411,7 +460,6 @@
         const isTextEmpty = normalizedQuery.length < 2;
         const areFiltersEmpty = (selYear === 'all' && selSemester === 'all' && selSubject === 'all');
 
-      
         if (isTextEmpty && areFiltersEmpty) {
             resultsArea.innerHTML = `
                 <div class="empty-state">
@@ -436,12 +484,10 @@
                 const sSemester = flexExtract(s, ['الفصل']);
                 const sSubject = flexExtract(s, ['المادة']);
                 
-                
                 if (selYear !== 'all' && sYear !== selYear) return false;
                 if (selSemester !== 'all' && sSemester !== selSemester) return false;
                 if (selSubject !== 'all' && sSubject !== selSubject) return false;
 
-                
                 if (!isTextEmpty) {
                     const sName = normalizeArabic(flexExtract(s, ['اسم', 'الاسم']));
                     const sId = normalizeArabic(flexExtract(s, ['رقم', 'جامعي']));
@@ -481,7 +527,6 @@
         renderResults(studentsData);
     }
 
-   
     function renderResults(studentsData) {
         const studentIds = Object.keys(studentsData);
 
@@ -502,22 +547,39 @@
             card.className = 'student-card';
             card.style.animationDelay = `${index * 0.1}s`;
             
-            let rowsHtml = '';
+            let subjectsHtml = '';
             student.subjects.forEach(sub => {
-              
-                rowsHtml += `
-                    <tr>
-                        <td class="subject-cell">
-                            <div class="subject-name">${sub.subjectName}</div>
-                            <div class="subject-meta">مستوى: ${sub.level} | فصل: ${sub.semester} | عام: ${sub.year}</div>
-                        </td>
-                        <td>${sub.attendance}</td>
-                        <td>${sub.assignments}</td>
-                        <td>${sub.midterm}</td>
-                        <td>${sub.finalExam}</td>
-                        <td><span class="total-badge">${sub.total}</span></td>
-                        <td class="notes-cell">${sub.notes !== '-' ? sub.notes : ''}</td>
-                    </tr>
+                subjectsHtml += `
+                    <div class="subject-item-card">
+                        <div class="subject-item-header">
+                            <div>
+                                <div class="subject-name">${sub.subjectName}</div>
+                                <div class="subject-meta">مستوى: ${sub.level} | فصل: ${sub.semester} | عام: ${sub.year}</div>
+                            </div>
+                            <div class="total-badge-container">
+                                <span class="total-badge">${sub.total}</span>
+                            </div>
+                        </div>
+                        <div class="grades-grid">
+                            <div>
+                                <div class="grade-box-title">الحضور</div>
+                                <div class="grade-box-value">${sub.attendance}</div>
+                            </div>
+                            <div>
+                                <div class="grade-box-title">التكاليف</div>
+                                <div class="grade-box-value">${sub.assignments}</div>
+                            </div>
+                            <div>
+                                <div class="grade-box-title">نصفي</div>
+                                <div class="grade-box-value">${sub.midterm}</div>
+                            </div>
+                            <div>
+                                <div class="grade-box-title">نهائي</div>
+                                <div class="grade-box-value">${sub.finalExam}</div>
+                            </div>
+                        </div>
+                        ${sub.notes !== '-' ? `<div class="notes-box">ملاحظات: ${sub.notes}</div>` : ''}
+                    </div>
                 `;
             });
 
@@ -526,23 +588,8 @@
                     <div class="student-name">${student.name !== '-' ? student.name : 'طالب غير معروف'}</div>
                     <div class="student-id">رقم جامعي: ${student.id}</div>
                 </div>
-                <div class="grades-table-wrapper">
-                    <table class="grades-table">
-                        <thead>
-                            <tr>
-                                <th>المقرر الدراسي</th>
-                                <th>الحضور</th>
-                                <th>التكاليف</th>
-                                <th>اختبار نصفي</th>
-                                <th>اختبار نهائي</th>
-                                <th>الإجمالي</th>
-                                <th>ملاحظات</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            ${rowsHtml}
-                        </tbody>
-                    </table>
+                <div class="subjects-list">
+                    ${subjectsHtml}
                 </div>
             `;
             
@@ -550,7 +597,6 @@
         });
     }
 
-  
     searchInput.addEventListener('input', performSearch);
     filterYear.addEventListener('change', performSearch);
     filterSemester.addEventListener('change', performSearch);
