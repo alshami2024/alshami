@@ -37,12 +37,16 @@
                               radial-gradient(circle at bottom left, #e2e8f0 0%, transparent 20%);
             background-attachment: fixed;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .app-container {
             max-width: 900px;
             margin: 0 auto;
             padding: 15px 10px 40px 10px;
+            flex: 1;
+            width: 100%;
         }
 
         .status-badge {
@@ -240,7 +244,6 @@
             align-self: flex-start;
         }
 
-        /* تصميم بطاقات المقررات للموبايل بدل الجداول العريضة */
         .subjects-list {
             padding: 12px;
             display: flex;
@@ -293,7 +296,6 @@
             font-size: 13px;
         }
 
-        /* تفاصيل الدرجات الجزئية */
         .grades-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -326,7 +328,30 @@
             border-radius: 6px;
         }
 
-        /* للشاشات المتوسطة والأكبر (التابلت والكمبيوتر) */
+        /* تصميم تذييل الصفحة (Footer) المخصص */
+        .app-footer {
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 30px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .footer-signature {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--card-bg);
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+            font-weight: 600;
+            color: var(--primary-main);
+            letter-spacing: 0.5px;
+        }
+
         @media (min-width: 640px) {
             .app-container { padding: 20px 15px 50px 15px; }
             .header-section { padding: 40px 20px 60px 20px; }
@@ -351,7 +376,7 @@
     </div>
 
     <div class="header-section">
-        <h1>سجل المحصلات الأكاديمية - جامعة الضالع</h1>
+        <h1>سجل النتائج الأكاديمية - جامعة الضالع</h1>
         <p>البوابة الموحدة لاستعلام نتائج طلاب كلية الحقوق</p>
     </div>
 
@@ -380,6 +405,13 @@
         </div>
     </div>
 </div>
+
+<!-- تذييل الصفحة المضاف بطريقة أنيقة -->
+<footer class="app-footer">
+    <div class="footer-signature">
+        <span>Jamal-Alshami © 2026</span>
+    </div>
+</footer>
 
 <script src="database.js"></script>
 
@@ -532,12 +564,15 @@
 
         if (studentIds.length === 0) {
             resultsArea.innerHTML = `
-                <div class="empty-state">
-                    <div class="empty-state-icon">🔍</div>
-                    <h2 style="color: var(--primary-main);">لا توجد نتائج</h2>
-                    <p>لم يتم العثور على سجلات تطابق الفلاتر أو البحث المدخل.</p>
+                <div class="app-container">
+                    <div class="empty-state">
+                        <div class="empty-state-icon">🔍</div>
+                        <h2 style="color: var(--primary-main);">لا توجد نتائج</h2>
+                        <p>لم يتم العثور على سجلات تطابق الفلاتر أو البحث المدخل.</p>
+                    </div>
                 </div>
             `;
+            // الحفاظ على التذييل في مكانه حتى لو لم تكن هناك نتائج
             return;
         }
 
