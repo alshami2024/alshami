@@ -44,7 +44,7 @@
         .app-container {
             max-width: 900px;
             margin: 0 auto;
-            padding: 15px 10px 80px 10px; /* مساحة إضافية للأسفل لكي لا يغطي المحتوى زر الطباعة العائم */
+            padding: 15px 10px 80px 10px;
             flex: 1;
             width: 100%;
         }
@@ -95,6 +95,18 @@
             background: radial-gradient(circle, rgba(255,255,255,0.05) 0%, transparent 60%);
             transform: rotate(30deg);
             pointer-events: none;
+        }
+
+        /* تنسيق شعار الجامعة */
+        .university-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-bottom: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 6px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
 
         .header-section h1 {
@@ -328,7 +340,6 @@
             border-radius: 6px;
         }
 
-        /* زر الطباعة العائم الذكي */
         .floating-print-btn {
             position: fixed;
             bottom: 20px;
@@ -354,7 +365,6 @@
             transform: scale(1.05);
         }
 
-        /* تصميم تذييل الصفحة (Footer) */
         .app-footer {
             text-align: center;
             padding: 20px 10px;
@@ -380,20 +390,53 @@
 
         /* تنسيق خاص عند الطباعة أو التصدير لـ PDF */
         @media print {
-            .search-wrapper, .floating-print-btn, .status-container, .empty-state {
+            .search-wrapper, .floating-print-btn, .status-container, .empty-state, .app-footer {
                 display: none !important;
             }
             body {
                 background: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
             .app-container {
                 padding: 0 !important;
                 max-width: 100% !important;
             }
+            /* الحفاظ على ظهور الترويسة والعنوان والشعار عند الطباعة بتنسيق نظيف ورسمي */
+            .header-section {
+                background: #f8fafc !important;
+                color: #0f172a !important;
+                border: 1px solid #cbd5e1 !important;
+                box-shadow: none !important;
+                padding: 20px !important;
+                margin-bottom: 20px !important;
+            }
+            .header-section::before {
+                display: none !important;
+            }
+            .header-section h1 {
+                color: #0f172a !important;
+                font-size: 20px !important;
+            }
+            .header-section p {
+                color: #64748b !important;
+            }
+            .university-logo {
+                background: transparent !important;
+                box-shadow: none !important;
+                width: 70px !important;
+                height: 70px !important;
+            }
             .student-card {
                 box-shadow: none !important;
                 border: 1px solid #cbd5e1 !important;
                 break-inside: avoid;
+            }
+            .student-header {
+                background: #1e293b !important;
+                color: white !important;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
             }
         }
 
@@ -414,7 +457,6 @@
 </head>
 <body>
 
-<!-- زر الطباعة العائم الذكي -->
 <button class="floating-print-btn" onclick="window.print()" title="طباعة النتائج أو حفظها PDF">
     🖨️
 </button>
@@ -426,7 +468,8 @@
     </div>
 
     <div class="header-section">
-        <h1>سجل النتائج الأكاديمية - جامعة الضالع</h1>
+        <img src="https://alshami.vercel.app/logo.png" alt="شعار جامعة الضالع" class="university-logo">
+        <h1>سجل المحصلات الأكاديمية - جامعة الضالع</h1>
         <p>البوابة الموحدة لاستعلام نتائج طلاب كلية الحقوق</p>
     </div>
 
@@ -580,7 +623,7 @@
 
             matches.forEach(student => {
                 const actualId = flexExtract(student, ['رقم', 'جامعي']);
-                const actualName = flexExtract(student, ['اسم', 'الاسم']);
+                const actualName = flexExtract(student, ['اسم', 'الاسم']);	
                 const extractedSubject = flexExtract(student, ['المادة']);
                 const actualSubjectName = extractedSubject !== '-' ? extractedSubject : fullSubjectName;
 
@@ -674,7 +717,7 @@
                 </div>
             `;
             
-            resultsArea.innerHTML.appendChild ? resultsArea.appendChild(card) : resultsArea.appendChild(card);
+            resultsArea.appendChild(card);
         });
     }
 
