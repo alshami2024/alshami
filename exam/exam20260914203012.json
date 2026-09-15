@@ -4897,5 +4897,150 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "اختبار لقدرات العقل والتركيز والتفكير المنطقي",
+    "studentName": "عامر",
+    "deviceId": "DEV-8YY0TZY3O-mth8zabe",
+    "submissionDate": "2026-09-15T12:49:35.042Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "قد تكون الإجابة السريعة خاطئة رغم أن الشخص يعرف المعلومة، إذا لم ينتبه إلى صياغة السؤال.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "العلم المسبق بنتيجة فعل ما لا يعني بالضرورة أن الشخص الذي قام بالفعل كان مجبرًا عليه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي عبارة تمثل استدلالًا غير صحيح؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا أحد من الغافلين منتبه، وسالم غافل، إذن سالم غير منتبه",
+        "correctAnswer": "بعض الطلاب مجتهدون، وعلي طالب، إذن علي مجتهد"
+      },
+      {
+        "question": "إذا كانت العبارة: كل من ينجح في الاختبار قد استعد جيدًا. وعلمنا أن خالد لم يستعد جيدًا، فما النتيجة المنطقية؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خالد لم ينجح في الاختبار"
+      },
+      {
+        "question": "إذا كانت كل الكليات مؤسسات تعليمية، وبعض المؤسسات التعليمية تقدم برامج بحثية، فأي نتيجة تلزم منطقيًا؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بعض الكليات تقدم برامج بحثية",
+        "correctAnswer": "لا يمكن الجزم بأن أي كلية تقدم برامج بحثية"
+      },
+      {
+        "question": "إذا كان أحمد أطول من بدر، وبدر أطول من خالد، فأي عبارة صحيحة بالضرورة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أحمد أطول من خالد"
+      },
+      {
+        "question": "إذا كان اليوم هو الثلاثاء، فما اليوم الذي سيكون بعد 100 يوم؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الأربعاء",
+        "correctAnswer": "الخميس"
+      },
+      {
+        "question": "إذا كان كل الباحثين قراء، وكان بعض القراء كتّابًا، فهذا يثبت أن بعض الباحثين كتّاب.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "أي عدد يختلف عن بقية الأعداد وفق النمط التالي: 9، 16، 25، 36، 48؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "9",
+        "correctAnswer": "48"
+      },
+      {
+        "question": "ما العدد التالي في السلسلة: 2، 6، 12، 20، 30، ؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "40",
+        "correctAnswer": "42"
+      },
+      {
+        "question": "رجل ينظر إلى صورة ويقول: ليس لي أخ ولا أخت، لكن والد هذا الرجل هو ابن أبي. من الشخص الموجود في الصورة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "هو نفسه",
+        "correctAnswer": "ابنه"
+      },
+      {
+        "question": "إذا كان ثلاثة طلاب ينجزون مهمة في 6 ساعات بالمعدل نفسه، فكم ساعة يحتاج ستة طلاب لإنجاز المهمة نفسها، مع ثبات الكفاءة وعدم وجود عوائق؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثلاث ساعات"
+      },
+      {
+        "question": "إذا كانت بعض الكتب مفيدة، فهذا يعني بالضرورة أن جميع الكتب مفيدة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "لديك 8 كرات متشابهة، واحدة منها أثقل قليلًا من البقية، وميزان ذو كفتين. ما أقل عدد من الوزنات اللازمة لمعرفة الكرة الأثقل؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أربع وزنات",
+        "correctAnswer": "وزنتان"
+      },
+      {
+        "question": "إذا كانت العبارة: بعض الطلاب لم يحضروا المحاضرة، صحيحة، فيلزم منها أن جميع الطلاب لم يحضروا المحاضرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
