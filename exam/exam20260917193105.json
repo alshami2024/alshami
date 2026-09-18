@@ -3749,5 +3749,103 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "أحكام الجنسية والموطن ومركز الأجانب في القانون الدولي الخاص",
+    "studentName": "المحمدي",
+    "deviceId": "DEV-L1SBHONWQ-mtvqx7hl",
+    "submissionDate": "2026-09-18T20:59:02.520Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أي الحالات الآتية تجيز سحب الجنسية المكتسبة خلال فترة الخمس سنوات الأولى (مادة 18)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اكتساب الجنسية بطريق الغش أو تقديم وثائق مزورة أو معلومات كاذبة"
+      },
+      {
+        "question": "قسّم القانون الإقامة إلى ثلاث فئات رئيسية هي: الإقامة الخاصة، الإقامة العادية، والإقامة المؤقتة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "لا يجوز لأصحاب الإقامة الخاصة والعادية الغياب في الخارج لمدة تزيد على ستة أشهر إلا بإذن رئيس المصلحة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "صدر قانون الجنسية اليمني الموحّد برقم (6) لسنة 1990م في أعقاب إعلان الوحدة اليمنية مباشرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تنص المادة (44) من الدستور اليمني على جواز إسقاط الجنسية الأصلية عن المواطن اليمني بقرار إداري.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما الوصف القانوني والتشريعي الراجح لطبيعة رابطة الجنسية بين الفرد والدولة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "مزيج بين الرابطة التعاقدية بإرادة مبررة والوضع القانوني الذي تنفرد الدولة بتقريره سيادياً"
+      },
+      {
+        "question": "يقع عبء الإثبات في مسائل الجنسية على من يدعي أنه داخل فيها وعلى من يدفع بأنه غير داخل فيها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تجنس الزوج اليمني بجنسية أجنبية يؤدي إلى زوال جنسية زوجته اليمنية تلقائياً بقوة القانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "المولود لوالدين مجهولين في اليمن يُعتبر يمنياً بقرينة قانونية قابلة للدحض.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "جميع الآتي من الشروط الواجب توافرها لدخول أجنبي إلى أراضي الجمهورية وفق المادة (3)، عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن يكون حاصلاً على بطاقة عضوية نقابية مهنية معتمدة من دولته الأصلية"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
