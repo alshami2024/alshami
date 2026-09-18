@@ -3158,5 +3158,104 @@
       }
     ],
     "tabSwitchCount": 3
+  },
+  {
+    "examTitle": "أحكام الجنسية والموطن ومركز الأجانب في القانون الدولي الخاص",
+    "studentName": "المحمدي",
+    "deviceId": "DEV-L1SBHONWQ-mtvqx7hl",
+    "submissionDate": "2026-09-18T18:15:47.617Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "انضم اليمن رسمياً إلى اتفاقية عام 1961م الخاصة بخفض حالات انعدام الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "قسّم القانون الإقامة إلى ثلاث فئات رئيسية هي: الإقامة الخاصة، الإقامة العادية، والإقامة المؤقتة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أي الحالات الآتية تنطبق على الطفل المولود لأبوين مجهولين على الأراضي اليمنية وفق المادة (3) من قانون الجنسية؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يُكتسب جنسيته وفقاً لدولة الإقليم الذي عُثر عليه فيها بصفة نهائية",
+        "correctAnswer": "يُعتبر يمنياً بقرينة قانونية قابلة للدحض إذا قام الدليل على خلاف ذلك"
+      },
+      {
+        "question": "الطابع الإلزامي للجنسية يعني أن المواطن لا يُخيَّر بين القبول بالتزامات جنسيته أو رفضها فهي تفرض عليه جملةً من الواجبات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تمرّد التشريع اليمني تماماً على حق الدم الأبوي وأخذ بحق الإقليم المطلق كمعيار رئيسي وحيد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما التعريف القانوني الصريح للأجنبي في قانون دخول وإقامة الأجانب اليمني رقم (47) لسنة 1991م (مادة 2)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل من لا يتمتع بالجنسية اليمنية"
+      },
+      {
+        "question": "تسقط الجنسية اليمنية عن المواطن تلقائياً بمجرد إقامته الدائمة خارج البلاد لسنوات طويلة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "موطن القاصر ومن في حكمه هو موطن النائب عنه قانوناً ولياً أو وصياً أو قيّماً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "عرّف قانون الجنسية اليمني 'اليمني' تعريفاً ماهوياً فلسفياً معقدّاً متجنباً التعريف الوظيفي البحت.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يُشترط في الموطن أن يكون فريداً وحصرياً، ولا يجوز قانوناً أن يكون للشخص أكثر من موطن في وقت واحد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 2
   }
 ]
