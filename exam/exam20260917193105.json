@@ -2759,5 +2759,103 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "أحكام الجنسية والموطن ومركز الأجانب في القانون الدولي الخاص",
+    "studentName": "أسماء علي محمد علاو",
+    "deviceId": "DEV-AENMY12GZ-mu77mqsi",
+    "submissionDate": "2026-09-18T17:06:02.617Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "جميع الآتي من خصائص وأحكام الجنسية الأصلية في القانون اليمني، عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تُعد نهائية من حيث المبدأ ومحمية دستورياً من خطر الإسقاط المطلق",
+        "correctAnswer": "تُكتسب بناءً على طلب إرادي وتخضع لسلطة الإدارة التقديرية في منحها"
+      },
+      {
+        "question": "تُمثّل الجنسية جواز مرور الفرد في العلاقات الدولية وتتيح للدولة حماية مواطنيها دبلوماسياً في الخارج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تثبت الجنسية الأصلية تلقائياً بقوة القانون دون الحاجة لأي إجراء إداري أو تنظيمي.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز سحب الجنسية المكتسبة خلال خمس سنوات إذا ثبت حصول عليها بطريق الغش أو تقديم وثائق مزورة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الموطن المختار (الاتفاقي) هو موطن إلزامي يفرضه القانون على الأطراف دون إرادتهم.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "الإبعاد يخص أجنبياً مقيماً بصورة مشروعة، بينما الإخراج يخص من دخل أراضي الجمهورية بصورة غير مشروعة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعاقب الأجنبي الذي يتمكن من الدخول للبلاد بطريقة غير مشروعة بالحبس لمدة لا تزيد على سنة فضلاً عن إخراجه.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعد قانون دخول وإقامة الأجانب اليمني رقم (47) لسنة 1991م الإطار التشريعي الأساسي المنظم لتواجد غير المواطنين.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "قسّم القانون الإقامة إلى ثلاث فئات رئيسية هي: الإقامة الخاصة، الإقامة العادية، والإقامة المؤقتة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز إبعاد صاحب الإقامة الخاصة بقرار من وزير الداخلية منفارداً ودون عرض الأمر على لجنة الإبعاد.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
