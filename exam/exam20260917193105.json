@@ -4531,5 +4531,102 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "أحكام الجنسية والموطن ومركز الأجانب في القانون الدولي الخاص",
+    "studentName": "محمد",
+    "deviceId": "DEV-EI0BW7O1L-mqz7nrp4",
+    "submissionDate": "2026-09-19T18:37:58.286Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "أعضاء السلك الدبلوماسي والقنصلي الأجنبي المعتمدون مُعفاة من أحكام دخول الأجانب وإقامتهم وفق المادة (38).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الطابع الإلزامي للجنسية يعني أن المواطن لا يُخيَّر بين القبول بالتزامات جنسيته أو رفضها فهي تفرض عليه جملةً من الواجبات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعد قانون دخول وإقامة الأجانب اليمني رقم (47) لسنة 1991م الإطار التشريعي الأساسي المنظم لتواجد غير المواطنين.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز للسلطة المختصة إلقاء القبض على أي أجنبي يدخل أو يبقى في اليمن بغير إذن ووضعه تحت الحراسة أو الإفراج عنه بكفالة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "متى ثبت الموطن في مكان معين، يُفترض استمراره قانوناً ما لم يُثبت تغييره.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "موطن القاصر ومن في حكمه هو موطن النائب عنه قانوناً ولياً أو وصياً أو قيّماً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "جميع القرارات الصادرة في كسب الجنسية أو سحبها تحدث أثرها من تاريخ نشرها في الجريدة الرسمية حصراً لا من تاريخ صدورها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "كيف يوزع القانون اليمني عبء الإثبات في مسائل الجنسية وفق المادة (27)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يقع عبء الإثبات على من يدّعي أنه داخل في الجنسية اليمنية وعلى من يدفع بأنه غير داخل فيها"
+      },
+      {
+        "question": "يقتصر تنظيم مركز الأجانب على نظرية السيادة وحدها دون الاعتبار لأي وظائف اقتصادية أو اجتماعية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "لا يجوز لأجنبي دخول أراضي الجمهورية إلا إذا كان حاصلاً على جواز سفر ساري المفعول وتأشيرة دخول صحيحة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
