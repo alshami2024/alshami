@@ -6594,5 +6594,104 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "أحكام الجنسية والموطن ومركز الأجانب في القانون الدولي الخاص",
+    "studentName": "المحمدي",
+    "deviceId": "DEV-L1SBHONWQ-mtvqx7hl",
+    "submissionDate": "2026-09-20T16:41:04.625Z",
+    "mcqScore": {
+      "correct": 8,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "متى ثبت الموطن في مكان معين، يُفترض استمراره قانوناً ما لم يُثبت تغييره.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "جميع العبارات الآتية صحيحة بشأن الشروط الموضوعية للتجنس للأجنبي المقيم (مادة 5)، عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "اكتساب الجنسية تلقائياً بقوة القانون بمجرد استيفاء مدة الإقامة ودون صدور قرار إداري"
+      },
+      {
+        "question": "الموطن المختار (الاتفاقي) هو موطن إلزامي يفرضه القانون على الأطراف دون إرادتهم.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "عرّف قانون الجنسية اليمني 'اليمني' تعريفاً ماهوياً فلسفياً معقدّاً متجنباً التعريف الوظيفي البحت.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يقع عبء الإثبات في مسائل الجنسية على من يدعي أنه داخل فيها وعلى من يدفع بأنه غير داخل فيها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "كيف عالج المشرع اليمني حالة الأجنبي الذي تنتهي إقامته دون تجديد وفق المادة (43)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بعقوبة مالية قدرها 30 ريالاً عن كل يوم تأخير، مع جواز إعفاء الوزير للأعذار المقبولة"
+      },
+      {
+        "question": "ما التعريف القانوني الصريح للأجنبي في قانون دخول وإقامة الأجانب اليمني رقم (47) لسنة 1991م (مادة 2)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل من لا يتمتع بالجنسية اليمنية"
+      },
+      {
+        "question": "قسّم القانون الإقامة إلى ثلاث فئات رئيسية هي: الإقامة الخاصة، الإقامة العادية، والإقامة المؤقتة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الجنسية ليست مجرد وصف شكلي أو وثيقة في جواز السفر، بل هي رابطة قانونية وسياسية عميقة تُرتّب حقوقاً وتفرض واجبات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "صدر قانون الجنسية اليمني الموحّد برقم (6) لسنة 1990م في أعقاب إعلان الوحدة اليمنية مباشرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
