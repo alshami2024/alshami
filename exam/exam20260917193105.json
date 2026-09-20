@@ -7481,5 +7481,102 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "أحكام الجنسية والموطن ومركز الأجانب في القانون الدولي الخاص",
+    "studentName": "المهدي المنتظر",
+    "deviceId": "DEV-L1SBHONWQ-mtvqx7hl",
+    "submissionDate": "2026-09-20T17:38:49.526Z",
+    "mcqScore": {
+      "correct": 10,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما الأثر المترتب على نشر الأحكام الصادرة في مسائل الجنسية في الجريدة الرسمية وفق المادة (24)؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تعتبر حجة على الكافة وينشر منطوقها في الجريدة الرسمية"
+      },
+      {
+        "question": "تُمثّل الجنسية جواز مرور الفرد في العلاقات الدولية وتتيح للدولة حماية مواطنيها دبلوماسياً في الخارج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تنص المادة (44) من الدستور اليمني على جواز إسقاط الجنسية الأصلية عن المواطن اليمني بقرار إداري.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "صدر قانون الجنسية اليمني الموحّد برقم (6) لسنة 1990م في أعقاب إعلان الوحدة اليمنية مباشرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "الجنسية ليست مجرد وصف شكلي أو وثيقة في جواز السفر، بل هي رابطة قانونية وسياسية عميقة تُرتّب حقوقاً وتفرض واجبات.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "موطن القاصر ومن في حكمه هو موطن النائب عنه قانوناً ولياً أو وصياً أو قيّماً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أعضاء السلك الدبلوماسي والقنصلي الأجنبي المعتمدون مُعفاة من أحكام دخول الأجانب وإقامتهم وفق المادة (38).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "أوجب القانون على الأجنبي إبلاغ مكتب تسجيل الأجانب أو الشرطة بتغيير محل إقامته خلال 48 ساعة من الوصول للمنطقة الجديدة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يعتمد القانون اليمني الجنسية ضابط إسناد أصلي في العلاقات الخاصة الدولية ويجعل الموطن ضابطاً احتياطياً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تسقط الجنسية اليمنية عن المواطن تلقائياً بمجرد إقامته الدائمة خارج البلاد لسنوات طويلة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
