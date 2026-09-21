@@ -8280,5 +8280,103 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "أحكام الجنسية والموطن ومركز الأجانب في القانون الدولي الخاص",
+    "studentName": "صاحب الدكان",
+    "deviceId": "DEV-0PW3QMI45-mubjpyuc",
+    "submissionDate": "2026-09-21T17:55:32.946Z",
+    "mcqScore": {
+      "correct": 9,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "صدر قانون الجنسية اليمني الموحّد برقم (6) لسنة 1990م في أعقاب إعلان الوحدة اليمنية مباشرة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يجوز سحب الجنسية المكتسبة خلال خمس سنوات إذا ثبت حصول عليها بطريق الغش أو تقديم وثائق مزورة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعاقب الأجنبي الذي تنتهي إقامته دون تجديد بدفع مبلغ 30 ريالاً عن كل يوم تأخير ما لم يُعفه الوزير.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تبدأ الآثار القانونية لقرارات كسب الجنسية أو سحبها من تاريخ صدورها، بينما يُعد النشر في الجريدة الرسمية شرطاً للحجية.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُحظر دستورياً إسقاط الجنسية الأصلية، بينما يجوز سحب الجنسية المكتسبة وفقاً لأحكام القانون.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تُمثّل الجنسية جواز مرور الفرد في العلاقات الدولية وتتيح للدولة حماية مواطنيها دبلوماسياً في الخارج.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تُنفَّذ الأحكام القضائية الأجنبية في الجمهورية اليمنية تلقائياً وبمجرد صدورها دون الحاجة لدعوى تنفيذ.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "انضم اليمن رسمياً إلى اتفاقية عام 1961م الخاصة بخفض حالات انعدام الجنسية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يُعد مقر فرع الشركة أو المؤسسة موطناً لها في المسائل المتعلقة بهذا الفرع وفق المادة (36).",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يحق لمديري الفنادق والمساكن تأييد إيواء الأجانب دون الحاجة لإبلاغ أقسام الشرطة ومكاتب التسجيل نهائياً.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
