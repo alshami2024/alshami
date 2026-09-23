@@ -371,11 +371,21 @@
         .print-signatures { display: none; }
 
         @media print {
-            
+         
+            @page {
+                size: A4 portrait;
+                margin: 8mm; 
+            }
+ 
             .search-wrapper, .status-container, .empty-state, .app-footer, .header-section {
                 display: none !important;
             }
-            body { background: white !important; color: #000 !important; }
+            body { 
+                background: white !important; 
+                color: #000 !important; 
+                font-size: 11px !important; 
+                line-height: 1.2 !important;
+            }
             .app-container { padding: 0 !important; max-width: 100% !important; }
             
           
@@ -387,53 +397,115 @@
                 border: 2px solid #333 !important;
                 page-break-inside: avoid;
                 break-inside: avoid;
-                margin-bottom: 25px;
+                margin-bottom: 0 !important;
                 background: white !important;
             }
 
+            
             .print-only-header {
                 display: flex !important;
                 justify-content: space-between;
                 align-items: center;
                 border-bottom: 2px solid #000;
-                padding-bottom: 20px;
-                margin-bottom: 25px;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
                 font-weight: 700;
-                font-size: 14px;
+                font-size: 11px;
                 text-align: center;
             }
-            .print-only-header img { width: 80px; height: 80px; }
+            .print-only-header img { width: 55px; height: 55px; }
             
+             
             .student-header {
                 background: #f1f5f9 !important;
                 color: #000 !important;
                 border-bottom: 2px solid #333 !important;
+                padding: 6px 12px !important;
+                gap: 4px !important;
                 -webkit-print-color-adjust: exact;
                 print-color-adjust: exact;
             }
-            .student-id { background: transparent; border: 1px solid #000; color: #000; }
-            .student-print-btn { display: none !important; } /* إخفاء زر الطباعة من الورق */
+            .student-name { font-size: 14px !important; }
+            .student-name svg { width: 16px !important; height: 16px !important; }
+            .student-id { 
+                background: transparent !important; 
+                border: 1px solid #000 !important; 
+                color: #000 !important; 
+                padding: 2px 8px !important; 
+                font-size: 11px !important;
+            }
+            .student-print-btn { display: none !important; }
             
-            .subjects-list, .grades-grid, .subject-item-card { background: transparent !important; }
-            .subject-item-card { border: 1px solid #666 !important; }
-            .total-badge { border: 1px solid #000 !important; background: transparent !important; color: #000 !important; }
+    
+            .subjects-list { 
+                padding: 6px !important; 
+                gap: 4px !important; 
+                background: transparent !important; 
+            }
+            
+            .subject-item-card { 
+                background: transparent !important; 
+                border: 1px solid #666 !important; 
+                padding: 6px 10px !important; 
+            }
+            
+            .subject-item-header { 
+                padding-bottom: 4px !important; 
+                margin-bottom: 4px !important; 
+            }
             
             .subject-number {
                 background: transparent !important;
                 color: #000 !important;
                 border: 1px solid #333 !important;
                 box-shadow: none !important;
+                width: 20px !important; 
+                height: 20px !important; 
+                min-width: 20px !important;
+                font-size: 11px !important;
             }
+            
+            .subject-name { font-size: 13px !important; }
+            .subject-meta { font-size: 10px !important; margin-top: 0 !important; }
+            
+            .total-badge { 
+                border: 1px solid #000 !important; 
+                background: transparent !important; 
+                color: #000 !important; 
+                padding: 2px 6px !important;
+                font-size: 12px !important;
+            }
+            
+            
+            .grades-grid { 
+                background: transparent !important;
+                padding: 4px !important; 
+                gap: 4px !important; 
+            }
+            
+            .grade-box-title { font-size: 10px !important; margin-bottom: 0 !important; }
+            .grade-box-value { font-size: 12px !important; }
+            
+            .notes-box { 
+                padding: 2px 6px !important; 
+                font-size: 10px !important; 
+                margin-top: 4px !important; 
+                border: 1px solid #333 !important;
+                background: transparent !important;
+                color: #000 !important;
+            }
+            
             
             .print-signatures {
                 display: flex !important;
                 justify-content: space-around;
-                margin-top: 50px;
+                margin-top: 15px !important;
                 page-break-inside: avoid;
                 font-weight: 800;
+                font-size: 12px !important;
                 text-align: center;
             }
-            .sig-box { margin-bottom: 20px; }
+            .sig-box { margin-bottom: 5px !important; }
         }
 
         @media (min-width: 640px) {
