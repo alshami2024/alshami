@@ -3,314 +3,147 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة تسليم التكاليف</title>
-    <script src="https://alshami.vercel.app/exam/crypto-js.min.js"></script>
+    <title>إعلان انتهاء التكاليف الجامعية</title>
+    
+    <!-- Loading Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Loading Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        cairo: ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0a1f44', // Deep academic blue
+                            gold: '#d4af37', // Elegant gold
+                            lightGold: '#fdf8e7',
+                        }
+                    },
+                    animation: {
+                        'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                        'float': 'float 4s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-10px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f7fc;
-            margin: 0;
-            padding: 0;
-            user-select: none;
-            -webkit-user-select: none;
+            font-family: 'Cairo', sans-serif;
+            background-color: #0a1f44;
+            background-image: radial-gradient(circle at top right, rgba(212, 175, 55, 0.15), transparent 40%),
+                              radial-gradient(circle at bottom left, rgba(212, 175, 55, 0.1), transparent 40%);
+            background-attachment: fixed;
         }
-
-        .container {
-            width: 85%;
-            max-width: 700px;
-            margin: 40px auto;
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        
+        /* Custom scrollbar for elegance */
+        ::-webkit-scrollbar {
+            width: 8px;
         }
-
-        h1 {
-            color: #2c3e50;
-            text-align: center;
-            margin-bottom: 20px;
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1; 
         }
-
-        .instruction-box {
-            background-color: #fff3cd;
-            border-right: 5px solid #ffc107;
-            padding: 15px;
-            border-radius: 6px;
-            margin-bottom: 25px;
-            color: #856404;
-            font-size: 15px;
-            line-height: 1.6;
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37; 
+            border-radius: 4px;
         }
-
-        .instruction-box strong {
-            display: block;
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-
-        .form-group {
-            margin-bottom: 25px;
-            text-align: right;
-            border: 1px solid #edf2f7;
-            padding: 20px;
-            border-radius: 8px;
-            background-color: #fafbfc;
-        }
-
-        label {
-            font-size: 15px;
-            font-weight: bold;
-            color: #333;
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input[type="text"] {
-            width: 100%;
-            padding: 12px;
-            border-radius: 6px;
-            border: 1px solid #cbd5e0;
-            font-size: 15px;
-            box-sizing: border-box;
-            background-color: #fff;
-        }
-
-        .file-upload-box {
-            border: 2px dashed #4CAF50;
-            background-color: #e8f5e9;
-            padding: 15px;
-            border-radius: 8px;
-            text-align: center;
-            margin-top: 12px;
-        }
-
-        .file-upload-box span {
-            display: block;
-            font-size: 13px;
-            color: #2e7d32;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        input[type="file"] {
-            width: 100%;
-            font-size: 14px;
-            cursor: pointer;
-        }
-
-        .question-title {
-            color: #1976d2;
-            margin-top: 0;
-            font-size: 18px;
-        }
-
-        .question-text {
-            color: #4a5568;
-            font-size: 14.5px;
-            line-height: 1.6;
-            margin-bottom: 12px;
-        }
-
-        button {
-            background-color: #2e7d32;
-            color: white;
-            border: none;
-            padding: 14px 30px;
-            font-size: 16px;
-            border-radius: 6px;
-            cursor: pointer;
-            display: block;
-            width: 100%;
-            font-weight: bold;
-            transition: 0.3s;
-        }
-
-        button:hover {
-            background-color: #1b5e20;
-        }
-
-        .footer {
-            margin-top: 40px;
-            font-size: 13px;
-            color: #777;
-            text-align: center;
-        }
-
-        .success-message {
-            background-color: #4CAF50;
-            color: white;
-            padding: 12px;
-            margin-top: 20px;
-            border-radius: 6px;
-            text-align: center;
-            display: none;
-        }
-
-        .error-message {
-            background-color: #e53935;
-            color: white;
-            padding: 12px;
-            margin-top: 20px;
-            border-radius: 6px;
-            text-align: center;
-            display: none;
+        ::-webkit-scrollbar-thumb:hover {
+            background: #b5952f; 
         }
     </style>
 </head>
-<body oncontextmenu="return false;"> 
-<div class="container">
-    <h1>تسليم التكاليف الدراسية</h1>
+<body class="min-h-screen flex items-center justify-center p-4 antialiased text-gray-800">
 
-    <div class="instruction-box">
-        <strong>⚠️ تنبيه وإرشادات هامة:</strong>
-        • يجب كتابة الإجابة <b>بخط اليد حصراً</b> على ورقة وتصويرها بوضوح.<br>
-        • لن يتم قبول أي تكليف مطبوع أو مرسل كنص عادي.<br>
-        • يرجى رفع صورة واضحة لكل تكليف أدناه.
-    </div>
+    <main class="w-full max-w-2xl relative">
+        
+        <!-- Decorative background elements -->
+        <div class="absolute -top-6 -right-6 w-24 h-24 bg-brand-gold rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-pulse-slow"></div>
+        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-30 animate-pulse-slow" style="animation-delay: 1s;"></div>
 
-    <form id="assignmentForm">
-        <div class="form-group" style="background-color: #fff;">
-            <label for="studentName">اسم الطالب الثلاثي أو الرباعي:</label>
-            <input type="text" id="studentName" placeholder="أدخل اسمك كاملاً هنا...">
-        </div>
-
-        <div class="form-group">
-            <h3 class="question-title">السؤال الأول:</h3>
-            <p class="question-text">ما العلاقة بين الظروف الاجتماعية والسياسية في اليمن وبين تدوين قواعد السبعين؟</p>
+        <!-- Main Card -->
+        <article class="relative bg-white rounded-2xl shadow-2xl overflow-hidden border border-gray-100 backdrop-blur-sm">
             
-            <div class="file-upload-box">
-                <span>✍️ التقط صورة لورقة الإجابة (بخط يدك):</span>
-                <input type="file" accept="image/*" id="file1" capture="environment">
+            <!-- Top Gold Bar -->
+            <div class="h-3 w-full bg-gradient-to-r from-brand-gold via-yellow-400 to-brand-gold"></div>
+
+            <div class="px-8 py-10 md:px-12 md:py-14">
+                
+                <header class="text-center mb-8">
+                    <!-- Icon Container -->
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-brand-lightGold rounded-full mb-6 shadow-inner animate-float border-2 border-brand-gold/20">
+                        <svg class="w-10 h-10 text-brand-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path>
+                        </svg>
+                    </div>
+                    
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-brand-blue mb-3 tracking-tight">
+                        إعلان هام
+                    </h1>
+                    <div class="h-1 w-24 bg-brand-gold mx-auto rounded-full"></div>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-600 mt-4">
+                        انتهاء فترة تسليم التكاليف الجامعية
+                    </h2>
+                </header>
+
+                <section class="space-y-6 text-center text-lg md:text-xl leading-relaxed text-gray-700 font-medium">
+                    <p>
+                        أعزائي الطلبة،
+                    </p>
+                    <p class="text-justify text-center">
+                        نود إعلامكم بأنه قد تم رسمياً <span class="font-bold text-brand-blue">انتهاء الموعد المحدد</span> لتسليم التكاليف والأبحاث الجامعية الخاصة بالمقرر لهذا الفصل الدراسي. لن يتم قبول أي تكاليف جديدة بعد هذا الإعلان.
+                    </p>
+                    
+                    <div class="bg-gray-50 rounded-xl p-6 border-r-4 border-brand-gold shadow-sm my-6">
+                        <p class="text-gray-800">
+                            أتقدم بخالص الشكر والتقدير لجميع الطلاب والطالبات الذين التزموا بتسليم أعمالهم في الوقت المحدد، وأظهروا مستوى عالياً من المسؤولية، الجدية، والاجتهاد الأكاديمي.
+                        </p>
+                    </div>
+                    
+                    <p class="text-brand-blue font-semibold">
+                        تمنياتي لكم بدوام التوفيق والنجاح في امتحاناتكم ومسيرتكم العلمية.
+                    </p>
+                </section>
+
+                <footer class="mt-12 pt-8 border-t border-gray-200 flex flex-col items-center">
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-[1px] bg-gray-300"></div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-sm text-gray-500 mb-1">أستاذ المقرر</span>
+                            <span class="text-2xl font-bold text-brand-blue signature-text">
+                                د. جمال الشامي
+                            </span>
+                        </div>
+                        <div class="w-12 h-[1px] bg-gray-300"></div>
+                    </div>
+                    
+                    <!-- Decorative Element -->
+                    <svg class="w-6 h-6 text-brand-gold mt-4 opacity-50" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm8 7a1 1 0 11-2 0 1 1 0 012 0zm-5 0a1 1 0 11-2 0 1 1 0 012 0zm5-4a1 1 0 11-2 0 1 1 0 012 0zm-5 0a1 1 0 11-2 0 1 1 0 012 0z" clip-rule="evenodd"></path>
+                    </svg>
+                </footer>
+
             </div>
-        </div>
+        </article>
+        
+        <!-- Footer text for context -->
+        <p class="text-center text-white/50 text-sm mt-6 font-light">
+            Jamal-Alshami &copy; 2026
+        </p>
+    </main>
 
-        <div class="form-group">
-            <h3 class="question-title">السؤال الثاني:</h3>
-            <p class="question-text">لماذا يمكن القول إن قانون صولون أكمل مسار الإصلاح الاجتماعي الذي بدأه دراكون؟</p>
-            
-            <div class="file-upload-box">
-                <span>✍️ التقط صورة لورقة الإجابة (بخط يدك):</span>
-                <input type="file" accept="image/*" id="file2" capture="environment">
-            </div>
-        </div>
-
-        <button type="button" id="btnSubmit">إرسال التكاليف (صور)</button>
-    </form>
-
-    <div id="successMessage" class="success-message">
-        تم إرسال التكاليف بنجاح!
-    </div>
-
-    <div id="errorMessage" class="error-message">
-        يرجى إدخال اسم الطالب وإرفاق صورة الحل (بخط اليد) لكلا التكليفين!
-    </div>
-</div>
-
-<div class="footer">
-    <p>&copy; 2026 جميع الحقوق محفوظة د. جمال الشامي.</p>
-</div>
-
-<script>
-    document.addEventListener('contextmenu', e => e.preventDefault());
-    document.onkeydown = function(e) {
-        if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && (e.keyCode == 73 || e.keyCode == 74)) || (e.ctrlKey && e.keyCode == 85)) {
-            return false;
-        }
-    };
-
-    const _0x99 = 'my-super-secret-key-12345';
-    const _0x88 = 'U2FsdGVkX19+mAd7eLj2Fq0BHBQS1lAnRY13bdfsSmmKsTQf2bFQNX/picNTd0BB6/sta9BY480w6RDDAYhylQ==';
-    const _0x77 = 'U2FsdGVkX1+vyCc5eMFYiFi57sAXhsLhiTdW7Kk0qvY=';
-
-    const _0x11 = CryptoJS.AES.decrypt(_0x88, _0x99).toString(CryptoJS.enc.Utf8);
-    const _0x22 = CryptoJS.AES.decrypt(_0x77, _0x99).toString(CryptoJS.enc.Utf8);
-
-    function compressImage(file, quality = 0.6, maxWidth = 1200) {
-        return new Promise((resolve) => {
-            const reader = new FileReader();
-            reader.readAsDataURL(file);
-            reader.onload = (event) => {
-                const img = new Image();
-                img.src = event.target.result;
-                img.onload = () => {
-                    const canvas = document.createElement('canvas');
-                    let width = img.width;
-                    let height = img.height;
-
-                    if (width > maxWidth) {
-                        height = Math.round((height * maxWidth) / width);
-                        width = maxWidth;
-                    }
-
-                    canvas.width = width;
-                    canvas.height = height;
-                    const ctx = canvas.getContext('2d');
-                    ctx.drawImage(img, 0, 0, width, height);
-
-                    canvas.toBlob((blob) => {
-                        resolve(new File([blob], file.name, {
-                            type: 'image/jpeg',
-                            lastModified: Date.now()
-                        }));
-                    }, 'image/jpeg', quality);
-                };
-            };
-        });
-    }
-
-    document.getElementById('btnSubmit').onclick = async function() {
-        const _b = this;
-        const _err = document.getElementById('errorMessage');
-        _err.style.display = 'none';
-
-        const _sn = document.getElementById('studentName').value.trim();
-        const originalF1 = document.getElementById('file1').files[0];
-        const originalF2 = document.getElementById('file2').files[0];
-
-        if (!_sn || !originalF1 || !originalF2) {
-            _err.style.display = 'block';
-            return;
-        }
-
-        _b.disabled = true;
-        _b.textContent = "جاري ضغط الصور ومعالجتها...";
-
-        try {
-            const _f1 = await compressImage(originalF1);
-            const _f2 = await compressImage(originalF2);
-
-            _b.textContent = "جاري الإرسال...";
-
-            const _msg = "📌 تكليف جديد مستلم:\n\n🧑‍🎓 اسم الطالب: " + _sn + "\n📄 المرفقات: صور بخط اليد";
-
-            await fetch('https://api.telegram.org/bot' + _0x11 + '/sendMessage', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ chat_id: _0x22, text: _msg })
-            });
-
-            const _up = async (_f, _c) => {
-                const _fd = new FormData();
-                _fd.append('chat_id', _0x22);
-                _fd.append('photo', _f);
-                if (_c) _fd.append('caption', _c);
-                await fetch('https://api.telegram.org/bot' + _0x11 + '/sendPhoto', { method: 'POST', body: _fd });
-            };
-
-            await _up(_f1, 'التكليف الأول - الطالب: ' + _sn);
-            await _up(_f2, 'التكليف الثاني - الطالب: ' + _sn);
-
-            const _s = document.getElementById('successMessage');
-            _s.style.display = 'block';
-            setTimeout(() => { _s.style.display = 'none'; }, 4000);
-            document.getElementById('assignmentForm').reset();
-        } catch (e) {
-            alert('حدث خطأ أثناء الإرسال، يرجى التحقق من اتصال الإنترنت والمحاولة مرة أخرى.');
-        } finally {
-            _b.disabled = false;
-            _b.textContent = "إرسال التكاليف (صور)";
-        }
-    };
-</script>
 </body>
 </html>
