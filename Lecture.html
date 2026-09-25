@@ -1,0 +1,530 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>نموذج عناوين المحاضرات للمقررات</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #0088cc;
+            --primary-hover: #006699;
+            --success-color: #10b981;
+            --success-hover: #059669;
+            --danger-color: #ef4444;
+            --danger-hover: #dc2626;
+            --bg-color: #f3f4f6;
+            --card-bg: #ffffff;
+            --text-main: #1f2937;
+            --text-muted: #4b5563;
+            --border-color: #d1d5db;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 10px;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; }
+
+        /* تنسيقات الشعار واسم الجامعة (الجديدة) */
+        .top-branding {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+        .uni-logo {
+            max-width: 110px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .uni-name {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin: 0;
+        }
+
+        .header-title {
+            text-align: center; font-size: 1.3rem; font-weight: 700;
+            color: #fff; margin: 10px 0 20px 0; padding: 15px;
+            background: var(--primary-color); border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card {
+            background: var(--card-bg); border-radius: 12px;
+            padding: 20px; margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .card-title {
+            font-size: 1.1rem; color: var(--primary-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 10px; margin-bottom: 20px; font-weight: 700;
+        }
+
+        .form-grid { display: grid; grid-template-columns: 1fr; gap: 15px; }
+
+        @media (min-width: 768px) {
+            .form-grid { grid-template-columns: repeat(2, 1fr); }
+            .form-grid.three-cols { grid-template-columns: repeat(3, 1fr); }
+            body { padding: 20px; }
+        }
+
+        .form-group { display: flex; flex-direction: column; }
+        label { font-size: 0.95rem; font-weight: 600; margin-bottom: 8px; color: var(--text-main); }
+
+        input[type="text"], input[type="number"], select, textarea {
+            width: 100%; padding: 14px 15px; 
+            border: 1px solid var(--border-color); border-radius: 8px;
+            font-family: 'Cairo', sans-serif; font-size: 1rem;
+            transition: all 0.3s ease; background-color: #f9fafb;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            outline: none; border-color: var(--primary-color);
+            background-color: #fff; box-shadow: 0 0 0 3px rgba(0, 136, 204, 0.2);
+        }
+
+        .readonly-input {
+            background-color: #e5e7eb !important;
+            font-weight: bold; color: #111827;
+            cursor: not-allowed; text-align: center;
+        }
+
+        .radio-group { display: flex; gap: 15px; flex-wrap: wrap; }
+        .radio-label { display: flex; align-items: center; gap: 8px; cursor: pointer; font-size: 0.95rem; }
+        .radio-label input { width: 20px; height: 20px; }
+
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { padding: 12px; border: 1px solid var(--border-color); text-align: right; }
+        th { background-color: #f3f4f6; font-weight: 700; color: #374151; }
+
+        @media (max-width: 767px) {
+            table, thead, tbody, th, td, tr { display: block; }
+            thead tr { position: absolute; top: -9999px; left: -9999px; }
+            tr { 
+                border: 2px solid var(--primary-color); 
+                margin-bottom: 15px; border-radius: 10px; 
+                padding: 10px; background: #fff;
+            }
+            td { 
+                border: none; border-bottom: 1px solid #eee; 
+                position: relative; padding: 10px 0;
+                display: flex; flex-direction: column; gap: 5px;
+            }
+            td:last-child { border-bottom: 0; }
+            td::before { 
+                content: attr(data-label); font-weight: 700; 
+                color: var(--primary-color); font-size: 0.9rem;
+            }
+            .static-row td::before { display: none; }
+        }
+
+        .btn {
+            border: none; padding: 14px 15px; border-radius: 8px; cursor: pointer;
+            font-family: 'Cairo', sans-serif; font-weight: 700; font-size: 1rem; 
+            transition: background-color 0.3s;
+        }
+        .btn-add { background-color: var(--success-color); color: white; margin-top: 15px; width: 100%; }
+        .btn-add:hover { background-color: var(--success-hover); }
+        .btn-delete { background-color: var(--danger-color); color: white; padding: 10px; margin-top: 5px; }
+        .btn-delete:hover { background-color: var(--danger-hover); }
+        .btn-submit {
+            background-color: var(--primary-color); color: #fff; display: flex; justify-content: center; align-items: center; gap: 10px;
+            padding: 18px; font-size: 1.2rem; border-radius: 8px; width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 136, 204, 0.3); margin-top: 10px;
+        }
+        .btn-submit:hover { background-color: var(--primary-hover); transform: translateY(-2px); }
+
+        .static-row { background-color: #f8fafc; text-align: center; }
+        .checkbox-container { display: flex; align-items: center; gap: 10px; }
+        .checkbox-container input { width: 25px; height: 25px; }
+
+        /* تنسيقات الحقوق في الأسفل (الجديدة) */
+        .footer-credit {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            direction: ltr; /* لضبط النص الإنجليزي */
+            font-family: monospace, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- الشعار واسم الجامعة -->
+    <div class="top-branding">
+        <img src="https://alshami.vercel.app/logo.png" alt="شعار الجامعة" class="uni-logo">
+        <!-- يمكنك تغيير "اسم الجامعة هنا" إلى الاسم المطلوب -->
+        <h2 class="uni-name">جامعة الضالع - مركز الجودة والتطوير الأكاديمي</h2>
+    </div>
+
+    <div class="header-title">عناوين المحاضرات للمقررات</div>
+    
+    <form id="mainForm" onsubmit="sendToTelegram(event)">
+        
+        <!-- القسم الأول: معلومات أساسية -->
+        <div class="card">
+            <h3 class="card-title">معلومات أساسية</h3>
+            <div class="form-grid three-cols">
+                <div class="form-group">
+                    <label>الكلية</label>
+                    <input type="text" name="الكلية" value="الطبية">
+                </div>
+                <div class="form-group">
+                    <label>القسم</label>
+                    <input type="text" name="القسم">
+                </div>
+                <div class="form-group">
+                    <label>المستوى</label>
+                    <input type="text" name="المستوى" value="الأول">
+                </div>
+            </div>
+            
+            <div class="form-grid" style="margin-top: 15px;">
+                <div class="form-group">
+                    <label>اسم مدرس المقرر</label>
+                    <input type="text" name="اسم_مدرس_المقرر">
+                </div>
+                <div class="form-group">
+                    <label>اسم الطالب (ممثل الدفعة/الأول)</label>
+                    <input type="text" name="اسم_الطالب">
+                </div>
+            </div>
+
+            <div class="form-grid three-cols" style="margin-top: 15px;">
+                <div class="form-group">
+                    <label>اليوم</label>
+                    <select name="اليوم">
+                        <option value="">-- اختر اليوم --</option>
+                        <option value="السبت">السبت</option>
+                        <option value="الأحد">الأحد</option>
+                        <option value="الاثنين">الاثنين</option>
+                        <option value="الثلاثاء">الثلاثاء</option>
+                        <option value="الأربعاء">الأربعاء</option>
+                        <option value="الخميس">الخميس</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label>المحاضرة (الفترة خلال اليوم)</label>
+                    <select name="فترة_المحاضرة">
+                        <option value="">-- اختر المحاضرة --</option>
+                        <option value="الأولى">الأولى</option>
+                        <option value="الثانية">الثانية</option>
+                        <option value="الثالثة">الثالثة</option>
+                        <option value="الرابعة">الرابعة</option>
+                        <option value="الخامسة">الخامسة</option>
+                        <option value="السادسة">السادسة</option>
+                        <option value="السابعة">السابعة</option>
+                        <option value="الثامنة">الثامنة</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم الثاني: معلومات عامة -->
+        <div class="card">
+            <h3 class="card-title">معلومات عامة عن المقرر</h3>
+            <div class="form-grid">
+                <div class="form-group">
+                    <label>اسم المقرر</label>
+                    <input type="text" name="اسم_المقرر">
+                </div>
+                <div class="form-group">
+                    <label>اسم المقرر باللغة الإنجليزية (إن وجد)</label>
+                    <input type="text" name="اسم_المقرر_انجليزي">
+                </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 15px;">
+                <label>نوع المحاضرة</label>
+                <div class="radio-group">
+                    <label class="radio-label"><input type="radio" name="نوع_المحاضرة" value="نظري"> نظري</label>
+                    <label class="radio-label"><input type="radio" name="نوع_المحاضرة" value="حلقة نقاش"> حلقة نقاش</label>
+                    <label class="radio-label"><input type="radio" name="نوع_المحاضرة" value="عملي"> عملي</label>
+                    <label class="radio-label"><input type="radio" name="نوع_المحاضرة" value="تدريب"> تدريب</label>
+                </div>
+            </div>
+
+            <div class="form-grid three-cols" style="margin-top: 15px;">
+                <div class="form-group">
+                    <label>المستوى والفصل الدراسي</label>
+                    <input type="text" name="الفصل_الدراسي">
+                </div>
+                <div class="form-group">
+                    <label>لغة تدريس المقرر</label>
+                    <input type="text" name="لغة_التدريس">
+                </div>
+                <div class="form-group">
+                    <label>اسم المبنى والقاعة</label>
+                    <input type="text" name="اسم_القاعة">
+                </div>
+            </div>
+        </div>
+
+        <!-- القسم الثالث: الجانب النظري -->
+        <div class="card">
+            <h3 class="card-title">محتوى المقرر: الجانب النظري</h3>
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th width="15%">المحاضرة</th>
+                        <th width="40%">المواضيع التفصيلية</th>
+                        <th width="15%">الأسبوع</th>
+                        <th width="15%">الساعات</th>
+                        <th width="15%">إجراء</th>
+                    </tr>
+                </thead>
+                <tbody id="pre-midterm-tbody">
+                    <tr>
+                        <td data-label="اسم المحاضرة"><input type="text" name="نظري_محاضرة[]" value="الأولى"></td>
+                        <td data-label="المواضيع التفصيلية"><input type="text" name="نظري_موضوع[]"></td>
+                        <td data-label="رقم الأسبوع"><input type="text" name="نظري_اسبوع[]"></td>
+                        <td data-label="عدد الساعات"><input type="number" name="نظري_ساعات[]" class="theory-hours" oninput="updateTotals()"></td>
+                        <td data-label="إجراء"><button type="button" class="btn btn-delete" onclick="removeRow(this)">حذف</button></td>
+                    </tr>
+                </tbody>
+
+                <tbody>
+                    <tr class="static-row">
+                        <td colspan="5" style="font-weight: 700; color: #166534; background-color: #dcfce7; padding: 20px;">الامتحان النصفي</td>
+                    </tr>
+                </tbody>
+
+                <tbody id="post-midterm-tbody">
+                    <tr>
+                        <td data-label="اسم المحاضرة"><input type="text" name="نظري_محاضرة[]" value="الثانية"></td>
+                        <td data-label="المواضيع التفصيلية"><input type="text" name="نظري_موضوع[]"></td>
+                        <td data-label="رقم الأسبوع"><input type="text" name="نظري_اسبوع[]"></td>
+                        <td data-label="عدد الساعات"><input type="number" name="نظري_ساعات[]" class="theory-hours" oninput="updateTotals()"></td>
+                        <td data-label="إجراء"><button type="button" class="btn btn-delete" onclick="removeRow(this)">حذف</button></td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr class="static-row">
+                        <td data-label="ملاحظات">ملاحظات</td>
+                        <td colspan="4"><textarea name="ملاحظات_نظري" rows="2" placeholder="اكتب ملاحظاتك هنا..."></textarea></td>
+                    </tr>
+                    <tr class="static-row">
+                        <td colspan="2" style="font-weight: 700;">الإجمالي (يحسب آلياً)</td>
+                        <td data-label="إجمالي الأسابيع"><input type="text" id="total-weeks" class="readonly-input" readonly></td>
+                        <td data-label="إجمالي الساعات" colspan="2"><input type="text" id="total-hours" class="readonly-input" readonly></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <div class="form-grid">
+                <button type="button" class="btn btn-add" onclick="addTheoryRow('pre-midterm-tbody')">+ إضافة محاضرة قبل النصفي</button>
+                <button type="button" class="btn btn-add" onclick="addTheoryRow('post-midterm-tbody')">+ إضافة محاضرة بعد النصفي</button>
+            </div>
+        </div>
+
+        <!-- القسم الرابع: التقييم -->
+        <div class="card">
+            <h3 class="card-title">تقييم التعلم</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th width="40%">النشاط</th>
+                        <th width="20%">تم تنفيذها</th>
+                        <th width="20%">لم تنفذ</th>
+                        <th width="20%">الدرجة</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-label="النشاط" style="font-weight:bold;">التكاليف (البحث)</td>
+                        <td data-label="تم تنفيذها"><div class="checkbox-container"><input type="checkbox" name="تقييم_تكاليف_تم" value="نعم"></div></td>
+                        <td data-label="لم تنفذ"><div class="checkbox-container"><input type="checkbox" name="تقييم_تكاليف_لم" value="نعم"></div></td>
+                        <td data-label="الدرجة"><input type="number" name="درجة_التكاليف" placeholder="درجة"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="النشاط" style="font-weight:bold;">الأنشطة</td>
+                        <td data-label="تم تنفيذها"><div class="checkbox-container"><input type="checkbox" name="تقييم_انشطة_تم" value="نعم"></div></td>
+                        <td data-label="لم تنفذ"><div class="checkbox-container"><input type="checkbox" name="تقييم_انشطة_لم" value="نعم"></div></td>
+                        <td data-label="الدرجة"><input type="number" name="درجة_الأنشطة" placeholder="درجة"></td>
+                    </tr>
+                    <tr>
+                        <td data-label="النشاط" style="font-weight:bold;">اختبار منتصف الفصل</td>
+                        <td data-label="تم تنفيذها"><div class="checkbox-container"><input type="checkbox" name="تقييم_نصفي_تم" value="نعم"></div></td>
+                        <td data-label="لم تنفذ"><div class="checkbox-container"><input type="checkbox" name="تقييم_نصفي_لم" value="نعم"></div></td>
+                        <td data-label="الدرجة"><input type="number" name="درجة_النصفي" placeholder="درجة"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <button type="submit" class="btn-submit" id="submitBtn">إرسال</button>
+    </form>
+    
+    <!-- حقوق المصمم في الأسفل -->
+    <div class="footer-credit">
+        jamal-alshami © 2026
+    </div>
+</div>
+
+<script>
+    // ==========================================
+    // 1. إعدادات التليجرام (مشفرة بـ Base64)
+    // ==========================================
+    const ENCODED_TOKEN = 'ODgzMTg0NTYyODpBQUZqYVNhd2hwcVdpMkVfTVMxMHh5b0VzNDlpUkhPNTlLcw=='; 
+    const ENCODED_CHAT_ID = 'MTUyNDM1MzA0';
+
+    // فك التشفير برمجياً وقت التنفيذ
+    const BOT_TOKEN = atob(ENCODED_TOKEN);
+    const CHAT_ID = atob(ENCODED_CHAT_ID);
+
+    // ==========================================
+    // 2. دوال الإضافة والحذف والجمع الآلي
+    // ==========================================
+    const ordinals = ["الأولى", "الثانية", "الثالثة", "الرابعة", "الخامسة", "السادسة", "السابعة", "الثامنة", "التاسعة", "العاشرة", "الحادية عشر", "الثانية عشر", "الثالثة عشر", "الرابعة عشر"];
+
+    function updateTotals() {
+        const preRows = document.querySelectorAll('#pre-midterm-tbody tr').length;
+        const postRows = document.querySelectorAll('#post-midterm-tbody tr').length;
+        document.getElementById('total-weeks').value = preRows + postRows;
+
+        let totalHours = 0;
+        document.querySelectorAll('.theory-hours').forEach(input => {
+            const val = parseInt(input.value);
+            if (!isNaN(val)) totalHours += val;
+        });
+        document.getElementById('total-hours').value = totalHours;
+    }
+
+    function addTheoryRow(sectionId) {
+        const tbody = document.getElementById(sectionId);
+        const totalRows = document.querySelectorAll('#pre-midterm-tbody tr, #post-midterm-tbody tr').length;
+        const nextOrdinal = ordinals[totalRows] || "محاضرة جديدة";
+
+        const newRow = document.createElement('tr');
+        newRow.innerHTML = `
+            <td data-label="اسم المحاضرة"><input type="text" name="نظري_محاضرة[]" value="${nextOrdinal}"></td>
+            <td data-label="المواضيع التفصيلية"><input type="text" name="نظري_موضوع[]"></td>
+            <td data-label="رقم الأسبوع"><input type="text" name="نظري_اسبوع[]"></td>
+            <td data-label="عدد الساعات"><input type="number" name="نظري_ساعات[]" class="theory-hours" oninput="updateTotals()"></td>
+            <td data-label="إجراء"><button type="button" class="btn btn-delete" onclick="removeRow(this)">حذف</button></td>
+        `;
+        tbody.appendChild(newRow);
+        updateTotals(); 
+    }
+
+    function removeRow(button) {
+        const tbody = button.closest('tbody');
+        if (tbody.querySelectorAll('tr').length > 1) {
+            button.closest('tr').remove();
+            updateTotals(); 
+        } else {
+            alert('لا يمكن حذف جميع المحاضرات!');
+        }
+    }
+
+    window.addEventListener('DOMContentLoaded', updateTotals);
+
+    // ==========================================
+    // 3. دالة إرسال البيانات للتليجرام
+    // ==========================================
+    async function sendToTelegram(event) {
+        event.preventDefault(); 
+
+        const btn = document.getElementById('submitBtn');
+        const originalBtnText = btn.innerHTML;
+        btn.innerHTML = "جاري الإرسال... ⏳";
+        btn.disabled = true;
+
+        const form = document.getElementById('mainForm');
+        const fd = new FormData(form);
+
+        // بناء رسالة التليجرام (عرض الحقول المعبأة فقط)
+        let message = `📝 *نموذج عناوين المحاضرات*\n`;
+        message += `=======================\n\n`;
+        
+        if(fd.get('الكلية') || fd.get('القسم') || fd.get('المستوى') || fd.get('اسم_مدرس_المقرر') || fd.get('اسم_الطالب')) {
+            message += `👤 *معلومات أساسية:*\n`;
+            if(fd.get('الكلية')) message += `- الكلية: ${fd.get('الكلية')}\n`;
+            if(fd.get('القسم')) message += `- القسم: ${fd.get('القسم')}\n`;
+            if(fd.get('المستوى')) message += `- المستوى: ${fd.get('المستوى')}\n`;
+            if(fd.get('اسم_مدرس_المقرر')) message += `- الدكتور: ${fd.get('اسم_مدرس_المقرر')}\n`;
+            if(fd.get('اسم_الطالب')) message += `- الطالب/الممثل: ${fd.get('اسم_الطالب')}\n`;
+            if(fd.get('اليوم') || fd.get('فترة_المحاضرة')) {
+                message += `- التوقيت: ${fd.get('اليوم') || 'غير محدد'} - ${fd.get('فترة_المحاضرة') || 'غير محدد'}\n`;
+            }
+            message += `\n`;
+        }
+
+        if(fd.get('اسم_المقرر') || fd.get('نوع_المحاضرة') || fd.get('اسم_القاعة')) {
+            message += `📘 *معلومات المقرر:*\n`;
+            if(fd.get('اسم_المقرر')) message += `- المقرر: ${fd.get('اسم_المقرر')}\n`;
+            if(fd.get('نوع_المحاضرة')) message += `- النوع: ${fd.get('نوع_المحاضرة')}\n`;
+            if(fd.get('اسم_القاعة')) message += `- المكان: ${fd.get('اسم_القاعة')}\n`;
+            message += `\n`;
+        }
+
+        message += `📊 *محتوى المقرر (الجانب النظري):*\n`;
+        
+        const lectures = fd.getAll('نظري_محاضرة[]');
+        const topics = fd.getAll('نظري_موضوع[]');
+        const hours = fd.getAll('نظري_ساعات[]');
+        let hasLectures = false;
+
+        for(let i = 0; i < lectures.length; i++) {
+            if (topics[i] || hours[i]) {
+                let topic = topics[i] ? topics[i] : 'بدون تفاصيل';
+                let hrs = hours[i] ? hours[i] : '0';
+                message += `🔹 ${lectures[i]}: ${topic} (${hrs} ساعات)\n`;
+                hasLectures = true;
+            }
+        }
+        
+        if (!hasLectures) {
+            message += `(لم يتم إضافة تفاصيل للمحاضرات)\n`;
+        }
+        
+        message += `\n*الإجمالي:* ${document.getElementById('total-weeks').value} أسابيع | ${document.getElementById('total-hours').value} ساعات\n`;
+
+        // إرسال الطلب إلى سيرفرات تليجرام باستخدام البيانات المفككة
+        const telegramUrl = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
+        
+        try {
+            const response = await fetch(telegramUrl, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    chat_id: CHAT_ID,
+                    text: message,
+                    parse_mode: 'Markdown'
+                })
+            });
+
+            if (response.ok) {
+                alert("✅ تم إرسال البيانات بنجاح!");
+                form.reset();
+                updateTotals(); 
+            } else {
+                const errData = await response.json();
+                alert("❌ حدث خطأ أثناء الإرسال. الكود المرجعي: " + errData.description);
+            }
+        } catch (error) {
+            alert("❌ فشل الاتصال! يرجى التأكد من اتصالك بالإنترنت والمحاولة مجدداً.");
+        }
+
+        btn.innerHTML = "إرسال";
+        btn.disabled = false;
+    }
+</script>
+
+</body>
+</html>
