@@ -379,6 +379,7 @@
  
             .search-wrapper, .status-container, .empty-state, .app-footer, .header-section {
                 display: none !important;
+.print-report-btn { display: none !important; }
             }
             body { 
                 background: white !important; 
@@ -524,6 +525,112 @@
             .grade-box-title { font-size: 13px; }
             .grade-box-value { font-size: 16px; }
         }
+/* تنسيق زر التقرير */
+.report-btn {
+    background: linear-gradient(135deg, var(--accent-color), var(--primary-main));
+    color: white;
+    border: none;
+    padding: 12px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px -3px rgba(37, 99, 235, 0.3);
+}
+
+.report-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px -3px rgba(37, 99, 235, 0.4);
+}
+
+/* تنسيقات واجهة التقرير */
+.report-container {
+    background: var(--card-bg);
+    border-radius: 14px;
+    padding: 25px;
+    box-shadow: 0 4px 10px -2px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border-color);
+    margin-bottom: 20px;
+    animation: fadeIn 0.4s ease-out;
+}
+
+.report-header-title {
+    text-align: center;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.level-group {
+    margin-bottom: 25px;
+}
+
+.level-title-badge {
+    background: linear-gradient(to left, var(--primary-main), var(--primary-dark));
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subject-grid-report {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    padding: 0 10px;
+}
+
+.subject-grid-item {
+    background: #f8fafc;
+    border: 1px solid var(--border-color);
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    color: var(--primary-main);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.subject-grid-item::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.print-report-btn {
+    background: var(--primary-main);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 10px;
+    font-weight: 800;
+    font-family: inherit;
+    cursor: pointer;
+    margin: 30px auto 10px auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.2s;
+}
+
+.print-report-btn:hover { background: var(--primary-dark); }
     </style>
 </head>
 <body>
@@ -575,6 +682,12 @@
                 </svg>
                 <span>تهيئة</span>
             </button>
+<button class="report-btn" onclick="showSubjectsReport()" title="تقرير المواد والمستويات">
+    <svg class="reset-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 17v-2m3 2v-4m3 4v-6m2 10H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+    </svg>
+    <span>تقرير المقررات</span>
+</button>
         </div>
     </div>
 
@@ -922,6 +1035,77 @@ function updateSubjectsDropdown(selectedLevel) {
     filteredSubjectsSet.forEach(subj => {
         filterSubject.innerHTML += `<option value="${subj}">${subj}</option>`;
     });
+}
+function showSubjectsReport() {
+    // 1. تجميع المقررات بناءً على المستويات
+    const levelData = {};
+    
+    for (const sub in db) {
+        if (db[sub].length > 0) {
+            const sampleStudent = db[sub][0];
+            const lvl = flexExtract(sampleStudent, ['المستوى', 'مستوى']);
+            const subjName = flexExtract(sampleStudent, ['المادة']);
+            
+            const actualSubj = (subjName !== '-' && subjName !== 'غير محدد') ? subjName : sub;
+            const actualLvl = (lvl !== '-' && lvl !== 'غير محدد') ? lvl : 'مستويات غير محددة';
+
+            if (!levelData[actualLvl]) {
+                levelData[actualLvl] = new Set();
+            }
+            levelData[actualLvl].add(actualSubj);
+        }
+    }
+
+    // 2. إنشاء الواجهة الرسومية للتقرير
+    let html = `
+        <div class="report-container" id="subjectsReportArea">
+            <h2 class="report-header-title">التقرير الإحصائي للمقررات الدراسية حسب المستويات</h2>
+    `;
+
+    // ترتيب المستويات أبجدياً أو تصاعدياً
+    const sortedLevels = Object.keys(levelData).sort();
+
+    if(sortedLevels.length === 0) {
+        html += `<p style="text-align:center;color:var(--danger);font-weight:bold;">لا توجد بيانات مقررات متاحة حالياً.</p>`;
+    } else {
+        sortedLevels.forEach(level => {
+            html += `
+                <div class="level-group">
+                    <div class="level-title-badge">
+                        <span>مقررات ${level}</span>
+                        <span style="background:rgba(255,255,255,0.2);padding:2px 10px;border-radius:20px;font-size:13px;">إجمالي: ${levelData[level].size} مواد</span>
+                    </div>
+                    <div class="subject-grid-report">
+            `;
+            
+            // ترتيب المواد أبجدياً
+            const sortedSubjects = Array.from(levelData[level]).sort();
+            sortedSubjects.forEach(subject => {
+                html += `<div class="subject-grid-item">${subject}</div>`;
+            });
+            
+            html += `
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    html += `
+            <button class="print-report-btn" onclick="printReportOnly()">
+                <svg style="width:20px;height:20px" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+                طباعة التقرير الكامل
+            </button>
+        </div>
+    `;
+
+    // 3. عرض التقرير وإخفاء التوقيعات المخصصة لكشوفات الطلاب
+    resultsArea.innerHTML = html;
+    printSignatures.style.display = 'none';
+}
+
+function printReportOnly() {
+    window.print();
 }
 </script>
 
