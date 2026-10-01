@@ -656,13 +656,16 @@
     }
 
     function resetFilters() {
-        searchInput.value = '';
-        filterYear.value = 'all';
-        filterLevel.value = 'all';
-        filterSemester.value = 'all';
-        filterSubject.value = 'all';
-        performSearch();
-    }
+    searchInput.value = '';
+    filterYear.value = 'all';
+    filterLevel.value = 'all';
+    filterSemester.value = 'all';
+
+    updateSubjectsDropdown('all'); 
+    
+    filterSubject.value = 'all';
+    performSearch();
+}
 
     function normalizeArabic(text) {
         if (!text) return '';
@@ -889,9 +892,37 @@
 
     searchInput.addEventListener('input', performSearch);
     filterYear.addEventListener('change', performSearch);
-    filterLevel.addEventListener('change', performSearch);
+    filterLevel.addEventListener('change', function() {
+    updateSubjectsDropdown(this.value);
+    performSearch();
+});
     filterSemester.addEventListener('change', performSearch);
     filterSubject.addEventListener('change', performSearch);
+function updateSubjectsDropdown(selectedLevel) {
+ 
+    filterSubject.innerHTML = '<option value="all">كل المقررات</option>';
+    const filteredSubjectsSet = new Set();
+
+    for (const sub in db) {
+        if(db[sub].length > 0) {
+            const sampleStudent = db[sub][0];
+            const lvl = flexExtract(sampleStudent, ['المستوى', 'مستوى']);
+            const subj = flexExtract(sampleStudent, ['المادة']);
+
+            if (subj !== '-' && subj !== 'غير محدد') {
+              
+                if (selectedLevel === 'all' || lvl === selectedLevel) {
+                    filteredSubjectsSet.add(subj);
+                }
+            }
+        }
+    }
+
+
+    filteredSubjectsSet.forEach(subj => {
+        filterSubject.innerHTML += `<option value="${subj}">${subj}</option>`;
+    });
+}
 </script>
 
 </body>
