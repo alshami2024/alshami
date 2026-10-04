@@ -657,7 +657,7 @@
 
     <div class="search-wrapper">
         <div class="search-input-container">
-            <input type="text" id="searchInput" class="search-input" placeholder="ابحث بالاسم أو الرقم الجامعي مباشرة..." autocomplete="off">
+            <input type="text" id="searchInput" class="search-input" placeholder="أدخل الرقم الجامعي هنا ..." autocomplete="off">
             <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
             </svg>
@@ -692,14 +692,14 @@
     </div>
 
     <div id="resultsArea" class="results-area">
-        <div class="empty-state">
-            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
-            </svg>
-            <h2>أهلاً بك في بوابة النتائج الأكاديمية</h2>
-            <p>الرجاء استخدام شريط البحث، أو تحديد "المستوى" ضمن الفلاتر لعرض السجلات.</p>
-        </div>
+    <div class="empty-state">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+        </svg>
+        <h2>أهلاً بك في بوابة النتائج الأكاديمية</h2>
+        <p>الرجاء إدخال رقمك الجامعي في شريط البحث لعرض السجلات الخاصة بك.</p>
     </div>
+</div>
     
     <div id="printSignatures" class="print-signatures">
         <div class="sig-box">مسجل الكلية<br><br>....................................</div>
@@ -817,88 +817,88 @@
     }
 
     function performSearch() {
-        const query = searchInput.value;
-        const normalizedQuery = normalizeArabic(query);
-        
-        const selYear = filterYear.value;
-        const selLevel = filterLevel.value;
-        const selSemester = filterSemester.value;
-        const selSubject = filterSubject.value;
-
-        const isTextEmpty = normalizedQuery.length < 2;
-
+    const rawQuery = searchInput.value;
     
-        if (isTextEmpty && selLevel === 'all') {
-            resultsArea.innerHTML = `
-                <div class="empty-state">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
-                    </svg>
-                    <h2 style="color: var(--primary-main);">الرجاء تحديد المستوى الدراسي</h2>
-                    <p>لحماية السجلات وتسهيل التصفح، يجب تحديد "المستوى" أو البحث بالاسم لعرض النتائج.</p>
-                </div>
-            `;
-            printSignatures.style.display = 'none';
-            return;
-        }
+    // استخلاص رقم البحث مع تجاهل الشرطات والمسافات تماماً
+    const queryId = rawQuery.replace(/-/g, '').replace(/\s+/g, '').trim();
+    
+    const selYear = filterYear.value;
+    const selLevel = filterLevel.value;
+    const selSemester = filterSemester.value;
+    const selSubject = filterSubject.value;
 
-        resultsArea.innerHTML = '';
-        if (subjectsCount === 0) return;
-
-        const studentsData = {};
-
-        for (const fullSubjectName in db) {
-            const students = db[fullSubjectName];
-            
-            const matches = students.filter(s => {
-                const sYear = flexExtract(s, ['العام']);
-                const sLevel = flexExtract(s, ['المستوى', 'مستوى']);
-                const sSemester = flexExtract(s, ['الفصل']);
-                const sSubject = flexExtract(s, ['المادة']);
-                
-                if (selYear !== 'all' && sYear !== selYear) return false;
-                if (selLevel !== 'all' && sLevel !== selLevel) return false;
-                if (selSemester !== 'all' && sSemester !== selSemester) return false;
-                if (selSubject !== 'all' && sSubject !== selSubject) return false;
-
-                if (!isTextEmpty) {
-                    const sName = normalizeArabic(flexExtract(s, ['اسم', 'الاسم']));
-                    const sId = normalizeArabic(flexExtract(s, ['رقم', 'جامعي']));
-                    return sName.includes(normalizedQuery) || sId.includes(normalizedQuery);
-                }
-                
-                return true; 
-            });
-
-            matches.forEach(student => {
-                const actualId = flexExtract(student, ['رقم', 'جامعي']);
-                const actualName = flexExtract(student, ['اسم', 'الاسم']);	
-                const extractedSubject = flexExtract(student, ['المادة']);
-                const actualSubjectName = extractedSubject !== '-' ? extractedSubject : fullSubjectName;
-
-                if (actualId !== '-') {
-                    if (!studentsData[actualId]) {
-                        studentsData[actualId] = { name: actualName, id: actualId, subjects: [] };
-                    }
-                    
-                    studentsData[actualId].subjects.push({
-                        subjectName: actualSubjectName,
-                        level: flexExtract(student, ['المستوى', 'مستوى']),
-                        semester: flexExtract(student, ['الفصل']),
-                        year: flexExtract(student, ['العام']),
-                        attendance: flexExtract(student, ['حضور', 'مشاركة']),
-                        assignments: flexExtract(student, ['تكاليف', 'أعمال']),
-                        midterm: flexExtract(student, ['نصفي']),
-                        finalExam: flexExtract(student, ['نهائي', 'نهائى']),
-                        total: flexExtract(student, ['اجمالي', 'إجمالي', 'مجموع']),
-                        notes: flexExtract(student, ['ملاحظات', 'ملاحظه'])
-                    });
-                }
-            });
-        }
-
-        renderResults(studentsData);
+    // منع عرض أي نتائج إذا لم يقم الطالب بإدخال الرقم الجامعي
+    if (!queryId) {
+        resultsArea.innerHTML = `
+            <div class="empty-state">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+                </svg>
+                <h2 style="color: var(--primary-main);">الرجاء إدخال الرقم الجامعي</h2>
+                <p> </p>
+            </div>
+        `;
+        printSignatures.style.display = 'none';
+        return;
     }
+
+    resultsArea.innerHTML = '';
+    if (subjectsCount === 0) return;
+
+    const studentsData = {};
+
+    for (const fullSubjectName in db) {
+        const students = db[fullSubjectName];
+        
+        const matches = students.filter(s => {
+            const sYear = flexExtract(s, ['العام']);
+            const sLevel = flexExtract(s, ['المستوى', 'مستوى']);
+            const sSemester = flexExtract(s, ['الفصل']);
+            const sSubject = flexExtract(s, ['المادة']);
+            
+            // تطبيق فلاتر القوائم المنسدلة إن وجدت
+            if (selYear !== 'all' && sYear !== selYear) return false;
+            if (selLevel !== 'all' && sLevel !== selLevel) return false;
+            if (selSemester !== 'all' && sSemester !== selSemester) return false;
+            if (selSubject !== 'all' && sSubject !== selSubject) return false;
+
+            // جلب الرقم الجامعي للطالب من القاعدة وإزالة الشرطات والمسافات
+            const rawId = flexExtract(s, ['رقم', 'جامعي']);
+            const sId = rawId !== '-' ? rawId.toString().replace(/-/g, '').replace(/\s+/g, '').trim() : '';
+            
+            // المطابقة التامة حصراً بين رقم البحث ورقم الطالب
+            return sId === queryId; 
+        });
+
+        matches.forEach(student => {
+            const actualId = flexExtract(student, ['رقم', 'جامعي']);
+            const actualName = flexExtract(student, ['اسم', 'الاسم']);	
+            const extractedSubject = flexExtract(student, ['المادة']);
+            const actualSubjectName = extractedSubject !== '-' ? extractedSubject : fullSubjectName;
+
+            if (actualId !== '-') {
+                if (!studentsData[actualId]) {
+                    studentsData[actualId] = { name: actualName, id: actualId, subjects: [] };
+                }
+                
+                studentsData[actualId].subjects.push({
+                    subjectName: actualSubjectName,
+                    level: flexExtract(student, ['المستوى', 'مستوى']),
+                    semester: flexExtract(student, ['الفصل']),
+                    year: flexExtract(student, ['العام']),
+                    attendance: flexExtract(student, ['حضور', 'مشاركة']),
+                    assignments: flexExtract(student, ['تكاليف', 'أعمال']),
+                    midterm: flexExtract(student, ['نصفي']),
+                    finalExam: flexExtract(student, ['نهائي', 'نهائى']),
+                    total: flexExtract(student, ['اجمالي', 'إجمالي', 'مجموع']),
+                    notes: flexExtract(student, ['ملاحظات', 'ملاحظه'])
+                });
+            }
+        });
+    }
+
+    renderResults(studentsData);
+}
 
     function renderResults(studentsData) {
         const studentIds = Object.keys(studentsData);
