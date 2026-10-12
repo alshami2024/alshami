@@ -1093,5 +1093,190 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "الثقافة الإسلامية",
+    "studentName": "احمد ابراهيم احمد عبدالخالق العواضي",
+    "deviceId": "DEV-JDGBEC2S6-mt15rckk",
+    "submissionDate": "2026-10-12T18:10:23.066Z",
+    "mcqScore": {
+      "correct": 12,
+      "total": 20
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "التشريع هو من اختصاص:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليس شيئاً مما سبق."
+      },
+      {
+        "question": "من معالم الدين الإسلامي عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الزكاء والطهارة.",
+        "correctAnswer": "الصبر على الظلم."
+      },
+      {
+        "question": "قال تعالى: {فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْراً يَرَهُ (7) وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرّاً يَرَهُ}[الزلزلة:8]، يفيد:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الوعد والوعيد."
+      },
+      {
+        "question": "الفرق بين النظام الاقتصادي الإسلامي والنظام الاقتصادي الغربي هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الربا."
+      },
+      {
+        "question": "من جوانب المسؤولية في القرآن:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق."
+      },
+      {
+        "question": "لماذا التأكيد على معرفة الرسول صلى الله عليه وآله وسلم من خلال القرآن الكريم:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأنه جاء به.",
+        "correctAnswer": "لأن ما دونه يحتوي على الكذب."
+      },
+      {
+        "question": "لا يعتبر الإنسان إنساناً إلا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "بأخلاقه."
+      },
+      {
+        "question": "عقيدة الخروج من النار عقيدة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يهودية."
+      },
+      {
+        "question": "من المحاور الرئيسية في الإسلام العمل على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق."
+      },
+      {
+        "question": "التِّيه في اللغة:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "التحيّر عن القصد."
+      },
+      {
+        "question": "المنافقون مصيرهم جهنم مع أنهم محسوبون على:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ليس شيئاً مما سبق."
+      },
+      {
+        "question": "من العقوبات الإلهية على المتخاذلين عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "انغلاق الفهم.",
+        "correctAnswer": "السلامة."
+      },
+      {
+        "question": "قال تعالى عن بني إسرائيل: {َاذْهَبْ أَنتَ وَرَبُّكَ فَقَاتِلا إِنَّا هَاهُنَا قَاعِدُونَ}[المائدة:24]، تفيد:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "جهلهم بالله.",
+        "correctAnswer": "كل ما سبق."
+      },
+      {
+        "question": "قال تعالى: {وَالْبَاطِنُ} [الحديد:3]، من أسماء الله الحسنى يفيد أنه:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لا يُرى.",
+        "correctAnswer": "كل ما سبق."
+      },
+      {
+        "question": "لا يمكن أن نحقق السلام إلا من خلال:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "القوة."
+      },
+      {
+        "question": "قال تعالى عن اليهود: {ذَلِكَ بِأَنَّهُمْ قَالُواْ لَن تَمَسَّنَا النَّارُ إِلاَّ أَيَّاماً مَّعْدُودَاتٍ وَغَرَّهُمْ فِي دِينِهِم مَّا كَانُواْ يَفْتَرُونَ}[آل عمران:24]، تفيد:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تغرير نفوسهم.",
+        "correctAnswer": "كل ما سبق."
+      },
+      {
+        "question": "{الْأَوَّلُ}[الحديد:3]، من أسماء الله تعالى ويفيد:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إثبات البداية.",
+        "correctAnswer": "نفي الزمان عن الله."
+      },
+      {
+        "question": "قال تعالى: {وَهُوَ مَعَكُمْ أَيْنَ مَا كُنتُمْ}[الحديد:4]، يعني:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق."
+      },
+      {
+        "question": "العزيز هو:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الذي لا يُقهر."
+      },
+      {
+        "question": "الكفر ببعض يعني:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كل ما سبق.",
+        "correctAnswer": "عدم العمل ببعض."
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
