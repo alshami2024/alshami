@@ -307,5 +307,161 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تدريبات نحوية - الأول مطور 1",
+    "studentName": "خالد علي محمد الحجاجي",
+    "deviceId": "DEV-SU1KTPFEG-mvei2elj",
+    "submissionDate": "2026-10-19T00:12:15.066Z",
+    "mcqScore": {
+      "correct": 28,
+      "total": 34
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "استمع زيدٌ إلى تلاوة آيات من الذكر الحكيم. كلمة (آيات):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اسم"
+      },
+      {
+        "question": "الجملة التي تشتمل على اسم يدل على (معنى) هي:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "سافر أحمد إلى المدينة",
+        "correctAnswer": "أوثق عرى الإيمان الحب في الله والبغض في الله"
+      },
+      {
+        "question": "قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>إِنَّا أَنزَلْنَاهُ فِي لَيْلَةِ الْقَدْرِ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. اشتملت الآية على فعل:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "ماض"
+      },
+      {
+        "question": "(لا تؤجل عمل اليوم إلى الغد). نوع الجملة السابقة: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "فعلية"
+      },
+      {
+        "question": "كل الجمل التالية مفيدة عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "المطر الذي نزل البارحة وارتوت منه الأرض"
+      },
+      {
+        "question": "ذكّر الخطيب في خطبته الناس بأهمية الصلاة. إعراب كلمة (الناس) :",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مفعول به منصوب وعلامة نصبه الفتحة الظاهرة على آخره"
+      },
+      {
+        "question": "الجملة التي اشتملت على فاعل مرفوع هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "حفظ الولد القرآن عن ظهر قلب"
+      },
+      {
+        "question": "\n         قال تعالى: <span style=\"font-family: ATRADBDO, sans-serif;\">{</span>اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ<span style=\"font-family: ATRADBDO, sans-serif;\">}</span>. الفعل (اقرأ) في هذه الآية: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "أمر"
+      },
+      {
+        "question": "(استقم):",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جملة مفيدة"
+      },
+      {
+        "question": "قال تعالى: {وَعَلَيْهَا وَعَلَى الْفُلْكِ تُحْمَلُونَ} اشتملت الآية على اسم يدل على: ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "جماد"
+      },
+      {
+        "question": "\n         الجملة التي اشتملت على فعل مضارع هي: ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "اجتهد في دروسك",
+        "correctAnswer": "المؤمن يحسن الظن بربه"
+      },
+      {
+        "question": "الفاعل يأتي دائما:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "مرفوعاً"
+      },
+      {
+        "question": "الكلمة التي لا تدل على معنى في ذاتها ولكن مع غيرها، هي:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "الحرف"
+      },
+      {
+        "question": "الصحابة الذي صحبوا النبي صلى الله عليه وسلم ونصروه. الجملة السابقة مفيدة",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "سقط الإناء على الأرض. كلمة (الإناء) تعرب مفعولا به.&nbsp;",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         لا تظهر الشماتة لأخيك فيعافيه الله ويبتليك. (الشماتة) فاعل مرفوع وعلامة رفعه الضمة.&nbsp; ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "(دار القرآن الكريم مرفق تعليمي متميز). نوع الجملة السابقة: اسمية.&nbsp; ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 2,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
