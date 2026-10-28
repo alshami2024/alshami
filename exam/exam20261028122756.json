@@ -2403,5 +2403,182 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "تاريخ وفلسفة القانون",
+    "studentName": "محمد ياسر الملحاني",
+    "deviceId": "DEV-M4VRFJKSJ-mtj6x4nn",
+    "submissionDate": "2026-10-28T11:39:45.955Z",
+    "mcqScore": {
+      "correct": 18,
+      "total": 42
+    },
+    "essayScore": {
+      "totalScore": 12,
+      "totalMax": 18
+    },
+    "answers": [
+      {
+        "question": "\n         \n         \n         ما الدلالة القانونية لظهور الاهتمام بالركن المعنوي للجريمة في مرحلة التقاليد العرفية؟   ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "إلغاء العقوبات البدنية والاكتفاء بالتعويض المالي للمجني عليه",
+        "correctAnswer": "التمييز في شدة العقوبة بين الجريمة العمدية وحالتي الإهمال أو الخطأ"
+      },
+      {
+        "question": "\n         \n         \n         أي مما يأتي يُعد من أهم المبادئ التي تضمنتها إصلاحات الملك 'أوركاجينا' السومري؟   ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "تدوين كافة الأعراف القبلية السائدة دون أي تدخل أو تعديل حكومي",
+        "correctAnswer": "التأكيد على الحرية في حدود القانون وعدم إعفاء أصحاب المناصب من الحدود القانونية"
+      },
+      {
+        "question": "\n         \n         \n         ما الغاية الأساسية التي هدف الملك القتباني إلى تحقيقها من إصدار 'قانون سوق شمَّر'؟   ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "ضمان حقوق الدولة في جباية الضرائب وحماية الصالح العام للتجار والمستهلكين"
+      },
+      {
+        "question": "\n         أي مما يأتي يُعد من الوسائل المعتمدة لتطور القانون؟    ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "الحيل القانونية، والعدالة، والتشريع"
+      },
+      {
+        "question": "\n         \n         \n         وفقاً للرؤية الدينية القرآنية، ما التطور الجوهري الذي ميز مرحلة (الإمامة أو الدولة) التي بدأت بنبي الله إبراهيم؟   ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "الاكتفاء بالدعوة إلى مكارم الأخلاق والتوحيد بالقول دون الفعل",
+        "correctAnswer": "قيام الأنبياء بقيادة حركة التوحيد قيادة ميدانية عملية"
+      },
+      {
+        "question": "\n         \n         \n         تُشترط لاعتبار العادة عرفاً قانونياً ملزماً وفقاً لعلماء القانون جميع الشروط الآتية، عدا:   ",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "أن يكون العرف حديث النشأة ومدوناً في وثائق رسمية"
+      },
+      {
+        "question": "\n         \n         \n         ما النتيجة المترتبة على تبني المذهب الوضعي (اللاعقلي) في فهم طبيعة القانون؟   ",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "دمج القواعد الأخلاقية في صلب التشريعات الجنائية بشكل إلزامي",
+        "correctAnswer": "الفصل التام وعدم وجود ارتباط حكمي بين القانون والأخلاق"
+      },
+      {
+        "question": "\n         \n         \n         تميزت مرحلة التقاليد الدينية بظهور جزاءات ذات طابع ديني، مثل الطرد من رحمة الآلهة للمخالفين.   ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n         \n         \n         النظام القانوني العرفي الصالح لمجتمع قبلي في اليمن، يصلح بالضرورة أن يكون قالباً جاهزاً يُطبق في أي دولة أخرى تسود فيها القبلية.   ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "خطأ"
+      },
+      {
+        "question": "\n         \n         \n         يُعرّف تاريخ القانون بأنه العلم الذي يعنى بدراسة القانون من حيث نشأته وتطوره وتعديله وزواله.   ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "صح"
+      },
+      {
+        "question": "\n         \n         \n         يُعد قانون 'أور نمو' أقدم من شريعة حمورابي، وقد تميز بالأخذ بمبدأ التعويض المالي في تحديد بعض العقوبات.   ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n         \n         \n         يوجد تلازم حتمي بين وجود القانون ووجود الدولة، إذ لا يمكن تصور نشأة القانون قبل ظهور مؤسسة الدولة.   ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "\n         \n         \n         من المبادئ الأساسية للعقوبة في الشريعة الإسلامية إقرار مبدأ 'شخصية العقوبة' ودرء الحدود بالشبهة.   ",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "\n         \n         \n         تثبت الدراسات الحديثة والاكتشافات الأثرية في بابل أن نصوص التوراة التي وضعها اليهود مستقلة تماماً ولم تقتبس من قانون حمورابي.   ",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 3,
+        "answer": "خطأ"
+      },
+      {
+        "question": "انتشر استخدام عبارة (فلسفة القانون) منذ بداية القرن .................. وخاصة بعد صدور كتاب (مبادئ فلسفة القانون) للفيلسوف الكبير (هيغل).&nbsp;",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 4,
+        "answer": "التاسع عشر",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 4/4"
+      },
+      {
+        "question": "القانون في اللغة: كلمة ........................ وتعني العصا المستقيمة، وانتقلت هذه الكلمة إلى اللغات الأخرى بنفس اللفظ.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 4,
+        "answer": "يونانية ",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 4/4"
+      },
+      {
+        "question": "عرّف فلسفة القانون؟",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 5,
+        "answer": "هو تفسير ماهية القانون ونشوؤه وتطوره",
+        "essayScore": 4,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 4/5"
+      },
+      {
+        "question": "علّل: يُعدّ القانون أحد مظاهر الموروث التاريخي.",
+        "type": "essay",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 5,
+        "answer": "لا إجابة",
+        "essayScore": 0,
+        "aiGradeSuggestion": "تصحيح تلقائي أولي: 0/5"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
