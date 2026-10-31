@@ -1,5 +1,16 @@
 {
-  "timetable": [],
+  "timetable": [
+    {
+      "id": 1793465836578,
+      "day": "السبت",
+      "time": "08:00 - 11:00",
+      "course": "نظرية الحق",
+      "year": "الأول",
+      "doctor": "د. وليد صالح",
+      "room": "C4",
+      "attendance": {}
+    }
+  ],
   "visitingProfessors": [],
   "appointments": [],
   "drafts": [],
