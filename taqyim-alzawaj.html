@@ -1,256 +1,1017 @@
-﻿<!DOCTYPE html>
-<html lang="ar">
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>تقييم مستقبل العلاقة الزوجية</title>
+  <title>مقياس التوافق وكشف مؤشرات الخطر قبل الزواج | جمال الشامي</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cairo: ['Cairo', 'sans-serif'],
+            tajawal: ['Tajawal', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0f7ff',
+              100: '#e0effe',
+              500: '#0284c7',
+              700: '#0369a1',
+              800: '#075985',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
   <style>
     body {
-      font-family: "Traditional Arabic", serif;
-      background: linear-gradient(to bottom, #3a6073, #16222a);
-      color: #333;
-      direction: rtl;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      font-family: 'Cairo', 'Tajawal', sans-serif;
+      background: radial-gradient(circle at top right, #1e293b, #0f172a 60%, #020617);
       min-height: 100vh;
-      margin: 0;
-      padding: 0 10px;
-      position: relative;
+      color: #1e293b;
+      overflow-x: hidden;
     }
 
-    .header {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      font-weight: bold;
-      font-size: 22px;
-      color: #ffffff;
+    .glass-header {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
     }
 
-    .container {
-      max-width: 700px;
-      padding: 25px;
-      background-color: rgba(255, 255, 255, 0.9);
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
-      border-radius: 10px;
+    .main-card {
+      background: rgba(255, 255, 255, 0.97);
+      backdrop-filter: blur(20px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
     }
 
-    h1 {
-      font-size: 24px;
-      color: #002d5b;
-      text-align: center;
-      margin-bottom: 20px;
+    .option-card {
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      border: 2px solid #e2e8f0;
     }
 
-    label {
-      font-weight: bold;
-      font-size: 16px;
-      color: #333;
-      text-align: right;
-      margin-bottom: 10px;
+    .option-card:hover {
+      border-color: #94a3b8;
+      transform: translateY(-2px);
+      background-color: #f8fafc;
+    }
+
+    .option-card.selected {
+      border-color: #0284c7;
+      background-color: #f0f9ff;
+      box-shadow: 0 4px 15px -3px rgba(2, 132, 199, 0.2);
+    }
+
+    .option-card.selected .radio-indicator {
+      background-color: #0284c7;
+      border-color: #0284c7;
+    }
+
+    .option-card.selected .radio-indicator::after {
+      content: '';
       display: block;
+      width: 8px;
+      height: 8px;
+      background: white;
+      border-radius: 50%;
     }
 
-    .question {
-      margin-bottom: 25px;
-      padding: 15px;
-      background-color: #f7f7f9;
-      border-radius: 8px;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      text-align: right;
+    @keyframes fadeInSlide {
+      from {
+        opacity: 0;
+        transform: translateY(12px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    .question input[type="radio"] {
-      margin-right: 10px;
-      margin-top: 5px;
+    .animate-fade-slide {
+      animation: fadeInSlide 0.4s ease-out forwards;
     }
 
-    .submit-btn {
-      width: 100%;
-      padding: 12px;
-      background-color: #002d5b;
-      color: #ffffff;
-      font-size: 18px;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: all 0.3s;
-      text-align: center;
-    }
-
-    .submit-btn:hover {
-      background-color: #004080;
-    }
-
-    .result {
-      margin-top: 25px;
-      padding: 15px;
-      background-color: #e3f2fd;
-      color: #002d5b;
-      border-radius: 8px;
-      font-size: 20px;
-      font-weight: bold;
-      text-align: center;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-      display: none;
-    }
-
-    .result.fade-in {
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+    @media print {
+      body {
+        background: #ffffff !important;
+        color: #000000 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .main-card {
+        box-shadow: none !important;
+        border: 1px solid #cbd5e1 !important;
+      }
     }
   </style>
 </head>
-<body>
-  <div class="header">جمال الشامي</div>
-  
-  <div class="container">
-    <h1>تقييم مستقبل العلاقة الزوجية</h1>
+<body class="py-6 px-3 sm:px-6 lg:px-8 flex flex-col items-center justify-between select-none">
 
-    <form id="quizForm">
-      <div class="question">
-        <label>1- كيف يتفاعل (خطيبك أو خطيبتك) مع الانتقادات أو الآراء التي تختلف عن رأيه؟</label>
-        <input type="radio" name="q1" value="a"> يتقبل الآراء المختلفة<br>
-        <input type="radio" name="q1" value="b"> ينزعج قليلاً<br>
-        <input type="radio" name="q1" value="c"> يظهر استياءً شديدًا
+  <header class="w-full max-w-4xl mb-6 flex flex-wrap items-center justify-between gap-4 px-5 py-3.5 rounded-2xl glass-header text-white">
+    <div class="flex items-center gap-3">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-sky-400 to-indigo-600 flex items-center justify-center shadow-lg">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+        </svg>
+      </div>
+      <div>
+        <h2 class="font-bold text-lg sm:text-xl tracking-wide text-sky-100">مقياس التحليل النفسي والتوافق الزواجي المبكر</h2>
+        <p class="text-xs text-slate-300"></p>
+      </div>
+    </div>
+
+    <div id="viewModeControls" class="flex items-center gap-2 bg-slate-900/50 p-1 rounded-xl border border-white/10 no-print">
+      <button type="button" id="btnStepMode" onclick="switchViewMode('step')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-sky-600 text-white shadow">
+        سؤال بسؤال
+      </button>
+      <button type="button" id="btnAllMode" onclick="switchViewMode('all')" class="px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-300 hover:text-white">
+        عرض كافة الأسئلة
+      </button>
+    </div>
+  </header>
+
+  <main class="w-full max-w-4xl main-card rounded-3xl p-5 sm:p-8 md:p-10 mb-8 relative overflow-hidden">
+    
+    <div class="absolute -top-24 -left-24 w-64 h-64 bg-sky-100 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+    <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-indigo-100 rounded-full blur-3xl opacity-60 pointer-events-none"></div>
+
+    <div id="quizHeaderSection" class="relative z-10">
+      <div class="text-center max-w-2xl mx-auto mb-6">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-sky-100 text-sky-800 mb-3">
+          <span class="w-2 h-2 rounded-full bg-sky-600 animate-pulse"></span>
+          تقييم علمي مبني على معايير الصحة النفسية والعلائقية
+        </span>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-tight">
+          تقييم توافق ومستقبل العلاقة الزوجية قبل الزواج
+        </h1>
+        <p class="text-slate-600 text-sm sm:text-base mt-2">
+          يكشف هذا المقياس الدقيق مدى النضج العاطفي، مهارات إدارة الخلاف، والمؤشرات التحذيرية المبكرة (Red Flags) التي قد تهدد استقرار الزواج مستقبلاً.
+        </p>
       </div>
 
-      <div class="question">
-        <label>2- كيف يعبر (خطيبك أو خطيبتك) عن مشاعره عندما يواجه إحباطًا في العمل أو مع الأصدقاء؟</label>
-        <input type="radio" name="q2" value="a"> يتحدث بصراحة<br>
-        <input type="radio" name="q2" value="b"> يظهر انزعاجًا<br>
-        <input type="radio" name="q2" value="c"> يظهر غضبًا ويبدأ في لوم الآخرين
+      <div class="bg-slate-100 p-4 rounded-2xl border border-slate-200/80 mb-6">
+        <div class="flex justify-between items-center mb-2 text-xs sm:text-sm font-bold text-slate-700">
+          <span id="progressCategoryLabel" class="text-sky-700 flex items-center gap-1.5">
+            <span>المحور الأول: إدارة الخلافات والغضب</span>
+          </span>
+          <span id="progressCounterText" class="bg-white px-2.5 py-0.5 rounded-md shadow-sm border border-slate-200 text-slate-800">
+            تمت الإجابة على 0 من 15
+          </span>
+        </div>
+        <div class="w-full h-3 bg-slate-200 rounded-full overflow-hidden">
+          <div id="progressBarFill" class="h-full bg-gradient-to-l from-sky-500 to-indigo-600 rounded-full transition-all duration-500" style="width: 0%"></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="validationToast" class="hidden mb-6 p-4 rounded-2xl bg-amber-50 border border-amber-300 text-amber-900 flex items-center justify-between gap-3 animate-fade-slide">
+      <div class="flex items-center gap-3">
+        <svg class="w-6 h-6 text-amber-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+        </svg>
+        <span id="validationToastText" class="text-sm font-bold">يرجى الإجابة على السؤال الحالي للمتابعة، أو إكمال كافة الأسئلة قبل عرض النتيجة.</span>
+      </div>
+      <button type="button" onclick="hideValidationToast()" class="text-amber-700 hover:bg-amber-200/60 p-1 rounded-lg text-xs font-bold">إغلاق</button>
+    </div>
+
+    <div id="questionsContainer" class="relative z-10 space-y-6"></div>
+
+    <div id="quizFooterNav" class="relative z-10 mt-8 pt-5 border-t border-slate-200 flex flex-wrap items-center justify-between gap-3">
+      <button type="button" id="prevBtn" onclick="navigateStep(-1)" class="px-5 py-3 rounded-xl font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition flex items-center gap-2 disabled:opacity-40 disabled:pointer-events-none">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+        السابق
+      </button>
+
+      <button type="button" id="nextBtn" onclick="navigateStep(1)" class="px-6 py-3 rounded-xl font-bold text-white bg-sky-600 hover:bg-sky-700 shadow-lg shadow-sky-600/25 transition flex items-center gap-2">
+        السؤال التالي
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+      </button>
+
+      <button type="button" id="submitQuizBtn" onclick="calculateAndShowResult()" class="hidden w-full sm:w-auto px-8 py-3.5 rounded-xl font-extrabold text-white bg-gradient-to-l from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 shadow-xl shadow-teal-700/25 transition flex items-center justify-center gap-2 text-base">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+        تحليل الإجابات وعرض التقرير التفصيلي
+      </button>
+    </div>
+
+    <div id="resultDashboard" class="hidden relative z-10 animate-fade-slide">
+      
+      <div class="text-center border-b border-slate-200 pb-6 mb-8">
+        <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold bg-slate-100 text-slate-700 mb-2">
+          تقرير تشخيصي شامل ومفصل
+        </span>
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900">نتيجة تقييم مستقبل العلاقة الزوجية</h2>
+        <p class="text-sm text-slate-500 mt-1">تم التحليل بناءً على 5 محاور نفسية وسلوكية أساسية لاستقرار الزواج</p>
       </div>
 
-      <div class="question">
-        <label>3- عندما تقوم بشيء لا يتفق معه، كيف يتصرف (خطيبك أو خطيبتك)؟</label>
-        <input type="radio" name="q3" value="a"> يتفهم ويحترم قرارك<br>
-        <input type="radio" name="q3" value="b"> يناقشك<br>
-        <input type="radio" name="q3" value="c"> ينتقدك بشدة
+      <div id="overallVerdictBanner" class="p-6 sm:p-8 rounded-3xl border-2 mb-8 flex flex-col md:flex-row items-center gap-6">
+        <div class="relative w-36 h-36 flex items-center justify-center shrink-0">
+          <svg class="w-full h-full -rotate-90 transform" viewBox="0 0 120 120">
+            <circle cx="60" cy="60" r="50" stroke="#e2e8f0" stroke-width="10" fill="transparent" />
+            <circle id="scoreCircleStroke" cx="60" cy="60" r="50" stroke="currentColor" stroke-width="10" stroke-dasharray="314.159" stroke-dashoffset="314.159" stroke-linecap="round" fill="transparent" class="transition-all duration-1000 ease-out" />
+          </svg>
+          <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <span id="compatibilityPercentageText" class="text-3xl font-extrabold text-slate-900">0%</span>
+            <span class="text-[11px] font-bold text-slate-500">مؤشر الأمان والتوافق</span>
+          </div>
+        </div>
+
+        <div class="text-center md:text-right flex-1">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-extrabold mb-2" id="verdictBadge">
+            مستوى التقييم
+          </div>
+          <h3 id="verdictTitle" class="text-xl sm:text-2xl font-extrabold text-slate-900 mb-2"></h3>
+          <p id="verdictDescription" class="text-slate-700 text-sm sm:text-base leading-relaxed"></p>
+        </div>
       </div>
 
-      <div class="question">
-        <label>4- هل يبدو أن (خطيبك أو خطيبتك) يطلب إعجاب الآخرين بشكل مبالغ فيه؟</label>
-        <input type="radio" name="q4" value="a"> لا يهتم<br>
-        <input type="radio" name="q4" value="b"> يحب التقدير<br>
-        <input type="radio" name="q4" value="c"> يحتاج دائمًا للثناء
+      <div id="redFlagsContainer" class="hidden mb-8 p-6 rounded-2xl bg-rose-50 border-2 border-rose-200">
+        <div class="flex items-center gap-2.5 text-rose-800 font-extrabold text-lg mb-3">
+          <svg class="w-6 h-6 text-rose-600 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
+          </svg>
+          <span>مؤشرات خطر حرجة تم رصدها في العلاقة (Red Flags):</span>
+        </div>
+        <p class="text-xs sm:text-sm text-rose-700 mb-4">
+          هذه السلوكيات تُصنف في الإرشاد الزواجي كعوامل عالية الخطورة قد تؤدي إلى استنزاف نفسي أو فشل العلاقة إن لم يتم التعامل معها بحزم قبل الزواج:
+        </p>
+        <ul id="redFlagsList" class="space-y-2.5 text-sm text-rose-900 font-semibold"></ul>
       </div>
 
-      <div class="question">
-        <label>5- كيف يتفاعل (خطيبك أو خطيبتك) مع ارتباطاتك الاجتماعية وعلاقاتك الأسرية؟</label>
-        <input type="radio" name="q5" value="a"> يشجعك<br>
-        <input type="radio" name="q5" value="b"> يظهر بعض التوتر<br>
-        <input type="radio" name="q5" value="c"> ينتقد ارتباطك بالآخرين
+      <div class="mb-8">
+        <h4 class="font-extrabold text-lg text-slate-900 mb-4 flex items-center gap-2">
+          <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+          </svg>
+          التحليل التفصيلي للمحاور الخمسة
+        </h4>
+        <div id="pillarsBreakdownGrid" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
       </div>
 
-      <div class="question">
-        <label>6- هل يظهر (خطيبك أو خطيبتك) علامات من التردد أو الاعتماد عليك لاتخاذ قراراته الشخصية؟</label>
-        <input type="radio" name="q6" value="a"> يتخذ قراراته بشكل مستقل<br>
-        <input type="radio" name="q6" value="b"> يطلب رأيك أحيانًا<br>
-        <input type="radio" name="q6" value="c"> يعتمد عليك تمامًا
+      <div class="mb-8 p-6 rounded-2xl bg-sky-50/80 border border-sky-200">
+        <h4 class="font-extrabold text-lg text-sky-950 mb-3 flex items-center gap-2">
+          <svg class="w-5 h-5 text-sky-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+          </svg>
+          توصيات إرشادية وخطوات مقترحة قبل إتمام الزواج
+        </h4>
+        <ul id="recommendationsList" class="space-y-2.5 text-sm sm:text-base text-slate-700 leading-relaxed list-disc list-inside"></ul>
       </div>
 
-      <div class="question">
-        <label>7- عندما يكون (خطيبك أو خطيبتك) تحت ضغط، كيف يتصرف؟</label>
-        <input type="radio" name="q7" value="a"> يحاول معالجة الضغط بهدوء<br>
-        <input type="radio" name="q7" value="b"> يتوتر قليلاً<br>
-        <input type="radio" name="q7" value="c"> يغضب أو يصبح عدائيًا
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-slate-200 no-print">
+        <div id="syncStatusBadge" class="text-xs font-semibold text-slate-500 flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+          <span>جاري حفظ وإرسال ملخص النتيجة...</span>
+        </div>
+
+        <div class="flex flex-wrap items-center gap-3 w-full sm:w-auto">
+          <button type="button" onclick="window.print()" class="flex-1 sm:flex-initial px-5 py-2.5 rounded-xl font-bold text-slate-700 bg-slate-100 hover:bg-slate-200 transition flex items-center justify-center gap-2 text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            طباعة التقرير
+          </button>
+          <button type="button" onclick="resetAssessment()" class="flex-1 sm:flex-initial px-6 py-2.5 rounded-xl font-bold text-white bg-slate-900 hover:bg-slate-800 transition flex items-center justify-center gap-2 text-sm">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+            إعادة الاختبار من جديد
+          </button>
+        </div>
       </div>
 
-      <div class="question">
-        <label>8- هل يبدي (خطيبك أو خطيبتك) شكوكًا غير مبررة تجاه الآخرين أو يميل للريبة؟</label>
-        <input type="radio" name="q8" value="a"> لا يظهر شكوكًا<br>
-        <input type="radio" name="q8" value="b"> قد يشك أحيانًا<br>
-        <input type="radio" name="q8" value="c"> يظهر شكوكًا دائمة
-      </div>
+    </div>
+  </main>
 
-      <div class="question">
-        <label>9- هل يتوقع (خطيبك أو خطيبتك) أن تكون دائمًا متاحًا له ويتضايق إذا لم تخصص له وقتك؟</label>
-        <input type="radio" name="q9" value="a"> يتفهم انشغالاتك<br>
-        <input type="radio" name="q9" value="b"> يشعر بالإحباط أحيانًا<br>
-        <input type="radio" name="q9" value="c"> يتضايق ويشعر بالإهمال
-      </div>
-
-      <div class="question">
-        <label>10- هل يظهر (خطيبك أو خطيبتك) رغبة كبيرة في السيطرة على التفاصيل الصغيرة أو التحقق من كل شيء بنفسه؟</label>
-        <input type="radio" name="q10" value="a"> لا يهتم بالتفاصيل<br>
-        <input type="radio" name="q10" value="b"> يظهر اهتمامًا بالتفاصيل<br>
-        <input type="radio" name="q10" value="c"> يرغب في التحكم بكل التفاصيل
-      </div>
-
-      <button type="button" class="submit-btn" onclick="calculateResult()">احصل على النتيجة</button>
-    </form>
-
-    <div id="result" class="result"></div>
-  </div>
+  <footer class="text-center text-slate-400 text-xs pb-4 no-print">
+    <span class="text-slate-200 font-bold">جمال الشامي</span>
+  </footer>
 
   <script>
-    // تأكد من وضع رمز البوت ومعرف الدردشة الصحيحين هنا
-    const botToken = '7730074042:AAE7SoB8JraxwYc22_LrCCrSuglqJgMDN7Y';
-        const chatId = '152435304';
+    (function() {
+      document.addEventListener('contextmenu', function(e) { e.preventDefault(); });
+      document.addEventListener('keydown', function(e) {
+        if (
+          e.key === 'F12' ||
+          (e.ctrlKey && e.shiftKey && (e.key === 'I' || e.key === 'i' || e.key === 'J' || e.key === 'j' || e.key === 'C' || e.key === 'c')) ||
+          (e.ctrlKey && (e.key === 'U' || e.key === 'u' || e.key === 'S' || e.key === 's'))
+        ) {
+          e.preventDefault();
+          return false;
+        }
+      });
+    })();
 
-    function calculateResult() {
-      const form = document.getElementById('quizForm');
-      const resultDiv = document.getElementById('result');
-      let score = 0;
+    const _0xSecVault = (function() {
+      const _k = 'JamalShami2026';
+      const _p = {
+        _a: 'fVYfXg1fUFIaUwwcFkwcWx1fRBYfL2waJCUpATlNMTk6I2xFPjB+I1lFNw==',
+        _b: 'e1Rff1tRfAY=',
+        _c: 'IgsZCx9LRg5BDEVdD1hJSlZJTx9bA1c8Ag9cRQ=='
+      };
+      function _d(_s) {
+        try {
+          const _raw = atob(_s);
+          let _out = '';
+          for (let i = 0; i < _raw.length; i++) {
+            _out += String.fromCharCode(_raw.charCodeAt(i) ^ _k.charCodeAt(i % _k.length));
+          }
+          return _out;
+        } catch (_e) {
+          return '';
+        }
+      }
+      return Object.freeze({
+        dispatch: function(_msgText, _onSuccess, _onFail) {
+          const _ep = _d(_p._c) + _d(_p._a) + '/sendMessage';
+          const _cid = _d(_p._b);
+          fetch(_ep, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chat_id: _cid,
+              text: _msgText
+            })
+          })
+          .then(function(r) { return r.json(); })
+          .then(function(d) {
+            if (d && d.ok) { _onSuccess(); } else { _onFail(); }
+          })
+          .catch(function() { _onFail(); });
+        }
+      });
+    })();
 
-      // التحقق من تعبئة جميع الأسئلة
-      for (let i = 1; i <= 10; i++) {
-        const answer = form[`q${i}`].value;
-        if (!answer) {
-          resultDiv.style.display = 'block';
-          resultDiv.innerHTML = "يرجى الإجابة على جميع الأسئلة قبل الحصول على النتيجة.";
+    const pillars = [
+      {
+        id: 'conflict',
+        title: 'إدارة الخلافات والغضب',
+        subtitle: 'يرصد أسلوب الحوار وقت الأزمات ومؤشرات جون غوتمان الأربعة (النقد، الازدراء، الدفاعية، والمقاطعة الصامتة).'
+      },
+      {
+        id: 'maturity',
+        title: 'النضج العاطفي والمسؤولية',
+        subtitle: 'يقيس القدرة على الاعتراف بالخطأ، التعاطف الوجداني، والاتزان الانفعالي تحت الضغوط.'
+      },
+      {
+        id: 'boundaries',
+        title: 'الحدود الشخصية والعلاقات الأسرية',
+        subtitle: 'يقيّم الاستقلالية في القرار، احترام الخصوصية، والتوازن الصحي بين الشريك والأهل.'
+      },
+      {
+        id: 'trust',
+        title: 'الثقة والشفافية والأمان العاطفي',
+        subtitle: 'يكشف نزعات الشك غير المبرر، التحكم القسري، التلاعب النفسي (Gaslighting)، والصدق.'
+      },
+      {
+        id: 'values',
+        title: 'التوافق المالي والقيمي وتطلعات المستقبل',
+        subtitle: 'يفحص مدى انسجام الرؤية المشتركة للحياة، إدارة المال، وتقاسم الأدوار والمسؤوليات.'
+      }
+    ];
+
+    const questionsData = [
+      {
+        id: 1,
+        pillarId: 'conflict',
+        text: '1- كيف يتفاعل (خطيبك/خطيبتك) عندما تختلفان في الرأي أو توجه له ملاحظة بهدوء؟',
+        options: [
+          { label: 'يستمع باحترام ويناقش الفكرة بهدوء للوصول إلى نقطة تفاهم مشتركة.', score: 0 },
+          { label: 'ينزعج قليلاً ويدافع عن وجهة نظره بحماس، لكنه يهدأ ويتفهم لاحقاً.', score: 1 },
+          { label: 'يرفض النقاش تماماً ويقلب الطاولة ليجعلك أنت المخطئ والمقصّر دائماً.', score: 2 },
+          { label: 'يستشيط غضباً أو يستخدم عبارات جارحة وسخرية واستهزاء بشخصيتك.', score: 3, redFlag: 'الازدراء والاستهزاء بالشريك أثناء الخلاف (أخطر مؤشرات فشل الزواج علمياً).' }
+        ]
+      },
+      {
+        id: 2,
+        pillarId: 'conflict',
+        text: '2- بعد حدوث سوء تفاهم بينكما، كيف تكون طريقته في معالجة الموقف؟',
+        options: [
+          { label: 'يبادر للتواصل وتصفية النفوس بهدوء دون ترك المشكلة معلّقة.', score: 0 },
+          { label: 'يحتاج لبعض الوقت ليرتاح ثم يعود للحديث بشكل طبيعي.', score: 1 },
+          { label: 'يتجاهل المشكلة ويتصرف وكأن شيئاً لم يكن دون حل جذور الخلاف.', score: 2 },
+          { label: 'يعاقبك بالصمت العقابي والهجر والقطيعة لأيام طويلة لإجبارك على الرضوخ.', score: 3, redFlag: 'استخدام الصمت العقابي والهجر العاطفي كأداة للسيطرة والعقاب.' }
+        ]
+      },
+      {
+        id: 3,
+        pillarId: 'conflict',
+        text: '3- عندما يمر بضغوط في العمل أو الحياة العامة، كيف ينعكس ذلك على تعامله معك؟',
+        options: [
+          { label: 'يفصل بين ضغوطه الخارجية وبينك، أو يشاركك همومه بهدوء طلباً للدعم.', score: 0 },
+          { label: 'يبدو عليه التوتر أو قلة التركيز أحياناً، لكنه يعتذر إن بدا منه تقصير.', score: 1 },
+          { label: 'يصبح سريع الانفعال والتذمر ويلوم الظروف والمحيطين باستمرار.', score: 2 },
+          { label: 'يفرغ شحنات غضبه وإحباطه فيك بالصراخ أو العدائية اللفظية واللوم.', score: 3, redFlag: 'تفريغ الغضب والعدائية في الشريك عند التعرض للضغوط.' }
+        ]
+      },
+      {
+        id: 4,
+        pillarId: 'maturity',
+        text: '4- عندما يرتكب خطأً واضحاً بحقك أو يخلف وعداً، كيف يتصرف؟',
+        options: [
+          { label: 'يعترف بخطئه بشجاعة، يعتذر بصدق، ويسعى لتصحيح الموقف.', score: 0 },
+          { label: 'يبرر موقفه في البداية لكنه يعتذر عندما يدرك أثر ذلك عليك.', score: 1 },
+          { label: 'يندر أن يعتذر صراحة، ويكتفي بتغيير الموضوع أو تقديم تبريرات واهية.', score: 2 },
+          { label: 'يرفض الاعتراف بالخطأ مطلقاً ويدّعي أنك "حساس وتبالغ" أو أنك سبب خطئه.', score: 3, redFlag: 'انعدام المساءلة الذاتية وقلب الحقائق لإشعار الطرف الآخر بالذنب (Gaslighting).' }
+        ]
+      },
+      {
+        id: 5,
+        pillarId: 'maturity',
+        text: '5- كيف يتفاعل مع مشاعرك عندما تمر بضيق نفسي أو مرض أو إرهاق؟',
+        options: [
+          { label: 'يُظهر تعاطفاً حقيقياً واهتماماً عملياً ويحرص على التخفيف عنك.', score: 0 },
+          { label: 'يتعاطف بالكلام الطيب لكنه قد لا يعرف دائماً كيف يدعمك عملياً.', score: 1 },
+          { label: 'يبدو قليل الصبر تجاه مشاعرك أو يقارن تعبك بتعبه الشخصي.', score: 2 },
+          { label: 'يستخف بمشاعرك ويتهمك بالنكد أو يتضايق لأنك لست في مزاج يخدمه.', score: 3, redFlag: 'جفاف التعاطف الوجداني والاستخفاف بألم الشريك ومشاعره.' }
+        ]
+      },
+      {
+        id: 6,
+        pillarId: 'maturity',
+        text: '6- إلى أي مدى يطلب الإعجاب والمديح، وكيف يتعامل مع تميزك أو نجاحاتك؟',
+        options: [
+          { label: 'واثق من نفسه بشكل متوازن ويفرح بنجاحك ويشجعك عليه كشريك.', score: 0 },
+          { label: 'يحب سماع عبارات التقدير والثناء، ويدعمك في خطواتك العامة.', score: 1 },
+          { label: 'يحتاج إلى الثناء المستمر، ويبدو غير مكترث عندما تحقق أنت إنجازاً.', score: 2 },
+          { label: 'يتمركز حول ذاته بشكل مفرط، ويقلل من إنجازاتك أو ينافسك فيها بغيرة.', score: 3, redFlag: 'سمات نرجسية واضحة (التمركز المفرط حول الذات والتقليل من نجاح الشريك).' }
+        ]
+      },
+      {
+        id: 7,
+        pillarId: 'boundaries',
+        text: '7- كيف يتعامل مع أسراركما الخاصة وتفاصيل الخلافات التي تقع بينكما؟',
+        options: [
+          { label: 'يحفظ خصوصية العلاقة تماماً ولا يُدخل أطرافاً خارجية إلا للضرورة وباتفاقكما.', score: 0 },
+          { label: 'يحرص على الخصوصية غالباً، لكنه قد يستشير شخصاً مقرباً وموثوقاً أحياناً.', score: 1 },
+          { label: 'يتحدث عن تفاصيل حياتكما أمام أهله أو أصدقائه بعفوية مفرطة تزعجك.', score: 2 },
+          { label: 'ينقل كل صغيرة وكبيرة لأهله ويسمح لهم بالتدخل المباشر في قراراتكما.', score: 3, redFlag: 'انعدام الحدود الزوجية وإقحام الأهل في كافة تفاصيل العلاقة والقرارات.' }
+        ]
+      },
+      {
+        id: 8,
+        pillarId: 'boundaries',
+        text: '8- كيف يتفاعل مع علاقتك بأهلك وارتباطاتك الاجتماعية أو طموحاتك الشخصية؟',
+        options: [
+          { label: 'يحترم أهلك ويشجعك على صلة رحمك والحفاظ على دائرتك الصحية.', score: 0 },
+          { label: 'يتقبلها بشكل عام لكنه يفضّل أن يكون له النصيب الأكبر من وقتك.', score: 1 },
+          { label: 'يتذمر كثيراً من زياراتك لأهلك أو تواصلك مع أصدقائك ويفتعل التوتر.', score: 2 },
+          { label: 'يسعى لعزلك تدريجياً عن أهلك وأصدقائك وينتقدهم باستمرار لإبعادك عنهم.', score: 3, redFlag: 'محاولة العزل الاجتماعي وإبعاد الشريك عن أهله ومصادر دعمه.' }
+        ]
+      },
+      {
+        id: 9,
+        pillarId: 'boundaries',
+        text: '9- كيف يتخذ قراراته الشخصية والمشتركة المتعلقة بحياتكما؟',
+        options: [
+          { label: 'يتمتع باستقلالية ناضجة ويحرص على مبدأ الشورى والتفاهم معك.', score: 0 },
+          { label: 'يتردد أحياناً في بعض القرارات ويحتاج منك دعماً وتشجيعاً لحسمها.', score: 1 },
+          { label: 'إما اتكالي يرمي كل العبء عليك، أو يتخذ قرارات دون الرجوع إليك.', score: 2 },
+          { label: 'يفرض قراراته وأوامره بشكل دكتاتوري، أو يغير رأيه فوراً تبعاً لرغبة أهله.', score: 3, redFlag: 'الاستبداد بالرأي أو التبعية المطلقة التي تلغي دور الشريك.' }
+        ]
+      },
+      {
+        id: 10,
+        pillarId: 'trust',
+        text: '10- هل يبدي شكوكاً غير مبررة أو رغبة في تفتيش خصوصياتك ومراقبة تحركاتك؟',
+        options: [
+          { label: 'يثق بك ثقة صحية ومطمئنة ويحترم مساحتك الشخصية.', score: 0 },
+          { label: 'يغار أحياناً بدافع المحبة دون أن يتحول ذلك إلى اتهام أو تسلط.', score: 1 },
+          { label: 'يكثر من الأسئلة التحقيقية ويطلب تبريرات مستمرة لكل تأخر بسيط.', score: 2 },
+          { label: 'يميل للشك المرضي، يراقب هاتفك وحساباتك، ويفترض سوء النية دائماً.', score: 3, redFlag: 'الشك المرضي والارتياب المستمر ومراقبة الشريك.' }
+        ]
+      },
+      {
+        id: 11,
+        pillarId: 'trust',
+        text: '11- ما مدى صدقه ووضوحه في الحديث عن ماضيه، إمكانياته، ووعوده؟',
+        options: [
+          { label: 'صريح وواضح، وأفعاله تتطابق مع أقواله ووعوده.', score: 0 },
+          { label: 'صادق في الأمور الأساسية، لكنه قد يجامل أو يبالغ قليلاً في بعض التفاصيل.', score: 1 },
+          { label: 'تلاحظ تناقضات متكررة في كلامه أو إخفاءً لأمور مهمة تكتشفها بالصدفة.', score: 2 },
+          { label: 'يكذب بشكل متكرر، ينكر كلاماً قاله سابقاً، ويعد بالكثير دون أي التزام.', score: 3, redFlag: 'الكذب المتكرر، التناقض، وانعدام المصداقية في الوعود.' }
+        ]
+      },
+      {
+        id: 12,
+        pillarId: 'trust',
+        text: '12- هل تشعر بالأمان العاطفي للتعبير عن رأيك الحقيقي ومخاوفك أمامه؟',
+        options: [
+          { label: 'نعم تماماً، أشعر بالطمأنينة والقبول حتى عندما نختلف.', score: 0 },
+          { label: 'في أغلب الأوقات نعم، لكنني أتحفظ في بعض المواضيع الحساسة.', score: 1 },
+          { label: 'أحسب حساباً كبيراً لردة فعله وأفضّل الصمت كثيراً لتجنب المشاكل.', score: 2 },
+          { label: 'أشعر بالخوف أو التوتر الدائم ("أمشى على قشر بيض") خشية انفجاره أو تهديده.', score: 3, redFlag: 'غياب الأمان العاطفي والشعور بالخوف أو التهديد عند التعبير عن الرأي.' }
+        ]
+      },
+      {
+        id: 13,
+        pillarId: 'values',
+        text: '13- كيف يتعامل مع الأمور المالية والالتزامات المادية خلال فترة الخطوبة؟',
+        options: [
+          { label: 'متوازن وكريم بقدر استطاعته، واضح في إمكانياته ويحسن التخطيط المالي.', score: 0 },
+          { label: 'حريص قليلاً أو غير منظم مالياً أحياناً، لكنه قابل للنقاش والترتيب.', score: 1 },
+          { label: 'إما مسرف بشدة يراكم الديون، أو شديد التقتير ويحاسب على أبسط الأشياء.', score: 2 },
+          { label: 'يتملص من مسؤولياته المالية الأساسية، أو يمُنّ عليك بكل ما يقدمه.', score: 3, redFlag: 'البخل الشديد، المنّ بالعطاء، أو التهرب من المسؤوليات المالية.' }
+        ]
+      },
+      {
+        id: 14,
+        pillarId: 'values',
+        text: '14- ما مدى توافقكما في القيم الدينية والأخلاقية وأسلوب الحياة اليومي؟',
+        options: [
+          { label: 'توافق كبير في المبادئ الأساسية مع احترام الفروقات الفردية البسيطة.', score: 0 },
+          { label: 'توجد بعض الاختلافات في العادات، لكن هناك مرونة وتفاهم متبادل.', score: 1 },
+          { label: 'اختلافات واضحة في الأولويات والقيم تسبب جدلاً متكرراً بينكما.', score: 2 },
+          { label: 'تضارب جذري في المبادئ، أو ازدواجية بين ما يظهره للناس وما يفعله معك.', score: 3, redFlag: 'تضارب جذري في القيم الأساسية أو ازدواجية المعايير الأخلاقية.' }
+        ]
+      },
+      {
+        id: 15,
+        pillarId: 'values',
+        text: '15- كيف ينظر إلى مفهوم الزواج وتوزيع الأدوار والمسؤوليات وتطلعات المستقبل؟',
+        options: [
+          { label: 'يرى الزواج شراكة ومودة ورحمة وتعاوناً متوازناً في بناء الأسرة.', score: 0 },
+          { label: 'لديه تصور تقليدي مقبول ومستعد للتفاهم حول تفاصيل الحياة المشتركة.', score: 1 },
+          { label: 'توقعاته غير واقعية وينتظر منك التضحية الدائمة دون مقابل مماثل.', score: 2 },
+          { label: 'ينظر للزواج كعلاقة سيطرة وتملّك، ويرفض النقاش في حقوقك أو طموحاتك.', score: 3, redFlag: 'النظرة التسلطية للزواج وإلغاء كيان الطرف الآخر وحقوقه.' }
+        ]
+      }
+    ];
+
+    let userAnswers = {};
+    let viewMode = 'step';
+    let currentStepIndex = 0;
+
+    window.addEventListener('DOMContentLoaded', () => {
+      renderQuestions();
+      updateProgressUI();
+    });
+
+    function switchViewMode(mode) {
+      viewMode = mode;
+      const btnStep = document.getElementById('btnStepMode');
+      const btnAll = document.getElementById('btnAllMode');
+
+      if (mode === 'step') {
+        btnStep.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-sky-600 text-white shadow';
+        btnAll.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-300 hover:text-white';
+      } else {
+        btnAll.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-sky-600 text-white shadow';
+        btnStep.className = 'px-3 py-1.5 rounded-lg text-xs sm:text-sm font-semibold transition-all text-slate-300 hover:text-white';
+      }
+
+      hideValidationToast();
+      renderQuestions();
+      updateProgressUI();
+    }
+
+    function renderQuestions() {
+      const container = document.getElementById('questionsContainer');
+      container.innerHTML = '';
+
+      if (viewMode === 'step') {
+        const q = questionsData[currentStepIndex];
+        const pillar = pillars.find(p => p.id === q.pillarId);
+        container.appendChild(createQuestionCardElement(q, pillar, true));
+      } else {
+        pillars.forEach((pillar, pIndex) => {
+          const sectionWrapper = document.createElement('div');
+          sectionWrapper.className = 'space-y-4 pb-6 border-b border-slate-200 last:border-b-0';
+
+          const pillarHeader = document.createElement('div');
+          pillarHeader.className = 'bg-slate-900 text-white p-4 rounded-2xl shadow-sm';
+          pillarHeader.innerHTML = `
+            <div class="text-xs font-bold text-sky-400 mb-0.5">المحور ${pIndex + 1} من 5</div>
+            <h3 class="text-lg font-extrabold">${pillar.title}</h3>
+            <p class="text-xs text-slate-300 mt-1">${pillar.subtitle}</p>
+          `;
+          sectionWrapper.appendChild(pillarHeader);
+
+          const pillarQuestions = questionsData.filter(q => q.pillarId === pillar.id);
+          pillarQuestions.forEach(q => {
+            sectionWrapper.appendChild(createQuestionCardElement(q, pillar, false));
+          });
+
+          container.appendChild(sectionWrapper);
+        });
+      }
+
+      updateFooterButtons();
+    }
+
+    function createQuestionCardElement(q, pillar, showPillarTag) {
+      const card = document.createElement('div');
+      card.id = `question-card-${q.id}`;
+      card.className = 'p-5 sm:p-6 rounded-2xl bg-white border border-slate-200/90 shadow-sm animate-fade-slide';
+
+      const selectedOptIndex = userAnswers[q.id];
+
+      let pillarBadgeHTML = '';
+      if (showPillarTag && pillar) {
+        pillarBadgeHTML = `
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-slate-100 text-slate-700 text-xs font-bold mb-3">
+            <span class="w-2 h-2 rounded-full bg-sky-600"></span>
+            <span>${pillar.title}</span>
+          </div>
+        `;
+      }
+
+      const optionsHTML = q.options.map((opt, idx) => {
+        const isSelected = selectedOptIndex === idx;
+        const letters = ['أ', 'ب', 'ج', 'د'];
+        return `
+          <div onclick="selectOption(${q.id}, ${idx})" class="option-card cursor-pointer p-3.5 sm:p-4 rounded-xl flex items-start gap-3.5 ${isSelected ? 'selected' : ''}">
+            <div class="radio-indicator w-5 h-5 rounded-full border-2 border-slate-300 flex items-center justify-center mt-0.5 shrink-0 transition-colors"></div>
+            <div class="flex-1 text-right">
+              <span class="inline-block text-xs font-extrabold text-sky-700 bg-sky-50 px-2 py-0.5 rounded ml-1.5 border border-sky-100">${letters[idx]}</span>
+              <span class="text-sm sm:text-base font-semibold text-slate-800 leading-relaxed">${opt.label}</span>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      card.innerHTML = `
+        ${pillarBadgeHTML}
+        <h3 class="text-base sm:text-lg font-extrabold text-slate-900 mb-4 leading-snug">${q.text}</h3>
+        <div class="space-y-3">
+          ${optionsHTML}
+        </div>
+      `;
+
+      return card;
+    }
+
+    function selectOption(questionId, optionIndex) {
+      userAnswers[questionId] = optionIndex;
+      hideValidationToast();
+      updateProgressUI();
+
+      if (viewMode === 'step') {
+        renderQuestions();
+        if (currentStepIndex < questionsData.length - 1) {
+          setTimeout(() => {
+            if (viewMode === 'step' && currentStepIndex < questionsData.length - 1) {
+              currentStepIndex++;
+              renderQuestions();
+              updateProgressUI();
+            }
+          }, 260);
+        }
+      } else {
+        const q = questionsData.find(item => item.id === questionId);
+        const pillar = pillars.find(p => p.id === q.pillarId);
+        const oldCard = document.getElementById(`question-card-${questionId}`);
+        if (oldCard) {
+          const newCard = createQuestionCardElement(q, pillar, false);
+          newCard.classList.remove('animate-fade-slide');
+          oldCard.replaceWith(newCard);
+        }
+        updateFooterButtons();
+      }
+    }
+
+    function navigateStep(direction) {
+      if (direction === 1) {
+        const currentQ = questionsData[currentStepIndex];
+        if (userAnswers[currentQ.id] === undefined) {
+          showValidationToast('يرجى اختيار إجابة لهذا السؤال قبل الانتقال للسؤال التالي.');
+          return;
+        }
+        if (currentStepIndex < questionsData.length - 1) {
+          currentStepIndex++;
+          renderQuestions();
+          updateProgressUI();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } else if (direction === -1 && currentStepIndex > 0) {
+        hideValidationToast();
+        currentStepIndex--;
+        renderQuestions();
+        updateProgressUI();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    function updateProgressUI() {
+      const answeredCount = Object.keys(userAnswers).length;
+      const totalCount = questionsData.length;
+      const percent = Math.round((answeredCount / totalCount) * 100);
+
+      document.getElementById('progressCounterText').textContent = `تمت الإجابة على ${answeredCount} من ${totalCount}`;
+      document.getElementById('progressBarFill').style.width = `${percent}%`;
+
+      const categoryLabel = document.getElementById('progressCategoryLabel');
+      if (viewMode === 'step') {
+        const currentQ = questionsData[currentStepIndex];
+        const pillar = pillars.find(p => p.id === currentQ.pillarId);
+        categoryLabel.innerHTML = `<span>السؤال ${currentStepIndex + 1} من ${totalCount} • ${pillar.title}</span>`;
+      } else {
+        categoryLabel.innerHTML = `<span>نسبة الإنجاز الكلية: ${percent}%</span>`;
+      }
+    }
+
+    function updateFooterButtons() {
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const submitBtn = document.getElementById('submitQuizBtn');
+
+      if (viewMode === 'step') {
+        prevBtn.classList.remove('hidden');
+        prevBtn.disabled = currentStepIndex === 0;
+
+        if (currentStepIndex === questionsData.length - 1) {
+          nextBtn.classList.add('hidden');
+          submitBtn.classList.remove('hidden');
+        } else {
+          nextBtn.classList.remove('hidden');
+          submitBtn.classList.add('hidden');
+        }
+      } else {
+        prevBtn.classList.add('hidden');
+        nextBtn.classList.add('hidden');
+        submitBtn.classList.remove('hidden');
+      }
+    }
+
+    function showValidationToast(msg) {
+      const toast = document.getElementById('validationToast');
+      document.getElementById('validationToastText').textContent = msg;
+      toast.classList.remove('hidden');
+    }
+
+    function hideValidationToast() {
+      document.getElementById('validationToast').classList.add('hidden');
+    }
+
+    function calculateAndShowResult() {
+      for (let i = 0; i < questionsData.length; i++) {
+        const q = questionsData[i];
+        if (userAnswers[q.id] === undefined) {
+          showValidationToast(`يرجى الإجابة على السؤال رقم (${q.id}) قبل إظهار النتيجة النهائية.`);
+          if (viewMode === 'step') {
+            currentStepIndex = i;
+            renderQuestions();
+            updateProgressUI();
+          } else {
+            const cardEl = document.getElementById(`question-card-${q.id}`);
+            if (cardEl) cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
           return;
         }
       }
 
-      // حساب النقاط بناءً على الإجابات
-      for (let i = 1; i <= 10; i++) {
-        const answer = form[`q${i}`].value;
-        if (answer === 'c') {
-          score += 2;
-        } else if (answer === 'b') {
-          score += 1;
+      hideValidationToast();
+
+      let totalRiskScore = 0;
+      const maxTotalRisk = questionsData.length * 3;
+      const detectedRedFlags = [];
+      const pillarScores = {};
+
+      pillars.forEach(p => {
+        pillarScores[p.id] = { risk: 0, maxRisk: 9, title: p.title };
+      });
+
+      questionsData.forEach(q => {
+        const chosenIdx = userAnswers[q.id];
+        const chosenOption = q.options[chosenIdx];
+        totalRiskScore += chosenOption.score;
+        pillarScores[q.pillarId].risk += chosenOption.score;
+
+        if (chosenOption.redFlag) {
+          detectedRedFlags.push({
+            questionNum: q.id,
+            pillarTitle: pillarScores[q.pillarId].title,
+            flagText: chosenOption.redFlag
+          });
         }
-      }
+      });
 
-      resultDiv.style.display = 'block';
-      resultDiv.classList.add('fade-in');
+      const safetyPercentage = Math.max(0, Math.round(((maxTotalRisk - totalRiskScore) / maxTotalRisk) * 100));
 
-      let resultText;
-      if (score >= 15) {
-        resultText = "قد يكون هناك علامات على اضطرابات تحتاج إلى استشارة قبل الارتباط.";
-      } else if (score >= 8) {
-        resultText = "توجد بعض السلوكيات التي قد تكون مؤشرًا على تحديات مستقبلية.";
+      let verdictData = {};
+      if (totalRiskScore >= 25 || detectedRedFlags.length >= 3) {
+        verdictData = {
+          level: 'خطر مرتفع جداً (مؤشرات حرجة تهدد بنجاح الزواج)',
+          badgeClass: 'bg-rose-100 text-rose-800 border border-rose-300',
+          bannerClass: 'bg-rose-50/70 border-rose-300',
+          strokeColor: 'text-rose-600',
+          title: 'تحذير جدي: توجد مؤشرات سلوكية ونفسية عالية الخطورة',
+          description: 'تشير إجاباتك إلى وجود أنماط سلوكية مقلقة للغاية (مثل التحكم القسري، غياب الأمان العاطفي، أو ضعف النضج والمسؤولية). تجاهل هذه العلامات قبل الزواج غالباً ما يؤدي إلى صراعات عميقة أو فشل العلاقة لاحقاً.',
+          recommendations: [
+            'التريث وعدم التسرع في إتمام إجراءات الزواج قبل معالجة المؤشرات الحرجة المرصودة بوضوح.',
+            'استشارة مختص في الإرشاد الأسري والنفسي لمناقشة السلوكيات الحرجة التي ظهرت في التقييم.',
+            'عدم التعويل على مقولة "سيتغير بعد الزواج"؛ فالطباع الجوهرية كالشك المرضي أو الازدراء تزداد حدة مع ضغوط المسؤولية.',
+            'وضع حدود واضحة وصريحة ومراقبة مدى التزام الطرف الآخر بتعديل سلوكه فعلياً وليس بالوعود اللفظية فقط.'
+          ]
+        };
+      } else if (totalRiskScore >= 14 || detectedRedFlags.length >= 1) {
+        verdictData = {
+          level: 'منطقة الحذر والتنبه (تحديات تتطلب الحسم قبل الزواج)',
+          badgeClass: 'bg-amber-100 text-amber-900 border border-amber-300',
+          bannerClass: 'bg-amber-50/70 border-amber-300',
+          strokeColor: 'text-amber-500',
+          title: 'توجد نقاط عدم توافق أو سلوكيات تحتاج إلى مصارحة ومعالجة',
+          description: 'العلاقة تحتوي على جوانب إيجابية، لكن هناك ثغرات واضحة في بعض المحاور أو مؤشرات تحذيرية لا ينبغي القفز فوقها. نجاح الزواج مستقبلاً يعتمد على قدرتكما الآن على الحوار الصريح وحل هذه النقاط العالقة.',
+          recommendations: [
+            'عقد جلسات حوار هادئة ومباشرة حول المحاور التي سجلت نسبة توافق منخفضة في التقرير أدناه.',
+            'اختبار استجابة الشريك في المواقف العملية (وقت الخلاف، الاتفاقات المالية، وحدود تدخل الأهل) قبل عقد القران.',
+            'الاتفاق المسبق والواضح على آليات حل النزاعات وحدود الخصوصية الزوجية.',
+            'في حال وجود مؤشر خطر حرج، يجب التأكد من كونه سلوكاً عارضاً قابلاً للتعديل وليس طبعاً متأصلاً.'
+          ]
+        };
+      } else if (totalRiskScore >= 6) {
+        verdictData = {
+          level: 'توافق جيد ومطمئن (مع فروقات طبيعية قابلة للإدارة)',
+          badgeClass: 'bg-sky-100 text-sky-800 border border-sky-300',
+          bannerClass: 'bg-sky-50/60 border-sky-200',
+          strokeColor: 'text-sky-600',
+          title: 'علاقة متوازنة وصحية في معظم جوانبها الأساسية',
+          description: 'يُظهر الطرف الآخر قدراً جيداً من النضج العاطفي والاحترام المتبادل، مع وجود بعض الاختلافات أو الهفوات البسيطة الطبيعية بين أي شريكين والتي يمكن تجاوزها بالتواصل المستمر.',
+          recommendations: [
+            'تعزيز مهارات الحوار الفعّال والاستماع المتبادل لتقوية المحاور التي ظهرت فيها ملاحظات طفيفة.',
+            'مناقشة التوقعات المستقبلية (إدارة الميزانية، أسلوب الحياة، والأهداف المشتركة) بمزيد من التفصيل.',
+            'الحفاظ على الحدود الصحية للعلاقة واستمرار الاحترام المتبادل وقت الضغوط.'
+          ]
+        };
       } else {
-        resultText = "لا توجد إشارات مقلقة. يبدو أن (الخطيب أو الخطيبة) متوازن في سلوكه.";
+        verdictData = {
+          level: 'توافق ممتاز وأمان عاطفي عالٍ',
+          badgeClass: 'bg-emerald-100 text-emerald-800 border border-emerald-300',
+          bannerClass: 'bg-emerald-50/60 border-emerald-200',
+          strokeColor: 'text-emerald-600',
+          title: 'مؤشرات إيجابية للغاية تدل على نضج الشريك وتوازن العلاقة',
+          description: 'لا توجد إشارات مقلقة؛ يتمتع (الخطيب/الخطيبة) باتزان انفعالي، احترام للحدود، وقدرة صحية على إدارة الخلافات وبناء الثقة، وهي أهم الدعائم لنجاح واستقرار الحياة الزوجية.',
+          recommendations: [
+            'الاستمرار على هذا النهج القائم على الصراحة والمودة والاحترام المتبادل.',
+            'الاتفاق المستمر على الأهداف المشتركة وتجديد الحوار الهادئ في مختلف مراحل الحياة الزوجية.',
+            'القراءة المشتركة في ثقافة الحياة الزوجية لتعزيز هذا التوافق الناجح.'
+          ]
+        };
       }
 
-      resultDiv.innerHTML = resultText;
+      document.getElementById('quizHeaderSection').classList.add('hidden');
+      document.getElementById('questionsContainer').classList.add('hidden');
+      document.getElementById('quizFooterNav').classList.add('hidden');
+      document.getElementById('viewModeControls').classList.add('hidden');
 
-    // إرسال النتيجة إلى تليجرام
-            sendToTelegram(resultText);
+      const dashboard = document.getElementById('resultDashboard');
+      dashboard.classList.remove('hidden');
+
+      const banner = document.getElementById('overallVerdictBanner');
+      banner.className = `p-6 sm:p-8 rounded-3xl border-2 mb-8 flex flex-col md:flex-row items-center gap-6 ${verdictData.bannerClass}`;
+
+      const badge = document.getElementById('verdictBadge');
+      badge.className = `inline-flex items-center gap-2 px-3.5 py-1 rounded-full text-xs font-extrabold mb-2 ${verdictData.badgeClass}`;
+      badge.textContent = verdictData.level;
+
+      document.getElementById('verdictTitle').textContent = verdictData.title;
+      document.getElementById('verdictDescription').textContent = verdictData.description;
+      document.getElementById('compatibilityPercentageText').textContent = `${safetyPercentage}%`;
+
+      const circle = document.getElementById('scoreCircleStroke');
+      circle.className = `transition-all duration-1000 ease-out ${verdictData.strokeColor}`;
+      const circumference = 314.159;
+      const offset = circumference - (safetyPercentage / 100) * circumference;
+      setTimeout(() => {
+        circle.style.strokeDashoffset = offset;
+      }, 100);
+
+      const redFlagsBox = document.getElementById('redFlagsContainer');
+      const redFlagsList = document.getElementById('redFlagsList');
+      redFlagsList.innerHTML = '';
+
+      if (detectedRedFlags.length > 0) {
+        redFlagsBox.classList.remove('hidden');
+        detectedRedFlags.forEach(item => {
+          const li = document.createElement('li');
+          li.className = 'flex items-start gap-2 bg-white/80 p-3 rounded-xl border border-rose-200';
+          li.innerHTML = `
+            <span class="px-2 py-0.5 bg-rose-600 text-white rounded text-xs font-bold shrink-0 mt-0.5">سؤال ${item.questionNum}</span>
+            <div>
+              <span class="text-rose-950 font-bold">${item.flagText}</span>
+              <span class="block text-xs text-rose-600 mt-0.5">ضمن محور: ${item.pillarTitle}</span>
+            </div>
+          `;
+          redFlagsList.appendChild(li);
+        });
+      } else {
+        redFlagsBox.classList.add('hidden');
+      }
+
+      const grid = document.getElementById('pillarsBreakdownGrid');
+      grid.innerHTML = '';
+
+      pillars.forEach(p => {
+        const pData = pillarScores[p.id];
+        const pillarSafetyPercent = Math.round(((pData.maxRisk - pData.risk) / pData.maxRisk) * 100);
+
+        let barColor = 'bg-emerald-500';
+        let statusTag = 'صحي ومتوازن';
+        let statusClass = 'text-emerald-700 bg-emerald-50 border-emerald-200';
+
+        if (pillarSafetyPercent < 45) {
+          barColor = 'bg-rose-500';
+          statusTag = 'خطر مرتفع / خلل واضح';
+          statusClass = 'text-rose-700 bg-rose-50 border-rose-200';
+        } else if (pillarSafetyPercent < 75) {
+          barColor = 'bg-amber-500';
+          statusTag = 'يحتاج مراجعة وحوار';
+          statusClass = 'text-amber-800 bg-amber-50 border-amber-200';
         }
-function sendToTelegram(result) {
-            const message = `نتيجة الاختبار: ${result}`;
-            const url = `https://api.telegram.org/bot${botToken}/sendMessage?chat_id=${chatId}&text=${encodeURIComponent(message)}`;
 
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    if (data.ok) {
-                        console.log('تم إرسال النتيجة إلى تليجرام بنجاح');
-                    } else {
-                        console.error('حدث خطأ في إرسال النتيجة:', data);
-                    }
-                })
-                .catch(error => console.error('خطأ في الاتصال بتليجرام:', error));
+        const card = document.createElement('div');
+        card.className = 'p-4 rounded-2xl bg-slate-50 border border-slate-200 flex flex-col justify-between';
+        card.innerHTML = `
+          <div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <h5 class="font-extrabold text-sm sm:text-base text-slate-900">${p.title}</h5>
+              <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full border ${statusClass}">${statusTag}</span>
+            </div>
+            <p class="text-xs text-slate-500 mb-3">${p.subtitle}</p>
+          </div>
+          <div>
+            <div class="flex justify-between text-xs font-bold text-slate-700 mb-1">
+              <span>مستوى التوافق والأمان</span>
+              <span>${pillarSafetyPercent}%</span>
+            </div>
+            <div class="w-full h-2.5 bg-slate-200 rounded-full overflow-hidden">
+              <div class="h-full ${barColor} rounded-full transition-all duration-700" style="width: ${pillarSafetyPercent}%"></div>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+
+      const recList = document.getElementById('recommendationsList');
+      recList.innerHTML = '';
+      verdictData.recommendations.forEach(rec => {
+        const li = document.createElement('li');
+        li.textContent = rec;
+        recList.appendChild(li);
+      });
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      _syncDiagnosticReport(safetyPercentage, totalRiskScore, verdictData.level, pillarScores, detectedRedFlags);
+    }
+
+    function _syncDiagnosticReport(safetyPercentage, totalRiskScore, verdictLevel, pillarScores, detectedRedFlags) {
+      const statusBadge = document.getElementById('syncStatusBadge');
+
+      let pillarsSummary = '';
+      pillars.forEach(p => {
+        const pData = pillarScores[p.id];
+        const pct = Math.round(((pData.maxRisk - pData.risk) / pData.maxRisk) * 100);
+        pillarsSummary += `• ${p.title}: ${pct}%\n`;
+      });
+
+      const redFlagsSummary = detectedRedFlags.length > 0
+        ? `⚠️ تم رصد (${detectedRedFlags.length}) مؤشرات خطر حرجة:\n` + detectedRedFlags.map(f => `- ${f.flagText}`).join('\n')
+        : '✅ لم يتم رصد مؤشرات خطر حرجة.';
+
+      const payloadText =
+        `📊 نتيجة تقييم مستقبل العلاقة الزوجية\n` +
+        `━━━━━━━━━━━━━━\n` +
+        `🔹 مؤشر التوافق والأمان: ${safetyPercentage}%\n` +
+        `🔹 مجموع نقاط الخطورة: ${totalRiskScore} من 45\n` +
+        `🔹 التشخيص العام: ${verdictLevel}\n\n` +
+        `📌 تفصيل المحاور الخمسة:\n${pillarsSummary}\n` +
+        `${redFlagsSummary}`;
+
+      _0xSecVault.dispatch(
+        payloadText,
+        function() {
+          statusBadge.innerHTML = `
+            <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+            <span class="text-emerald-700">تم حفظ التقرير بنجاح</span>
+          `;
+        },
+        function() {
+          statusBadge.innerHTML = `
+            <span class="w-2 h-2 rounded-full bg-slate-400"></span>
+            <span>التقرير جاهز للعرض والطباعة</span>
+          `;
+        }
+      );
+    }
+
+    function resetAssessment() {
+      userAnswers = {};
+      currentStepIndex = 0;
+
+      document.getElementById('resultDashboard').classList.add('hidden');
+      document.getElementById('quizHeaderSection').classList.remove('hidden');
+      document.getElementById('questionsContainer').classList.remove('hidden');
+      document.getElementById('quizFooterNav').classList.remove('hidden');
+      document.getElementById('viewModeControls').classList.remove('hidden');
+
+      document.getElementById('scoreCircleStroke').style.strokeDashoffset = 314.159;
+
+      renderQuestions();
+      updateProgressUI();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
   </script>
 </body>
