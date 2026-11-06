@@ -703,5 +703,107 @@
       }
     ],
     "tabSwitchCount": 2
+  },
+  {
+    "examTitle": "التوحيد (1)",
+    "studentName": "أماني قايد صالح",
+    "deviceId": "DEV-8YCWHXLNX-mr3mkorf",
+    "submissionDate": "2026-11-06T07:36:44.765Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "يرى الأشاعرة أن الاقتران بين المقدمات والنتيجة هو ضرورة عقلية حتمية لا تنفك عنها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "يعود خطأ كثير من الناس في تحصيل العلم إلى خلل في ترتيب المقدمات أو الاستدلال بها في غير محلها وليس إلى الجهل بها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "تتضمن عناصر تحقق العلم المشروطة في النص كل ما يأتي، عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إدراك أن ما يلزم عن الحق فهو حق بالضرورة",
+        "correctAnswer": "الاستناد إلى كشف ذوقي يزيل الشكوك والتردد"
+      },
+      {
+        "question": "يدل اختلاف العقلاء وتعدد أقوالهم حول ذات الله وصفاته بحسب النص على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحة دعوى أن معرفة الله تعالى حاصلة بالبداهة والضرورة",
+        "correctAnswer": "بطلان دعوى الضرورة في المعرفة الدينية وعدم بداهتها"
+      },
+      {
+        "question": "يُعد الذوق والإلهام طريقاً شخصياً لا عاماً ولا يصلح معياراً موثوقاً لمعرفة العقيدة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما النتيجة المترتبة على بطلان الاعتماد على السمع المجرد (النقل) ابتداءً في إثبات العقيدة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وجوب إثبات وجود الله وصفاته بالعقل أولاً ليصح الاحتجاج بالنص"
+      },
+      {
+        "question": "ما المذهب الذي يرى أن النظر العقلي المرتب يؤدي حتماً إلى العلم القطعي وهو الطريق الوحيد للمعرفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعتزلة وهو المذهب المختار"
+      },
+      {
+        "question": "يعد النظر العقلي واجباً شرعاً استناداً إلى قاعدة أن ما لا يتم الواجب إلا به فهو واجب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يكفي الإقرار الظاهري بالشهادتين لتحصيل العلم اليقيني الواجب في العقيدة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما المقصود بالعلم الضروري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم لا يتحقق إلا بترتيب مقدمات منطقية متتابعة",
+        "correctAnswer": "علم يدرك مباشرة دون الحاجة إلى نظر أو استدلال عقلي"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
