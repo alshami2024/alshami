@@ -302,7 +302,9 @@
       "year": "الأول",
       "doctor": "د. وليد صالح",
       "room": "C4",
-      "attendance": {}
+      "attendance": {
+        "12": true
+      }
     }
   ],
   "visitingProfessors": [],
