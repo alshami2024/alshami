@@ -282,6 +282,7 @@
       "room": "C1",
       "attendance": {
         "1": false,
+        "2": true,
         "12": true
       }
     },
@@ -328,6 +329,7 @@
       "room": "C4",
       "attendance": {
         "1": false,
+        "2": true,
         "12": true
       }
     }
