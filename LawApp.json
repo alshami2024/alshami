@@ -232,7 +232,9 @@
       "year": "الأول",
       "doctor": "د. عمار النهام",
       "room": "C4",
-      "attendance": {}
+      "attendance": {
+        "12": true
+      }
     },
     {
       "id": 1793466123217,
