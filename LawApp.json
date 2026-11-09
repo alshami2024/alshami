@@ -226,6 +226,7 @@
       "doctor": "أ. علي المضواحي",
       "room": "C4",
       "attendance": {
+        "1": true,
         "12": false
       }
     },
