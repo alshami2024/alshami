@@ -2298,5 +2298,106 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "التوحيد (1)",
+    "studentName": "أماني قايد صالح النجار",
+    "deviceId": "DEV-8YCWHXLNX-mr3mkorf",
+    "submissionDate": "2026-11-09T16:41:49.165Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما النتيجة المترتبة على بطلان الاعتماد على السمع المجرد (النقل) ابتداءً في إثبات العقيدة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "وجوب إثبات وجود الله وصفاته بالعقل أولاً ليصح الاحتجاج بالنص"
+      },
+      {
+        "question": "يعد النظر العقلي واجباً شرعاً استناداً إلى قاعدة أن ما لا يتم الواجب إلا به فهو واجب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يُعد الذوق والإلهام طريقاً شخصياً لا عاماً ولا يصلح معياراً موثوقاً لمعرفة العقيدة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما المذهب الذي يرى أن النظر العقلي المرتب يؤدي حتماً إلى العلم القطعي وهو الطريق الوحيد للمعرفة؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعتزلة وهو المذهب المختار"
+      },
+      {
+        "question": "يكفي الإقرار الظاهري بالشهادتين لتحصيل العلم اليقيني الواجب في العقيدة.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "يعود خطأ كثير من الناس في تحصيل العلم إلى خلل في ترتيب المقدمات أو الاستدلال بها في غير محلها وليس إلى الجهل بها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "تتضمن عناصر تحقق العلم المشروطة في النص كل ما يأتي، عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستناد إلى كشف ذوقي يزيل الشكوك والتردد"
+      },
+      {
+        "question": "يدل اختلاف العقلاء وتعدد أقوالهم حول ذات الله وصفاته بحسب النص على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لم تتم الإجابة",
+        "correctAnswer": "بطلان دعوى الضرورة في المعرفة الدينية وعدم بداهتها"
+      },
+      {
+        "question": "ما المقصود بالعلم الضروري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم لا يتحقق إلا بترتيب مقدمات منطقية متتابعة",
+        "correctAnswer": "علم يدرك مباشرة دون الحاجة إلى نظر أو استدلال عقلي"
+      },
+      {
+        "question": "يرى الأشاعرة أن الاقتران بين المقدمات والنتيجة هو ضرورة عقلية حتمية لا تنفك عنها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
