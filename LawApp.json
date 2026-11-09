@@ -8,7 +8,9 @@
       "year": "الرابع",
       "doctor": "أ. بشير الزقري",
       "room": "C5",
-      "attendance": {}
+      "attendance": {
+        "1": true
+      }
     },
     {
       "id": 1793466995350,
@@ -302,7 +304,8 @@
       "doctor": "د. وليد صالح",
       "room": "قاعة المهرس",
       "attendance": {
-        "1": false
+        "1": false,
+        "2": true
       }
     },
     {
