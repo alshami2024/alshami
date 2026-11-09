@@ -178,7 +178,9 @@
       "year": "الرابع",
       "doctor": "د. عمار النهام",
       "room": "C1",
-      "attendance": {}
+      "attendance": {
+        "12": true
+      }
     },
     {
       "id": 1793466386232,
