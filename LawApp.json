@@ -310,7 +310,8 @@
       "room": "قاعة المهرس",
       "attendance": {
         "1": false,
-        "2": true
+        "2": true,
+        "12": true
       }
     },
     {
