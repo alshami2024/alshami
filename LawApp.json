@@ -294,7 +294,7 @@
       "doctor": "د. وليد صالح",
       "room": "قاعة المهرس",
       "attendance": {
-        "1": true
+        "1": false
       }
     },
     {
@@ -316,7 +316,7 @@
       "doctor": "د. وليد صالح",
       "room": "C4",
       "attendance": {
-        "1": true,
+        "1": false,
         "12": true
       }
     }
