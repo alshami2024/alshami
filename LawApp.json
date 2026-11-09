@@ -189,6 +189,7 @@
       "doctor": "د. عمار النهام",
       "room": "C1",
       "attendance": {
+        "2": true,
         "12": true
       }
     },
