@@ -2801,5 +2801,106 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "التوحيد (1)",
+    "studentName": "محمد ياسر الملحاني",
+    "deviceId": "DEV-M4VRFJKSJ-mtj6x4nn",
+    "submissionDate": "2026-11-10T13:45:10.223Z",
+    "mcqScore": {
+      "correct": 6,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما المقصود بالعلم الضروري؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "علم يدرك مباشرة دون الحاجة إلى نظر أو استدلال عقلي"
+      },
+      {
+        "question": "يكفي الإقرار الظاهري بالشهادتين لتحصيل العلم اليقيني الواجب في العقيدة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما النتيجة المترتبة على بطلان الاعتماد على السمع المجرد (النقل) ابتداءً في إثبات العقيدة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "استحالة الوصول إلى معرفة حقيقة العالم وخالقه بالكلية",
+        "correctAnswer": "وجوب إثبات وجود الله وصفاته بالعقل أولاً ليصح الاحتجاج بالنص"
+      },
+      {
+        "question": "يعود خطأ كثير من الناس في تحصيل العلم إلى خلل في ترتيب المقدمات أو الاستدلال بها في غير محلها وليس إلى الجهل بها.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يرى الأشاعرة أن الاقتران بين المقدمات والنتيجة هو ضرورة عقلية حتمية لا تنفك عنها.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "ما المذهب الذي يرى أن النظر العقلي المرتب يؤدي حتماً إلى العلم القطعي وهو الطريق الوحيد للمعرفة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الفلاسفة القائلون بالاستنارة بالعقل الفعّال",
+        "correctAnswer": "المعتزلة وهو المذهب المختار"
+      },
+      {
+        "question": "يُعد الذوق والإلهام طريقاً شخصياً لا عاماً ولا يصلح معياراً موثوقاً لمعرفة العقيدة.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "يدل اختلاف العقلاء وتعدد أقوالهم حول ذات الله وصفاته بحسب النص على:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صحة دعوى أن معرفة الله تعالى حاصلة بالبداهة والضرورة",
+        "correctAnswer": "بطلان دعوى الضرورة في المعرفة الدينية وعدم بداهتها"
+      },
+      {
+        "question": "تتضمن عناصر تحقق العلم المشروطة في النص كل ما يأتي، عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "الاستناد إلى كشف ذوقي يزيل الشكوك والتردد"
+      },
+      {
+        "question": "يعد النظر العقلي واجباً شرعاً استناداً إلى قاعدة أن ما لا يتم الواجب إلا به فهو واجب.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      }
+    ],
+    "tabSwitchCount": 1
   }
 ]
