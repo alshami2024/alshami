@@ -222,6 +222,7 @@
       "doctor": "د. وليد صالح",
       "room": "C1",
       "attendance": {
+        "1": true,
         "2": true,
         "12": true
       }
