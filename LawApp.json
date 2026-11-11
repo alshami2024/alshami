@@ -9,7 +9,8 @@
       "doctor": "أ. بشير الزقري",
       "room": "C5",
       "attendance": {
-        "1": true
+        "1": true,
+        "12": true
       }
     },
     {
