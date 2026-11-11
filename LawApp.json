@@ -20,7 +20,9 @@
       "year": "الرابع",
       "doctor": "د. علي الصباري",
       "room": "C5",
-      "attendance": {}
+      "attendance": {
+        "12": true
+      }
     },
     {
       "id": 1793466964758,
