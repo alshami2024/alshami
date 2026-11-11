@@ -68,7 +68,9 @@
       "year": "الثاني",
       "doctor": "قـ. جياب الحدي",
       "room": "C6",
-      "attendance": {}
+      "attendance": {
+        "12": true
+      }
     },
     {
       "id": 1793466836559,
