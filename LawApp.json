@@ -275,6 +275,7 @@
       "room": "C4",
       "attendance": {
         "2": true,
+        "3": true,
         "12": true
       }
     },
