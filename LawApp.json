@@ -257,7 +257,9 @@
       "year": "الثالث",
       "doctor": "د. دحان القريطي",
       "room": "C1",
-      "attendance": {}
+      "attendance": {
+        "3": true
+      }
     },
     {
       "id": 1793466185009,
