@@ -72,6 +72,7 @@
       "doctor": "قـ. جياب الحدي",
       "room": "C6",
       "attendance": {
+        "2": true,
         "12": true
       }
     },
