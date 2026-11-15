@@ -208,6 +208,7 @@
       "room": "عامر عبدالوهاب",
       "attendance": {
         "2": true,
+        "3": true,
         "12": true
       }
     },
@@ -222,6 +223,7 @@
       "attendance": {
         "1": true,
         "2": true,
+        "3": true,
         "12": true
       }
     },
@@ -236,6 +238,7 @@
       "attendance": {
         "1": true,
         "2": true,
+        "3": true,
         "12": true
       }
     },
