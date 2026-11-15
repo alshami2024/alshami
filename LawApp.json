@@ -317,6 +317,7 @@
       "attendance": {
         "1": false,
         "2": true,
+        "3": false,
         "12": true
       }
     },
@@ -329,6 +330,7 @@
       "doctor": "د. محمد الذيب",
       "room": "عامر عبدالوهاب",
       "attendance": {
+        "3": true,
         "12": true
       }
     },
@@ -1882,9 +1884,9 @@
     }
   ],
   "settings": {
-    "semTitle": "الفصل الدراسي الأول 2025/2026",
-    "semStartDate": "2026-06-06",
-    "semWeeks": 12,
+    "semTitle": "الفصل الدراسي الثاني 2025/2026",
+    "semStartDate": "2026-11-01",
+    "semWeeks": 10,
     "lectureHours": 3
   }
 }
