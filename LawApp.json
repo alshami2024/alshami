@@ -10,6 +10,7 @@
       "room": "C5",
       "attendance": {
         "1": true,
+        "2": true,
         "12": true
       }
     },
@@ -22,6 +23,7 @@
       "doctor": "د. علي الصباري",
       "room": "C5",
       "attendance": {
+        "2": true,
         "12": true
       }
     },
@@ -35,6 +37,7 @@
       "room": "الغراس",
       "attendance": {
         "1": true,
+        "2": true,
         "12": true
       }
     },
