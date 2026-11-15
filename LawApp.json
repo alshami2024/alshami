@@ -358,6 +358,7 @@
       "doctor": "د. صادق آل قاسم",
       "room": "الشهيد الصماد",
       "attendance": {
+        "3": true,
         "12": true
       }
     },
@@ -372,6 +373,7 @@
       "attendance": {
         "1": false,
         "2": true,
+        "3": true,
         "12": true
       }
     }
