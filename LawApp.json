@@ -36,7 +36,7 @@
       "doctor": "د. عبدالله الصباري",
       "room": "الغراس",
       "attendance": {
-        "1": false,
+        "1": true,
         "2": true,
         "12": true
       }
