@@ -158,6 +158,7 @@
       "doctor": "د. وليد صالح",
       "room": "C1",
       "attendance": {
+        "3": true,
         "12": true
       }
     },
