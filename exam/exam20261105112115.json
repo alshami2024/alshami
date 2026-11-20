@@ -1087,5 +1087,107 @@
       }
     ],
     "tabSwitchCount": 1
+  },
+  {
+    "examTitle": "التوحيد (1)",
+    "studentName": "سلمان الغرباني",
+    "deviceId": "DEV-Z3WIK4Q7Y-mtlkg58l",
+    "submissionDate": "2026-11-20T14:02:36.343Z",
+    "mcqScore": {
+      "correct": 5,
+      "total": 10
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "ما النتيجة المترتبة على أخذ الدين بالتقليد من أفواه الرجال دون تفكر وتدبر وفق الحديث النبوي الوارد في النص؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "ثبات المؤمن في دينه ثباتاً لا يزول حتى لو زالت الرواسي",
+        "correctAnswer": "اضطراب الإنسان وتنقله من يمين إلى شمال وكونه على أعظم زوال"
+      },
+      {
+        "question": "ما الحد الأدنى الواجب في معرفة الله تعالى على كل مكلف؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "العلم بوجود الله تعالى، ووحدانيته، وتنزّهه عن النقائص"
+      },
+      {
+        "question": "تعدد الآلهة يستلزم عقلاً التحديد والتمايز والافتقار، وهو ما يفضي إلى فساد النظام ولا يليق بالإله.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "ما المقصود بالمعنى العقلي للحدوث؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "كون الشيء مسبوقاً بالعدم، أي لم يكن فكان ومحتاجاً لمحدث"
+      },
+      {
+        "question": "يكفي الإيمان القلبي المجرد دون علم أو نظر أو يقين لتحقيق المعرفة الواجبة بالله تعالى.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      },
+      {
+        "question": "لماذا يُعدُّ الواحد في وصف الله تعالى ({قُلْ هُوَ اللَّهُ أَحَدٌ}) ليس بعدد ولا معدود؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن الإدراك العقلي يعجز عن إثبات ما لا يُرى بالحواس",
+        "correctAnswer": "لأنه ما تقدم كل ثانٍ وذي تثنية، والعدد ثانٍ والعاد كذلك"
+      },
+      {
+        "question": "تتضمن الأدلة والأسس التي يقوم عليها إثبات حدوث العالم كل ما يأتي، عدا:",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن التسلسل في العلل ممتنع عقلاً مما يوجب وجود مبدأ أول",
+        "correctAnswer": "أن الإحاطة بحقيقة ذات الشيء شرط ضروري لإثبات وجوده"
+      },
+      {
+        "question": "معرفة الله تعالى هي أول ما يُطلب من الإنسان عقلاً وشرعاً، ولا يُعد الجهل به عذراً للمكلف.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "عدم إحاطة العقل البشري بحقيقة الذات الإلهية لا يمنع إثبات وجودها، قياساً على إثباته لأشياء غير مرئية كالقوى والعلل.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "القول بقدم العالم يتوافق مع الحس والعقل لكنه يخالف نصوص الوحي فقط.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
