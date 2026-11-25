@@ -88,6 +88,7 @@
       "attendance": {
         "2": true,
         "3": true,
+        "4": true,
         "12": true
       }
     },
@@ -124,7 +125,8 @@
       "doctor": "أ. ريم جبير",
       "room": "عامر عبدالوهاب",
       "attendance": {
-        "3": true
+        "3": true,
+        "4": true
       }
     },
     {
