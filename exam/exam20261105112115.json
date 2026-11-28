@@ -136,5 +136,150 @@
       }
     ],
     "tabSwitchCount": 0
+  },
+  {
+    "examTitle": "التوحيد (1)",
+    "studentName": "اصيل محمد ناجي البكيلي",
+    "deviceId": "DEV-VTZW8WU21-mtvr375d",
+    "submissionDate": "2026-11-28T10:09:02.786Z",
+    "mcqScore": {
+      "correct": 7,
+      "total": 15
+    },
+    "essayScore": {
+      "totalScore": 0,
+      "totalMax": 0
+    },
+    "answers": [
+      {
+        "question": "جميع الآتي من خصائص النظر العقلي الصحيح، عدا:",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "إفادته اليقين بصرف النظر عن شروطه"
+      },
+      {
+        "question": "ما المعيار الأساسي للتمييز بين العلم الضروري والعلم النظري؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "درجة الجزم واليقين بالمعرفة",
+        "correctAnswer": "الحاجة إلى ترتيب المقدمات والاستدلال"
+      },
+      {
+        "question": "ما الفرق بين فرض العين وفرض الكفاية في تعلم علم التوحيد؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "فرض العين مناظرة المخالفين، وفرض الكفاية معرفة وجود الله",
+        "correctAnswer": "فرض العين معرفة أصول الاعتقاد، وفرض الكفاية التعمق في دقائق المسائل"
+      },
+      {
+        "question": "يشمل الحد الأدنى الواجب من معرفة الله العلم بوجوده ووحدانيته وتنزهه عن النقائص.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح"
+      },
+      {
+        "question": "لماذا يتنافى تعدد الآلهة مع حقيقة الألوهية وفقاً للاستدلال العقلي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "لأن التعدد يستلزم انتفاء الشريك في الأفعال",
+        "correctAnswer": "لأن التعدد يستلزم التحديد والتمايز والافتقار"
+      },
+      {
+        "question": "إذا كانت مقدمات الاستدلال يقينية، ولكنها رُتبت ترتيباً خاطئاً، فما الحكم على هذا الاستدلال؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "يفتقد أحد الشروط اللازمة لتحقق العلم"
+      },
+      {
+        "question": "ما الموقف الواجب اتخاذه إذا تعارض ظاهر النص النقلي مع دليل عقلي قطعي؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "تأويل ظاهر النص بما يوافق الدليل العقلي القطعي"
+      },
+      {
+        "question": "اختلاف العقلاء في معرفة الله وصفاته يُعدّ دليلاً على بطلان دعوى كون هذه المعرفة ضرورية.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "ما وجه الاختلاف بين المعتزلة والأشاعرة في العلاقة بين المقدمات والنتيجة؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "المعتزلة يجعلون الاقتران عادة، والأشاعرة يثبتون اللزوم العقلي",
+        "correctAnswer": "المعتزلة يثبتون اللزوم العقلي، والأشاعرة يجعلون الاقتران عادة"
+      },
+      {
+        "question": "إذا ثبت أن العالم حادث وأن كل حادث محتاج إلى محدث، فما النتيجة التي ينتهي إليها دليل الحدوث؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن للعالم محدثاً قديماً غير حادث"
+      },
+      {
+        "question": "افتقار سائر العلوم الدينية إلى علم التوحيد واستغناؤه عنها من الأدلة العقلية على شرفه.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ",
+        "correctAnswer": "صح"
+      },
+      {
+        "question": "يصح الاحتجاج بالسمع في إثبات العقيدة قبل التحقق العقلي من صدق من نقله.",
+        "type": "tf",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "خطأ"
+      },
+      {
+        "question": "ما وجه الاستدلال بقوله تعالى: ﴿لَا إِلَٰهَ إِلَّا هُوَ﴾ وقوله: ﴿قَائِمًا بِالْقِسْطِ﴾ ثم قوله: ﴿إِنَّ الدِّينَ عِندَ اللَّهِ الْإِسْلَامُ﴾؟",
+        "type": "mcq",
+        "isCorrect": true,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن التوحيد والعدل يمثلان حقيقة الإسلام"
+      },
+      {
+        "question": "على أي قاعدة يقوم الاستدلال الشرعي على وجوب النظر العقلي؟",
+        "type": "mcq",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "أن ما يلزم عن الحق فهو حق",
+        "correctAnswer": "أن ما لا يتم الواجب إلا به فهو واجب"
+      },
+      {
+        "question": "عدم قدرة العقل على الإحاطة بحقيقة الذات الإلهية يمنعه من إثبات وجود الله.",
+        "type": "tf",
+        "isCorrect": false,
+        "isGraded": true,
+        "maxScore": 1,
+        "answer": "صح",
+        "correctAnswer": "خطأ"
+      }
+    ],
+    "tabSwitchCount": 0
   }
 ]
